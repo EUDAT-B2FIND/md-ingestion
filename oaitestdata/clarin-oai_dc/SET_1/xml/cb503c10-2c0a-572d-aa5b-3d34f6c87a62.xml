@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:vartra</identifier>
+    <datestamp>2018-10-15T16:03:26Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>VARTRA-SMALL</dc:title>
+      <dc:creator>Ekaterina Lapshinova-Koltunski</dc:creator>
+      <dc:subject xml:lang="en">corpus linguistics</dc:subject>
+      <dc:subject xml:lang="en">linguistics</dc:subject>
+      <dc:subject xml:lang="en">computational linguistics</dc:subject>
+      <dc:subject xml:lang="en">translation</dc:subject>
+      <dc:subject xml:lang="en">variation in translation</dc:subject>
+      <dc:description xml:lang="en">VARTRA (VARiation in TRAnslation) is a comparable English-to-German translation corpus created to investigate translation variation phenomena in terms of contrasts between languages, text types and translation methods (machine vs. computer-aided vs. human). These phenomena are reflected in linguistic features of translated texts belonging to different registers and produced with different translation methods. VARTRA-SMALL contains English original texts and variants of their translations (to each text) into German which were produced by: (1) human professionals (PT), (2) human student translators with the help of computer-aided translation tools (CAT), (3) rule-based MT systems
+(RBMT) and (4) statistical MT systems (SMT). The English originals (EO), as well as the translations by profesionals (PT) were exported from the already existing corpus CroCo (cf. Hansen-Schirra et al. 2012). The CAT variant was produced by student assistents who used the CAT tool ACROSS in the translation process. The  RBMT variant was translated with SYSTRAN (RBMT). For SMT, we have compiled two versions - the one produced with Google Translate (SMT1), and the other one with a Moses system (SMT2). Each translation variant is saved as a subcorpus and covers seven registers of written language: political essays (ESSAY), fictional texts (FICTION), manuals (INSTR), popular-scientific articles (POPSCI), letters of share-holders (SHARE), prepared political speeches (SPEECH), and touristic leaflets (TOU). The total number of tokens in VARTRA-SMALL comprises 795,460. All subcorpora of VARTRA-SMALL are tokenised, lemmatised, tagged with part-of-speech information, segmented into syntactic chunks and sentences. The annotations were obtained with Tree Tagger (Schmid, 1994).
+VARTRA-SMALL is encoded in CWB and can be queried with the help of Corpus Query Processor (CQP) (Evert, 2005). In the CWB format, the corpus contains two types of annotation: structural and positional. Structural annotation is written in XML and provides a description of the textual structure, on the one hand, and metatextual information, on the other hand. We also encode a part of the meta-data, such as information on register, as well as translation method, tools used and the source language. STRUCTURAL ATTRIBUTES: metadata: id, register; structure: chunk (shallow chunks with TreeTagger), s (sentence borders based on the TreeTagger output). Positional annotation is provided at token level containing linguistic information. POSITIONAL ATTRIBUTES: word, pos (STTS Tagset, TreeTagger).
+The metadata (e.g. information on translators and the system used) are also saved in .header-files.</dc:description>
+      <dc:publisher>Universit&#228;t des Saarlandes</dc:publisher>
+      <dc:contributor>Ekaterina Lapshinova-Koltunski</dc:contributor>
+      <dc:date>2013</dc:date>
+      <dc:type>Dataset</dc:type>
+      <dc:format>text/xml</dc:format>
+      <dc:identifier>clarind-uds:vartra</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8CDB-A</dc:identifier>
+      <dc:source xml:lang="en">English originals from CroCo (clarind-uds:croco)</dc:source>
+      <dc:source xml:lang="en">German translations from English by professionals from CroCo (clarind-uds:croco)</dc:source>
+      <dc:source xml:lang="en">German translations from English by students of translation at FR4.6, Saarland University (within the VARTRA projects)</dc:source>
+      <dc:source xml:lang="en">German translations from English with the SYSTRAN machine translation system (within the VARTRA projects)</dc:source>
+      <dc:source xml:lang="en">German translations from English with a Moses-based machine translation system (within the VARTRA projects)</dc:source>
+      <dc:source xml:lang="en">German translations from English with the Google machine translation system (within the VARTRA projects)</dc:source>
+      <dc:language>eng</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:relation xml:lang="en">Lapshinova-Koltunski, Ekaterina. 2013. VARTRA: A Comparable Corpus for Analysis of Translation Variation. In Proceedings of the Sixth Workshop on Building and Using Comparable Corpora. Sofia, Bulgaria. Association for Computational Linguistics. pp. 77-86. URL: http://aclweb.org/anthology/W13-2510</dc:relation>
+      <dc:relation xml:lang="en">Lapshinova-Koltunski, Ekaterina. 2013. VARTRA: A Comparable Corpus for Analysis of Translation Variation. In Proceedings of the Sixth Workshop on Building and Using Comparable Corpora. Sofia, Bulgaria. Association for Computational Linguistics. pp. 77-86. URL: http://aclweb.org/anthology/W13-2510</dc:relation>
+      <dc:relation xml:lang="en">Lapshinova-Koltunski, Ekaterina. (2013). VARTRA: A Comparable Corpus for Analysis of Translation Variation. In Proceedings of the Sixth Workshop on Building and Using Comparable Corpora. Sofia, Bulgaria. Association for Computational Linguistics. pp. 77-86. URL: http://aclweb.org/anthology/W13-2510</dc:relation>
+      <dc:relation xml:lang="en">Lapshinova-Koltunski, E. and Santanu Pal (2014). Comparabilty of Corpora in Human and Machine Translation. In Proceedings of BUCC, 7th Workshop on Building and Using Comparable Corpora. Building Resources for Machine Translation Research, Reykjavik, May 27, 2014.</dc:relation>
+      <dc:relation xml:lang="en">Lapshinova-Koltunski, E. (2015). Variation in Translation: Evidence from corpora. In C. Fantinuoli and F. Zanettin. New directions in corpus-based translation studies.Translation and Multilingual Natural Language Processing (TMNLP), pp. 79-99. Language Science Press.</dc:relation>
+      <dc:relation xml:lang="en">Lapshinova-Koltunski, E. (to appear 2015). Exploratory Analysis of Dimensions Influencing Variation in Translation: The case of text register and translation method. In De Sutter, G. and Delaere, I. and Lefer, M.-A. (eds.). New Ways of Analysing Translational Behaviour in Corpus-Based Translation Studies. TILSM series. Mouton de Gruyter.</dc:relation>
+      <dc:coverage xml:lang="en">Germany</dc:coverage>
+      <dc:rights xml:lang="en">partly copyrighted: EO and PT are under the same copyrights as CroCo; CAT, RBMT, SMT1 and SMT2 are free for academic</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

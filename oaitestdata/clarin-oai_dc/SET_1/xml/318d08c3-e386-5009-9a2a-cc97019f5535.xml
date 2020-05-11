@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>bdd9f3b66b3711e2a2aa782bcb0741356d33b026b0814900abeb63dd1958ae58</identifier>
+    <datestamp>2018-11-15T16:40:07Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:service</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare Tokenisation service</dc:title>
+      <dc:description>Web service created by exporting UIMA-based workflow from the U-Compare text mining system.
+Functionality: Identifies sentences and tokens in plain text.
+Tools in workflow: Freeling sentence splitter web service (service provided by the PANACEA project), LX-Tokenizer (web service provided by the University of Lisbon)
+NOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

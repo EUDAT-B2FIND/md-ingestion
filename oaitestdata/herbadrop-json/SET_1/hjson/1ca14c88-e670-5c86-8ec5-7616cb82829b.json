@@ -1,0 +1,91 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-2322321", 
+        "ARKID": "2322321"
+    }, 
+    "depositIdentifier": "P05545912", 
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01", 
+            "fileName": "P05545912.jpg", 
+            "ocr": {
+                "deu": "HERBARIUM MUSE] PAR/SIENS/S\nHERBARIUM MISSIONIS TUNQUINI OCCIDENTALI\nHERB MUS PARIS\nm\nEMLQQWK \u201auva\n\u201e\u201e m\u00fciiiiijgj\u00fcj\ufb01\ufb01iiiiiim\n", 
+                "eng": "HERBARIUM MUSE] PARIS/ENS/S\nHERBARIUM MISSIONIS TUNQUINI OCCIDENTALI\nHERB MUS PARIS\nm\nEMLQQWK ,uue\nMM m\ufb01iiiiilgj\ufb01l\ufb02iiii\ufb01m\n", 
+                "fra": "HERBARIUM MUSE] PARIS/ENS/S\nHERBARIUM MISSIONIS TUNQUINI OCCIDENTALI\nHERB MUS PARIS\nm\nEMLQQWK ,uue\n\u2026\u2026 m\u00f1\u00eeiii\u00eej\u00fc\u00ffj\u00ff\ufb02\u00eei\u00ee\u00f1m\n", 
+                "lat": "HERBARIUM MUSE] PARISIENS/S\nHERBARIUM MISSIONIS TUNQUINI OCCIDENTALI\nHERB MUS PARIS\nm\nEMLQQJUW ,uue\nMM m\u00fc\u00ef\u00efii\u00efjgj\u00fcjj\u00ef\u00fc\u00efi\u00efiiim\n", 
+                "spa": "HERBARIUM MUSE! PAR/SIENS/S\nHERBARIUM MISSIONIS TUNQUINI OCCIDENTALI\nHERB MUS PARIS\n\u2026\nEMLQQJUW ,mi\n\u2026\u2026 m\u00f1\u00ed\u00edii\u00edjgj\u00faj\u00ed\u00fa\u00ed\u00ed\u00ed\u00ed\u00ed\u00edm\n"
+            }
+        }
+    ], 
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        }, 
+        "aip.dc.creator": "unavailable", 
+        "aip.dc.description": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.format": {
+            "eng": "image/jpeg"
+        }, 
+        "aip.dc.identifier": "ark:/87895/1.90-2322321", 
+        "aip.dc.language": "und_UND", 
+        "aip.dc.publisher": "MNHN", 
+        "aip.dc.relation": {}, 
+        "aip.dc.rights": {
+            "und": "http://creativecommons.org/licenses/by/4.0/"
+        }, 
+        "aip.dc.source": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.subject": {
+            "lat": "unavailable"
+        }, 
+        "aip.dc.title": {
+            "lat": "incertae sedis"
+        }, 
+        "aip.dc.type": {
+            "eng": "StillImage|PRESERVED_SPECIMEN"
+        }, 
+        "aip.files": [
+            {
+                "checksum": "4ab128eadc9c8c72d8633f689fda336ec14720d6d372a48074f6bf66bca3ca0e", 
+                "checksumType": "SHA-256", 
+                "encoding": "UTF-8", 
+                "format": "TXT", 
+                "formatVersion": "NA", 
+                "identifier": "ark:/87895/1.90-2322321/1", 
+                "name": "DESC/P05545912.txt", 
+                "originalChecksum": "4b4a4342479b6255ea9dc7c57ecd139c", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 1929
+            }, 
+            {
+                "checksum": "ea658605d0cf7b442d7d66805de4f0c01506de904196cb50281202a5e57a4a69", 
+                "checksumType": "SHA-256", 
+                "format": "JPEG", 
+                "formatVersion": "1.01", 
+                "identifier": "ark:/87895/1.90-2322321/2", 
+                "name": "P05545912.jpg", 
+                "originalChecksum": "eb634c00ed93edef44edc4284ad491ee", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 3986600
+            }
+        ], 
+        "aip.meta.archivingDate": "2019-03-06T23:08:37+0100", 
+        "aip.meta.depositIdentifier": "P05545912", 
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        }, 
+        "aip.meta.finalAction": {
+            "fra": "Conservation d\u00e9finitive"
+        }, 
+        "aip.meta.note": {}, 
+        "aip.meta.pacIdentifier": 2322321, 
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05545912", 
+        "aip.meta.project": "90", 
+        "aip.meta.transferringAgency": "MNHN"
+    }, 
+    "score": 16.128714, 
+    "transferringAgencyIdentifier": "mnhnftp"
+}

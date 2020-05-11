@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-148515</identifier>
+    <datestamp>2019-02-28T18:17:26Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Obrona Zacnych Y Poboznych Lvdzi : Ktorzy Zbrzydziwszy si&#281; Bluznierstwami sekty Arryanskiey abo Socynskiey do Ko&#347;cio&#322;a si&#281; &#347;. Katholickiego vdali : przeciwko Paskwilowi od iakiego&#347; Ministra Arria&#324;skiego przeciw nim napisan&#281;mu y po Podgorzu rozsian&#281;mu</dc:title>
+      <dc:title xml:lang="pl">Z Namow&#261; Do Stanow Koronnych wniesion&#261;, aby przy Konstytucyach przeciw Arryanom vchwalonych statecznie stali</dc:title>
+      <dc:creator xml:lang="pl">Cichowski, Miko&#322;aj (1598-1669)</dc:creator>
+      <dc:subject xml:lang="pl">starodruki 17&#160;w.</dc:subject>
+      <dc:description xml:lang="pl">Zaremba, Stanis&#322;aw (16..-1685). [Adr. ded.]</dc:description>
+      <dc:publisher xml:lang="pl">Drukarnia Franciszka Cezarego</dc:publisher>
+      <dc:date>1661</dc:date>
+      <dc:type xml:lang="pl">starodruk</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-148515</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8CDF-2</dc:identifier>
+      <dc:source xml:lang="pl">Biblioteka Jagiello&#324;ska, BJ St. Dr. 39089 I</dc:source>
+      <dc:source xml:lang="pl">Biblioteka Jagiello&#324;ska, BJ St. Dr. 39090 I</dc:source>
+      <dc:language>pol</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:relation>http://jbc.bj.uj.edu.pl/Content/148515</dc:relation>
+      <dc:relation>oai:jbc.bj.uj.edu.pl:publication:156741</dc:relation>
+      <dc:coverage>1601/1700</dc:coverage>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,51 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:15673445</identifier>
+    <datestamp>2018-10-20T00:33:03Z</datestamp>
+    <setSpec>INIST</setSpec>
+    <setSpec>INIST.ESRF</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.1/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.1/ http://schema.datacite.org/oai/oai-1.1/oai.xsd">
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>INIST.ESRF</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.15151/ESRF-ES-113585769</identifier>
+          <creators>
+            <creator>
+              <creatorName>Koen JANSSENS</creatorName>
+            </creator>
+            <creator>
+              <creatorName>gert NUYTS</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Letizia MONICO</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Steven DE MEYER</creatorName>
+            </creator>
+            <creator>
+              <creatorName>Frederik VANMEERT</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>Van Gogh's Sunflowers: The London vs. the Amsterdam version: is there evidence in both of (superficial) photo-induced reduction of Light Sen</title>
+          </titles>
+          <subjects>
+            <subject subjectScheme="Proposal Type Description">Cultural Heritage</subject>
+            <subject subjectScheme="Proposal">HG-129</subject>
+            <subject subjectScheme="instrument">id21</subject>
+          </subjects>
+          <publisher>European Synchrotron Radiation Facility</publisher>
+          <dates>
+            <date dateType="Collected">2018-07-27</date>
+          </dates>
+          <publicationYear>2021</publicationYear>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset">Experiment Session</resourceType>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

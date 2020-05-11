@@ -1,0 +1,71 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:oldbailey</identifier>
+    <datestamp>2016-07-22T16:17:59Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>The Old Bailey Corpus</dc:title>
+      <dc:subject>historical linguistics</dc:subject>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>pragmatics</dc:subject>
+      <dc:subject>semantics</dc:subject>
+      <dc:subject>text and corpus linguistics</dc:subject>
+      <dc:subject>historical sociolinguistics</dc:subject>
+      <dc:subject>historical corpus</dc:subject>
+      <dc:subject>courtroom language</dc:subject>
+      <dc:subject>Late Modern English</dc:subject>
+      <dc:subject>British English</dc:subject>
+      <dc:subject/>
+      <dc:description xml:lang="en">The Old Bailey Corpus is a sociolinguistically, pragmatically and textually annotated selection of the Proceedings of the Old Bailey. These speech-related texts document Late Modern English in London's Central Criminal Court from 1720 to 1913</dc:description>
+      <dc:publisher>Robert Shoemaker</dc:publisher>
+      <dc:publisher>Tim Hitchcock</dc:publisher>
+      <dc:publisher>Justus Liebig University Giessen</dc:publisher>
+      <dc:publisher>Universit&#228;t des Saarlandes</dc:publisher>
+      <dc:publisher>CLARIN-D</dc:publisher>
+      <dc:contributor>Justus Liebig University Giessen. Faculty 05 Language, Literature, Culture. 
+Department of English. English Linguistics and History of English</dc:contributor>
+      <dc:contributor>Huber, Magnus</dc:contributor>
+      <dc:contributor>Huber, Magnus</dc:contributor>
+      <dc:contributor>Nissel, Magnus</dc:contributor>
+      <dc:contributor>Nissel, Magnus</dc:contributor>
+      <dc:contributor>Maiwald, Patrick</dc:contributor>
+      <dc:contributor>Maiwald, Patrick</dc:contributor>
+      <dc:contributor>Puga, Karin</dc:contributor>
+      <dc:contributor>Puga, Karin</dc:contributor>
+      <dc:contributor>Werner, Janina</dc:contributor>
+      <dc:contributor>Werner, Janina</dc:contributor>
+      <dc:contributor>Widlitzki, Bianca</dc:contributor>
+      <dc:contributor>Widlitzki, Bianca</dc:contributor>
+      <dc:contributor>El Basiouni, Sina</dc:contributor>
+      <dc:contributor>Hartmann, Carina</dc:contributor>
+      <dc:contributor>Kircili, Kathrin</dc:contributor>
+      <dc:contributor>Reeh, Elisabeth</dc:contributor>
+      <dc:contributor>Salomon, Saskia</dc:contributor>
+      <dc:contributor>Breitenbach, Daniela</dc:contributor>
+      <dc:contributor>Wunderlich, Julie</dc:contributor>
+      <dc:contributor>Batt, Oleg</dc:contributor>
+      <dc:contributor>Schunert, Nora</dc:contributor>
+      <dc:contributor>Petri, Sonja</dc:contributor>
+      <dc:contributor>Brunner, Christine</dc:contributor>
+      <dc:contributor>Kr&#228;mer, Christina</dc:contributor>
+      <dc:contributor>Schneider, Ulrike</dc:contributor>
+      <dc:contributor>Langbein, Sven</dc:contributor>
+      <dc:contributor>Halpap, Melanie</dc:contributor>
+      <dc:contributor>Molke, Veronika</dc:contributor>
+      <dc:contributor>Sumithra Velupillai</dc:contributor>
+      <dc:contributor xml:lang="deu">Deutsche Forschungsgemeinschaft</dc:contributor>
+      <dc:contributor xml:lang="deu">Bundesministerium f&#252;r Bildung und Forschung</dc:contributor>
+      <dc:type>Dataset</dc:type>
+      <dc:type>spoken text</dc:type>
+      <dc:format>text/xml</dc:format>
+      <dc:identifier>clarind-uds:oldbailey</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8CFB-2</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:relation>uni-giessen.de/oldbaileycorpus/search.html</dc:relation>
+      <dc:relation>uni-giessen.de/oldbaileycorpus/download.html</dc:relation>
+      <dc:rights>You are free to: Share - copy and redistribute the material in any medium or format; Adapt - remix, transform, and build upon the material. Under the following terms: Attribution - You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. NonCommercial - You may not use the material for commercial purposes. ShareAlike - If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original. No additional restrictions - You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

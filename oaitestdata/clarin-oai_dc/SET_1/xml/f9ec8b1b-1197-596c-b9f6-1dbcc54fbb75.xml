@@ -1,0 +1,18 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>9a410010830e11e5a2aa782bcb0741357950092357fd4b7c97f39c12ea6a81cc</identifier>
+    <datestamp>2018-11-15T16:40:18Z</datestamp>
+    <setSpec>lexicalConceptualResource</setSpec>
+    <setSpec>lexicalConceptualResource:lexicon</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>QTLeap specialized lexicons</dc:title>
+      <dc:description>This  resource  is  part  of  Deliverable  5.7  of  the  European  Comission  project QTLeap  FP7-ICT-2013.4.1-610516  (http://qtleap.eu).
+
+This gazetteer comprises multilingual lexicon entries used for the translation of specific IT domain expressions for Basque, Bulgarian, Czech, Dutch, English, Portuguese and Spanish. The expressions were collected, on the one hand, from the freely available software localization files, such as VLC, Libre Office and KDE, and on the other hand, from IT-related Wikipedia articles. 
+</dc:description>
+      <dc:date>2015-11-04</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

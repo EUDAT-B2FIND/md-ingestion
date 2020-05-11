@@ -1,0 +1,190 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6287</identifier>
+    <datestamp>2017-10-04T14:21:34Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2017.003</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Francke, Till</default:creatorName>
+              <default:affiliation>University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Foerster, Saskia</default:creatorName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Section 1.4 Remote Sensing, Potsdam, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Brosinsky, Arlena</default:creatorName>
+              <default:affiliation> University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany; GFZ German Research Centre for Geosciences, Section 1.4 Remote Sensing, Potsdam, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Sommerer, Erik</default:creatorName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Section 5.4 Hydrology, Potsdam, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>L&#243;pez-Taraz&#243;n, Jos&#233; A.</default:creatorName>
+              <default:affiliation>University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany; Liverpool John Moores University, School of Natural Sciences and Psychology, Liverpool, UK; University of Lleida, Department of Environment and Soil Sciences, Fluvial Dynamics Research Group, Lleida, Spain; University of the Balearic Islands, Department of Geography, Palma, Spain</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>G&#252;ntner, Andreas</default:creatorName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Section 5.4 Hydrology; Potsdam, Germany; University of Potsdam; Institute of Earth and Environmental Science, Potsdam, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Batalla, Ramon</default:creatorName>
+              <default:affiliation>University of Lleida, Department of Environment and Soil Sciences, Fluvial Dynamics Research Group, Lleida, Spain</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Bronstert, Axel</default:creatorName>
+              <default:affiliation>University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="eng">Hydro-sedimentological dataset for the mesoscale      mountainous Is&#225;bena catchment, NE Spain</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2017</default:publicationYear>
+          <default:subjects>
+            <default:subject>rainfall</default:subject>
+            <default:subject>discharge</default:subject>
+            <default:subject>suspended sediment concentration</default:subject>
+            <default:subject>soil spectroscopy</default:subject>
+            <default:subject>fingerprint properties</default:subject>
+            <default:subject>meso-scale</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Francke, Till</default:contributorName>
+              <default:affiliation>University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Francke, Till</default:contributorName>
+              <default:affiliation>University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataManager">
+              <default:contributorName>Francke, Till</default:contributorName>
+              <default:affiliation>University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Foerster, Saskia</default:contributorName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Section 1.4 Remote Sensing, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="WorkPackageLeader">
+              <default:contributorName>Foerster, Saskia</default:contributorName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Section 1.4 Remote Sensing, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Brosinsky, Arlena</default:contributorName>
+              <default:affiliation> University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany; GFZ German Research Centre for Geosciences, Section 1.4 Remote Sensing, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Sommerer, Erik</default:contributorName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Section 5.4 Hydrology, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>L&#243;pez-Taraz&#243;n, Jos&#233; A.</default:contributorName>
+              <default:affiliation>University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany; Liverpool John Moores University, School of Natural Sciences and Psychology, Liverpool, UK; University of Lleida, Department of Environment and Soil Sciences, Fluvial Dynamics Research Group, Lleida, Spain; University of the Balearic Islands, Department of Geography, Palma, Spain</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="WorkPackageLeader">
+              <default:contributorName>G&#252;ntner, Andreas</default:contributorName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Section 5.4 Hydrology; Potsdam, Germany; University of Potsdam; Institute of Earth and Environmental Science, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="WorkPackageLeader">
+              <default:contributorName>Batalla, Ramon</default:contributorName>
+              <default:affiliation>University of Lleida, Department of Environment and Soil Sciences, Fluvial Dynamics Research Group, Lleida, Spain</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Supervisor">
+              <default:contributorName>Batalla, Ramon</default:contributorName>
+              <default:affiliation>University of Lleida, Department of Environment and Soil Sciences, Fluvial Dynamics Research Group, Lleida, Spain</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectLeader">
+              <default:contributorName>Bronstert, Axel</default:contributorName>
+              <default:affiliation>University of Potsdam, Institute of Earth and Environmental Science, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCurator">
+              <default:contributorName>Elger, Kirsten</default:contributorName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-5140-8602</default:nameIdentifier>
+              <default:affiliation>GFZ German Research Center for Geosciences</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Funder">
+              <default:contributorName>German Research Foundation</default:contributorName>
+              <default:affiliation>German Research Foundation</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Funder">
+              <default:contributorName>Helmholtz Centre for Environmental Research (UFZ)</default:contributorName>
+            </default:contributor>
+            <default:contributor contributorType="Funder">
+              <default:contributorName>Marie Curie Intra-European Fellowship</default:contributorName>
+            </default:contributor>
+            <default:contributor contributorType="Funder">
+              <default:contributorName>Economy and Knowledge Department of the Catalan Government</default:contributorName>
+            </default:contributor>
+            <default:contributor contributorType="Sponsor">
+              <default:contributorName>Ebro Water Authorities</default:contributorName>
+            </default:contributor>
+            <default:contributor contributorType="RightsHolder">
+              <default:contributorName>Ebro Water Authorities</default:contributorName>
+            </default:contributor>
+          </default:contributors>
+          <default:dates>
+            <default:date dateType="Created">2017-06-13</default:date>
+            <default:date dateType="Collected">2010/2016</default:date>
+          </default:dates>
+          <default:language>eng</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset">Dataset</default:resourceType>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsDocumentedBy">DOI of ESSD Paper</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/s11368-014-0927-z</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/s11368-014-0925-1</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/s11368-014-0992-3</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/s11368-014-0990-5</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/s11368-014-0961-x</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.geomorph.2011.08.020</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="URL" relationType="References">http://his.cuahsi.org/documents/ODM1.1DesignSpecifications.pdf</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>190270085 Bytes</default:size>
+            <default:size>7 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/octet-stream</default:format>
+            <default:format>application/pdf</default:format>
+            <default:format>application/octet-stream</default:format>
+            <default:format>application/octet-stream</default:format>
+            <default:format>application/octet-stream</default:format>
+            <default:format>application/octet-stream</default:format>
+            <default:format>application/x-zip-compressed</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">A comprehensive hydro-sedimentological dataset for the Is&#225;bena catchment, NE Spain, for the period 2010-2016 is presented to analyse water and sediment fluxes in a Mediterranean meso-scale catchment. The dataset includes rainfall data from twelve rain gauges distributed within the study area complemented by meteorological data of twelve official meteo-stations. It comprises discharge data derived from water stage measurements as well as suspended sediment concentrations (SSC) at six gauging stations of the Is&#225;bena river and its sub-catchments. <default:br/>
+         <default:br/>Soil spectroscopic data from 351 suspended sediment samples and 152 soil samples were collected to characterize sediment source regions and sediment properties via fingerprinting analyses. The Is&#225;bena catchment (445 km&#178;) is located in the Southern Central Pyrenees ranging from 450 m to 2,720 m in elevation, together with a pronounced topography this leads to distinct temperature and precipitation gradients. 
+      <default:br/>
+         <default:br/>The Is&#225;bena river shows marked discharge variations and high sediment yields causing severe siltation problems in the downstream Barasona reservoir. Main sediment source are badland areas located on Eocene marls that are well connected to the river network. The dataset features a wide set of parameters in a high spatial and temporal resolution suitable for advanced process understanding of water and sediment fluxes, their origin and connectivity, sediment budgeting and for evaluating and further developing hydro-sedimentological models in Mediterranean meso-scale mountainous catchments. <default:br/>
+         <default:br/>The data is available in .csv format folllowing the CUAHSI Community Observations Data Model (ODM) as .zip files via this DOI Landing Page and directly from the CUASI HIS Database via http://hydroportal.cuahsi.org/isabena/cuahsi_1_1.asmx?WSDL.<default:br/>
+         <default:br/>
+The data are available in four thematic zip folders:<default:br/>(1) hydro (hydrological data): water stage (manual readings and automatically recorded), river discharge (meterings and converted from stage); <default:br/>(2) meteo (meteorological data): rainfall, temperature, radiation, humidity;<default:br/>(3) sediment (sedimentological data): turbidity, suspended sediment concentration (from samples and from turbidity), sediment and soil reflectance spectra;  <default:br/>(4) meta (metadata) with the description of the different datafiles relevant for this dataset according to the CUAHSI HIS Standards.<default:br/>
+         <default:br/>
+For more detailed information, please read the user guide on cloud publications with the CUAHSI Water Dater Center (UserGuide.pdf) or the ODM guide for uploading data using CUAHSI&#180;s ODM uploader (ODMGuide.xlsx in folder ODM_Guide_2017.zip). </default:description>
+          </default:descriptions>
+          <default:geoLocations>
+            <default:geoLocation>
+              <default:geoLocationBox>42.1256 0.237 42.5807 0.6581</default:geoLocationBox>
+              <default:geoLocationPlace>Is&#225;bena catchment</default:geoLocationPlace>
+            </default:geoLocation>
+          </default:geoLocations>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/249</identifier>
+    <datestamp>2016-04-25T13:12:13Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UGC_Ukraincy_01_16</dc:title>
+      <dc:creator>UGC</dc:creator>
+      <dc:subject>Ukrai&#324;cy</dc:subject>
+      <dc:subject>Ukrainiec</dc:subject>
+      <dc:subject>Ukrainka</dc:subject>
+      <dc:description>Teksty pobrane z wykorzystaniem us&#322;ugi Brand24</dc:description>
+      <dc:date>2016-04-25</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/249</dc:identifier>
+      <dc:language>Polski</dc:language>
+      <dc:rights>Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/3.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Marek Troszy&#324;ski</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

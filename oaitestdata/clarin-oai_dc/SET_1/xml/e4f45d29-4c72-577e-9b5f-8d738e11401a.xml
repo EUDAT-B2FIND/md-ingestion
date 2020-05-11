@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4909-7</identifier>
+    <datestamp>2017-11-09T14:20:27Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>UMC 0.1: Czech-Russian-English Multilingual Corpus</dc:title>
+      <dc:creator>Klyueva, Natalia</dc:creator>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:subject>multi-language corpus</dc:subject>
+      <dc:description>UMC 0.1 Czech-English-Russian is a multilingual parallel corpus of texts in Czech, Russian and English languages with automatic pairwise sentence alignments. The primary aim of UMC is to extend the set of languages covered by the corpus CzEng mainly for the purposes of machine translation.&#13;
+&#13;
+All the texts were downloaded from a single source &#8212; The Project Syndicate (Copyright: Project Syndicate 1995-2008), which contains a huge collection of high-quality news articles and commentaries. We were given the permission to use the texts for research and non-commercial purposes.</dc:description>
+      <dc:date>2008-10-02</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0001-4909-7</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/umc/cer</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

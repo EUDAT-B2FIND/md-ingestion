@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.22000-156</identifier>
+    <datestamp>2019-04-16T16:21:33Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:identifier>10.22000/156</dc:identifier>
+      <dc:identifier>DOI</dc:identifier>
+      <dc:creator>Thaller, Georg</dc:creator>
+      <dc:identifier>0000-0002-6782-2039</dc:identifier>
+      <dc:creator>Kuehn, Christa</dc:creator>
+      <dc:identifier>0000-0002-0216-424X</dc:identifier>
+      <dc:creator>Nolte, Wietje</dc:creator>
+      <dc:identifier>0000-0001-7987-9780</dc:identifier>
+      <dc:title>Supplemental data to publication "Selection signatures in four German warmblood horse breeds: tracing breeding history in the modern sport horse" (PLOS ONE)</dc:title>
+      <dc:publisher>Leibniz Institute for Farm Animal Biology (FBN), Wilhelm-Stahl-Allee 2, 18196 Dummerstorf, Germany</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:subject>Agriculture</dc:subject>
+      <dc:subject>Other</dc:subject>
+      <dc:subject>Animal Genetics</dc:subject>
+      <dc:type/>
+      <dc:type>Dataset</dc:type>
+      <dc:rights>CC BY 4.0 Attribution</dc:rights>
+      <dc:rights>Leibniz Institute for Farm Animal Biology (FBN), Wilhelm-Stahl-Allee 2, 18196 Dummerstorf, Germany</dc:rights>
+      <dc:description>The study of selection signatures helps to find genomic regions that have been under selective pressure and might host genes or variants that modulate important phenotypes. Such knowledge improves our understanding of how breeding programmes have shaped the genomes of livestock. In this study, 942 stallions were included from four, exemplarily chosen, German warmblood breeds with divergent historical and recent selection focus and different crossbreeding policies: Trakehner (N=44), Holsteiner (N=358), Hanoverian (N=319) and Oldenburger (N=221).  Blood samples were collected during the health exams of the stallion preselections before licensing and were genotyped with the Illumina EquineSNP50 BeadChip. Autosomal markers were used for a multi-method search for signals of positive selection. Analyses within and across breeds were conducted by using the integrated Haplotype Score (iHS), cross-population Extended Haplotype Homozygosity (xpEHH) and Runs of Homozygosity (ROH). Oldenburger and Hanoverian showed very similar iHS signatures, but breed specificities were detected on multiple chromosomes with the xpEHH. </dc:description>
+      <dc:description>selection signatures, animal population genetics, horse</dc:description>
+      <dc:language>eng</dc:language>
+      <dc:relation>10.1371/journal.pone.0215913</dc:relation>
+      <dc:identifier>10.1371/journal.pone.0215913</dc:identifier>
+      <dc:relation>DOI</dc:relation>
+      <dc:identifier>DOI</dc:identifier>
+      <dc:identifier>BMBF</dc:identifier>
+      <dc:format>application/zip</dc:format>
+    </oai_dc:dc>
+  </metadata>
+</record>

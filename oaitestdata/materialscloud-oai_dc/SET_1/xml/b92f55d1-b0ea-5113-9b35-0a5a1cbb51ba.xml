@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2018.0008/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Martin, Richard L.</dc:creator>
+      <dc:creator>Simon, Cory M.</dc:creator>
+      <dc:creator>Smit, Berend</dc:creator>
+      <dc:creator>Haranczyk, Maciej</dc:creator>
+      <dc:title>In Silico Design of Porous Polymer Networks: High Throughput Screening for Methane Storage Materials</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2018-05-15</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>3D</dc:subject>
+      <dc:subject>three-dimensional</dc:subject>
+      <dc:subject>database</dc:subject>
+      <dc:subject>high-throughput</dc:subject>
+      <dc:subject>porous polymer networks</dc:subject>
+      <dc:subject>PPN</dc:subject>
+      <dc:subject>nanoporous</dc:subject>
+      <dc:subject>methane storage</dc:subject>
+      <dc:subject>deliverable capacities</dc:subject>
+      <dc:subject>DC</dc:subject>
+      <dc:subject>grand canonical Monte Carlo</dc:subject>
+      <dc:subject>GCMC</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2018.0008/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2018.0008/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>Porous polymer networks (PPNs) are a class of advanced porous materials that combine the advantages of cheap and stable polymers with the high surface areas and tunable chemistry of metal&#8211;organic frameworks. They are of particular interest for gas separation or storage applications, for instance, as methane adsorbents for a vehicular natural gas tank or other portable applications. PPNs are self-assembled from distinct building units; here, we utilize commercially available chemical fragments and two experimentally known synthetic routes to design in silico a large database of synthetically realistic PPN materials. All structures from our database of 18,000 materials have been relaxed with semiempirical electronic structure methods and characterized with Grand-canonical Monte Carlo simulations for methane uptake and deliverable (working) capacity. A number of novel structure&#8211;property relationships that govern methane storage performance were identified. The relationships are translated into experimental guidelines to realize the ideal PPN structure. We found that cooperative methane&#8211;methane attractions were present in all of the best-performing materials, highlighting the importance of guest interaction in the design of optimal materials for methane storage.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

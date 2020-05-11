@@ -1,0 +1,72 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.817122</identifier>
+    <datestamp>2017-08-05T09:10:00Z</datestamp>
+    <setSpec>ASPS</setSpec>
+    <setSpec>JGOFSNetherlands</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.817122</identifier>
+      <creators>
+        <creator>
+          <creatorName>Heip, Carlo H R</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Hemminga, M A</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Nguli, Michael Mutua</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Physical oceanography during TYRO cruise NIOP-A2</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2013</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">Event label</subject>
+        <subject subjectScheme="Parameter">Date/Time of event</subject>
+        <subject subjectScheme="Parameter">Latitude of event</subject>
+        <subject subjectScheme="Parameter">Longitude of event</subject>
+        <subject subjectScheme="Parameter">Elevation of event</subject>
+        <subject subjectScheme="Parameter">DEPTH, water</subject>
+        <subject subjectScheme="Parameter">Pressure, water</subject>
+        <subject subjectScheme="Parameter">Temperature, water</subject>
+        <subject subjectScheme="Parameter">Salinity</subject>
+        <subject subjectScheme="Parameter">Oxygen</subject>
+        <subject subjectScheme="Parameter">Temperature, water, potential</subject>
+        <subject subjectScheme="Parameter">Density, sigma-theta (0)</subject>
+        <subject subjectScheme="Parameter">Fluorescence</subject>
+        <subject subjectScheme="Method">Calculated</subject>
+        <subject subjectScheme="Method">Fluorometer, Chelsea Instruments</subject>
+        <subject subjectScheme="Campaign">NIOP-A2</subject>
+        <subject subjectScheme="Basis">Tyro</subject>
+        <subject subjectScheme="Project">Joint Global Ocean Flux Study (JGOFS)</subject>
+        <subject subjectScheme="Project">Netherlands Indian Ocean Programme (NIOP)</subject>
+      </subjects>
+      <dates>
+        <date dateType="Collected">1992-11-20T08:10:00/1992-12-04T10:23:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="IsDocumentedBy">http://store.pangaea.de/Projects/JGOFS/Netherlands/NIOP-A2_CTD.pdf</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>88823 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported (CC-BY)</rights>
+      </rightsList>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>-4.4222 39.5925 -1.935 41.7973</geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

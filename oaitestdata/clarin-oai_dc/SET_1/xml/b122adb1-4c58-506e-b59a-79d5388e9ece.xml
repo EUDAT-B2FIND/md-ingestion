@@ -1,0 +1,63 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-000D-EC98-3</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>OVM &#8211; Ot&#225;zky V&#225;clava Moravce</dc:title>
+      <dc:creator>&#352;m&#237;dl, Lubo&#353;</dc:creator>
+      <dc:creator>Pra&#382;&#225;k, Ale&#353;</dc:creator>
+      <dc:subject>speech corpus</dc:subject>
+      <dc:subject>acoustic model</dc:subject>
+      <dc:subject>speaker identification</dc:subject>
+      <dc:subject>speaker verification</dc:subject>
+      <dc:description>The corpus consists of transcribed recordings from the Czech political discussion broadcast &#8220;Ot&#225;zky V&#225;clava Moravce&#8220;. It contains 35 hours of speech and corresponding word-by-word transcriptions, including the transcription of some non-speech events. Speakers&#8217; names are also assigned to corresponding segments. The resulting corpus is suitable for both acoustic model training for ASR purposes and training of speaker identification and/or verification systems. The archive contains 16 sound files (WAV PCM, 16-bit, 48 kHz, mono) and transcriptions in XML-based standard Transcriber format (http://trans.sourceforge.net)</dc:description>
+      <dc:date>2013-01-04</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>ZCU_CZ_OVM</dc:identifier>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-000D-EC98-3</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>audio/x-wav</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 32</dc:format>
+      <dc:publisher>University of West Bohemia, Department of Cybernetics</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

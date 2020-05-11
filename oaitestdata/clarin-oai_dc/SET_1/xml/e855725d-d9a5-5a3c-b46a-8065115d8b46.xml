@@ -1,0 +1,63 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2634</identifier>
+    <datestamp>2018-06-25T14:14:59Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CorpusExplorer</dc:title>
+      <dc:creator>R&#252;diger, Jan Oliver</dc:creator>
+      <dc:subject>Corpus Linguisitics</dc:subject>
+      <dc:subject>NLP</dc:subject>
+      <dc:subject>conll</dc:subject>
+      <dc:subject>tei</dc:subject>
+      <dc:subject>XML</dc:subject>
+      <dc:subject>nlp</dc:subject>
+      <dc:subject>Natural Language Processing</dc:subject>
+      <dc:subject>linguistics</dc:subject>
+      <dc:subject>Linguistics</dc:subject>
+      <dc:subject>Computational Linguistics</dc:subject>
+      <dc:subject>corpus processing</dc:subject>
+      <dc:subject>tagger</dc:subject>
+      <dc:subject>POS tagger</dc:subject>
+      <dc:subject>lemmatization</dc:subject>
+      <dc:subject>text cleaning</dc:subject>
+      <dc:subject>CommonCrawl</dc:subject>
+      <dc:subject>epub</dc:subject>
+      <dc:subject>JSON</dc:subject>
+      <dc:subject>Twitter</dc:subject>
+      <dc:subject>Pandoc</dc:subject>
+      <dc:subject>Wikipedia</dc:subject>
+      <dc:subject>digital data</dc:subject>
+      <dc:subject>DTA</dc:subject>
+      <dc:subject>DSpin</dc:subject>
+      <dc:subject>MySQL</dc:subject>
+      <dc:subject>ElasticSearch</dc:subject>
+      <dc:subject>TextGrid</dc:subject>
+      <dc:subject>text corpora</dc:subject>
+      <dc:subject>TigerXML</dc:subject>
+      <dc:subject>WeblichtXML</dc:subject>
+      <dc:description>Software for corpus linguists and text/data mining enthusiasts. The CorpusExplorer combines over 45 interactive visualizations under a user-friendly interface. Routine tasks such as text acquisition, cleaning or tagging are completely automated. The simple interface supports the use in university teaching and leads users/students to fast and substantial results. The CorpusExplorer is open for many standards (XML, CSV, JSON, R, etc.) and also offers its own software development kit (SDK).&#13;
+&#13;
+Source code available at https://github.com/notesjor/corpusexplorer2.0</dc:description>
+      <dc:date>2018-03-14</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2634</dc:identifier>
+      <dc:language>deu</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>ara</dc:language>
+      <dc:language>zho</dc:language>
+      <dc:language>por</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Jan Oliver R&#252;diger</dc:publisher>
+      <dc:source>http://corpusexplorer.de</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

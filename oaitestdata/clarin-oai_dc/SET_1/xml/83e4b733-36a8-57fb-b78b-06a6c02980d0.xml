@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>c949c9c0e6de11e6a2aa782bcb074135e259542a800e4fc9abbaf20e5e6eb706</identifier>
+    <datestamp>2018-11-15T16:40:26Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LX-Battig</dc:title>
+      <dc:description>The LX-Battig was created from Battig test.set (Baroni et al., 2010). This data set has 83 concrete concepts of the following 10 categories: mammals, birds, fish, vegetables, fruit, trees, vehicles, clothes, tools and kitchenware. The categories names and the concepts were translated by two translators and adjudicated by a third one. </dc:description>
+      <dc:date>2017-01-30</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

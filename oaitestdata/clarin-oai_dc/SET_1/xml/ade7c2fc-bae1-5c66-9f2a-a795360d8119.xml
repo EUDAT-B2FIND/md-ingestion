@@ -1,0 +1,47 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repository.clarin.dk:20.500.12115/29</identifier>
+    <datestamp>2018-06-28T13:28:29Z</datestamp>
+    <setSpec>hdl_20.500.12115_1</setSpec>
+    <setSpec>hdl_20.500.12115_3</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>DK-CLARIN JRC-Acquis Parallel Corpus 1958-2003 (da-en)</dc:title>
+      <dc:creator>Hansen, Dorte Haltrup</dc:creator>
+      <dc:creator>Offersgaard, Lene</dc:creator>
+      <dc:subject>legal</dc:subject>
+      <dc:subject>EU</dc:subject>
+      <dc:description>The DK-CLARIN JRC-Acquis Parallel Corpus (da, en) is a part of the JRC-Acquis mulilingual parallel corpus, containing documents from The Acquis Communautaire (AC) which is the total body of European Union (EU) law applicable in the the EU Member States (see: https://ec.europa.eu/jrc/en/language-technologies/jrc-acquis). The data comes with one or more Eurovoc class codes added in the metadata from the European Commission. &#13;
+Each language corpus (English and Danish) contains app. 20 million words.&#13;
+&#13;
+All texts are in XML TEIP5 format (TEIP5DKCLARIN-format), with tokenisation, pos-tagging, sentence and paragraph segmentation, lemmatisation and for Danish also termhood annotation. The annotations are placed in separate text external spangroups.&#13;
+&#13;
+The corpus was collected and processed in the work package 2.6 of the Danish CLARIN project (see http://dkclarin.ku.dk/english) by University of Copenhagen, Centre for Language Technology.&#13;
+The aim of the Danish CLARIN consortium was to construct a Danish research infrastructure for the humanities integrating written, spoken, and visual records into a coherent and systematic digital repository. &#13;
+The project ran from January 2008 until the end of 2010.</dc:description>
+      <dc:date>2011</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.12115/29</dc:identifier>
+      <dc:language>dan</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/xml</dc:format>
+      <dc:format>downloadable_files_count: 10</dc:format>
+      <dc:publisher>Centre for Language Technology, NorS, University of Copenhagen</dc:publisher>
+      <dc:publisher>European Commission</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

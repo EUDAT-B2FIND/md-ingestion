@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1110</identifier>
+    <datestamp>2018-12-02T19:42:20Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Manually sentiment annotated Slovenian news corpus SentiNews 1.0</dc:title>
+      <dc:creator>Bu&#269;ar, Jo&#382;e</dc:creator>
+      <dc:subject>news corpus</dc:subject>
+      <dc:subject>sentiment classification</dc:subject>
+      <dc:subject>opinion mining</dc:subject>
+      <dc:subject>manual annotation</dc:subject>
+      <dc:description>Between 2 and 6 annotators independently sentiment annotated a stratified random sample of 10,427 documents from the Slovenian news portals 24ur, Dnevnik, Finance, Rtvslo, and &#381;urnal24. These portals contain political, business, economic and financial content. The texts were annotated using the five-level Lickert scale (1 &#8211; very negative, 2 &#8211; negative, 3 &#8211; neutral, 4 &#8211; positive, and 5 &#8211; very positive) on three levels of granularity, i.e. on the document, paragraph, and sentence level.</dc:description>
+      <dc:date>2017-04-29</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1110</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>https://doi.org/10.1007/s10579-018-9413-3</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 5</dc:format>
+      <dc:publisher>Faculty of Information Studies Novo mesto</dc:publisher>
+      <dc:source>https://github.com/19Joey85/Sentiment-annotated-news-corpus-and-sentiment-lexicon-in-Slovene/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

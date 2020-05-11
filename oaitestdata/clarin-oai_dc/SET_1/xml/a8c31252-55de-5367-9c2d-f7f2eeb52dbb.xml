@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/552</identifier>
+    <datestamp>2018-07-23T20:22:13Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Dependency parsing models for Polish</dc:title>
+      <dc:creator>Wr&#243;blewska, Alina</dc:creator>
+      <dc:subject>dependency parsing</dc:subject>
+      <dc:subject>Polish</dc:subject>
+      <dc:subject>PDB</dc:subject>
+      <dc:description>PDB-based parsing models are trained on the current version of Polish Depedency Bank with the publicly available parsing systems: MaltParser, MateParser, and UDPipe.</dc:description>
+      <dc:date>2018-07-23</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/552</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+      <dc:source>http://zil.ipipan.waw.pl/PDB/PDBparser</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

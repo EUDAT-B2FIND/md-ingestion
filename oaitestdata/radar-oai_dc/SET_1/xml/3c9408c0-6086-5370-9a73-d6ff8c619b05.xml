@@ -1,0 +1,44 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.22000-43</identifier>
+    <datestamp>2017-06-06T12:25:05Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:identifier>10.22000/43</dc:identifier>
+      <dc:identifier>DOI</dc:identifier>
+      <dc:creator>M&#252;ller, Eric</dc:creator>
+      <dc:identifier>0000-0002-6802-1241</dc:identifier>
+      <dc:creator>Springstein, Matthias</dc:creator>
+      <dc:identifier>0000-0002-6509-8534</dc:identifier>
+      <dc:creator>Ewerth, Ralph</dc:creator>
+      <dc:identifier>0000-0003-0918-6297</dc:identifier>
+      <dc:title>Date Estimation in the Wild Dataset</dc:title>
+      <dc:publisher>M&#252;ller, Eric</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:subject>Computer Science</dc:subject>
+      <dc:subject>Other</dc:subject>
+      <dc:subject>Machine Learning</dc:subject>
+      <dc:subject>Other</dc:subject>
+      <dc:subject>Deep Learning</dc:subject>
+      <dc:subject>Other</dc:subject>
+      <dc:subject>Information Retrieval</dc:subject>
+      <dc:subject>Other</dc:subject>
+      <dc:subject>Image Retrieval</dc:subject>
+      <dc:subject>Other</dc:subject>
+      <dc:subject>Date Estimation</dc:subject>
+      <dc:type/>
+      <dc:type>Dataset</dc:type>
+      <dc:rights>CC BY 4.0 Attribution</dc:rights>
+      <dc:rights>M&#252;ller, Eric</dc:rights>
+      <dc:rights>Springstein, Matthias</dc:rights>
+      <dc:rights>Ewerth, Ralph</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:relation>10.22000/44</dc:relation>
+      <dc:identifier>10.22000/44</dc:identifier>
+      <dc:relation>DOI</dc:relation>
+      <dc:identifier>DOI</dc:identifier>
+      <dc:format>application/zip</dc:format>
+    </oai_dc:dc>
+  </metadata>
+</record>

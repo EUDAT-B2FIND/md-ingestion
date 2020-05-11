@@ -1,0 +1,115 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6557</identifier>
+    <datestamp>2018-10-25T08:12:41Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.015</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Peral, Mireia</default:creatorName>
+              <default:givenName>Mireia</default:givenName>
+              <default:familyName>Peral</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-8026-2753</default:nameIdentifier>
+              <default:affiliation>Group of Dynamics of the Lithosphere, Institut de Ci&#232;ncies de la Terra Jaume Almera (ICTJA-CSIC), Barcelona, Spain.</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Kir&#225;ly, &#193;gnes</default:creatorName>
+              <default:givenName>&#193;gnes</default:givenName>
+              <default:familyName>Kir&#225;ly</default:familyName>
+              <default:affiliation>The Centre for Earth Evolution and Dynamics, University of Oslo, Norway</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Zlotnik, Sergio</default:creatorName>
+              <default:givenName>Sergio</default:givenName>
+              <default:familyName>Zlotnik</default:familyName>
+              <default:affiliation>Department of Civil and Environmental Engineering, Universitat Polit&#232;cnica de Catalunya, Barcelona, Spain.</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Funiciello, Francesca</default:creatorName>
+              <default:givenName>Francesca</default:givenName>
+              <default:familyName>Funiciello</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7900-8272</default:nameIdentifier>
+              <default:affiliation>Laboratory of Experimental Tectonics, Department of Sciences, Universit&#224; degli Studi Roma Tre, Roma, Italy.</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Fern&#224;ndez, Manel</default:creatorName>
+              <default:givenName>Manel</default:givenName>
+              <default:familyName>Fern&#224;ndez</default:familyName>
+              <default:affiliation>Group of Dynamics of the Lithosphere, Institut de Ci&#232;ncies de la Terra Jaume Almera (ICTJA-CSIC), Barcelona, Spain</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Faccenna, Claudio</default:creatorName>
+              <default:givenName>Claudio</default:givenName>
+              <default:familyName>Faccenna</default:familyName>
+              <default:affiliation>Laboratory of Experimental Tectonics, Department of Sciences, Universit&#224; degli Studi Roma Tre, Roma, Italy.</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Verg&#233;s, Jaume</default:creatorName>
+              <default:givenName>Jaume</default:givenName>
+              <default:familyName>Verg&#233;s</default:familyName>
+              <default:affiliation>Group of Dynamics of the Lithosphere, Institut de Ci&#232;ncies de la Terra Jaume Almera (ICTJA-CSIC), Barcelona, Spain.</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="eng">Supplement to "Opposite subduction polarity in adjacent plate segments"</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>Subduction analog models</default:subject>
+            <default:subject>ananlogue models</default:subject>
+            <default:subject>double subduction system</default:subject>
+            <default:subject>trench curvature</default:subject>
+            <default:subject>EPOS</default:subject>
+            <default:subject>Multi-scale laboratories</default:subject>
+            <default:subject>analogue models of geologic processes</default:subject>
+            <default:subject>analogue modelling results</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ContactPerson">
+              <default:contributorName>Peral, Mireia</default:contributorName>
+              <default:givenName>Mireia</default:givenName>
+              <default:familyName>Peral</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0001-8026-2753</default:nameIdentifier>
+              <default:affiliation>Group of Dynamics of the Lithosphere, Institut de Ci&#232;ncies de la Terra Jaume Almera (ICTJA-CSIC), Barcelona, Spain.</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>Laboratory of Experimental Tectonics (Universit&#224; di Roma TRE, Italy)</default:contributorName>
+              <default:affiliation>Universit&#224; di Roma TRE, Italy</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:language>eng</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1029/2017TC004896</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>949939 Bytes</default:size>
+            <default:size>2 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/pdf</default:format>
+            <default:format>video/mp4</default:format>
+          </default:formats>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">This dataset contains ten movies corresponding to five analog experiments of double subduction systems with opposite polarity in adjacent plate segments. The laboratory model consists of two viscous layers of silicone putty representing the lithospheric plates, on top of a tank of syrup representing the mantle. Different setups have been designed to test the influence of the width of the plates and the initial separation between them on the resulting trench retreat velocities, deformation of plates and mantle flow.<default:br/>
+         <default:br/>The movies show the time evolution of each experiment from the top and an oblique position of the camera (indicated by "_top" and "_ob" suffixes in the file names). Model 1 and 2 consist of two plates of 30 cm width spaced 10 cm and 0.5 cm, respectively. These models are designed to study the influence of the initial separation between plates on the dynamics of the mantle flow and plates interaction. Model 3 consists of two 20 cm wide plates with an initial separation of 0.5 cm. We use this model to show the mantle flow pattern in a double subduction system. Model 4 is composed of two 10 cm wide plates with an initial separation of 0.5 cm. This model is designed to analyze the effects of the plate width on the dynamics of the system. Finally, Model 5 is designed to study the interaction of two near subducting plates with different widths (30 cm and 10 cm wide plates).<default:br/>
+         <default:br/>For details of the model set-up and results obtained please refer to the data description file and Peral et al. (2018).</default:description>
+          </default:descriptions>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

@@ -1,0 +1,16 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>d4bb9c061c5e11e2a2aa782bcb0741354c05ee5991654a169d17a55e01aba9d2</identifier>
+    <datestamp>2018-11-15T16:39:44Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CSTParser</dc:title>
+      <dc:description>CSTParser is a multi-document discourse parser. Based on machine learning techniques and hand-crafted rules, the system 
+identifies a set of relations predicted by CST (Cross-document Structure Theory) among sentences of different texts on the same topic.</dc:description>
+      <dc:date>2012-10-22</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

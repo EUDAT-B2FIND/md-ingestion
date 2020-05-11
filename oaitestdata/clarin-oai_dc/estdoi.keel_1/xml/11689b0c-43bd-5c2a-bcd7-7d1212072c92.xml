@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5756974</identifier>
+    <datestamp>2019-05-18T17:26:59Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti Keele Instituudi tekstikorpus</dc:title>
+      <dc:title xml:lang="en">The Text Corpus of the Institute of the Estonian Language</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2012</dc:date>
+      <dc:date>Issued: 2012-06-12</dc:date>
+      <dc:date>Updated: 2017-03-03</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-00018L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">EKI tekstikorpus on koostatud juhuslikult kogutud materjalist (10,4 miljonit s&#245;navormi; u 80% ulatuses ajalehetekstid) ja pole seega 'representatiivne'. Ka ei ole korpus m&#228;rgendatud, sobides eelk&#245;ige leksikaalse materjali otsinguks.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The material for the text corpus has been collected haphazardly, (10.4 million word forms; ca 80% of the texts come from newspapers), which is why the corpus is not representative. Nor is the corpus tagged, thus being suited for lexical search mainly.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

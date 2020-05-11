@@ -1,0 +1,72 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.887837</identifier>
+    <datestamp>2018-05-31T15:37:19Z</datestamp>
+    <setSpec>FRAM</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="URL">https://doi.pangaea.de/10.1594/PANGAEA.887837</identifier>
+      <creators>
+        <creator>
+          <creatorName>N&#246;thig, Eva-Maria</creatorName>
+          <nameIdentifier schemeURI="http://orcid.org" nameIdentifierScheme="ORCID">0000-0002-7527-7827</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Bauerfeind, Eduard</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Lalande, Catherine</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Chlorophyll a measured on water bottle samples during Maria S. Merian cruise MSM29</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2018</publicationYear>
+      <subjects>
+        <subject>Hausgarten</subject>
+        <subject subjectScheme="Parameter">Event label</subject>
+        <subject subjectScheme="Parameter">Optional event label</subject>
+        <subject subjectScheme="Parameter">Date/Time of event</subject>
+        <subject subjectScheme="Parameter">Latitude of event</subject>
+        <subject subjectScheme="Parameter">Longitude of event</subject>
+        <subject subjectScheme="Parameter">Elevation of event</subject>
+        <subject subjectScheme="Parameter">DEPTH, water</subject>
+        <subject subjectScheme="Parameter">Chlorophyll a</subject>
+        <subject subjectScheme="Campaign">MSM29</subject>
+        <subject subjectScheme="Basis">Maria S. Merian</subject>
+        <subject subjectScheme="Project">Biological Oceanography @ AWI (AWI_BioOce)</subject>
+        <subject subjectScheme="Project">FRontiers in Arctic marine Monitoring (FRAM)</subject>
+        <subject subjectScheme="Project">Long-term Investigation at AWI-Hausgarten off Svalbard (Hausgarten)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="HostingInstitution">
+          <contributorName>Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research, Bremerhaven</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Collected">2013-06-25T10:58:00/2013-07-09T01:25:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="IsPartOf">https://doi.pangaea.de/10.1594/PANGAEA.887882</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1594/PANGAEA.834685</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.2312/cr_msm29</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1594/PANGAEA.819391</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>66 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>78.62 4.33983 79.71617 11.0885</geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

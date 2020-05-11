@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.spraakbanken.gu.se:10794/82</identifier>
+    <datestamp>2017-10-26T08:04:20Z</datestamp>
+    <setSpec>hdl_10794_1</setSpec>
+    <setSpec>hdl_10794_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Bellman (2015-11-09)</dc:title>
+      <dc:title xml:lang="sv">Bellman (2015-11-09)</dc:title>
+      <dc:creator>n/a, n/a</dc:creator>
+      <dc:subject>Swedish</dc:subject>
+      <dc:subject>Collected works</dc:subject>
+      <dc:description xml:lang="en">Collected works of C.M. Bellman.</dc:description>
+      <dc:description xml:lang="sv">C.M. Bellmans samlade verk.</dc:description>
+      <dc:date>2012-05-30</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/10794/82</dc:identifier>
+      <dc:language>swe</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Bellmanss&#228;llskapet</dc:publisher>
+      <dc:source>https://spraakbanken.gu.se/swe/resurs/bellman</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

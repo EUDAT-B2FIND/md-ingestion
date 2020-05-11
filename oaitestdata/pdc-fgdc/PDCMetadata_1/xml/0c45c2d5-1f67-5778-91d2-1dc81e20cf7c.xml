@@ -1,0 +1,151 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>11929_fgdc</identifier>
+    <datestamp>2017-04-09T22:02:34Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Lina Assad</origin>
+            <origin>Leah Braithwaite</origin>
+            <origin>Darlene Langois</origin>
+            <origin>Ellsworth LeDrew</origin>
+            <origin>Eveline Bernier</origin>
+            <origin>Julie Friddell</origin>
+            <origin>Songnian Li</origin>
+            <origin>Stephane Charlebois</origin>
+            <origin>Yvan B&#233;dard</origin>
+            <origin>Ziqiang Ou</origin>
+            <pubdate>20140501</pubdate>
+            <title>CanICE - A Sea Ice Information Database and Web-based Portal</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Braithwaite, Leah, Lina Assad, Darlene Langois, Stephane Charlebois, Ziqiang Ou, Songnian Li, Ellsworth LeDrew, Julie Friddell, Yvan Bedard, and Eveline Bernier. 2013. CanICE - A Sea Ice Information Database and Web-based Portal. Waterloo, Canada: Canadian Cryospheric Information Network (CCIN).</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=11929</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>This project will create a publicly-accessible database with geographic and time-related reference points of sea ice features, including coverage, concentration, type, characteristics, and extreme ice hazards. The database will contain detailed information important to offshore activities and environmental assessments in the Beaufort Sea region. Access to the database will be through the Polar Data Catalogue (PDC). The database will be produced in a standard format to allow for integration with various information sources. New tools will be available for users to easily find information and to study a variety of sea ice properties, including changes over time, differences between locations, and the impacts of climate. The database will be created through the development of a quality-controlled, interoperable geo-database including appropriate data management strategies and database models of sea ice indices. It will enable online, web-based open access to historical and current sea ice information via the PDC, and it will maximize data usability through powerful state-of-the-art tools for knowledge discovery, statistical and climatological analyses and information visualization.</abstract>
+          <purpose>Canada has the world's longest coastline and largest area of sea ice. Sea ice exerts important seasonal effects on weather, climate, and marine ecosystems with major implications for the safety of marine transportation, northern communities, tourism, and offshore resource development and exploitation. Whether preparing policy or regulations, assessing the impacts of activities on ecosystems, designing sustainable infrastructure, or planning and conducting safe and secure shipping, it is vital to have the best information possible about the variable ice conditions of the Arctic marine environment. Large collections of such data are acquired, compiled, produced, and maintained by national and international agencies such as the Canadian Ice Service (CIS). However, such data collections have not been made readily accessible other than for operational use. The purpose of this project is to develop a Canadian sea ice information infrastructure that manages historical, ongoing, and in-situ sea ice data for research and decision-making, with a particular focus on meeting the needs of Beaufort environmental assessments. CanICE aims to put all current and historical CIS sea ice information from the Beaufort Sea online for northern organizations, northern residents, industry, regulators, researchers, forecasters, modellers, and the general public.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): BREA. For further information: https://www.polardata.ca/pdcsearch/</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>19490101</begdate>
+              <enddate>99991231</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>In work</progress>
+          <update>Weekly</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-164</westbc>
+            <eastbc>-86</eastbc>
+            <northbc>80</northbc>
+            <southbc>61</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Beaufort Sea</themekey>
+            <themekey>Climate</themekey>
+            <themekey>Database</themekey>
+            <themekey>Environmental impacts</themekey>
+            <themekey>Governmental policies</themekey>
+            <themekey>Ice chart</themekey>
+            <themekey>Inuvialuit</themekey>
+            <themekey>Petroleum industry</themekey>
+            <themekey>Sea ice</themekey>
+            <themekey>Shipping</themekey>
+          </theme>
+          <place>
+            <placekt>Beaufort Sea (CGNDB ID: LACKU)</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Public</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Aboriginal Affairs and Northern Development Canada</cntorg>
+              <cntper>Beaufort Regional Environmental Assessment</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>15 Eddy St.</address>
+              <city>Gatineau</city>
+              <state>Quebec</state>
+              <postal>K1A0H4</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>819-953-0031</cntvoice>
+            <cntemail>beaufort@aandc.gc.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>11929</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20140501</metd>
+        <metrd>20140501</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Beaufort Regional Environmental Assessment</cntper>
+              <cntorg>Aboriginal Affairs and Northern Development Canada</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>15 Eddy St.</address>
+              <city>Gatineau</city>
+              <state>Quebec</state>
+              <postal>K1A0H4</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>819-953-0031</cntvoice>
+            <cntemail>beaufort@aandc.gc.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

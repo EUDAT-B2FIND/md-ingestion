@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17950797</identifier>
+    <datestamp>2019-06-16T17:36:31Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Uma Lehe korpuse otsing</dc:title>
+      <dc:creator>Iva, Sulev</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-04</dc:date>
+      <dc:date>Updated: 2019-01-04</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00182L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">V&#245;ru ja seto ajakirjanduskorpuse mahuks on
+1 269 000 s&#245;na, sellest: Uma Lehe korpus &#8211; ca 762 000 s&#245;na, Ajalehe Setomaa korpus &#8211; seto keeles 279 000, eesti keeles 228 000 s&#245;na. V&#245;ru ja seto kirjakeele ajakirjanduse allkorpuste vaba juurdep&#228;&#228;suga otsingumootorid asuvad: 
+- Uma Leht: http://www.murre.ut.ee/otsing/voru.php
+- Setomaa: http://synaq.org/seto</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

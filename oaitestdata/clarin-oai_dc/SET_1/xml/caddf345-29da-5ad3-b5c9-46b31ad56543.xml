@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/29</identifier>
+    <datestamp>2016-01-21T14:28:27Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>WordNet</dc:title>
+      <dc:creator>Piasecki, Maciej</dc:creator>
+      <dc:creator>Maziarz, Marek</dc:creator>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:creator>Broda, Bartosz</dc:creator>
+      <dc:creator>K&#281;dzia, Pawe&#322;</dc:creator>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:creator>Radziszewski, Adam</dc:creator>
+      <dc:creator>Kali&#324;ski, Micha&#322;</dc:creator>
+      <dc:description>plWordNet is a lexico-semantic network which reflects the lexical system of the Polish language. There are at present ca. 144,000 nouns, verbs and adjectives in plWordNet, ca. 203,000 word senses and ca. 500,000 relations. It is already the second-largest wordnet in the world, and it keeps growing.</dc:description>
+      <dc:date>2010-07-01</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/29</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://plwordnet.pwr.wroc.pl/wordnet</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

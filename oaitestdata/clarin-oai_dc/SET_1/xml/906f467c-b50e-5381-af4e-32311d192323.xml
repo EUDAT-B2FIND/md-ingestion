@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-2372</identifier>
+    <datestamp>2018-04-03T17:20:02Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>MUSCIMA++</dc:title>
+      <dc:creator>Haji&#269; jr., Jan</dc:creator>
+      <dc:subject>Optical Music Recognition</dc:subject>
+      <dc:subject>Music Notation</dc:subject>
+      <dc:subject>Graph-Based Representation</dc:subject>
+      <dc:subject>Symbol Detection</dc:subject>
+      <dc:description>MUSCIMA++ is a dataset of handwritten music notation for musical symbol detection. It contains 91255 symbols, consisting of both notation primitives and higher-level notation objects, such as key signatures or time signatures. There are 23352 notes in the dataset, of which 21356 have a full notehead, 1648 have an empty notehead, and 348 are grace notes. For each annotated object in an image, we provide both the bounding box, and a pixel mask that defines exactly which pixels within the bounding box belong to the given object. Composite constructions, such as notes, are captured through explicitly annotated relationships of the notation primitives (noteheads, stems, beams...). This way, the annotation provides an explicit bridge between the low-level and high-level symbols described in Optical Music Recognition literature.&#13;
+&#13;
+MUSCIMA++ has annotations for 140 images from the CVC-MUSCIMA dataset [2], used for handwritten music notation writer identification and staff removal. CVC-MUSCIMA consists of 1000 binary images: 20 pages of music were each re-written by 50 musicians, binarized, and staves were removed. We had 7 different annotators marking musical symbols: each annotator marked one of each 20 CVC-MUSCIMA pages, with the writers selected so that the 140 images cover 2-3 images from each of the 50 CVC-MUSCIMA writers. This setup ensures maximal variability of handwriting, given the limitations in annotation resources.&#13;
+&#13;
+The MUSCIMA++ dataset is intended for musical symbol detection and classification, and for music notation reconstruction. A thorough description of its design is published on arXiv [2]: https://arxiv.org/abs/1703.04824 The full definition of the ground truth is given in the form of annotator instructions.</dc:description>
+      <dc:date>2017-08-25</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-2372</dc:identifier>
+      <dc:language>zxx</dc:language>
+      <dc:relation>https://ufal.mff.cuni.cz/~hajicj/2017/docs/icdar2017_CAMERA.pdf</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>https://ufal.mff.cuni.cz/muscima/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

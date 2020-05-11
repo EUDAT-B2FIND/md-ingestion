@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-306</identifier>
+    <datestamp>2016-04-06T16:39:55Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Speech Processing, Recognition and Automatic Annotation Kit (SPRAAK)</dc:title>
+      <dc:contributor>Demuynck, Kris</dc:contributor>
+      <dc:contributor>Roelens, Jan</dc:contributor>
+      <dc:contributor>Wambacq, Patrick</dc:contributor>
+      <dc:subject>speech recognition</dc:subject>
+      <dc:description>SPRAAK (also Dutch for 'speech') is a speech recognition package. As such it is useful for transcription of speech, alignment of spoken and written language, annotation of corpora, etc. It is an efficient and flexible tool that combines many of the recent advancements in automatic speech recognition with a very efficient decoder in a proven HMM architecture. SPRAAK can be adapted for all languages, except tonal ones.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-306</dc:identifier>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Belgium</dc:coverage>
+      <dc:source>http://www.spraak.org</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

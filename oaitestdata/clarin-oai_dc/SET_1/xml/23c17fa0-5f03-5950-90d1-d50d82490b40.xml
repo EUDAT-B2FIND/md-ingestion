@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>b1c1a89a0b6611e5a2aa782bcb074135dca9d493ea3845a488aec73eb281e73b</identifier>
+    <datestamp>2018-11-15T16:40:16Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:tool</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ixa-pipe-coref-eu</dc:title>
+      <dc:description>ixa-pipe-coref-eu is a Basque coreference resolution tool, which is an adaptation of Stanford Deterministic Coreference Resolution (http://www-nlp.stanford.edu/downloads/dcoref.shtml).
+
+This tool reads a text document annotated with lemmas, named entities and constituents formated in Natural Language Processing Annotation Format (NAF) (http://wordpress.let.vupr.nl/naf/) and outputs a new NAF document.
+
+This tool is partly funded by the European Commission project QTLeap FP7-ICT-2013.4.1-610516 (http://qtleap.eu). This tool is distributed under the license GPL v3.0.</dc:description>
+      <dc:date>2015-06-05</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

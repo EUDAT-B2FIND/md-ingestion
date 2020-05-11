@@ -1,0 +1,102 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/8224085.v1",
+    "DiscHierarchy": [
+        "3.3.1.1",
+        "Agriculture, Forestry, Horticulture",
+        "Soil Sciences"
+    ],
+    "Discipline": "Humanities;History;Philosophy;Medicine",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/8224085",
+    "MetadataAccess": [
+        "oai:figshare.com:article/8224085"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-06-05T10:38:41Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Laparoscopy_movie_of_pop-up_flaps_of_de_humanis_corporis_fabrica_libri_septem_by_Vesalius/8224085"
+    ],
+    "ResourceType": [
+        "Dataset",
+        "Media"
+    ],
+    "Rights": [
+        "CC BY 4.0"
+    ],
+    "author": [
+        "Adam Gibson (6779222)",
+        "Tabitha Tuckett (6796102)"
+    ],
+    "fulltext": "oai:figshare.com:article/8224085;2019-06-05T10:38:41Z;category_160;category_320;category_1531;category_1532;category_1657;portal_549;item_type_2;month_year_06_2019;Laparoscopy movie of pop-up flaps of de humanis corporis fabrica libri septem by Vesalius;Adam Gibson (6779222);Tabitha Tuckett (6796102);Digital Humanities;Radiology and Organ Imaging;History and Philosophy of Medicine;History and Philosophy of Science (incl. Non-historical Philosophy of Science);Heritage and Cultural Conservation;Vesalius;Laparoscopy;Heritage Science;Heritage Imaging;Digital Humanities;UCL Special Collections;Imaging under pop-up flaps of De humanis corporis fabrica libri septem by Andreas Vesalius using laparoscopy on 8 Feb 2018. Movie shows a view through the laparoscope, showing the complexity of the pop-up features.;2019-06-05T10:38:41Z;Dataset;Media;10.5522/04/8224085.v1;https://figshare.com/articles/Laparoscopy_movie_of_pop-up_flaps_of_de_humanis_corporis_fabrica_libri_septem_by_Vesalius/8224085;CC BY 4.0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "9c2be752-3f85-5ce2-94f0-4f5b5765b5e0",
+    "notes": [
+        "Imaging under pop-up flaps of De humanis corporis fabrica libri septem by Andreas Vesalius using laparoscopy on 8 Feb 2018. Movie shows a view through the laparoscope, showing the complexity of the pop-up features."
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/8224085"
+    ],
+    "oai_set": [
+        "category_160",
+        "category_320",
+        "category_1531",
+        "category_1532",
+        "category_1657",
+        "portal_549",
+        "item_type_2",
+        "month_year_06_2019"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Digital Humanities"
+        },
+        {
+            "name": "Radiology Organ Imaging"
+        },
+        {
+            "name": "History Philosophy Medicine"
+        },
+        {
+            "name": "Heritage Cultural Conservation"
+        },
+        {
+            "name": "Vesalius"
+        },
+        {
+            "name": "Laparoscopy"
+        },
+        {
+            "name": "Heritage Science"
+        },
+        {
+            "name": "Heritage Imaging"
+        },
+        {
+            "name": "Digital Humanities"
+        },
+        {
+            "name": "UCL Special Collections"
+        }
+    ],
+    "title": [
+        "Laparoscopy movie of pop-up flaps of de humanis corporis fabrica libri septem by Vesalius"
+    ],
+    "url": ""
+}

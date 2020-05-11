@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-620</identifier>
+    <datestamp>2016-04-06T16:39:55Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Latvian Folktales and Legends</dc:title>
+      <dc:contributor>B&#275;rzi&#326;a-Reinsone, Sanita</dc:contributor>
+      <dc:description>Latvian fairytales and legends collected by Latvian folklorist P&#275;teris &#352;mits, published 1927-1938 (15 volumes). It is the largest published collection of Latvian folktales and legends.</dc:description>
+      <dc:date>1999</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-620</dc:identifier>
+      <dc:language>lav</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Latvia</dc:coverage>
+      <dc:publisher>Institute of Mathematics and Computer Science, University of Latvia</dc:publisher>
+      <dc:source>http://valoda.ailab.lv/folklora/pasakas/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

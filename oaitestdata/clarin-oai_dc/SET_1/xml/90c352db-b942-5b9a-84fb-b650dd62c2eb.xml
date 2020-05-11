@@ -1,0 +1,38 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/262</identifier>
+    <datestamp>2016-05-19T20:37:05Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Poliqarp2</dc:title>
+      <dc:creator>Zaborowski, Bartosz</dc:creator>
+      <dc:creator>Zab&#322;ocki, Aleksander</dc:creator>
+      <dc:subject>linguistic search engine</dc:subject>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>treebank</dc:subject>
+      <dc:subject>structure bank</dc:subject>
+      <dc:description>Poliqarp2 is a linguistic search engine, capable of searching through large corpora annotated on multiple levels. It is not an     upgraded version of Poliqarp, it is a completely new software developed from scratch.</dc:description>
+      <dc:date>2016-04-11</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/262</dc:identifier>
+      <dc:language>N/A</dc:language>
+      <dc:rights>GNU GPL3</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/gpl-3.0.en.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>downloadable_files_count: 5</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+      <dc:source>https://sourceforge.net/projects/poliqarp2/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

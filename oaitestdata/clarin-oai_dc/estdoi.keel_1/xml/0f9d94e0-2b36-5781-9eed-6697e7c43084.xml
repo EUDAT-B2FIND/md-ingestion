@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757204</identifier>
+    <datestamp>2019-06-14T17:36:30Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Suulise keele korpus</dc:title>
+      <dc:title xml:lang="en">Corpus of Spoken Estonian</dc:title>
+      <dc:creator>R&#228;&#228;bis, Andriela</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2013</dc:date>
+      <dc:date>Issued: 2013-01-09</dc:date>
+      <dc:date>Updated: 2019-01-08</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00077L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The Department of Estonian Language initiated the corpus of spoken Estonian in 1997. The corpus is compiled by the research group of Spoken Estonian (Tiit Hennoste, Airi Jansons, Liina Lindstr&#246;m, Andriela R&#228;&#228;bis, Olga Gerassimenko, Krista Strandson, Piret Toomet, Riina Vellerind). 
+The corpus is transcribed by the transcription of conversational analysis (CA). Each tape is provided with a header that lists in all 44 situational factors that have been found to affect language use in the analysis of various languages. For each concrete tape the number of possible factors is as high as possible. 
+The corpus is planned as an open corpus, i.e. no limits have been set. Our intention is to collect various types of oral speech, the usage of both everyday and institutional conversation, spontaneous and planned speech, monologues and dialogues, face-to-face interaction and media texts. The speakers are inhabitants of the largest towns of Estonia: Tallinn, Tartu and P&#228;rnu. 
+As of April 2018, the corpus consists of 3761 audio  and 166 video records (703 hours, 3927 conversations alltogether) and 2337 transliterated texts (2 206 810 words according to Microsoft Word statistics). 
+Recordings divide to:  
+1345 face-to-face conversations 
+1924 phone conversations 
+456 radio and TV broadcasts 
+7 skype conversations 
+
+195 undefined conversations (partially transcribed or fully transcribed extinct recordings). 
+
+On the institutionality scale, conversations divide to: 
+824 everyday conversations;
+2796 institutional conversations;
+84 other conversations, 
+223 non-defined. 
+
+The institutional situations include a large number of shop dialogues, dialogues at service institutions and government offices. 
+The corpus is a data bank in the Word format and simple txt-format (ISO-8859-1). In order to access the corpus, a contract with the research group of Spoken Estonian is required. </dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

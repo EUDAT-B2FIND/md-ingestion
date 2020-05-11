@@ -1,0 +1,15 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>4dc94c44bc7c11e1a404080027e73ea26de48b275c064ef79134fc7632d15394</identifier>
+    <datestamp>2018-11-15T16:39:36Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:platform</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare Platform</dc:title>
+      <dc:description>The purpose of the U-Compare platform is to facilitate easy and rapid development and evaluation of NLP and text mining systems. It includes utilities (including a graphical user interface, the U-Compare workbench, see separate record in META-SHARE) to create workflows from individual, interoperable NLP tools and resources, a customisable system to create and evaluate different workflows, and different utilities to visualise different types of annotations produced by workflows.  U-Compare is packaged with the world&#226;&#128;&#153;s largest repository of UIMA components. This repository, which originally consisted largely of tools for processing English biomedical text, in being considerably enlarged as ongoing work, to include tools that can operate on a number of European languages and multilingual tools.</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

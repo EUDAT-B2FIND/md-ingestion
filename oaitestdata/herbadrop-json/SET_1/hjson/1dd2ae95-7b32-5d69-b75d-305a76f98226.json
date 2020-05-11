@@ -1,0 +1,91 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-2316224", 
+        "ARKID": "2316224"
+    }, 
+    "depositIdentifier": "P05513957", 
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01", 
+            "fileName": "P05513957.jpg", 
+            "ocr": {
+                "deu": "HERBARIUM MUSE! PARISIENSIS\nHerbier G SAG\nHERBARIUM\nGeorgii Dominicique SAG\n!ia)\nSAINT MAUR (Gal\nm Paris\nMuseu\nHerbier\nIIIIIIIIIIIIIIIIHIIIIIIIllI\nP05513957\n", 
+                "eng": "HERBARIUM MUSE! PARISIENSIS\nHerbier G SAG\nHERBARIUM\nGeorgii Dominicique SAG\nIia)\nSAINT MAUI! (Gal\nm Paris\nMuseu\nHerbier\nIllllllllHlllllHllllllllll\nP05513957\n", 
+                "fra": "HERBARIUM MUSE! PARISIENSIS\nHerbier G SAG\nHERBARIUM\nGeorgii Dominicique SAG\nlia)\nSAINT MAUR {Gal\nm Paris\nMuseu\nHerbier\nIllIllllllllllllllllllllIlll\nP05513957\n", 
+                "lat": "HERBARIUM MUSE! PARISIENSIS\nHerbier G SAG\nHERBARIUM\nGeorgii Dominicique SAG\nlia)\nSAINT MAUR (Gal\nm Paris\nMuseu\nHerbier\nlllIIIIIIHIIIIIHIIIIIIIIlI\nP05513957\n", 
+                "spa": "HERBARIUM MUSE! PARISIENSIS\nHerbier G SAG\nHERBARIUM\nGeorgii Dominicique SAG\ntia)\nSAINT MAUI! (Gal\nm Paris\nMuseu\nHerbier\nIllIIIIIIHIIIIIHIIIIIIlIlI\nP05513957\n"
+            }
+        }
+    ], 
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        }, 
+        "aip.dc.creator": "unavailable", 
+        "aip.dc.description": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.format": {
+            "eng": "image/jpeg"
+        }, 
+        "aip.dc.identifier": "ark:/87895/1.90-2316224", 
+        "aip.dc.language": "und_UND", 
+        "aip.dc.publisher": "MNHN", 
+        "aip.dc.relation": {}, 
+        "aip.dc.rights": {
+            "und": "http://creativecommons.org/licenses/by/4.0/"
+        }, 
+        "aip.dc.source": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.subject": {
+            "lat": "Euphorbiaceae"
+        }, 
+        "aip.dc.title": {
+            "lat": "Euphorbia ruscinonensis Boiss."
+        }, 
+        "aip.dc.type": {
+            "eng": "StillImage|PRESERVED_SPECIMEN"
+        }, 
+        "aip.files": [
+            {
+                "checksum": "fb999ca46d15857c68bafccd1f537e98cab804a995ea7d32874a9d80b69454c5", 
+                "checksumType": "SHA-256", 
+                "encoding": "UTF-8", 
+                "format": "TXT", 
+                "formatVersion": "NA", 
+                "identifier": "ark:/87895/1.90-2316224/2", 
+                "name": "DESC/P05513957.txt", 
+                "originalChecksum": "8e49f29f95005537902fbad2cacc1af3", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 2628
+            }, 
+            {
+                "checksum": "4d0272bb279d361586ea947a9362cf3171ce8e1e5c4e2f0baf283ad82f935633", 
+                "checksumType": "SHA-256", 
+                "format": "JPEG", 
+                "formatVersion": "1.01", 
+                "identifier": "ark:/87895/1.90-2316224/1", 
+                "name": "P05513957.jpg", 
+                "originalChecksum": "809bdf2c5a92b0230b571bb740f7e714", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 5464482
+            }
+        ], 
+        "aip.meta.archivingDate": "2019-03-06T20:22:53+0100", 
+        "aip.meta.depositIdentifier": "P05513957", 
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        }, 
+        "aip.meta.finalAction": {
+            "fra": "Conservation d\u00e9finitive"
+        }, 
+        "aip.meta.note": {}, 
+        "aip.meta.pacIdentifier": 2316224, 
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05513957", 
+        "aip.meta.project": "90", 
+        "aip.meta.transferringAgency": "MNHN"
+    }, 
+    "score": 15.658156, 
+    "transferringAgencyIdentifier": "mnhnftp"
+}

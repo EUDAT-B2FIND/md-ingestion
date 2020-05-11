@@ -1,0 +1,79 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1508</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>HamleDT 3.0</dc:title>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:creator>Mare&#269;ek, David</dc:creator>
+      <dc:creator>Ma&#353;ek, Jan</dc:creator>
+      <dc:creator>Popel, Martin</dc:creator>
+      <dc:creator>Ramasamy, Loganathan</dc:creator>
+      <dc:creator>Rosa, Rudolf</dc:creator>
+      <dc:creator>&#352;t&#283;p&#225;nek, Jan</dc:creator>
+      <dc:creator>&#381;abokrtsk&#253;, Zden&#283;k</dc:creator>
+      <dc:subject>annotated corpus</dc:subject>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>syntax</dc:subject>
+      <dc:subject>dependency</dc:subject>
+      <dc:subject>treebank</dc:subject>
+      <dc:subject>harmonized annotation</dc:subject>
+      <dc:subject>common annotation style</dc:subject>
+      <dc:description>HamleDT (HArmonized Multi-LanguagE Dependency Treebank) is a compilation of existing dependency treebanks (or dependency conversions of other treebanks), transformed so that they all conform to the same annotation style. This version uses Universal Dependencies as the common annotation style.&#13;
+&#13;
+Update (November 1017): for a current collection of harmonized dependency  treebanks, we recommend using the Universal Dependencies (UD). All of the corpora that are distributed in HamleDT in full are also part of the UD project; only some corpora from the Patch group (where HamleDT provides only the harmonizing scripts but not the full corpus data) are available in HamleDT but not in UD.</dc:description>
+      <dc:date>2015-08-18</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1508</dc:identifier>
+      <dc:language>ara</dc:language>
+      <dc:language>eus</dc:language>
+      <dc:language>ben</dc:language>
+      <dc:language>bul</dc:language>
+      <dc:language>cat</dc:language>
+      <dc:language>hrv</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:language>dan</dc:language>
+      <dc:language>nld</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>est</dc:language>
+      <dc:language>fin</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:language>ell</dc:language>
+      <dc:language>grc</dc:language>
+      <dc:language>heb</dc:language>
+      <dc:language>hin</dc:language>
+      <dc:language>hun</dc:language>
+      <dc:language>ind</dc:language>
+      <dc:language>gle</dc:language>
+      <dc:language>ita</dc:language>
+      <dc:language>jpn</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:language>fas</dc:language>
+      <dc:language>pol</dc:language>
+      <dc:language>por</dc:language>
+      <dc:language>ron</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:language>slk</dc:language>
+      <dc:language>slv</dc:language>
+      <dc:language>spa</dc:language>
+      <dc:language>swe</dc:language>
+      <dc:language>tam</dc:language>
+      <dc:language>tel</dc:language>
+      <dc:language>tur</dc:language>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0023-9551-4</dc:relation>
+      <dc:rights>HamleDT 3.0 License Terms</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-hamledt-3.0</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/x-tar</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/hamledt</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

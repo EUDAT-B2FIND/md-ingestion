@@ -1,0 +1,127 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-517</identifier>
+    <datestamp>2020-04-07T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-517</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Sch&#228;fer, Richard A.</creatorName>
+          <givenName>Richard A.</givenName>
+          <familyName>Sch&#228;fer</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-9938-1920</nameIdentifier>
+          <affiliation>University of Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Lott, Steffen C.</creatorName>
+          <givenName>Steffen C.</givenName>
+          <familyName>Lott</familyName>
+          <nameIdentifier nameIdentifierScheme="GND">1184511322</nameIdentifier>
+          <affiliation>University of Freiburg</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Georg, Jens</creatorName>
+          <givenName>Jens</givenName>
+          <familyName>Georg</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-7746-5522</nameIdentifier>
+          <affiliation>University of Freiburg</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Gr&#252;ning, Bj&#246;rn</creatorName>
+          <givenName>Bj&#246;rn</givenName>
+          <familyName>Gr&#252;ning</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-3079-6586</nameIdentifier>
+          <affiliation>University of Freiburg</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Hess, Wolfgang</creatorName>
+          <givenName>Wolfgang</givenName>
+          <familyName>Hess</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-5340-3423</nameIdentifier>
+          <affiliation>University of Freiburg</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Vo&#223;, Bj&#246;rn</creatorName>
+          <givenName>Bj&#246;rn</givenName>
+          <familyName>Vo&#223;</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-5377-2800</nameIdentifier>
+          <affiliation>University of Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>GLASSgo Setup &amp; Usage</title>
+        <title titleType="Subtitle">using GLASSgo via Docker, Galaxy and the Web Server</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Computer and Information Science</subject>
+        <subject>GLASSgo Docker Manual Tutorial</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Vo&#223;, Bj&#246;rn</contributorName>
+          <givenName>Bj&#246;rn</givenName>
+          <familyName>Vo&#223;</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName nameType="Personal">Vo&#223;, Bj&#246;rn</contributorName>
+          <givenName>Bj&#246;rn</givenName>
+          <familyName>Vo&#223;</familyName>
+          <affiliation>University of Stuttgart</affiliation>
+        </contributor>
+        <contributor contributorType="Researcher">
+          <contributorName nameType="Personal">Richard A. Sch&#228;fer</contributorName>
+          <givenName>Richard</givenName>
+          <familyName>A. Sch&#228;fer</familyName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Issued">2020-01-22</date>
+        <date dateType="Created">2020-04-02</date>
+        <date dateType="Submitted">2020-01-16</date>
+        <date dateType="Updated">2020-04-06</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Video</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relationType="IsCitedBy" relatedIdentifierType="DOI">10.3389/fgene.2018.00124</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>160876577</size>
+        <size>92273374</size>
+      </sizes>
+      <formats>
+        <format>video/mp4</format>
+        <format>video/mp4</format>
+      </formats>
+      <version>2.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Instruction video to install and use GLASSgo on multiple resources (e.g., Docker, Galaxy, web server). &#13;
+&#13;
+GLASSgo is available at &lt;a href="https://github.com/lotts/GLASSgo_ACC-Version/" target="_blank"&gt;Github&lt;/a&gt; with instructions and application data and is distributed under the MIT license.&#13;
+&#13;
+Furthermore, GLASSgo can applied using the &lt;a href="https://rna.usegalaxy.eu/" target="_blank"&gt;RNA Workbench Server&lt;/a&gt; or the &lt;a href="http://rna.informatik.uni-freiburg.de/GLASSgo/"&gt;GLASSgo Web Server&lt;/a&gt;</description>
+        <description descriptionType="Other">The analyses illustrated in this video were performed using GLASSgo v1.5.2 using Docker v19.03.4 and Galaxy v20.01. Furthermore, the RNA workbench server and the GLASSgo web server were operated on GLASSgo 1.5.2 and accessed on the 28th of March 2020.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Stuttgart, Germany</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Federal Ministry of Education and Research (BMBF)</funderName>
+          <awardNumber>031A310 and 031L0164A to B.V</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>

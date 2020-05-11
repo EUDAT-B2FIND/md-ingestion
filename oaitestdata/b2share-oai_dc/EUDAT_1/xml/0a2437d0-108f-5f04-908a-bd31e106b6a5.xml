@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/cac880ea6dd54dcf8c737bfe3818adc6</identifier>
+    <datestamp>2018-08-26T16:28:28Z</datestamp>
+    <setSpec>e9b9792e-79fb-4b07-b6b4-b9c2bd06d095</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:contributor>Asela Rajapakse (SCLab)</dc:contributor>
+      <dc:contributor>Doron Goldfarb (EAA)</dc:contributor>
+      <dc:creator>Miranda, Alberto (BSC)</dc:creator>
+      <dc:creator>Weigel, Tobias (DKRZ)</dc:creator>
+      <dc:creator>Dima, Emanuel (EKUT)</dc:creator>
+      <dc:creator>Cacciari, Claudio (Cineca)</dc:creator>
+      <dc:creator>Cortes, Toni (BSC)</dc:creator>
+      <dc:creator>Queralt, Anna (BSC)</dc:creator>
+      <dc:creator>Fares, Massimo (INGV)</dc:creator>
+      <dc:date>2018-08-26T16:28:28.270599+00:00</dc:date>
+      <dc:description>This document presents the work done by WP8 to produce a generic framework that allows the EUDAT CDI services to appropriately handle dynamic data. We propose a generic HTTP API to allow services to model the dynamic data lifecycle of research communities, present extensions to the Generic Execution Framework and discuss optimizations to data transfers and storage. We also discuss a proof-of-concept prototype for a dynamic data-enabled archival service based on the HTTP API and discuss the results obtained when using it to replicate a real use case.</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/55972615-30a5-415b-9e58-6fb08657b6af</dc:identifier>
+      <dc:identifier>10.23728/b2share.cac880ea6dd54dcf8c737bfe3818adc6</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/cac880ea6dd54dcf8c737bfe3818adc6</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/cac880ea6dd54dcf8c737bfe3818adc6</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:publisher>https://b2share.eudat.eu</dc:publisher>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:rights>Creative Commons Attribution (CC-BY)</dc:rights>
+      <dc:subject>Data Life Cycle models, Dynamic Data, fingerprinting, deduplication</dc:subject>
+      <dc:title>D8.5: Report on Dynamic Data Framework and Management Services</dc:title>
+      <dc:type>Text</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

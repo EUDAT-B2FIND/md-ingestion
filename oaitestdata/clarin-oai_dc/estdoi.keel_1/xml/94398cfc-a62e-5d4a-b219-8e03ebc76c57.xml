@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17926655</identifier>
+    <datestamp>2019-05-10T06:32:01Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="en">Emotsioonidetektor Google Chrome'i laiendusena</dc:title>
+      <dc:creator>Pajupuu, Hille</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-12-22</dc:date>
+      <dc:date>Updated: 2018-12-22</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-079D5L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Emotsioonidetektoriga saab hinnata veebikirjutise emotsionaalset m&#245;ju. Selleks tuleb esmalt emotsioonidetektor installeerida, seej&#228;rel v&#228;lja valida tekst ja klikata ikoonile. Detektor annab tekstile &#252;ldhinnangu: neutraalne, positiivne, negatiivne v&#245;i vastuoluline. Tekstis m&#228;rgitakse &#228;ra emotsioonitaju m&#245;jutavad v&#245;tmes&#245;nad ning ortograafiliste tekstil&#245;ikude emotsionaalsus (lilla - negatiivne, roheline - positiivne, kollane - vastuoluline, hall - ekstreemne).</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

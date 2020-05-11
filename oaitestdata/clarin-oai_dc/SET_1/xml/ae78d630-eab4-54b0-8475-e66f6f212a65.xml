@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/OPEN-89</identifier>
+    <datestamp>2018-07-23T09:13:44Z</datestamp>
+    <setSpec>hdl_000-c0-111_39</setSpec>
+    <setSpec>hdl_000-c0-111_43</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Copisti Digitali e Filologi Computazionali</dc:title>
+      <dc:creator>Boschetti, Federico</dc:creator>
+      <dc:subject>Filologia collaborativa e cooperativa</dc:subject>
+      <dc:subject>Filologia computazionale</dc:subject>
+      <dc:subject>Filologia digitale</dc:subject>
+      <dc:subject>Filologia classica</dc:subject>
+      <dc:subject>Classical philology</dc:subject>
+      <dc:subject>Digital philology</dc:subject>
+      <dc:subject>Collaborative and cooperative philology</dc:subject>
+      <dc:subject>Computational philology</dc:subject>
+      <dc:subject>Digital scholarly editing</dc:subject>
+      <dc:description>Il volume &#232; formato da dieci capitoli e mette insieme, elaborandoli ed aggiornandoli, materiali&#13;
+delle due tesi di dottorato dell&#8217;autore, una in Filologia Classica (2005) e l&#8217;altra in Linguistica&#13;
+Computazionale (2010), entrambe discusse presso l&#8217;Universit&#224; di Trento.&#13;
+Dopo una breve introduzione sul concetto di filologia collaborativa e cooperativa, i primi&#13;
+capitoli sono dedicati all&#8217;ecdotica digitale, quindi all&#8217;acquisizione del testo di edizioni critiche&#13;
+tramite OCR e al trattamento computazionale di apparati critici e repertori di congetture.&#13;
+I capitoli seguenti sono dedicati ad aspetti salienti dell&#8217;ermeneutica digitale, come l&#8217;analisi&#13;
+sintattica tramite la creazione di treebanks e l&#8217;analisi lessico-semantica tramite la creazione di&#13;
+wordnets e l&#8217;esplorazione di word spaces con metodi statistici.&#13;
+Chiudono il volume un capitolo di discussione relativa a punti critici del testo usato come&#13;
+caso di studio (I Persiani di Eschilo) e un capitolo di conclusioni e prospettive di ricerca.</dc:description>
+      <dc:date>2018-04-05</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/OPEN-89</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>CNR Edizioni</dc:publisher>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/124</identifier>
+    <datestamp>2017-10-25T08:45:41Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>NoReC: The Norwegian Review Corpus</dc:title>
+      <dc:creator>Velldal, Erik</dc:creator>
+      <dc:creator>&#216;vrelid, Lilja</dc:creator>
+      <dc:creator>Bergem, Eivind Alexander</dc:creator>
+      <dc:creator>Stadsnes, Cathrine</dc:creator>
+      <dc:creator>Touileb, Samia</dc:creator>
+      <dc:creator>J&#248;rgensen, Fredrik</dc:creator>
+      <dc:subject>sentiment analysis</dc:subject>
+      <dc:subject>opinion mining</dc:subject>
+      <dc:subject>reviews</dc:subject>
+      <dc:subject>news</dc:subject>
+      <dc:subject>norwegian</dc:subject>
+      <dc:description>While the NoReC dataset was primarily created for training and evaluating models for document-level sentiment analysis, many other use cases are of course possible. The corpus comprises more than 35,000 full-text reviews extracted from eight different major Norwegian news sources: Dagbladet, VG, Aftenposten, Bergens Tidende, F&#230;drelandsvennen, Stavanger Aftenblad, DinSide.no and P3.no. The reviews cover a range of different domains, including literature, movies, video games, restaurants, music and theater, in addition to product reviews across a range of categories. Each review is labeled with a manually assigned score of 1&#8211;6, as provided by the rating of the original author. The texts have been pre-processed using UDPipe and are distributed in the CoNLL-U format. However, we also provide HTML files with the raw texts. Documentation and an accompanying Python package are  provided through the following git repository: https://github.com/ltgoslo/norec</dc:description>
+      <dc:date>2017-10-23</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/124</dc:identifier>
+      <dc:language>nno</dc:language>
+      <dc:language>nob</dc:language>
+      <dc:language>nor</dc:language>
+      <dc:rights>Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/3.0/</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Department of Informatics, University of Oslo</dc:publisher>
+      <dc:source>https://github.com/ltgoslo/norec</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

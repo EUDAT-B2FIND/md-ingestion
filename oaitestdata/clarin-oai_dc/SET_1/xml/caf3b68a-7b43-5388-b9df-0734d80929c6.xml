@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1952</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Medieval Charter Sections Corpus</dc:title>
+      <dc:creator>Galu&#353;&#269;&#225;kov&#225;, Petra</dc:creator>
+      <dc:creator>Neu&#382;ilov&#225;, Lucie</dc:creator>
+      <dc:subject>section detection</dc:subject>
+      <dc:subject>segmentation</dc:subject>
+      <dc:subject>information retrieval</dc:subject>
+      <dc:description>This package provides an evaluation framework, training and test data for semi-automatic recognition of sections of historical diplomatic manuscripts. The data collection consists of 57 Latin charters issued by the Royal Chancellery of 7 different types. Documents were created in the era of John the Blind, King of Bohemia (1310&#8211;1346) and Count of Luxembourg. Manuscripts were digitized, transcribed, and typical sections of medieval charters ('corroboratio', 'datatio', 'dispositio', 'inscriptio', 'intitulatio', 'narratio', and 'publicatio') were manually tagged. Manuscripts also contain additional metadata, such as manually marked named entities and short Czech abstracts.&#13;
+Recognition models are first trained using manually marked sections in training documents and the trained model can then be used for recognition of the sections in the test data. The parsing script supports methods based on Cosine Distance, TF-IDF weighting and adapted Viterbi algorithm.</dc:description>
+      <dc:date>2018-02-28</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1952</dc:identifier>
+      <dc:language>lat</dc:language>
+      <dc:language>ces</dc:language>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/Medieval-Charter-Sections-Corpus</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datahub.egi.eu:1d328b99d5fe4fa9d258442ff4ca8969</identifier>
+    <datestamp>2019-01-24T15:20:21Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CS3 notebooks</dc:title>
+      <dc:creator>Baptiste Grenier</dc:creator>
+      <dc:subject>Notebook presented at the CS3 conference</dc:subject>
+      <dc:description>Notebook presented at the CS3 conference: Open Data analysis with EOSC-hub services</dc:description>
+      <dc:date>2019-01-24</dc:date>
+      <dc:type>Jupyter Notebook</dc:type>
+      <dc:format>application/x-ipynb+json</dc:format>
+      <dc:identifier>http://hdl.handle.net/21.T15999/tQAc2eo</dc:identifier>
+      <dc:identifier>https://datahub.egi.eu/share/1596964c6111f77835e075dcc08d5e5a</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>

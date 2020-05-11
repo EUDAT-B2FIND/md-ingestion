@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/90</identifier>
+    <datestamp>2016-04-15T05:59:21Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>INESS list of lexical units unknown to the NorGram lexicon</dc:title>
+      <dc:creator>Ros&#233;n, Victoria</dc:creator>
+      <dc:subject>Lexical Conceptual Resource</dc:subject>
+      <dc:description>In the INESS project, Norwegian texts in Norwegian Bokm&#229;l and Nynorsk are parsed with the NorGram grammar and lexicon. When text is parsed, there will always be words that are unknown to the morphological analyzer and/or the lexicon. INESS has therefore developed an intelligent browser-based preprocessing interface which facilitates, among other things, the efficient treatment of unknown word forms. The list of word forms that have not been automatically recognized are manually inspected.&#13;
+While some of these result from OCR errors and others are simply typos, most unrecognized word forms are productive compounds, words only occurring in MWEs, names, foreign words, neologisms, interjections, dialect words, and systematic, or intended, misspellings. To read more about the types of lexical units registered, please refer to the documentation at http://clarino.uib.no/iness/page?page-id=Text_preprocessing.</dc:description>
+      <dc:date>2015-08-17</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/90</dc:identifier>
+      <dc:language>nor</dc:language>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>http://clarino.uib.no/iness/</dc:publisher>
+      <dc:source>http://clarino.uib.no/iness/page</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

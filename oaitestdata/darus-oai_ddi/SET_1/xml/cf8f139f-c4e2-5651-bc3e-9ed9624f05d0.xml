@@ -1,0 +1,108 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-471</identifier>
+    <datestamp>2020-01-29T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5">
+      <docDscr>
+        <citation>
+          <titlStmt>
+            <titl>Benchmark C1.2 - Numerical results reference solution</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-471</IDNo>
+          </titlStmt>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2020-01-28</distDate>
+          </distStmt>
+          <verStmt source="DVN">
+            <version date="2020-01-28" type="RELEASED">1</version>
+          </verStmt>
+          <biblCit>Koch, Timo, 2020, "Benchmark C1.2 - Numerical results reference solution", https://doi.org/10.18419/darus-471, DaRUS, V1</biblCit>
+        </citation>
+      </docDscr>
+      <stdyDscr>
+        <citation>
+          <titlStmt>
+            <titl>Benchmark C1.2 - Numerical results reference solution</titl>
+            <IDNo agency="DOI">doi:10.18419/darus-471</IDNo>
+          </titlStmt>
+          <rspStmt>
+            <AuthEnty affiliation="Universit&#228;t Stuttgart">Koch, Timo</AuthEnty>
+          </rspStmt>
+          <prodStmt/>
+          <distStmt>
+            <distrbtr>DaRUS</distrbtr>
+            <distDate>2020-01-28</distDate>
+          </distStmt>
+        </citation>
+        <stdyInfo>
+          <subject>
+            <keyword>Agricultural Sciences</keyword>
+            <keyword>Computer and Information Science</keyword>
+            <keyword>Earth and Environmental Sciences</keyword>
+          </subject>
+          <abstract>Root water uptake simulation with a numerical scheme where the root-soil surface is explicitly resolved by the computational grid. The roots are a one-dimensional network grid embedded in a 3D soil domain. This dataset contains the grid files for root and soil. 8-day-old lupine, segmented from MRI measurements (courtesy of Magdalena Landl, FZ J&#252;lich, Germany). Soil grid generated with CGAL from implicit description.</abstract>
+          <sumDscr>
+            <dataKind>simulation results, post-processing, data files</dataKind>
+          </sumDscr>
+          <relPubl>"Call for participation: Collaborative benchmarking of functional-structural root architecture models. The case of root water uptake" by Andrea Schnepf, Christopher K. Black, Valentin Couvreur, Benjamin M. Delory, Claude Doussan, Axelle Koch, Timo Koch, Mathieu Javaux, Magdalena Landl, Daniel Leitner, Guillaume Lobet, Trung Hieu Mai, F&#233;licien Meunier, Lukas Petrich, Johannes A. Postma, Eckart Priesack, Volker Schmidt, Jan Vanderborght, Harry Vereecken, Matthias Weber; bioRxiv 808972, doi, 10.1101/808972, https://doi.org/10.1101/808972</relPubl>
+          <contact affiliation="Universit&#228;t Stuttgart">Koch, Timo</contact>
+          <depositr>Koch, Timo</depositr>
+          <depDate>2019-09-23</depDate>
+        </stdyInfo>
+        <method>
+          <dataColl/>
+          <anlyInfo/>
+        </method>
+        <useStmt>CC BY Waiver</useStmt>
+      </stdyDscr>
+      <otherMat ID="f376" URI="https://doi.org/10.18419/darus-471/7" level="datafile">
+        <labl>c12b_3d_plot.tar.gz</labl>
+        <txt>Archive with data to reproduce a 3d render of the water saturation results from the paper</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f377" URI="https://doi.org/10.18419/darus-471/8" level="datafile">
+        <labl>c12_psi_root_depth_plot.tar.gz</labl>
+        <txt>Archive with data and Python script to reproduce a plot of the root water potential over depth</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f378" URI="https://doi.org/10.18419/darus-471/9" level="datafile">
+        <labl>c12_psi_soil_depth_plot.tar.gz</labl>
+        <txt>Archive with data and Python script to reproduce a plot of the soil water potential over depth</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f374" URI="https://doi.org/10.18419/darus-471/5" level="datafile">
+        <labl>c12_transpiration_plot.tar.gz</labl>
+        <txt>Archive with data and Python script to reproduce a plot of the transpiration rate over time</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f375" URI="https://doi.org/10.18419/darus-471/6" level="datafile">
+        <labl>c12_waterpot_plot.tar.gz</labl>
+        <txt>Archive with data and Python script to reproduce a plot of the water potential</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f356" URI="https://doi.org/10.18419/darus-471/2" level="datafile">
+        <labl>DAP8_RootSys.dgf</labl>
+        <txt>Root grid lupine (DGF, Dune grid format)</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/octet-stream</notes>
+      </otherMat>
+      <otherMat ID="f355" URI="https://doi.org/10.18419/darus-471/1" level="datafile">
+        <labl>DAP8_RootSys_Soil.msh</labl>
+        <txt>Soil grid lupine (Gmsh format)</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">model/mesh</notes>
+      </otherMat>
+      <otherMat ID="f366" URI="https://doi.org/10.18419/darus-471/4" level="datafile">
+        <labl>results_constant_hydr_props.tar.gz</labl>
+        <txt>Results files in VTK format for the case with constant hydraulic root properties</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+      <otherMat ID="f358" URI="https://doi.org/10.18419/darus-471/3" level="datafile">
+        <labl>results_variable_hydr_props.tar.gz</labl>
+        <txt>Results files in VTK format for the case with variable hydraulic root properties</txt>
+        <notes level="file" type="DATAVERSE:CONTENTTYPE" subject="Content/MIME Type">application/gzip</notes>
+      </otherMat>
+    </codeBook>
+  </metadata>
+</record>

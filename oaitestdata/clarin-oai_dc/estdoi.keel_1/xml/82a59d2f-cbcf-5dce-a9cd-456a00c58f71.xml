@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:17968030</identifier>
+    <datestamp>2019-06-14T17:36:31Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Meditsiinikeele korpus</dc:title>
+      <dc:creator>Ross, Peeter</dc:creator>
+      <dc:creator>Valdre, Eola</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2019</dc:date>
+      <dc:date>Issued: 2019-01-08</dc:date>
+      <dc:date>Updated: 2019-01-08</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-000A5L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Meditsiinikeele korpuse koostamiseks on kasutatud autentseid isikustamata terviseandmeid, milleks on taotletud eetikaluba (Tallinna Meditsiiniuuringute Eetikakomitee otsuse nr 2169). Tuleb arvestada, et ka isikustamata terviseandmed on eriline materjal, sh ka tervishoiuturu konkurentsi tingimustes. Tegu on &#252;he tervishoiuasutuse andmetega, mis ei pruugi adekvaatselt kajastada ega olla automaatselt &#252;lekantavad k&#245;igile teistele tervishoiuasutustele, ka ei saa nende alusel teha j&#228;reldusi tervishoiuteenuse kui terviku kohta. K&#245;nelause projektiga seotud eetikaloa &#252;ks osapool on olnud AS Ida-Tallinna Keskhaigla, kelle radioloogiainfos&#252;steemist on isikustamata p&#228;ringuga saadud meditsiinikeele korpuse aluseks olnud algandmed. Seet&#245;ttu AS Ida-Tallinna Keskhaigla &#245;igus piirata nimetatud andmete kasutamist muudel eesm&#228;rkidel kui k&#228;esoleva projektiga seotud eetikaloaga kaetud eesm&#228;rgid. Sel p&#245;hjusel eeldab ka mitte&#228;rilistel eesm&#228;rkidel meditsiinikeele korpuse kasutamine uute eesm&#228;rkide korral uue eetikaloa taotlemist v&#245;i eelmise eetikaloa laiendamist, mida saab teha eetikaloas AS Ida-Tallinna Keskhaiglat esindava dr P. Rossi kaudu (peeter.ross@ttu.ee ).</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

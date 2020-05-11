@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1090</identifier>
+    <datestamp>2018-10-16T10:38:57Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ZRCola 2</dc:title>
+      <dc:creator>Je&#382;ovnik, Jano&#353;</dc:creator>
+      <dc:creator>Weiss, Peter</dc:creator>
+      <dc:creator>Amebis, d.o.o.</dc:creator>
+      <dc:subject>character input</dc:subject>
+      <dc:subject>Unicode</dc:subject>
+      <dc:subject>input system</dc:subject>
+      <dc:description>ZRCola is an input system designed mainly, although not exclusively, for linguistic use. It allows the user to combine basic letters with any diacritic marks and insert the resulting complex characters into the texts with ease.&#13;
+&#13;
+The system is comprised of an input program and a font, which can also be installed separately. The font is based on the Unicode standard and includes a vastly enlarged set of Latin, Cyrillic and other characters for Slavic writing systems in the Private Use Area.</dc:description>
+      <dc:date>2016-10-19</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1090</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>rus</dc:language>
+      <dc:rights>GNU General Public Licence, version 3</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>http://opensource.org/licenses/GPL-3.0</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>ZRC SAZU</dc:publisher>
+      <dc:source>http://zrcola.zrc-sazu.si/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

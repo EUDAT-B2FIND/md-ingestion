@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.25493_40J8-TAK</identifier>
+    <datestamp>2019-12-10T12:41:55Z</datestamp>
+  </header>
+  <metadata>
+    <metadata xmlns="http://example.org/myapp/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+      <dc:identifier>https://doi.org/10.25493/40J8-TAK</dc:identifier>
+      <dc:title>Probabilistic cytoarchitectonic map of Area 6d3 (SFS) (v4.0)</dc:title>
+      <dc:created>2019-06-04T09:38:06.258Z</dc:created>
+      <dc:description>This dataset contains the distinct probabilistic cytoarchitectonic map of Area 6d3 (SFS) in the individual, single subject template of the MNI Colin 27 reference space. As part of the JuBrain cytoarchitectonic atlas, the area was identified using cytoarchitectonic analysis on cell-body-stained histological sections of 10 human postmortem brains obtained from the body donor program of the University of D&#252;sseldorf. The results of the cytoarchitectonic analysis were then mapped to the reference space, where each voxel was assigned the probability to belong to Area 6d3 (SFS). The probability map of Area 6d3 (SFS) is provided in NifTi format for each hemisphere in the reference space. The JuBrain atlas relies on a modular, flexible and adaptive framework containing workflows to create the probabilistic brain maps for these structures. Note that methodological improvements and updated probability estimates for new brain structures may in some cases lead to measurable but negligible deviations of existing probability maps, as compared to earlier released datasets.  
+
+Other available data versions of Area 6d3 (SFS):
+Sigl et al. (2019) [Data set, v4.1] [DOI: 10.25493/NVJ5-JJ](https://doi.org/10.25493%2FNVJ5-JJ)
+
+The most probable delineation of Area 6d3 (SFS) derived from the calculation of a maximum probability map of all currently released JuBrain brain structures can be found here:
+Amunts et al. (2019) [Data set, v18] [DOI: 10.25493/8EGG-ZAR](https://doi.org/10.25493%2F8EGG-ZAR)
+</dc:description>
+      <dc:subject>neuroscience</dc:subject>
+      <dc:subject>histology</dc:subject>
+      <dc:subject>imaging</dc:subject>
+      <dc:subject>brain mapping</dc:subject>
+      <dc:language>english</dc:language>
+      <dc:type>dataset</dc:type>
+      <dc:publisher>The Human Brain Project</dc:publisher>
+      <dc:contributor>Sigl, Benjamin</dc:contributor>
+      <dc:contributor>Caspers, Svenja</dc:contributor>
+      <dc:contributor>Bludau, Sebastian</dc:contributor>
+      <dc:contributor>Mohlberg, Hartmut</dc:contributor>
+      <dc:contributor>Eickhoff, Simon B.</dc:contributor>
+      <dc:contributor>Amunts, Katrin</dc:contributor>
+      <dc:creator>Amunts, Katrin</dc:creator>
+      <dc:format>NIFTI</dc:format>
+      <dc:rights>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</dc:rights>
+    </metadata>
+  </metadata>
+</record>

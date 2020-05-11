@@ -1,0 +1,42 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1171</identifier>
+    <datestamp>2018-10-24T20:48:18Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Serbian Twitter training corpus ReLDI-NormTagNER-sr 2.0</dc:title>
+      <dc:creator>Ljube&#353;i&#263;, Nikola</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Mili&#269;evi&#263;, Maja</dc:creator>
+      <dc:creator>Samard&#382;i&#263;, Tanja</dc:creator>
+      <dc:subject>computer-mediated communication</dc:subject>
+      <dc:subject>tokenisation</dc:subject>
+      <dc:subject>word normalisation</dc:subject>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>lemmatisation</dc:subject>
+      <dc:subject>named entities</dc:subject>
+      <dc:subject>manual annotation</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:description>ReLDI-NormTagNER-sr 2.0 is a manually annotated corpus of Serbian tweets. It is meant as a gold-standard training and testing dataset for tokenisation, sentence segmentation, word normalisation, morphosyntactic tagging, lemmatisation and named entity recognition of non-standard Serbian. Each tweet is also annotated for its automatically assigned standardness levels (T = technical standardness, L = linguistic standardness). As an update to version 1.1, 2.0 adds annotations for named entities.</dc:description>
+      <dc:date>2017-12-16</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1171</dc:identifier>
+      <dc:language>srp</dc:language>
+      <dc:relation>http://dx.doi.org/10.4312/slo2.0.2016.2.156-188</dc:relation>
+      <dc:relation>http://hdl.handle.net/11356/1120</dc:relation>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Jo&#382;ef Stefan Institute</dc:publisher>
+      <dc:source>https://reldi.spur.uzh.ch/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

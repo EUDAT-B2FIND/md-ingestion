@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-4904-2</identifier>
+    <datestamp>2018-07-02T22:05:51Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Feature-based tagger</dc:title>
+      <dc:creator>Haji&#269;, Jan</dc:creator>
+      <dc:subject>morphology</dc:subject>
+      <dc:subject>tagger</dc:subject>
+      <dc:description>The Feature-based (exponential model) Tagger is a fast implementation of the Czech tagger developed at UFAL and described in the PDT 1.0 documentation (Czech Language Tagging page). In order to get the best possible results, the tagger requires preprocessing by a Czech morphological module with a very high coverage. This module covers a superset of the Czech "FM" morphology. Both the morphological module and the tagger are supplied as binary executables, together with all necessary precompiled Czech data. Input must be in the ISO Latin 2 (iso-8859-2) code and follow the csts.dtd definition, and output is produced in the same way (ISO Latin 2 code, csts.dtd). (As is the case with many of the tools provided with PDT 1.0, both executables also accept - and then produce - a "simplified SGML", which is not a real, valid SGML, but simply contains at least the tags for words, punctuation, and sentence breaks, one item per line.)</dc:description>
+      <dc:date>2009-11-02T09:22:59Z</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0001-4904-2</dc:identifier>
+      <dc:rights>PDT 2.0 License</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/license-pdt2</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>http://ufal.mff.cuni.cz/pdt2.0/doc/tools/machine-annotation/index.html#a-ma-tagging</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

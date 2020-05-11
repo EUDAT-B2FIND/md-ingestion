@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/69</identifier>
+    <datestamp>2016-04-15T05:59:20Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>the Morphologically Annotated Part of BulTreeBank</dc:title>
+      <dc:creator>Simov, Kiril</dc:creator>
+      <dc:subject>Corpus</dc:subject>
+      <dc:subject>Text</dc:subject>
+      <dc:subject>Bulgarian</dc:subject>
+      <dc:description>This distribution represents only the morphological information encoded in BulTreeBank - HPSG-based Treebank of Bulgarian. It contains about 214.000 tokens. It was used for the training of the TreeTagger for Bulgarian.  It contains sentences from Bulgarian Grammar Textbooks, Newspapers, Literature and other sources of texts.</dc:description>
+      <dc:date>2012-03-29</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://iness.uib.no/</dc:identifier>
+      <dc:identifier>http://hdl.handle.net/11509/69</dc:identifier>
+      <dc:language>bul</dc:language>
+      <dc:rights>Super Cool License</dc:rights>
+      <dc:rights>http://www.google.com</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:source>http://iness.uib.no/</dc:source>
+      <dc:source>http://www.bultreebank.org/btbmorf/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,49 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1679</identifier>
+    <datestamp>2018-07-02T22:05:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Eye-Tracking Recordings from a Pilot Study of WMT-style MT Outputs Ranking</dc:title>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:creator>D&#283;cht&#283;renko, Filip</dc:creator>
+      <dc:creator>Zelenina, Maria</dc:creator>
+      <dc:subject>eye-tracking</dc:subject>
+      <dc:subject>MT evaluation</dc:subject>
+      <dc:description>This package contains the eye-tracker recordings of 8 subjects evaluating English-to-Czech machine translation quality using the WMT-style ranking of sentences.&#13;
+&#13;
+We provide the set of sentences evaluated, the exact screens presented to the annotators (including bounding box information for every area of interest and even for individual letters in the text) and finally the raw EyeLink II files with gaze trajectories.&#13;
+&#13;
+The description of the experiment can be found in the paper:&#13;
+&#13;
+Ond&#345;ej Bojar, Filip D&#283;cht&#283;renko, Maria Zelenina. A Pilot Eye-Tracking Study of WMT-Style Ranking Evaluation.&#13;
+Proceedings of the LREC 2016 Workshop &#8220;Translation Evaluation &#8211; From Fragmented Tools&#13;
+and Data Sets to an Integrated Ecosystem&#8221;, Georg Rehm, Aljoscha Burchardt et al. (eds.). pp. 20-26. May 2016, Portoro&#382;, Slovenia.&#13;
+&#13;
+This work has received funding from the European Union's Horizon 2020 research&#13;
+and innovation programme under grant agreement no. 645452 (QT21). This work was&#13;
+partially financially supported by the Government of Russian Federation, Grant&#13;
+074-U01.&#13;
+&#13;
+This work has been using language resources developed, stored and distributed&#13;
+by the LINDAT/CLARIN project of the Ministry of Education, Youth and Sports of&#13;
+the Czech Republic (project LM2010013).</dc:description>
+      <dc:date>2016-03-31</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1679</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/H2020/645452</dc:relation>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

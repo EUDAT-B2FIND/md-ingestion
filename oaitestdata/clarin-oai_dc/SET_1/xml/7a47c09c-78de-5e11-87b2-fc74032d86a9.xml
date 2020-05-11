@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1741</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>AKCES 1</dc:title>
+      <dc:creator>&#352;ebesta, Karel</dc:creator>
+      <dc:creator>Gol&#225;&#328;ov&#225;, Hana</dc:creator>
+      <dc:creator>Letafkov&#225;, Jana</dc:creator>
+      <dc:creator>Jel&#237;nkov&#225;, Blanka</dc:creator>
+      <dc:subject>youth language</dc:subject>
+      <dc:subject>written language</dc:subject>
+      <dc:description>Corpus AKCES 1 includes texts written in czech by youth (native speakers); it is the same data as the corpus SKRIPT 2012</dc:description>
+      <dc:date>2016-06-09</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1741</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:rights>Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-nd/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University in Prague, &#218;&#268;JTK</dc:publisher>
+      <dc:source>http://akces.ff.cuni.cz</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

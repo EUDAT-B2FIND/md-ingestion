@@ -1,0 +1,22 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://uk.ac.le.star.tmpledas/ledas/ledas/ipc</oai:identifier>
+    <oai:datestamp>2018-12-21T17:23:29Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:title>IPC: Einstein IPC Sources Catalog (LEDAS)</dc:title>
+      <dc:creator>LEDAS, University of Leicester</dc:creator>
+      <dc:creator>LEDAS</dc:creator>
+      <dc:description>Cone Search service for 
+                    IPC: Einstein IPC Sources Catalog (LEDAS)
+                . 
+          						
+          						Part of Catalogues hosted at Leicester Database and Archive Service</dc:description>
+      <dc:subject>LEDAS</dc:subject>
+      <dc:subject>ipc</dc:subject>
+      <dc:date>2011-02-10T22:16:04</dc:date>
+      <dc:identifier>ivo://uk.ac.le.star.tmpledas/ledas/ledas/ipc</dc:identifier>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

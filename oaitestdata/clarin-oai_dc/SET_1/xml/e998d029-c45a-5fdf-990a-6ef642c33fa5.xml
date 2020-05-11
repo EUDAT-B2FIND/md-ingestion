@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/266</identifier>
+    <datestamp>2016-05-29T12:15:19Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>TermoPL</dc:title>
+      <dc:creator>Rychlik, Piotr</dc:creator>
+      <dc:subject>terminology extraction</dc:subject>
+      <dc:subject>domain corpora</dc:subject>
+      <dc:subject>C-value</dc:subject>
+      <dc:description>TermoPL is a tool for terminology extraction from domain corpora in Polish.</dc:description>
+      <dc:date>2016-05-29</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/266</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>BSD 2 Clause</dc:rights>
+      <dc:rights>https://opensource.org/licenses/BSD-2-Clause</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>downloadable_files_count: 5</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

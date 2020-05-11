@@ -1,0 +1,58 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:www.clarin.si:11356/1181</identifier>
+    <datestamp>2019-01-26T20:42:21Z</datestamp>
+    <setSpec>hdl_11356_1023</setSpec>
+    <setSpec>hdl_11356_1024</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Training corpus ssj500k 2.1</dc:title>
+      <dc:creator>Krek, Simon</dc:creator>
+      <dc:creator>Dobrovoljc, Kaja</dc:creator>
+      <dc:creator>Erjavec, Toma&#382;</dc:creator>
+      <dc:creator>Mo&#382;e, Sara</dc:creator>
+      <dc:creator>Ledinek, Nina</dc:creator>
+      <dc:creator>Holz, Nanika</dc:creator>
+      <dc:creator>Zupan, Katja</dc:creator>
+      <dc:creator>Gantar, Polona</dc:creator>
+      <dc:creator>Kuzman, Taja</dc:creator>
+      <dc:creator>&#268;ibej, Jaka</dc:creator>
+      <dc:creator>Arhar Holdt, &#352;pela</dc:creator>
+      <dc:creator>Kav&#269;i&#269;, Teja</dc:creator>
+      <dc:creator>&#352;krjanec, Iza</dc:creator>
+      <dc:creator>Marko, Dafne</dc:creator>
+      <dc:creator>Jezer&#353;ek, Lucija</dc:creator>
+      <dc:creator>Zajc, Anja</dc:creator>
+      <dc:subject>tagging</dc:subject>
+      <dc:subject>dependency treebank</dc:subject>
+      <dc:subject>parsing</dc:subject>
+      <dc:subject>named entities</dc:subject>
+      <dc:subject>tokenisation</dc:subject>
+      <dc:subject>manual annotation</dc:subject>
+      <dc:subject>TEI</dc:subject>
+      <dc:subject>verbal multiword expressions</dc:subject>
+      <dc:subject>semantic role labelling</dc:subject>
+      <dc:description>The ssj500k training corpus contains about 500,000 tokens manually annotated on the levels of tokenisation, sentence segmentation, morphosyntactic tagging, and lemmatisation. About half of the corpus is also manually annotated with syntactic dependencies, named entities, and verbal multiword expressions. About a quarter of the corpus is annotated with semantic role labels.&#13;
+&#13;
+The annotations of the ssj500k corpus follow (1) the MULTEXT-East V5 morphosyntactic specifications for Slovene, http://nl.ijs.si/ME/V5/msd/, (2) the JOS dependency schema, http://nl.ijs.si/jos/bib/jos-skladnja-navodila.pdf, (3) the Janes annotation guidelines for Slovenian named entities, http://nl.ijs.si/janes/wp-content/uploads/2017/09/SlovenianNER-eng-v1.1.pdf, and (4) the Guidelines of the PARSEME shared task on verbal multiword expressions, http://parsemefr.lif.univ-mrs.fr/parseme-st-guidelines/1.1/&#13;
+The vocabulary of (1) and (2) is provided in the back element and (3) and (4) in the teiHeader of the TEI encoded corpus. The semantic role labels are also documented in the teiHeader.</dc:description>
+      <dc:date>2018-03-16</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11356/1181</dc:identifier>
+      <dc:language>slv</dc:language>
+      <dc:relation>http://hdl.handle.net/11356/1210</dc:relation>
+      <dc:relation>http://hdl.handle.net/11356/1165</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Centre for Language Resources and Technologies, University of Ljubljana</dc:publisher>
+      <dc:source>http://eng.slovenscina.eu/tehnologije/ucni-korpus</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

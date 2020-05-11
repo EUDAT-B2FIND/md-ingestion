@@ -1,0 +1,20 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>2c1c73c6e6e011e6a2aa782bcb0741351c33fe1f38e7431da000a4071685d7dd</identifier>
+    <datestamp>2018-11-15T16:40:27Z</datestamp>
+    <setSpec>corpus</setSpec>
+    <setSpec>corpus:text</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LX-AP</dc:title>
+      <dc:description>LX-AP was created from the translation of Almuhareb-Poesio (ap) benchmark (Almuhareb and Poesio, 2005). The original data set was created considering three aspects: POS, frequency and ambiguity.
+It contains 402 names from 21 categories of WordNet, with 13 to 21 names from each one of those categories. Examples of some categories: feeling, game, time, tree, vehicle, chemical element or motivation (more examples are shown in Table 6).
+To estimate the word frequency it was used the British National Corpus. Concerning frequency, &#226;&#133;&#147; of the words of the corpus has high frequency (1 000 occurrences or more), &#226;&#133;&#147; has medium frequency (between 100 to 1 000 occurrences) and &#226;&#133;&#147; has low frequency (5 to 100 occurrences).  
+The evaluation of the degree of ambiguity of each word was calculated taking into account the amount of senses of each word found in the WordNet. With four or more senses, the word was considered very ambiguous; with two or three meanings, the word would have medium ambiguity; and with one meaning, the word was considered not ambiguous. Each level of frequency and ambiguity is equally represented in the set.
+We are aware that a word that is frequent in English can be less frequent in Portuguese and that a word that is ambiguous in English can be less ambiguous in Portuguese. More than translating the original data set, it would be interesting to build a data set that, in Portuguese, would also be balanced in terms of frequency and ambiguity of words. As a possible future work, an analysis of the frequency of the words using a large Portuguese data set as a reference, and an analysis of the ambiguity of the words using the Portuguese Wordnet would improve this data set. However, because the lexicographic resources required to fulfil those tasks are not available yet, the LX-AP is made of the translation from the English words, resulting in a test set with the same size as the original.
+The translation process of this data set from English to Portuguese involved two annotators and a third adjudicator. </dc:description>
+      <dc:date>2017-01-30</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

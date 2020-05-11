@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/c9bd5d7b6ffc48fe940e8f220e3dbab3</identifier>
+    <datestamp>2018-01-11T13:48:35Z</datestamp>
+    <setSpec>e9b9792e-79fb-4b07-b6b4-b9c2bd06d095</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:date>2016-12-22T10:21:29.742408+00:00</dc:date>
+      <dc:description>Test Image Private</dc:description>
+      <dc:identifier>http://hdl.handle.net/11304/d043f756-57eb-11e5-9bb4-2b0aad496318</dc:identifier>
+      <dc:identifier>https://b2share.eudat.eu/api/records/c9bd5d7b6ffc48fe940e8f220e3dbab3</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/c9bd5d7b6ffc48fe940e8f220e3dbab3</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:publisher>http://b2share.eudat.eu</dc:publisher>
+      <dc:rights>info:eu-repo/semantics/closedAccess</dc:rights>
+      <dc:title>Test Image Private</dc:title>
+      <dc:type>Other</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

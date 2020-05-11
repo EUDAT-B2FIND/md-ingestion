@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/537</identifier>
+    <datestamp>2018-07-22T07:26:20Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Integrated Parser</dc:title>
+      <dc:creator>Jaworski, Wojciech</dc:creator>
+      <dc:creator>Oklesi&#324;ski, Daniel</dc:creator>
+      <dc:creator>Lupa, Jan</dc:creator>
+      <dc:subject>constituency parsing</dc:subject>
+      <dc:subject>dependency parsing</dc:subject>
+      <dc:description>Integrated parser is an application that combines and normalizes outputs of several parsers for Polish. It is based on ENIAM processing stream extended with Polish Dependency Parser, &#346;wigra and POLFIE. Particular parsers may turned on and off according to the user requirements.</dc:description>
+      <dc:date>2018-07-20</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/537</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU LGPL 3.0</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/lgpl.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

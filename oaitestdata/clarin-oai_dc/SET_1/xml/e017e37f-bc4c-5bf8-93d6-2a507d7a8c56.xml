@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-94</identifier>
+    <datestamp>2018-10-18T08:42:41Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>AraMorph Data Plus</dc:title>
+      <dc:creator>Nahli, Ouafae</dc:creator>
+      <dc:subject>Aramorph</dc:subject>
+      <dc:subject>Arabic-English lexicon files</dc:subject>
+      <dc:subject>Morphology</dc:subject>
+      <dc:description>The AraMorph's original engine (https://sourceforge.net/projects/aramorph/files/aramorph/1.2.1) uses six linguistic files. Three Arabic-English lexicon files: prefixes (299 entries), suffixes (618 entries), and stems (82158 entries representing 38600 lemmas). Other three files consist of morphological compatibility tables used for controlling prefix-stem combinations (1648 entries), stem-suffix combinations (1285 entries), and prefix-suffix combinations (598 entries).&#13;
+The present data consists of the updated lexical resources used by the Aramorph' engine. The updates take advantage of a number of orthographic, morpho-syntactic and semantic constraints that operate at the word level. Therefore, the Arabic-English lexicon files contain: prefixes (335 entries), suffixes (876 entries), and stems (35475 entries). Note that the number of stems is smaller in Plus than in Original, due to the removal of obsolete entries and of a number of foreign names that are unlikely to be found in Arabic texts. The morphological compatibility tables used for controlling prefix-stem combinations (2698 entries), stem-suffix combinations (2161 entries), and prefix-suffix combinations (1295 entries).</dc:description>
+      <dc:date>2018-09-28</dc:date>
+      <dc:type>languageDescription</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-94</dc:identifier>
+      <dc:language>ara</dc:language>
+      <dc:relation>http://www.aaccademia.it/scheda-libro?aaref=63</dc:relation>
+      <dc:rights>GNU General Public License, version 2</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/gpl-2.0.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 7</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

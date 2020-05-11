@@ -1,0 +1,69 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-1595</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>CsEnVi Pairwise Parallel Corpora</dc:title>
+      <dc:creator>Hoang, Duc Tam</dc:creator>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>Vietnamese</dc:subject>
+      <dc:subject>parallel corpus</dc:subject>
+      <dc:subject>Czech-Vietnamese corpus</dc:subject>
+      <dc:subject>English-Vietnamese corpus</dc:subject>
+      <dc:description>CsEnVi Pairwise Parallel Corpora consist of Vietnamese-Czech parallel corpus and Vietnamese-English parallel corpus. The corpora were assembled from the following sources:&#13;
+&#13;
+- OPUS, the open parallel corpus is a growing multilingual corpus of translated open source documents.&#13;
+The majority of Vi-En and Vi-Cs bitexts are subtitles from movies and television series. &#13;
+The nature of the bitexts are paraphrasing of each other's meaning, rather than translations. &#13;
+&#13;
+- TED talks, a collection of short talks on various topics, given primarily in English, transcribed and with transcripts translated to other languages. In our corpus, we use 1198 talks which had English and Vietnamese transcripts available and 784 talks which had Czech and Vietnamese transcripts available in January 2015.&#13;
+&#13;
+The size of the original corpora collected from OPUS and TED talks is as follows:&#13;
+&#13;
+                  	CS/VI                       	EN/VI&#13;
+Sentence   	1337199/1337199   	2035624/2035624&#13;
+Word          	9128897/12073975  	16638364/17565580		&#13;
+Unique word	224416/68237         	91905/78333&#13;
+&#13;
+We improve the quality of the corpora in two steps: normalizing and filtering.&#13;
+&#13;
+In the normalizing step, the corpora are cleaned based on the general format of subtitles and transcripts. For instance, sequences of dots indicate explicit continuation of subtitles across multiple time frames. The sequences of dots are distributed differently in the source and the target side. Removing the sequence of dots, along with a number of other normalization rules, improves the quality of the alignment significantly.&#13;
+In the filtering step, we adapt the CzEng filtering tool [1] to filter out bad sentence pairs.&#13;
+&#13;
+The size of cleaned corpora as published is as follows:&#13;
+&#13;
+                   	CS/VI                       	EN/VI&#13;
+Sentence  	1091058/1091058    	1113177/1091058&#13;
+Word         	6718184/7646701   	8518711/8140876&#13;
+Unique word	195446/59737         	69513/58286&#13;
+&#13;
+The corpora are used as training data in [2].&#13;
+&#13;
+References:&#13;
+[1] Ond&#345;ej Bojar, Zden&#283;k &#381;abokrtsk&#253;, et al. 2012. The Joy of Parallelism with CzEng 1.0. Proceedings of LREC2012. ELRA. Istanbul, Turkey.&#13;
+[2] Duc Tam Hoang and Ond&#345;ej Bojar, The Prague Bulletin of Mathematical Linguistics. Volume 104, Issue 1, Pages 75&#8211;86, ISSN 1804-0462. 9/2015</dc:description>
+      <dc:date>2015-11-10</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-1595</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:language>eng</dc:language>
+      <dc:language>vie</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/H2020/645452</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

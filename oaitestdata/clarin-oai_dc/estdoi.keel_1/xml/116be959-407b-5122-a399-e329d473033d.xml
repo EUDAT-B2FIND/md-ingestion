@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:6919407</identifier>
+    <datestamp>2019-06-03T00:01:55Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Tartu &#220;likooli eesti murrete ja sugulaskeelte arhiiv</dc:title>
+      <dc:title xml:lang="en">University of Tartu Archives of Estonian Dialects and Kindred Languages</dc:title>
+      <dc:creator>Tuisk, Tuuli</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2015</dc:date>
+      <dc:date>Issued: 2015-10-29</dc:date>
+      <dc:date>Updated: 2015-10-29</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-0011AL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">his collection of linguistic material is managed by the University of Tartu, Institute of Estonian and General Linguistics. The archives contain four types of materials: 
+1) Sound recordings of Estonian dialects and Finno-Ugric languages, 
+2) Unpublished manuscripts, including 
+  - student report papers and thesis written at the Institute of Estonian and General Linguistics, 
+  - transcriptions and written notes on Estonian and Finno-Ugric languages, 
+3) Photos from field-work expedition and linguistic events, 
+4) Video recordings.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

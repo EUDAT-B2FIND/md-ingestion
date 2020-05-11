@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:seminer</identifier>
+    <datestamp>2014-06-03T12:57:06Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SemiNER</dc:title>
+      <dc:creator>Grzegorz Chrupa&#322;a
+FR 7.4 Spoken Language Systems
+Saarland University
+Saarbr&#252;cken, Germany</dc:creator>
+      <dc:subject xml:lang="en">NER</dc:subject>
+      <dc:subject xml:lang="en">named entity recognizer</dc:subject>
+      <dc:subject xml:lang="en">annotation tool</dc:subject>
+      <dc:description xml:lang="en">SemiNER is a semi-supervised Named Entity Recognizer (with pre-trained models for German).</dc:description>
+      <dc:description xml:lang="de">SemiNER ist ein semi-supervised Named Entity Erkenner (trainiert f&#252;r die Deutsche Sprache).</dc:description>
+      <dc:contributor>Grzegorz Chrupa&#322;a</dc:contributor>
+      <dc:contributor>Dietrich Klakow</dc:contributor>
+      <dc:date>2010</dc:date>
+      <dc:type>Software</dc:type>
+      <dc:identifier>clarind-uds:seminer</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0005-BD15-E</dc:identifier>
+      <dc:source>sequor</dc:source>
+      <dc:source>http://code.google.com/p/sequor/</dc:source>
+      <dc:language>deu</dc:language>
+      <dc:relation>Chrupa&#322;a, G. and Klakow, D. (2010). A Named Entity Labeler for German: exploiting Wikipedia and distributional clusters. In LREC 2010.</dc:relation>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2517</identifier>
+    <datestamp>2018-07-02T22:05:49Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>FicTree 1.0</dc:title>
+      <dc:creator>Jel&#237;nek, Tom&#225;&#353;</dc:creator>
+      <dc:creator>Hn&#225;tkov&#225;, Milena</dc:creator>
+      <dc:creator>Skoumalov&#225;, Hana</dc:creator>
+      <dc:subject>treebank</dc:subject>
+      <dc:description>FicTree is a dependency treebank of Czech fiction manually annotated in the format of the analytical layer of the Prague Dependency Trebank. The treebank consists of 12,760 sentences (166,432 tokens). The texts come from eight literary works published in the Czech Republic between 1991 and 2007. The syntactic annotation of the treebank was first performed by two distinct parsers (MSTParser and MaltParser) trained on the PDT training data, then manually corrected. Any differences between the two versions were resolved manually (by another annotator).&#13;
+&#13;
+The corpus is provided in a vertical format, where sentence boundaries are marked with a blank line. Every word form is written on a separate line, followed by five tab-separated attributes: lemma, tag, ID (word index in the sentence), head and deprel (analytical function, afun in the PDT formalism). The texts are shuffled in random chunks of maximum 100 words (respecting sentence boundaries). Each chunk is provided as a separate file, with the suggested division into train, dev and test sets written as file prefix.</dc:description>
+      <dc:date>2017-11-15</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2517</dc:identifier>
+      <dc:language>ces</dc:language>
+      <dc:relation>http://ceur-ws.org/Vol-1885/181.pdf</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Arts, Institute of Theoretical and Computational Linguistics</dc:publisher>
+      <dc:source>https://wiki.korpus.cz/doku.php/cnk:fictree</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

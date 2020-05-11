@@ -1,0 +1,97 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-500</identifier>
+    <datestamp>2019-12-21T01:00:01Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-500</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Iglezakis, Dorothea</creatorName>
+          <givenName>Dorothea</givenName>
+          <familyName>Iglezakis</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-8524-0569</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Schembera, Bj&#246;rn</creatorName>
+          <givenName>Bj&#246;rn</givenName>
+          <familyName>Schembera</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0003-2860-6621</nameIdentifier>
+          <affiliation>High Performance Computing Center Stuttgart (HLRS)</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>EngMeta - a Metadata Scheme for the Engineering Sciences</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Computer and Information Science</subject>
+        <subject>Engineering</subject>
+        <subject>metadata</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Organizational">FoKUS Team</contributorName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+        <contributor contributorType="Researcher">
+          <contributorName nameType="Personal">Bauer, Gernot</contributorName>
+          <givenName>Gernot</givenName>
+          <familyName>Bauer</familyName>
+        </contributor>
+        <contributor contributorType="Researcher">
+          <contributorName nameType="Personal">Selent, Bj&#246;rn</contributorName>
+          <givenName>Bj&#246;rn</givenName>
+          <familyName>Selent</familyName>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName nameType="Personal">Seeland, Anett</contributorName>
+          <givenName>Anett</givenName>
+          <familyName>Seeland</familyName>
+        </contributor>
+        <contributor contributorType="Researcher">
+          <contributorName nameType="Personal">Kraus, Hamzeh</contributorName>
+          <givenName>Hamzeh</givenName>
+          <familyName>Kraus</familyName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2019-11-26</date>
+        <date dateType="Updated">2019-12-20</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">XSD-Scheme</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relationType="IsCitedBy" relatedIdentifierType="DOI">10.1007/978-3-030-14401-2_12</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>192982</size>
+        <size>18662</size>
+        <size>33477</size>
+      </sizes>
+      <formats>
+        <format>application/pdf</format>
+        <format>text/xml</format>
+        <format>application/octet-stream</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">EngMeta offers a scheme for describing data from the engineering sciences.</description>
+      </descriptions>
+      <geoLocations/>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Federal Ministry of Education and Research (BMBF)</funderName>
+          <awardNumber>16FDM008</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>

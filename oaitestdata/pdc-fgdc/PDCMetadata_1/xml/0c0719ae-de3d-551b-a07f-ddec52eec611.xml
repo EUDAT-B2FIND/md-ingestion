@@ -1,0 +1,140 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>12847_fgdc</identifier>
+    <datestamp>2017-10-28T03:27:25Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Knudby, Anders</origin>
+            <origin>Knudby, Anders</origin>
+            <origin>Holman, Kiyomi</origin>
+            <pubdate>20171027</pubdate>
+            <title>Seafloor spectral reflectance factors and georeferenced water depths from Cambridge Bay, NU (NGMP ID  EC37)</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Knudby, A. and Holman, K. (2017) Seafloor spectral reflectance factors and georeferenced water depths from Cambridge Bay, NU (NGMP ID  EC37). Waterloo, Canada: Canadian Cryospheric Information Network (CCIN). http://dx.doi.org/10.21963/12847</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12847</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Spectral reflectance measurements were taken using the panel substitution method with a dual-channel Ocean Optics Jaz in an underwater housing, while SCUBA diving. A standard polytetrafluoroethylene (PTFE) panel was used as reference. The second channel was pointing up, to adjust for differences in illumination conditions between panel and seafloor measurements. Water depths were measured with a SonarMite single-beam echosounder, not adjusted for pitch and roll, nor for salinity and density. The transducer was placed approximately 20 centimetres below the water surface. Georeference was provided by a Trimble R1 Global Navigation Satellite System (GNSS) receiver using satellite based augmentation systems (SBAS) corrections. The two data streams were integrated using the Seafloor Systems SonarMite software.</abstract>
+          <purpose>The main goal of this project is to collect and provide data that can be used for the calibration and validation of satellite-derived bathymetry in Cambridge Bay, Nunavut, Canada.</purpose>
+          <supplinf>Summary: Not applicable. Research Program(s): NGMP. For further information: http://dx.doi.org/10.21963/12847</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20170803</begdate>
+              <enddate>20170810</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>Complete</progress>
+          <update>None planned</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-105.25</westbc>
+            <eastbc>-105</eastbc>
+            <northbc>69.15</northbc>
+            <southbc>69.05</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Bathymetry</themekey>
+            <themekey>Benthos</themekey>
+            <themekey>Canada</themekey>
+            <themekey>Optical</themekey>
+            <themekey>Remote sensing data</themekey>
+            <themekey>Water level</themekey>
+          </theme>
+          <place>
+            <placekt>Cambridge Bay, Nunavut</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Public</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>University of Ottawa</cntorg>
+              <cntper>Anders Knudby</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>60 University Private</address>
+              <city>Ottawa</city>
+              <state>Ontario</state>
+              <postal>K1N6N5</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>6136683998</cntvoice>
+            <cntemail>aknudby@uottawa.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>12847</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20170929</metd>
+        <metrd>20171027</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Anders Knudby</cntper>
+              <cntorg>University of Ottawa</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>60 University Private</address>
+              <city>Ottawa</city>
+              <state>Ontario</state>
+              <postal>K1N6N5</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>6136683998</cntvoice>
+            <cntemail>aknudby@uottawa.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

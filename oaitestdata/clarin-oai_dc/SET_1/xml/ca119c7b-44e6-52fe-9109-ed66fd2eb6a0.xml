@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/543</identifier>
+    <datestamp>2018-07-25T12:32:18Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Polish Spatial Texts 1.0</dc:title>
+      <dc:creator>Oleksy, Marcin</dc:creator>
+      <dc:creator>Wieczorek, Jan</dc:creator>
+      <dc:creator>Berna&#347;, Tomasz</dc:creator>
+      <dc:creator>Marci&#324;czuk, Micha&#322;</dc:creator>
+      <dc:subject>corpora annotation</dc:subject>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>manually annotated corpus</dc:subject>
+      <dc:subject>annotated corpus</dc:subject>
+      <dc:subject>spatial expressions</dc:subject>
+      <dc:subject>spatial. Spatial Role Labellig</dc:subject>
+      <dc:subject>ISO-Space</dc:subject>
+      <dc:description>Texts derived from polish travel blogs manually annotated with spatial expressions, A spatial expression is a text fragment which describes a relative location of two or more physical objects to each other.</dc:description>
+      <dc:date>2018-07-23</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/543</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Science and Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

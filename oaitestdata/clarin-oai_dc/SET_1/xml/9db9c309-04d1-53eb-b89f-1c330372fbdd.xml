@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/557</identifier>
+    <datestamp>2018-07-26T07:47:30Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>WordnetLoom 2.0</dc:title>
+      <dc:creator>Wroclaw University of Technology</dc:creator>
+      <dc:subject>wordnet editor</dc:subject>
+      <dc:subject>java</dc:subject>
+      <dc:subject>wildfly</dc:subject>
+      <dc:subject>docker</dc:subject>
+      <dc:subject>mysql</dc:subject>
+      <dc:description>WordneLoom 2.0 executable files for plWordnet 4.0.&#13;
+Source code available at https://github.com/CLARIN-PL/WordnetLoom&#13;
+&#13;
+WordnetLoom &#8211; is an wordnet editor application built for the needs of the construction of a the largest Polish wordnet called plWordNet. WordnetLoom provides two means of interaction: a form-based, implemented initially, and a visual, graph-based introduced recently. The visual, graph-based interactive presentation of the wordnet structure enables browsing and its direct editing on the structure of lexico-semantic relations and synsets. WordnetLooms works in a distributed environment, i.e. several linguists can work simulanuously from different sites on the same central database.</dc:description>
+      <dc:date>2018-07-26</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/557</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:rights>plWordNet</dc:rights>
+      <dc:rights>http://clarin-pl.eu/en/licenses/plwordnet-2/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>downloadable_files_count: 3</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Technology</dc:publisher>
+      <dc:source>http://plwordnet.pwr.wroc.pl/wordnet/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

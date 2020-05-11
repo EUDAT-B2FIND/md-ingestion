@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/561</identifier>
+    <datestamp>2018-07-26T12:00:31Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Periphraser</dc:title>
+      <dc:creator>Nito&#324;, Bart&#322;omiej</dc:creator>
+      <dc:subject>nominal phrases</dc:subject>
+      <dc:subject>semantic base</dc:subject>
+      <dc:subject>semantic knowledge base browser</dc:subject>
+      <dc:subject>automatic semantic and syntactic normalization</dc:subject>
+      <dc:subject>REST API</dc:subject>
+      <dc:subject>automatic error detection</dc:subject>
+      <dc:description>Periphraser is a tool for storing and presenting knowledge base of conventionalized periphrastic nominal expressions (i.e. phrases headed by a noun) together with their textually attested realizations. For instance, the database entry for the phrase ,,Robert Lewandowski'' in the demo for Polish will include the phrase ,,the Polish international'' while ,,pediatrics'' will be featured as ,,medical care for children''. It allows contacting with database using REST API as well as exporting it to XML or CSV format. For Polish language, it also provides some more complex mechanisms like: automatic semantic and syntactic normalization, errors autodetection (also based on NKJP frequency and amount of results returned by the web browser), and simple interface for commenting and marking possibly wrong entries or ones needing improvement.</dc:description>
+      <dc:date>2018</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/561</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>BSD 2 Clause</dc:rights>
+      <dc:rights>https://opensource.org/licenses/BSD-2-Clause</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/zip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+      <dc:source>http://zil.ipipan.waw.pl/Periphraser</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

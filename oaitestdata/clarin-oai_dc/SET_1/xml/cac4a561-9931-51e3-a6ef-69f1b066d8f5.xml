@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1075</identifier>
+    <datestamp>2016-04-06T16:39:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>BABEL Estonian Database</dc:title>
+      <dc:contributor>Meister, Einar</dc:contributor>
+      <dc:description>The database consists of three sets: - Many Talker Set: 30 males, 30 females; each to read 50 numbers, 1-2 connected passages, 1 block of "filler" sentences, and 1 block of syllables. - Few Talker Set: 4 males, 4 females; each to read 50 numbers, 10 connected passages, 1 block of "filler" sentences, and 2-3 blocks of syllables. - Very Few Talker Set: 1 male, 1 female; each to read 2 blocks of 50 numbers, 40 connected passages, 4 blocks of "filler" sentences, and 9 blocks of syllables.  Total amount ca 12 hours of speech.</dc:description>
+      <dc:date>1998</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1075</dc:identifier>
+      <dc:language>est</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Estonia</dc:coverage>
+      <dc:publisher>Institute of Cybernetics at Tallinn University of Technology</dc:publisher>
+      <dc:source>http://catalog.elra.info/product_info.php?products_id=94</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

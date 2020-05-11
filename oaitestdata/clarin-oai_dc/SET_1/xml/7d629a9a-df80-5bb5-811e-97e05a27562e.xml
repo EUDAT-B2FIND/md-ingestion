@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-1229</identifier>
+    <datestamp>2016-04-06T16:39:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LX-Tagger</dc:title>
+      <dc:contributor>Branco, Ant&#243;nio</dc:contributor>
+      <dc:contributor>Silva, Jo&#227;o</dc:contributor>
+      <dc:description>Automatic part of speech tagger for Portuguese. Assigns a single morpho-syntactic tag, from the tagset here (http://lxsuite.di.fc.ul.pt/lx-suite.html), to every token. The tag is attached to the token, using a / (slash) symbol as separator: um exemplo &#8594; um/IA exemplo/CN Each individual token in multi-token expressions gets the tag of that expression prefixed by "L" and followed by the number of its position within the expression: de maneira a que &#8594; de/LCJ1 maneira/LCJ2 a/LCJ3 que/LCJ4 This tagger was developed with TnT software over 90% of a small, 260k token, accurately hand tagged corpus. Accuracy of 96.87% was obtained.</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-1229</dc:identifier>
+      <dc:language>por</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:coverage>Portugal</dc:coverage>
+      <dc:publisher>NLX-Natural Language and Speech Group, University of Lisbon</dc:publisher>
+      <dc:source>http://lxsuite.di.fc.ul.pt</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

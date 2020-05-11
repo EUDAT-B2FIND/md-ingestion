@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>1c8e4d40358b11e2a2aa782bcb07413512c66c74805a4e8088649b7d128fc2e4</identifier>
+    <datestamp>2018-11-15T16:39:54Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:service</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>LX-Service</dc:title>
+      <dc:description>LXService is a Web Service that consists in a range of tools for Portuguese that have been develop for the processing of Portuguese. They were selected because they satisfy a number of features that are likely to make them more suitable for initial experimentation: They are fast, robust, the linguistic information in their output is well understood, and they perform at state of the art accuracy. They include the following individual tools, covering analysis and generation procedures:
+
+Constituency Parser (see Silva et al., 2010): performs a syntactic analysis of Portuguese sentences in terms of their constituency structure. 88% f-score.
+
+Dependency Parser (see Silva et al., 2010): allows the automatic parsing of sentences in Portuguese in terms of their grammatical functions. 86.8% accuracy.
+
+Named Entity Recognizer (number-based or name-based) (see Ferreira et al., 2007): recognizes the expressions for named entities in Portuguese.
+
+POS tagger (see Silva, 2007): assigns POS tags to tokens in context; 96.87% accuracy. 
+
+Sentence chunker (see Silva, 2007): detects and marks paragraph and sentence boundaries; 99.94% accuracy.
+
+Tokenizer (see Silva, 2007): segments text into tokens, expands contractions, detaches clitic pronouns from verbs, etc.; 99.72% accuracy.
+
+Semantic Role Labeler: generates syntactic trees with semantic labels; f-score of 82%.
+
+The development of these web services started in the scope of the LT4eL-Language Technology for e-Learning project (available at www.lt4el.eu). They are supported by a range of language technology tools that have been developed in the past at the University of Lisbon in the scope of a number of previous projects.
+</dc:description>
+      <dc:date>2012-11-23</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

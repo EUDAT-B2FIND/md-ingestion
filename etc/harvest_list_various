@@ -1,0 +1,250 @@
+## Envriplus samples (partially old)
+# Envriplus demonstrator
+envriplus http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 flagship
+euro-argo http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 full
+
+## ICOS
+icos https://meta.icos-cp.eu/sparqlclient/ Sparql json
+
+## NorStore
+norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc  NATURAL_SCIENCE
+norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc PROF_APPL_SCIENCE 
+norstore https://archive.norstore.no:9443/norstore-archive/oai/v1.0 ListRecords   oai_dc
+
+# EISCAT
+##eiscat  http://ed-icat-01.csc.fi/cgi-bin/oai-pmh   ListIdentifiers   oai_dc
+eiscat  https://trng-b2share.eudat.eu/api  records  json
+
+## GFZ sub communities
+gfz-dataservices  http://doidb.wdc-terra.org/oaip/oai  ListRecords   iso19139  DOIDB.GFZ
+geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GEOFON ##???iso19139  DOIDB.GEOFON
+geofon  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SEISNET ##???iso19139  DOIDB.GEOFON
+icgem   http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ICGEM
+###
+gipp    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.GIPP
+isdc    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ISDC
+## pik     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.PIK
+sddb    http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.SDDB
+##tr32db 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TR32DB
+##crc806db http://crc806db.uni-koeln.de        ListRecords   oai_datacite  DOIDB.SFB806
+wsm     http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.WSM
+enmap 	http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.ENMAP
+tereno  http://doidb.wdc-terra.org/oaip/oai  ListRecords   oai_datacite  DOIDB.TERENO 
+##gfz     http://doidb.wdc-terra.org/oaip/oai        ListRecords       oai_datacite test_1
+badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc
+badc    http://badc.nerc.ac.uk/badc_oai/provider   ListIdentifiers   oai_dc solas
+
+## JADDS
+jadds http://134.94.32.229:8080/rasdaman/ows csw wcs cams1_ps
+
+# Dublincore from dm-oai.dkrz.de
+## B2SAFE
+#b2safe  https://trng-b2share.eudat.eu/api  records  json
+
+## DataverseNO
+dataverseno https://dataverse.no/oai ListRecords oai_dc HarvesterDataverseNO
+dataverseno https://dataverse.no/oai ListRecords oai_dc nmdc
+dataverseno https://dataverse.no/oai ListRecords oai_dc trolling
+
+##???herbadrop https://www.cines.fr/en/herbadrop-project-honored ListRecords oai_dc 
+##???herbadrop https://www.cines.fr/en/herbadrop-project-honored works json
+
+##Yoda (Utrecht University)
+utrechtuni https://public.yoda.uu.nl/oai/oai ListRecords datacite
+
+##E-Rosa Inra ??
+inra https://data.inra.fr/oai ListRecords oai_ddi ALL
+
+## Aston university
+aston http://researchdata.aston.ac.uk/cgi/oai2 ListRecords oai_dc 74797065733D646174615F636F6C6C656374696F6E 
+## RDA summerscool test OAI @CSC
+rda   http://rda-summerschool.csc.fi/repository/oai/request  ListRecords  oai_dc hdl_123456789_1
+
+# CEDA : Physics
+ceda    http://cedadocs.badc.rl.ac.uk/cgi/oai2     ListIdentifiers  oai_dc  7375626A656374733D70687973696373
+
+
+## DARIAH endpoints, in groups of five (got from Kees)
+# h#=9646  ?MPI-PL h#=12268
+dariah http://gams.uni-graz.at/oaiprovider  ListIdentifiers oai_europeana gams_
+# h#=90    ?MPI-PL h#=92
+dariah http://demo2.dariah.eu/colreg/OAIHandler ListIdentifiers oai_dc dariah-coll_ 
+# h#=70    ok=MPI-PL h#=70
+dariah http://acdh.oeaw.ac.at/acdh-repo/oai ListIdentifiers oai_dc acdh_
+# ERR?? : URL /oaiprovider was not found on this server. ???
+#?MPI-PL h#=34460
+dariah http://fedora.phaidra.univie.ac.at/oaiprovider ListIdentifiers  oai_dc vienna-phaidra_
+# ?? ERR currently not harvestable  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc  buch
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objekt  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc bauwerk  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc bauwerksteil  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc gruppen  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc relief  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc realien  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc reproduktion  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc rezeption  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc sammlungen  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektsiegel  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc datierung  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc topographie  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc typus
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektplastik  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektbauornamentik 
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektkeramik 
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektplomben  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektgemaelde  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektterrakotten  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektlebewesen 
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc objektmosaik  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc ort 
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc ortsbezug  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc marbilder  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc semantique  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc berlin  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc sarkophag  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc sammler  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc buchEnrich  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc buchseite  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc literatur  
+dariah http://arachne.uni-koeln.de/OAI-PMH/oai-pmh.xml ListIdentifiers oai_dc literaturzitat
+# ?? ERR?? : AttributeError: 'NoneType' object has no attribute 'tag' ??? h#= ?MPI-PL h#=100
+dariah http://demo.imeji.org/fledgeddata/oai ListIdentifiers  oai_dc imeji_
+## h#=86472 ??MPI-PL ???
+dariah http://pubman.mpdl.mpg.de/escidoc-oaiprovider ListIdentifiers  oai_dc mpdl_
+## ERR?? AttributeError: 'NoneType' object has no attribute 'tag' ??? h#= ?MPI-PL h#=100
+dariah http://zuse.zib.de/fledgeddata/oai ListIdentifiers  oai_dc zib_
+## h#=2322   ?MPI-PL h#=2321
+dariah http://edoc.bbaw.de/oai2/oai2.php ListIdentifiers  oai_dc bbaw_
+## ADS h#=... ?MPI-PL h#=431
+dariah http://archaeologydataservice.ac.uk/oai/archives/OAIHandler ListIdentifiers oai_dc ads_ 
+## h#=32516 ?MPI-PL h#=32091
+dariah http://DARAstaroai.theses.fr/OAIHandler ListIdentifiers  oai_dc star_
+## h#1 >150000 harvesting stopped ?MPI-PL h#=186197
+dariah http://www.calames.abes.fr/oai/oai2.aspx ListIdentifiers  oai_dc calames_
+## <!-- currently not harvestable: provider url="http://oai.openedition.org"/ -->
+# ?MPI-PL h#=239 ok=MPI-PL h#=239
+dariah http://sldr.org/oai-pmh.php ListIdentifiers  oai_dc sldr_
+## <!-- currently not harvestable: provider url="http://www.etnoinfolab.org/oai/oai.php"/> -->
+#  ?MPI-PL h#=
+dariah http://www.arzenal.si/oai/arzenal ListIdentifiers  oai_dc arzenal_
+#  ?MPI-PL h#=265
+dariah http://isn3.zrc-sazu.si/etnofolk/OAI-2.0/oai.php ListIdentifiers  oai_dc isn-zrc_
+# ?MPI-PL h#=28612
+dariah http://www.sistory.si/oai.php ListIdentifiers  oai_dc sistory_
+
+
+## Some old Clarin endpoints in CMDI
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2006187
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1555622
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI239014:MPI2188077
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI923656
+##??? clarin  http://corpus1.mpi.nl/ds/oaiprovider/oai2   ListRecords cmdi MPI0:MPI77915:MPI1455702
+
+## DA|RA
+##dara https://www.da-ra.de/oaip/oai ListRecords oai_dc Datasets ### ~ZnE9cmVzb3VyY2VUeXBlOkRhdGFzZXQ=
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc GESISDataArchive # -->1 GESIS Data Archive #=7103
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RKI # --> 10 RKI Robert Koch Institute #=13
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc FDP-URU # --> 101 #=1
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IHI # --> 105
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DIPF # --> 11
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc BIFIE # --> 112
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZfKD # --> 114
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZBW # --> 118 ZBW JournalDataArchive
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SRDA # --> 128
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc EBDC # --> 13
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IWH # --> 130
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc AHRI # --> 132
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc RDC # --> 136
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DZHW # --> 138
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc XHUB # --> 139
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc Manifesto # --> 143
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DJI # --> 148
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc FORS # --> 149
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IAB # --> 151
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DeutscheBundesbank # --> 21 #20
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc NEPS # --> 3 #=57
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc CSES #--> 32 #=12
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc GESISDatorium # --> 33 #98
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RWI # 35 ???#0
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SHARE-ERIC # 37
+dara https://www.da-ra.de/oaip/oai ListIdentifiers oai_dc ICPRS # ICPSR - Interuniversity Consortium for Political and Social Research # 27574
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc ZPID # 4 #53
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc HSRC # 46 ???
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc SOEP # -->5 #=49
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc DZA # 6
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc IQB # 77 
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc RDC-BO # 8
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc CSDA # 86 csda - Czech Social Science Data Archive #434
+dara https://www.da-ra.de/oaip/oai ListRecords oai_dc INDEPTH # 9 #86
+
+## CESSDA
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc dans-easy_
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D10000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D20000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D30000:D31000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D30000:D32000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D30000:D33000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D30000:D34000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D30000:D35000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D30000:D36000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D30000:D37000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D30000:D38000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D40000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D50000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D60000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc D70000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc driver
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc E10000
+cessda http://easy.dans.knaw.nl/oai ListRecords oai_dc easy_collectio
+
+## B2SHARE von FZ Juelich
+#b2share https://b2share.fz-juelich.de/api/oai2d ListRecords oai_dc EUDAT
+b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc Aalto
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc BBMRI
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc CLARIN
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc DRIHM
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EISCAT
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUDAT
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc EUON
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc GBIF
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc LTER
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc NRM
+#b2share  http://b2share.eudat.eu/oai2d ListRecords oai_dc RDA
+
+gbif http://api.gbif.org/v1 dataset json
+
+##%%% Europeana (some endpoints)
+##europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  cmdi samples
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0569
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a1422
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a1055a
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0600
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0559b
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0310
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a1454
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0558
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0549c
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0219
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0414
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a1058
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a1004
+europeana http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0246
+europeana http
+
+##%%% TheEuropeanLIbrary
+##     - research related records --> B2FIND !!!
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a1058
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0337
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0633
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0237
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListRecords  oai_dc a0442
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0341
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1025
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a1057
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0552
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0340
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0005
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0338
+theeuropeanlibrary http://data.theeuropeanlibrary.org/oaipmh/OaiPmhHandler ListIdentifiers  oai_dc a0336

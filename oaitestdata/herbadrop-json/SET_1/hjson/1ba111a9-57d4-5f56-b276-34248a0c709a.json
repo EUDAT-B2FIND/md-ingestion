@@ -1,0 +1,91 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-2621198", 
+        "ARKID": "2621198"
+    }, 
+    "depositIdentifier": "P06804503", 
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01", 
+            "fileName": "P06804503.jpg", 
+            "ocr": {
+                "deu": "\u201c05350080\nDuplum ex Herb W\nNaturhistorisches Museum Wien\nHerbarium\nSabransky\nHERBARIUM MUSE] PARIS/ENS/S\nHerbier Museum Paris\nP06804503\n", 
+                "eng": "\u201d06350080\nDuplum ex Herb W\nNaturhistorisches Museum Wien\nHerbarium\nSabransky\nHERBARIUM MUSE] PARIS/ENS/S\nHerbier Museum Paris\nP06804503\n", 
+                "fra": "\u201d06350080\nDuplum ex Herb W\nNaturhistorisches Museum Wien\nHerbarium\nSabransky\nHERBARIUM MUSE] PARIS/ENS/S\nHerbier Museum Paris\nP06804503\n", 
+                "lat": "\u201d06350080\nDuplum ex Herb W\nNaturhistorisches Museum Wien\nHerbarium\nSabransky\nHERBARIUM MUSE] PARIS/ENS/S\nHerbier Museum Paris\nP06804503\n", 
+                "spa": "\u201d06350080\nDuplum ex Herb W\nNaturhistorisches Museum Wien\nHerbarium\nSabransky\nHERBARIUM MUSE! PARIS/ENS/S\nHerbier Museum Paris\nP06804503\n"
+            }
+        }
+    ], 
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        }, 
+        "aip.dc.creator": "unavailable", 
+        "aip.dc.description": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.format": {
+            "eng": "image/jpeg"
+        }, 
+        "aip.dc.identifier": "ark:/87895/1.90-2621198", 
+        "aip.dc.language": "und_UND", 
+        "aip.dc.publisher": "MNHN", 
+        "aip.dc.relation": {}, 
+        "aip.dc.rights": {
+            "und": "http://creativecommons.org/licenses/by/4.0/"
+        }, 
+        "aip.dc.source": {
+            "und": "unavailable"
+        }, 
+        "aip.dc.subject": {
+            "lat": "Poaceae"
+        }, 
+        "aip.dc.title": {
+            "lat": "Muhlenbergia mexicana Trin."
+        }, 
+        "aip.dc.type": {
+            "eng": "StillImage|PRESERVED_SPECIMEN"
+        }, 
+        "aip.files": [
+            {
+                "checksum": "dbdfa10777fc646518c2c5d628571b597b8995922a71ad8cd9d0e1ee7c0dcce5", 
+                "checksumType": "SHA-256", 
+                "encoding": "UTF-8", 
+                "format": "TXT", 
+                "formatVersion": "NA", 
+                "identifier": "ark:/87895/1.90-2621198/1", 
+                "name": "DESC/P06804503.txt", 
+                "originalChecksum": "9eda44bb35bb2c7d282853c4a3b25983", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 2610
+            }, 
+            {
+                "checksum": "2885029b0710f571d9f69e683dddacd151fbf332d541da68c8925ed8fdf46e7f", 
+                "checksumType": "SHA-256", 
+                "format": "JPEG", 
+                "formatVersion": "1.01", 
+                "identifier": "ark:/87895/1.90-2621198/2", 
+                "name": "P06804503.jpg", 
+                "originalChecksum": "c72eae3b16d56fc8fb14c373afe1ad13", 
+                "originalChecksumType": "MD5", 
+                "sizeInBytes": 5508000
+            }
+        ], 
+        "aip.meta.archivingDate": "2019-03-13T14:54:55+0100", 
+        "aip.meta.depositIdentifier": "P06804503", 
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        }, 
+        "aip.meta.finalAction": {
+            "fra": "Conservation d\u00e9finitive"
+        }, 
+        "aip.meta.note": {}, 
+        "aip.meta.pacIdentifier": 2621198, 
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p06804503", 
+        "aip.meta.project": "90", 
+        "aip.meta.transferringAgency": "MNHN"
+    }, 
+    "score": 15.77277, 
+    "transferringAgencyIdentifier": "mnhnftp"
+}

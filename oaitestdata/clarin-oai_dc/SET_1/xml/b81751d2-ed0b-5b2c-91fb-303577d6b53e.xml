@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repository.clarin.dk:20.500.12115/8</identifier>
+    <datestamp>2018-06-28T13:21:32Z</datestamp>
+    <setSpec>hdl_20.500.12115_1</setSpec>
+    <setSpec>hdl_20.500.12115_3</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>The Danish Parliament Corpus 2009 - 2017, v1</dc:title>
+      <dc:creator>Hansen, Dorte Haltrup</dc:creator>
+      <dc:subject>Parliament records</dc:subject>
+      <dc:description>The Danish Parliament Corpus 2009 &#8211; 2017 contains Hansards (transcripts of parliamentary speeches) from the sittings in the Chamber of the Danish Parliament, Folketinget. The corpus consists of xml files, one for each parliamentary year, running from October to the following June. The files are marked for meetings, item title and number, speeches, name and party of speakers, date, time etc.&#13;
+The Danish Parliament Corpus 2009-2017 follows the license for Open Data stating the following:&#13;
+"The Danish Parliament grants a world-wide, free, non-exclusive and otherwise unrestricted right of use of the data in the Danish Parliament's open data catalogue. The data can be freely: &#13;
+&#61607;	copied, distributed and published, &#13;
+&#61607;	adapted and combined with other material,&#13;
+&#61607;	exploited commercially and non-commercially. "&#13;
+Following the copyright act, the speeches can be distributed without the consent of the speaker but only in a way where the author/speaker of each text/speech is clearly stated. Furthermore, the Danish Parliament must be acknowledged as the source.&#13;
+Version 1 of the corpus includes meetings until May 4th, 2017, and the reports for the latest parliamentary year have not been published as the final edition. The reports of all other meetings are the final editions.</dc:description>
+      <dc:date>2018</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.12115/8</dc:identifier>
+      <dc:language>dan</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>The Danish Parliament</dc:publisher>
+      <dc:publisher>Centre for Language Technology, NorS, University of Copenhagen</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

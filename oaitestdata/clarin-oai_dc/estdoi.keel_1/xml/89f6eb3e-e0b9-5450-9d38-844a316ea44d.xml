@@ -1,0 +1,25 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:8521723</identifier>
+    <datestamp>2019-06-09T14:31:44Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Fraseoloogias&#245;naraamat</dc:title>
+      <dc:title xml:lang="en">The Dictionary of Estonian Phraseology</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:creator>&#213;im, Asta</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2015</dc:date>
+      <dc:date>Issued: 2015-05-06</dc:date>
+      <dc:date>Updated: 2017-03-03</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-05772L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Sisaldab &#252;le 7500 p&#252;siv&#228;ljendi, sealhulgas raamatulikke, k&#245;nekeelseid ja vananenud ning vulgaarseid v&#228;ljendeid, mitmesuguseid &#252;tlusi ning kantselei- ja stampvormeleid.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">Contains over 7500 phrasemes, including bookish, colloquial, obsolete and vulgar expressions, as well as various sayings and also some red-tape and stereotyped expressions.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

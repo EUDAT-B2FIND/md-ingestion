@@ -1,0 +1,75 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-443</identifier>
+    <datestamp>2019-11-20T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-443</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Boettcher, Maximilian</creatorName>
+          <givenName>Maximilian</givenName>
+          <familyName>Boettcher</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-9550-0360</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Alvarez Rua, Miguel</creatorName>
+          <givenName>Miguel</givenName>
+          <familyName>Alvarez Rua</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Klinkner, Sabine</creatorName>
+          <givenName>Sabine</givenName>
+          <familyName>Klinkner</familyName>
+          <nameIdentifier nameIdentifierScheme="GND">143233165</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Single Event Upset Data 2017-08 till 2018-05</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Engineering</subject>
+        <subject>Physics</subject>
+        <subject>SEU</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Boettcher, Maximilian</contributorName>
+          <givenName>Maximilian</givenName>
+          <familyName>Boettcher</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2019-06-27</date>
+        <date dateType="Updated">2019-11-19</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset"/>
+      <sizes>
+        <size>203807</size>
+        <size>63298</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+        <format>application/vnd.rar</format>
+      </formats>
+      <version>2.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Single Event Upset Data with Position Data used in "Single Event Upsets in flight observation and analysis for the &#8220;Flying Laptop&#8221; small satellite".&#13;
+Data measured by the FLP UT-699 Onboard Computer.</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>

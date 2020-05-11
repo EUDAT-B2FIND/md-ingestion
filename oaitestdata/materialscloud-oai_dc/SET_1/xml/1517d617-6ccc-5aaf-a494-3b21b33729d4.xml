@@ -1,0 +1,46 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2017.0008/v2</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Mounet, Nicolas</dc:creator>
+      <dc:creator>Gibertini, Marco</dc:creator>
+      <dc:creator>Schwaller, Philippe</dc:creator>
+      <dc:creator>Campi, Davide</dc:creator>
+      <dc:creator>Merkys, Andrius</dc:creator>
+      <dc:creator>Marrazzo, Antimo</dc:creator>
+      <dc:creator>Sohier, Thibault</dc:creator>
+      <dc:creator>Castelli, Ivano E.</dc:creator>
+      <dc:creator>Cepellotti, Andrea</dc:creator>
+      <dc:creator>Pizzi, Giovanni</dc:creator>
+      <dc:creator>Marzari, Nicola</dc:creator>
+      <dc:title>Two-dimensional materials from high-throughput computational exfoliation of  experimentally known compounds</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2018-03-21</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>2D</dc:subject>
+      <dc:subject>two-dimensional</dc:subject>
+      <dc:subject>monolayer</dc:subject>
+      <dc:subject>database</dc:subject>
+      <dc:subject>high-throughput</dc:subject>
+      <dc:subject>DFT</dc:subject>
+      <dc:subject>vibrational properties</dc:subject>
+      <dc:subject>phonons</dc:subject>
+      <dc:subject>electronic properties</dc:subject>
+      <dc:subject>electronic bands</dc:subject>
+      <dc:subject>magnetic properties</dc:subject>
+      <dc:subject>MARVEL</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2017.0008/v2</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2017.0008/v2</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:relation>https://www.materialscloud.org/discover/2dstructures</dc:relation>
+      <dc:relation>https://www.materialscloud.org/explore/2dstructures</dc:relation>
+      <dc:description>Two-dimensional (2D) materials have emerged as promising candidates for next-generation electronic and optoelectronic applications. Yet, only a few dozens of 2D materials have been successfully synthesized or exfoliated. Here, we search for novel 2D materials that can be easily exfoliated from their parent compounds. Starting from 108423 unique, experimentally known three-dimensional compounds we identify a subset of 5619 that appear layered according to robust geometric and bonding criteria. High-throughput calculations using van-der-Waals density-functional theory, validated against experimental structural data and calculated random-phase-approximation binding energies, allow to identify 1825 compounds that are either easily or potentially exfoliable. In particular, the subset of 1036 easily exfoliable cases provides novel structural prototypes and simple ternary compounds as well as a large portfolio of materials to search from for optimal properties. For a subset of 258 compounds we explore vibrational, electronic, magnetic, and topological properties, identifying 56 ferromagnetic and antiferromagnetic systems, including half-metals and half-semiconductors. This archive entry contains the database of 2D materials (structural parameters, band structures, binding energies, etc.) together with the provenance of all data and calculations as stored by AiiDA.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

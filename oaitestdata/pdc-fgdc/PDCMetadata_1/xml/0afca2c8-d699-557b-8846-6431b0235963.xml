@@ -1,0 +1,171 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>12666_fgdc</identifier>
+    <datestamp>2017-09-11T18:58:33Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Scott, Bethany</origin>
+            <origin>Qikiqtani Inuit Association</origin>
+            <origin>Amarualik, Tommy</origin>
+            <origin>Arnatsiaq, Sara</origin>
+            <origin>Iqalukjuak, Niore</origin>
+            <origin>Kalluk, Josh</origin>
+            <origin>Milton, Michael</origin>
+            <origin>Mucktar, Ena</origin>
+            <origin>Pootoogook, Evie</origin>
+            <origin>Saila, Joe</origin>
+            <pubdate>20170911</pubdate>
+            <title>Inuusiup Asijjiqpallianinganik Ujjiqsurniq: Understanding Community Change in Qikiqtaaluk (NGMP ID SE06)</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Data Citation: Qikiqtani Inuit Association, Scott, B., Saila, J., Pootoogook, E., Arnatsiaq, S., Iqalukjuak, N., Mucktar, E., Kalluk, J., Amarualik, T. and Milton, M. (2017) Inuusiup Asijjiqpallianinganik Ujjiqsurniq: Understanding Community Change in Qikiqtaaluk (NGMP ID SE06). Waterloo, Canada: Canadian Cryospheric Information Network (CCIN). Unpublished Data
+Additional Publication- can be accessed: Arnatsiaq S., Iqalukjuak N., Mucktar E., Pootoogook E., Amarualik T., Kalluk J., Milton M., Saila J., Scott, B. (2016). Inuusiup asijjiqpallianinganik Ujjiqsurniq: Understanding Community Change in the Qikiqtaaluuk. Qikiqtani Inuit Association. Iqaluit. 
+(unpublished data)</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=12666</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>1) Background:
+In the mid-20th century, Inuit faced massive social change brought about by the arrival of southern institutional organizations and the establishment of settled communities. Currently, Inuit communities in the Qikiqtani region are experiencing a new wave of social change as the resource development intensifies. Many community members are concerned that their way of life will change dramatically once again. The research will capture data at repeated three year intervals on the important aspects of community life, as defined by the communities themselves, in four communities newly affected by extractive industries. 
+2) Methodology:
+A team of community researchers was established from each of the four target communities in the Qikiqtani Region of Nunavut, affected by the development of mining activities. The community researchers ran focus groups and workshops in their communities to identify key areas of concern to the local community. A list of key indicators was developed by the community researchers from the areas of concern, and a questionnaire developed to gather data on these indicators. A questionnaire was designed to carry out a household survey to report on the indicators. A simple random sample of 96 respondents was selected in each community. Eligible respondents were community members 16 years or older whose principle place of residence was the target community. 
+3) Results:
+The workshops and focus groups identified three main areas of concern: Hunting and food sharing practices; family and community relationships; and civic and volunteer participation. From this, 53 indicators were developed. Baseline data was collected March/April 2016, with repeated applications of the survey every three years. The simple random sample of 96 individuals will mean that the 95% CI will not exceed +/-10%. 
+4) Conclusions:
+A report will be generated from the results and circulated to all stakeholders.</abstract>
+          <purpose>1) Aim: &amp;#x0d;
+To collect baseline data of community-identified socio-economic areas of concern (hunting and food sharing practices, family and community relationships, and civic and volunteer participation) in four communities affected by resource development.&amp;#x0d;
+&amp;#x0d;
+2) Objectives:&amp;#x0d;
+i) Administer a face-to-face survey to randomly selected adults currently living in Pond Inlet, Clyde River, Igloolik, and Cape Dorset.&amp;#x0d;
+ii) To establish baseline data to enable future research of experiences and perceptions of change in communities newly impacted by resource development projects.&amp;#x0d;
+iii) To create an opportunity for the community voice to be represented in the collection of socio-economic data, specifically in areas of concern identified and validated by community members. &amp;#x0d;
+iv) To build social sciences research capacity with a team of community researchers. &amp;#x0d;
+v) To provide results which: communities can use to advocate for resources; Inuit organizations can use when negotiating Inuit Impact Benefit Agreements; and Stakeholders can use to further understanding of the experience of change in communities impacted by resource development.&amp;#x0d;
+&amp;#x0d;
+3) Rationale:&amp;#x0d;
+In the mid-20th century, Inuit faced massive social change brought about by the arrival of southern institutional organizations and the establishment of settled communities. Currently, several communities in the Qikiqtani region are experiencing a new wave of social change as resource development intensifies. Many community members are concerned that their way of life will change dramatically once again. &amp;#x0d;
+Inuusuip Asijjiqpallianinganik Ujjiqsurniq (IAU) is a community-based socio-economic research project which aims to capture baseline data of current aspects of community life, including hunting and food sharing practices, family and community relationships, and community civic and volunteer participation in order to provide communities with data that they can use to advocate for resources to mitigate the perceived social impacts of mining.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): NGMP. For further information: bscott@qia.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>20130601</begdate>
+              <enddate>20170331</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>Complete</progress>
+          <update>Irregular</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-77</westbc>
+            <eastbc>-68</eastbc>
+            <northbc>72</northbc>
+            <southbc>63</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Baffin Island</themekey>
+            <themekey>Capacity building</themekey>
+            <themekey>Cape Dorset</themekey>
+            <themekey>Clyde River</themekey>
+            <themekey>Community mobilization</themekey>
+            <themekey>Igloolik</themekey>
+            <themekey>Pond Inlet</themekey>
+            <themekey>Resource development</themekey>
+            <themekey>Social change</themekey>
+          </theme>
+          <place>
+            <placekt>Pond Inlet, Igloolik, Clyde River, Cape Dorset, Qikiqtani region, Nunavut, Canada</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Limited</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Qikiqtani Inuit Association</cntorg>
+              <cntper>Bethany Scott</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>Box 1340</address>
+              <city>Iqaluit</city>
+              <state>Nunavut</state>
+              <postal>X0A0H0</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>897.975.8400</cntvoice>
+            <cntemail>bscott@qia.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>12666</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20160328</metd>
+        <metrd>20170911</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Bethany Scott</cntper>
+              <cntorg>Qikiqtani Inuit Association</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>Box 1340</address>
+              <city>Iqaluit</city>
+              <state>Nunavut</state>
+              <postal>X0A0H0</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>897.975.8400</cntvoice>
+            <cntemail>bscott@qia.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

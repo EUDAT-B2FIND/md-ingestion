@@ -1,0 +1,27 @@
+{
+    "dataLevel": {
+        "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+        "type": "literal",
+        "value": "0"
+    },
+    "dobj": {
+        "type": "uri",
+        "value": "https://meta.icos-cp.eu/objects/TmDOB8hZK27P4phCQLWva_Mo"
+    },
+    "fileName": {
+        "type": "literal",
+        "value": "IT-SR2_BM_20180617_L01_F02.zip"
+    },
+    "spec": {
+        "type": "literal",
+        "value": "ICOS ETC Bio Meteo Raw ASCII"
+    },
+    "submitterName": {
+        "type": "literal",
+        "value": "San Rossore 2"
+    },
+    "time": {
+        "type": "literal",
+        "value": "2018-06-17T23:44:23.965Z"
+    }
+}

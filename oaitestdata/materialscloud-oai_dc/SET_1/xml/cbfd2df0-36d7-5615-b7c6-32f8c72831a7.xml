@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0014/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Trapl, Dalibor</dc:creator>
+      <dc:creator>Horvacanin,  Izabela</dc:creator>
+      <dc:creator>Mareska,  Vaclav</dc:creator>
+      <dc:creator>Ozcelik,  Furkan</dc:creator>
+      <dc:creator>Unal, Gozde</dc:creator>
+      <dc:creator>Spiwok, Vojtech</dc:creator>
+      <dc:title>Approximation of Collective Variables by anncolvar</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-04-23</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>metadynamics</dc:subject>
+      <dc:subject>artificial neural networks</dc:subject>
+      <dc:subject>collective variable</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0014/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0014/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>Biomolecular simulations are computationally expensive. This limits their application in drug or protein design and related fields. Several methods have been developed to address this problem. These methods often use an artificial force or potential acting on selected degrees of freedom known as collective variables. This requires explicit calculation of a collective variable (and its derivatives) from molecular structure. For collective variables that cannot be calculated explicitly or such calculations is slow we developed anncolvar package (https://github.com/spiwokv/anncolvar). This package approximates collective variables using artificial neural networks. It was tested on Isomap low dimensional representation of cyclooctane derivative or solvent-accessible surface area of Trp-cage miniprotein.
+&lt;br/&gt;
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

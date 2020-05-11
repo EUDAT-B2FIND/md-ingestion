@@ -1,0 +1,85 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.887882</identifier>
+    <datestamp>2018-04-24T14:07:23Z</datestamp>
+    <setSpec>FRAM</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+      <identifier identifierType="URL">https://doi.pangaea.de/10.1594/PANGAEA.887882</identifier>
+      <creators>
+        <creator>
+          <creatorName>N&#246;thig, Eva-Maria</creatorName>
+          <nameIdentifier schemeURI="http://orcid.org" nameIdentifierScheme="ORCID">0000-0002-7527-7827</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Bauerfeind, Eduard</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Lorenzen, Christiane</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Lalande, Catherine</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Kn&#252;ppel, Nadine</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Winkler, Maria</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Bonk, Elizabeth</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Strache, Anique</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Jacobs, Mirta</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Petersen, Imke</creatorName>
+        </creator>
+        <creator>
+          <creatorName>Schr&#246;ter, Franz</creatorName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Chlorophyll a in Arctic Ocean, Fram Strait, and Greenland Sea 2013 - 2016</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2018</publicationYear>
+      <subjects>
+        <subject>Hausgarten</subject>
+        <subject subjectScheme="Project">Biological Oceanography @ AWI (AWI_BioOce)</subject>
+        <subject subjectScheme="Project">FRontiers in Arctic marine Monitoring (FRAM)</subject>
+        <subject subjectScheme="Project">Long-term Investigation at AWI-Hausgarten off Svalbard (Hausgarten)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="HostingInstitution">
+          <contributorName>Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research, Bremerhaven</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Collected">2013-06-25T10:58:00/2016-10-18T15:40:00</date>
+      </dates>
+      <language>eng</language>
+      <resourceType resourceTypeGeneral="Collection">Collection of Datasets</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.3389/fmars.2017.00166</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1038/s41598-017-04106-9</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1594/PANGAEA.855814</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>7 datasets</size>
+      </sizes>
+      <formats>
+        <format>application/zip</format>
+      </formats>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>70.99967 -116.83033 89.16667 88.50694200000001</geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

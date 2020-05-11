@@ -1,0 +1,29 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2019.0010/v1</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Debnath, Jayashrita </dc:creator>
+      <dc:creator>Parrinello, Michele </dc:creator>
+      <dc:creator>Invernizzi, Michele</dc:creator>
+      <dc:title>Enhanced sampling of transition states</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2019-02-28</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>Transition States</dc:subject>
+      <dc:subject>Nucleation</dc:subject>
+      <dc:subject>Critical Clusters</dc:subject>
+      <dc:subject>Enhanced Sampling</dc:subject>
+      <dc:subject>Molecular Modelling</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2019.0010/v1</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2019.0010/v1</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>The free energy landscapes of several fundamental processes are characterized by high barriers separating long-lived metastable states. In order to explore these type of landscapes enhanced sampling methods are used. While many such methods are able to obtain sufficient sampling in order to draw the free energy, the transition states are often sparsely sampled. We propose an approach based on the Variationally Enhanced Sampling Method to enhance sampling in the transition region. To this effect, we introduce a dynamic target distribution which uses the derivative of the instantaneous free energy surface to locate the transition regions on the fly and modulate the probability of sampling different regions. Finally, we exemplify  the effectiveness of this approach in enriching the number of configurations in the transition state region in the cases of a chemical reaction and of a nucleation process.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

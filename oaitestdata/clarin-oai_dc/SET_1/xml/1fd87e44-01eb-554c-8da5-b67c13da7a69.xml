@@ -1,0 +1,31 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:ota:oucs:2537</identifier>
+    <datestamp>2018-10-15T09:04:33Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cld="http://purl.org/cld/terms/">
+      <dc:identifier>http://ota.ox.ac.uk/headers/2537.xml</dc:identifier>
+      <dc:title>GerManC. A Historical Corpus of German Newspapers 1650-1800 (first version)</dc:title>
+      <dc:title>GerManC 2007 Version</dc:title>
+      <dc:date>1650-1800</dc:date>
+      <dc:subject>text_and_corpus_linguistics</dc:subject>
+      <dc:subject>Linguistic analysis (Linguistics)</dc:subject>
+      <dc:subject>German language--Written German</dc:subject>
+      <dc:language>deu</dc:language>
+      <dc:description>The corpus consists of 45 text samples of some 200 words each from German newspapers of the early modern period 1650-1800. There are three texts each from five German regions - North Germany, West Germany, East Central Germany, South-West Germany (including Switzerland) and South-East Germany (including Austria) - for each fifty year sub-period. The corpus consists first of a set of unannoted text files contained in sets of folders for each region and period, and also of files with each individual text, and secondly of a set of xml files each of which contains one fully annotated text, organised into folders according to sub-period and region. In addition there is a documentation file which provides a full account of each stage of the corpus construction and annotation, together with any necessary modification of TEI standards. This file also contains a complete reference list of all the names of places, organisations and historical personages occuring in the corpus. Finally, a source file provides full bibiographic details of the original texts </dc:description>
+      <dc:publisher>Oxford Text Archive, University of Oxford</dc:publisher>
+      <dc:contributor>Durrell, Martin</dc:contributor>
+      <dc:contributor>Ensslin, Astrid</dc:contributor>
+      <dc:contributor>Bennett, Paul</dc:contributor>
+      <dc:contributor>Economic and Social Research Council (ESRC)</dc:contributor>
+      <dc:contributor>Durrell, Martin</dc:contributor>
+      <dc:format>text/xml</dc:format>
+      <dc:format>154 files : ca. 5.54 MB</dc:format>
+      <dc:type>Text</dc:type>
+      <dc:type>Linguistic corpora</dc:type>
+      <dc:rights>Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. This is a very liberal license that grants certain rights for non-commercial use, especially your right to use GerManC for your own research, but also reserves certain rights for the original creators of GerManC.</dc:rights>
+      <dc:rights>http://www.ota.ox.ac.uk/documents/user_agreement.xml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

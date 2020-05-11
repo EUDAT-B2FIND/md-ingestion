@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:13041918</identifier>
+    <datestamp>2019-05-26T17:36:36Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti keele A1&#8211;C1 &#245;pikute sisu korpus 2017 </dc:title>
+      <dc:title xml:lang="en">Corpus of Estonian coursebook content 2017</dc:title>
+      <dc:creator>Kallas, Jelena</dc:creator>
+      <dc:creator>Koppel, Kristina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-11-20</dc:date>
+      <dc:date>Updated: 2019-04-24</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-06ADEL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Sisaldab A1, A2, B1, B2 ja C1 keeleoskustasemega eesti keele &#245;ppijatele suunatud &#245;pikute materjali. Korpuses  on u 500 000 s&#245;net ning korpuses on m&#228;rgendatud teksti&#252;ksused &lt;text&gt; (enamasti eristatakse harjutust, s&#245;navaraplokki ja suuremat seotud teksti), tekstil&#245;igud &lt;paragraph&gt; (&#252;hel real asuv tekst), laused &lt;sentence&gt; ja osalaused &lt;clause&gt;. Korpus on morfoloogiliselt m&#228;rgendatud. 
+
+Korpuses on kaheksa &#245;pikut:
+1.      Pesti, M., Ahi, H. (2015). E nagu Eesti: eesti keele &#245;pik algajatele. Tallinn: Kiri-Mari Kirjastus.
+2.      Kitsnik, M., Kingisepp, L. (2002). Avatud uksed: eesti keele &#245;ppekomplekt kesk- ja k&#245;rgtasemele: &#245;pperaamat. Tallinn: TEA Kirjastus.
+3.      Kitsnik, M. (2012). Eesti keele &#245;pik: B1, B2. Tallinn: M. Kitsnik.
+4.      Pesti, M., Ahi, H. (2015). Eesti keele &#245;pik A1. Tallinn: Justiitsministeerium.
+5.      Pesti, M., Ahi, H. (2012). Eesti keele &#245;pik A2. Tallinn: M. Pesti.
+6.      Pesti, M., Ahi, H. (2015). Eesti keele &#245;pik B1. Tallinn: Justiitsministeerium.
+7.      Sooneste, M. (2007). Eesti keele &#245;pik: vene &#245;ppekeelega g&#252;mnaasium: kesk- ja k&#245;rgtase. Tallinn: Varrak.
+8.      Rammo, S., Teral, M., Klaas-Lang, B., Allik, M. (2012). Keel selgeks!: eesti keele &#245;pik t&#228;iskasvanutele. Tallinn: Avita.
+
+</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

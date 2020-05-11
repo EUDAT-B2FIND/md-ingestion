@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757485</identifier>
+    <datestamp>2019-06-16T21:01:17Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti Keele Instituudi reeglip&#245;hise morfoloogia t&#246;&#246;riistad</dc:title>
+      <dc:title xml:lang="en">Tools of the IEL rule-based morphology</dc:title>
+      <dc:creator>Hein, Indrek</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2012</dc:date>
+      <dc:date>Issued: 2012-06-14</dc:date>
+      <dc:date>Updated: 2017-02-15</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-00019L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Eesti Keele Instituudi reeglip&#245;hine morfoloogiat&#246;&#246;riistade komplekt sisaldab endas eraldi kasutatavaid mooduleid silbitamise, t&#252;&#252;bituvastuse, morfoloogilise anal&#252;&#252;si ja s&#252;nteesi kohta.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The rule-based morphology toolkit of the Estonian Language Institute consists of separate modules for syllabification, paradigm recognition, morphological analysis and synthesis.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

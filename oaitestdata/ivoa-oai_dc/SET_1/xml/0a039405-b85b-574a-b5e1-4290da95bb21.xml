@@ -1,0 +1,29 @@
+<oai:record xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oai:header>
+    <oai:identifier>ivo://org.gavo.dc/cars/q/cutout</oai:identifier>
+    <oai:datestamp>2018-12-21T17:01:27Z</oai:datestamp>
+  </oai:header>
+  <oai:metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:title>CARS image cutouts</dc:title>
+      <dc:identifier>ivo://org.gavo.dc/cars/q/cutout</dc:identifier>
+      <dc:creator>Erben, T.</dc:creator>
+      <dc:creator>Hildebrandt, H.</dc:creator>
+      <dc:creator>Lerchster, M.</dc:creator>
+      <dc:creator>Hudelot, P.</dc:creator>
+      <dc:creator>Benjamin, J.</dc:creator>
+      <dc:creator>van Waerbeke, L.</dc:creator>
+      <dc:creator>Schrabback, T.</dc:creator>
+      <dc:creator>Brimioulle, F.</dc:creator>
+      <dc:creator>Cordes, O.</dc:creator>
+      <dc:creator>Dietrich, J. P.</dc:creator>
+      <dc:creator>Holhjem, K.</dc:creator>
+      <dc:creator>Schirmer, M.</dc:creator>
+      <dc:creator>Schneider, P.</dc:creator>
+      <dc:description>Images and data from from the CFHTLS archive research survey, a
+        multi-band dataset spanning 37 square degrees of sky in high galactic
+        latitudes.</dc:description>
+      <dc:publisher>The GAVO DC team</dc:publisher>
+    </oai_dc:dc>
+  </oai:metadata>
+</oai:record>

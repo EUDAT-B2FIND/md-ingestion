@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/ILC-65</identifier>
+    <datestamp>2018-07-23T09:13:44Z</datestamp>
+    <setSpec>hdl_000-c0-111_38</setSpec>
+    <setSpec>hdl_000-c0-111_49</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>ItalWordNet Kyoto</dc:title>
+      <dc:creator>Monachini, Monica</dc:creator>
+      <dc:creator>Soria, Claudia</dc:creator>
+      <dc:creator>Toral, Antonio</dc:creator>
+      <dc:subject>Italian</dc:subject>
+      <dc:subject>Lexical Semantics</dc:subject>
+      <dc:subject>WordNet</dc:subject>
+      <dc:subject>Lexicon</dc:subject>
+      <dc:subject>Lexical Markup Framework (LMF)</dc:subject>
+      <dc:description>This is an LMF compliant version of Italwordnet created from the original DB in 2008, and used for reasearch in the context of the Knowledge Yielding Ontologies for Transition-based Organisations (KYOTO) project.&#13;
+It contains:&#13;
+49514 synsets&#13;
+67105 senses&#13;
+47141 lemmas&#13;
+131792 SynsetRelations</dc:description>
+      <dc:date>2016-10-19</dc:date>
+      <dc:type>lexicalConceptualResource</dc:type>
+      <dc:identifier>http://hdl.handle.net/20.500.11752/ILC-65</dc:identifier>
+      <dc:language>ita</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/211423</dc:relation>
+      <dc:rights>Creative Commons - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>application/octet-stream</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 2</dc:format>
+      <dc:publisher>Istituto di Linguistica Computazionale &#8220;A. Zampolli&#8221; - Consiglio Nazionale delle Ricerche (ILC-CNR)</dc:publisher>
+      <dc:source>http://www.ilc.cnr.it/it/content/kyoto</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/461</identifier>
+    <datestamp>2018-04-12T09:40:01Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Blogosferaksiazki2018</dc:title>
+      <dc:creator>Ochma&#324;ski, Miko&#322;aj</dc:creator>
+      <dc:subject>blog</dc:subject>
+      <dc:subject>ksi&#261;&#380;ki</dc:subject>
+      <dc:subject>blogosfera</dc:subject>
+      <dc:description>Blogi ksi&#261;&#380;kowe</dc:description>
+      <dc:date>2018-04-12</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/461</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>PDT 2.0 License</dc:rights>
+      <dc:rights>http://ufal.mff.cuni.cz/pdt2.0/doc/pdt-guide/en/html/ch07.html</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>downloadable_files_count: 11</dc:format>
+      <dc:publisher>UW</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

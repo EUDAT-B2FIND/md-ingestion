@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dct="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:seanoe.org:39746</identifier>
+    <datestamp>2016-10-04</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Observations for Synaphobranchus kaupii from bait experiments carried out in the Bay of Biscay in 2002 using ROV Victor 6000</dc:title>
+      <dc:creator>Trenkel, Verena</dc:creator>
+      <dc:creator>Lorance, Pascal</dc:creator>
+      <dc:creator>Berthele, Olivier</dc:creator>
+      <dc:creator>Ferrant, Anthony</dc:creator>
+      <dc:creator>Le Piver, David</dc:creator>
+      <dc:creator>Rochet, Marie-joelle</dc:creator>
+      <dc:description>The data come from bait experiments that were carried out at three study sites (Meriadzek Terrace, terrace located between the canyon of Belle &#206;le and the canyon of St Nazaire referred to as St Nazaire Terrace, and Belle &#206;le Canyon) on the continental slope of the Bay of Biscay during the VITAL cruise in late August and early September 2002 using the ROV Victor 6000. A full description of the experiments and results can be found in Trenkel and Lorance (2011). The depth range 1100 &#8211; 1500 m was investigated in all sites by perpendicular strip transects starting from the deepest point and moving up slope (see full description in Trenkel et al 2004). Bait experiments were carried out at all three sites at regular intervals (every 12 hours) along the transects. Two types of bait were used, a standardised aquaculture paste and cod fillets (only on St Nazaire Terrace). The paste was made of fish farming food pellets mixed with sea water (480 g per liter). Sardine oil was added (3 cm3 per liter) to increase the smell of the bait. The bait was filled into identical bottles (~4 cm diameter opening, 15.5 cm high). At the beginning of the experiment the ROV opened the bottle, put it onto the ground and retreated a few meters perpendicular to the current to observe fish arrival. After it was judged that no more individuals were going to arrive, the ROV shook the bottle to create a new plume and continued observations. In one experiment the bottle was shaken a second time. Video tapes were analysed in the laboratory after the cruise for Kaup's arrowtooth eel (Synaphobranchus kaupii). For each individual arriving, the time and direction of arrival, the initial behaviour and the reaction to the bait were noted. Initial behaviour was categorised by the position in the water column: near the bottom (&lt;1 body length) or higher up in the water column (&gt;1 body length) and the locomotion type: drifting or moving with current (&#8220;with current&#8221;), swimming against current or swimming perpendicular to the current. Reaction to the bait was categorised as not interested, attracted, touching bait bottle or eating bait. When possible the speed of the first individual arriving swimming against the current was estimated. Using the size of the bait bottle as a yard stick the time taken for swimming a certain distance (1 cm on the video screen) was recorded on two occasions and used to calculate the average arrival speed. At the deepest point sampled at each site (1460-1550m), an autonomous lander equipped with a current meter was deployed for three days. Data from these sensors were recorded every minute to every two minutes. A temperature probe was carried by the ROV.
+</dc:description>
+      <dc:publisher>SEANOE</dc:publisher>
+      <dc:date>2015-11</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>DOI:10.17882/39746</dc:identifier>
+      <dc:identifier>http://dx.doi.org/10.17882/39746</dc:identifier>
+      <dc:coverage>North 47.485365, South 47.485362, East -8.648895, West -8.648903</dc:coverage>
+      <dc:coverage>North 46.293977, South 46.293976, East -5.077748, West -5.077749</dc:coverage>
+      <dc:coverage>North 46.191262, South 46.191084, East -4.412852, West -4.413131</dc:coverage>
+      <dct:references>https://www.seanoe.org/data/00286/39746/illustration.gif</dct:references>
+      <dcterms:spatial xsi:type="DCTERMS:Box">47.485362 -8.648903 47.485365 -8.648895</dcterms:spatial>
+      <dcterms:spatial xsi:type="DCTERMS:Box">46.293976 -5.077749 46.293977 -5.077748</dcterms:spatial>
+      <dcterms:spatial xsi:type="DCTERMS:Box">46.191084 -4.413131 46.191262 -4.412852</dcterms:spatial>
+      <dc:rights>CC-BY-NC-SA</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

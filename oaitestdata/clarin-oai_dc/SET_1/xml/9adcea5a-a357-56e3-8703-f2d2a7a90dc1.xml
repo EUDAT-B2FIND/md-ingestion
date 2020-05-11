@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>a61934366bfe11e2a2aa782bcb07413527499a2c68084f5b8ed8c0c5f849eef3</identifier>
+    <datestamp>2018-11-15T16:40:08Z</datestamp>
+    <setSpec>toolService</setSpec>
+    <setSpec>toolService:platform</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:info="http://www.ilsp.gr/META-XMLSchema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/          http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>U-Compare Part-of-Speech Tagging service</dc:title>
+      <dc:description>Web service created by exporting UIMA-based workflow from the U-Compare text mining system.
+Functionality: Identifies tokens in plain text and assigns parts-of-speech
+Tools in workflow: MLRS POS Tagger web service (University of Malta)
+NOTE: The licence provided covers the web service only. Tools used to create the workflow may have their own licences
+</dc:description>
+      <dc:date>2013-02-15</dc:date>
+    </oai_dc:dc>
+  </metadata>
+</record>

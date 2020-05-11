@@ -1,0 +1,23 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fedora.clarin-d.uni-saarland.de:clarind-uds:poldilemma-4404</identifier>
+    <datestamp>2019-03-01T15:29:38Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="pl">Konfederacya generalna omnium ordinum Regni et Magni Ducatus Lithuaniae na Konwokacyi G&#322;owney Warszawskiey uchwalona, dnia 7 [s&#322;.] miesi&#261;ca maja [...] Roku Pa&#324;skiego 1764 [s&#322;.].</dc:title>
+      <dc:description xml:lang="pl">ilo&#347;&#263; skan&#243;w: 193 ; sygn. St-304</dc:description>
+      <dc:publisher xml:lang="pl">Drukarnia Rzeczypospolitey w Collegium Xi&#281;&#380;y Scholarum Piarum</dc:publisher>
+      <dc:date>[ca 1764]</dc:date>
+      <dc:type xml:lang="pl">starodruk</dc:type>
+      <dc:format>application/xml</dc:format>
+      <dc:identifier>clarind-uds:poldilemma-4404</dc:identifier>
+      <dc:identifier>hdl:11858/00-246C-0000-0023-8D1D-E</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:language>lat</dc:language>
+      <dc:relation>http://pbc.biaman.pl/Content/4404</dc:relation>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>
+      <dc:rights>CC-BY-NC-SA-4.0</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

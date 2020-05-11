@@ -1,0 +1,72 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.25493_VSFY-EYF</identifier>
+    <datestamp>2019-12-10T12:41:57Z</datestamp>
+  </header>
+  <metadata>
+    <metadata xmlns="http://example.org/myapp/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+      <dc:identifier>https://doi.org/10.25493/VSFY-EYF</dc:identifier>
+      <dc:title>Density measurements of different receptors for Area PF</dc:title>
+      <dc:created>2019-06-12T08:46:18.120Z</dc:created>
+      <dc:description>This dataset contains the densities (in fmol/mg protein) of 16 receptors for classical neurotransmitters in Area PF using quantitative in vitro autoradiography. The receptor density measurements can be provided in three ways: (fp) as density fingerprints (average across samples; mean density and standard deviation for each of the 16 receptors), (pr) as laminar density profiles (exemplary data from one sample; average course of the density from the pial surface to the border between layer VI and the white matter for each receptor), and (ar) as color-coded autoradiographs (exemplary data from one sample; laminar density distribution patterns for each receptor labeling). 
+This dataset contains the following receptor density measurements based on the labeling of these receptor binding sites: 
+
+AMPA (glutamate; labelled with [&#179;H]AMPA): fp
+
+kainate (glutamate; [&#179;H]kainate): fp
+
+NMDA (glutamate; [&#179;H]MK-801): fp
+
+mGluR2/3 (glutamate; [&#179;H] LY 341 495): fp
+
+GABA&lt;sub&gt;A&lt;/sub&gt; (GABA; [&#179;H]muscimol): fp
+
+GABA&lt;sub&gt;B&lt;/sub&gt; (GABA; [&#179;H] CGP54626): fp
+
+GABA&lt;sub&gt;A&lt;/sub&gt; associated benzodiazepine binding sites (BZ; [&#179;H]flumazenil): fp
+
+muscarinic M&#8321; (acetylcholine; [&#179;H]pirenzepine): fp
+
+muscarinic M&#8322; (acetylcholine; [&#179;H]oxotremorine-M): fp
+
+muscarinic M&#8323; (acetylcholine; [&#179;H]4-DAMP): fp
+
+nicotinic &#945;&#8324;&#946;&#8322; (acetylcholine; [&#179;H]epibatidine): fp
+
+&#945;&#8321; (noradrenalin; [&#179;H]prazosin): fp
+
+&#945;&#8322; (noradrenalin; [&#179;H]UK-14,304): fp
+
+5-HT&#8321;&lt;sub&gt;A&lt;/sub&gt; (serotonin; [&#179;H]8-OH-DPAT): fp
+
+5-HT&#8322; (serotonin; [&#179;H]ketanserin): fp
+
+D&#8321; (dopamine; [&#179;H]SCH23390): fp
+
+Which sample was used for which receptor density measurement is stated in metadata files accompanying the main data repository. For methodological details, see Zilles et al. (2002), and in Palomero-Gallagher and Zilles (2018).
+
+Zilles, K. et al. (2002). Quantitative analysis of cyto- and receptorarchitecture of the human brain, pp. 573-602. In: Brain Mapping: The Methods, 2nd edition (A.W. Toga and J.C. Mazziotta, eds.). San Diego, Academic Press.
+
+Palomero-Gallagher N, Zilles K. (2018) Cyto- and receptorarchitectonic mapping of the human brain. In: Handbook of Clinical Neurology 150: 355-387</dc:description>
+      <dc:subject>neuroscience</dc:subject>
+      <dc:subject>brain mapping</dc:subject>
+      <dc:subject>histology</dc:subject>
+      <dc:language>english</dc:language>
+      <dc:type>dataset</dc:type>
+      <dc:publisher>The Human Brain Project</dc:publisher>
+      <dc:contributor>Zilles, Karl</dc:contributor>
+      <dc:contributor>Bacha-Trams, Maraike</dc:contributor>
+      <dc:contributor>Palomero-Gallagher, Nicola</dc:contributor>
+      <dc:contributor>Amunts, Katrin</dc:contributor>
+      <dc:contributor>Friederici, Angela D.</dc:contributor>
+      <dc:contributor>Caspers, S.</dc:contributor>
+      <dc:contributor>Schleicher, Axel</dc:contributor>
+      <dc:creator>Palomero-Gallagher, Nicola</dc:creator>
+      <dc:creator>Zilles, Karl</dc:creator>
+      <dc:format>xlsx, tif, txt</dc:format>
+      <dc:rights>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</dc:rights>
+      <dc:relation>https://doi.org/10.1093/cercor/bhs048</dc:relation>
+      <dc:relation>https://doi.org/10.1016/j.cortex.2014.07.007</dc:relation>
+    </metadata>
+  </metadata>
+</record>

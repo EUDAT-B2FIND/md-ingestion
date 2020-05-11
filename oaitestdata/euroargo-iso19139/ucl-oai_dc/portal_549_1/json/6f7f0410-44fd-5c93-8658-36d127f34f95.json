@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/8797892.v1",
+    "DiscHierarchy": [
+        "1.3.4",
+        "Fine Arts, Music, Theatre and Media Studies",
+        "Theater"
+    ],
+    "Discipline": "Neuroscience",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/8797892",
+    "MetadataAccess": [
+        "oai:figshare.com:article/8797892"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2019-07-09T15:19:55Z",
+    "PublicationYear": [
+        "2019"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Demo_Scilab_code_for_AMPAR_kinetic_model/8797892"
+    ],
+    "ResourceType": [
+        "Software",
+        "Software"
+    ],
+    "Rights": [
+        "MIT"
+    ],
+    "author": [
+        "Mark Farrant (6769505)",
+        "Ian Coombs (6924684)",
+        "Matthew Gold (6774494)",
+        "Stuart Cull-Candy (6765410)",
+        "Thomas McGee (6779294)",
+        "David Soto (6924687)"
+    ],
+    "fulltext": "oai:figshare.com:article/8797892;2019-07-09T15:19:55Z;category_15;portal_549;item_type_9;month_year_07_2019;Demo Scilab code for AMPAR kinetic model;Ian Coombs (6924684);David Soto (6924687);Thomas McGee (6779294);Matthew Gold (6774494);Mark Farrant (6769505);Stuart Cull-Candy (6765410);Neuroscience;AMPA receptor;Scilab;Kinetic scheme;<div>\"<b>Homomeric Q/R edited AMPA receptors conduct when desensitized</b>\"</div><div>Coombs, Soto, McGee, Gold, Farrant, Cull-Candy</div><div>Nature Communications</div><div><br></div><div>The code associated with the above manuscript: </div><div>\"Scilab_code_19-09071B.sce\" </div><div>is designed to be executed in SciNotes within Scilab.</div><div><br></div><div>It contains the (i) pooled, parsed experimental current and noise data, (ii) kinetic scheme, (iii) rates, and (iv) Q-matrix calculations required to mimic this data.</div><div><br></div><div><b>System requirements</b>.</div><div>The code was created in Scilab 5.5.0 (64 bit for Windows), but should run on any version of Scilab on any platform (Windows, Linux or Mac OS X).</div><div><br></div><div><b>Installation guide</b>.</div><div>Scilab is open source and can be downloaded and installed from www.scilab.org. Installation is quick. </div><div><br></div><div><br></div><div><b>Demo/Instructions for use</b>.</div><div>Pressing 'play' within SciNotes will execute the code to calculate occupancies, current and noise. The code outputs the calculated data (red) along with raw data (black). The effect of manually altering rates and conductances can be observed by changing lines 16-30 as the user wishes.</div><div><br></div><div>The code itself should run in less than 1 s.</div>;2019-07-09T15:19:55Z;Software;Software;10.5522/04/8797892.v1;https://figshare.com/articles/Demo_Scilab_code_for_AMPAR_kinetic_model/8797892;MIT",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "6f7f0410-44fd-5c93-8658-36d127f34f95",
+    "notes": [
+        "<div>\"<b>Homomeric Q/R edited AMPA receptors conduct when desensitized</b>\"</div><div>Coombs, Soto, McGee, Gold, Farrant, Cull-Candy</div><div>Nature Communications</div><div><br></div><div>The code associated with the above manuscript: </div><div>\"Scilab_code_19-09071B.sce\" </div><div>is designed to be executed in SciNotes within Scilab.</div><div><br></div><div>It contains the (i) pooled, parsed experimental current and noise data, (ii) kinetic scheme, (iii) rates, and (iv) Q-matrix calculations required to mimic this data.</div><div><br></div><div><b>System requirements</b>.</div><div>The code was created in Scilab 5.5.0 (64 bit for Windows), but should run on any version of Scilab on any platform (Windows, Linux or Mac OS X).</div><div><br></div><div><b>Installation guide</b>.</div><div>Scilab is open source and can be downloaded and installed from www.scilab.org. Installation is quick. </div><div><br></div><div><br></div><div><b>Demo/Instructions for use</b>.</div><div>Pressing 'play' within SciNotes will execute the code to calculate occupancies, current and noise. The code outputs the calculated data (red) along with raw data (black). The effect of manually altering rates and conductances can be observed by changing lines 16-30 as the user wishes.</div><div><br></div><div>The code itself should run in less than 1 s.</div>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/8797892"
+    ],
+    "oai_set": [
+        "category_15",
+        "portal_549",
+        "item_type_9",
+        "month_year_07_2019"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Neuroscience"
+        },
+        {
+            "name": "AMPA receptor"
+        },
+        {
+            "name": "Scilab"
+        },
+        {
+            "name": "Kinetic scheme"
+        }
+    ],
+    "title": [
+        "Demo Scilab code for AMPAR kinetic model"
+    ],
+    "url": ""
+}

@@ -1,0 +1,184 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6595</identifier>
+    <datestamp>2018-12-21T07:38:54Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.FID</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>4</schemaVersion>
+      <datacentreSymbol>DOIDB.FID</datacentreSymbol>
+      <payload>
+        <default:resource xmlns:default="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+          <default:identifier identifierType="DOI">10.5880/fidgeo.2018.072</default:identifier>
+          <default:creators>
+            <default:creator>
+              <default:creatorName>Willingshofer, Ernst</default:creatorName>
+              <default:givenName>Ernst</default:givenName>
+              <default:familyName>Willingshofer</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-9119-5557</default:nameIdentifier>
+              <default:affiliation>Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Sokoutis, Dimitrios</default:creatorName>
+              <default:givenName>Dimitrios</default:givenName>
+              <default:familyName>Sokoutis</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-0523-9785</default:nameIdentifier>
+              <default:affiliation>Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Beekman, Fred</default:creatorName>
+              <default:givenName>Fred</default:givenName>
+              <default:familyName>Beekman</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-8455-999X</default:nameIdentifier>
+              <default:affiliation>Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Sch&#246;nebeck, Jan-Michael</default:creatorName>
+              <default:givenName>Jan-Michael</default:givenName>
+              <default:familyName>Sch&#246;nebeck</default:familyName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Warsitzka, Michael</default:creatorName>
+              <default:givenName>Michael</default:givenName>
+              <default:familyName>Warsitzka</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-1774-5888</default:nameIdentifier>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:creator>
+            <default:creator>
+              <default:creatorName>Rosenau, Matthias</default:creatorName>
+              <default:givenName>Matthias</default:givenName>
+              <default:familyName>Rosenau</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-1134-5381</default:nameIdentifier>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:creator>
+          </default:creators>
+          <default:titles>
+            <default:title xml:lang="en">Ring shear test data of feldspar sand and quartz sand used in the Tectonic Laboratory (TecLab) at Utrecht University for experimental Earth Science applications</default:title>
+          </default:titles>
+          <default:publisher>GFZ Data Services</default:publisher>
+          <default:publicationYear>2018</default:publicationYear>
+          <default:subjects>
+            <default:subject>EPOS</default:subject>
+            <default:subject>Multi-scale laboratories</default:subject>
+            <default:subject>analogue models of geologic processes</default:subject>
+            <default:subject>property data of analogue modelling materials</default:subject>
+            <default:subject>software tools</default:subject>
+            <default:subject schemeURI="http://gcmdservices.gsfc.nasa.gov/kms/concepts/concept_scheme/sciencekeywords" subjectScheme="NASA/GCMD Earth Science Keywords" xml:lang="en">EARTH SCIENCE &gt; SOLID EARTH &gt; TECTONICS</default:subject>
+            <default:subject schemeURI="http://gcmdservices.gsfc.nasa.gov/kms/concepts/concept_scheme/sciencekeywords" subjectScheme="NASA/GCMD Earth Science Keywords" xml:lang="en">EARTH SCIENCE SERVICES &gt; DATA ANALYSIS AND VISUALIZATION &gt; CALIBRATION/VALIDATION</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Main Setting" xml:lang="en">earth interior setting &gt; crust setting &gt; continental-crustal setting &gt; upper continental crustal setting</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Process/Hazard" xml:lang="en">deformation &gt; fracturing</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Geologic Structure" xml:lang="en">fault</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Geologic Feature" xml:lang="en">tectonic and structural features</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Material" xml:lang="en">Sand &gt; Quartz Sand</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Material" xml:lang="en">Iron Powder</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Apparatus" xml:lang="en">Ring-shear tester</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Monitoring" xml:lang="en">Force sensor</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Measured Property" xml:lang="en">Friction coefficient</default:subject>
+            <default:subject subjectScheme="EPOS WP16 Analogue Measured Property" xml:lang="en">Cohesion</default:subject>
+          </default:subjects>
+          <default:contributors>
+            <default:contributor contributorType="ProjectLeader">
+              <default:contributorName>Willingshofer, Ernst</default:contributorName>
+              <default:givenName>Ernst</default:givenName>
+              <default:familyName>Willingshofer</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-9119-5557</default:nameIdentifier>
+              <default:affiliation>Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectMember">
+              <default:contributorName>Sokoutis, Dimitrios</default:contributorName>
+              <default:givenName>Dimitrios</default:givenName>
+              <default:familyName>Sokoutis</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-0523-9785</default:nameIdentifier>
+              <default:affiliation>Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="ProjectMember">
+              <default:contributorName>Beekman, Fred</default:contributorName>
+              <default:givenName>Fred</default:givenName>
+              <default:familyName>Beekman</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0002-8455-999X</default:nameIdentifier>
+              <default:affiliation>Department of Tectonics, Faculty of Earth Sciences, Utrecht University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCollector">
+              <default:contributorName>Sch&#246;nebeck, Jan-Michael</default:contributorName>
+              <default:givenName>Jan-Michael</default:givenName>
+              <default:familyName>Sch&#246;nebeck</default:familyName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="DataCurator">
+              <default:contributorName>Warsitzka, Michael</default:contributorName>
+              <default:givenName>Michael</default:givenName>
+              <default:familyName>Warsitzka</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-1774-5888</default:nameIdentifier>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="Editor">
+              <default:contributorName>Rosenau, Matthias</default:contributorName>
+              <default:givenName>Matthias</default:givenName>
+              <default:familyName>Rosenau</default:familyName>
+              <default:nameIdentifier nameIdentifierScheme="ORCID">0000-0003-1134-5381</default:nameIdentifier>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>TecLab - Tectonic Modelling Laboratory (Utrecht University, The Netherlands)</default:contributorName>
+              <default:affiliation>University, Utrecht, The Netherlands</default:affiliation>
+            </default:contributor>
+            <default:contributor contributorType="HostingInstitution">
+              <default:contributorName>HelTec - Helmholtz Laboratory for Tectonic Modelling (GFZ Potsdam, Germany)</default:contributorName>
+              <default:affiliation>GFZ German Research Centre for Geosciences, Potsdam, Germany</default:affiliation>
+            </default:contributor>
+          </default:contributors>
+          <default:language>en</default:language>
+          <default:resourceType resourceTypeGeneral="Dataset"/>
+          <default:relatedIdentifiers>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1144/GSL.SP.2005.243.01.18</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1002/2016JB012915</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.jsg.2015.03.008</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1002/ceat.200303112</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="ISBN" relationType="References">978-3-540-73767-4</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.tecto.2016.01.017</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1111/j.1365-3091.2009.01120.x</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.3389/feart.2018.00148</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1002/2016TC004424</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.epsl.2015.05.022</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1002/2014TC003756</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1029/2010TC002719</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1029/2012TC003122</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1144/petgeo2015-029</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1029/2010TC002823</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/s00531-012-0846-4</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.epsl.2014.03.036</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.tecto.2013.03.009</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1111/bre.12129</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.epsl.2011.03.028</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.epsl.2017.05.012</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1111/sed.12313</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1130/G25321A.1</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1144/GSL.SP.2005.243.01.18</default:relatedIdentifier>
+            <default:relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1130/G34815.1</default:relatedIdentifier>
+          </default:relatedIdentifiers>
+          <default:sizes>
+            <default:size>3 Files</default:size>
+          </default:sizes>
+          <default:formats>
+            <default:format>application/octet-stream</default:format>
+            <default:format>application/octet-stream</default:format>
+            <default:format>application/octet-stream</default:format>
+          </default:formats>
+          <default:version>1</default:version>
+          <default:rightsList>
+            <default:rights rightsURI="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</default:rights>
+          </default:rightsList>
+          <default:descriptions>
+            <default:description descriptionType="Abstract">This dataset provides friction data from ring-shear tests (RST) on feldspar sand and quartz sand, which are used to simulate brittle behaviour in crust- and lithosphere-scale analogue experiments at the Tectonic Laboratory (TecLab), Utrecht University (NL) (Willingshofer et al., 2005; Willingshofer &amp; Sokoutis, 2009; Athmer et al., 2010; Luth et al., 2010; Fern&#225;ndez-Lozano et al., 2011; Leever et al., 2011; Sokoutis &amp; Willingshofer, 2011; Fern&#225;ndez-Lozano et al., 2012; Luth et al., 2013; Munteanu et al., 2013; Willingshofer et al., 2013; Munteanu et al., 2014; Calignano et al., 2015a, b; Ortner et al., 2015; Gabrielsen et al., 2016; Calignano et al., 2017; van Gelder et al., 2017; Wang et al., 2017; Beniest et al., 2018 ). The materials have been characterized by means of internal friction coefficients &#181; and cohesions C as a remote service by the Helmholtz Laboratory for Tectonic Modelling (HelTec) at the GFZ German Research Centre for Geosciences in Potsdam.<default:br/>
+         <default:br/>According to our analysis both materials show a Mohr-Coulomb behaviour characterized by a linear failure envelope. Peak, dynamic and reactivation friction coefficients of the feldspar sand are &#181;P = 0.68, &#181;D = 0.55, and &#181;R = 0.61, respectively. Friction coefficients of the quartz sand are &#181;P = 0.63, &#181;D = 0.48, and &#181;R = 0.52, respectively. Cohesions of the feldspar sand and the quartz sand are in the order of few tens of Pa. A minor rate-weakening of 1% per ten-fold rate change is evident for the feldspar sand, whereas the quartz sand shows a significant rate weakening of ~5%.<default:br/>
+         <default:br/>Further information about materical characteristics, measurement procedures, sample preparation, the RST (Ring-shear test) and VST (Velocity stepping test) procedure, as well as the analysed method is proviced in the data description file. The list of files explains the file and folder structure of the data set.</default:description>
+          </default:descriptions>
+        </default:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

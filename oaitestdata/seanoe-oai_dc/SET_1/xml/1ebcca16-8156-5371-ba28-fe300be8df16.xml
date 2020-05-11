@@ -1,0 +1,37 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dct="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:seanoe.org:57450</identifier>
+    <datestamp>2018-11-14</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Towing and circulating tanks tidal energy converter test results</dc:title>
+      <dc:creator>Gaurier, Benoit</dc:creator>
+      <dc:creator>Germain, Gregory</dc:creator>
+      <dc:creator>Facq, Jean-valery</dc:creator>
+      <dc:creator>Day, Sandy</dc:creator>
+      <dc:creator>Johnstone, Cameron</dc:creator>
+      <dc:creator>Di Felice, Fabio</dc:creator>
+      <dc:creator>Costanzo, Marcello</dc:creator>
+      <dc:description>A comparative "Round Robin" testing program has been conducted as part of the EC FP VII MaRINET program in order to evaluate the impact of different experimental facilities on the test results. The aim of the trials was to test the same model tidal turbine in four different test facilities to explore the sensitivity of the results to the choice of facility. The facilities used in the testing program include two towing tanks, at CNR-INSEAN (Rome, 220 m long) and at Strathclyde University (Glasgow, 76 m long), and two recirculating tanks at CNR-INSEAN (Rome) and at IFREMER (Boulogne sur mer).
+The model consists of a three-bladed horizontal axis turbine, which is D=0.7m in diameter. The rotor is connected to a motor-gearbox assembly consisting of a gearbox, a DC motor, a ballast load and a motor speed control unit, providing an active rotor speed control. The turbine blades are designed from a NACA 63-418 profile. A torque meter is placed between the rotor and the gearbox for torque measurements.
+The forces and moments acting on the structure are obtained by means of a six-component load cell, which measures the three force components and the three moment components and the torque by a torque sensor directly fixed between the rotor and the motor. All signals coming from the load-cell, the torque-meter and the motor are recorded synchronously at a sample frequency of 100Hz.
+In each tank, the turbine depth is kept constant at 1 m under the free surface. The turbine is fixed on a moving carriage in the towing tanks and on a customised mounting in the flume tanks. The flow velocity or carriage velocity is chosen and fixed for each set of tests; the turbine rotation speed is then varied to adjust the tip speed ratio. The rotational speed is measured and controlled for each measurement point, but is adjusted manually.
+</dc:description>
+      <dc:publisher>SEANOE</dc:publisher>
+      <dc:date>2018-10</dc:date>
+      <dc:type>dataset</dc:type>
+      <dc:identifier>DOI:10.17882/57450</dc:identifier>
+      <dc:identifier>http://dx.doi.org/10.17882/57450</dc:identifier>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/262552/EU//MARINET</dc:relation>
+      <dc:coverage>North 50.729627, South 50.729627, East 1.597578, West 1.597578</dc:coverage>
+      <dc:coverage>North 55.862869, South 55.862869, East -4.242457, West -4.242457</dc:coverage>
+      <dc:coverage>North 41.818443, South 41.818443, East 12.457076, West 12.457076</dc:coverage>
+      <dct:references>https://www.seanoe.org/data/00463/57450/illustration.gif</dct:references>
+      <dcterms:spatial xsi:type="DCTERMS:Box">50.729627 1.597578 50.729627 1.597578</dcterms:spatial>
+      <dcterms:spatial xsi:type="DCTERMS:Box">55.862869 -4.242457 55.862869 -4.242457</dcterms:spatial>
+      <dcterms:spatial xsi:type="DCTERMS:Box">41.818443 12.457076 41.818443 12.457076</dcterms:spatial>
+      <dc:rights>CC-BY-NC</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

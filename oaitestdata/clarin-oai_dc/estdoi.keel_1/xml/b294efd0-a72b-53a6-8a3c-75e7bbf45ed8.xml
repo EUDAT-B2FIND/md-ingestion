@@ -1,0 +1,21 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:10303603</identifier>
+    <datestamp>2019-06-07T21:01:50Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti Keele Instituudi m&#245;isteline s&#245;navarakartoteek</dc:title>
+      <dc:creator>Laansalu, Tiina</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2017</dc:date>
+      <dc:date>Issued: 2017-01-31</dc:date>
+      <dc:date>Updated: 2017-01-31</dc:date>
+      <dc:identifier>doi:10.15155/3-00-0000-0000-0000-06329L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">M&#245;istelise s&#245;navarakartoteegi idee p&#228;rineb Andrus Saarestelt. Kogumist&#246;&#246; algas 1920ndatel ja kestis 1930ndate keskpaigani. M&#245;istelises kogus on s&#245;navara jaotatud mitte kihelkondade, vaid m&#245;istete j&#228;rgi. Materjali on kogutud j&#228;rgmiste valdkondade kohta: abielu, aeg, aiandus, armuelu, ehitused, heinategu, ilmastik, inimene, kalandus, karjandus, keha, kehakatted, k&#228;sit&#246;&#246;, liiklus, linat&#246;&#246;, loomastik, maap&#245;uevarad, maastik, merelinnud, merendus, mesindus, metsandus, m&#245;&#245;dud, m&#228;ngimine, m&#228;rk, n&#245;idus, n&#245;ud, puut&#246;&#246;, p&#245;llundus, suguv&#245;sa, s&#245;idukid, taevalaotus, tahtmine, taimestik, tervis, toitlus, tuli, tundeelu, tunnetamine, t&#246;&#246;, usund, veekogud, vees&#245;idukid, viin, vill, v&#228;rv, &#245;igus ja &#252;hiskond.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

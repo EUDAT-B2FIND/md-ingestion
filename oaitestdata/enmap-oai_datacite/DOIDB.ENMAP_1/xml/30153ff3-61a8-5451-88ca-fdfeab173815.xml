@@ -1,0 +1,116 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:doidb.wdc-terra.org:6132</identifier>
+    <datestamp>2016-11-25T13:58:03Z</datestamp>
+    <setSpec>DOIDB</setSpec>
+    <setSpec>DOIDB.ENMAP</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ http://schema.datacite.org/oai/oai-1.0/oai.xsd">
+      <isReferenceQuality>false</isReferenceQuality>
+      <schemaVersion>3</schemaVersion>
+      <datacentreSymbol>DOIDB.ENMAP</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.5880/enmap.2015.006</identifier>
+          <creators>
+            <creator>
+              <creatorName>Buddenbaum, Henning</creatorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0956-5628</nameIdentifier>
+              <affiliation>University of Trier, Environmental Remote Sensing and Geoinformatics, Trier, Germany</affiliation>
+            </creator>
+            <creator>
+              <creatorName>Dotzler, Sandra</creatorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-8171-2944</nameIdentifier>
+              <affiliation>University of Trier, Environmental Remote Sensing and Geoinformatics, Trier, Germany</affiliation>
+            </creator>
+            <creator>
+              <creatorName>Hill, Joachim</creatorName>
+              <affiliation>University of Trier, Environmental Remote Sensing and Geoinformatics, Trier, Germany</affiliation>
+            </creator>
+          </creators>
+          <titles>
+            <title xml:lang="eng">Donnersberg, 2014-07-03 - An EnMAP Preparatory Flight Campaign (Datasets)</title>
+          </titles>
+          <publisher>GFZ Data Services</publisher>
+          <publicationYear>2015</publicationYear>
+          <subjects>
+            <subject>Imaging Spectroscopy</subject>
+            <subject>Vegetation Ecology</subject>
+            <subject>Forest</subject>
+          </subjects>
+          <contributors>
+            <contributor contributorType="DataCollector">
+              <contributorName>Buddenbaum, Henning</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0956-5628</nameIdentifier>
+              <affiliation>University of Trier, Environmental Remote Sensing and Geoinformatics, Trier, Germany</affiliation>
+            </contributor>
+            <contributor contributorType="ContactPerson">
+              <contributorName>Buddenbaum, Henning</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-0956-5628</nameIdentifier>
+              <affiliation>University of Trier, Environmental Remote Sensing and Geoinformatics, Trier, Germany</affiliation>
+            </contributor>
+            <contributor contributorType="ProjectMember">
+              <contributorName>Dotzler, Sandra</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-8171-2944</nameIdentifier>
+              <affiliation>University of Trier, Environmental Remote Sensing and Geoinformatics, Trier, Germany</affiliation>
+            </contributor>
+            <contributor contributorType="DataCollector">
+              <contributorName>Dotzler, Sandra</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0002-8171-2944</nameIdentifier>
+              <affiliation>University of Trier, Environmental Remote Sensing and Geoinformatics, Trier, Germany</affiliation>
+            </contributor>
+            <contributor contributorType="ProjectLeader">
+              <contributorName>Hill, Joachim</contributorName>
+              <affiliation>University of Trier, Environmental Remote Sensing and Geoinformatics, Trier, Germany</affiliation>
+            </contributor>
+            <contributor contributorType="Funder">
+              <contributorName>Federal Ministry of Economic Affairs and Energy</contributorName>
+              <affiliation>Federal Ministry of Economic Affairs and Energy</affiliation>
+            </contributor>
+            <contributor contributorType="DataCurator">
+              <contributorName>Foerster, Saskia</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-7752-7394</nameIdentifier>
+              <affiliation>GFZ German Research Center for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="DataCurator">
+              <contributorName>Kuester, Theres</contributorName>
+              <affiliation>GFZ German Research Center for Geosciences</affiliation>
+            </contributor>
+            <contributor contributorType="DataCurator">
+              <contributorName>Elger, Kirsten</contributorName>
+              <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-5140-8602</nameIdentifier>
+              <affiliation>GFZ German Research Center for Geosciences</affiliation>
+            </contributor>
+          </contributors>
+          <dates>
+            <date dateType="Created">2015-07-03</date>
+            <date dateType="Collected">2015-07-03T13:32/2015-07-03T14:26</date>
+          </dates>
+          <language>eng</language>
+          <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+          <relatedIdentifiers>
+            <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDocumentedBy">10.2312/enmap.2015.006</relatedIdentifier>
+            <relatedIdentifier relatedIdentifierType="URL" relationType="IsReferencedBy">http://meetingorganizer.copernicus.org/ISRSE36/ISRSE36-201-2.pdf</relatedIdentifier>
+            <relatedIdentifier relatedIdentifierType="URL" relationType="IsReferencedBy">http://www.conftool.net/earsel2015/index.php?page=browseSessions&amp;search=dotzler</relatedIdentifier>
+            <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReferencedBy">10.3390/rs70708830</relatedIdentifier>
+            <relatedIdentifier relatedIdentifierType="URL" relationType="IsReferencedBy">http://www.enmap.org/?q=flights</relatedIdentifier>
+          </relatedIdentifiers>
+          <rightsList>
+            <rights rightsURI="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</rights>
+          </rightsList>
+          <descriptions>
+            <description descriptionType="Abstract">The dataset contains hyperspectral imagery acquired during airplane overflights on 3rd July 2014 consisting of 242 spectral bands, ranging from VIS to SWIR (423 - 2438 nm) wavelength regions. It covers an area of about 78 km&#178; which is dominated by beech and oak forests. The flight campaign was part of several flight campaigns within the EnMAP project and focused on hyperspectral analysis of plant physiology in deciduous forests in the Donnersberg region in Rhineland-Palatinate, Germany.</description>
+            <description descriptionType="Other">The Environmental Mapping and Analysis Program (EnMAP) is a German hyperspectral satellite mission that aims at monitoring and characterizing the Earth&#8217;s environment on a global scale. EnMAP serves to measure and model key dynamic processes of the Earth&#8217;s ecosystems by extracting geochemical, biochemical and biophysical parameters, which provide information on the status and evolution of various terrestrial and aquatic ecosystems. In the frame of the EnMAP preparatory phase, pre-flight campaigns including airborne and in-situ measurements in different environments and for several application fields are being conducted. The main purpose of these campaigns is to support the development of scientific applications for EnMAP. In addition, the acquired data are input in the EnMAP end-to-end simulation tool (EeteS) and are employed to test data pre-processing and calibration-validation methods. The campaign data are made freely available to the scientific community under a Creative Commons Attribution-ShareAlike 4.0 International License. An overview of all available data is provided in in the EnMAP Flight Campaigns Metadata Portal http://www.enmap.org/?q=flights</description>
+          </descriptions>
+          <geoLocations>
+            <geoLocation>
+              <geoLocationBox>49.579109609432095 7.853851318359375 49.64451295574021 7.9575347900390625</geoLocationBox>
+              <geoLocationPlace>HySpex, 14 Flight Lines</geoLocationPlace>
+            </geoLocation>
+          </geoLocations>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>

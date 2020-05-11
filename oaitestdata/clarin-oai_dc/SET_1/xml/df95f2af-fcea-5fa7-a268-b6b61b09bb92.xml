@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:ota:oucs:2423</identifier>
+    <datestamp>2018-02-21T11:37:02Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cld="http://purl.org/cld/terms/">
+      <dc:identifier>http://ota.ox.ac.uk/headers/2423.xml</dc:identifier>
+      <dc:title>Paris speech in the past</dc:title>
+      <dc:date>2000-07</dc:date>
+      <dc:subject>text_and_corpus_linguistics</dc:subject>
+      <dc:subject>Electronic publications -- Great Britain -- 20th century</dc:subject>
+      <dc:subject>Corpora -- Great Britain -- 20th century</dc:subject>
+      <dc:subject>Linguistic corpora -- Great Britain -- 20th century</dc:subject>
+      <dc:language>frm</dc:language>
+      <dc:language>fra</dc:language>
+      <dc:description>A collection of semi-literary representations of vernacular (French) speech from the 16th to 19th centuries which is preceeded by a set of tax-rolls from late 17th century Paris </dc:description>
+      <dc:publisher>Oxford Text Archive, University of Oxford</dc:publisher>
+      <dc:contributor>Lodge, R. Anthony</dc:contributor>
+      <dc:contributor>Leverhulme Trust</dc:contributor>
+      <dc:contributor>Prof. R. A. Lodge</dc:contributor>
+      <dc:format>text/sgml</dc:format>
+      <dc:format>(1 file : ca. 900 KB)</dc:format>
+      <dc:type>Text</dc:type>
+      <dc:type>Linguistic corpora</dc:type>
+      <dc:rights>Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</dc:rights>
+      <dc:rights>http://www.ota.ox.ac.uk/documents/user_agreement.xml</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

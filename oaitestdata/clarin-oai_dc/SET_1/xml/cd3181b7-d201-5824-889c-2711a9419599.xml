@@ -1,0 +1,41 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/538</identifier>
+    <datestamp>2018-07-22T07:34:36Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Categorial Parser</dc:title>
+      <dc:creator>Jaworski, Wojciech</dc:creator>
+      <dc:creator>Oklesi&#324;ski, Daniel</dc:creator>
+      <dc:creator>Lupa, Jan</dc:creator>
+      <dc:creator>Rutkowski, Szymon</dc:creator>
+      <dc:creator>Kozakoszczak, Jakub</dc:creator>
+      <dc:creator>Przetacka, Joanna</dc:creator>
+      <dc:creator>Tele&#380;y&#324;ska, Helena</dc:creator>
+      <dc:creator>Antonowicz, Bart&#322;omiej</dc:creator>
+      <dc:creator>Markiewicz, Adam</dc:creator>
+      <dc:creator>Kowalewski, Jakub</dc:creator>
+      <dc:creator>Pie&#324;kosz, Micha&#322;</dc:creator>
+      <dc:creator>Morusiewicz, Agnieszka</dc:creator>
+      <dc:subject>constituency parsing</dc:subject>
+      <dc:subject>semantics</dc:subject>
+      <dc:subject>meaning representation</dc:subject>
+      <dc:description>This resource contains Categorial Syntactic-Semantic Parser &#8222;ENIAM&#8221;. The Github repository contains the code and information on how to use the tool.</dc:description>
+      <dc:date>2018-07-20</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/538</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>GNU LGPL 3.0</dc:rights>
+      <dc:rights>http://www.gnu.org/licenses/lgpl.html</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Institute of Computer Science, Polish Academy of Sciences</dc:publisher>
+      <dc:source>http://git.nlp.ipipan.waw.pl/wojciech.jaworski/ENIAM</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

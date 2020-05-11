@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/558</identifier>
+    <datestamp>2018-07-26T08:57:58Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Guidelines for Emotive Annotation in plWordNet 4.0</dc:title>
+      <dc:creator>Za&#347;ko-Zieli&#324;ska, Monika</dc:creator>
+      <dc:subject>emotive annotation</dc:subject>
+      <dc:subject>sentiment</dc:subject>
+      <dc:subject>wordnet</dc:subject>
+      <dc:subject>plWordNet</dc:subject>
+      <dc:subject>S&#322;owosie&#263;</dc:subject>
+      <dc:description>Guidelines for emotive annotation in plWordNet 4.0. The set consists of four documents dedicated to emotive annotation of four parts of speech - verb, adverb, noun and adjective.</dc:description>
+      <dc:date>2018-07-26</dc:date>
+      <dc:type>languageDescription</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/558</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>Creative Commons - Attribution 4.0 International (CC BY 4.0)</dc:rights>
+      <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+      <dc:rights>CC</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>application/pdf</dc:format>
+      <dc:format>downloadable_files_count: 4</dc:format>
+      <dc:publisher>Wroc&#322;aw University of Science and Technology</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

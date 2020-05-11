@@ -1,0 +1,26 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/526</identifier>
+    <datestamp>2018-07-15T08:02:44Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Speech Recognition System for Polish: Polish Film Chronicles</dc:title>
+      <dc:creator>Kor&#382;inek, Danijel</dc:creator>
+      <dc:creator>Marasek, Krzysztof</dc:creator>
+      <dc:creator>Wo&#322;k, Krzysztof</dc:creator>
+      <dc:subject>speech recognition</dc:subject>
+      <dc:subject>speech alignment</dc:subject>
+      <dc:description>This resource contains dockerized models and scripts of an automatic speech recognition system for Polish trained on recording of the Polish Film Chronicles. The system is based on the Kaldi toolkit. The scripts include methods for performing speech recognition, forced alignment and a lenient alignment of audio. The Github repository contains information on how to use the tool.</dc:description>
+      <dc:date>2018-07-08</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/526</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Polish-Japanese Academy of Information Technology</dc:publisher>
+      <dc:source>https://hub.docker.com/r/danijel3/clarin-pl-speechtools/tags/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

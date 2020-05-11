@@ -1,0 +1,30 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11234/1-2594</identifier>
+    <datestamp>2018-07-02T22:05:50Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>VIADAT-REPO+DEPOSIT</dc:title>
+      <dc:creator>Ko&#353;arko, Ond&#345;ej</dc:creator>
+      <dc:creator>Haji&#269;, Jan</dc:creator>
+      <dc:subject>digital data</dc:subject>
+      <dc:subject>digital repository</dc:subject>
+      <dc:description>VIADAT-REPO is an additional module to the lindat-dspace platform which allows for depositing data records in the field of oral history, including its specific metadata workflow; it has been created within the VIADAT project and as such will be a part of a "virtual assistant" for processing, annotation, enrichment and accessing of audio and video recordings. This package contains VIADAT-DEPOSIT module; bundled with VIADAT-REPO to ease the integration.</dc:description>
+      <dc:date>2017-12-31</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11234/1-2594</dc:identifier>
+      <dc:relation>http://hdl.handle.net/11234/1-1900</dc:relation>
+      <dc:rights>BSD 3-Clause "New" or "Revised" license</dc:rights>
+      <dc:rights>http://opensource.org/licenses/BSD-3-Clause</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+      <dc:source>https://ufal.mff.cuni.cz/grants/viadat</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

@@ -1,0 +1,17 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.eudat.eu:b2rec/3985d2e30c1f4163830c18655df67675</identifier>
+    <datestamp>2019-09-26T10:29:19Z</datestamp>
+    <setSpec>578593c4-4cac-4890-be16-37e5619ff043</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:date>2019-09-26T10:29:19.169090+00:00</dc:date>
+      <dc:identifier>10.7970/3985d2e30c1f4163830c18655df67675</dc:identifier>
+      <dc:identifier>https://b2share-testing.fz-juelich.de/api/records/3985d2e30c1f4163830c18655df67675</dc:identifier>
+      <dc:identifier>oai:b2share.eudat.eu:b2rec/3985d2e30c1f4163830c18655df67675</dc:identifier>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:title>toar test</dc:title>
+    </oai_dc:dc>
+  </metadata>
+</record>

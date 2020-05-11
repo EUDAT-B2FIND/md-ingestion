@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11858/00-097C-0000-0001-CC1E-B</identifier>
+    <datestamp>2018-07-02T22:05:54Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0001-486F-D</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0001-4877-A</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Hindi Web Texts</dc:title>
+      <dc:creator>Bojar, Ond&#345;ej</dc:creator>
+      <dc:creator>Stra&#328;&#225;k, Pavel</dc:creator>
+      <dc:creator>Zeman, Daniel</dc:creator>
+      <dc:subject>news</dc:subject>
+      <dc:subject>web texts</dc:subject>
+      <dc:description>A Hindi corpus of texts downloaded mostly from news sites. Contains both the original raw texts and an extensively cleaned-up and tokenized version suitable for language modeling. 18M sentences, 308M tokens</dc:description>
+      <dc:date>2011-11-23</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>UMC004</dc:identifier>
+      <dc:identifier>http://hdl.handle.net/11858/00-097C-0000-0001-CC1E-B</dc:identifier>
+      <dc:language>hin</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/FP7/231720</dc:relation>
+      <dc:relation>http://hdl.handle.net/11858/00-097C-0000-0023-6260-A</dc:relation>
+      <dc:rights>Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)</dc:rights>
+      <dc:rights>http://creativecommons.org/licenses/by-nc/3.0/</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/x-gzip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics (UFAL)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

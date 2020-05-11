@@ -1,0 +1,35 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>a61129f0-afbc-4bfa-8307-00f37d37d98a</dc:identifier>
+      <dc:date>2018-07-24T09:47:47</dc:date>
+      <dc:title>North Atlantic Ocean - Temperature and salinity observation collection V2</dc:title>
+      <dct:alternative>seadatanet-north_atlantic_ocean-temperature_salinity_aggregated_public-v2</dct:alternative>
+      <dc:type>series</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Temperature of the water column</dc:subject>
+      <dc:subject>Salinity of the water column</dc:subject>
+      <dc:subject>ITS-90 water temperature</dc:subject>
+      <dc:subject>Water body salinity</dc:subject>
+      <dc:subject>Atlantic Ocean</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dct:abstract>SeaDataNet Temperature and Salinity historical data collection v2, including revised quality flags after quality control with ODV.
+
+For data access please register at http://www.marine-id.org</dct:abstract>
+      <dc:description>SeaDataNet Temperature and Salinity historical data collection v2, including revised quality flags after quality control with ODV.
+
+For data access please register at http://www.marine-id.org</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI</dc:source>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG 4326)">
+        <ows:LowerCorner>10 10</ows:LowerCorner>
+        <ows:UpperCorner>-90 62</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--metadata-URL" description="DOI of the product">http://dx.doi.org/10.12770/a61129f0-afbc-4bfa-8307-00f37d37d98a</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-link--download" name="full collection dataset" description="zipped ODV binary collection">ftp://vftp2.ifremer.fr/public/seadatanet-north_atlantic_ocean-temperaturesalinity_aggregated/SDN_2015-09_TS_Atlantic_QC_done_v2.zip</dc:URI>
+      <dc:URI protocol="OGC:WMS:getCapabilities" name="full collection dataset" description="full collection dataset">http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;VERSION=1.3.0&amp;DATASET=SDN_2015-09_TS_Atlantic_QC_done_v2</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2015-09_TS_Atlantic_QC_done_v2/ITS-90_water_temperature" description="Temperature">http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;VERSION=1.3.0&amp;DATASET=SDN_2015-09_TS_Atlantic_QC_done_v2</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2015-09_TS_Atlantic_QC_done_v2/Water_body_salinity" description="Salinity">http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;VERSION=1.3.0&amp;DATASET=SDN_2015-09_TS_Atlantic_QC_done_v2</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="SDN_2015-09_TS_Atlantic_QC_done_v2/*" description="Observation locations">http://www.ifremer.fr/oceanotron/WMS/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;VERSION=1.3.0&amp;DATASET=SDN_2015-09_TS_Atlantic_QC_done_v2</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/eng//resources.get?uuid=a61129f0-afbc-4bfa-8307-00f37d37d98a&amp;fname=North_Atlantic_SDN_v2_QC472_Map_s.png</dc:URI>
+    </csw:Record>

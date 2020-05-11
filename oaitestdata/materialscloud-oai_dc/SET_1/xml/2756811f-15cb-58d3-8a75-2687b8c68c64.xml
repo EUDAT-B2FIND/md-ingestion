@@ -1,0 +1,39 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:2018.0007/v2</identifier>
+    <datestamp>2019-06-12Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/dc/terms/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type>Dataset</dc:type>
+      <dc:creator>Martin, Richard L.</dc:creator>
+      <dc:creator>Lin, Li-Chiang</dc:creator>
+      <dc:creator>Jariwala, Kuldeep</dc:creator>
+      <dc:creator>Smit, Berend</dc:creator>
+      <dc:creator>Haranczyk, Maciej</dc:creator>
+      <dc:title>Mail-order metal-organic frameworks (MOFs): designing isoreticular MOF-5 analogues comprising commercially available organic molecules</dc:title>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:date>2018-11-14</dc:date>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>3D</dc:subject>
+      <dc:subject>three-dimensional</dc:subject>
+      <dc:subject>database</dc:subject>
+      <dc:subject>high-throughput</dc:subject>
+      <dc:subject>MOF-5</dc:subject>
+      <dc:subject>nanoporous</dc:subject>
+      <dc:subject>methane storage</dc:subject>
+      <dc:subject>deliverable capacities</dc:subject>
+      <dc:subject>DC</dc:subject>
+      <dc:subject>grand canonical Monte Carlo</dc:subject>
+      <dc:subject>GCMC</dc:subject>
+      <dc:identifier>doi:10.24435/materialscloud:2018.0007/v2</dc:identifier>
+      <dc:identifier>https://archive.materialscloud.org/2018.0007/v2</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:description>Metal&#8211;organic frameworks (MOFs), a class of porous materials, are of particular interest in gas storage and separation applications due largely to their high internal surface areas and tunable structures. MOF-5 is perhaps the archetypal MOF; in particular, many isoreticular analogues of MOF-5 have been synthesized, comprising alternative dicarboxylic acid ligands. In this contribution we introduce a new set of hypothesized MOF-5 analogues, constructed from commercially available organic molecules. We describe our automated procedure for hypothetical MOF design, comprising selection of appropriate ligands, construction of 3D structure models, and structure relaxation methods. 116 MOF-5 analogues were designed and characterized in terms of geometric properties and simulated methane uptake at conditions relevant to vehicular storage applications. A strength of the presented approach is that all of the hypothesized MOFs are designed to be synthesizable utilizing ligands purchasable online.&lt;br/&gt;
+&lt;br/&gt;
+Version 2 includes the structures in CIF format.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

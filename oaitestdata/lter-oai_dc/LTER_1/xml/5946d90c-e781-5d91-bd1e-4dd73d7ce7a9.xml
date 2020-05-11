@@ -1,0 +1,20 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:b2share.fz-juelich.de:b2rec/a5d2fb4923ba4463a82e113cd26b8477</identifier>
+    <datestamp>2018-01-17T07:57:10Z</datestamp>
+    <setSpec>d952913c-451e-4b5c-817e-d578dc8a4469</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Rusina, Solvita</dc:creator>
+      <dc:date>2017-05-14T18:34:35.888030+00:00</dc:date>
+      <dc:description>Precipitation data for Engure LTSER 1995-2008</dc:description>
+      <dc:identifier>http://hdl.handle.net/11097/423640c1-c07c-4e6e-9fe8-bb198eb5ff9f</dc:identifier>
+      <dc:identifier>https://b2share.fz-juelich.de/api/records/a5d2fb4923ba4463a82e113cd26b8477</dc:identifier>
+      <dc:identifier>oai:b2share.fz-juelich.de:b2rec/a5d2fb4923ba4463a82e113cd26b8477</dc:identifier>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:subject>precipitation, climate change</dc:subject>
+      <dc:title>Precipitation data Engure LTSER 1995-2008</dc:title>
+    </oai_dc:dc>
+  </metadata>
+</record>

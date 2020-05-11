@@ -1,0 +1,40 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>afcaabb7-0618-4bf6-9e8c-4cdd3da51fab</dc:identifier>
+      <dc:date>2018-09-26T13:58:36</dc:date>
+      <dc:title>Baltic Sea - Temperature and salinity Historical Data collection SeaDataCloud V1</dc:title>
+      <dct:alternative>SDC_BAL_DATA_TS_V1</dct:alternative>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Temperature of the water column</dc:subject>
+      <dc:subject>Salinity of the water column</dc:subject>
+      <dc:subject>Water body salinity</dc:subject>
+      <dc:subject>ITS-90 water temperature</dc:subject>
+      <dc:subject>Baltic Sea</dc:subject>
+      <dc:subject>Bay of Bothnia</dc:subject>
+      <dc:subject>Central Baltic Sea</dc:subject>
+      <dc:subject>Gulf of Bothnia</dc:subject>
+      <dc:subject>Gulf of Finland</dc:subject>
+      <dc:subject>Kattegat</dc:subject>
+      <dc:subject>Lillebaelt</dc:subject>
+      <dc:subject>Storebaelt</dc:subject>
+      <dc:subject>Skagerrak</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>ODV binary collection</dc:format>
+      <dct:abstract>The SeaDataCloud  Temperature  and Salinity historical data collection for the Baltic Sea includes open access in situ data on temperature and salinity of water column. The data were retrieved from the SeaDataNet infrastructure at the end of 2017. Data have been quality controlled according to the SeaDataNet2 project QC procedures in conjunction with the visual expert check using the ODV software. The final number of stations in the collection is 407456, containing around 13.7 million values for both temperature and salinity. The dataset format is ODV binary collection which you can read, analyse and export from with the ODV application provided by the Alfred Wegener institute at http://odv.awi.de/. 
+
+For data access please register at http://www.marine-id.org/.</dct:abstract>
+      <dc:description>The SeaDataCloud  Temperature  and Salinity historical data collection for the Baltic Sea includes open access in situ data on temperature and salinity of water column. The data were retrieved from the SeaDataNet infrastructure at the end of 2017. Data have been quality controlled according to the SeaDataNet2 project QC procedures in conjunction with the visual expert check using the ODV software. The final number of stations in the collection is 407456, containing around 13.7 million values for both temperature and salinity. The dataset format is ODV binary collection which you can read, analyse and export from with the ODV application provided by the Alfred Wegener institute at http://odv.awi.de/. 
+
+For data access please register at http://www.marine-id.org/.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>The data used as input for this product have been extracted from the SeadataNet Download Service: http://www.seadatanet.org/Data-Access/Common-Data-Index-CDI</dc:source>
+      <dc:format>ODV binary collection</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG 4326)">
+        <ows:LowerCorner>30 53</ows:LowerCorner>
+        <ows:UpperCorner>10 66.5</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--metadata-URL" description="DOI of the product">http://dx.doi.org/10.12770/afcaabb7-0618-4bf6-9e8c-4cdd3da51fab</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/fre//resources.get?uuid=afcaabb7-0618-4bf6-9e8c-4cdd3da51fab&amp;fname=BALTIC_SDC_V1.png</dc:URI>
+    </csw:Record>

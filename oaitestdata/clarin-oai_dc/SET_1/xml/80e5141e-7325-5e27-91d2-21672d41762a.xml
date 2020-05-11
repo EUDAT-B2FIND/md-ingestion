@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:repo.clarino.uib.no:11509/80</identifier>
+    <datestamp>2016-06-01T12:04:16Z</datestamp>
+    <setSpec>hdl_11509_1</setSpec>
+    <setSpec>hdl_11509_2</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Forskning.no</dc:title>
+      <dc:creator>Kristiansen, Nina</dc:creator>
+      <dc:subject>Science</dc:subject>
+      <dc:description>Data set containing texts from the popular science website Forskning.no.&#13;
+ The text material is constituted by articles published by Forskning.no (CLARINO's agreement also includes the permission to use future articles to be published by Forskning.no) belonging to the following three categories:&#13;
+1) Articles written by journalists employed at Forskning.no&#13;
+2) Articles written by member institutions of Forskning.no (76 universities, colleges, research&#13;
+centers, research departments in government agencies and more). These articles are written by staff journalists, information officers and other non-academic staff. Each article has been edited by Forskning.no.&#13;
+3) Articles from the newsdesk NRK Viten, with whom Forskning.no cooperates. These articles are written by NRK journalists. A full list of partner/cooperation institutions may be presented on demand.</dc:description>
+      <dc:date>2013-05-20</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11509/80</dc:identifier>
+      <dc:language>nor</dc:language>
+      <dc:rights>CLARIN_RES-DEP-*</dc:rights>
+      <dc:rights>https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEulaRes?ID=1&amp;PERM=1&amp;PLAN=1&amp;BY=1&amp;NORED=1&amp;DEP=1</dc:rights>
+      <dc:rights>RES</dc:rights>
+      <dc:format>application/gzip</dc:format>
+      <dc:format>text/plain</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Forskning.no</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

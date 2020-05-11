@@ -1,0 +1,78 @@
+{
+    "Contact": [
+        "researchdatarepository@ucl.ac.uk"
+    ],
+    "DOI": "http://dx.doi.org/doi:10.5522/04/11568729.v1",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://api.figshare.com/v2/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:figshare.com:article/11568729",
+    "MetadataAccess": [
+        "oai:figshare.com:article/11568729"
+    ],
+    "OpenAccess": "true",
+    "PublicationTimestamp": "2020-01-14T10:54:34Z",
+    "PublicationYear": [
+        "2020"
+    ],
+    "Publisher": [
+        "UCL"
+    ],
+    "RelatedIdentifier": [
+        "https://figshare.com/articles/Internet_of_Things_Discrete_Choice_Experiment_SmartTV_data/11568729"
+    ],
+    "ResourceType": [
+        "Dataset",
+        "Dataset"
+    ],
+    "Rights": [
+        "CC BY-ND 4.0"
+    ],
+    "author": [
+        "Shane Johnson (6762434)",
+        "Gabriel Wong (8281038)",
+        "Manning Matthew (8281035)",
+        "John Blythe (7084952)"
+    ],
+    "fulltext": "oai:figshare.com:article/11568729;2020-01-14T10:54:34Z;category_449;portal_549;item_type_3;month_year_01_2020;Internet of Things Discrete Choice Experiment SmartTV data;Shane Johnson (6762434);John Blythe (7084952);Gabriel Wong (8281038);Manning Matthew (8281035);Decision Making;Internet of Things;Security;Discrete Choice;<p>The data are for a discrete choice experiment that examined the impact of security labels, device functionality and price on consumer decision making. This dataset is for internet connected Televisions. </p><p><br></p><p>Article will be published in PlosOne.<br></p>;2020-01-14T10:54:34Z;Dataset;Dataset;10.5522/04/11568729.v1;https://figshare.com/articles/Internet_of_Things_Discrete_Choice_Experiment_SmartTV_data/11568729;CC BY-ND 4.0",
+    "group": "ucl",
+    "groups": [
+        {
+            "name": "ucl"
+        }
+    ],
+    "name": "9f1deac4-a92f-5d96-95c6-d5ec98b48ec8",
+    "notes": [
+        "<p>The data are for a discrete choice experiment that examined the impact of security labels, device functionality and price on consumer decision making. This dataset is for internet connected Televisions. </p><p><br></p><p>Article will be published in PlosOne.<br></p>"
+    ],
+    "oai_identifier": [
+        "oai:figshare.com:article/11568729"
+    ],
+    "oai_set": [
+        "category_449",
+        "portal_549",
+        "item_type_3",
+        "month_year_01_2020"
+    ],
+    "state": "active",
+    "tags": [
+        {
+            "name": "Decision Making"
+        },
+        {
+            "name": "Internet Things"
+        },
+        {
+            "name": "Security"
+        },
+        {
+            "name": "Discrete Choice"
+        }
+    ],
+    "title": [
+        "Internet of Things Discrete Choice Experiment SmartTV data"
+    ],
+    "url": ""
+}

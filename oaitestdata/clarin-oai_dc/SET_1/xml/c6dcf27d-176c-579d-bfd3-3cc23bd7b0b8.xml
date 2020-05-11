@@ -1,0 +1,36 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-2726</identifier>
+    <datestamp>2018-05-03T06:43:57Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Test Data EN-DE MT_NMT APE Shared Task WMT18</dc:title>
+      <dc:creator>Chatterjee, Rajen</dc:creator>
+      <dc:creator>Negri, Matteo</dc:creator>
+      <dc:creator>Turchi, Marco</dc:creator>
+      <dc:subject>machine translation</dc:subject>
+      <dc:subject>shared task</dc:subject>
+      <dc:subject>automatic post-editing</dc:subject>
+      <dc:subject>post-editing</dc:subject>
+      <dc:subject>neural machine translation</dc:subject>
+      <dc:description>Test data for the WMT 2018 Automatic post-editing task. They consist in English-German pairs (source and target) belonging to the information technology domain and already tokenized. Test set contains 1,023 pairs. A neural machine translation system has been used to generate the target segments. All data is provided by the EU project QT21 (http://www.qt21.eu/).</dc:description>
+      <dc:date>2018-05-04</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-2726</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>deu</dc:language>
+      <dc:relation>info:eu-repo/grantAgreement/EC/H2020/645452</dc:relation>
+      <dc:rights>AGREEMENT ON THE USE OF DATA IN QT21 APE Task</dc:rights>
+      <dc:rights>https://lindat.mff.cuni.cz/repository/xmlui/page/licence-TAUS_QT21</dc:rights>
+      <dc:rights>PUB</dc:rights>
+      <dc:format>application/zip</dc:format>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>downloadable_files_count: 1</dc:format>
+      <dc:publisher>Fondazione Bruno Kessler, Trento, Italy</dc:publisher>
+      <dc:source>http://www.statmt.org/wmt18/ape-task.html</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

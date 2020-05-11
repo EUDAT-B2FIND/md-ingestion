@@ -1,0 +1,28 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:5757471</identifier>
+    <datestamp>2019-05-19T17:37:20Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">Eesti avatud paralleelkorpus</dc:title>
+      <dc:title xml:lang="en">Estonian Open Parallel Corpus</dc:title>
+      <dc:creator>Luts, Martin</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2013</dc:date>
+      <dc:date>Issued: 2013-01-09</dc:date>
+      <dc:date>Updated: 2019-01-07</dc:date>
+      <dc:identifier>doi:10.15155/9-00-0000-0000-0000-0002AL</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Projekti &#8222;Eesti avatud paralleelkorpus&#8221; eesm&#228;rk on luua oluline kogus keeleressursse statistiliste masint&#245;lkes&#252;steemide parendamiseks. Projekt aitab kaasa olukorra saavutamisele kus: (i) Erinevad kommerts- ja kogukondlikud masint&#245;lkes&#252;steemid pakuvad kvaliteetset t&#245;lketeenust. (ii) Masint&#245;lkes&#252;steemide teenused on l&#245;ppkasutajatele v&#245;imalikult v&#228;heste piirangutega (tasu, maht, kasutatavad platvormid) k&#228;ttesaadavad. (iii) S&#245;ltuvus &#252;ksikutest masint&#245;lketeenuste kommertsteenusepakkujatest ei ole kriitiline ja on asendatav avatud ning vabavaraliste lahendustega. Projekti m&#245;&#245;detavad tulemid on: (i) Kogutud ja korrastatud paralleelkorpuste maht. Projekti esimese aasta jooksul kogutud v&#228;hemalt 2,5 miljonit &#252;hikut (s&#245;na), projekti l&#245;puks v&#228;hemalt 15 miljonit &#252;hikut. (ii) Kogutud korpuste - t&#228;iedavalt olemasolevatele korpustele - abil treenitud masint&#245;lkes&#252;steemide kvaliteedin&#228;itajate parenemine (m&#245;&#245;detakse koost&#246;&#246;s masint&#245;lkes&#252;steemide omanikega). (iii) Kogutud korpused aksepteeritud ja publitseeritud META-SHARE (http://www.meta-net.eu/meta-share) ja CLARIN (http://www.clarin.eu/external/) baasides. Projekti tulemina loodava paralleelkorpuse omadused: &#8226; Lause tasandil joondatud inglise-eesti paralleelkorpus. &#8226; Korpus kirjeldatakse kasutades META-SHARE metaandmete formaati. &#8226; Korpus on k&#228;ttesaadav tasuta ja piiranguteta kasutamiseks kommerts- ja vabavararakendustes, edasiarendusteks jm. Korpus on allalaaditav nii META-SHARE taristu kui ka CLARINi v&#245;rgustiku kaudu. &#8226; Korpus koostatakse andmetest mida ei ole seni kasutatud paralleelkorpuste loomiseks (ei kattu olemasolevate paralleelkorpustega DGT ja JRC Aquis).
+
+M&#228;rkus. Alamosa korpusest (sh IT aastaraamatud) ajutiselt kvaliteediparanduseks eemaldatud</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">The English-Estonian parallel corpus was collected in the framework of the National Programme for Estonian Language Technology http://www.keeletehnoloogia.ee/ekt-projektid/eesti-avatud-paralleelkorpus
+
+Note. Part of the corpus temporaly removed for quality improvements</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

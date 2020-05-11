@@ -1,0 +1,22 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:lindat.mff.cuni.cz:11372/LRT-852</identifier>
+    <datestamp>2016-04-06T16:39:53Z</datestamp>
+    <setSpec>hdl_11858_00-097C-0000-0007-710A-A</setSpec>
+    <setSpec>hdl_11858_00-097C-0000-0007-710B-8</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>The World Atlas of Language Structures Online</dc:title>
+      <dc:description>WALS is a large database of structural (phonological, grammatical, lexical) properties of languages gathered from descriptive materials (such as reference grammars) by a team of more than 40 authors  (many of them the leading authorities on the subject).</dc:description>
+      <dc:date>2014-07-30</dc:date>
+      <dc:type>toolService</dc:type>
+      <dc:identifier>http://hdl.handle.net/11372/LRT-852</dc:identifier>
+      <dc:rights>Creative Commons Attribution-Noncommercial-No Derivative Works 2.0 Germany - http://creativecommons.org/licenses/by-nc-nd/2.0/de/deed.en</dc:rights>
+      <dc:rights>http://wals.info/about/legal</dc:rights>
+      <dc:format>downloadable_files_count: 0</dc:format>
+      <dc:publisher>Max Planck Digital Library, http://wals.info/author</dc:publisher>
+      <dc:source>http://wals.info/</dc:source>
+    </oai_dc:dc>
+  </metadata>
+</record>

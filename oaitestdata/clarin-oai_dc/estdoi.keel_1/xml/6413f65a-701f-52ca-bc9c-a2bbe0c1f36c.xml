@@ -1,0 +1,24 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.datacite.org:15015402</identifier>
+    <datestamp>2019-06-13T16:31:27Z</datestamp>
+    <setSpec>ESTDOI</setSpec>
+    <setSpec>ESTDOI.KEEL</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title xml:lang="et">EstNLTK teek Pythoni jaoks (ver.1.4)</dc:title>
+      <dc:title xml:lang="en">EstNLTK library for Python (ver.1.4)</dc:title>
+      <dc:creator>Laur, Sven</dc:creator>
+      <dc:publisher>Center of Estonian Language Resources</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:date>Issued: 2018-05-04</dc:date>
+      <dc:date>Updated: 2018-05-10</dc:date>
+      <dc:identifier>doi:10.15155/1-00-0000-0000-0000-00160L</dc:identifier>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="et">Loodud EstNLTK teek 1.4 koondab keeletehnoloogilised t&#246;&#246;riistad &#252;htseks tervikuks: - olemasolevad t&#246;&#246;riistad liidestatud EstNLTK teegiga, - andmevahetus toimub struktureeritult l&#228;bi Python-i klasside, - iga komponendi ja anal&#252;&#252;si jaoks on loodud &#252;levaatlikud juhendmaterjalid. Teegi kasutamine muudab k&#228;ttesaadavaks peamised keeletehnoloogilised operatsioonid: - lausestamine ja s&#245;nestamine, - morfoloogiline anal&#252;&#252;s, - osalausestamine, - ajav&#228;ljendite tuvastus, - nimeolemite tuvastus, - verbifraaside tuvastus, - nimis&#245;nafraaside tuvastus, - omaduss&#245;nafraaside tuvastus, - pinds&#252;ntaktiline anal&#252;&#252;s.</dc:description>
+      <dc:description>Abstract</dc:description>
+      <dc:description xml:lang="en">EstNLTK provides common natural language processing functionality such as paragraph, sentence and word tokenization, morphological analysis, named entity recognition, etc. for the Estonian language. This is the old branch, which contains full functionality of different analysis tools. Available via Anaconda package repository for Python 3.5. PyPI packages are also available for Python 3.4+ and 2.7. Python 3.6 is not supported.</dc:description>
+    </oai_dc:dc>
+  </metadata>
+</record>

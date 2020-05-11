@@ -1,0 +1,47 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:clarin-pl.eu:11321/344</identifier>
+    <datestamp>2017-04-25T11:07:10Z</datestamp>
+    <setSpec>hdl_11321_3</setSpec>
+    <setSpec>hdl_11321_4</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>Diachrono</dc:title>
+      <dc:creator>Koco&#324;, Jan</dc:creator>
+      <dc:subject>corpus</dc:subject>
+      <dc:subject>diachronic</dc:subject>
+      <dc:description>Polish texts from 17th to 19th century</dc:description>
+      <dc:date>2017-04-21</dc:date>
+      <dc:type>corpus</dc:type>
+      <dc:identifier>http://hdl.handle.net/11321/344</dc:identifier>
+      <dc:language>pol</dc:language>
+      <dc:rights>CLARIN-EULA-ACA-v1.0</dc:rights>
+      <dc:rights>https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinEULA#aca</dc:rights>
+      <dc:rights>ACA</dc:rights>
+      <dc:format>text/plain; charset=utf-8</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>application/msword</dc:format>
+      <dc:format>downloadable_files_count: 20</dc:format>
+      <dc:publisher>Jan Koco&#324;</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>
