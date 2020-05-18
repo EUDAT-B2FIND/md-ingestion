@@ -13,7 +13,7 @@ def setup_module(module):
 
 def test_common_attributes():
     result = MAPPER.load_result(
-        filename="point_ACD_1_aa2a1b44-42b2-52ff-98d1-20ab4dae8a18.json",
+        filename="point_aa2a1b44-42b2-52ff-98d1-20ab4dae8a18.json",
         set_name="ACD_1")
     # assert result['Contributor'] == ''
     assert result['Publisher'] == ["PANGAEA - Data Publisher for Earth & Environmental Science"]
