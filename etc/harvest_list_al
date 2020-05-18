@@ -20,7 +20,9 @@ aleph     http://www.openaccessrepository.it/oai2d   ListRecords marcxml dataset
 anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus csw iso19139 
 
 ## B2FIND export
-b2find http://b2find.eudat.eu/api/3/action ckan_api json 
+#b2find http://b2find.eudat.eu/api/3/action ckan_api json
+#b2find http://eudat7-ingest.dkrz.de/oai? ListIdentifiers oai_datacite
+b2find http://eudat7-ingest.dkrz.de/oai? ListIdentifiers oai_openaire 
 
 ## Capsella
 #capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc 

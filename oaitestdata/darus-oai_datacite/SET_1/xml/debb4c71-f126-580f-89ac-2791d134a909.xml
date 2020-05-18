@@ -1,0 +1,55 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-445</identifier>
+    <datestamp>2020-02-15T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-445</identifier>
+      <creators>
+        <creator>
+          <creatorName>FoKUS</creatorName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>First Steps with DaRUS as an Admin</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Other</subject>
+        <subject>Tutorial</subject>
+        <subject>Administrator</subject>
+        <subject>Data Repository</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Organizational">FoKUS</contributorName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2019-05-08</date>
+        <date dateType="Updated">2020-02-14</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset"/>
+      <sizes>
+        <size>840109</size>
+      </sizes>
+      <formats>
+        <format>application/pdf</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Description of the first steps and the most important tasks for a new DaRUS-Admin</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>
