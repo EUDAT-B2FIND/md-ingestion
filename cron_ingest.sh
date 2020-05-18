@@ -3,7 +3,7 @@
 ## Cronjob for B2FIND ingestion
 
 syntax="Syntax: cron_test.sh community [fromdays targethost]"
-PY="${HOME}/miniconda3/envs/python3.6/bin/python"
+MGR="${HOME}/miniconda3/envs/python3.6/bin/manager"
 
 
 # check arguments
@@ -58,6 +58,6 @@ fi
 TODAY=`date +\%F`
 cd $WORK
 set -x
-$PY ./manager.py -c $community -i $targethost $handlecheck $fromdateset >log/ingest_${community}_${TODAY}.out 2> >(tee -a log/ingest_${community}_${TODAY}.err >&2)
+$MGR -c $community -i $targethost $handlecheck $fromdateset >log/ingest_${community}_${TODAY}.out 2> >(tee -a log/ingest_${community}_${TODAY}.err >&2)
 
 exit 0
