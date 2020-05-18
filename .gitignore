@@ -16,5 +16,10 @@ oaidata_old/*
 results*.txt
 *.crt
 __pycache__/
+*.eggs
+*.egg-info
 #ignore generated json-output
 oaitestdata/*/*/json
+
+# genetated output testdata
+tests/testdata/*/*/json

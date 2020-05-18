@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+	<responseDate>2020-05-06T11:35:41Z</responseDate>
+	<request verb="GetRecord" metadataPrefix="datacite" identifier="oai:envidat.ch:f7160261-c98d-4d49-8966-10c1b0a32831">http://www.envidat.ch/oai</request>
+	<GetRecord>
+		<record>
+			<header>
+				<identifier>oai:envidat.ch:f7160261-c98d-4d49-8966-10c1b0a32831</identifier>
+				<datestamp>2019-10-31T23:28:33Z</datestamp>
+			</header>
+			<metadata>
+				<resource xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd" xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<identifier identifierType="DOI">10.16904/13</identifier>
+					<creators>
+						<creator>
+							<creatorName>SLF</creatorName>
+							<affiliation>WSL Institute for Snow and Avalanche Research SLF</affiliation>
+						</creator>
+					</creators>
+					<titles>
+						<title xml:lang="en-us">Fatal avalanche accidents in Switzerland since 1995-1996</title>
+					</titles>
+					<publicationYear>2018</publicationYear>
+					<publisher xml:lang="en-us">WSL Institute for Snow and Avalanche Research SLF</publisher>
+					<subjects>
+						<subject xml:lang="en-us">AVALANCHE ACCIDENT STATISTICS</subject>
+						<subject xml:lang="en-us">AVALANCHE ACCIDENTS</subject>
+						<subject xml:lang="en-us">AVALANCHE FATALITIES</subject>
+						<subject xml:lang="en-us">NUMBER OF CAUGHT PERSONS</subject>
+						<subject xml:lang="en-us">NUMBER OF DEAD PERSONS</subject>
+					</subjects>
+					<contributors>
+						<contributor contributorType="ContactPerson">
+							<contributorName>Avalanche Warning Service SLF</contributorName>
+							<affiliation>WSL Institute for Snow and Avalanche Research SLF</affiliation>
+						</contributor>
+					</contributors>
+					<dates>
+						<date dateType="Created">2018-12-06</date>
+					</dates>
+					<language>en</language>
+					<resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+					<alternateIdentifiers>
+						<alternateIdentifier alternateIdentifierType="URL">https://www.envidat.ch/dataset/fatal-avalanche-accidents-switzerland-1995</alternateIdentifier>
+					</alternateIdentifiers>
+					<sizes>
+						<size>45259 bytes</size>
+					</sizes>
+					<formats>
+						<format>CSV</format>
+					</formats>
+					<version>1.0</version>
+					<rightsList>
+						<rights rightsIdentifierScheme="SPDX" xml:lang="en-us" rightsURI="https://opendefinition.org/licenses/odc-odbl" rightsIdentifier="ODbL-1.0" schemeURI="https://spdx.org/licenses/">ODbL with Database Contents License (DbCL)</rights>
+					</rightsList>
+					<descriptions>
+						<description xml:lang="en-us" descriptionType="Abstract">This data collection contains information concerning all accidents by snow avalanches causing at least one fatality in Switzerland. The data set commences on 01/10/1995. After the completion of a hydrological year, the new data is added.  
+The following information is provided:    
+ * avalanche identifier   
+ * date of the accident  
+ * accuracy of the date in range of days before and after  
+ * canton  
+ * name of the locality  
+ * start zone of the avalanche  
+   * coordinates (Swiss coordinate system, approximately in middle of start zone)  
+   * accuracy of the coordinates in meters
+  * elevation (in meteres above sea level, app. in middle of start zone)  
+  * slope aspect (main orientation of start zone)   
+  * slope inclination (in degree, steepest point within start zone)    
+ * number of dead persons   
+ * number of caught persons  
+ * number of fully buried persons    
+ * forecasted avalanche danger level   
+ * activity/location of the accident party at the time of the incident</description>
+					</descriptions>
+					<geoLocations>
+						<geoLocation>
+							<geoLocationPolygon>
+								<polygonPoint>
+									<pointLongitude>5.95587</pointLongitude>
+									<pointLatitude>45.81802</pointLatitude>
+								</polygonPoint>
+								<polygonPoint>
+									<pointLongitude>5.95587</pointLongitude>
+									<pointLatitude>47.80838</pointLatitude>
+								</polygonPoint>
+								<polygonPoint>
+									<pointLongitude>10.49203</pointLongitude>
+									<pointLatitude>47.80838</pointLatitude>
+								</polygonPoint>
+								<polygonPoint>
+									<pointLongitude>10.49203</pointLongitude>
+									<pointLatitude>45.81802</pointLatitude>
+								</polygonPoint>
+								<polygonPoint>
+									<pointLongitude>5.95587</pointLongitude>
+									<pointLatitude>45.81802</pointLatitude>
+								</polygonPoint>
+							</geoLocationPolygon>
+						</geoLocation>
+						<geoLocation>
+							<geoLocationPlace>Switzerland</geoLocationPlace>
+						</geoLocation>
+					</geoLocations>
+					<fundingReferences>
+						<fundingReference>
+							<funderName>Funding information not available.</funderName>
+						</fundingReference>
+					</fundingReferences>
+				</resource>
+			</metadata>
+		</record>
+	</GetRecord>
+</OAI-PMH>

@@ -182,8 +182,9 @@ These options will be required to upload an dataset to a CKAN database.
 
 ```
 $ conda install pytest
-$ pytest tests
+$ pytest tests/
 ```
+
 ### Authors
 
 * Heinrich Widmann (DKRZ), 11.4.2014
