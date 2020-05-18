@@ -1,0 +1,56 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-507</identifier>
+    <datestamp>2019-12-12T01:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-507</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Diestelk&#228;mper, Ralf</creatorName>
+          <givenName>Ralf</givenName>
+          <familyName>Diestelk&#228;mper</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Research Data Management Project Form</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Other</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Diestelk&#228;mper, Ralf</contributorName>
+          <givenName>Ralf</givenName>
+          <familyName>Diestelk&#228;mper</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2019-12-11</date>
+        <date dateType="Updated">2019-12-11</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset"/>
+      <sizes>
+        <size>48262</size>
+      </sizes>
+      <formats>
+        <format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Research Data Management (RDM) describes the collection, preservation, and sharing of data created or used in a research project. SimTech&#8217;s Data and Software Management team offers expertise and resources to develop and implement sustainable RDM in your SimTech project (for free).  The following form serves to assess the needed support. If you have any questions about your project idea or about this form, contact us at rdm@simtech.uni-stuttgart.de.</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>

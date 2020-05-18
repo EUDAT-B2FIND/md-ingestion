@@ -1,0 +1,218 @@
+
+ Statistics of
+	community	darus
+	subset		SET_1
+	# of records	35
+  see as well oaitestdata/darus-oai_datacite/SET_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //datacite4:title
+
+  |--    35 |  100 |    35 |  100
+      |- 2     : b'Deep enzymology data related to Adam et al.: Sequence context-dependent base fli' [...(58 chars follow)...] |
+      |- 1     : b'Deep enzymology data related to Gao et al.: Comprehensive structure-function cha' [...(90 chars follow)...] |
+      |- 1     : b'RePlay-DH Client'                 |
+      |- 1     : b'FAST model of the SWE-CPP semi-submersible floating wind turbine platform for th' [...(33 chars follow)...] |
+      |- 1     : b'Occurrence of expansins in the tree of life'      |
+      |- 1     : b'3D Cryo-FIB SEM - Mallomonas Dataset'      |
+      |- 1     : b'The modular structure of alpha/beta-hydrolases: similarity of the N- and C-termi' [...(29 chars follow)...] |
+      |- 1     : b'GLASSgo Setup & Usage'            |
+      |- 1     : b'Conserved positions in expansin homologues'      |
+      |- 1     : b'Relevance of Different Metadata Fields for the Description of Research Data from' [...(25 chars follow)...] |
+
+ |-> Description      <--       //datacite4:description
+
+  |--    35 |  100 |    35 |  100
+      |- 1     : b'Experimental procedures: Libraries of double stranded DNA substrates with CpG, C' [...(1801 chars follow)...] |
+      |- 1     : b'Integrated Tool for tracking, versioning and publishing workflows.\r\n<ul>\r\n    <l' [...(315 chars follow)...] |
+      |- 1     : b'Methylation of random flank substrates: Libraries of double stranded DNA substra' [...(1824 chars follow)...] |
+      |- 1     : b'This dataset includes all files necessary to build an OpenFAST v1.0.0 platform m' [...(1700 chars follow)...] |
+      |- 1     : b'Comparison between expansins found in the Expansin Engineering Database (ExED) a' [...(14 chars follow)...] |
+      |- 1     : b'Dataset of raw and image processed 3D Cryo-FIB SEM data recorded from Mallomonas' [...(7 chars follow)...] |
+      |- 1     : b'To analyse the structural similarities of the N- and C-terminal domains, represe' [...(1180 chars follow)...] |
+      |- 1     : b'Instruction video to install and use GLASSgo on multiple resources (e.g., Docker' [...(424 chars follow)...] |
+      |- 1     : b'Conserved positions in the N- and C-terminal expansin domains of different group' [...(252 chars follow)...] |
+      |- 1     : b'Data from a Survey at the University of Stuttgart about the relevance of differe' [...(69 chars follow)...] |
+
+ |-> Tags             <--       //datacite4:subject
+
+  |--    34 |   97 |    34 |   97
+      |- 13    : Medicine                            |
+      |- 7     : Engineering                         |
+      |- 7     : Computer Information Science        |
+      |- 2     : Arts Humanities                     |
+      |- 1     : Tutorial                            |
+      |- 1     : Chemistry                           |
+      |- 1     : Instruction                         |
+      |- 1     : Social Sciences                     |
+      |- 1     : Agricultural Sciences               |
+
+ |-> DOI              <--                     
+  |--    35 |  100 |    35 |  100
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-627      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-475      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-628      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-621      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-693      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-472      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-458      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-517      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-735      |
+      |- 1     : http://dx.doi.org/doi:10.18419/darus-501      |
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //datacite4:identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> RelatedIdentifier <--       //datacite4:identifier
+
+  |--     0 |    0 |     0 |    0
+
+ |-> MetaDataAccess   <--                     
+  |--    35 |  100 |    35 |  100
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+      |- 1     : https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&id [...(31 chars follow)...] |
+
+ |-> Creator          <--       //datacite4:creatorName
+
+  |--    35 |  100 |    35 |  100
+      |- 5     : b'Lohoff, Caroline'                 |
+      |- 3     : b'Jeltsch, Albert'                  |
+      |- 3     : b'Buchholz, Patrick'                |
+      |- 2     : b'Iglezakis, Dorothea'              |
+      |- 2     : b'FoKUS'                            |
+      |- 2     : b'FLP Team'                         |
+      |- 1     : b'Kushnarenko, Volodymyr'           |
+      |- 1     : b'Cheng, Po Wen'                    |
+      |- 1     : b'Schneider, Ralf'                  |
+      |- 1     : b'Bauer, Tabea'                     |
+
+ |-> Publisher        <--       //datacite4:publisher
+
+  |--    35 |  100 |    35 |  100
+      |- 35    : b'DaRUS'                            |
+
+ |-> Contributor      <--       //datacite4:contributorName,//datacite4:affiliation,//datacite4:funderName
+
+  |--    35 |  100 |    35 |  100
+      |- 6     : Pleiss, Jürgen                      |
+      |- 4     : University of Stuttgart             |
+      |- 3     : Jeltsch, Albert                     |
+      |- 2     : Gärtner, Markus                     |
+      |- 2     : Universität Stuttgart               |
+      |- 2     : FoKUS Team                          |
+      |- 2     : University of Stuttgart, Institute of Applied Mechanics (CE)      |
+      |- 1     : independent                         |
+      |- 1     : Bundesministerium für Bildung und Forschung      |
+      |- 1     : Federal Ministry of Education and Research (BMBF)      |
+
+ |-> PublicationYear  <--       //datacite4:publicationYear
+
+  |--    35 |  100 |    35 |  100
+      |- 21    : 2020                                |
+      |- 14    : 2019                                |
+
+ |-> Rights           <--       //datacite4:rights
+
+  |--    34 |   97 |    34 |   97
+      |- 32    : CC BY Waiver                        |
+      |- 1     : Code and deployable from this project are licensed under the MIT license:  https [...(30 chars follow)...] |
+      |- 1     : As part of the RePlay-DH Client distributable this resource is licensed under th [...(81 chars follow)...] |
+
+ |-> OpenAccess       <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //datacite4:creatorName
+
+  |--    35 |  100 |    35 |  100
+      |- 5     : Lohoff, Caroline                    |
+      |- 3     : Jeltsch, Albert                     |
+      |- 3     : Buchholz, Patrick                   |
+      |- 2     : Iglezakis, Dorothea                 |
+      |- 2     : FoKUS                               |
+      |- 2     : FLP Team                            |
+      |- 1     : Kushnarenko, Volodymyr              |
+      |- 1     : Cheng, Po Wen                       |
+      |- 1     : Schneider, Ralf                     |
+      |- 1     : Bauer, Tabea                        |
+
+ |-> Language         <--       //datacite4:language
+
+  |--     0 |    0 |     0 |    0
+
+ |-> ResourceType     <--       //datacite4:resourceType
+
+  |--    16 |   46 |    16 |   46
+      |- 3     : Raw DNA sequences extracted from Fastq NGS files; Bisulfite-seq DNA methylation  [...(8 chars follow)...] |
+      |- 2     : Image data                          |
+      |- 1     : program source code                 |
+      |- 1     : hits from database search           |
+      |- 1     : Video                               |
+      |- 1     : Survey                              |
+      |- 1     : XSD-Scheme                          |
+      |- 1     : Experimental Data                   |
+      |- 1     : image data                          |
+      |- 1     : Configuration Files                 |
+
+ |-> Format           <--       //datacite4:format
+
+  |--    35 |  100 |    35 |  100
+      |- 8     : application/pdf                     |
+      |- 6     : application/octet-stream            |
+      |- 3     : text/tab-separated-values           |
+      |- 3     : application/vnd.openxmlformats-officedocument.spreadsheetml.sheet      |
+      |- 2     : application/x-rar-compressed        |
+      |- 1     : application/x-tar                   |
+      |- 1     : image/vnd.fst                       |
+      |- 1     : image/tiff                          |
+      |- 1     : video/mp4                           |
+      |- 1     : text/xml                            |
+
+ |-> Discipline       <--       //datacite4:subjects/datacite4:subject
+
+  |--    35 |  100 |    35 |  100
+      |- 12    : Engineering                         |
+      |- 11    : Medicine                            |
+      |- 6     : Various                             |
+      |- 2     : Humanities                          |
+      |- 1     : Medicine;Physics                    |
+      |- 1     : Medicine;Engineering                |
+      |- 1     : Chemistry                           |
+      |- 1     : Engineering;Physics                 |
+
+ |-> SpatialCoverage  <--       //datacite4:geoLocation/geoLocationPoint,//datacite4:geoLocation/geoLocationBox
+
+  |--     0 |    0 |     0 |    0
+
+ |-> TemporalCoverage <--       //datacite4:date
+
+  |--    35 |  100 |    35 |  100
+      |- 3     :  period : ( 2020-01-27T11:59:59Z - 2020-01-30T11:59:59Z )       |
+      |- 2     :  period : ( 2020-01-30T11:59:59Z - 2020-01-30T11:59:59Z )       |
+      |- 1     :  period : ( 2020-01-29T11:59:59Z - 2020-01-30T11:59:59Z )       |
+      |- 1     : 2019-06-25                          |
+      |- 1     : 2020-01-27                          |
+      |- 1     :  period : ( 2020-03-04T11:59:59Z - 2020-04-09T11:59:59Z )       |
+      |- 1     :  period : ( 2019-09-25T11:59:59Z - 2019-12-03T11:59:59Z )       |
+      |- 1     :  period : ( 2019-09-18T11:59:59Z - 2019-09-30T11:59:59Z )       |
+      |- 1     : 2020-01-22                          |
+      |- 1     :  period : ( 2020-03-10T11:59:59Z - 2020-04-09T11:59:59Z )       |
+
