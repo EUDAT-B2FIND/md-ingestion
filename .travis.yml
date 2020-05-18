@@ -27,4 +27,3 @@ install:
   - python setup.py install
 script:
   - pytest -v tests/
-  - flake8 tests/
