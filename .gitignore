@@ -23,3 +23,6 @@ oaitestdata/*/*/json
 
 # genetated output testdata
 tests/testdata/*/*/json
+
+# docs
+docs/_build
