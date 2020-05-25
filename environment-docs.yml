@@ -1,0 +1,6 @@
+# conda env create -f environment-docs.yml
+name: b2fdocs
+channels:
+  - defaults
+dependencies:
+  - sphinx
