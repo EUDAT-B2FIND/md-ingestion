@@ -318,7 +318,7 @@ class Harvester(object):
                     "searchTextInMetadata" :True, 
                     "searchTextInAdditionalData" :True,
                     "page" : 1, 
-                    "size" : 500 
+                    "size" : 100 
                     ##"highlight" : { "preTag" : "<b>", "postTag" : "</b>", "fragmentSize" : 500, "fragmentsCount" : 1 } 
                 }
                 headers = {'content-type': 'application/json'}
@@ -343,8 +343,8 @@ class Harvester(object):
                 ##requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
                 ##HEW-??? response=requests.get(url, data=json.dumps(data), headers=headers, verify=False ).json()##, stream=True ) ##HEW-D auth=('myusername', 'mybasicpass'))
             #with requests.no_ssl_verification():
-                response=requests.post(url, headers=headers, data=json.dumps(data), verify=self.verify)
-                #response=requests.post(url, headers=headers, data=json.dumps(data), verify=False)
+                #response=requests.post(url, headers=headers, data=json.dumps(data), verify=self.verify)
+                response=requests.post(url, headers=headers, data=json.dumps(data), verify=False)
                 ##records=rs.json()['result']
                 print('response')
                 #print(response.status_code)
