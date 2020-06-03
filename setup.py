@@ -78,6 +78,7 @@ setup(
     entry_points={
         'console_scripts': [
             'manager=mdingestion.manager:main',
+            'mgr=mdingestion.ng.cli:cli',
         ],
     },
     install_requires=requirements,

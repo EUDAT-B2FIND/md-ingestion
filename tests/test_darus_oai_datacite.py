@@ -14,7 +14,7 @@ def setup_module(module):
 def test_common_attributes():
     result = MAPPER.load_result(
         filename="Discipline_30fec4d2-1f79-5192-9247-c67154475715.json")
-    #assert result['Contributor']== ['Braun, Thorsten', 'Universität Stuttgart']
+    # assert result['Contributor']== ['Braun, Thorsten', 'Universität Stuttgart']
     assert result['Publisher'] == ["DaRUS"]
     assert result['PublicationYear'] == ["2019"]
     assert "Evaluation" in result['title'][0]

@@ -22,6 +22,17 @@ def test_common_attributes():
     assert "Discription of coastal shape" in result['title'][0]
 
 
+def test_temporal_converage():
+    result = MAPPER.load_result(
+        filename="point_aa2a1b44-42b2-52ff-98d1-20ab4dae8a18.json",
+        set_name="ACD_1")
+    # assert result['TempCoverageBegin'] == 62514331199
+    # assert result['TempCoverageEnd'] == 62514331199
+    assert result['TemporalCoverage'] == ' point in time : 1982-01-01T11:59:59Z'
+    assert result['TemporalCoverage:BeginDate'] == "1982-01-01T11:59:59Z"
+    assert result['TemporalCoverage:EndDate'] == "1982-01-01T11:59:59Z"
+
+
 def test_spatial_coverage_point():
     result = MAPPER.load_result(
         filename="point_aa2a1b44-42b2-52ff-98d1-20ab4dae8a18.json",
