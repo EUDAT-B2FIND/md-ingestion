@@ -277,12 +277,22 @@ class XMLMapper(BaseMapper):
 
 
 class JSONMapper(BaseMapper):
+    EXPR_CACHE = {}
+
+    def get_parseexpr(self, name):
+        if name in JSONMapper.EXPR_CACHE:
+            expr = JSONMapper.EXPR_CACHE[name]
+        else:
+            expr = parse_jsonpath(name)
+            JSONMapper.EXPR_CACHE[name] = expr
+        return expr
 
     def parse_doc(self):
         return json.load(open(self.filename))
 
     def find(self, name=None, type=None, one=False, **kwargs):
-        tags = parse_jsonpath(name).find(self.doc)
+        expr = self.get_parseexpr(name)
+        tags = expr.find(self.doc)
         formatted = [format.format(tag.value, type=type) for tag in tags]
         if one:
             if formatted:

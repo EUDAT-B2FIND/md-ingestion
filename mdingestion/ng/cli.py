@@ -40,34 +40,37 @@ def cli(ctx, debug, list, fromdate, outdir):
 
 
 @cli.command()
-@click.option('--community', '-c', help='Community')
+@click.option('--community', '-c', required=True, help='Community')
 @click.option('--url', help='Source URL')
 @click.option('--verb',
               help='Requests defined in OAI-PMH: ListRecords (default) or ListIdentifers.')
 @click.option('--mdprefix', help='Metadata prefix')
+@click.option('--mdsubset', help='Subset')
+@click.option('--limit', type=int, help='Limit')
+@click.option('--verify/--no-verify', default=False, help='SSL verification')
 @click.pass_context
-def harvest(ctx, community, url, verb, mdprefix):
+def harvest(ctx, community, url, verb, mdprefix, mdsubset, limit, verify):
     harvester = Harvester(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'])
     harvester.harvest(
         community=community,
         mdprefix=mdprefix,
+        mdsubset=mdsubset,
         url=url,
         verb=verb,
+        limit=limit,
+        verify=verify,
     )
 
 
 @cli.command()
 @click.option('--community', '-c', help='Community')
 @click.option('--mdprefix', help='Metadata prefix')
+@click.option('--mdsubset', help='Subset')
 @click.pass_context
-def map(ctx, community, mdprefix):
+def map(ctx, community, mdprefix, mdsubset):
     mapper = Mapper(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'],
-                    community=community, mdprefix=mdprefix)
-    with click.progressbar(list(mapper.walk())) as bar:
-        for filename in bar:
-            mapper.map(filename)
-            # import time
-            # time.sleep(1)
+                    community=community, mdprefix=mdprefix, mdsubset=mdsubset)
+    mapper.run()
 
 
 @cli.command()

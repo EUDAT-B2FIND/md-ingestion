@@ -9,7 +9,10 @@ class Herbadrop(JSON):
 
     @property
     def notes(self):
-        return self.find('metadata."aip.dc.description".und')
+        text = []
+        text.append("Scanned files by OCR.")
+        text.append(self.find('images[*].ocr.lat', one=True))
+        return text
 
     @property
     def tags(self):
@@ -69,7 +72,7 @@ class Herbadrop(JSON):
 
     @property
     def discipline(self):
-        return 'Plant_Sciences'
+        return 'Plant Sciences'
 
     @property
     def spatial_coverage(self):

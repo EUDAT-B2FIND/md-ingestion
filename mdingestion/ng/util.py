@@ -13,7 +13,8 @@ def parse_source_list(filename):
             delim_whitespace=True,
             comment='#',
             header=None,
-            names=['community', 'url', 'verb', 'mdprefix', 'comment'])
+            names=['community', 'url', 'verb', 'mdprefix', 'mdsubset'])
+        df['mdsubset'] = df['mdsubset'].fillna('')
         for row_dict in df.to_dict(orient='records'):
             sources[row_dict['community']] = row_dict
     except Exception:
