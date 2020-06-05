@@ -9,6 +9,7 @@ from .walker import Walker
 from .community import (
     EnvidatDatacite,
     EnvidatISO19139,
+    ESSDatacite,
     DarusDatacite,
     SLKSDublinCore,
     Herbadrop,
@@ -21,6 +22,7 @@ MAPPER = {
     'envidat-datacite': EnvidatDatacite,
     'envidat-oai_datacite': EnvidatDatacite,
     'envidat-iso19139': EnvidatISO19139,
+    'ess-oai_datacite': ESSDatacite,
     'darus-datacite': DarusDatacite,
     'darus-oai_datacite': DarusDatacite,
     'slks-dc': SLKSDublinCore,
