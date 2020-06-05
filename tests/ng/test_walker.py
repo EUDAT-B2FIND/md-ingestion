@@ -9,7 +9,8 @@ from ..common import TESTDATA_DIR
 
 def test_walk_community():
     my_walker = walker.Walker(TESTDATA_DIR)
-    files = [f for f in my_walker.walk_community(community='envidat', mdprefix='datacite', ext='.xml')]
+    files = [f for f in my_walker.walk_community(
+        community='envidat', mdprefix='datacite', mdsubset='SET_1', ext='.xml')]
     assert len(files) == 4
     assert 'bbox_80e203d7-7c64-5c00-8d1f-a91d49b0fa16.xml' in sorted(files)[0]
 
