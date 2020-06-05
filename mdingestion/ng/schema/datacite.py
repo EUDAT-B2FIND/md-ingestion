@@ -47,7 +47,7 @@ class DataCite(XMLMapper):
 
     @property
     def rights(self):
-        return ''
+        return self.find('rights', one=True)
 
     @property
     def contact(self):
