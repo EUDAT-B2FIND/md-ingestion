@@ -1,0 +1,43 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <header>
+    <identifier/>
+    <datestamp>2020-06-10</datestamp>
+    <setSpec>openaire_data</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ oai_datacite.xsd">
+      <schemaVersion>3.1</schemaVersion>
+      <datacentreSymbol>SCICAT.ESS</datacentreSymbol>
+      <payload>
+        <datacite:resource xmlns:datacite="http://datacite.org/schema/kernel-3" xsi:schemaLocation="http://datacite.org/schema/kernel-3http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <datacite:titles>
+            <datacite:title>Sample Data from NMX</datacite:title>
+          </datacite:titles>
+          <datacite:identifier identifierType="URL">https://doi.org/10.17199/BRIGHTNESS/NMX0032</datacite:identifier>
+          <datacite:descriptions>
+            <datacite:description descriptionType="Abstract">https://github.com/ess-dmsc/ess_file_formats/wiki/NMX</datacite:description>
+          </datacite:descriptions>
+          <datacite:dates>
+            <datacite:date dateType="Issued">2018-01-01</datacite:date>
+          </datacite:dates>
+          <datacite:publicationYear>2018</datacite:publicationYear>
+          <datacite:resourceType resourceTypeGeneral="Dataset">Dataset</datacite:resourceType>
+          <datacite:creators>
+            <creator>
+              <creatorName>Pfeiffer, Dorothea</creatorName>
+              <affiliation>ESS</affiliation>
+            </creator>
+          </datacite:creators>
+          <datacite:publisher>ESS</datacite:publisher>
+          <datacite:version>1</datacite:version>
+          <datacite:subjects>
+            <datacite:subject>Photon and neutron data</datacite:subject>
+          </datacite:subjects>
+          <datacite:rightsList>
+            <datacite:rights rightsURI="info:eu-repo/semantics/openAccess">OpenAccess</datacite:rights>
+          </datacite:rightsList>
+        </datacite:resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>
