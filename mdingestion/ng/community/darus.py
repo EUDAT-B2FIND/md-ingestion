@@ -2,4 +2,6 @@ from ..schema import DataCite
 
 
 class DarusDatacite(DataCite):
-    pass
+    @property
+    def discipline(self):
+        return self.find('subject')

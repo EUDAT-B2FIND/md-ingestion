@@ -28,7 +28,10 @@ class Herbadrop(JSON):
 
     @property
     def metadata_access(self):
-        return self.find('depositIdentifier')
+        agency_id = self.find('transferringAgencyIdentifier', one=True)
+        deposit_id = self.find('depositIdentifier', one=True)
+        mdaccess = f"https://opendata.cines.fr/herbadrop-api/rest/data/{agency_id}/{deposit_id}"
+        return mdaccess
 
     @property
     def author(self):
