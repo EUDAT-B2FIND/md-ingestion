@@ -10,7 +10,7 @@ from .. import format
 
 class ABCMapper(ABC):
     """
-    This is an abstract class defining the mapping methods for the b2find schema.
+    This is an abstract class defining the mapping methods for the CKAN schema.
     """
 
     @property
@@ -113,14 +113,36 @@ class ABCMapper(ABC):
     def temporal_coverage_end(self):
         pass
 
+    @property
+    @abstractmethod
+    def fulltext(self):
+        pass
+
+    @property
+    @abstractmethod
+    def oai_set(self):
+        pass
+
+    @property
+    @abstractmethod
+    def oai_identifier(self):
+        pass
+
+    @property
+    @abstractmethod
+    def doi(self):
+        pass
+
 
 class BaseMapper(ABCMapper):
     """
     This is an abstract class defining defaults and common methods for the mapping classes.
     """
 
-    def __init__(self, filename):
+    def __init__(self, filename, url=None, mdprefix=None):
         self.filename = filename
+        self.source = url
+        self.mdprefix = mdprefix
         self._doc = None
         self._geometry = None
         self._start_date = None
@@ -221,6 +243,22 @@ class BaseMapper(ABCMapper):
             self._end_date = date_parser.parse(self.temporal_coverage_end)
         return self._end_date
 
+    @property
+    def fulltext(self):
+        return ''
+
+    @property
+    def oai_set(self):
+        return ''
+
+    @property
+    def oai_identifier(self):
+        return ''
+
+    @property
+    def doi(self):
+        return ''
+
     @classmethod
     def extension(cls):
         raise NotImplementedError
@@ -251,6 +289,10 @@ class BaseMapper(ABCMapper):
             'TemporalCoverage:EndDate': self.temporal_coverage_end_date,
             'TempCoverageBegin': self.temp_coverage_begin,
             'TempCoverageEnd': self.temp_coverage_end,
+            'fulltext': self.fulltext,
+            'oai_set': self.oai_set,
+            'oai_identifier': self.oai_identifier,
+            'DOI': self.doi,
         }
 
 
@@ -274,6 +316,25 @@ class XMLMapper(BaseMapper):
     @classmethod
     def extension(cls):
         return '.xml'
+
+    @property
+    def fulltext(self):
+        lines = [txt.strip() for txt in self.doc.find_all(string=True)]
+        lines_not_empty = [txt for txt in lines if len(txt) > 0]
+        return lines_not_empty
+
+    @property
+    def oai_set(self):
+        return self.find('setSpec', one=True)
+
+    @property
+    def oai_identifier(self):
+        return self.find('identifier', limit=1, one=True)
+
+    @property
+    def metadata_access(self):
+        mdaccess = f"{self.source}?verb=GetRecord&metadataPrefix={self.mdprefix}&identifier={self.oai_identifier}"
+        return mdaccess
 
 
 class JSONMapper(BaseMapper):
@@ -302,6 +363,27 @@ class JSONMapper(BaseMapper):
         else:
             value = formatted
         return value
+
+    @property
+    def fulltext(self):
+        """Pull all values from nested JSON."""
+        arr = []
+
+        def extract(obj, arr):
+            """Recursively search for values in JSON tree."""
+            if isinstance(obj, dict):
+                for k, v in obj.items():
+                    if isinstance(v, (dict, list)):
+                        extract(v, arr)
+                    else:
+                        arr.append(v)
+            elif isinstance(obj, list):
+                for item in obj:
+                    extract(item, arr)
+            return arr
+
+        results = extract(self.doc, arr)
+        return results
 
     @classmethod
     def extension(cls):

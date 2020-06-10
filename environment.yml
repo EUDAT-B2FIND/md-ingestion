@@ -14,5 +14,6 @@ dependencies:
   - click
   - pandas
   - tqdm
+  - colander
   # tests
   - pytest

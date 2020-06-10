@@ -36,10 +36,11 @@ def mapper_factory(community, mdprefix):
 
 
 class Mapper(Command):
-    def __init__(self, community, mdprefix=None, mdsubset=None, outdir=None, source_list=None):
+    def __init__(self, community, url=None, mdprefix=None, mdsubset=None, outdir=None, source_list=None):
         self.sources = parse_source_list(source_list)
         source = self.sources.get(community, dict())
         self.community = community
+        self.url = url or source.get('url')
         self.mdprefix = mdprefix or source.get('mdprefix')
         mdsubset = mdsubset or source.get('mdsubset')
         self.mdsubset = mdsubset or 'SET_1'
@@ -60,7 +61,7 @@ class Mapper(Command):
             yield filename
 
     def map(self, filename):
-        mapped = self.map_tool(filename)
+        mapped = self.map_tool(filename, self.url, self.mdprefix)
         logging.info(f'map: community={self.community}, mdprefix={self.mdprefix}, file={filename}')
         self.write_output(mapped.json(), filename)
 

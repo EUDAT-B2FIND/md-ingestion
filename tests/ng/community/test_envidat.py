@@ -11,6 +11,7 @@ def test_datacite():
     result = mapper.json()
     assert 'TRAMM project' in result['title'][0]
     assert 'EnviDat' in result['Contributor']
+    assert 'https://doi.org/10.16904/5' in result['DOI']
 
 
 def test_iso19139():

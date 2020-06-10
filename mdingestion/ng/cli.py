@@ -64,12 +64,13 @@ def harvest(ctx, community, url, verb, mdprefix, mdsubset, limit, verify):
 
 @cli.command()
 @click.option('--community', '-c', help='Community')
+@click.option('--url', help='Source URL')
 @click.option('--mdprefix', help='Metadata prefix')
 @click.option('--mdsubset', help='Subset')
 @click.pass_context
-def map(ctx, community, mdprefix, mdsubset):
+def map(ctx, community, url, mdprefix, mdsubset):
     mapper = Mapper(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'],
-                    community=community, mdprefix=mdprefix, mdsubset=mdsubset)
+                    community=community, url=url, mdprefix=mdprefix, mdsubset=mdsubset)
     mapper.run()
 
 
