@@ -597,6 +597,8 @@ limit 1000
                     return -1
 
             # generate a uniquely identifier and a filename for this dataset:
+            if not oai_id:
+                oai_id = str(uuid.uuid4())
             uid = str(uuid.uuid5(uuid.NAMESPACE_DNS, oai_id))
             outfile = '%s/%s/%s.%s' % (subsetdir,outtypedir,os.path.basename(uid),outtypeext)
 
