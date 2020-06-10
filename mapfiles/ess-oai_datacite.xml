@@ -28,7 +28,7 @@
     </field>
     <!-- Provenance information -->
     <field name="author">
-      <xpath>//datacite:creators/creator/creatorName</xpath>
+      <xpath>//datacite:creators/datacite:creator/datacite:creatorName</xpath>
     </field>
     <field name="Publisher">
       <xpath>//datacite:publisher</xpath>
