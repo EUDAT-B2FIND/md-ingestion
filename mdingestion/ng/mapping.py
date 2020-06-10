@@ -61,7 +61,7 @@ class Mapper(Command):
             yield filename
 
     def map(self, filename):
-        mapped = self.map_tool(filename, self.url, self.mdprefix)
+        mapped = self.map_tool(filename, self.url, self.community, self.mdprefix)
         logging.info(f'map: community={self.community}, mdprefix={self.mdprefix}, file={filename}')
         self.write_output(mapped.json(), filename)
 

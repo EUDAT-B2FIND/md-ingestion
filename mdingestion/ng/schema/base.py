@@ -4,6 +4,7 @@ import json
 from jsonpath_ng import parse as parse_jsonpath
 import shapely
 from dateutil import parser as date_parser
+from pathlib import Path
 
 from .. import format
 
@@ -139,9 +140,10 @@ class BaseMapper(ABCMapper):
     This is an abstract class defining defaults and common methods for the mapping classes.
     """
 
-    def __init__(self, filename, url=None, mdprefix=None):
+    def __init__(self, filename, url=None, community=None, mdprefix=None):
         self.filename = filename
         self.source = url
+        self.community = community
         self.mdprefix = mdprefix
         self._doc = None
         self._geometry = None
@@ -259,6 +261,10 @@ class BaseMapper(ABCMapper):
     def doi(self):
         return ''
 
+    @property
+    def name(self):
+        return Path(self.filename).stem
+
     @classmethod
     def extension(cls):
         raise NotImplementedError
@@ -293,6 +299,12 @@ class BaseMapper(ABCMapper):
             'oai_set': self.oai_set,
             'oai_identifier': self.oai_identifier,
             'DOI': self.doi,
+            'name': self.name,
+            'group': self.community,
+            'groups': [{
+                'name': self.community,
+            }],
+            'state': 'active',
         }
 
 
