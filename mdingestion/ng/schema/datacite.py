@@ -15,7 +15,10 @@ class DataCite(OAIMapper):
 
     @property
     def tags(self):
-        return self.find('subject')
+        _tags = []
+        for subject in self.find('subject'):
+             _tags.append(dict(name=subject))
+        return _tags
 
     @property
     def url(self):
@@ -31,7 +34,7 @@ class DataCite(OAIMapper):
         for creator in self.doc.find_all('creator'):
             author = creator.creatorName.text
             if creator.affiliation:
-                author = f"{author}, ({creator.affiliation.text})"
+                author = f"{author} ({creator.affiliation.text})"
             authors.append(author)
         return authors
 
