@@ -1,9 +1,9 @@
 import shapely
 
-from .base import XMLMapper
+from .base import OAIMapper
 
 
-class DataCite(XMLMapper):
+class DataCite(OAIMapper):
 
     @property
     def title(self):
@@ -27,7 +27,13 @@ class DataCite(XMLMapper):
 
     @property
     def author(self):
-        return self.find('creatorName')
+        authors = []
+        for creator in self.doc.find_all('creator'):
+            author = creator.creatorName.text
+            if creator.affiliation:
+                author = f"{author}, ({creator.affiliation.text})"
+            authors.append(author)
+        return authors
 
     @property
     def publisher(self):
@@ -43,7 +49,7 @@ class DataCite(XMLMapper):
 
     @property
     def rights(self):
-        return self.find('rights', one=True)
+        return self.find('rights')
 
     @property
     def contact(self):

@@ -116,21 +116,6 @@ class ABCMapper(ABC):
 
     @property
     @abstractmethod
-    def fulltext(self):
-        pass
-
-    @property
-    @abstractmethod
-    def oai_set(self):
-        pass
-
-    @property
-    @abstractmethod
-    def oai_identifier(self):
-        pass
-
-    @property
-    @abstractmethod
     def doi(self):
         pass
 
@@ -247,23 +232,11 @@ class BaseMapper(ABCMapper):
 
     @property
     def fulltext(self):
-        return ''
-
-    @property
-    def oai_set(self):
-        return ''
-
-    @property
-    def oai_identifier(self):
-        return ''
+        raise NotImplementedError
 
     @property
     def doi(self):
         return ''
-
-    @property
-    def name(self):
-        return Path(self.filename).stem
 
     @classmethod
     def extension(cls):
@@ -296,19 +269,27 @@ class BaseMapper(ABCMapper):
             'TempCoverageBegin': self.temp_coverage_begin,
             'TempCoverageEnd': self.temp_coverage_end,
             'fulltext': self.fulltext,
-            'oai_set': self.oai_set,
-            'oai_identifier': self.oai_identifier,
             'DOI': self.doi,
-            'name': self.name,
-            'group': self.community,
-            'groups': [{
-                'name': self.community,
-            }],
-            'state': 'active',
         }
 
 
-class XMLMapper(BaseMapper):
+class CKANMapper(BaseMapper):
+    @property
+    def name(self):
+        return Path(self.filename).stem
+
+    def json(self):
+        _json = super().json()
+        _json['name'] = self.name
+        _json['group'] = self.community
+        _json['groups'] = [{
+            'name': self.community,
+        }]
+        _json['state'] = 'active'
+        return _json
+
+
+class XMLMapper(CKANMapper):
 
     def parse_doc(self):
         return BeautifulSoup(open(self.filename), 'xml')
@@ -336,6 +317,13 @@ class XMLMapper(BaseMapper):
         return lines_not_empty
 
     @property
+    def metadata_access(self):
+        mdaccess = f"{self.source}?verb=GetRecord&metadataPrefix={self.mdprefix}&identifier={self.oai_identifier}"
+        return mdaccess
+
+
+class OAIMapper(XMLMapper):
+    @property
     def oai_set(self):
         return self.find('setSpec', one=True)
 
@@ -343,13 +331,14 @@ class XMLMapper(BaseMapper):
     def oai_identifier(self):
         return self.find('identifier', limit=1, one=True)
 
-    @property
-    def metadata_access(self):
-        mdaccess = f"{self.source}?verb=GetRecord&metadataPrefix={self.mdprefix}&identifier={self.oai_identifier}"
-        return mdaccess
+    def json(self):
+        _json = super().json()
+        _json['oai_set'] = self.oai_set
+        _json['oai_identifier'] = self.oai_identifier
+        return _json
 
 
-class JSONMapper(BaseMapper):
+class JSONMapper(CKANMapper):
     EXPR_CACHE = {}
 
     def get_parseexpr(self, name):

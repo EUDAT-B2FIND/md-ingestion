@@ -17,3 +17,4 @@ dependencies:
   - colander
   # tests
   - pytest
+  - flake8
