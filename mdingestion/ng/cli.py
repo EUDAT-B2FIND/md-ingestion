@@ -80,7 +80,7 @@ def map(ctx, community, url, mdprefix, mdsubset):
 @click.option('--auth', help='CKAN API key')
 @click.pass_context
 def upload(ctx, community, iphost, auth):
-    uploader = Uploader(outdir=ctx.obj['outdir'], iphost=iphost, auth=auth)
+    uploader = Uploader(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'], iphost=iphost, auth=auth)
     uploader.upload(community)
 
 
