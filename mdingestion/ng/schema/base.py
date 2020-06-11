@@ -249,7 +249,7 @@ class BaseMapper(ABCMapper):
             'tags': self.tags,
             'url': self.url,
             'RelatedIdentifier': self.related_identifier,
-            'MetadataAccess': self.metadata_access,
+            'MetaDataAccess': self.metadata_access,
             'author': self.author,
             'Contributor': self.contributor,
             'Publisher': self.publisher,
@@ -261,6 +261,7 @@ class BaseMapper(ABCMapper):
             'ResourceType': self.resource_type,
             'Format': self.format,
             'Discipline': self.discipline,
+            'DiscHierarchy': [],
             'SpatialCoverage': self.spatial_coverage,
             'spatial': self.spatial,
             'TemporalCoverage': self.temporal_coverage,
@@ -286,6 +287,7 @@ class CKANMapper(BaseMapper):
             'name': self.community,
         }]
         _json['state'] = 'active'
+        _json['PublicationTimestamp'] = f"{self.publication_year[0]}-07-01T11:59:59Z"
         return _json
 
 
@@ -314,22 +316,22 @@ class XMLMapper(CKANMapper):
     def fulltext(self):
         lines = [txt.strip() for txt in self.doc.find_all(string=True)]
         lines_not_empty = [txt for txt in lines if len(txt) > 0]
-        return lines_not_empty
+        return ','.join(lines_not_empty)
 
     @property
     def metadata_access(self):
-        mdaccess = f"{self.source}?verb=GetRecord&metadataPrefix={self.mdprefix}&identifier={self.oai_identifier}"
+        mdaccess = f"{self.source}?verb=GetRecord&metadataPrefix={self.mdprefix}&identifier={self.oai_identifier[0]}"
         return mdaccess
 
 
 class OAIMapper(XMLMapper):
     @property
     def oai_set(self):
-        return self.find('setSpec', one=True)
+        return self.find('setSpec', limit=1)
 
     @property
     def oai_identifier(self):
-        return self.find('identifier', limit=1, one=True)
+        return self.find('identifier', limit=1)
 
     def json(self):
         _json = super().json()

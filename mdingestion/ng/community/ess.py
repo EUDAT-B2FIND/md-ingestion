@@ -9,3 +9,7 @@ class ESSDatacite(DataCite):
     @property
     def discipline(self):
         return 'Particles, Nuclei and Fields'
+
+    @property
+    def open_access(self):
+        return ['true']
