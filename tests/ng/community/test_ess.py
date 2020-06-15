@@ -12,8 +12,7 @@ def test_datacite():
     assert 'Sample Data from V20' in result['title'][0]
     assert 'https://github.com/ess-dmsc/ess_file_formats/wiki/HDF5' in result['notes']
     assert 'https://doi.org/10.17199/BRIGHTNESS/V200111' == result['DOI']
-    assert 'https://scicat.esss.se/scicat/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == result['MetadataAccess']  # noqa
-    assert '0aa871e7-12c9-5283-8025-562414a73ecd' == result['name']
+    assert 'https://scicat.esss.se/scicat/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == result['MetaDataAccess']  # noqa
 
 
 def test_datacite_no_oai_id():
@@ -24,7 +23,7 @@ def test_datacite_no_oai_id():
     assert 'https://github.com/ess-dmsc/ess_file_formats/wiki/NMX' in result['notes']
     assert 'https://doi.org/10.17199/BRIGHTNESS/NMX0032' == result['DOI']
     # assert 'https://scicat.esss.se/scicat/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == result['MetadataAccess']  # noqa
-    assert 'Pfeiffer, Dorothea, (ESS)' in result['author']
+    assert 'Pfeiffer, Dorothea (ESS)' in result['author']
     assert 'ESS' in result['Publisher']
-    assert 'Photon and neutron data' in result['tags']
+    assert 'Photon and neutron data' in [tag['name'] for tag in result['tags']]
     assert 'OpenAccess' in result['Rights']

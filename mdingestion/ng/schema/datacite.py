@@ -1,6 +1,7 @@
 import shapely
 
 from .base import OAIMapper
+from ..format import format_string_words
 
 
 class DataCite(OAIMapper):
@@ -10,18 +11,20 @@ class DataCite(OAIMapper):
         return self.find('title')
 
     @property
-    def notes(self):
+    def description(self):
         return self.find('description')
 
     @property
     def tags(self):
         _tags = []
         for subject in self.find('subject'):
-             _tags.append(dict(name=subject))
+            name = format_string_words(subject)
+            if name:
+                _tags.append(dict(name=name))
         return _tags
 
     @property
-    def url(self):
+    def source(self):
         return self.find('identifier', identifierType="DOI", one=True)
 
     @property
@@ -29,14 +32,14 @@ class DataCite(OAIMapper):
         return self.find('alternateIdentifier')
 
     @property
-    def author(self):
-        authors = []
+    def creator(self):
+        creators = []
         for creator in self.doc.find_all('creator'):
-            author = creator.creatorName.text
+            name = creator.creatorName.text
             if creator.affiliation:
-                author = f"{author} ({creator.affiliation.text})"
-            authors.append(author)
-        return authors
+                name = f"{name} ({creator.affiliation.text})"
+            creators.append(name)
+        return creators
 
     @property
     def publisher(self):
@@ -56,7 +59,7 @@ class DataCite(OAIMapper):
 
     @property
     def contact(self):
-        return self.author
+        return self.creator
 
     @property
     def open_access(self):

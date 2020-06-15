@@ -5,13 +5,13 @@ import uuid
 from tqdm import tqdm
 
 from mdingestion.harvesting import Harvester as LegacyHarvester
-from .command import Command
-from .util import parse_source_list
+from .base import Command
+from ..util import parse_source_list
 
 import logging
 
 
-class Harvester(Command):
+class Harvest(Command):
     def __init__(self, outdir=None, source_list=None):
         self.wrapped = LegacyHarvester(OUT=None, pstat=None, base_outdir=outdir, fromdate=None)
         self.sources = parse_source_list(source_list)

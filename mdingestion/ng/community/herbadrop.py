@@ -8,7 +8,7 @@ class Herbadrop(JSON):
         return self.find('metadata."aip.dc.title".lat')
 
     @property
-    def notes(self):
+    def description(self):
         text = []
         text.append("Scanned files by OCR.")
         text.append(self.find('images[*].ocr.lat', one=True))
@@ -19,7 +19,7 @@ class Herbadrop(JSON):
         return self.find('metadata."aip.dc.subject".lat')
 
     @property
-    def url(self):
+    def source(self):
         return self.find('metadata."aip.meta.producerIdentifier"', one=True)
 
     @property
@@ -34,7 +34,7 @@ class Herbadrop(JSON):
         return mdaccess
 
     @property
-    def author(self):
+    def creator(self):
         return self.find('metadata."aip.dc.creator"')
 
     @property

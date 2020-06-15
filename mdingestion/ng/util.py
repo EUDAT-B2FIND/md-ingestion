@@ -20,3 +20,7 @@ def parse_source_list(filename):
     except Exception:
         logging.warning(f"Could not read source list {filename}")
     return sources
+
+
+def remove_duplicates_from_list(a_list):
+    return list(dict.fromkeys(a_list))
