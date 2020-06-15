@@ -10,6 +10,7 @@ from ..community import (
     DarusDatacite,
     SLKSDublinCore,
     Herbadrop,
+    RadarDublinCore,
 )
 from ..writer import CKANWriter
 
@@ -25,6 +26,7 @@ MAPPER = {
     'darus-oai_datacite': DarusDatacite,
     'slks-dc': SLKSDublinCore,
     'herbadrop-hjson': Herbadrop,
+    'radar-oai_dc': RadarDublinCore,
 }
 
 
