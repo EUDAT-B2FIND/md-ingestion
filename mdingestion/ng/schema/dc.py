@@ -97,5 +97,7 @@ class DublinCore(OAIMapper):
     @property
     def doi(self):
         # TODO: deal with generic DOI recognition
+        # radar with oai_identfier
+        # egidatahab with dc:identifier
         url = f"https://doi.org/{self.oai_identifier[0]}"
         return url
