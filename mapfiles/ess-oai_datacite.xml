@@ -2,13 +2,13 @@
 <mapping-table>
   <!-- Mappings for DataCite metadata - Template. --><namespaces>
     <namespace ns="h" uri="http://www.openarchives.org/OAI/2.0/"/>
-    <namespace ns="datacite3" uri="http://datacite.org/schema/kernel-3"/>
-    <namespace ns="datacite" uri="http://datacite.org/schema/kernel-4"/>
+    <namespace ns="datacite" uri="http://datacite.org/schema/kernel-3"/>
+    <namespace ns="datacite4" uri="http://datacite.org/schema/kernel-4"/>
   </namespaces>
   <mappings>
     <!-- General Information -->
     <field name="title">
-      <xpath>//datacite:titles</xpath>
+      <xpath>//datacite:titles/datacite:title</xpath>
     </field>
     <field name="notes">
       <xpath>//datacite:descriptions/description</xpath>
@@ -28,7 +28,7 @@
     </field>
     <!-- Provenance information -->
     <field name="author">
-      <xpath>//datacite:creators/creator/creatorName</xpath>
+      <xpath>//datacite:creator/creatorName</xpath>
     </field>
     <field name="Publisher">
       <xpath>//datacite:publisher</xpath>
@@ -40,7 +40,7 @@
       <xpath>//datacite:publicationYear</xpath>
     </field>
     <field name="Rights">
-      <xpath>//datacite:rightsList/rights</xpath>
+      <xpath>//datacite:rightsList/datacite:rights</xpath>
     </field>
     <field name="OpenAccess">
       <xpath></xpath>

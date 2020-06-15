@@ -1,24 +1,30 @@
 import shapely
 
-from .base import XMLMapper
+from .base import OAIMapper
+from ..format import format_string_words
 
 
-class DataCite(XMLMapper):
+class DataCite(OAIMapper):
 
     @property
     def title(self):
         return self.find('title')
 
     @property
-    def notes(self):
+    def description(self):
         return self.find('description')
 
     @property
     def tags(self):
-        return self.find('subject')
+        _tags = []
+        for subject in self.find('subject'):
+            name = format_string_words(subject)
+            if name:
+                _tags.append(dict(name=name))
+        return _tags
 
     @property
-    def url(self):
+    def source(self):
         return self.find('identifier', identifierType="DOI", one=True)
 
     @property
@@ -26,12 +32,14 @@ class DataCite(XMLMapper):
         return self.find('alternateIdentifier')
 
     @property
-    def metadata_access(self):
-        return self.find('identifier')
-
-    @property
-    def author(self):
-        return self.find('creatorName')
+    def creator(self):
+        creators = []
+        for creator in self.doc.find_all('creator'):
+            name = creator.creatorName.text
+            if creator.affiliation:
+                name = f"{name} ({creator.affiliation.text})"
+            creators.append(name)
+        return creators
 
     @property
     def publisher(self):
@@ -47,11 +55,11 @@ class DataCite(XMLMapper):
 
     @property
     def rights(self):
-        return ''
+        return self.find('rights')
 
     @property
     def contact(self):
-        return ''
+        return self.creator
 
     @property
     def open_access(self):
@@ -59,15 +67,15 @@ class DataCite(XMLMapper):
 
     @property
     def language(self):
-        return ''
+        return self.find('language')
 
     @property
     def resource_type(self):
-        return ''
+        return self.find('resourceType')
 
     @property
     def format(self):
-        return ''
+        return self.find('format')
 
     @property
     def temporal_coverage_begin(self):
@@ -87,3 +95,11 @@ class DataCite(XMLMapper):
         else:
             geometry = None
         return geometry
+
+    @property
+    def doi(self):
+        id = self.find('identifier', identifierType="DOI", one=True)
+        if not id:
+            id = self.find('identifier', identifierType="doi", one=True)
+        url = f"https://doi.org/{id}"
+        return url

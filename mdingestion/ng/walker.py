@@ -28,8 +28,13 @@ class Walker(object):
     def __init__(self, base_dir, ):
         self.base_dir = base_dir
 
-    def walk_community(self, community, mdprefix, ext=None, fromdate=None):
-        path = f'{community}-{mdprefix}'
+    def walk_community(self, community, mdprefix, mdsubset=None, format=None, ext=None, fromdate=None):
+        format = format or 'xml'
+        # TODO: workaround for herbadrop
+        if mdprefix == 'hjson':
+            mdprefix = 'json'
+            format = 'hjson'
+        path = f'{community}-{mdprefix}/{mdsubset}/{format}'
         return self.walk(path, ext, fromdate)
 
     def walk(self, path, ext=None, fromdate=None):

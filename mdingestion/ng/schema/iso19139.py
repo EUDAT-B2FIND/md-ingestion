@@ -10,7 +10,7 @@ class ISO19139(XMLMapper):
         return self.find('title')
 
     @property
-    def notes(self):
+    def description(self):
         return ''
 
     @property
@@ -18,7 +18,7 @@ class ISO19139(XMLMapper):
         return ''
 
     @property
-    def url(self):
+    def source(self):
         return ''
 
     @property
@@ -30,7 +30,7 @@ class ISO19139(XMLMapper):
         return ''
 
     @property
-    def author(self):
+    def creator(self):
         return self.find('individualName')
 
     @property

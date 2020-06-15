@@ -1,16 +1,15 @@
 from abc import ABC, abstractmethod
-from bs4 import BeautifulSoup
-import json
-from jsonpath_ng import parse as parse_jsonpath
 import shapely
 from dateutil import parser as date_parser
+from pathlib import Path
 
 from .. import format
+from ..parser import XMLParser, JSONParser
 
 
-class ABCMapper(ABC):
+class B2FindDocument(ABC):
     """
-    This is an abstract class defining the mapping methods for the b2find schema.
+    This is an abstract class defining a document for the B2Find schema.
     """
 
     @property
@@ -20,7 +19,7 @@ class ABCMapper(ABC):
 
     @property
     @abstractmethod
-    def notes(self):
+    def description(self):
         pass
 
     @property
@@ -30,7 +29,12 @@ class ABCMapper(ABC):
 
     @property
     @abstractmethod
-    def url(self):
+    def doi(self):
+        pass
+
+    @property
+    @abstractmethod
+    def source(self):
         pass
 
     @property
@@ -45,17 +49,17 @@ class ABCMapper(ABC):
 
     @property
     @abstractmethod
-    def author(self):
-        pass
-
-    @property
-    @abstractmethod
-    def contributor(self):
+    def creator(self):
         pass
 
     @property
     @abstractmethod
     def publisher(self):
+        pass
+
+    @property
+    @abstractmethod
+    def contributor(self):
         pass
 
     @property
@@ -70,12 +74,12 @@ class ABCMapper(ABC):
 
     @property
     @abstractmethod
-    def contact(self):
+    def open_access(self):
         pass
 
     @property
     @abstractmethod
-    def open_access(self):
+    def contact(self):
         pass
 
     @property
@@ -113,27 +117,40 @@ class ABCMapper(ABC):
     def temporal_coverage_end(self):
         pass
 
+    @abstractmethod
+    def json(self):
+        pass
 
-class BaseMapper(ABCMapper):
+
+class BaseDocument(B2FindDocument):
     """
-    This is an abstract class defining defaults and common methods for the mapping classes.
+    This is an abstract class defining defaults and common methods for the B2Find document.
     """
 
-    def __init__(self, filename):
+    def __init__(self, filename, url=None, community=None, mdprefix=None):
         self.filename = filename
-        self._doc = None
+        self.url = url
+        self.community = community
+        self.mdprefix = mdprefix
         self._geometry = None
         self._start_date = None
         self._end_date = None
+        self._parser = None
 
     @property
     def doc(self):
-        if self._doc is None:
-            self._doc = self.parse_doc()
-        return self._doc
+        return self._parser.doc
 
-    def parse_doc(self):
-        raise NotImplementedError
+    def find(self, name=None, type=None, one=False, **kwargs):
+        return self._parser.find(name, type, one, **kwargs)
+
+    @property
+    def name(self):
+        return Path(self.filename).stem
+
+    @property
+    def metadata_access(self):
+        return ''
 
     @property
     def discipline(self):
@@ -221,6 +238,14 @@ class BaseMapper(ABCMapper):
             self._end_date = date_parser.parse(self.temporal_coverage_end)
         return self._end_date
 
+    @property
+    def doi(self):
+        return ''
+
+    @property
+    def fulltext(self):
+        return self._parser.fulltext
+
     @classmethod
     def extension(cls):
         raise NotImplementedError
@@ -228,12 +253,13 @@ class BaseMapper(ABCMapper):
     def json(self):
         return {
             'title': self.title,
-            'notes': self.notes,
+            'notes': self.description,
             'tags': self.tags,
-            'url': self.url,
+            'DOI': self.doi,
+            'url': self.source,
             'RelatedIdentifier': self.related_identifier,
-            'MetadataAccess': self.metadata_access,
-            'author': self.author,
+            'MetaDataAccess': self.metadata_access,
+            'author': self.creator,
             'Contributor': self.contributor,
             'Publisher': self.publisher,
             'PublicationYear': self.publication_year,
@@ -244,6 +270,7 @@ class BaseMapper(ABCMapper):
             'ResourceType': self.resource_type,
             'Format': self.format,
             'Discipline': self.discipline,
+            'DiscHierarchy': [],
             'SpatialCoverage': self.spatial_coverage,
             'spatial': self.spatial,
             'TemporalCoverage': self.temporal_coverage,
@@ -254,45 +281,53 @@ class BaseMapper(ABCMapper):
         }
 
 
-class XMLMapper(BaseMapper):
+class XMLMapper(BaseDocument):
 
-    def parse_doc(self):
-        return BeautifulSoup(open(self.filename), 'xml')
+    def __init__(self, filename, url=None, community=None, mdprefix=None):
+        super().__init__(filename, url, community, mdprefix)
+        self._parser = XMLParser(filename)
+
+    @property
+    def doc(self):
+        return self._parser.doc
 
     def find(self, name=None, type=None, one=False, **kwargs):
-        tags = self.doc.find_all(name, **kwargs)
-        formatted = [format.format(tag.text, type=type) for tag in tags]
-        if one:
-            if formatted:
-                value = formatted[0]
-            else:
-                value = ''
-        else:
-            value = formatted
-        return value
+        return self._parser.find(name, type, one, **kwargs)
 
     @classmethod
     def extension(cls):
-        return '.xml'
+        return XMLParser.extension()
 
 
-class JSONMapper(BaseMapper):
+class OAIMapper(XMLMapper):
+    @property
+    def oai_set(self):
+        return self.find('setSpec', limit=1)
 
-    def parse_doc(self):
-        return json.load(open(self.filename))
+    @property
+    def oai_identifier(self):
+        return self.find('identifier', limit=1)
 
-    def find(self, name=None, type=None, one=False, **kwargs):
-        tags = parse_jsonpath(name).find(self.doc)
-        formatted = [format.format(tag.value, type=type) for tag in tags]
-        if one:
-            if formatted:
-                value = formatted[0]
-            else:
-                value = ''
+    @property
+    def metadata_access(self):
+        if self.oai_identifier:
+            mdaccess = f"{self.url}?verb=GetRecord&metadataPrefix={self.mdprefix}&identifier={self.oai_identifier[0]}"  # noqa
         else:
-            value = formatted
-        return value
+            mdaccess = ''
+        return mdaccess
+
+    def json(self):
+        _json = super().json()
+        _json['oai_set'] = self.oai_set
+        _json['oai_identifier'] = self.oai_identifier
+        return _json
+
+
+class JSONMapper(BaseDocument):
+    def __init__(self, filename, url=None, community=None, mdprefix=None):
+        super().__init__(filename, url, community, mdprefix)
+        self._parser = JSONParser(filename)
 
     @classmethod
     def extension(cls):
-        return '.json'
+        return JSONParser.extension

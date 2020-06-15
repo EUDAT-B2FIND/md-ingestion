@@ -1,5 +1,6 @@
 from dateutil import parser as date_parser
 from shapely.geometry import shape
+import re
 
 
 def format(text, type=None):
@@ -17,6 +18,14 @@ def format_string(text):
         value = ''
     else:
         value = f'{text}'.strip()
+    return value
+
+
+def format_string_words(text):
+    if text is None:
+        value = ''
+    else:
+        value = ' '.join(re.findall(r'\w+', text.strip()))
     return value
 
 

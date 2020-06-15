@@ -1,9 +1,8 @@
 import click
 import pathlib
 
-from .harvesting import Harvester
-from .mapping import Mapper
-from .uploading import Uploader
+from .command import Harvest, Map, Upload
+
 
 import logging
 
@@ -40,44 +39,48 @@ def cli(ctx, debug, list, fromdate, outdir):
 
 
 @cli.command()
-@click.option('--community', '-c', help='Community')
+@click.option('--community', '-c', required=True, help='Community')
 @click.option('--url', help='Source URL')
 @click.option('--verb',
               help='Requests defined in OAI-PMH: ListRecords (default) or ListIdentifers.')
 @click.option('--mdprefix', help='Metadata prefix')
+@click.option('--mdsubset', help='Subset')
+@click.option('--limit', type=int, help='Limit')
+@click.option('--verify/--no-verify', default=False, help='SSL verification')
 @click.pass_context
-def harvest(ctx, community, url, verb, mdprefix):
-    harvester = Harvester(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'])
-    harvester.harvest(
+def harvest(ctx, community, url, verb, mdprefix, mdsubset, limit, verify):
+    harvest = Harvest(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'])
+    harvest.harvest(
         community=community,
         mdprefix=mdprefix,
+        mdsubset=mdsubset,
         url=url,
         verb=verb,
+        limit=limit,
+        verify=verify,
     )
 
 
 @cli.command()
 @click.option('--community', '-c', help='Community')
+@click.option('--url', help='Source URL')
 @click.option('--mdprefix', help='Metadata prefix')
+@click.option('--mdsubset', help='Subset')
 @click.pass_context
-def map(ctx, community, mdprefix):
-    mapper = Mapper(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'],
-                    community=community, mdprefix=mdprefix)
-    with click.progressbar(list(mapper.walk())) as bar:
-        for filename in bar:
-            mapper.map(filename)
-            # import time
-            # time.sleep(1)
+def map(ctx, community, url, mdprefix, mdsubset):
+    map = Map(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'],
+              community=community, url=url, mdprefix=mdprefix, mdsubset=mdsubset)
+    map.run()
 
 
 @cli.command()
 @click.option('--community', '-c', help='Community')
-@click.option('--iphost', help='IP address of CKAN instance')
+@click.option('--iphost', '-i', help='IP address of CKAN instance')
 @click.option('--auth', help='CKAN API key')
 @click.pass_context
 def upload(ctx, community, iphost, auth):
-    uploader = Uploader(outdir=ctx.obj['outdir'], iphost=iphost, auth=auth)
-    uploader.upload(community)
+    upload = Upload(outdir=ctx.obj['outdir'], source_list=ctx.obj['list'], iphost=iphost, auth=auth)
+    upload.upload(community)
 
 
 if __name__ == '__main__':

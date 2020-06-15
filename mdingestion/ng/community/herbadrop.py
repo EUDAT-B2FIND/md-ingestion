@@ -8,15 +8,18 @@ class Herbadrop(JSON):
         return self.find('metadata."aip.dc.title".lat')
 
     @property
-    def notes(self):
-        return self.find('metadata."aip.dc.description".und')
+    def description(self):
+        text = []
+        text.append("Scanned files by OCR.")
+        text.append(self.find('images[*].ocr.lat', one=True))
+        return text
 
     @property
     def tags(self):
         return self.find('metadata."aip.dc.subject".lat')
 
     @property
-    def url(self):
+    def source(self):
         return self.find('metadata."aip.meta.producerIdentifier"', one=True)
 
     @property
@@ -25,10 +28,13 @@ class Herbadrop(JSON):
 
     @property
     def metadata_access(self):
-        return self.find('depositIdentifier')
+        agency_id = self.find('transferringAgencyIdentifier', one=True)
+        deposit_id = self.find('depositIdentifier', one=True)
+        mdaccess = f"https://opendata.cines.fr/herbadrop-api/rest/data/{agency_id}/{deposit_id}"
+        return mdaccess
 
     @property
-    def author(self):
+    def creator(self):
         return self.find('metadata."aip.dc.creator"')
 
     @property
@@ -69,7 +75,7 @@ class Herbadrop(JSON):
 
     @property
     def discipline(self):
-        return 'Plant_Sciences'
+        return 'Plant Sciences'
 
     @property
     def spatial_coverage(self):
