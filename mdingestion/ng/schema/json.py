@@ -8,7 +8,7 @@ class JSON(JSONMapper):
         return ''
 
     @property
-    def notes(self):
+    def description(self):
         return ''
 
     @property
@@ -16,7 +16,7 @@ class JSON(JSONMapper):
         return ''
 
     @property
-    def url(self):
+    def source(self):
         return ''
 
     @property
@@ -28,7 +28,7 @@ class JSON(JSONMapper):
         return ''
 
     @property
-    def author(self):
+    def creator(self):
         return ''
 
     @property

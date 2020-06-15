@@ -10,7 +10,7 @@ class DublinCore(XMLMapper):
         return self.find('title')
 
     @property
-    def notes(self):
+    def description(self):
         return self.find('description')
 
     @property
@@ -18,7 +18,7 @@ class DublinCore(XMLMapper):
         return self.find('subject')
 
     @property
-    def url(self):
+    def source(self):
         return self.find('identifier', one=True)
 
     @property
@@ -30,7 +30,7 @@ class DublinCore(XMLMapper):
         return self.find('header/identifier')
 
     @property
-    def author(self):
+    def creator(self):
         return self.find('creator')
 
     @property
