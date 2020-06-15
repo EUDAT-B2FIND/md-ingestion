@@ -3,6 +3,7 @@ from .ess import ESSDatacite
 from .darus import DarusDatacite
 from .slks import SLKSDublinCore
 from .herbadrop import Herbadrop
+from .radar import RadarDublinCore
 
 __all__ = [
     EnvidatDatacite,
@@ -11,4 +12,5 @@ __all__ = [
     DarusDatacite,
     Herbadrop,
     SLKSDublinCore,
+    RadarDublinCore,
 ]

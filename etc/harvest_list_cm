@@ -20,7 +20,9 @@ aleph     http://www.openaccessrepository.it/oai2d   ListRecords marcxml dataset
 anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus csw iso19139 
 
 ## B2FIND export
-b2find http://b2find.eudat.eu/api/3/action ckan_api json 
+#b2find http://b2find.eudat.eu/api/3/action ckan_api json 
+#b2find http://eudat7-ingest.dkrz.de/oai ListRecords oai_openaire
+b2find http://eudat7-ingest.dkrz.de/oai ListIdentifiers oai_datacite
 
 ## Capsella
 #capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc 
@@ -68,7 +70,8 @@ envidat https://www.envidat.ch/oai ListRecords oai_datacite
 #envidat https://www.envidat.ch/oai ListRecords oai_dc
 
 ## ESS SciCat 
-ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full
+#ess https://scicat.esss.se/scicat/oai ListIdentifiers oai_datacite full
+ess https://scicat.esss.se/openaire/oai ListRecords oai_datacite full
 
 ## ETSIN
 etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  
@@ -137,7 +140,7 @@ pdc http://www.polardata.ca/oai/provider    ListRecords  fgdc
 unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_dc openaire_data
 
 ##RADAR
-radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
+radar https://www.radar-service.eu/oai/OAIHandler ListIdentifiers oai_dc
 
 ## Seadatanet
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 seadatanet
@@ -157,6 +160,8 @@ starsforall https://eudat-b2share-test.csc.fi/api/oai2d ListRecords oai_dc STARS
 #toar https://b2share-testing.fz-juelich.de/api/ records json
 #toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  8cb65167-71d4-4845-a454-5d56624568d2
 #toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  e153ef6e-20a4-49b2-a307-735f9d587f5c
+#toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc TOAR
+toar  https://b2share-testing.fz-juelich.de/api/oai2d  ListRecords  oai_dc  7fa87f7e-b34f-4e2c-864c-f08aa608ee54
 
 ## UCL
 #ucl https://api.figshare.com/v2/oai ListRecords oai_dc

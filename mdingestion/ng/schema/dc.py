@@ -1,9 +1,10 @@
 import shapely
 
-from .base import XMLMapper
+from .base import OAIMapper
+from ..format import format_string_words
 
 
-class DublinCore(XMLMapper):
+class DublinCore(OAIMapper):
 
     @property
     def title(self):
@@ -15,7 +16,12 @@ class DublinCore(XMLMapper):
 
     @property
     def tags(self):
-        return self.find('subject')
+        _tags = []
+        for subject in self.find('subject'):
+            name = format_string_words(subject)
+            if name:
+               _tags.append(dict(name=name))
+        return _tags
 
     @property
     def source(self):
@@ -47,6 +53,7 @@ class DublinCore(XMLMapper):
 
     @property
     def rights(self):
+        # TODO: bugfix rights not found
         return self.find('rigths')
 
     @property
@@ -71,8 +78,12 @@ class DublinCore(XMLMapper):
 
     def parse_geometry(self):
         # <dcterms:spatial xsi:type="dcterms:POINT">9.811246,56.302585</dcterms:spatial>
-        coords = self.doc.find('spatial', attrs={'xsi:type': 'dcterms:POINT'}).text.split(',')
-        geometry = shapely.geometry.Point(float(coords[0]), float(coords[1]))
+        point = self.doc.find('spatial', attrs={'xsi:type': 'dcterms:POINT'})
+        if point: 
+            coords = point.text.split(',')
+            geometry = shapely.geometry.Point(float(coords[0]), float(coords[1]))
+        else: 
+            geometry = None
         return geometry
 
     @property
@@ -82,3 +93,9 @@ class DublinCore(XMLMapper):
     @property
     def temporal_coverage_end(self):
         return ''
+
+    @property
+    def doi(self):
+        # TODO: deal with generic DOI recognition
+        url = f"https://doi.org/{self.oai_identifier[0]}"
+        return url
