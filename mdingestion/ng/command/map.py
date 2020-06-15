@@ -11,6 +11,7 @@ from ..community import (
     SLKSDublinCore,
     Herbadrop,
     RadarDublinCore,
+    EGIDatahubDublinCore,
 )
 from ..writer import CKANWriter
 
@@ -27,6 +28,7 @@ MAPPER = {
     'slks-dc': SLKSDublinCore,
     'herbadrop-hjson': Herbadrop,
     'radar-oai_dc': RadarDublinCore,
+    'egidatahub-oai_dc': EGIDatahubDublinCore,
 }
 
 

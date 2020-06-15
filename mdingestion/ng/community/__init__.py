@@ -4,6 +4,7 @@ from .darus import DarusDatacite
 from .slks import SLKSDublinCore
 from .herbadrop import Herbadrop
 from .radar import RadarDublinCore
+from .egidatahub import EGIDatahubDublinCore
 
 __all__ = [
     EnvidatDatacite,
@@ -13,4 +14,5 @@ __all__ = [
     Herbadrop,
     SLKSDublinCore,
     RadarDublinCore,
+    EGIDatahubDublinCore,
 ]
