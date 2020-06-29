@@ -1,8 +1,7 @@
-from ..schema import DataCite
-from ..format import format_string_words
+from ..reader import DataCiteReader
+from ..format import format_value
 
 
-class DarusDatacite(DataCite):
-    @property
-    def discipline(self):
-        return format_string_words(self.find('subject', one=True)).split(' ')[0]
+class DarusDatacite(DataCiteReader):
+    def update(self, doc):
+        doc.discipline = format_value(self.parser.find('subject'), type='string_words', one=True).split(' ')[0]

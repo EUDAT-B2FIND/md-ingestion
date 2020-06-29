@@ -19,18 +19,10 @@ class JSONParser(DocParser):
     def parse_doc(self):
         return json.load(open(self.filename))
 
-    def find(self, name=None, type=None, one=False, **kwargs):
+    def find(self, name=None, **kwargs):
         expr = self.get_parseexpr(name)
         tags = expr.find(self.doc)
-        formatted = [format.format(tag.value, type=type) for tag in tags]
-        if one:
-            if formatted:
-                value = formatted[0]
-            else:
-                value = ''
-        else:
-            value = formatted
-        return value
+        return [format.format(tag.value, type=type) for tag in tags]
 
     @property
     def fulltext(self):

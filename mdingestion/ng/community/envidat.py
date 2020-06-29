@@ -1,13 +1,12 @@
-from ..schema import DataCite, ISO19139
+from ..reader import DataCiteReader
+from ..reader import ISO19139Reader
 
 
-class EnvidatDatacite(DataCite):
-    @property
-    def contributor(self):
-        return 'EnviDat'
+class EnvidatDatacite(DataCiteReader):
+    def update(self, doc):
+        doc.contributor = 'EnviDat'
 
 
-class EnvidatISO19139(ISO19139):
-    @property
-    def contributor(self):
-        return 'EnviDat'
+class EnvidatISO19139(ISO19139Reader):
+    def update(self, doc):
+        doc.contributor = 'EnviDat'

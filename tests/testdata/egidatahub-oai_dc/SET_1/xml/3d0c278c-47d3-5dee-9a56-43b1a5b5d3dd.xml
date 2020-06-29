@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:datahub.egi.eu:08758f6dd71f731b262adefad1f50a51</identifier>
+    <datestamp>2018-11-12T20:19:20Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>EGI-DataHub Open Data Publishing With PID Demo</dc:title>
+      <dc:creator>Bartosz Kryza</dc:creator>
+      <dc:subject>Demonstration</dc:subject>
+      <dc:description>This video contains a demonstration of open data publishing using EGI-DataHub along with automatic PID handle generation.</dc:description>
+      <dc:date>2018-11-12</dc:date>
+      <dc:format>video/quicktime</dc:format>
+      <dc:rights>https://creativecommons.org/licenses/by-nc-nd/4.0/</dc:rights>
+      <dc:identifier>http://hdl.handle.net/21.T15999/Fw2lYnA</dc:identifier>
+      <dc:identifier>https://datahub.egi.eu/share/dec6359cdf03b3a7405ac75b70a4cecb</dc:identifier>
+    </oai_dc:dc>
+  </metadata>
+</record>
