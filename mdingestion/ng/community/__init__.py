@@ -6,6 +6,7 @@ from .herbadrop import Herbadrop
 from .radar import RadarDublinCore
 from .egidatahub import EGIDatahubDublinCore
 from .deims import DeimsISO19139, DeimsDublicCore
+from .materialscloud import MaterialsCloudDublinCore
 
 import logging
 
@@ -22,6 +23,7 @@ READER = {
     'egidatahub-oai_dc': EGIDatahubDublinCore,
     'deims-iso19139': DeimsISO19139,
     'deims-dc': DeimsDublicCore,
+    'materialscloud-oai_dc': MaterialsCloudDublinCore,
 }
 
 
