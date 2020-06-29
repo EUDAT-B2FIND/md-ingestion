@@ -1,7 +1,6 @@
-from ..schema import DublinCore
+from ..reader import DublinCoreReader
 
-class RadarDublinCore(DublinCore):
 
-    @property
-    def contributor(self):
-        return ['Radar']
+class RadarDublinCore(DublinCoreReader):
+    def update(self, doc):
+        doc.contributor = ['Radar']

@@ -10,19 +10,9 @@ class XMLParser(DocParser):
     def parse_doc(self):
         return BeautifulSoup(open(self.filename), 'xml')
 
-    def find(self, name=None, type=None, one=False, **kwargs):
-        tags = self.doc.find_all(name, **kwargs)
-        formatted = [format.format(tag.text, type=type) for tag in tags]
-        formatted = [text.strip() for text in formatted if text.strip()]
-        formatted = util.remove_duplicates_from_list(formatted)
-        if one:
-            if formatted:
-                value = formatted[0]
-            else:
-                value = ''
-        else:
-            value = formatted
-        return value
+    def find(self, name=None, **kwargs):
+        """Just a convienice method for BeautifulSoup doc.find_all()"""
+        return [tag.text for tag in self.doc.find_all(name, **kwargs)]
 
     @classmethod
     def extension(cls):

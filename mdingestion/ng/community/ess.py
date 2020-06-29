@@ -1,15 +1,8 @@
-from ..schema import DataCite
+from ..reader import DataCiteReader
 
 
-class ESSDatacite(DataCite):
-    @property
-    def doi(self):
-        return self.find('identifier', identifierType="URL", one=True)
-
-    @property
-    def discipline(self):
-        return 'Particles, Nuclei and Fields'
-
-    @property
-    def open_access(self):
-        return ['true']
+class ESSDatacite(DataCiteReader):
+    def update(self, doc):
+        doc.doi = self.parser.find('identifier', identifierType="URL")
+        doc.discipline = 'Particles, Nuclei and Fields'
+        doc.open_access = 'true'

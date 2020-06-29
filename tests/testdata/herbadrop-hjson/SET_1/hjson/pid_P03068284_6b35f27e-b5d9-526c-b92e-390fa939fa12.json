@@ -1,0 +1,92 @@
+{
+    "additionalIdentifiers": {
+        "ARK": "ark:/87895/1.90-2785993",
+        "ARKID": "2785993",
+        "HANDLE": "http://hdl.handle.net/21.T12996/dc6e1c9e-06c6-11ea-99e1-525400276111"
+    },
+    "depositIdentifier": "P03068284",
+    "images": [
+        {
+            "fileFormat": "JPEG/1.01",
+            "fileName": "P03068284.jpg",
+            "ocr": {
+                "deu": "HERBARIUM MUSEI PARISIENSIS\n",
+                "eng": "HERBARIUM MUSEI PARISIENSIS\n",
+                "fra": "HERBARIUM MUSEI PARISIENSIS\n",
+                "lat": "HERBARIUM MUSEI PARISIENSIS\n",
+                "spa": "HERBARIUM MUSE! PARISIENSIS\n"
+            }
+        }
+    ],
+    "metadata": {
+        "aip.dc.coverage": {
+            "und": "|||||"
+        },
+        "aip.dc.creator": "unavailable",
+        "aip.dc.description": {
+            "und": "unavailable"
+        },
+        "aip.dc.format": {
+            "eng": "image/jpeg"
+        },
+        "aip.dc.identifier": "ark:/87895/1.90-2785993",
+        "aip.dc.language": "und_UND",
+        "aip.dc.publisher": "MNHN",
+        "aip.dc.relation": {},
+        "aip.dc.rights": {
+            "und": "http://creativecommons.org/licenses/by/4.0/"
+        },
+        "aip.dc.source": {
+            "und": "unavailable"
+        },
+        "aip.dc.subject": {
+            "lat": "Fabaceae"
+        },
+        "aip.dc.title": {
+            "lat": "Coronilla juncea L."
+        },
+        "aip.dc.type": {
+            "eng": "StillImage|PRESERVED_SPECIMEN"
+        },
+        "aip.files": [
+            {
+                "checksum": "084cebbf13d405b052b8c67253ecd715b2e11f5bf00698bc7c576b8dd994029d",
+                "checksumType": "SHA-256",
+                "encoding": "UTF-8",
+                "format": "TXT",
+                "formatVersion": "NA",
+                "identifier": "ark:/87895/1.90-2785993/1",
+                "name": "DESC/P03068284.txt",
+                "originalChecksum": "2f1a88dce653496c50a4d8ebc09dee8e",
+                "originalChecksumType": "MD5",
+                "sizeInBytes": 2586
+            },
+            {
+                "checksum": "e13089f0c6b01f6980a2149cfa06c19e7abc693379236478b7b5f455f50a5346",
+                "checksumType": "SHA-256",
+                "format": "JPEG",
+                "formatVersion": "1.01",
+                "identifier": "ark:/87895/1.90-2785993/2",
+                "name": "P03068284.jpg",
+                "originalChecksum": "eda3b0fb1479ab751528e11e971bea9e",
+                "originalChecksumType": "MD5",
+                "sizeInBytes": 5666847
+            }
+        ],
+        "aip.meta.archivingDate": "2019-04-10T04:06:00+0200",
+        "aip.meta.depositIdentifier": "P03068284",
+        "aip.meta.filePlan": {
+            "eng": "Herbarium"
+        },
+        "aip.meta.finalAction": {
+            "fra": "Conservation définitive"
+        },
+        "aip.meta.note": {},
+        "aip.meta.pacIdentifier": 2785993,
+        "aip.meta.producerIdentifier": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03068284",
+        "aip.meta.project": "90",
+        "aip.meta.transferringAgency": "MNHN"
+    },
+    "score": 29.74226,
+    "transferringAgencyIdentifier": "mnhnftp"
+}

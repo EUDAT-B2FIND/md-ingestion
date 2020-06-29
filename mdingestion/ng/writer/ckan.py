@@ -1,6 +1,7 @@
 import os
 import pathlib
 import json
+import hashlib
 
 from .base import Writer
 
@@ -9,7 +10,8 @@ import logging
 
 class CKANWriter(Writer):
     def write(self, doc, filename):
-        data = self.json(doc)
+        data = self.json_legacy(doc)
+        self.update_version(data)
         self.write_output(data, filename)
 
     def write_output(self, data, filename):
@@ -25,20 +27,35 @@ class CKANWriter(Writer):
 
     def json(self, doc):
         data = self._ckan_fields(doc)
+        data['extras'] = []
+        for key, value in self._extra_fields(doc).items():
+            data['extras'].append(dict(key=key, value=value))
+        for key, value in self._oai_fields(doc).items():
+            data['extras'].append(dict(key=key, value=value))
+        return data
+
+    def json_legacy(self, doc):
+        data = self._ckan_fields(doc)
         data.update(self._extra_fields(doc))
         data.update(self._oai_fields(doc))
         return data
 
+    def update_version(self, data):
+        checksum = hashlib.sha256(
+            json.dumps(data, sort_keys=True).encode()).hexdigest()
+        data['version'] = checksum
+
     def _extra_fields(self, doc):
         data = {
             'DOI': doc.doi,
+            'PID': doc.pid,
             'RelatedIdentifier': doc.related_identifier,
             'MetaDataAccess': doc.metadata_access,
             'Contributor': doc.contributor,
             'Publisher': doc.publisher,
             'PublicationYear': doc.publication_year,
             'Rights': doc.rights,
-            'OpenAccess': doc.open_access,
+            'OpenAccess': ['true' if doc.open_access else 'false'],
             'Contact': doc.contact,
             'Language': doc.language,
             'ResourceType': doc.resource_type,
@@ -60,9 +77,8 @@ class CKANWriter(Writer):
         data['title'] = doc.title
         data['author'] = doc.creator
         data['notes'] = doc.description
-        data['tags'] = doc.tags
+        data['tags'] = [dict(name=tag) for tag in doc.tags]
         data['url'] = doc.source
-        # data['version'] = ''  # checksum of doc
         data['owner_org'] = "eudat-b2find"
         data['name'] = doc.name
         data['group'] = doc.community

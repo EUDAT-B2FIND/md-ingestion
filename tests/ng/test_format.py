@@ -14,3 +14,12 @@ def test_format_date():
 
 def test_format_date_year():
     assert '2020' == format.format_date_year('2020-05-20')
+
+
+def test_format_value():
+    assert ['hello'] == format.format_value('hello')
+    assert ['alice'] == format.format_value(' alice ')
+    assert [] == format.format_value(None)
+    assert ['123.4'] == format.format_value(123.4)
+    assert ['2020-05-19'] == format.format_value('2020-05-19', type='date')
+    assert ['2020'] == format.format_value('2020-05-19', type='date_year')
