@@ -55,7 +55,7 @@ class CKANWriter(Writer):
             'Publisher': doc.publisher,
             'PublicationYear': doc.publication_year,
             'Rights': doc.rights,
-            'OpenAccess': ['true' if doc.open_access else 'false'],
+            'OpenAccess': 'true' if doc.open_access else 'false',
             'Contact': doc.contact,
             'Language': doc.language,
             'ResourceType': doc.resource_type,
