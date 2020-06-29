@@ -101,8 +101,8 @@ def map(ctx, community, url, mdprefix, mdsubset):
 @click.pass_context
 def upload(ctx, community, iphost, auth):
     try:
-        upload = Upload(outdir=ctx.obj['outdir'], sources=ctx.obj['list'], iphost=iphost, auth=auth)
-        upload.upload(community)
+        upload = Upload(outdir=ctx.obj['outdir'], sources=ctx.obj['list'], community=community)
+        upload.upload(iphost=iphost, auth=auth)
     except Exception as e:
         logging.critical(f"upload: {e}", exc_info=True)
         raise click.ClickException(f"{e}")

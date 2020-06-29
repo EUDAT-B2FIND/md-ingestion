@@ -9,8 +9,8 @@ class DublinCoreReader(OAIReader):
         doc.title = self.parser.find('title')
         doc.description = self.parser.find('description')
         doc.tags = self.parser.find('subject')
-        doc.doi = f"https://doi.org/{doc.oai_identifier[0]}"
-        doc.source = self.parser.find('identifier')
+        # doc.doi = f"https://doi.org/{doc.oai_identifier[0]}"
+        # doc.source = self.parser.find('identifier')
         doc.related_identifier = self.parser.find('relation')
         doc.creator = self.parser.find('creator')
         doc.publisher = self.parser.find('publisher')
