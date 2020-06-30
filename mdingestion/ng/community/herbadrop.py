@@ -17,7 +17,7 @@ class Herbadrop(JSONReader):
         doc.publication_year = self.parser.find('metadata."aip.meta.archivingDate"')
         doc.rights = self.parser.find('metadata."aip.dc.rights".und')
         doc.contact = doc.publisher
-        doc.open_access = ['true']
+        doc.open_access = True
         doc.language = self.parser.find('metadata."aip.dc.language"')
         doc.resource_type = self.parser.find('metadata."aip.dc.type".eng')
         doc.format = self.parser.find('metadata."aip.dc.format".eng')
@@ -27,11 +27,11 @@ class Herbadrop(JSONReader):
 
     def description(self, doc):
         text = []
-        text.append("""Herbadrop is a project that blablubs did a lot of fancy stuff,
-        some records are searchable and findable in B2FIND now, but this is
-        only a part of a larger collection.""")
-        # text.append("Scanned files by OCR.")
-        # text.append(self.parser.find('images[*].ocr.lat'))
+        text.append("""This record is part of a larger collection of digitized herbarium specimens.
+         The full Herbadrop/ICEDIG-project collection can be accessed and browsed at https://opendata.cines.fr/
+          or https://www.mnhn.fr/fr/collections/ensembles-collections/botanique""")
+        text.append("Scanned files by OCR:")
+        text.append(format_value(self.parser.find('images[*].ocr.lat'), one=True))
         return text
 
     def metadata_access(self, doc):

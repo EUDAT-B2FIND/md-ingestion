@@ -54,7 +54,7 @@ def test_herbadrop_with_pid():
     assert 'Coronilla juncea L.' in doc.title[0]
     # assert 'HERBARIUM MUSE' in doc.description[1]
     assert ['Fabaceae'] == doc.tags
-    ##assert 'http://coldb.mnhn.fr/catalognumber/mnhn/p/p03945291' == doc.source
+    assert 'http://coldb.mnhn.fr/catalognumber/mnhn/p/p03068284' == doc.source
     assert 'ark:/87895/1.90-2785993' == doc.related_identifier[0]
     assert 'unavailable' == doc.creator[0]
     assert 'MNHN' == doc.publisher[0]
@@ -67,6 +67,7 @@ def test_herbadrop_with_pid():
     assert 'StillImage|PRESERVED_SPECIMEN' == doc.resource_type[0]
     assert 'image/jpeg' == doc.format[0]
     assert 'Plant Sciences' == doc.discipline
+    assert 'HERBARIUM MUSEI PARISIENSIS' == doc.description[2]
     # assert 'France|Languedoc-Roussillon||||Eyne' == doc.spatial_coverage
     #assert '1968-07-17T00:00:00Z' == doc.temporal_coverage_begin_date
     #assert '1968-07-17T00:00:00Z' == doc.temporal_coverage_end_date
