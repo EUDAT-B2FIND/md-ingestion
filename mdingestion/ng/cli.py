@@ -78,8 +78,9 @@ def harvest(ctx, community, url, verb, mdprefix, mdsubset, fromdate, limit, inse
 @click.option('--url', help='Source URL')
 @click.option('--mdprefix', help='Metadata prefix')
 @click.option('--mdsubset', help='Subset')
+@click.option('--force', is_flag=True, help='force')
 @click.pass_context
-def map(ctx, community, url, mdprefix, mdsubset):
+def map(ctx, community, url, mdprefix, mdsubset, force):
     try:
         map = Map(
             sources=ctx.obj['list'],
@@ -88,7 +89,7 @@ def map(ctx, community, url, mdprefix, mdsubset):
             mdprefix=mdprefix,
             mdsubset=mdsubset,
             outdir=ctx.obj['outdir'],)
-        map.run()
+        map.run(force=force)
     except Exception as e:
         logging.critical(f"map: {e}", exc_info=True)
         raise click.ClickException(f"{e}")

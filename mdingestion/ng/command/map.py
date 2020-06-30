@@ -18,6 +18,7 @@ class Map(Command):
         self.summary = {
             'total': 0,
             'valid': 0,
+            'written': 0,
             'required': {
                 'title': 0,
                 'source': 0,
@@ -25,11 +26,13 @@ class Map(Command):
             'optional': {},
         }
 
-    def run(self):
+    def run(self, force=False):
         for filename in tqdm(self.walk(), ascii=True, desc="Mapping", unit=' records'):
             doc = self.map(filename)
-            if self.validate(doc) is True:
+            is_valid = self.validate(doc)
+            if force or is_valid:
                 self.writer.write(doc, filename)
+                self.summary['written'] += 1
         self.print_summary()
 
     def walk(self):
@@ -55,7 +58,8 @@ class Map(Command):
             B2FSchema().deserialize(jsondoc)
             self.summary['valid'] += 1
             valid = True
-        except Exception:
+        except Exception as e:
+            logging.warning(f"{e}")
             valid = False
         for key, value in jsondoc.items():
             if not value:
@@ -70,7 +74,7 @@ class Map(Command):
 
     def print_summary(self):
         print("\nSummary:")
-        print(f"\tvalid={self.summary['valid']}/{self.summary['total']}")
+        print(f"\tvalid={self.summary['valid']}/{self.summary['total']}, written={self.summary['written']}")
         print("\nRequired Fields:")
         print(f"\ttitle={self.summary['required']['title']}, source={self.summary['required']['source']}")
         print("\nOptional Fields (complete):")

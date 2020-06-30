@@ -12,10 +12,17 @@ class ISO19139Reader(XMLReader):
         doc.description = self.parser.find('abstract')
         doc.tags = self.parser.find('keyword')
         doc.creator = self.parser.find('individualName')
-        doc.publisher = self.parser.find('organisationName')
+        # TODO: check whether <publisher> is generic in <contact>
+        try:
+            doc.publisher = self.parser.doc.contact.organisationName.text
+        except Exception:
+            doc.publisher = ''
         doc.publication_year = self.parser.doc.find('CI_Citation').find('Date').text
         doc.rights = self.parser.find('useLimitation')
-        doc.contact = self.parser.find('electronicMailAddress')
+        try:
+            doc.contact = self.parser.doc.contact.electronicMailAddress.text
+        except Exception:
+            doc.contact = ''
         doc.open_access = ''
         doc.language = self.parser.find('LanguageCode')
         doc.resource_type = self.parser.find('MD_ScopeCode')
