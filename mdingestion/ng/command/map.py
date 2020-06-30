@@ -28,7 +28,8 @@ class Map(Command):
     def run(self):
         for filename in tqdm(self.walk(), ascii=True, desc="Mapping", unit=' records'):
             doc = self.map(filename)
-            self.update_summary(doc)
+            if self.validate(doc) is True:
+                self.writer.write(doc, filename)
         self.print_summary()
 
     def walk(self):
@@ -43,18 +44,19 @@ class Map(Command):
         reader = self.reader()
         doc = reader.read(filename, self.url, self.community, self.mdprefix)
         logging.info(f'map: community={self.community}, mdprefix={self.mdprefix}, file={filename}')
-        self.writer.write(doc, filename)
+        # self.writer.write(doc, filename)
         return doc
 
-    def update_summary(self, doc):
+    def validate(self, doc):
         # TODO: use counter? https://pymotw.com/2/collections/counter.html
         jsondoc = B2FWriter().json(doc)
         self.summary['total'] += 1
         try:
             B2FSchema().deserialize(jsondoc)
             self.summary['valid'] += 1
+            valid = True
         except Exception:
-            pass
+            valid = False
         for key, value in jsondoc.items():
             if not value:
                 continue
@@ -64,6 +66,7 @@ class Map(Command):
                 self.summary['optional'][key] = 1
             else:
                 self.summary['optional'][key] += 1
+        return valid
 
     def print_summary(self):
         print("\nSummary:")
