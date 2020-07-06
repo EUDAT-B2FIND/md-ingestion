@@ -42,8 +42,10 @@ class JSONParser(DocParser):
                     extract(item, arr)
             return arr
 
-        results = extract(self.doc, arr)
-        return results
+        lines = extract(self.doc, arr)
+        lines_as_str = [str(txt) for txt in lines if txt is not None]
+        lines_not_empty = [txt for txt in lines_as_str if len(txt) > 0]
+        return ','.join(lines_not_empty)
 
     @classmethod
     def extension(cls):
