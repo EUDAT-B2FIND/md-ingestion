@@ -1,4 +1,5 @@
 from tqdm import tqdm
+import colander
 
 from .base import Command
 from ..walker import Walker
@@ -21,9 +22,10 @@ class Map(Command):
             'written': 0,
             'required': {
                 'title': 0,
-                'source': 0,
+                'identifier': 0,
             },
             'optional': {},
+            'invalid': {},
         }
 
     def run(self, force=False):
@@ -58,25 +60,39 @@ class Map(Command):
             B2FSchema().deserialize(jsondoc)
             self.summary['valid'] += 1
             valid = True
+        except colander.Invalid as e:
+            logging.warning(f"{e}")
+            valid = False
+            self._update_summary(e.asdict(), valid=False)
         except Exception as e:
             logging.warning(f"{e}")
             valid = False
-        for key, value in jsondoc.items():
-            if not value:
-                continue
-            if key in self.summary['required']:
-                self.summary['required'][key] += 1
-            elif key not in self.summary['optional']:
-                self.summary['optional'][key] = 1
-            else:
-                self.summary['optional'][key] += 1
+        self._update_summary(jsondoc)
         return valid
+
+    def _update_summary(self, fields, valid=True):
+        if valid:
+            for key, value in fields.items():
+                if not value:
+                    continue
+                if key in self.summary['required']:
+                    self.summary['required'][key] += 1
+                elif key not in self.summary['optional']:
+                    self.summary['optional'][key] = 1
+                else:
+                    self.summary['optional'][key] += 1
+        else:
+            for key, value in fields.items():
+                if key not in self.summary['invalid']:
+                    self.summary['invalid'][key] = 1
+                else:
+                    self.summary['invalid'][key] += 1
 
     def print_summary(self):
         print("\nSummary:")
         print(f"\tvalid={self.summary['valid']}/{self.summary['total']}, written={self.summary['written']}")
         print("\nRequired Fields:")
-        print(f"\ttitle={self.summary['required']['title']}, source={self.summary['required']['source']}")
+        print(f"\ttitle={self.summary['required']['title']}, identifier={self.summary['required']['identifier']}")
         print("\nOptional Fields (complete):")
         for key, value in self.summary['optional'].items():
             if value == self.summary['total']:
@@ -85,3 +101,6 @@ class Map(Command):
         for key, value in self.summary['optional'].items():
             if value < self.summary['total']:
                 print(f"\t{key}={value}")
+        print("\nInvalid Fields:")
+        for key, value in self.summary['invalid'].items():
+            print(f"\t{key}={value}")

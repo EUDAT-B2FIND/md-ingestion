@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 
 from .base import DocParser
-from .. import util
-from .. import format
+
+import logging
 
 
 class XMLParser(DocParser):
@@ -12,7 +12,20 @@ class XMLParser(DocParser):
 
     def find(self, name=None, **kwargs):
         """Just a convienice method for BeautifulSoup doc.find_all()"""
-        return [tag.text for tag in self.doc.find_all(name, **kwargs)]
+        try:
+            if '.' in name:
+                # name=something.very.important
+                # run: doc.something.very.find_all('important')
+                _dotted, _name = name.rsplit('.', 1)
+                _doc = eval(f"doc.{_dotted}", dict(doc=self.doc))
+            else:
+                _name = name
+                _doc = self.doc
+            results = [tag.text for tag in _doc.find_all(_name, **kwargs)]
+        except Exception:
+            logging.warning(f"xml parser failed for name={name}.", exc_info=True)
+            results = []
+        return results
 
     @classmethod
     def extension(cls):

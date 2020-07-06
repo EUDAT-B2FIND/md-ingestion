@@ -13,6 +13,7 @@ from tests.common import TESTDATA_DIR
 
 def test_b2f_schema():
     cstruct = {
+        'identifier': 'https://doi.org/10.18419/does-not-exist',
         'title': ['A Title', 'A subtitle'],
         'tags': ['testing', 'schema'],
         'description': ['Just at test'],
@@ -33,6 +34,7 @@ def test_b2f_schema():
     }
     schema = B2FSchema()
     appstruct = schema.deserialize(cstruct)
+    assert 'https://doi.org/10.18419/does-not-exist' == appstruct['identifier']
     assert 'A Title' == appstruct['title'][0]
     assert 'http://localhost/b2f/alice_in_wonderland.txt' == appstruct['source']
     assert 2020 == appstruct['publication_year'][0].year
@@ -44,14 +46,14 @@ def test_b2f_missing_title():
     schema = B2FSchema()
     with pytest.raises(colander.Invalid, match="{'title': 'Required'}"):
         appstruct = schema.deserialize(
-            {'description': ['Where is the title?'], 'source': 'http://localhost/some.txt'})
+            {'description': ['Where is the title?'], 'identifier': 'http://localhost/some.txt'})
 
 
 def test_b2f_invalid_date():
     schema = B2FSchema()
     with pytest.raises(colander.Invalid, match="{'publication_year.0': 'Invalid date'}"):
         appstruct = schema.deserialize(
-            {'title': ['What year?'], 'source': 'http://localhost/some.txt', 'publication_year': ['yesterday']})
+            {'title': ['What year?'], 'identifier': 'http://localhost/some.txt', 'publication_year': ['yesterday']})
 
 
 def test_b2f_doc_validation_darus():
@@ -80,3 +82,33 @@ def test_b2f_doc_validation_herbadrop():
     assert 'http://coldb.mnhn.fr/catalognumber/mnhn/p/p03945291' == appstruct['source']
     assert 2019 == appstruct['publication_year'][0].year
     assert 'ark:/87895/1.90-4070723' in appstruct['related_identifier'][0]
+
+
+def test_b2f_validate_none():
+    cstruct = {
+        'title': ['A Title', 'A subtitle'],
+        'identifier': 'http://localhost/b2f/alice_in_wonderland.txt',
+        'source': 'http://localhost/b2f/alice_in_wonderland.txt',
+        'creator': None,
+        'open_access': None,
+    }
+    schema = B2FSchema()
+    appstruct = schema.deserialize(cstruct)
+    assert 'A Title' == appstruct['title'][0]
+    assert [] == appstruct['creator']
+    # assert appstruct['open_access'] is False
+
+
+def test_b2f_validate_empty():
+    cstruct = {
+        'title': ['A Title', 'A subtitle'],
+        'identifier': 'http://localhost/b2f/alice_in_wonderland.txt',
+        'source': 'http://localhost/b2f/alice_in_wonderland.txt',
+        'creator': '',
+        'open_access': ''
+    }
+    schema = B2FSchema()
+    appstruct = schema.deserialize(cstruct)
+    assert 'A Title' == appstruct['title'][0]
+    assert [] == appstruct['creator']
+    # assert appstruct['open_access'] is False

@@ -31,6 +31,10 @@ class BaseDoc(object):
         self._discipline = None
 
     @property
+    def identifier(self):
+        return self._doi or self._pid or self._source
+
+    @property
     def title(self):
         return self._title
 
@@ -56,7 +60,7 @@ class BaseDoc(object):
 
     @property
     def doi(self):
-        return self._doi
+        return self._doi or ''
 
     @doi.setter
     def doi(self, value):
@@ -72,7 +76,7 @@ class BaseDoc(object):
 
     @property
     def source(self):
-        return self._source
+        return self._source or ''
 
     @source.setter
     def source(self, value):
@@ -300,6 +304,7 @@ class B2FDoc(GeoDoc):
         self.mdprefix = mdprefix
         self._oai_set = None
         self._oai_identifier = None
+        self._file_identifier = None
         self._fulltext = None
 
     @property
@@ -320,7 +325,7 @@ class B2FDoc(GeoDoc):
 
     @oai_set.setter
     def oai_set(self, value):
-        self._oai_set = format_value(value)
+        self._oai_set = format_value(value, one=True)
 
     @property
     def oai_identifier(self):
@@ -328,4 +333,12 @@ class B2FDoc(GeoDoc):
 
     @oai_identifier.setter
     def oai_identifier(self, value):
-        self._oai_identifier = format_value(value)
+        self._oai_identifier = format_value(value, one=True)
+
+    @property
+    def file_identifier(self):
+        return self._file_identifier
+
+    @file_identifier.setter
+    def file_identifier(self, value):
+        self._file_identifier = format_value(value, one=True)

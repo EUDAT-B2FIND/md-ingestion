@@ -1,5 +1,6 @@
 from ..reader import ISO19139Reader
 from ..reader import DublinCoreReader
+from ..format import format_value
 
 
 class DeimsISO19139(ISO19139Reader):
@@ -10,13 +11,14 @@ class DeimsISO19139(ISO19139Reader):
         doc.related_identifier = self.related_identifier(doc)
 
     def source(self, doc):
-        urls = [id.text for id in self.parser.doc.distributionInfo.find_all('URL') if 'https://deims.org/dataset' in id.text]
-        urls.extend([id.text for id in self.parser.doc.distributionInfo.find_all('URL') if 'https://deims.org/network' in id.text])
+        urls = [id for id in self.parser.find('distributionInfo.URL') if 'https://deims.org/dataset' in id]
+        urls.extend([id for id in self.parser.find('distributionInfo.URL') if 'https://deims.org/network' in id])
         return urls
 
     def related_identifier(self, doc):
-        urls = [id.text for id in self.parser.doc.distributionInfo.find_all('URL') if 'https://deims.org/dataset' not in id.text]
+        urls = [id for id in self.parser.find('distributionInfo.URL') if 'https://deims.org/dataset' not in id]
         return urls
+
 
 class DeimsDublicCore(DublinCoreReader):
     def update(self, doc):

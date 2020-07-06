@@ -1,11 +1,12 @@
 import shapely
 
-from .base import XMLReader
+from .base import XMLReader, CSWSniffer
 
 import logging
 
 
 class ISO19139Reader(XMLReader):
+    SNIFFER = CSWSniffer
 
     def parse(self, doc):
         doc.title = self.parser.find('title')
@@ -13,16 +14,10 @@ class ISO19139Reader(XMLReader):
         doc.tags = self.parser.find('keyword')
         doc.creator = self.parser.find('individualName')
         # TODO: check whether <publisher> is generic in <contact>
-        try:
-            doc.publisher = self.parser.doc.contact.organisationName.text
-        except Exception:
-            doc.publisher = ''
-        doc.publication_year = self.parser.doc.find('CI_Citation').find('Date').text
+        doc.publisher = self.parser.find('contact.organisationName')
+        doc.publication_year = self.parser.find('CI_Citation.Date')
         doc.rights = self.parser.find('useLimitation')
-        try:
-            doc.contact = self.parser.doc.contact.electronicMailAddress.text
-        except Exception:
-            doc.contact = ''
+        doc.contact = self.parser.find('contact.electronicMailAddress')
         doc.open_access = ''
         doc.language = self.parser.find('LanguageCode')
         doc.resource_type = self.parser.find('MD_ScopeCode')

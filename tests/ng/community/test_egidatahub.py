@@ -12,4 +12,6 @@ def test_dublin_core():
     assert 'EGI-DataHub' in doc.title[0]
     assert 'Various' in doc.discipline
     assert 'https://creativecommons.org/licenses/by-nc-nd/4.0/' in doc.rights
-    assert 'http://hdl.handle.net/21.T15999/Fw2lYnA' in doc.pid
+    assert 'http://hdl.handle.net/21.T15999/Fw2lYnA' == doc.pid
+    assert 'https://datahub.egi.eu/share/dec6359cdf03b3a7405ac75b70a4cecb' == doc.source
+    assert doc.open_access is True
