@@ -9,20 +9,12 @@ class EGIDatahubDublinCore(DublinCoreReader):
         doc.open_access = self.open_access(doc)
 
     def pid(self, doc):
-        pids = [id for id in self.parser.find('identifier') if id.startswith('http://hdl.handle.net')]
-        if pids:
-            url = pids[0]
-        else:
-            url = ''
-        return url
+        urls = [id for id in self.parser.find('identifier') if id.startswith('http://hdl.handle.net')]
+        return urls
 
     def source(self, doc):
-        urls = [id.text for id in self.parser.doc.metadata.find_all('identifier') if not 'handle' in id.text]
-        if urls:
-            url = urls[0]
-        else:
-            url = ''
-        return url
+        urls = [url for url in self.parser.find('metadata.identifier') if 'handle' not in url]
+        return urls
 
     def open_access(self, doc):
         for right in ['CC-0', 'https://creativecommons.org/licenses/by-nc-nd/4.0/']:

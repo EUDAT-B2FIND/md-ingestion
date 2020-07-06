@@ -25,6 +25,7 @@ class B2FWriter(Writer):
 
     def json(self, doc):
         data = {
+            'identifier': doc.identifier,
             'title': doc.title,
             'description': doc.description,
             'tags': doc.tags,

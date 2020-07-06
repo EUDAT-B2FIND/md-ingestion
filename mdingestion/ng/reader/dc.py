@@ -1,9 +1,10 @@
 import shapely
 
-from .base import OAIReader
+from .base import XMLReader, OAISniffer
 
 
-class DublinCoreReader(OAIReader):
+class DublinCoreReader(XMLReader):
+    SNIFFER = OAISniffer
 
     def parse(self, doc):
         doc.title = self.parser.find('title')

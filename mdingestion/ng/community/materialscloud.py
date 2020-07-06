@@ -10,7 +10,7 @@ class MaterialsCloudDublinCore(DublinCoreReader):
         doc.contact = 'info@materialscloud.org'
 
     def doi(self, doc):
-        dois = [id.text for id in self.parser.doc.metadata.find_all('identifier') if id.text.startswith('doi:')]
+        dois = [id for id in self.parser.find('metadata.identifier') if id.startswith('doi:')]
         if dois:
             url = f"https://doi.org/{dois[0][4:]}"
         else:
@@ -18,9 +18,5 @@ class MaterialsCloudDublinCore(DublinCoreReader):
         return url
 
     def source(self, doc):
-        urls = [id.text for id in self.parser.doc.metadata.find_all('identifier') if 'archive.materialscloud.org' in id.text]
-        if urls:
-            url = urls[0]
-        else:
-            url = ''
-        return url
+        urls = [url for url in self.parser.find('metadata.identifier') if 'archive.materialscloud.org' in url]
+        return urls
