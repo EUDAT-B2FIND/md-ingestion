@@ -1,0 +1,34 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:materialscloud.org:312</identifier>
+    <datestamp>2020-01-24T00:00:00Z</datestamp>
+    <setSpec>DOI</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:creator>Fabrizio, Alberto</dc:creator>
+      <dc:creator>Petraglia, Riccardo</dc:creator>
+      <dc:creator>Corminboeuf, Clemence</dc:creator>
+      <dc:date>2020-01-24</dc:date>
+      <dc:description>Accurately describing intermolecular interactions within the framework of Kohn-Sham density functional theory (KS-DFT) has resulted in numerous benchmark databases over the past two decades. By far, the largest efforts have been spent on closed-shell, neutral dimers for which today, the interaction energies and geometries can be accurately reproduced by various combinations of dispersion-corrected density functional approximations (DFAs). In sharp contrast, charged, open-shell dimers remain a challenge as illustrated by the analysis of the OREL26rad benchmark set consisting of pi-dimer radical cations. Aside from the methodological aspect, achieving a proper description of radical cationic complexes is appealing due to their role as models for charge carriers in organic semiconductors. In the interest of providing an assessment of more realistic dimer systems, we construct a dataset of large radical cationic dimers (CryOrel) and jointly train the 19 parameters of a dispersion corrected, range-separated hybrid density functional (wB97X-dDsC), with the objective of providing the maximum balance between the treatment of long-range London dispersion and reduction of the delocalization error. These conditions are essential to obtain accurate energy profiles and binding energies of charged, open-shell dimers. Comparisons with the performance of the parent wB97X functional series and state-of-the-art wavefunction based methods are provided.</dc:description>
+      <dc:identifier>https://archive.materialscloud.org/record/2020.0012/v1</dc:identifier>
+      <dc:identifier>doi:10.24435/materialscloud:2020.0012/v1</dc:identifier>
+      <dc:identifier>mcid:2020.0012/v1</dc:identifier>
+      <dc:identifier>oai:materialscloud.org:312</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:publisher>Materials Cloud</dc:publisher>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+      <dc:rights>Creative Commons Attribution 4.0 International https://creativecommons.org/licenses/by/4.0/legalcode</dc:rights>
+      <dc:subject>EPFL</dc:subject>
+      <dc:subject>SNSF</dc:subject>
+      <dc:subject>MARVEL/DD1</dc:subject>
+      <dc:subject>Radical Cation Dimers</dc:subject>
+      <dc:subject>Organic Semiconductors</dc:subject>
+      <dc:subject>London dispersion interactions</dc:subject>
+      <dc:subject>Delocalization Error</dc:subject>
+      <dc:subject>Density Functional Theory</dc:subject>
+      <dc:title>Balancing DFT Interaction Energies in Charged Dimers Precursors to Organic Semiconductors</dc:title>
+      <dc:type>Dataset</dc:type>
+    </oai_dc:dc>
+  </metadata>
+</record>

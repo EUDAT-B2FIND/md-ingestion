@@ -1,0 +1,32 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.22000/81</identifier>
+    <datestamp>2020-02-27T07:56:31Z</datestamp>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ oai_dc.xsd">
+      <dc:identifier>10.22000/81</dc:identifier>
+      <dc:identifier>DOI</dc:identifier>
+      <dc:creator>Blunk, Inga </dc:creator>
+      <dc:identifier>0000-0003-4945-3302</dc:identifier>
+      <dc:creator>Mayer, Manfred</dc:creator>
+      <dc:creator>Hamann, Henning</dc:creator>
+      <dc:creator>Reinsch, Norbert</dc:creator>
+      <dc:identifier>0000-0001-7435-4088</dc:identifier>
+      <dc:title>Result files &#8211; Scanning the genomes of parents for imprinted loci acting in their un-genotyped progeny</dc:title>
+      <dc:publisher>Leibniz-Institut f&#252;r Nutztierbiologie (FBN), Wilhelm-Stahl-Allee 2, 18196 Dummerstorf, Germany</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:subject>Other</dc:subject>
+      <dc:subject>Animal Genetics</dc:subject>
+      <dc:type/>
+      <dc:type>Dataset</dc:type>
+      <dc:rights>CC BY 4.0 Attribution</dc:rights>
+      <dc:rights>Leibniz-Institut f&#252;r Nutztierbiologie (FBN), Wilhelm-Stahl-Allee 2, 18196 Dummerstorf, Germany</dc:rights>
+      <dc:description>Three files with p-values for each marker and five traits are provided. Each file contains p-values for one of three different hypotheses were tested for each trait, marker association with i) imprinting effects, with ii) transmitting abilities as sires and with iii) transmitting abilities as dams.  Estimates for imprinting effects (parent-of-origin effects), transmitting abilities as sires and as dams were derived from a population analysis of salughterhouse data from Brown Swiss fattenening bulls by applying an appropriate mixed model that accounts for paternal and maternal imprinting simultanously. For more information see the detailed data description and the accompanying publication.</dc:description>
+      <dc:description>genomic imprinting; parent-of-origin effects; genome-wide association study; body composition traits; growth traits; cattle</dc:description>
+      <dc:language>eng</dc:language>
+      <dc:identifier>0000</dc:identifier>
+      <dc:format>application/zip</dc:format>
+    </oai_dc:dc>
+  </metadata>
+</record>

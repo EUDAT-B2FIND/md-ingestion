@@ -39,6 +39,9 @@ clarin https://clarin.vdu.lt/oai/request ListRecords oai_dc
 #clarin https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc CLARIN
 ## DANS-EASY
 danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite
+## DaRUS
+#darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
+darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite 
 ## DEIMS
 deims https://deims.org/pycsw/catalogue/csw csw iso19139 full
 ## ENVIDAT
@@ -55,5 +58,7 @@ seanoe http://www.seanoe.org/oai/OAIHandler ListRecords oai_dc
 ist http://datarep.app.ist.ac.at/cgi/oai2 ListRecords oai_dc
 ## RADAR
 radar https://www.radar-service.eu/oai/provider ListRecords oai_dc
+## SLKS
+slks https://www.archaeo.dk/ff/oai-pmh ListRecords oai_dc
 ## UCL
 ucl https://api.figshare.com/v2/oai ListRecords oai_dc portal_549

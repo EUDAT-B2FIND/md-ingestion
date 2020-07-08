@@ -15,8 +15,8 @@ THE SOFTWARE.
 ### md-ingestion
 
 The python script `manager.py` in this directory provides functionality required for
-ingestion (including OAI harvesting, semantic mapping (see 
-[repo 'md-mapping'](https://github.com/EUDAT-B2FIND/md-mapping)) and uploading 
+ingestion (including OAI harvesting, semantic mapping (see
+[repo 'md-mapping'](https://github.com/EUDAT-B2FIND/md-mapping)) and uploading
 to CKAN) of metadata in the [B2FIND portal](http://b2find.eudat.eu/).
 The script manager.py uses the classes and functions from
 
@@ -41,11 +41,12 @@ And run the installation:
 
 ```
 pip install -r requirements.txt
+python setup.py develop
 ```
 
 #### Use a conda environment
 
-Install conda: 
+Install conda:
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/
 
 You can use a conda environment with Python 3.6.
@@ -59,22 +60,28 @@ Run the installation:
 
 ```
 pip install -r requirements.txt
+python setup.py develop
 ```
 
 #### Configure harvest_list
-add symbolic link to your local used harvest_list: 
+add symbolic link to your local used harvest_list:
 
 ```
 ln -s etc/harvest_list_cm harvest_list
 ```
 
 
-### Usage 
+### Usage
 
 **TODO**: update of section
 
 ```
-manager.py [ OPTIONS ]
+manager [ OPTIONS ]
+```
+
+Example:
+```
+manager -m m -c envidat -l harvest_list --outdir oaitestdata
 ```
 
 ### Description
@@ -170,6 +177,13 @@ These options will be required to upload an dataset to a CKAN database.
                         taken from file $HOME/.netrc)
 ```
 
+
+### Testing
+
+```
+$ conda install pytest
+$ pytest tests/
+```
 
 ### Authors
 

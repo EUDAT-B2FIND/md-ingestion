@@ -1,0 +1,92 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18419/darus-629</identifier>
+    <datestamp>2020-05-12T00:00:00Z</datestamp>
+    <setSpec>all</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18419/darus-629</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Jeltsch, Albert</creatorName>
+          <givenName>Albert</givenName>
+          <familyName>Jeltsch</familyName>
+          <nameIdentifier nameIdentifierScheme="ORCID">0000-0001-6113-9290</nameIdentifier>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Deep enzymology data related to Adam et al.: Sequence context-dependent base flipping regulates DNMT1-mediated genome-wide DNA methylation</title>
+        <title titleType="Subtitle">Data Set 1 related to enzyme assays with long hemimethylated substrate methylation.</title>
+      </titles>
+      <publisher>DaRUS</publisher>
+      <publicationYear>2020</publicationYear>
+      <subjects>
+        <subject>Medicine, Health and Life Sciences</subject>
+        <subject>DNA Methylation</subject>
+        <subject>DNA Methyltransferase</subject>
+        <subject>NGS Bisulfite Sequencing</subject>
+        <subject>Enzyme assay</subject>
+        <subject>DNMT1</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Jeltsch, Albert</contributorName>
+          <givenName>Albert</givenName>
+          <familyName>Jeltsch</familyName>
+          <affiliation>Universit&#228;t Stuttgart</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2020-01-30</date>
+        <date dateType="Updated">2020-01-30</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">Raw DNA sequences extracted from Fastq NGS files; Bisulfite-seq DNA methylation analysis</resourceType>
+      <sizes>
+        <size>1109920</size>
+        <size>3978441</size>
+        <size>545079</size>
+        <size>27695172</size>
+        <size>20606236</size>
+        <size>25883003</size>
+        <size>20469464</size>
+        <size>23009884</size>
+        <size>20776910</size>
+        <size>22811999</size>
+        <size>19989296</size>
+        <size>22252005</size>
+      </sizes>
+      <formats>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>application/pdf</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+        <format>text/plain</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Methylation of long hemimethylated DNA substrates: Methylation of the 349 bp long hemimethylated substrate with DNMT1 was carried out in 1X methylation buffer (100 mM HEPES, 1 mM EDTA, 0.5 mM DTT, 0.1 mg/mL BSA, pH 7.2 with KOH) in the presence of 1 mM AdoMet. For the methylation reactions, mixtures containing different DNMT1 concentrations were prepared and 18 &#181;L aliquots were preincubated for 1 min at 37 &#176;C. DNA methylation was started by addition of 2 &#181;L of the hemimethylated substrate (final concentration 10 ng/&#181;L) followed by vortexing and incubation of the samples at 37 &#176;C for different time intervals. Then aliquots were removed and the methylation reaction stopped by freezing the mixtures in liquid nitrogen. After thawing, DNMT1 was heat inactivated for 10 min at 80 &#176;C and the samples were bisulfite converted using the standard protocol of EZ DNA Methylation-LightningTM Kit (ZYMO RESEARCH). Elution of the bisulfite converted DNA was performed with 10 &#181;L of RNase free water. &#13;
+DNA libraries for Illumina NGS were prepared with a two-step PCR approach. 1 &#181;L of bisulfite-converted DNA was amplified in a first PCR step (PCR1) using primers containing internal barcodes (Exemplary primers 4 and 5 in Suppl. Table 3) and HotStartTaq DNA Polymerase (QIAGEN). Afterwards, the amplification efficiency was investigated by agarose gel electrophoresis. For the second amplification step (PCR2) with primers introducing adapters and indices needed for NGS (Exemplary primers 6 and 7 in Suppl. Table 3), Phusion Polymerase (Thermo) was used together with 1 &#181;L of the 6-fold diluted PCR1 products as a template. Successful amplification was verified by agarose gel electrophoresis. A DNA library of all samples pooled in equimolar amounts was purified with NucleoSpin&#174; Gel and PCR Clean-up kit and used for Illumina sequencing. Sequencing was performed at the Max Planck Genome Centre Cologne.</description>
+      </descriptions>
+      <geoLocations/>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft</funderName>
+          <awardNumber>JE 252/36</awardNumber>
+        </fundingReference>
+      </fundingReferences>
+    </resource>
+  </metadata>
+</record>

@@ -1,7 +1,7 @@
 <record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <header>
     <identifier>doi:10.18419/darus-477</identifier>
-    <datestamp>2019-12-05T01:00:01Z</datestamp>
+    <datestamp>2020-03-21T01:00:00Z</datestamp>
     <setSpec>all</setSpec>
   </header>
   <metadata>
@@ -41,7 +41,7 @@
       </contributors>
       <dates>
         <date dateType="Submitted">2019-10-15</date>
-        <date dateType="Updated">2019-12-04</date>
+        <date dateType="Updated">2020-03-20</date>
       </dates>
       <resourceType resourceTypeGeneral="Dataset">Input files for molecular dynamics simulations with GROMACS.</resourceType>
       <relatedIdentifiers>
@@ -53,8 +53,10 @@
         <size>4480405</size>
         <size>4320475</size>
         <size>33302</size>
+        <size>3518</size>
         <size>32615</size>
         <size>6656</size>
+        <size>785</size>
         <size>6054</size>
         <size>3620</size>
         <size>37235</size>
@@ -68,6 +70,7 @@
         <size>35822</size>
         <size>1825</size>
         <size>6570</size>
+        <size>740</size>
         <size>6026</size>
         <size>523</size>
         <size>465</size>
@@ -78,11 +81,13 @@
         <format>application/octet-stream</format>
         <format>application/octet-stream</format>
         <format>application/vnd.shana.informed.formtemplate</format>
-        <format>application/vnd.shana.informed.formtemplate</format>
+        <format>application/octet-stream</format>
         <format>application/vnd.shana.informed.formtemplate</format>
         <format>application/vnd.shana.informed.formtemplate</format>
         <format>application/octet-stream</format>
         <format>application/vnd.shana.informed.formtemplate</format>
+        <format>application/octet-stream</format>
+        <format>application/vnd.shana.informed.formtemplate</format>
         <format>application/vnd.shana.informed.formtemplate</format>
         <format>application/vnd.shana.informed.formtemplate</format>
         <format>application/octet-stream</format>
@@ -93,11 +98,12 @@
         <format>application/vnd.shana.informed.formtemplate</format>
         <format>application/octet-stream</format>
         <format>application/vnd.shana.informed.formtemplate</format>
+        <format>application/octet-stream</format>
         <format>application/vnd.shana.informed.formtemplate</format>
         <format>application/octet-stream</format>
         <format>application/octet-stream</format>
       </formats>
-      <version>1.0</version>
+      <version>2.0</version>
       <rightsList>
         <rights rightsURI="info:eu-repo/semantics/openAccess"/>
         <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC BY Waiver</rights>
