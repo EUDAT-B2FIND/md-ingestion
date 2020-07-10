@@ -10,7 +10,6 @@ class ISO19139Reader(XMLReader):
     SNIFFER = CSWSniffer
 
     def parse(self, doc):
-        doc.community = self.community
         doc.title = self.find('title')
         doc.description = self.find('abstract')
         doc.keyword = self.find('keyword')

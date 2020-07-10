@@ -8,7 +8,6 @@ class DublinCoreReader(XMLReader):
     SNIFFER = OAISniffer
 
     def parse(self, doc):
-        doc.community = self.community
         doc.title = self.find('title')
         doc.description = self.find('description')
         doc.keyword = self.find('subject')

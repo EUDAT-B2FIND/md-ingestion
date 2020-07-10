@@ -39,10 +39,6 @@ class BaseDoc(object):
     def community(self):
         return self._community
 
-    @community.setter
-    def community(self, value):
-        self._community = format_value(value, one=True)
-
     @property
     def identifier(self):
         return self._doi or self._pid or self._source
@@ -345,7 +341,7 @@ class B2FDoc(GeoDoc):
         super().__init__()
         self.filename = filename
         self.url = url
-        self.community = community
+        self._community = community
         self.mdprefix = mdprefix
         self._oai_set = None
         self._oai_identifier = None
