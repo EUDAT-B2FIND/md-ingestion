@@ -22,7 +22,7 @@ def test_darus_oai_datacite():
     assert 'active' == result['state']
     assert '2020-07-01T11:59:59Z' == result['PublicationTimestamp']
     assert 'Deep enzymology data' in result['fulltext']
-    assert 'Medicine Health and Life Sciences' in [tag['name'] for tag in result['keyword']]
+    assert 'Medicine Health and Life Sciences' in [tag['name'] for tag in result['tags']]
     fields = {}
     for field in result['extras']:
         fields[field['key']] = field['value']

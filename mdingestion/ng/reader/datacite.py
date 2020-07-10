@@ -13,7 +13,7 @@ class DataCiteReader(XMLReader):
         doc.community = self.community
         doc.title = self.find('title')
         doc.description = self.find('description')
-        doc.tags = self.find('subject')
+        doc.keyword = self.find('subject')
         doc.doi = self.doi()
         doc.related_identifier = self.find('alternateIdentifier')
         doc.creator = self.creator()
