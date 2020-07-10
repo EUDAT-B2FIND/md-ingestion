@@ -24,8 +24,8 @@ class Herbadrop(JSONReader):
         doc.resource_type = self.find('metadata."aip.dc.type".eng')
         doc.format = self.find('metadata."aip.dc.format".eng')
         doc.discipline = 'Plant Sciences'
-        doc.temporal_coverage_begin = self.find('metadata."aip.dc.startDate"')
-        doc.temporal_coverage_end = self.find('metadata."aip.dc.endDate"')
+        doc.temporal_coverage_begin_date = self.find('metadata."aip.dc.startDate"')
+        doc.temporal_coverage_end_date = self.find('metadata."aip.dc.endDate"')
 
     def description(self, doc):
         text = []

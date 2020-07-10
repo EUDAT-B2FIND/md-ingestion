@@ -20,8 +20,7 @@ def test_common_attributes():
     assert 'ETH Zurich' in doc.publisher[0]
     assert 'Manfred Stähli' == doc.contributor[0]
     assert '2015' == doc.publication_year[0]
-    assert '2010-11-01T00:00:00Z' == doc.temporal_coverage_begin_date
-    assert '2010-11-01T00:00:00Z' == doc.temporal_coverage_end_date
+    assert '2010-11-01T00:00:00Z' == doc.temporal_coverage
     assert 'Other (Attribution)' in doc.rights
     assert 'Cornelia Brönnimann (WSL)' in doc.contact
     assert 'en' in doc.language
