@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community import SLKSDublinCore
+from mdingestion.ng.community.slks import SLKSDublinCore
 
 from tests.common import TESTDATA_DIR
 

@@ -3,8 +3,8 @@ import pytest
 import os
 import colander
 
-from mdingestion.ng.community import DarusDatacite
-from mdingestion.ng.community import Herbadrop
+from mdingestion.ng.community.darus import DarusDatacite
+from mdingestion.ng.community.herbadrop import Herbadrop
 from mdingestion.ng.writer import B2FWriter
 from mdingestion.ng.core import B2FSchema
 
@@ -45,14 +45,14 @@ def test_b2f_schema():
 def test_b2f_missing_title():
     schema = B2FSchema()
     with pytest.raises(colander.Invalid, match="{'title': 'Required'}"):
-        appstruct = schema.deserialize(
+        schema.deserialize(
             {'description': ['Where is the title?'], 'identifier': 'http://localhost/some.txt'})
 
 
 def test_b2f_invalid_date():
     schema = B2FSchema()
     with pytest.raises(colander.Invalid, match="{'publication_year.0': 'Invalid date'}"):
-        appstruct = schema.deserialize(
+        schema.deserialize(
             {'title': ['What year?'], 'identifier': 'http://localhost/some.txt', 'publication_year': ['yesterday']})
 
 
@@ -66,7 +66,7 @@ def test_b2f_doc_validation_darus():
     schema = B2FSchema()
     appstruct = schema.deserialize(cstruct)
     assert 'Deep enzymology data' in appstruct['title'][0]
-    assert 'https://doi.org/10.18419/darus-629' == appstruct['source']
+    assert 'https://doi.org/10.18419/darus-629' == appstruct['doi']
     assert 2020 == appstruct['publication_year'][0].year
 
 

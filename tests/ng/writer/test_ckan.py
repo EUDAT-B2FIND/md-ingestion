@@ -2,8 +2,8 @@ import os
 
 import pytest
 
-from mdingestion.ng.community import DarusDatacite
-from mdingestion.ng.community import Herbadrop
+from mdingestion.ng.community.darus import DarusDatacite
+from mdingestion.ng.community.herbadrop import Herbadrop
 from mdingestion.ng.writer import CKANWriter
 
 from tests.common import TESTDATA_DIR
@@ -26,7 +26,7 @@ def test_darus_oai_datacite():
     fields = {}
     for field in result['extras']:
         fields[field['key']] = field['value']
-    assert 'false' == fields['OpenAccess']
+    assert 'true' == fields['OpenAccess']
     # assert '4c034878509472f5514acb44dca9ece16e49b75af515e348610452d941e7a0cd' == result['version']
 
 

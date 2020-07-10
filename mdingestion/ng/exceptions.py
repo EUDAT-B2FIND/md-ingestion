@@ -11,6 +11,10 @@ class CommunityNotFound(B2FError):
     message = "Community not found in harvest list"
 
 
+class CommunityNotSupported(B2FError):
+    message = "Community not supported"
+
+
 class HarvesterError(B2FError):
     message = "Harvester raised an error"
 

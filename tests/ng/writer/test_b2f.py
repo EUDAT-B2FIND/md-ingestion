@@ -2,8 +2,8 @@ import os
 
 import pytest
 
-from mdingestion.ng.community import DarusDatacite
-from mdingestion.ng.community import Herbadrop
+from mdingestion.ng.community.darus import DarusDatacite
+from mdingestion.ng.community.herbadrop import Herbadrop
 from mdingestion.ng.writer import B2FWriter
 
 from tests.common import TESTDATA_DIR
@@ -16,4 +16,4 @@ def test_b2f_darus_oai_datacite():
     writer = B2FWriter()
     result = writer.json(doc)
     assert 'Deep enzymology data' in result['title'][0]
-    assert 'https://doi.org/10.18419/darus-629' in result['source']
+    assert 'https://doi.org/10.18419/darus-629' in result['doi']

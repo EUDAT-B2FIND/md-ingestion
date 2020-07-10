@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community import ESSDatacite
+from mdingestion.ng.community.ess import ESSDatacite
 
 from tests.common import TESTDATA_DIR
 
@@ -11,6 +11,7 @@ def test_datacite():
     doc = reader.read(xmlfile, url='https://scicat.esss.se/scicat/oai', community='ess', mdprefix='oai_datacite')
     assert 'Sample Data from V20' in doc.title[0]
     assert 'https://github.com/ess-dmsc/ess_file_formats/wiki/HDF5' in doc.description
+    assert 'Particles, Nuclei and Fields' == doc.discipline
     assert 'https://doi.org/10.17199/BRIGHTNESS/V200111' == doc.doi
     assert 'https://scicat.esss.se/scicat/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == doc.metadata_access  # noqa
 

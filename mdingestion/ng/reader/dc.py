@@ -1,33 +1,34 @@
 import shapely
 
-from .base import XMLReader, OAISniffer
+from .base import XMLReader
+from ..sniffer import OAISniffer
 
 
 class DublinCoreReader(XMLReader):
     SNIFFER = OAISniffer
 
     def parse(self, doc):
-        doc.title = self.parser.find('title')
-        doc.description = self.parser.find('description')
-        doc.tags = self.parser.find('subject')
+        doc.title = self.find('title')
+        doc.description = self.find('description')
+        doc.tags = self.find('subject')
         # doc.doi = f"https://doi.org/{doc.oai_identifier[0]}"
-        # doc.source = self.parser.find('identifier')
-        doc.related_identifier = self.parser.find('relation')
-        doc.creator = self.parser.find('creator')
-        doc.publisher = self.parser.find('publisher')
-        doc.contributor = self.parser.find('contributor')
-        doc.publication_year = self.parser.find('date')
-        doc.rights = self.parser.find('rights')
+        # doc.source = self.find('identifier')
+        doc.related_identifier = self.find('relation')
+        doc.creator = self.find('creator')
+        doc.publisher = self.find('publisher')
+        doc.contributor = self.find('contributor')
+        doc.publication_year = self.find('date')
+        doc.rights = self.find('rights')
         doc.contact = doc.publisher
-        doc.open_access = ''
-        doc.language = self.parser.find('language')
-        doc.resource_type = self.parser.find('type')
-        doc.format = self.parser.find('format')
+        doc.open_access = False
+        doc.language = self.find('language')
+        doc.resource_type = self.find('type')
+        doc.format = self.find('format')
         doc.temporal_coverage_begin = ''
         doc.temporal_coverage_end = ''
-        doc.geometry = self.geometry(doc)
+        doc.geometry = self.geometry()
 
-    def geometry(self, doc):
+    def geometry(self):
         # <dcterms:spatial xsi:type="dcterms:POINT">9.811246,56.302585</dcterms:spatial>
         point = self.parser.doc.find('spatial', attrs={'xsi:type': 'dcterms:POINT'})
         if point:

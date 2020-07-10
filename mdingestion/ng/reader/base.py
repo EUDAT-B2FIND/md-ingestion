@@ -1,6 +1,15 @@
+from enum import Enum
+
 from ..core import B2FDoc
 from ..parser import XMLParser
 from ..parser import JSONParser
+
+
+class SchemaType(Enum):
+    DublinCore = 0
+    DataCite = 1
+    ISO19139 = 2
+    JSON = 100
 
 
 class Reader(object):
@@ -30,6 +39,22 @@ class Reader(object):
     def update(self, doc):
         pass
 
+    def find(self, name=None, **kwargs):
+        return self.parser.find(name=name, **kwargs)
+
+    def find_ok(self, name=None, **kwargs):
+        if self.parser.find(name=name, **kwargs):
+            return True
+        return False
+
+    def find_doi(self, name=None, **kwargs):
+        urls = [url for url in self.parser.find(name, **kwargs) if 'doi.org/' in url]
+        return urls
+
+    def find_pid(self, name=None, **kwargs):
+        urls = [url for url in self.parser.find(name, **kwargs) if 'hdl.handle.net/' in url]
+        return urls
+
 
 class XMLReader(Reader):
     DOC_PARSER = XMLParser
@@ -45,38 +70,3 @@ class JSONReader(Reader):
     @classmethod
     def extension(cls):
         return '.json'
-
-
-class CatalogSniffer(object):
-    def __init__(self, parser):
-        self.parser = parser
-
-    def update(self, doc):
-        raise NotImplementedError
-
-
-class OAISniffer(CatalogSniffer):
-    def update(self, doc):
-        doc.oai_set = self.parser.find('setSpec', limit=1)
-        doc.oai_identifier = self.parser.find('identifier', limit=1)
-        doc.metadata_access = self.metadata_access(doc)
-
-    def metadata_access(self, doc):
-        if doc.oai_identifier:
-            mdaccess = f"{doc.url}?verb=GetRecord&metadataPrefix={doc.mdprefix}&identifier={doc.oai_identifier}"
-        else:
-            mdaccess = None
-        return mdaccess
-
-
-class CSWSniffer(CatalogSniffer):
-    def update(self, doc):
-        doc.file_identifier = self.parser.find('fileIdentifier', limit=1)
-        doc.metadata_access = self.metadata_access(doc)
-
-    def metadata_access(self, doc):
-        if doc.file_identifier:
-            mdaccess = f"{doc.url}?service=CSW&version=2.0.2&request=GetRecordById&Id={doc.file_identifier}"
-        else:
-            mdaccess = None
-        return mdaccess
