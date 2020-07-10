@@ -7,5 +7,6 @@ class DDIReader(XMLReader):
     SNIFFER = OAISniffer
 
     def parse(self, doc):
+        doc.community = self.community
         doc.title = self.find('titl')
         doc.source = self.find('sources')

@@ -10,9 +10,10 @@ class ISO19139Reader(XMLReader):
     SNIFFER = CSWSniffer
 
     def parse(self, doc):
+        doc.community = self.community
         doc.title = self.find('title')
         doc.description = self.find('abstract')
-        doc.tags = self.find('keyword')
+        doc.keyword = self.find('keyword')
         doc.creator = self.find('individualName')
         # TODO: check whether <publisher> is generic in <contact>
         doc.publisher = self.find('contact.organisationName')
