@@ -13,9 +13,10 @@ from tests.common import TESTDATA_DIR
 
 def test_b2f_schema():
     cstruct = {
+        'community': 'wonderland crew',
         'identifier': 'https://doi.org/10.18419/does-not-exist',
         'title': ['A Title', 'A subtitle'],
-        'tags': ['testing', 'schema'],
+        'keyword': ['testing', 'schema'],
         'description': ['Just at test'],
         'doi': 'https://doi.org/10.18419/does-not-exist',
         'source': 'http://localhost/b2f/alice_in_wonderland.txt',

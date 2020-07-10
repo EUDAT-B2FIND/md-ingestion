@@ -7,7 +7,7 @@ class B2FSchema(colander.MappingSchema):
         name='community',
         title='Community',
         description='The scientific community, Research Infrastructure, Project or Data provider from which B2FIND harvests the metadata.',  # noqa
-        validator=colander.url,
+        validator=colander.Length(min=1),
     )
     identifier = colander.SchemaNode(
         colander.String(),
@@ -188,8 +188,7 @@ class B2FSchema(colander.MappingSchema):
         missing=colander.drop,
     )
     version = colander.SchemaNode(
-        colander.Sequence(accept_scalar=True),
-        colander.SchemaNode(colander.String(), missing=colander.drop),
+        colander.String(),
         name='version',
         title='Version',
         description='Version information about the resource.',

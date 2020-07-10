@@ -20,6 +20,7 @@ class Reader(object):
         self.parser = None
 
     def read(self, filename, url=None, community=None, mdprefix=None):
+        self.community = community
         self.parser = self.DOC_PARSER(filename)
         doc = B2FDoc(filename, url, community, mdprefix)
         self._parse(doc)
