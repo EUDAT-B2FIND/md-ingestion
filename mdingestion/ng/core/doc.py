@@ -10,9 +10,10 @@ from ..format import format_value
 
 class BaseDoc(object):
     def __init__(self):
+        self._community = None
         self._title = None
         self._description = None
-        self._tags = None
+        self._keyword = None
         self._doi = None
         self._pid = None
         self._source = None
@@ -21,14 +22,26 @@ class BaseDoc(object):
         self._creator = None
         self._publisher = None
         self._contributor = None
+        self._instrument = None
         self._publication_year = None
+        self._funding_reference = None
         self._rights = None
         self._open_access = None
         self._contact = None
         self._language = None
         self._resource_type = None
         self._format = None
+        self._size = None
+        self._version = None
         self._discipline = None
+
+    @property
+    def community(self):
+        return self._community
+
+    @community.setter
+    def community(self, value):
+        self._community = format_value(value, one=True)
 
     @property
     def identifier(self):
@@ -51,12 +64,12 @@ class BaseDoc(object):
         self._description = format_value(value)
 
     @property
-    def tags(self):
-        return self._tags
+    def keyword(self):
+        return self._keyword
 
-    @tags.setter
-    def tags(self, value):
-        self._tags = format_value(value, type='string_words')
+    @keyword.setter
+    def keyword(self, value):
+        self._keyword = format_value(value, type='string_words')
 
     @property
     def doi(self):
@@ -123,12 +136,28 @@ class BaseDoc(object):
         self._contributor = format_value(value)
 
     @property
+    def instrument(self):
+        return self._instrument
+
+    @instrument.setter
+    def instrument(self, value):
+        self._instrument = format_value(value)
+
+    @property
     def publication_year(self):
         return self._publication_year
 
     @publication_year.setter
     def publication_year(self, value):
         self._publication_year = format_value(value, type='date_year')
+
+    @property
+    def funding_reference(self):
+        return self._funding_reference
+
+    @funding_reference.setter
+    def funding_reference(self, value):
+        self._funding_reference = format_value(value)
 
     @property
     def rights(self):
@@ -177,6 +206,22 @@ class BaseDoc(object):
     @format.setter
     def format(self, value):
         self._format = format_value(value)
+
+    @property
+    def size(self):
+        return self._size
+
+    @size.setter
+    def size(self, value):
+        self._size = format_value(value)
+
+    @property
+    def version(self):
+        return self._version
+
+    @version.setter
+    def version(self, value):
+        self._version = format_value(value)
 
     @property
     def discipline(self):
