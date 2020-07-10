@@ -44,6 +44,8 @@ def format(text, type=None):
         formatted = format_date_year(text)
     elif type == 'string_words':
         formatted = format_string_words(text)
+    elif type == 'string_word':
+        formatted = format_string_word(text)
     elif type == 'url':
         formatted = format_url(text)
     else:
@@ -65,6 +67,10 @@ def format_string_words(text):
     else:
         value = ' '.join(re.findall(r'\w+', text.strip()))
     return value
+
+
+def format_string_word(text):
+    return format_string_words(text).split(' ')[0]
 
 
 def format_float(text):

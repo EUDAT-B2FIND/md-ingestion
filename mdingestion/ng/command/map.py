@@ -1,5 +1,7 @@
 from tqdm import tqdm
 import colander
+import pathlib
+import json
 
 from .base import Command
 from ..walker import Walker
@@ -11,11 +13,13 @@ import logging
 
 
 class Map(Command):
+    """TODO: remove validation code from map"""
     def __init__(self, **args):
         super().__init__(**args)
         self.walker = Walker(self.outdir)
         self.reader = reader(self.community, self.mdprefix)
         self.writer = CKANWriter()
+        # TODO: write also pandas csv file for statistical evaluation
         self.summary = {
             'total': 0,
             'valid': 0,
@@ -26,16 +30,23 @@ class Map(Command):
             },
             'optional': {},
             'invalid': {},
+            'values': {},
         }
 
-    def run(self, force=False):
-        for filename in tqdm(self.walk(), ascii=True, desc="Mapping", unit=' records'):
+    def run(self, force=False, limit=None):
+        limit = limit or -1
+        count = 0
+        for filename in tqdm(self.walk(), ascii=True, desc="Mapping", unit=' records', total=limit):
+            if limit > 0 and count >= limit:
+                break
             doc = self.map(filename)
             is_valid = self.validate(doc)
             if force or is_valid:
                 self.writer.write(doc, filename)
                 self.summary['written'] += 1
+            count += 1
         self.print_summary()
+        self.write_summary()
 
     def walk(self):
         for filename in self.walker.walk_community(
@@ -70,18 +81,34 @@ class Map(Command):
         self._update_summary(jsondoc)
         return valid
 
-    def _update_summary(self, fields, valid=True):
+    def _update_summary(self, fields, valid=True, max_value_length=25, max_values=100):
         if valid:
             for key, value in fields.items():
                 if not value:
                     continue
+                if key not in self.summary['values']:
+                    self.summary['values'][key] = {}
+                # collect not more than "max_values" different values.
+                if len(self.summary['values'][key]) < max_values:
+                    val_key = str(value)[:max_value_length]
+                # otherwiese just count the remaining values
+                else:
+                    val_key = '[..]'
+                # count values
+                if val_key not in self.summary['values'][key]:
+                    self.summary['values'][key][val_key] = 1
+                else:
+                    self.summary['values'][key][val_key] += 1
+                # count required fields
                 if key in self.summary['required']:
                     self.summary['required'][key] += 1
+                # count optional fields
                 elif key not in self.summary['optional']:
                     self.summary['optional'][key] = 1
                 else:
                     self.summary['optional'][key] += 1
         else:
+            # count invalid fields
             for key, value in fields.items():
                 if key not in self.summary['invalid']:
                     self.summary['invalid'][key] = 1
@@ -101,6 +128,13 @@ class Map(Command):
         for key, value in self.summary['optional'].items():
             if value < self.summary['total']:
                 print(f"\t{key}={value}")
-        print("\nInvalid Fields:")
-        for key, value in self.summary['invalid'].items():
-            print(f"\t{key}={value}")
+        if self.summary['invalid']:
+            print("\nInvalid Fields:")
+            for key, value in self.summary['invalid'].items():
+                print(f"\t{key}={value}")
+
+    def write_summary(self):
+        out = pathlib.Path('summary.json')
+        # out.parent.mkdir(parents=True, exist_ok=True)
+        with out.open(mode='w') as outfile:
+            json.dump(self.summary, outfile, indent=4, sort_keys=True, ensure_ascii=False)

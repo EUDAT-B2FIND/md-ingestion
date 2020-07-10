@@ -15,3 +15,6 @@ class DocParser(object):
 
     def parse_doc(self):
         raise NotImplementedError
+
+    def find(self, name=None, **kwargs):
+        raise NotImplementedError

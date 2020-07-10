@@ -26,4 +26,4 @@ def test_get_source():
 
 def test_get_unknown_source():
     with pytest.raises(CommunityNotFound):
-        source = config.get_source(HARVEST_LIST, '_unknown_')
+        config.get_source(HARVEST_LIST, '_unknown_')

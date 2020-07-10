@@ -1,19 +1,19 @@
 from ..reader import DublinCoreReader
+from ..sniffer import OAISniffer
 
 
 class EGIDatahubDublinCore(DublinCoreReader):
+    NAME = 'egidatahub-oai_dc'
+    SNIFFER = OAISniffer
+
     def update(self, doc):
         doc.publisher = ['EGI Datahub']
-        doc.pid = self.pid(doc)
+        doc.pid = self.find_pid('identifier')
         doc.source = self.source(doc)
         doc.open_access = self.open_access(doc)
 
-    def pid(self, doc):
-        urls = [id for id in self.parser.find('identifier') if id.startswith('http://hdl.handle.net')]
-        return urls
-
     def source(self, doc):
-        urls = [url for url in self.parser.find('metadata.identifier') if 'handle' not in url]
+        urls = [url for url in self.find('metadata.identifier') if 'handle' not in url]
         return urls
 
     def open_access(self, doc):

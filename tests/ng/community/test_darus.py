@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community import DarusDatacite
+from mdingestion.ng.community.darus import DarusDatacite
 
 from tests.common import TESTDATA_DIR
 
@@ -16,3 +16,4 @@ def test_datacite():
     assert 'Medicine' == doc.discipline
     assert 'application/pdf' in doc.format
     assert len(doc.format) == 2
+    assert doc.open_access is True

@@ -1,13 +1,12 @@
 from ..reader import DataCiteReader
+from ..sniffer import OAISniffer
 from ..format import format_value
 
 
 class DarusDatacite(DataCiteReader):
-    def update(self, doc):
-        doc.discipline = format_value(self.parser.find('subject'), type='string_words', one=True).split(' ')[0]
-        doc.open_access = self.open_access(doc)
+    NAME = 'darus-oai_datacite'
+    SNIFFER = OAISniffer
 
-    def open_access(self, doc):
-        if self.parser.find('rights', rightsURI='info:eu-repo/semantics/openAccess'):
-            return True
-        return False
+    def update(self, doc):
+        doc.discipline = format_value(self.find('subject'), type='string_word')
+        doc.open_access = self.find_ok('rights', rightsURI='info:eu-repo/semantics/openAccess')

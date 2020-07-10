@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community import RadarDublinCore
+from mdingestion.ng.community.radar import RadarDublinCore
 
 from tests.common import TESTDATA_DIR
 
