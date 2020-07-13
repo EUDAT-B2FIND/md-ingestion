@@ -27,3 +27,6 @@ tests/testdata/*/*/json
 
 # docs
 docs/_build
+
+# summary
+summary.json

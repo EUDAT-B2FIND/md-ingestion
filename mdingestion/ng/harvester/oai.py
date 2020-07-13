@@ -26,10 +26,11 @@ class OAIHarvester(Harvester):
         """
         TODO: refactor this code ... how to handle oai sets
         """
-        oai_set = None
-        if self.mdsubset in self.oai_sets():
-            oai_set = self.mdsubset
+        if self.mdsubset not in self.oai_sets():
+            oai_set = None
             logging.warning(f"OAI does not support set {self.mdsubset}.")
+        else:
+            oai_set = self.mdsubset
         return oai_set
 
     def oai_sets(self):

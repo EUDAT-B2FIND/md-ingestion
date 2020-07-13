@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community import EnvidatDatacite, EnvidatISO19139
+from mdingestion.ng.community.envidat import EnvidatDatacite, EnvidatISO19139
 
 from tests.common import TESTDATA_DIR
 

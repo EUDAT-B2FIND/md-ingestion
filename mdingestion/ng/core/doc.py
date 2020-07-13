@@ -10,9 +10,10 @@ from ..format import format_value
 
 class BaseDoc(object):
     def __init__(self):
+        self._community = None
         self._title = None
         self._description = None
-        self._tags = None
+        self._keyword = None
         self._doi = None
         self._pid = None
         self._source = None
@@ -21,14 +22,22 @@ class BaseDoc(object):
         self._creator = None
         self._publisher = None
         self._contributor = None
+        self._instrument = None
         self._publication_year = None
+        self._funding_reference = None
         self._rights = None
         self._open_access = None
         self._contact = None
         self._language = None
         self._resource_type = None
         self._format = None
+        self._size = None
+        self._version = None
         self._discipline = None
+
+    @property
+    def community(self):
+        return self._community
 
     @property
     def identifier(self):
@@ -51,12 +60,12 @@ class BaseDoc(object):
         self._description = format_value(value)
 
     @property
-    def tags(self):
-        return self._tags
+    def keyword(self):
+        return self._keyword
 
-    @tags.setter
-    def tags(self, value):
-        self._tags = format_value(value, type='string_words')
+    @keyword.setter
+    def keyword(self, value):
+        self._keyword = format_value(value, type='string_words')
 
     @property
     def doi(self):
@@ -123,12 +132,28 @@ class BaseDoc(object):
         self._contributor = format_value(value)
 
     @property
+    def instrument(self):
+        return self._instrument
+
+    @instrument.setter
+    def instrument(self, value):
+        self._instrument = format_value(value)
+
+    @property
     def publication_year(self):
         return self._publication_year
 
     @publication_year.setter
     def publication_year(self, value):
         self._publication_year = format_value(value, type='date_year')
+
+    @property
+    def funding_reference(self):
+        return self._funding_reference
+
+    @funding_reference.setter
+    def funding_reference(self, value):
+        self._funding_reference = format_value(value)
 
     @property
     def rights(self):
@@ -179,6 +204,22 @@ class BaseDoc(object):
         self._format = format_value(value)
 
     @property
+    def size(self):
+        return self._size
+
+    @size.setter
+    def size(self, value):
+        self._size = format_value(value)
+
+    @property
+    def version(self):
+        return self._version
+
+    @version.setter
+    def version(self, value):
+        self._version = format_value(value)
+
+    @property
     def discipline(self):
         return self._discipline or 'Various'
 
@@ -190,10 +231,9 @@ class BaseDoc(object):
 class GeoDoc(BaseDoc):
     def __init__(self):
         super().__init__()
-        self._temporal_coverage_begin = None
-        self._temporal_coverage_end = None
         self._geometry = None
-        self._start_date = None
+        self._temporal_coverage = None
+        self._begin_date = None
         self._end_date = None
 
     @property
@@ -229,46 +269,36 @@ class GeoDoc(BaseDoc):
 
     @property
     def temporal_coverage(self):
-        return self.temporal_coverage_begin_date
+        if not self._temporal_coverage:
+            return self.temporal_coverage_begin_date
+        return self._temporal_coverage
 
-    @property
-    def temporal_coverage_begin(self):
-        return self._temporal_coverage_begin
-
-    @temporal_coverage_begin.setter
-    def temporal_coverage_begin(self, value):
-        self._temporal_coverage_begin = format_value(value, type='date', one=True)
-
-    @property
-    def temporal_coverage_end(self):
-        return self._temporal_coverage_end
-
-    @temporal_coverage_end.setter
-    def temporal_coverage_end(self, value):
-        self._temporal_coverage_end = format_value(value, type='date', one=True)
+    @temporal_coverage.setter
+    def temporal_coverage(self, value):
+        self._temporal_coverage = format_value(value, type='datetime', one=True)
+        if not self._temporal_coverage:
+            self._temporal_coverage = format_value(value, one=True)
 
     @property
     def temporal_coverage_begin_date(self):
-        try:
-            datestr = self.start_date.isoformat(timespec='seconds')
-            datestr = f"{datestr}Z"
-        except Exception:
-            datestr = ''
-        return datestr
+        return self._begin_date
+
+    @temporal_coverage_begin_date.setter
+    def temporal_coverage_begin_date(self, value):
+        self._begin_date = format_value(value, type='datetime', one=True)
 
     @property
     def temporal_coverage_end_date(self):
-        try:
-            datestr = self.end_date.isoformat(timespec='seconds')
-            datestr = f"{datestr}Z"
-        except Exception:
-            datestr = ''
-        return datestr
+        return self._end_date
+
+    @temporal_coverage_end_date.setter
+    def temporal_coverage_end_date(self, value):
+        self._end_date = format_value(value, type='datetime', one=True)
 
     @property
     def temp_coverage_begin(self):
         try:
-            tstamp = int(self.start_date.timestamp())
+            tstamp = int(date_parser.parse(self._begin_date).timestamp())
         except Exception:
             tstamp = None
         return tstamp
@@ -276,22 +306,10 @@ class GeoDoc(BaseDoc):
     @property
     def temp_coverage_end(self):
         try:
-            tstamp = int(self.end_date.timestamp())
+            tstamp = int(date_parser.parse(self.end_date).timestamp())
         except Exception:
             tstamp = None
         return tstamp
-
-    @property
-    def start_date(self):
-        if not self._start_date:
-            self._start_date = date_parser.parse(self.temporal_coverage_begin)
-        return self._start_date
-
-    @property
-    def end_date(self):
-        if not self._end_date:
-            self._end_date = date_parser.parse(self.temporal_coverage_end)
-        return self._end_date
 
 
 class B2FDoc(GeoDoc):
@@ -300,7 +318,7 @@ class B2FDoc(GeoDoc):
         super().__init__()
         self.filename = filename
         self.url = url
-        self.community = community
+        self._community = community
         self.mdprefix = mdprefix
         self._oai_set = None
         self._oai_identifier = None

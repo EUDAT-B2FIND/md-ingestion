@@ -1,4 +1,5 @@
-from .base import XMLReader, OAISniffer
+from .base import XMLReader
+from ..sniffer import OAISniffer
 
 
 class DDIReader(XMLReader):
@@ -6,5 +7,5 @@ class DDIReader(XMLReader):
     SNIFFER = OAISniffer
 
     def parse(self, doc):
-        doc.title = self.parser.find('titl')
-        doc.source = self.parser.find('sources')
+        doc.title = self.find('titl')
+        doc.source = self.find('sources')

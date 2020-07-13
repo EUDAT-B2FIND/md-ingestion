@@ -8,6 +8,21 @@ def test_format_string():
     assert '123.4' == format.format_string(123.4)
 
 
+def test_format_string_words():
+    assert 'one two three' == format.format_string_words('one. two , three')
+    assert '' == format.format_string_words(None)
+    assert 'what' == format.format_string_words('.  what ;-')
+
+
+def test_format_string_word():
+    assert 'one' == format.format_string_word('one;  two , three')
+    assert '' == format.format_string_word(None)
+
+
+def test_format_datetime():
+    assert '2020-05-19T00:00:00Z' == format.format_datetime('2020-05-19')
+
+
 def test_format_date():
     assert '2020-05-19' == format.format_date('2020-05-19')
 

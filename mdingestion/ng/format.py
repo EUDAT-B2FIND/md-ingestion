@@ -38,12 +38,16 @@ def format(text, type=None):
         formatted = format_float(text)
     elif type == 'bool' or type == 'boolean':
         formatted = format_bool(text)
+    elif type == 'datetime':
+        formatted = format_datetime(text)
     elif type == 'date':
         formatted = format_date(text)
     elif type == 'date_year':
         formatted = format_date_year(text)
     elif type == 'string_words':
         formatted = format_string_words(text)
+    elif type == 'string_word':
+        formatted = format_string_word(text)
     elif type == 'url':
         formatted = format_url(text)
     else:
@@ -67,6 +71,10 @@ def format_string_words(text):
     return value
 
 
+def format_string_word(text):
+    return format_string_words(text).split(' ')[0]
+
+
 def format_float(text):
     try:
         val = float(text)
@@ -85,10 +93,20 @@ def format_bool(text):
     return val
 
 
-def format_date(text):
+def format_datetime(text):
     try:
         parsed = date_parser.parse(text)
-        val = parsed.isoformat().split('T')[0]
+        val = parsed.isoformat(timespec='seconds')
+        val = f"{val}Z"
+    except Exception:
+        logging.warning(f"could not parse datetime: {text}")
+        val = ''
+    return val
+
+
+def format_date(text):
+    try:
+        val = format_datetime(text).split('T')[0]
     except Exception:
         logging.warning(f"could not parse date: {text}")
         val = ''

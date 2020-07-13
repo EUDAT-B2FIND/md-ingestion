@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community import EGIDatahubDublinCore
+from mdingestion.ng.community.egidatahub import EGIDatahubDublinCore
 
 from tests.common import TESTDATA_DIR
 

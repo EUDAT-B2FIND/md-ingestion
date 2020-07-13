@@ -1,6 +1,7 @@
 import shapely
 
-from .base import XMLReader, OAISniffer
+from .base import XMLReader
+from ..sniffer import OAISniffer
 
 from ..format import format_value
 
@@ -9,27 +10,25 @@ class DataCiteReader(XMLReader):
     SNIFFER = OAISniffer
 
     def parse(self, doc):
-        doc.title = self.parser.find('title')
-        doc.description = self.parser.find('description')
-        doc.tags = self.parser.find('subject')
-        doc.doi = self.doi(doc)
-        doc.source = doc.doi
-        doc.related_identifier = self.parser.find('alternateIdentifier')
-        doc.creator = self.creator(doc)
-        doc.publisher = self.parser.find('publisher')
-        doc.contributor = self.parser.find('contributorName')
-        doc.publication_year = self.parser.find('publicationYear')
-        doc.rights = self.parser.find('rights')
+        doc.title = self.find('title')
+        doc.description = self.find('description')
+        doc.keyword = self.find('subject')
+        doc.doi = self.doi()
+        doc.related_identifier = self.find('alternateIdentifier')
+        doc.creator = self.creator()
+        doc.publisher = self.find('publisher')
+        doc.contributor = self.find('contributorName')
+        doc.publication_year = self.find('publicationYear')
+        doc.rights = self.find('rights')
         doc.contact = doc.creator
-        doc.open_access = ''
-        doc.language = self.parser.find('language')
-        doc.resource_type = self.parser.find('resourceType')
-        doc.format = self.parser.find('format')
-        doc.temporal_coverage_begin = self.parser.find('date')
-        doc.temporal_coverage_end = doc.temporal_coverage_begin
-        doc.geometry = self.geometry(doc)
+        doc.open_access = False
+        doc.language = self.find('language')
+        doc.resource_type = self.find('resourceType')
+        doc.format = self.find('format')
+        doc.temporal_coverage = self.find('date')
+        doc.geometry = self.geometry()
 
-    def creator(self, doc):
+    def creator(self):
         creators = []
         for creator in self.parser.doc.find_all('creator'):
             name = creator.creatorName.text
@@ -38,14 +37,14 @@ class DataCiteReader(XMLReader):
             creators.append(name)
         return creators
 
-    def doi(self, doc):
-        id = self.parser.find('identifier', identifierType="DOI")
+    def doi(self):
+        id = self.find('identifier', identifierType="DOI")
         if not id:
-            id = self.parser.find('identifier', identifierType="doi")
+            id = self.find('identifier', identifierType="doi")
         url = f"https://doi.org/{format_value(id, one=True)}"
         return url
 
-    def geometry(self, doc):
+    def geometry(self):
         if self.parser.doc.find('geoLocationPoint'):
             point = self.parser.doc.find('geoLocationPoint').text.split()
             geometry = shapely.geometry.Point(float(point[0]), float(point[1]))
