@@ -13,9 +13,10 @@ from tests.common import TESTDATA_DIR
 
 def test_b2f_schema():
     cstruct = {
+        'community': 'wonderland crew',
         'identifier': 'https://doi.org/10.18419/does-not-exist',
         'title': ['A Title', 'A subtitle'],
-        'tags': ['testing', 'schema'],
+        'keyword': ['testing', 'schema'],
         'description': ['Just at test'],
         'doi': 'https://doi.org/10.18419/does-not-exist',
         'source': 'http://localhost/b2f/alice_in_wonderland.txt',
@@ -39,21 +40,30 @@ def test_b2f_schema():
     assert 'http://localhost/b2f/alice_in_wonderland.txt' == appstruct['source']
     assert 2020 == appstruct['publication_year'][0].year
     assert appstruct['open_access'] is True
-    assert 2020 == appstruct['temporal_coverage'].year
+    assert '2020-06-12T12:00:00Z' == appstruct['temporal_coverage']
 
 
 def test_b2f_missing_title():
     schema = B2FSchema()
     with pytest.raises(colander.Invalid, match="{'title': 'Required'}"):
         schema.deserialize(
-            {'description': ['Where is the title?'], 'identifier': 'http://localhost/some.txt'})
+            {
+                'community': 'wonderland',
+                'description': ['Where is the title?'],
+                'identifier': 'http://localhost/some.txt'
+            })
 
 
 def test_b2f_invalid_date():
     schema = B2FSchema()
     with pytest.raises(colander.Invalid, match="{'publication_year.0': 'Invalid date'}"):
         schema.deserialize(
-            {'title': ['What year?'], 'identifier': 'http://localhost/some.txt', 'publication_year': ['yesterday']})
+            {
+                'community': 'deep space 9',
+                'title': ['What year?'],
+                'identifier': 'http://localhost/some.txt',
+                'publication_year': ['yesterday']
+            })
 
 
 def test_b2f_doc_validation_darus():
@@ -73,7 +83,7 @@ def test_b2f_doc_validation_darus():
 def test_b2f_doc_validation_herbadrop():
     jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')  # noqa
     reader = Herbadrop()
-    doc = reader.read(jsonfile)
+    doc = reader.read(jsonfile, community='herbadrop')
     writer = B2FWriter()
     cstruct = writer.json(doc)
     schema = B2FSchema()
@@ -86,6 +96,7 @@ def test_b2f_doc_validation_herbadrop():
 
 def test_b2f_validate_none():
     cstruct = {
+        'community': 'wonderland',
         'title': ['A Title', 'A subtitle'],
         'identifier': 'http://localhost/b2f/alice_in_wonderland.txt',
         'source': 'http://localhost/b2f/alice_in_wonderland.txt',
@@ -101,6 +112,7 @@ def test_b2f_validate_none():
 
 def test_b2f_validate_empty():
     cstruct = {
+        'community': 'wonderland',
         'title': ['A Title', 'A subtitle'],
         'identifier': 'http://localhost/b2f/alice_in_wonderland.txt',
         'source': 'http://localhost/b2f/alice_in_wonderland.txt',

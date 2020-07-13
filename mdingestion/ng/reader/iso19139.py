@@ -12,7 +12,7 @@ class ISO19139Reader(XMLReader):
     def parse(self, doc):
         doc.title = self.find('title')
         doc.description = self.find('abstract')
-        doc.tags = self.find('keyword')
+        doc.keyword = self.find('keyword')
         doc.creator = self.find('individualName')
         # TODO: check whether <publisher> is generic in <contact>
         doc.publisher = self.find('contact.organisationName')

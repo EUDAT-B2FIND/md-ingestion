@@ -13,7 +13,7 @@ def test_common_attributes():
     doc = reader.read(point_file)
     assert '130511-10 Thors' in doc.title[0]
     assert 'This record describes ancient sites and monuments' in doc.description[0]
-    assert 'Rundhøj' in doc.tags
+    assert 'Rundhøj' in doc.keyword
     # assert 'http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/34277/' in doc.source
     # assert '???' in doc.related_identifier
     # assert '??? Museum' in doc.metadata_access
