@@ -8,10 +8,9 @@ class DublinCoreReader(XMLReader):
     SNIFFER = OAISniffer
 
     def parse(self, doc):
-        doc.community = self.community
         doc.title = self.find('title')
         doc.description = self.find('description')
-        doc.tags = self.find('subject')
+        doc.keyword = self.find('subject')
         # doc.doi = f"https://doi.org/{doc.oai_identifier[0]}"
         # doc.source = self.find('identifier')
         doc.related_identifier = self.find('relation')

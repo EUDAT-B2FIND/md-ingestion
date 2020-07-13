@@ -6,7 +6,6 @@ class Herbadrop(JSONReader):
     NAME = 'herbadrop-hjson'
 
     def update(self, doc):
-        doc.community = self.community
         doc.title = self.find('metadata."aip.dc.title".lat')
         doc.description = self.description(doc)
         doc.keyword = self.find('metadata."aip.dc.subject".lat')
@@ -25,8 +24,8 @@ class Herbadrop(JSONReader):
         doc.resource_type = self.find('metadata."aip.dc.type".eng')
         doc.format = self.find('metadata."aip.dc.format".eng')
         doc.discipline = 'Plant Sciences'
-        doc.temporal_coverage_begin = self.find('metadata."aip.dc.startDate"')
-        doc.temporal_coverage_end = self.find('metadata."aip.dc.endDate"')
+        doc.temporal_coverage_begin_date = self.find('metadata."aip.dc.startDate"')
+        doc.temporal_coverage_end_date = self.find('metadata."aip.dc.endDate"')
 
     def description(self, doc):
         text = []

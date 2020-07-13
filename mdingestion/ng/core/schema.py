@@ -176,7 +176,7 @@ class B2FSchema(colander.MappingSchema):
         colander.SchemaNode(colander.String(), missing=colander.drop),
         name='format',
         title='Format',
-        description='Technical format of the resource. Free text. Use file extension or MIME type where possible, e.g. PDF, XML, MPG or application/pdf, text/xml, video/mpeg.',
+        description='Technical format of the resource. Free text. Use file extension or MIME type where possible, e.g. PDF, XML, MPG or application/pdf, text/xml, video/mpeg.',  # noqa
         missing=colander.drop,
     )
     size = colander.SchemaNode(

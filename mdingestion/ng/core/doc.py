@@ -39,10 +39,6 @@ class BaseDoc(object):
     def community(self):
         return self._community
 
-    @community.setter
-    def community(self, value):
-        self._community = format_value(value, one=True)
-
     @property
     def identifier(self):
         return self._doi or self._pid or self._source
@@ -235,10 +231,9 @@ class BaseDoc(object):
 class GeoDoc(BaseDoc):
     def __init__(self):
         super().__init__()
-        self._temporal_coverage_begin = None
-        self._temporal_coverage_end = None
         self._geometry = None
-        self._start_date = None
+        self._temporal_coverage = None
+        self._begin_date = None
         self._end_date = None
 
     @property
@@ -274,46 +269,36 @@ class GeoDoc(BaseDoc):
 
     @property
     def temporal_coverage(self):
-        return self.temporal_coverage_begin_date
+        if not self._temporal_coverage:
+            return self.temporal_coverage_begin_date
+        return self._temporal_coverage
 
-    @property
-    def temporal_coverage_begin(self):
-        return self._temporal_coverage_begin
-
-    @temporal_coverage_begin.setter
-    def temporal_coverage_begin(self, value):
-        self._temporal_coverage_begin = format_value(value, type='date', one=True)
-
-    @property
-    def temporal_coverage_end(self):
-        return self._temporal_coverage_end
-
-    @temporal_coverage_end.setter
-    def temporal_coverage_end(self, value):
-        self._temporal_coverage_end = format_value(value, type='date', one=True)
+    @temporal_coverage.setter
+    def temporal_coverage(self, value):
+        self._temporal_coverage = format_value(value, type='datetime', one=True)
+        if not self._temporal_coverage:
+            self._temporal_coverage = format_value(value, one=True)
 
     @property
     def temporal_coverage_begin_date(self):
-        try:
-            datestr = self.start_date.isoformat(timespec='seconds')
-            datestr = f"{datestr}Z"
-        except Exception:
-            datestr = ''
-        return datestr
+        return self._begin_date
+
+    @temporal_coverage_begin_date.setter
+    def temporal_coverage_begin_date(self, value):
+        self._begin_date = format_value(value, type='datetime', one=True)
 
     @property
     def temporal_coverage_end_date(self):
-        try:
-            datestr = self.end_date.isoformat(timespec='seconds')
-            datestr = f"{datestr}Z"
-        except Exception:
-            datestr = ''
-        return datestr
+        return self._end_date
+
+    @temporal_coverage_end_date.setter
+    def temporal_coverage_end_date(self, value):
+        self._end_date = format_value(value, type='datetime', one=True)
 
     @property
     def temp_coverage_begin(self):
         try:
-            tstamp = int(self.start_date.timestamp())
+            tstamp = int(date_parser.parse(self._begin_date).timestamp())
         except Exception:
             tstamp = None
         return tstamp
@@ -321,22 +306,10 @@ class GeoDoc(BaseDoc):
     @property
     def temp_coverage_end(self):
         try:
-            tstamp = int(self.end_date.timestamp())
+            tstamp = int(date_parser.parse(self.end_date).timestamp())
         except Exception:
             tstamp = None
         return tstamp
-
-    @property
-    def start_date(self):
-        if not self._start_date:
-            self._start_date = date_parser.parse(self.temporal_coverage_begin)
-        return self._start_date
-
-    @property
-    def end_date(self):
-        if not self._end_date:
-            self._end_date = date_parser.parse(self.temporal_coverage_end)
-        return self._end_date
 
 
 class B2FDoc(GeoDoc):
@@ -345,7 +318,7 @@ class B2FDoc(GeoDoc):
         super().__init__()
         self.filename = filename
         self.url = url
-        self.community = community
+        self._community = community
         self.mdprefix = mdprefix
         self._oai_set = None
         self._oai_identifier = None

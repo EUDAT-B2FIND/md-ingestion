@@ -10,10 +10,9 @@ class DataCiteReader(XMLReader):
     SNIFFER = OAISniffer
 
     def parse(self, doc):
-        doc.community = self.community
         doc.title = self.find('title')
         doc.description = self.find('description')
-        doc.tags = self.find('subject')
+        doc.keyword = self.find('subject')
         doc.doi = self.doi()
         doc.related_identifier = self.find('alternateIdentifier')
         doc.creator = self.creator()
@@ -26,8 +25,7 @@ class DataCiteReader(XMLReader):
         doc.language = self.find('language')
         doc.resource_type = self.find('resourceType')
         doc.format = self.find('format')
-        doc.temporal_coverage_begin = self.find('date')
-        doc.temporal_coverage_end = doc.temporal_coverage_begin
+        doc.temporal_coverage = self.find('date')
         doc.geometry = self.geometry()
 
     def creator(self):
