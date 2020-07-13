@@ -47,6 +47,7 @@ class CKANWriter(Writer):
 
     def _extra_fields(self, doc):
         data = {
+            'Creator': doc.creator,
             'DOI': doc.doi,
             'PID': doc.pid,
             'RelatedIdentifier': doc.related_identifier,
@@ -60,6 +61,7 @@ class CKANWriter(Writer):
             'Language': doc.language,
             'ResourceType': doc.resource_type,
             'Format': doc.format,
+            'Version': doc.version,
             'Discipline': doc.discipline,
             'DiscHierarchy': [],
             'SpatialCoverage': doc.spatial_coverage,

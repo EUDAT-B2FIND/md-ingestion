@@ -217,7 +217,7 @@ class BaseDoc(object):
 
     @version.setter
     def version(self, value):
-        self._version = format_value(value)
+        self._version = format_value(value, one=True)
 
     @property
     def discipline(self):

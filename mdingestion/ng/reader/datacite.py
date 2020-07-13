@@ -25,6 +25,7 @@ class DataCiteReader(XMLReader):
         doc.language = self.find('language')
         doc.resource_type = self.find('resourceType')
         doc.format = self.find('format')
+        doc.version = self.find('metadata.version')
         doc.temporal_coverage = self.find('date')
         doc.geometry = self.geometry()
 
