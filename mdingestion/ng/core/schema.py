@@ -180,8 +180,7 @@ class B2FSchema(colander.MappingSchema):
         missing=colander.drop,
     )
     size = colander.SchemaNode(
-        colander.Sequence(accept_scalar=True),
-        colander.SchemaNode(colander.String(), missing=colander.drop),
+        colander.String(),
         name='size',
         title='Size',
         description='Size information about the resource.',

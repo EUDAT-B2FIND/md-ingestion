@@ -18,6 +18,7 @@ class DataCiteReader(XMLReader):
         doc.creator = self.creator()
         doc.publisher = self.find('publisher')
         doc.contributor = self.find('contributorName')
+        doc.funding_reference = self.find('fundingReference')
         doc.publication_year = self.find('publicationYear')
         doc.rights = self.find('rights')
         doc.contact = doc.creator
@@ -25,6 +26,7 @@ class DataCiteReader(XMLReader):
         doc.language = self.find('language')
         doc.resource_type = self.find('resourceType')
         doc.format = self.find('format')
+        doc.size = self.find('size')
         doc.version = self.find('metadata.version')
         doc.temporal_coverage = self.find('date')
         doc.geometry = self.geometry()
