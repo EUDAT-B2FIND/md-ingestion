@@ -29,6 +29,10 @@ b2find http://eudat7-ingest.dkrz.de/oai ListIdentifiers oai_datacite
 #capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListIdentifiers oai_dc
 capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc
 
+##CERIC
+#ceric https://data.ceric-eric.eu/oai-pmh/oai2 ListRecords oai_dc
+ceric https://data.ceric-eric.eu/oai-pmh/oai2 ListRecords oai_datacite
+
 ## CLARIN
 ## this is only one repo, a full list on eudatmd1/ingestion_list
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
