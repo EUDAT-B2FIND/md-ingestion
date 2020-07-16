@@ -24,6 +24,9 @@ anaee http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus csw iso19
 #b2find http://eudat7-ingest.dkrz.de/oai ListRecords oai_openaire
 b2find http://eudat7-ingest.dkrz.de/oai ListIdentifiers oai_datacite
 
+##B2SHARE
+b2share https://b2share.eudat.eu/api/oai2d  ListRecords oai_dc EUDAT
+
 ## Capsella
 #capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListRecords oai_dc
 #capsella http://capsella.madgik.di.uoa.gr:8081/oaipmh-publisher ListIdentifiers oai_dc
