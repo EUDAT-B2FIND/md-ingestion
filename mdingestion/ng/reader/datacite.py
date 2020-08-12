@@ -13,6 +13,7 @@ class DataCiteReader(XMLReader):
         doc.title = self.find('title')
         doc.description = self.find('description')
         doc.keyword = self.find('subject')
+        doc.discipline = format_value(self.find('subject'), type='string_words')
         doc.doi = self.doi()
         doc.related_identifier = self.find('alternateIdentifier')
         doc.creator = self.creator()
@@ -37,7 +38,7 @@ class DataCiteReader(XMLReader):
         for creator in self.parser.doc.find_all('creator'):
             name = creator.creatorName.text
             # TODO: display affiliation here? Or keep it clean and just display
-            # CreatorName to make it easier for OpenAire-harvesting?   
+            # CreatorName to make it easier for OpenAire-harvesting?
             if creator.affiliation:
                 name = f"{name} ({creator.affiliation.text})"
             creators.append(name)
