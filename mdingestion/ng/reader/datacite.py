@@ -18,11 +18,12 @@ class DataCiteReader(XMLReader):
         doc.creator = self.creator()
         doc.publisher = self.find('publisher')
         doc.contributor = self.find('contributorName')
+        # TODO: funding reference: nur funderName oder auch awardNumber?
         doc.funding_reference = self.find('fundingReference')
         doc.publication_year = self.find('publicationYear')
         doc.rights = self.find('rights')
         doc.contact = doc.creator
-        doc.open_access = False
+        doc.open_access = True
         doc.language = self.find('language')
         doc.resource_type = self.find('resourceType')
         doc.format = self.find('format')
@@ -35,6 +36,8 @@ class DataCiteReader(XMLReader):
         creators = []
         for creator in self.parser.doc.find_all('creator'):
             name = creator.creatorName.text
+            # TODO: display affiliation here? Or keep it clean and just display
+            # CreatorName to make it easier for OpenAire-harvesting?   
             if creator.affiliation:
                 name = f"{name} ({creator.affiliation.text})"
             creators.append(name)

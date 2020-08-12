@@ -9,4 +9,4 @@ class DarusDatacite(DataCiteReader):
 
     def update(self, doc):
         doc.discipline = format_value(self.find('subject'), type='string_word')
-        doc.open_access = self.find_ok('rights', rightsURI='info:eu-repo/semantics/openAccess')
+        # doc.open_access = self.find_ok('rights', rightsURI='info:eu-repo/semantics/openAccess')

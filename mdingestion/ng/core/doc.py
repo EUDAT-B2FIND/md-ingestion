@@ -209,7 +209,7 @@ class BaseDoc(object):
 
     @size.setter
     def size(self, value):
-        self._size = format_value(value, one=True)
+        self._size = format_value(value)
 
     @property
     def version(self):
