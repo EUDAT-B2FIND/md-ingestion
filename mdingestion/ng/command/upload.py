@@ -28,12 +28,11 @@ class Upload(Command):
                 if limit > 0 and count >= limit:
                     break
                 id = pathlib.Path(filename).name[:-5]
-                try:
-                    with open(filename, 'rb') as fp:
-                        ckan.action.package_update(id=id, upload=fp)
-                except NotFound:
-                    with open(filename, 'rb') as fp:
-                        data = json.load(fp, strict=False)
+                with open(filename, 'rb') as fp:
+                    data = json.load(fp, strict=False)
+                    try:
+                        ckan.action.package_update(**data)
+                    except NotFound:
                         ckan.action.package_create(**data)
                 count += 1
 
