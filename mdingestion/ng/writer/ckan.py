@@ -3,21 +3,47 @@ import pathlib
 import json
 import hashlib
 
-from .base import Writer
+from .base import Writer, clean_fields
 
 import logging
 
 
+def map_ckan_fields(fields):
+    ckan_fields = dict()
+    for key, value in fields.items():
+        if value:
+            if key == 'author':
+                if isinstance(value, list):
+                    value = ';'.join(value)
+            elif key in ['title', 'notes']:
+                if isinstance(value, list):
+                    value = '\n'.join(value)
+            ckan_fields[key] = value
+    return ckan_fields
+
+
+def map_extra_fields(fields):
+    extras = []
+    for key, value in fields.items():
+        if value:
+            if isinstance(value, list):
+                value = ';'.join(value)
+            extras.append(dict(key=key, value=value))
+    return extras
+
+
 class CKANWriter(Writer):
+    format = 'ckan'
+
     def write(self, doc, filename):
-        data = self.json_legacy(doc)
+        data = self.json(doc)
         self.update_version(data)
         self.write_output(data, filename)
 
     def write_output(self, data, filename):
         source_path = pathlib.Path(filename)
         path_parts = list(source_path.parts)
-        path_parts[-2] = 'json'
+        path_parts[-2] = self.format
         path_parts[-1] = source_path.name.replace(source_path.suffix, '.json')
         out = pathlib.Path(*path_parts)
         out.parent.mkdir(parents=True, exist_ok=True)
@@ -26,18 +52,9 @@ class CKANWriter(Writer):
             logging.info(f'map output written to {out}')
 
     def json(self, doc):
-        data = self._ckan_fields(doc)
-        data['extras'] = []
-        for key, value in self._extra_fields(doc).items():
-            data['extras'].append(dict(key=key, value=value))
-        for key, value in self._oai_fields(doc).items():
-            data['extras'].append(dict(key=key, value=value))
-        return data
-
-    def json_legacy(self, doc):
-        data = self._ckan_fields(doc)
-        data.update(self._extra_fields(doc))
-        data.update(self._oai_fields(doc))
+        data = map_ckan_fields(self._ckan_fields(doc))
+        data['extras'] = map_extra_fields(self._extra_fields(doc))
+        data['extras'].extend(map_extra_fields(self._oai_fields(doc)))
         return data
 
     def update_version(self, data):
