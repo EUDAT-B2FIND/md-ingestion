@@ -1,7 +1,6 @@
 from tqdm import tqdm
-import pathlib
 import json
-from ckanapi import RemoteCKAN, NotAuthorized, NotFound
+from ckanapi import RemoteCKAN, NotFound
 
 from mdingestion.uploading import Uploader as LegacyUploader
 from mdingestion.uploading import CKAN_CLIENT as LegacyCKANClient
@@ -27,7 +26,6 @@ class Upload(Command):
                                  unit=' records', total=limit):
                 if limit > 0 and count >= limit:
                     break
-                id = pathlib.Path(filename).name[:-5]
                 with open(filename, 'rb') as fp:
                     data = json.load(fp, strict=False)
                     try:
