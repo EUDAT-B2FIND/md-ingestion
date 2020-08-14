@@ -82,7 +82,7 @@ class Map(Command):
         self._update_summary(jsondoc)
         return valid
 
-    def _update_summary(self, fields, valid=True, max_value_length=25, max_values=100):
+    def _update_summary(self, fields, valid=True, max_value_length=100, max_values=100):
         if valid:
             for key, value in fields.items():
                 if not value:
