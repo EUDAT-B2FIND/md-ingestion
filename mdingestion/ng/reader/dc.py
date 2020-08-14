@@ -20,13 +20,15 @@ class DublinCoreReader(XMLReader):
         doc.publication_year = self.find('date')
         doc.rights = self.find('rights')
         doc.contact = doc.publisher
-        doc.open_access = False
+        doc.open_access = True
         doc.language = self.find('language')
         doc.resource_type = self.find('type')
         doc.format = self.find('format')
         doc.temporal_coverage_begin = ''
         doc.temporal_coverage_end = ''
         doc.geometry = self.geometry()
+        doc.size = self.find('extent')
+        doc.version = self.find('hasVersion')
 
     def geometry(self):
         # <dcterms:spatial xsi:type="dcterms:POINT">9.811246,56.302585</dcterms:spatial>
