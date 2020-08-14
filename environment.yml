@@ -9,6 +9,7 @@ dependencies:
   - owslib
   # ng
   - beautifulsoup4
+  - ckanapi
   - shapely
   - jsonpath-ng
   - click

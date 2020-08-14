@@ -6,7 +6,7 @@ import json
 from .base import Command
 from ..walker import Walker
 from ..community import reader
-from ..writer import CKANWriter, B2FWriter
+from ..writer import writer, B2FWriter
 from ..core import B2FSchema
 
 import logging
@@ -18,7 +18,7 @@ class Map(Command):
         super().__init__(**args)
         self.walker = Walker(self.outdir)
         self.reader = reader(self.community, self.mdprefix)
-        self.writer = CKANWriter()
+        self.writer = None
         # TODO: write also pandas csv file for statistical evaluation
         self.summary = {
             'total': 0,
@@ -33,10 +33,12 @@ class Map(Command):
             'values': {},
         }
 
-    def run(self, force=False, limit=None):
+    def run(self, format=format, force=False, limit=None):
         limit = limit or -1
+        # TODO: refactor writer init
+        self.writer = writer(format)
         count = 0
-        for filename in tqdm(self.walk(), ascii=True, desc="Mapping", unit=' records', total=limit):
+        for filename in tqdm(self.walk(), ascii=True, desc=f"Map to {format}", unit=' records', total=limit):
             if limit > 0 and count >= limit:
                 break
             doc = self.map(filename)
@@ -60,7 +62,6 @@ class Map(Command):
         reader = self.reader()
         doc = reader.read(filename, self.url, self.community, self.mdprefix)
         logging.info(f'map: community={self.community}, mdprefix={self.mdprefix}, file={filename}')
-        # self.writer.write(doc, filename)
         return doc
 
     def validate(self, doc):

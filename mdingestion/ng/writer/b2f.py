@@ -2,20 +2,22 @@ import os
 import pathlib
 import json
 
-from .base import Writer
+from .base import Writer, clean_fields
 
 import logging
 
 
 class B2FWriter(Writer):
+    format = 'b2f'
+
     def write(self, doc, filename):
-        data = self.json(doc)
+        data = clean_fields(self.json(doc))
         self.write_output(data, filename)
 
     def write_output(self, data, filename):
         source_path = pathlib.Path(filename)
         path_parts = list(source_path.parts)
-        path_parts[-2] = 'b2f'
+        path_parts[-2] = self.format
         path_parts[-1] = source_path.name.replace(source_path.suffix, '.json')
         out = pathlib.Path(*path_parts)
         out.parent.mkdir(parents=True, exist_ok=True)

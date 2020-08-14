@@ -13,7 +13,7 @@ def test_datacite():
     assert 'https://doi.org/10.18419/darus-629' == doc.doi
     assert 'https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-629' == doc.metadata_access  # noqa
     assert 'Medicine Health and Life Sciences' in doc.keyword
-    assert 'Medicine' == doc.discipline
+    assert 'Medicine Health and Life Sciences' == doc.discipline
     assert 'application/pdf' in doc.format
     assert len(doc.format) == 2
     assert doc.open_access is True

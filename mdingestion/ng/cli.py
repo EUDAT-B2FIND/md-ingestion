@@ -78,10 +78,11 @@ def harvest(ctx, community, url, verb, mdprefix, mdsubset, fromdate, limit, inse
 @click.option('--url', help='Source URL')
 @click.option('--mdprefix', help='Metadata prefix')
 @click.option('--mdsubset', help='Subset')
+@click.option('--format', default='legacy', help='output format: legacy, ckan or b2f')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
 @click.pass_context
-def map(ctx, community, url, mdprefix, mdsubset, limit, force):
+def map(ctx, community, url, mdprefix, mdsubset, format, limit, force):
     try:
         map = Map(
             sources=ctx.obj['list'],
@@ -90,7 +91,7 @@ def map(ctx, community, url, mdprefix, mdsubset, limit, force):
             mdprefix=mdprefix,
             mdsubset=mdsubset,
             outdir=ctx.obj['outdir'],)
-        map.run(force=force, limit=limit)
+        map.run(format=format, force=force, limit=limit)
     except Exception as e:
         logging.critical(f"map: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
@@ -100,11 +101,13 @@ def map(ctx, community, url, mdprefix, mdsubset, limit, force):
 @click.option('--community', '-c', help='Community')
 @click.option('--iphost', '-i', help='IP address of CKAN instance')
 @click.option('--auth', help='CKAN API key')
+@click.option('--target', default='legacy', help='Target service: legacy or ckan')
+@click.option('--limit', type=int, help='Limit')
 @click.pass_context
-def upload(ctx, community, iphost, auth):
+def upload(ctx, community, iphost, auth, target, limit):
     try:
         upload = Upload(outdir=ctx.obj['outdir'], sources=ctx.obj['list'], community=community)
-        upload.upload(iphost=iphost, auth=auth)
+        upload.run(iphost=iphost, auth=auth, target=target, limit=limit)
     except Exception as e:
         logging.critical(f"upload: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
