@@ -13,7 +13,7 @@ class BaseDoc(object):
         self._community = None
         self._title = None
         self._description = None
-        self._keyword = None
+        self._keywords = None
         self._doi = None
         self._pid = None
         self._source = None
@@ -60,12 +60,12 @@ class BaseDoc(object):
         self._description = format_value(value)
 
     @property
-    def keyword(self):
-        return self._keyword
+    def keywords(self):
+        return self._keywords
 
-    @keyword.setter
-    def keyword(self, value):
-        self._keyword = format_value(value, type='string_words')
+    @keywords.setter
+    def keywords(self, value):
+        self._keywords = format_value(value, type='string_words')
 
     @property
     def doi(self):
@@ -165,7 +165,7 @@ class BaseDoc(object):
 
     @property
     def open_access(self):
-        return self._open_access or False
+        return self._open_access or True
 
     @open_access.setter
     def open_access(self, value):

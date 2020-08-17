@@ -99,7 +99,7 @@ class CKANWriter(Writer):
         data['title'] = doc.title
         data['author'] = doc.creator
         data['notes'] = doc.description
-        data['tags'] = [dict(name=tag) for tag in doc.keyword]
+        data['tags'] = [dict(name=tag) for tag in doc.keywords]
         data['url'] = doc.source
         data['owner_org'] = "eudat-b2find"
         data['name'] = doc.name

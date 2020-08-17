@@ -26,5 +26,5 @@ def test_datacite_no_oai_id():
     # assert 'https://scicat.esss.se/scicat/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == doc.metadata_access  # noqa
     assert 'Pfeiffer, Dorothea (ESS)' in doc.creator
     assert 'ESS' in doc.publisher
-    assert 'Photon and neutron data' in doc.keyword
+    assert 'Photon and neutron data' in doc.keywords
     assert 'OpenAccess' in doc.rights

@@ -31,7 +31,7 @@ class B2FWriter(Writer):
             'identifier': doc.identifier,
             'title': doc.title,
             'description': doc.description,
-            'keyword': doc.keyword,
+            'keywords': doc.keywords,
             'doi': doc.doi,
             'pid': doc.pid,
             'source': doc.source,

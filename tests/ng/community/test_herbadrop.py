@@ -11,7 +11,7 @@ def test_json_1():
     doc = reader.read(jsonfile)
     assert 'Gentiana ×marcailhouana Rouy' in doc.title[0]
     # assert 'HERBARIUM MUSE' in doc.description[1]
-    assert ['Gentianaceae'] == doc.keyword
+    assert ['Gentianaceae'] == doc.keywords
     assert 'http://coldb.mnhn.fr/catalognumber/mnhn/p/p03945291' == doc.source
     assert 'ark:/87895/1.90-4070723' == doc.related_identifier[0]
     assert 'Raynal, J.' == doc.creator[0]
@@ -54,7 +54,7 @@ def test_herbadrop_with_pid():
     assert 'https://opendata.cines.fr/herbadrop-api/rest/data/mnhnftp/P03068284' == doc.metadata_access
     assert 'Coronilla juncea L.' in doc.title[0]
     # assert 'HERBARIUM MUSE' in doc.description[1]
-    assert ['Fabaceae'] == doc.keyword
+    assert ['Fabaceae'] == doc.keywords
     assert 'http://coldb.mnhn.fr/catalognumber/mnhn/p/p03068284' == doc.source
     assert 'ark:/87895/1.90-2785993' == doc.related_identifier[0]
     assert 'unavailable' == doc.creator[0]
