@@ -232,15 +232,20 @@ class GeoDoc(BaseDoc):
     def __init__(self):
         super().__init__()
         self._geometry = None
+        self._places = None
         self._temporal_coverage = None
         self._begin_date = None
         self._end_date = None
 
     @property
     def spatial_coverage(self):
-        if not self.geometry:
-            return ''
-        return self.geometry.wkt
+        coverage = ''
+        if self.geometry:
+            coverage = self.geometry.wkt
+        if self.places:
+            coverage += '; '
+            coverage += '; '.join(self.places)
+        return coverage
 
     @property
     def spatial(self):
@@ -253,6 +258,14 @@ class GeoDoc(BaseDoc):
     @geometry.setter
     def geometry(self, value):
         self._geometry = value
+
+    @property
+    def places(self):
+        return self._places
+
+    @places.setter
+    def places(self, value):
+        self._places = value
 
     @property
     def geojson(self):

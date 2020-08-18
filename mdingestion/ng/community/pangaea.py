@@ -7,5 +7,4 @@ class PangaeaDatacite(DataCiteReader):
     SNIFFER = OAISniffer
 
     def update(self, doc):
-        # doc.discipline = format_value(self.find('subject'), type='string_words', one=True).split(' ')[0]
-        pass
+        doc.discipline = 'Earth System Research'
