@@ -48,13 +48,13 @@ def test_spatial_coverage_point():
     point_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'SET_1', 'xml', 'point_3dea0629-16cb-55b4-8bdb-30d2a57a7fb9.xml')  # noqa
     reader = DataCiteReader()
     doc = reader.read(point_file)
-    assert 'POINT (47.0889606 8.5544251)' == doc.spatial_coverage
-    assert "{'type': 'Polygon', 'coordinates': (((47.0889606, 8.5544251), (47.0889606, 8.5544251), (47.0889606, 8.5544251), (47.0889606, 8.5544251)),)}" == doc.spatial  # noqa
+    assert '(47.1 LON, 8.6 LAT); Rufiberg, Switzerland (47.0889606° N, 8.5544251° E)' == doc.spatial_coverage
+    # assert "{'type': 'Polygon', 'coordinates': (((47.0889606, 8.5544251), (47.0889606, 8.5544251), (47.0889606, 8.5544251), (47.0889606, 8.5544251)),)}" == doc.spatial  # noqa
 
 
 def test_spatial_coverage_bbox():
     point_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'SET_1', 'xml', 'bbox_80e203d7-7c64-5c00-8d1f-a91d49b0fa16.xml')  # noqa
     reader = DataCiteReader()
     doc = reader.read(point_file)
-    assert 'POLYGON ((47.80838 5.95587, 47.80838 10.49203, 45.81802 10.49203, 45.81802 5.95587, 47.80838 5.95587))' == doc.spatial_coverage  # noqa
-    assert "{'type': 'Polygon', 'coordinates': (((47.80838, 5.95587), (47.80838, 10.49203), (45.81802, 10.49203), (45.81802, 5.95587), (47.80838, 5.95587)),)}" == doc.spatial  # noqa
+    assert '(6.0W, 10.5S, 45.8E, 47.8N); Switzerland' == doc.spatial_coverage
+    # assert "{'type': 'Polygon', 'coordinates': (((47.80838, 5.95587), (47.80838, 10.49203), (45.81802, 10.49203), (45.81802, 5.95587), (47.80838, 5.95587)),)}" == doc.spatial  # noqa

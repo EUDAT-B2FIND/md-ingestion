@@ -103,8 +103,9 @@ class Validator(object):
             for key in self.summary['missing']:
                 print(f"\t{key}")
 
-    def write_summary(self):
-        out = pathlib.Path('summary.json')
+    def write_summary(self, outdir=None):
+        outdir = outdir or pathlib.Path.cwd()
+        out = outdir.joinpath('summary.json')
         # out.parent.mkdir(parents=True, exist_ok=True)
         with out.open(mode='w') as outfile:
             json.dump(self.summary, outfile, indent=4, sort_keys=True, ensure_ascii=False)

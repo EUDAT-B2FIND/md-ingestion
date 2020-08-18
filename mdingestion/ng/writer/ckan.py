@@ -47,6 +47,8 @@ class CKANWriter(Writer):
         path_parts[-1] = source_path.name.replace(source_path.suffix, '.json')
         out = pathlib.Path(*path_parts)
         out.parent.mkdir(parents=True, exist_ok=True)
+        # TODO: fix outdir
+        self.outdir = out.parent.absolute()
         with out.open(mode='w') as outfile:
             json.dump(data, outfile, indent=4, sort_keys=True, ensure_ascii=False)
             logging.info(f'map output written to {out}')
@@ -85,7 +87,7 @@ class CKANWriter(Writer):
             'Discipline': doc.discipline,
             'DiscHierarchy': [],
             'SpatialCoverage': doc.spatial_coverage,
-            #'spatial': doc.spatial,
+            'spatial': doc.spatial,
             'TemporalCoverage': doc.temporal_coverage,
             'TemporalCoverage:BeginDate': doc.temporal_coverage_begin_date,
             'TemporalCoverage:EndDate': doc.temporal_coverage_end_date,

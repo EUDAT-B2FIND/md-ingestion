@@ -33,7 +33,7 @@ class Map(Command):
                 validator.summary['written'] += 1
             count += 1
         validator.print_summary()
-        validator.write_summary()
+        validator.write_summary(self.writer.outdir)
 
     def walk(self):
         for filename in self.walker.walk_community(

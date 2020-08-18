@@ -16,7 +16,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'], obj=CONTEXT_OBJ)
 @click.version_option()
 @click.option('--debug', is_flag=True)
 @click.option('--dry-run', is_flag=True, help='use dry run mode')
-@click.option('--list', '-l', default='ingestion_list', help='Filename with list of source.')
+@click.option('--list', '-l', default='harvest_list', help='Filename with list of source.')
 @click.option('--outdir', '-o', default='oaidata',
               help='The absolute root dir in which all harvested files will be saved.')
 @click.pass_context
@@ -103,11 +103,12 @@ def map(ctx, community, url, mdprefix, mdsubset, format, limit, force):
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--target', default='ckan', help='Target service: ckan (default) or legacy')
 @click.option('--limit', type=int, help='Limit')
+@click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def upload(ctx, community, iphost, auth, target, limit):
+def upload(ctx, community, iphost, auth, target, limit, insecure):
     try:
         upload = Upload(outdir=ctx.obj['outdir'], sources=ctx.obj['list'], community=community)
-        upload.run(iphost=iphost, auth=auth, target=target, limit=limit)
+        upload.run(iphost=iphost, auth=auth, target=target, limit=limit, verify=not insecure)
     except Exception as e:
         logging.critical(f"upload: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
