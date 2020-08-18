@@ -10,7 +10,7 @@ class DublinCoreReader(XMLReader):
     def parse(self, doc):
         doc.title = self.find('title')
         doc.description = self.find('description')
-        doc.keyword = self.find('subject')
+        doc.keywords = self.find('subject')
         # doc.doi = f"https://doi.org/{doc.oai_identifier[0]}"
         # doc.source = self.find('identifier')
         doc.related_identifier = self.find('relation')
@@ -20,7 +20,6 @@ class DublinCoreReader(XMLReader):
         doc.publication_year = self.find('date')
         doc.rights = self.find('rights')
         doc.contact = doc.publisher
-        doc.open_access = True
         doc.language = self.find('language')
         doc.resource_type = self.find('type')
         doc.format = self.find('format')

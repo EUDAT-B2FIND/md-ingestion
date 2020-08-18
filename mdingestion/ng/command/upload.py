@@ -12,10 +12,10 @@ from ..walker import Walker
 
 class Upload(Command):
     def run(self, iphost=None, auth=None, target=None, limit=None):
-        if target == 'ckan':
-            self.upload_to_ckan(iphost=iphost, auth=auth, limit=limit)
-        else:
+        if target == 'legacy':
             self.legacy_upload(iphost=iphost, auth=auth)
+        else:
+            self.upload_to_ckan(iphost=iphost, auth=auth, limit=limit)
 
     def upload_to_ckan(self, iphost, auth, limit=None):
         self.walker = Walker(self.outdir)

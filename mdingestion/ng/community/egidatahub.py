@@ -10,13 +10,14 @@ class EGIDatahubDublinCore(DublinCoreReader):
         doc.contributor = ['EGI Datahub']
         doc.pid = self.find_pid('identifier')
         doc.source = self.source(doc)
-        # TODO: refactor code
-        # doc.keyword = ['EGI']
-        keywords = self.find('subject')
-        keywords.append('EGI')
-        doc.keyword = keywords
+        doc.keywords = self.keywords(doc)
         if not doc.publisher:
             doc.publisher = ['EGI Datahub']
+
+    def keywords(self, doc):
+        keywords = doc.keywords
+        keywords.append('EGI')
+        return keywords
 
     def source(self, doc):
         urls = [url for url in self.find('metadata.identifier') if 'handle' not in url]

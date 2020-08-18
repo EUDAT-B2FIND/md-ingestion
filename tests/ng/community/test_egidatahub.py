@@ -15,3 +15,4 @@ def test_dublin_core():
     assert 'http://hdl.handle.net/21.T15999/Fw2lYnA' == doc.pid
     assert 'https://datahub.egi.eu/share/dec6359cdf03b3a7405ac75b70a4cecb' == doc.source
     assert doc.open_access is True
+    assert 'EGI' in doc.keywords

@@ -74,11 +74,11 @@ def harvest(ctx, community, url, verb, mdprefix, mdsubset, fromdate, limit, inse
 
 
 @cli.command()
-@click.option('--community', '-c', help='Community')
+@click.option('--community', '-c', required=True, help='Community')
 @click.option('--url', help='Source URL')
 @click.option('--mdprefix', help='Metadata prefix')
 @click.option('--mdsubset', help='Subset')
-@click.option('--format', default='legacy', help='output format: legacy, ckan or b2f')
+@click.option('--format', default='ckan', help='output format: ckan (default), legacy or b2f')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
 @click.pass_context
@@ -98,10 +98,10 @@ def map(ctx, community, url, mdprefix, mdsubset, format, limit, force):
 
 
 @cli.command()
-@click.option('--community', '-c', help='Community')
-@click.option('--iphost', '-i', help='IP address of CKAN instance')
-@click.option('--auth', help='CKAN API key')
-@click.option('--target', default='legacy', help='Target service: legacy or ckan')
+@click.option('--community', '-c', required=True, help='Community')
+@click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
+@click.option('--auth', required=True, help='CKAN API key')
+@click.option('--target', default='ckan', help='Target service: ckan (default) or legacy')
 @click.option('--limit', type=int, help='Limit')
 @click.pass_context
 def upload(ctx, community, iphost, auth, target, limit):

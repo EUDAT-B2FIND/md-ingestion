@@ -33,11 +33,11 @@ class B2FSchema(colander.MappingSchema):
         missing=colander.drop,
     )
     # TODO: decide how it is named in EUDAT core
-    keyword = colander.SchemaNode(
+    keywords = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),
         colander.SchemaNode(colander.String(), missing=colander.drop),
-        name='keyword',
-        title='Keyword',
+        name='keywords',
+        title='Keywords',
         description='Subject, keyword, classification code, or key phrase describing the resource. Could be free text.',
         missing=colander.drop,
     )

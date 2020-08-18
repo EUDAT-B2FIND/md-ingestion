@@ -13,7 +13,7 @@ def test_common_attributes():
     doc = reader.read(xml_file)
     assert 'TRAMM project' in doc.title[0]
     assert 'Rufiberg is a pre-alpine meadow site in Switzerland' in doc.description[0]
-    assert 'LANDSLIDES' in doc.keyword
+    assert 'LANDSLIDES' in doc.keywords
     assert 'https://doi.org/10.16904/5' == doc.doi
     assert 'https://www.envidat.ch/dataset/10-16904-5' == doc.related_identifier[0]
     assert 'Cornelia Brönnimann (WSL)' == doc.creator[0]

@@ -8,7 +8,7 @@ class Herbadrop(JSONReader):
     def update(self, doc):
         doc.title = self.find('metadata."aip.dc.title".lat')
         doc.description = self.description(doc)
-        doc.keyword = self.find('metadata."aip.dc.subject".lat')
+        doc.keywords = self.find('metadata."aip.dc.subject".lat')
         doc.pid = self.find('additionalIdentifiers.HANDLE')
         doc.source = self.find('metadata."aip.meta.producerIdentifier"')
         doc.related_identifier = self.find('additionalIdentifiers.ARK')

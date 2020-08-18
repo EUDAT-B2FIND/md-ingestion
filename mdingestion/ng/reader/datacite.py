@@ -2,7 +2,6 @@ import shapely
 
 from .base import XMLReader
 from ..sniffer import OAISniffer
-
 from ..format import format_value
 
 
@@ -12,7 +11,7 @@ class DataCiteReader(XMLReader):
     def parse(self, doc):
         doc.title = self.find('title')
         doc.description = self.find('description')
-        doc.keyword = self.find('subject')
+        doc.keywords = self.find('subject')
         doc.discipline = format_value(self.find('subject'), type='string_words')
         doc.doi = self.doi()
         doc.related_identifier = self.find('alternateIdentifier')
@@ -24,7 +23,6 @@ class DataCiteReader(XMLReader):
         doc.publication_year = self.find('publicationYear')
         doc.rights = self.find('rights')
         doc.contact = doc.creator
-        doc.open_access = True
         doc.language = self.find('language')
         doc.resource_type = self.find('resourceType')
         doc.format = self.find('format')
