@@ -30,6 +30,7 @@ class DataCiteReader(XMLReader):
         doc.version = self.find('metadata.version')
         doc.temporal_coverage = self.find('date')
         doc.geometry = self.geometry()
+        doc.places = self.find('geoLocationPlace')
 
     def creator(self):
         creators = []

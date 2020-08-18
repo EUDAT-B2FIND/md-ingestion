@@ -137,7 +137,8 @@ pandata http://oai.eudat.stfc.ac.uk/oai/provider ListRecords oai_dc full
 #pangaea http://ws.pangaea.de/oai/provider ListRecords iso19139 citable
 #pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md citable
 #pangaea http://ws.pangaea.de/oai/provider ListRecords pan_md BAH1962
-pangaea https://ws.pangaea.de/oai/provider ListRecords oai_datacite SET_1
+#pangaea https://ws.pangaea.de/oai/provider ListRecords oai_datacite SET_1
+pangaea https://ws.pangaea.de/oai/provider ListRecords datacite4
 
 ## PDC
 pdc http://www.polardata.ca/oai/provider    ListRecords  fgdc

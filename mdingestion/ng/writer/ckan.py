@@ -14,7 +14,7 @@ def map_ckan_fields(fields):
         if value:
             if key == 'author':
                 if isinstance(value, list):
-                    value = ';'.join(value)
+                    value = '; '.join(value)
             elif key in ['title', 'notes']:
                 if isinstance(value, list):
                     value = '\n'.join(value)
@@ -27,7 +27,7 @@ def map_extra_fields(fields):
     for key, value in fields.items():
         if value:
             if isinstance(value, list):
-                value = ';'.join(value)
+                value = '; '.join(value)
             extras.append(dict(key=key, value=value))
     return extras
 
@@ -85,7 +85,7 @@ class CKANWriter(Writer):
             'Discipline': doc.discipline,
             'DiscHierarchy': [],
             'SpatialCoverage': doc.spatial_coverage,
-            'spatial': doc.spatial,
+            #'spatial': doc.spatial,
             'TemporalCoverage': doc.temporal_coverage,
             'TemporalCoverage:BeginDate': doc.temporal_coverage_begin_date,
             'TemporalCoverage:EndDate': doc.temporal_coverage_end_date,
