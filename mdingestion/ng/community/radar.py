@@ -1,9 +1,10 @@
-from ..reader import DublinCoreReader
+from ..reader import DataCiteReader
 from ..sniffer import OAISniffer
+from ..format import format_value
 
 
-class RadarDublinCore(DublinCoreReader):
-    NAME = 'radar-oai_dc'
+class RadarDatacite(DataCiteReader):
+    NAME = 'radar-datacite'
     SNIFFER = OAISniffer
 
     def update(self, doc):
