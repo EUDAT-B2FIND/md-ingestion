@@ -8,7 +8,7 @@ from .util import remove_duplicates_from_list
 import logging
 
 
-def format_value(value, type=None, one=False):
+def format_value(value, type=None, one=False, max_length=None):
     # work with value list
     values = value or []
     if not isinstance(values, list):
@@ -19,6 +19,8 @@ def format_value(value, type=None, one=False):
     formatted = [val for val in formatted if val]
     # remove duplicates
     formatted = remove_duplicates_from_list(formatted)
+    if max_length:
+        formatted = [val[:max_length] for val in formatted]
     # do we have a single value?
     if one:
         if formatted:

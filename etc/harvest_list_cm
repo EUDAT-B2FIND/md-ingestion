@@ -148,7 +148,7 @@ pdc http://www.polardata.ca/oai/provider    ListRecords  fgdc
 unimaribor https://dk.um.si/oai/oai2.php ListRecords oai_dc openaire_data
 
 ##RADAR
-radar https://www.radar-service.eu/oai/OAIHandler ListIdentifiers oai_dc
+radar https://www.radar-service.eu/oai/OAIHandler ListIdentifiers datacite
 
 ## Seadatanet
 seadatanet http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 seadatanet
