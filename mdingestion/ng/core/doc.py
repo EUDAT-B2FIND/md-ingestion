@@ -4,7 +4,6 @@ from dateutil import parser as date_parser
 from pathlib import Path
 import json
 
-from .. import format
 from ..format import format_value
 
 
@@ -241,15 +240,40 @@ class GeoDoc(BaseDoc):
     def spatial_coverage(self):
         coverage = ''
         if self.geometry:
-            coverage = self.geometry.wkt
+            coverage = self.format_geometry()
         if self.places:
             coverage += '; '
             coverage += '; '.join(self.places)
         return coverage
 
+    def format_geometry(self):
+        geom = ''
+        if self.geometry:
+            if self.geometry.geom_type == 'Point':
+                point = self.geometry
+                geom = f"({point.x:.1f} LON, {point.y:.1f} LAT)"
+            else:
+                bounds = self.geometry.bounds
+                geom = f"({bounds[0]:.1f}W, {bounds[1]:.1f}S, {bounds[2]:.1f}E, {bounds[3]:.1f}N)"
+        return geom
+
+    def format_bbox(self):
+        bbox = ''
+        if self.geometry:
+            if self.geometry.geom_type == 'Point':
+                bounds = self.geometry.buffer(2).bounds
+            else:
+                bounds = self.geometry.bounds
+            w = f"{bounds[0]:.2f}"
+            s = f"{bounds[1]:.2f}"
+            e = f"{bounds[2]:.2f}"
+            n = f"{bounds[3]:.2f}"
+            bbox = "{\"type\":\"Polygon\",\"coordinates\": [[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (w, s, w, n, e, n, e, s, w, s)  # noqa
+        return bbox
+
     @property
     def spatial(self):
-        return format.format_string(self.bbox)
+        return self.format_bbox()
 
     @property
     def geometry(self):

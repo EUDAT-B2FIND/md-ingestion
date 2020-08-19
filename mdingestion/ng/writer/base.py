@@ -7,6 +7,9 @@ def clean_fields(data):
 
 
 class Writer(object):
+    # TODO: fix usage of outdir
+    outdir = None
+
     def write(self, doc, filename):
         raise NotImplementedError
 

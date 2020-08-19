@@ -47,5 +47,8 @@ class Walker(object):
             root_path = root_path.joinpath(path)
 
         for found_path in root_path.rglob(ext_filter):
+            # TODO: ignore validation result
+            if 'summary' in found_path.name:
+                continue
             if filter_after_date(found_path, date):
                 yield found_path.absolute().as_posix()
