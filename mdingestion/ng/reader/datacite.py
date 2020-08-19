@@ -14,7 +14,7 @@ class DataCiteReader(XMLReader):
         doc.keywords = self.find('subject')
         doc.discipline = format_value(self.find('subject'), type='string_words')
         doc.doi = self.doi()
-        doc.related_identifier = self.find('alternateIdentifier')
+        doc.related_identifier = self.find('relatedIdentifier')
         doc.creator = self.creator()
         doc.publisher = self.find('publisher')
         doc.contributor = self.find('contributorName')
