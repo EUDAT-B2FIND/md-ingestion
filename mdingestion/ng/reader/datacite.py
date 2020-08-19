@@ -36,17 +36,17 @@ class DataCiteReader(XMLReader):
         for creator in self.parser.doc.find_all('creator'):
             name = creator.creatorName.text
             if creator.affiliation:
-                if creator.affiliation.text:
-                    name = f"{name} ({creator.affiliation.text})"
+                affiliation = format_value(creator.affiliation.text, one=True)
+                if affiliation:
+                    name = f"{name} ({affiliation})"
             creators.append(name)
         return creators
 
     def doi(self):
-        id = self.find('identifier', identifierType="DOI")
-        if not id:
-            id = self.find('identifier', identifierType="doi")
-        url = f"https://doi.org/{format_value(id, one=True)}"
-        return url
+        doi = self.find('identifier', identifierType="DOI")
+        if not doi:
+            doi = self.find('identifier', identifierType="doi")
+        return doi
 
     def geometry(self):
         if self.parser.doc.find('geoLocationPoint'):

@@ -15,7 +15,7 @@ def test_common_attributes():
     assert 'Rufiberg is a pre-alpine meadow site in Switzerland' in doc.description[0]
     assert 'LANDSLIDES' in doc.keywords
     assert 'https://doi.org/10.16904/5' == doc.doi
-    assert 'https://www.envidat.ch/dataset/10-16904-5' == doc.related_identifier[0]
+    # assert 'https://www.envidat.ch/dataset/10-16904-5' == doc.related_identifier[0]
     assert 'Cornelia Brönnimann (WSL)' == doc.creator[0]
     assert 'ETH Zurich' in doc.publisher[0]
     assert 'Manfred Stähli' == doc.contributor[0]

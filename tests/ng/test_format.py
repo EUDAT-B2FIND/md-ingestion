@@ -31,6 +31,13 @@ def test_format_date_year():
     assert '2020' == format.format_date_year('2020-05-20')
 
 
+def test_format_url():
+    assert 'http://alice/in/wonderland' == format.format_url('http://alice/in/wonderland')
+    assert 'https://nbn-resolving.org/urn:nbn:de:hbz:5-59155' == format.format_url('urn:nbn:de:hbz:5-59155')
+    assert 'https://doi.org/10.22000/152' == format.format_url('doi:10.22000/152')
+    assert 'https://doi.org/10.22000/152' == format.format_url('10.22000/152')
+
+
 def test_format_value():
     assert ['hello'] == format.format_value('hello')
     assert ['alice'] == format.format_value(' alice ')
@@ -38,3 +45,4 @@ def test_format_value():
     assert ['123.4'] == format.format_value(123.4)
     assert ['2020-05-19'] == format.format_value('2020-05-19', type='date')
     assert ['2020'] == format.format_value('2020-05-19', type='date_year')
+    assert 'https://alice/in/wonderland' == format.format_value('https://alice/in/wonderland', type='url', one=True)

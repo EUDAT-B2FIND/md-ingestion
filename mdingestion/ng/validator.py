@@ -24,6 +24,7 @@ class Validator(object):
             'optional': {},
             'invalid': {},
             'values': {},
+            'invalid_values': {},
             'missing': [field.name for field in self.schema.children]
         }
 
@@ -45,26 +46,14 @@ class Validator(object):
         self._update_summary(jsondoc)
         return valid
 
-    def _update_summary(self, fields, valid=True, max_value_length=100, max_values=100):
+    def _update_summary(self, fields, valid=True):
         if valid:
             for key, value in fields.items():
                 if not value:
                     continue
                 if key in self.summary['missing']:
                     self.summary['missing'].remove(key)
-                if key not in self.summary['values']:
-                    self.summary['values'][key] = {}
-                # collect not more than "max_values" different values.
-                if len(self.summary['values'][key]) < max_values:
-                    val_key = str(value)[:max_value_length]
-                # otherwiese just count the remaining values
-                else:
-                    val_key = '[..]'
-                # count values
-                if val_key not in self.summary['values'][key]:
-                    self.summary['values'][key][val_key] = 1
-                else:
-                    self.summary['values'][key][val_key] += 1
+                self._update_values(key, value, valid=valid)
                 # count required fields
                 if key in self.summary['required']:
                     self.summary['required'][key] += 1
@@ -80,6 +69,26 @@ class Validator(object):
                     self.summary['invalid'][key] = 1
                 else:
                     self.summary['invalid'][key] += 1
+                self._update_values(key, value, valid=valid)
+
+    def _update_values(self, key, value, valid=True, max_value_length=100, max_values=100):
+        if valid:
+            values_key = 'values'
+        else:
+            values_key = 'invalid_values'
+        if key not in self.summary[values_key]:
+            self.summary[values_key][key] = {}
+        # collect not more than "max_values" different values.
+        if len(self.summary[values_key][key]) < max_values:
+            val_key = str(value)[:max_value_length]
+        # otherwiese just count the remaining values
+        else:
+            val_key = '[..]'
+        # count values
+        if val_key not in self.summary[values_key][key]:
+            self.summary[values_key][key][val_key] = 1
+        else:
+            self.summary[values_key][key][val_key] += 1
 
     def print_summary(self):
         print("\nSummary:")
