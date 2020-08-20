@@ -14,3 +14,4 @@ def test_map_discipline():
     assert classifier.map_discipline(['Engineering', 'Scientific satellites', 'Aerospace telemetry']) == \
         ('Engineering', ['4.1', 'Natural Sciences', 'Chemistry'])
     assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == ('Various', [])
+    assert 'Humanities;Engineering' in classifier.map_discipline(['Humanities', 'Engineering'])
