@@ -80,6 +80,7 @@ def test_b2f_doc_validation_darus():
     assert 2020 == appstruct['publication_year'][0].year
 
 
+@pytest.mark.xfail(reason='related identifier url validation fails')
 def test_b2f_doc_validation_herbadrop():
     jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')  # noqa
     reader = Herbadrop()

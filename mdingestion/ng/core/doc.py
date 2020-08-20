@@ -96,7 +96,7 @@ class BaseDoc(object):
 
     @related_identifier.setter
     def related_identifier(self, value):
-        self._related_identifier = format_value(value, type='url',)
+        self._related_identifier = format_value(value, type='url')
 
     @property
     def metadata_access(self):
@@ -240,13 +240,13 @@ class GeoDoc(BaseDoc):
     def spatial_coverage(self):
         coverage = ''
         if self.geometry:
-            coverage = self.format_geometry()
+            coverage = self.format_coverage()
         if self.places:
             coverage += '; '
             coverage += '; '.join(self.places)
         return coverage
 
-    def format_geometry(self):
+    def format_coverage(self):
         geom = ''
         if self.geometry:
             if self.geometry.geom_type == 'Point':
@@ -257,23 +257,26 @@ class GeoDoc(BaseDoc):
                 geom = f"({bounds[0]:.1f}W, {bounds[1]:.1f}S, {bounds[2]:.1f}E, {bounds[3]:.1f}N)"
         return geom
 
-    def format_bbox(self):
-        bbox = ''
+    def format_geometry(self):
+        geom = ''
         if self.geometry:
             if self.geometry.geom_type == 'Point':
-                bounds = self.geometry.buffer(2).bounds
+                point = self.geometry
+                x = f"{point.x:.2f}"
+                y = f"{point.y:.2f}"
+                geom = "{\"type\":\"Point\",\"coordinates\": [%s,%s]}" % (x, y)
             else:
                 bounds = self.geometry.bounds
-            w = f"{bounds[0]:.2f}"
-            s = f"{bounds[1]:.2f}"
-            e = f"{bounds[2]:.2f}"
-            n = f"{bounds[3]:.2f}"
-            bbox = "{\"type\":\"Polygon\",\"coordinates\": [[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (w, s, w, n, e, n, e, s, w, s)  # noqa
-        return bbox
+                w = f"{bounds[0]:.2f}"
+                s = f"{bounds[1]:.2f}"
+                e = f"{bounds[2]:.2f}"
+                n = f"{bounds[3]:.2f}"
+                geom = "{\"type\":\"Polygon\",\"coordinates\": [[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (w, s, w, n, e, n, e, s, w, s)  # noqa
+        return geom
 
     @property
     def spatial(self):
-        return self.format_bbox()
+        return self.format_geometry()
 
     @property
     def geometry(self):

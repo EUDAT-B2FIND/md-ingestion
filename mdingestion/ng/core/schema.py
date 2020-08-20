@@ -65,15 +65,14 @@ class B2FSchema(colander.MappingSchema):
         missing=colander.drop,
         validator=colander.url,
     )
-    # TODO: related_identifier url validation is not working ... herbadrop, darus, ...
+    # TODO: related_identifier url validation is not working for herbadrop
     related_identifier = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),
-        colander.SchemaNode(colander.String(), missing=colander.drop),
+        colander.SchemaNode(colander.String(), missing=colander.drop, validator=colander.url),
         name='related_identifier',
         title='RelatedIdentifier',
         description='Identifiers of related resources.',
         missing=colander.drop,
-        # validator=colander.url,
     )
     metadata_access = colander.SchemaNode(
         colander.String(),
