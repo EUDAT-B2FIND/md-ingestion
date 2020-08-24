@@ -57,12 +57,14 @@ class CSWHarvester(Harvester):
             self.csw.getrecords2(
                 constraints=self.constraints,
                 startposition=startposition,
-                outputschema=self.schema)
-            for rec in self.csw.records:
-                yield self.csw.records[rec]
+                esn='full',
+                outputschema=self.schema,
+                maxrecords=20)
             startposition = self.csw.results['nextrecord']
             if startposition == 0:
                 ok = False
+            for rec in self.csw.records:
+                yield self.csw.records[rec]
 
     def _write_record(self, fp, record, pretty_print=True):
         xml = etree.tostring(etree.fromstring(record.xml), pretty_print=pretty_print).decode('utf8')
