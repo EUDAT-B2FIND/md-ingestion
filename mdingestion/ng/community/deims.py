@@ -14,6 +14,7 @@ class DeimsISO19139(ISO19139Reader):
         doc.contributor = 'DEIMS-SDR Site and Dataset registry deims.org'
         doc.discipline = 'Environmental Monitoring'
         doc.metadata_access = [url for url in self.find('linkage') if 'deims.org/api/' in url]
+        self.related_identifier(doc)
         self.fix_source(doc)
 
     def fix_source(self, doc):
@@ -21,6 +22,20 @@ class DeimsISO19139(ISO19139Reader):
         if source.startswith("https://deims.org/datasets/"):
             source = source.replace("https://deims.org/datasets/", "https://deims.org/dataset/")
             doc.source = source
+
+    def related_identifier(self, doc):
+        urls = []
+        for url in self.find('linkage'):
+            if doc.doi and doc.doi in url:
+                continue
+            if doc.pid and doc.pid in url:
+                continue
+            if doc.source and doc.source in url:
+                continue
+            if doc.metadata_access and doc.metadata_access in url:
+                continue
+            urls.append(url)
+        doc.related_identifier = urls
 
         #doc.doi = self.find_doi('distributionInfo.URL')
         #doc.pid = self.find_pid('distributionInfo.URL')
