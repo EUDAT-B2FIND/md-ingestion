@@ -310,7 +310,12 @@ class GeoDoc(BaseDoc):
     @property
     def temporal_coverage(self):
         if not self._temporal_coverage:
-            return self.temporal_coverage_begin_date
+            val = None
+            if self.temporal_coverage_begin_date:
+                val = f"{self.temporal_coverage_begin_date}"
+                if self.temporal_coverage_end_date:
+                    val = f"{self.temporal_coverage_begin_date}/{self.temporal_coverage_end_date}"
+            return val
         return self._temporal_coverage
 
     @temporal_coverage.setter
@@ -346,7 +351,7 @@ class GeoDoc(BaseDoc):
     @property
     def temp_coverage_end(self):
         try:
-            tstamp = int(date_parser.parse(self.end_date).timestamp())
+            tstamp = int(date_parser.parse(self._end_date).timestamp())
         except Exception:
             tstamp = None
         return tstamp
