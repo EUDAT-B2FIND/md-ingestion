@@ -13,7 +13,7 @@ class DataCiteReader(XMLReader):
         doc.description = self.find('description')
         doc.keywords = self.find('subject')
         doc.discipline = format_value(self.find('subject'), type='string_words')
-        doc.doi = self.doi()
+        # doc.doi = self.doi()
         doc.related_identifier = self.find('relatedIdentifier')
         doc.creator = self.creator()
         doc.publisher = self.find('publisher')
@@ -30,6 +30,7 @@ class DataCiteReader(XMLReader):
         doc.temporal_coverage = self.find('date')
         doc.geometry = self.geometry()
         doc.places = self.find('geoLocationPlace')
+        self.update_identifier(doc)
 
     def creator(self):
         creators = []
@@ -42,11 +43,16 @@ class DataCiteReader(XMLReader):
             creators.append(name)
         return creators
 
-    def doi(self):
-        doi = self.find('identifier', identifierType="DOI")
-        if not doi:
-            doi = self.find('identifier', identifierType="doi")
-        return doi
+    def update_identifier(self, doc):
+        # TODO: need a better way to parse identifiers: doi, pid, source
+        doc.doi = self.find('resource.identifier', identifierType="DOI")
+        if not doc.doi:
+            doc.doi = self.find('resource.identifier', identifierType="doi")
+        # if not doc.doi:
+        # doc.doi = self.find_doi('resource.identifier')
+        # print(doc.doi)
+        if not doc.doi:
+            doc.source = self.find('resource.identifier')
 
     def geometry(self):
         if self.parser.doc.find('geoLocationPoint'):

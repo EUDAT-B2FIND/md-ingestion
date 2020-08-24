@@ -58,7 +58,7 @@ class Reader(object):
         return False
 
     def find_doi(self, name=None, **kwargs):
-        urls = [url for url in self.parser.find(name, **kwargs) if 'doi.org/' in url]
+        urls = [url for url in self.parser.find(name, **kwargs) if 'doi' in url]
         return urls
 
     def find_pid(self, name=None, **kwargs):
