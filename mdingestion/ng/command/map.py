@@ -22,6 +22,7 @@ class Map(Command):
         self.writer = writer(format)
         # TODO: refactor validator usage
         validator = Validator()
+        validator.summary['_invalid_files_'] = []
         count = 0
         for filename in tqdm(self.walk(), ascii=True, desc=f"Map to {format}", unit=' records', total=limit):
             if limit > 0 and count >= limit:
@@ -31,6 +32,9 @@ class Map(Command):
             if force or is_valid:
                 self.writer.write(doc, filename)
                 validator.summary['written'] += 1
+            else:
+                logging.warning(f"validation failed: {filename}")
+                validator.summary['_invalid_files_'].append(filename)
             count += 1
         validator.print_summary()
         validator.write_summary(self.writer.outdir)
