@@ -16,7 +16,7 @@ class PangaeaDatacite(DataCiteReader):
     def discipline(self, doc):
         classifier = classify.Classify()
         result = classifier.map_discipline(doc.keywords)
-        if not 'Various' in result:
+        if 'Various' not in result:
             logging.debug(f"{result} keywords={doc.keywords}")
         disc = result[0]
         if 'Various' in disc:
