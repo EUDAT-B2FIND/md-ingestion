@@ -48,9 +48,8 @@ class DataCiteReader(XMLReader):
         doc.doi = self.find('resource.identifier', identifierType="DOI")
         if not doc.doi:
             doc.doi = self.find('resource.identifier', identifierType="doi")
-        # if not doc.doi:
-        # doc.doi = self.find_doi('resource.identifier')
-        # print(doc.doi)
+        if not doc.doi:
+            doc.doi = [url for url in self.find('resource.identifier') if 'doi' in url]
         if not doc.doi:
             doc.source = self.find('resource.identifier')
 
