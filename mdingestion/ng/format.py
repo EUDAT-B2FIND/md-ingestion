@@ -125,6 +125,7 @@ def format_date_year(text):
 
 
 def format_url(text):
+    text = format_string(text)
     parsed = urlparse(text)
     if parsed.scheme in ['http', 'https', 'ftp']:
         url = format_string(text)

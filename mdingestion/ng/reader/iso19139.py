@@ -11,18 +11,23 @@ class ISO19139Reader(XMLReader):
     SNIFFER = CSWSniffer
 
     def parse(self, doc):
-        doc.title = self.find('title')
+        doc.title = self.find('CI_Citation.title')
         doc.description = self.find('abstract')
         doc.keywords = self.find('keyword')
-        doc.creator = self.find('individualName')
-        # TODO: check whether <publisher> is generic in <contact>
-        doc.publisher = self.find('contact.organisationName')
-        doc.publication_year = self.find('CI_Citation.Date')
+        doc.source = self.find('MD_Identifier')
+        doc.creator = self.find('CI_ResponsibleParty.individualName')
+        #doc.instrument = self.find('')
+        doc.publisher = self.find('CI_ResponsibleParty.organisationName')
+        #doc.contributor = self.find('')
+        doc.publication_year = self.find('CI_Citation.date')
         doc.rights = self.find('MD_LegalConstraints')
         doc.contact = self.find('contact.electronicMailAddress')
+        #doc.funding_reference = self.find('')
         doc.language = self.find('LanguageCode')
         doc.resource_type = self.find('hierarchyLevel.MD_ScopeCode')
-        doc.format = self.find('distributionFormat')
+        doc.format = self.find('MD_Format.name')
+        #doc.size = self.find('')
+        doc.version = self.find('distributionFormat.version')
         # TODO: fix temporal coverage
         doc.temporal_coverage_begin_date = self.find('EX_TemporalExtent.beginPosition')
         doc.temporal_coverage_end_date = self.find('EX_TemporalExtent.endPosition')
