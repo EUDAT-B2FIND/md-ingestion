@@ -1,0 +1,124 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.904099</identifier>
+    <datestamp>2020-01-17T15:01:12Z</datestamp>
+    <setSpec>topicAtmosphere</setSpec>
+    <setSpec>topicChemistry</setSpec>
+    <setSpec>topicLithosphere</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+      <identifier identifierType="URL">https://doi.pangaea.de/10.1594/PANGAEA.904099</identifier>
+      <creators>
+        <creator>
+          <creatorName>Opel, Thomas</creatorName>
+          <givenName>Thomas</givenName>
+          <familyName>Opel</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0003-1315-8256</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Murton, Julian B</creatorName>
+          <givenName>Julian B</givenName>
+          <familyName>Murton</familyName>
+        </creator>
+        <creator>
+          <creatorName>Wetterich, Sebastian</creatorName>
+          <givenName>Sebastian</givenName>
+          <familyName>Wetterich</familyName>
+        </creator>
+        <creator>
+          <creatorName>Meyer, Hanno</creatorName>
+          <givenName>Hanno</givenName>
+          <familyName>Meyer</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0003-4129-4706</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Ashastina, Kseniia</creatorName>
+          <givenName>Kseniia</givenName>
+          <familyName>Ashastina</familyName>
+        </creator>
+        <creator>
+          <creatorName>G&#252;nther, Frank</creatorName>
+          <givenName>Frank</givenName>
+          <familyName>G&#252;nther</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-8298-8937</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Grotheer, Hendrik</creatorName>
+          <givenName>Hendrik</givenName>
+          <familyName>Grotheer</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0003-0207-3767</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Mollenhauer, Gesine</creatorName>
+          <givenName>Gesine</givenName>
+          <familyName>Mollenhauer</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5138-564X</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Danilov, Petr P</creatorName>
+          <givenName>Petr P</givenName>
+          <familyName>Danilov</familyName>
+        </creator>
+        <creator>
+          <creatorName>Boeskorov, Vasily</creatorName>
+          <givenName>Vasily</givenName>
+          <familyName>Boeskorov</familyName>
+        </creator>
+        <creator>
+          <creatorName>Savvinov, Grigoriy N</creatorName>
+          <givenName>Grigoriy N</givenName>
+          <familyName>Savvinov</familyName>
+        </creator>
+        <creator>
+          <creatorName>Schirrmeister, Lutz</creatorName>
+          <givenName>Lutz</givenName>
+          <familyName>Schirrmeister</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-9455-0596</nameIdentifier>
+        </creator>
+      </creators>
+      <titles>
+        <title>05. Spatial comparison of stable water isotope data of ice wedges at Lena Delta, Sobo Sise</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Ice wedges</subject>
+        <subject>Permafrost</subject>
+        <subject>Siberian Arctic</subject>
+        <subject>stable water isotopes</subject>
+        <subject>winter climate reconstruction</subject>
+        <subject subjectScheme="Parameter">Sample ID</subject>
+        <subject subjectScheme="Parameter">&#948;18O, water</subject>
+        <subject subjectScheme="Parameter">&#948; Deuterium, water</subject>
+        <subject subjectScheme="Parameter">Deuterium excess</subject>
+        <subject subjectScheme="Method">Multiple investigations</subject>
+      </subjects>
+      <language>en</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.5194/cp-15-1443-2019</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>64 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <rightsList>
+        <rights>Data access is restricted (moratorium, sensitive data, license constraints)</rights>
+      </rightsList>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLongitude>128.29</pointLongitude>
+            <pointLatitude>72.54</pointLatitude>
+          </geoLocationPoint>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Sobo Sise Island, Lena Delta</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>
