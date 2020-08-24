@@ -7,8 +7,21 @@ class DeimsISO19139(ISO19139Reader):
     SNIFFER = CSWSniffer
 
     def update(self, doc):
+        # print(f"{self.find('linkage')}")
+        # print(f"{[url.strip() for url in self.find('linkage') if 'doi' in url]}")
+        doc.doi = [url for url in self.find('linkage') if 'doi' in url]
+        doc.pid = [url for url in self.find('linkage') if 'hdl' in url]
         doc.contributor = 'DEIMS-SDR Site and Dataset registry deims.org'
         doc.discipline = 'Environmental Monitoring'
+        doc.metadata_access = [url for url in self.find('linkage') if 'deims.org/api/' in url]
+        self.fix_source(doc)
+
+    def fix_source(self, doc):
+        source = doc.source
+        if source.startswith("https://deims.org/datasets/"):
+            source = source.replace("https://deims.org/datasets/", "https://deims.org/dataset/")
+            doc.source = source
+
         #doc.doi = self.find_doi('distributionInfo.URL')
         #doc.pid = self.find_pid('distributionInfo.URL')
         #doc.source = self.source(doc)
