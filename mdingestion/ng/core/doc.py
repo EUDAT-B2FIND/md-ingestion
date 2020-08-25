@@ -5,6 +5,7 @@ from pathlib import Path
 import json
 
 from ..format import format_value
+from ..util import utc2seconds
 
 
 class BaseDoc(object):
@@ -310,13 +311,6 @@ class GeoDoc(BaseDoc):
     @property
     def temporal_coverage(self):
         """string like Viking Age e.g."""
-        if not self._temporal_coverage:
-            val = None
-            if self.temporal_coverage_begin_date:
-                val = f"{self.temporal_coverage_begin_date}"
-                if self.temporal_coverage_end_date:
-                    val = f"{self.temporal_coverage_begin_date}/{self.temporal_coverage_end_date}"
-            return val
         return self._temporal_coverage
 
     @temporal_coverage.setter
@@ -327,7 +321,7 @@ class GeoDoc(BaseDoc):
         else:
             begin = val
             end = None
-        print(begin, end)
+        # print(begin, end)
         self.temporal_coverage_begin_date = begin
         self.temporal_coverage_end_date = end
         if not self.temporal_coverage_begin_date:
@@ -355,7 +349,8 @@ class GeoDoc(BaseDoc):
     def temp_coverage_begin(self):
         """Mikail's seconds since B.C. extension - TODO"""
         try:
-            tstamp = int(date_parser.parse(self._begin_date).timestamp())
+            # tstamp = int(date_parser.parse(self._begin_date).timestamp())
+            tstamp = utc2seconds(self._begin_date)
         except Exception:
             tstamp = None
         return tstamp
@@ -363,7 +358,8 @@ class GeoDoc(BaseDoc):
     @property
     def temp_coverage_end(self):
         try:
-            tstamp = int(date_parser.parse(self._end_date).timestamp())
+            # tstamp = int(date_parser.parse(self._end_date).timestamp())
+            tstamp = utc2seconds(self._end_date)
         except Exception:
             tstamp = None
         return tstamp
