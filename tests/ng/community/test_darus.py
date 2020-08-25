@@ -17,3 +17,4 @@ def test_datacite():
     assert 'application/pdf' in doc.format
     assert len(doc.format) == 2
     assert doc.open_access is True
+    assert '2020-01-30T00:00:00Z' in doc.temporal_coverage_begin_date
