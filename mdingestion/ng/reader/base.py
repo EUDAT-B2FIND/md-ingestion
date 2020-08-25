@@ -11,6 +11,7 @@ class SchemaType(Enum):
     DublinCore = 0
     DataCite = 1
     ISO19139 = 2
+    FGDC = 3
     JSON = 100
 
 
