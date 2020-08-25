@@ -65,7 +65,7 @@ class BaseDoc(object):
 
     @keywords.setter
     def keywords(self, value):
-        self._keywords = format_value(value, type='string_words', max_length=100)
+        self._keywords = format_value(value, type='string_words', min_length=2, max_length=100)
 
     @property
     def doi(self):
