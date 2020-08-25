@@ -309,6 +309,7 @@ class GeoDoc(BaseDoc):
 
     @property
     def temporal_coverage(self):
+        """string like Viking Age e.g."""
         if not self._temporal_coverage:
             val = None
             if self.temporal_coverage_begin_date:
@@ -320,18 +321,21 @@ class GeoDoc(BaseDoc):
 
     @temporal_coverage.setter
     def temporal_coverage(self, value):
-        if '/' in value:
-            begin, end = value.split('/', 1)
+        val = format_value(value, one=True)
+        if '/' in val:
+            begin, end = val.split('/', 1)
         else:
-            begin = value
+            begin = val
             end = None
+        print(begin, end)
         self.temporal_coverage_begin_date = begin
         self.temporal_coverage_end_date = end
         if not self.temporal_coverage_begin_date:
-            self._temporal_coverage = format_value(value, one=True)
+            self._temporal_coverage = val
 
     @property
     def temporal_coverage_begin_date(self):
+        """field begin datetime in utc format in single record"""
         return self._begin_date
 
     @temporal_coverage_begin_date.setter
@@ -340,6 +344,7 @@ class GeoDoc(BaseDoc):
 
     @property
     def temporal_coverage_end_date(self):
+        """field end datetime in utc format in single record"""
         return self._end_date
 
     @temporal_coverage_end_date.setter
@@ -348,6 +353,7 @@ class GeoDoc(BaseDoc):
 
     @property
     def temp_coverage_begin(self):
+        """Mikail's seconds since B.C. extension - TODO"""
         try:
             tstamp = int(date_parser.parse(self._begin_date).timestamp())
         except Exception:

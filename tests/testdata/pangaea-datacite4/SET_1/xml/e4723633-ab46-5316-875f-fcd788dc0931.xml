@@ -1,0 +1,96 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.145167</identifier>
+    <datestamp>2020-07-30T09:21:04Z</datestamp>
+    <setSpec>CARBOOCEAN</setSpec>
+    <setSpec>citable</setSpec>
+    <setSpec>topicBiologicalClassification</setSpec>
+    <setSpec>topicChemistry</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.145167</identifier>
+      <creators>
+        <creator>
+          <creatorName>Nojiri, Yukihiro</creatorName>
+          <givenName>Yukihiro</givenName>
+          <familyName>Nojiri</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-9885-9195</nameIdentifier>
+        </creator>
+      </creators>
+      <titles>
+        <title>Underway physical oceanography and carbon dioxide measurements during Alligator Hope cruise AH01W</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2011</publicationYear>
+      <subjects>
+        <subject subjectScheme="Parameter">DATE/TIME</subject>
+        <subject subjectScheme="Parameter">LATITUDE</subject>
+        <subject subjectScheme="Parameter">LONGITUDE</subject>
+        <subject subjectScheme="Parameter">DEPTH, water</subject>
+        <subject subjectScheme="Parameter">Temperature, water</subject>
+        <subject subjectScheme="Parameter">Salinity</subject>
+        <subject subjectScheme="Parameter">xCO2 (water) at sea surface temperature (dry air)</subject>
+        <subject subjectScheme="Parameter">xCO2 (water) at equilibrator temperature (dry air)</subject>
+        <subject subjectScheme="Parameter">Fugacity of carbon dioxide (water) at sea surface temperature (wet air)</subject>
+        <subject subjectScheme="Parameter">Fugacity of carbon dioxide (water) at equilibrator temperature (wet air)</subject>
+        <subject subjectScheme="Parameter">Partial pressure of carbon dioxide (water) at sea surface temperature (wet air)</subject>
+        <subject subjectScheme="Parameter">Temperature at equilibration</subject>
+        <subject subjectScheme="Parameter">Pressure, atmospheric</subject>
+        <subject subjectScheme="Parameter">Pressure at equilibration</subject>
+        <subject subjectScheme="Parameter">Salinity, interpolated</subject>
+        <subject subjectScheme="Parameter">Pressure, atmospheric, interpolated</subject>
+        <subject subjectScheme="Parameter">Depth, bathymetric, interpolated/gridded</subject>
+        <subject subjectScheme="Method">Underway cruise track measurements</subject>
+        <subject subjectScheme="Method">extracted from the World Ocean Atlas 2005</subject>
+        <subject subjectScheme="Method">extracted from the NCEP/NCAR 40-Year Reanalysis Project</subject>
+        <subject subjectScheme="Method">extracted from the 2-Minute Gridded Global Relief Data (ETOPO2)</subject>
+        <subject subjectScheme="Method">Recomputed after SOCAT (Pfeil et al., 2013)</subject>
+        <subject subjectScheme="Campaign">AH01W</subject>
+        <subject subjectScheme="Basis">Alligator Hope</subject>
+        <subject subjectScheme="Project">Surface Ocean CO2 Atlas Project (SOCAT)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="HostingInstitution">
+          <contributorName>Carbon Dioxide Information Analysis Center, Oak Ridge National Laboratory</contributorName>
+        </contributor>
+        <contributor contributorType="DataCollector">
+          <contributorName>Olsen, Are</contributorName>
+          <givenName>Are</givenName>
+          <familyName>Olsen</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0003-1696-9142</nameIdentifier>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Collected">1999-11-25T00:10:00/1999-12-07T16:30:00</date>
+      </dates>
+      <language>en</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsPartOf">10.1594/PANGAEA.767698</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>24630 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="https://creativecommons.org/licenses/by/3.0/" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-3.0">Creative Commons Attribution 3.0 Unported</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="TechnicalInfo">Detailed metadata description of each cruise doi:10.1594/PANGAEA.769638</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>
+            <westBoundLongitude>140.025</westBoundLongitude>
+            <eastBoundLongitude>-124.066</eastBoundLongitude>
+            <southBoundLatitude>34.4607</southBoundLatitude>
+            <northBoundLatitude>56.98779999999999</northBoundLatitude>
+          </geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>
