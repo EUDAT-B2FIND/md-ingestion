@@ -33,12 +33,3 @@ def test_iso19139_temporal_coverage():
     # assert "{'type': 'Polygon', 'coordinates': (((45.81802, 10.49203), (45.81802, 47.80838), (5.95587, 47.80838), (5.95587, 10.49203), (45.81802, 10.49203)),)}" == doc.spatial  # noqa
     assert '2018-12-31T00:00:00Z' == doc.temporal_coverage_begin_date
     assert '2018-12-31T00:00:00Z' == doc.temporal_coverage_end_date
-
-
-def test_deims_iso19139():
-    xml_file = os.path.join(
-        TESTDATA_DIR, 'deims-iso19139', 'full', 'xml', '440dd8eb-86c1-595a-8627-bf2ee364ac3d.xml')
-    reader = ISO19139Reader()
-    doc = reader.read(xml_file)
-    assert 'Obergurgl' in doc.title[0]
-    assert '2019' == doc.publication_year[0]

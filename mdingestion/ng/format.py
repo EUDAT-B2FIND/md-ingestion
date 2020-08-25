@@ -125,19 +125,19 @@ def format_date_year(text):
 
 
 def format_url(text):
-    text = format_string(text)
-    parsed = urlparse(text)
+    url = format_string(text)
+    parsed = urlparse(url)
     if parsed.scheme in ['http', 'https', 'ftp']:
-        url = format_string(text)
+        pass
     elif parsed.scheme == 'urn':
         url = resolve_urn(text)
     # TODO: fix herbadrop ark
     elif parsed.scheme in ['ark', ]:
-        url = format_string(text)
+        pass
     elif parsed.scheme == 'doi' or parsed.path.startswith('10.'):
         url = f"https://doi.org/{parsed.path}"
     else:
-        logging.warning(f"could not parse url: {text}")
+        logging.warning(f"could not parse url: {url}")
         url = ''
     return url
 

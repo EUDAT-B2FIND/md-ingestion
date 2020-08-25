@@ -4,6 +4,7 @@ from ..core import B2FDoc
 from ..parser import XMLParser
 from ..parser import JSONParser
 from ..rights import is_open_access
+from ..format import format_url
 
 
 class SchemaType(Enum):
@@ -58,7 +59,7 @@ class Reader(object):
         return False
 
     def find_doi(self, name=None, **kwargs):
-        urls = [url for url in self.find(name, **kwargs) if 'doi' in url]
+        urls = [url for url in self.find(name, **kwargs) if 'doi' in format_url(url)]
         return urls
 
     def find_pid(self, name=None, **kwargs):

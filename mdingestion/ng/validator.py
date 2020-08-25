@@ -20,6 +20,9 @@ class Validator(object):
             'required': {
                 'title': 0,
                 'identifier': 0,
+                'publisher': 0,
+                'publication_year': 0,
+                'discipline': 0,
             },
             'optional': {},
             'invalid': {},
@@ -94,7 +97,8 @@ class Validator(object):
         print("\nSummary:")
         print(f"\tvalid={self.summary['valid']}/{self.summary['total']}, written={self.summary['written']}")
         print("\nRequired Fields:")
-        print(f"\ttitle={self.summary['required']['title']}, identifier={self.summary['required']['identifier']}")
+        for key, value in self.summary['required'].items():
+            print(f"\t{key}={value}")
         print("\nOptional Fields (complete):")
         for key, value in self.summary['optional'].items():
             if value == self.summary['total']:

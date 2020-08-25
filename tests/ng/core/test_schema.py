@@ -50,7 +50,10 @@ def test_b2f_missing_title():
             {
                 'community': 'wonderland',
                 'description': ['Where is the title?'],
-                'identifier': 'http://localhost/some.txt'
+                'identifier': 'http://localhost/some.txt',
+                'publication_year': '2010',
+                'discipline': 'Phantasy',
+                'publisher': 'No one',
             })
 
 
@@ -62,6 +65,8 @@ def test_b2f_invalid_date():
                 'community': 'deep space 9',
                 'title': ['What year?'],
                 'identifier': 'http://localhost/some.txt',
+                'discipline': 'Phantasy',
+                'publisher': 'No one',
                 'publication_year': ['yesterday']
             })
 
@@ -101,6 +106,9 @@ def test_b2f_validate_none():
         'title': ['A Title', 'A subtitle'],
         'identifier': 'http://localhost/b2f/alice_in_wonderland.txt',
         'source': 'http://localhost/b2f/alice_in_wonderland.txt',
+        'publication_year': '2010',
+        'discipline': 'Phantasy',
+        'publisher': 'No one',
         'creator': None,
         'open_access': None,
     }
@@ -117,6 +125,9 @@ def test_b2f_validate_empty():
         'title': ['A Title', 'A subtitle'],
         'identifier': 'http://localhost/b2f/alice_in_wonderland.txt',
         'source': 'http://localhost/b2f/alice_in_wonderland.txt',
+        'publication_year': '2010',
+        'discipline': 'Phantasy',
+        'publisher': 'No one',
         'creator': '',
         'open_access': ''
     }

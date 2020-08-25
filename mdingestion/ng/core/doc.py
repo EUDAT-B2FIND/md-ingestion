@@ -320,8 +320,14 @@ class GeoDoc(BaseDoc):
 
     @temporal_coverage.setter
     def temporal_coverage(self, value):
-        self._temporal_coverage = format_value(value, type='datetime', one=True)
-        if not self._temporal_coverage:
+        if '/' in value:
+            begin, end = value.split('/', 1)
+        else:
+            begin = value
+            end = None
+        self.temporal_coverage_begin_date = begin
+        self.temporal_coverage_end_date = end
+        if not self.temporal_coverage_begin_date:
             self._temporal_coverage = format_value(value, one=True)
 
     @property
