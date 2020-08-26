@@ -23,7 +23,7 @@ class ISO19139Reader(XMLReader):
         doc.rights = self.find('MD_LegalConstraints')
         doc.contact = self.find('contact.electronicMailAddress')
         # doc.funding_reference = self.find('')
-        doc.language = self.find('LanguageCode')
+        doc.language = self.find('MD_Metadata.language')
         doc.resource_type = self.find('hierarchyLevel.MD_ScopeCode')
         doc.format = self.find('MD_Format.name')
         # doc.size = self.find('')

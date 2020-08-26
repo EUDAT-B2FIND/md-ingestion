@@ -72,8 +72,8 @@ enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 ## EnviDat
 #envidat https://www.envidat.ch/api/3/action package_list json
 #envidat https://www.envidat.ch/api/3/action ckan_api json
-#envidat https://www.envidat.ch/oai ListRecords iso19139
-envidat https://www.envidat.ch/oai ListRecords datacite
+envidat https://www.envidat.ch/oai ListRecords iso19139
+#envidat https://www.envidat.ch/oai ListRecords datacite
 #envidat https://www.envidat.ch/oai ListRecords oai_dc
 
 ## ESS SciCat
