@@ -20,7 +20,7 @@ def format_value(value, type=None, one=False, min_length=None, max_length=None):
     # remove duplicates
     formatted = remove_duplicates_from_list(formatted)
     if min_length:
-        formatted = [val for val in formatted if len(val)>=min_length]
+        formatted = [val for val in formatted if len(val) >= min_length]
     if max_length:
         formatted = [val[:max_length] for val in formatted]
     # do we have a single value?

@@ -11,23 +11,17 @@ class EnviDatISO19139(ISO19139Reader):
     SNIFFER = OAISniffer
 
     def update(self, doc):
-        doc.doi = self.find_doi('linkage')
-        doc.pid = self.find_pid('linkage')
-        doc.discipline = 'Environmental Research'
-        self.related_identifier(doc)
-        self.discipline(doc)
+        doc.source = self.source(doc)
+        doc.discipline = self.discipline(doc)
 
-    def related_identifier(self, doc):
-        urls = []
-        for url in self.find('linkage'):
-            if doc.doi and doc.doi in url:
-                continue
-            if doc.pid and doc.pid in url:
-                continue
-            if doc.source and doc.source in url:
-                continue
-            urls.append(url)
-        doc.related_identifier = urls
+    def source(self, doc):
+        source = ''
+        if not doc.source:
+            for url in doc.related_identifier:
+                if url.startswith('https://www.envidat.ch/dataset/'):
+                    source = url
+                    break
+        return source
 
     def discipline(self, doc):
         classifier = classify.Classify()
@@ -36,6 +30,5 @@ class EnviDatISO19139(ISO19139Reader):
             logging.debug(f"{result} keywords={doc.keywords}")
         disc = result[0]
         if 'Various' in disc:
-            disc = 'Environmental Monitoring'
-        doc.discipline = disc
+            disc = 'Environmental Research'
         return disc

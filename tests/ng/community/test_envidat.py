@@ -1,22 +1,30 @@
 import os
 
-from mdingestion.ng.community.envidat import EnvidatDatacite, EnvidatISO19139
+from mdingestion.ng.community.envidat import EnviDatISO19139
 
 from tests.common import TESTDATA_DIR
 
 
-def test_datacite():
-    xmlfile = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'SET_1', 'xml', 'point_3dea0629-16cb-55b4-8bdb-30d2a57a7fb9.xml')  # noqa
-    reader = EnvidatDatacite()
-    doc = reader.read(xmlfile)
-    assert 'TRAMM project' in doc.title[0]
-    assert 'EnviDat' in doc.contributor
-    assert 'https://doi.org/10.16904/5' in doc.doi
-
-
 def test_iso19139():
-    xmlfile = os.path.join(TESTDATA_DIR, 'envidat-iso19139', 'SET_1', 'xml', 'bbox_2ea750c6-4354-5f0a-9b67-2275d922d06f.xml')  # noqa
-    reader = EnvidatISO19139()
+    xmlfile = os.path.join(TESTDATA_DIR, 'envidat-iso19139', 'SET_1', 'xml', '2eff7dec-8e24-5046-b690-e87840ce65ac.xml')  # noqa
+    reader = EnviDatISO19139()
     doc = reader.read(xmlfile)
-    assert 'Number of avalanche fatalities' in doc.title[0]
-    assert 'EnviDat' in doc.contributor
+    assert 'https://doi.org/10.16904/envidat.lwf.38' == doc.doi
+    assert '' == doc.pid
+    assert 'https://www.envidat.ch/dataset/envidat-lwf-38' == doc.source
+    assert 'https://www.wsl.ch/en/forest/forest-development-and-monitoring/long-term-forest-ecosystem-research-lwf.html' in doc.related_identifier  # noqa
+    assert 'Environmental Research' == doc.discipline
+    assert 'Symptoms of O3 injuries LWF' in doc.title
+    assert 'Measuring air pollutants in forests' in doc.description[0]
+    assert 'AMBIENT AIR QUALITY' in doc.keywords
+    assert 'Marcus Schaub' in doc.creator
+    assert 'Swiss Federal Institute for Forest' in doc.publisher[0]
+    # assert 'EnviDat' in doc.contributor
+    assert '2019' in doc.publication_year
+    assert 'Other (Specified in the description)' in doc.rights
+    assert 'Eng' in doc.language
+    assert [] == doc.resource_type
+    assert 'URL' in doc.format
+    assert '' == doc.version
+    assert '' == doc.temporal_coverage_begin_date
+    assert '' == doc.spatial_coverage

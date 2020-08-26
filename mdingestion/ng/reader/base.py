@@ -64,7 +64,7 @@ class Reader(object):
         return urls
 
     def find_pid(self, name=None, **kwargs):
-        urls = [url for url in self.find(name, **kwargs) if 'hdl.handle.net/' in url]
+        urls = [url for url in self.find(name, **kwargs) if 'hdl.handle.net' in format_url(url)]
         return urls
 
 

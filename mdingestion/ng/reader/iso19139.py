@@ -11,10 +11,17 @@ class ISO19139Reader(XMLReader):
     SNIFFER = CSWSniffer
 
     def parse(self, doc):
+        doc.doi = self.find_doi('MD_Metadata.fileIdentifier')
+        if not doc.doi:
+            doc.doi = self.find_doi('linkage')
+        doc.pid = self.find_pid('MD_Metadata.fileIdentifier')
+        if not doc.pid:
+            doc.pid = self.find_pid('linkage')
+        doc.source = self.find('MD_Identifier')
+        doc.related_identifier = self.find('linkage')
         doc.title = self.find('CI_Citation.title')
         doc.description = self.find('abstract')
         doc.keywords = self.find('keyword')
-        doc.source = self.find('MD_Identifier')
         doc.creator = self.find('CI_ResponsibleParty.individualName')
         # doc.instrument = self.find('')
         doc.publisher = self.find('CI_ResponsibleParty.organisationName')
