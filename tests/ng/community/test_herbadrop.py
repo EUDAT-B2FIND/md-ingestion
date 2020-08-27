@@ -26,7 +26,6 @@ def test_json_1():
     assert 'image/jpeg' == doc.format[0]
     assert 'Plant Sciences' == doc.discipline
     # assert 'France|Languedoc-Roussillon||||Eyne' == doc.spatial_coverage
-    assert '1968-07-17T00:00:00+01:00Z/1968-07-17T00:00:00+01:00Z' == doc.temporal_coverage
     assert '1968-07-17T00:00:00+01:00Z' == doc.temporal_coverage_begin_date
     assert '1968-07-17T00:00:00+01:00Z' == doc.temporal_coverage_end_date
 
