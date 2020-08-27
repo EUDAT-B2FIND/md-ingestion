@@ -3,7 +3,7 @@ from shapely.geometry import shape
 import re
 from urllib.parse import urlparse
 
-from .util import remove_duplicates_from_list
+from .util import remove_duplicates_from_list, is_valid_url
 
 import logging
 
@@ -132,14 +132,17 @@ def format_url(text):
     if parsed.scheme in ['http', 'https', 'ftp']:
         pass
     elif parsed.scheme == 'urn':
-        url = resolve_urn(text)
-    # TODO: fix herbadrop ark
-    elif parsed.scheme in ['ark', ]:
-        pass
+        url = resolve_urn(url)
+    elif parsed.scheme == 'ark':
+        url = resolve_ark(url)
     elif parsed.scheme == 'doi' or parsed.path.startswith('10.'):
         url = f"https://doi.org/{parsed.path}"
     else:
-        logging.warning(f"could not parse url: {url}")
+        logging.warning(f"could not parse URL: {url}")
+        url = ''
+    # check if url is valid
+    if url and not is_valid_url(url):
+        logging.warning(f"URL is not valid: {url}")
         url = ''
     return url
 
@@ -147,6 +150,15 @@ def format_url(text):
 def resolve_urn(urn):
     if urn.startswith('urn:nbn'):
         url = f'https://nbn-resolving.org/{urn}'
+    else:
+        url = ''
+    return url
+
+
+def resolve_ark(value):
+    if value.startswith('ark:/'):
+        # herbadrop uses: https://www.cines.fr
+        url = f"https://n2t.net/{value}"
     else:
         url = ''
     return url

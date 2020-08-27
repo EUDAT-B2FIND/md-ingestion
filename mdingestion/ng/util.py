@@ -1,5 +1,6 @@
 import datetime
 import time
+import colander
 
 import logging
 
@@ -31,3 +32,9 @@ def utc2seconds(dt):
         logging.exception(f'utc2seconds date-time {utc} can not converted!')
         return None
     return sec
+
+
+def is_valid_url(value):
+    if colander.url.match_object.match(value) is None:
+        return False
+    return True

@@ -13,3 +13,8 @@ def test_utc2seconds():
     assert 50459543999 == util.utc2seconds(format_datetime('1600-01-01'))
     assert 25213982399 == util.utc2seconds(format_datetime('0800-01-01'))
     assert 43199 == util.utc2seconds(format_datetime('0001-01-01'))
+
+
+def test_is_valid_url():
+    assert util.is_valid_url('http://localhost:5000/csw') is True
+    assert util.is_valid_url('http://localhost:5000/csw &bla') is False
