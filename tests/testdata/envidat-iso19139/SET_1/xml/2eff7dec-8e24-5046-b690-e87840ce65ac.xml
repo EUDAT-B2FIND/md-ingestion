@@ -1,0 +1,306 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:envidat.ch:cb9b30a0-4b07-4faa-8290-aca5e09c5d30</identifier>
+    <datestamp>2019-11-03T22:24:51Z</datestamp>
+  </header>
+  <metadata>
+    <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString>doi:10.16904/envidat.lwf.38</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gco:CharacterString>Eng</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="MD_CharacterSetCode_utf8" codeSpace="ISOTC211/19115">MD_CharacterSetCode_utf8</gmd:MD_CharacterSetCode>
+      </gmd:characterSet>
+      <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString>Marcus Schaub</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString>Swiss Federal Institute for Forest Snow and Landscape Research WSL, Zuercherstrasse 111, 8903 Birmensdorf, Switzerland</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>marcus.schaub@wsl.ch</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:DateTime>2019-03-06T13:19:44</gco:DateTime>
+      </gmd:dateStamp>
+      <gmd:metadataStandardName>
+        <gco:CharacterString>ISO 19115:2003/19139</gco:CharacterString>
+      </gmd:metadataStandardName>
+      <gmd:metadataStandardVersion>
+        <gco:CharacterString>1.0</gco:CharacterString>
+      </gmd:metadataStandardVersion>
+      <gmd:referenceSystemInfo>
+        <gmd:MD_ReferenceSystem>
+          <gmd:referenceSystemIdentifier>
+            <gmd:RS_Identifier>
+              <gmd:code>
+                <gco:CharacterString>EPSG:4326</gco:CharacterString>
+              </gmd:code>
+            </gmd:RS_Identifier>
+          </gmd:referenceSystemIdentifier>
+        </gmd:MD_ReferenceSystem>
+      </gmd:referenceSystemInfo>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>Symptoms of O3 injuries LWF</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2019-12-31</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:presentationForm>
+                <gmd:CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="dataset"/>
+              </gmd:presentationForm>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString>Measuring air pollutants in forests is important for evaluating the risk for vegetation in areas not covered by conventional air quality monitoring networks. Ozone-induced symptoms are being assessed at LWF, applying the harmonized methodologies from UNECE/ICP Forests and running under the 1999 Gothenburg Protocol to Abate Acidification, Eutrophication and Ground-level Ozone. Data are also collected on ozone concentrations and other ecosystem properties such as tree growth, nutrition, and biodiversity, as well as climate. This makes this long-term monitoring data series essential for impact assessment and air pollution modelling.     ### Purpose: ###    Ozone risk assessment, i.e. to investigate relationships between ozone exposures and ozone-induced, visible symptoms        ### Manual Citation: ###     * Schaub  M,  Calatayud  V,  Ferretti  M,  Brunialti  G, L&#246;vblad  G,  Krause  G,  Sanz  MJ,  2016:  Part  VIII:  Monitoring  of  Ozone  Injury.  In:  UNECE  ICP  Forests  Programme  Co-ordinating  Centre  (ed.):  Manual  on  methods  and  criteria  for  harmonized  sampling,  assessment,  monitoring  and  analysis  of  the  effects  of  air  pollution  on  forests.  Th&#252;nen  Institute  of  Forest  Ecosystems,  Eberswalde,  Germany, 14 p. + Annex [http://icp-forests.net/page/icp-forests-manual](http://icp-forests.net/page/icp-forests-manual)         ### Paper Citation: ###     * Schaub M, H&#228;ni M, Calatayud V, Ferretti M, Gottardini E (2018) ICP Forests Brief No 3 - Ozone concentrations are decreasing but exposure remains high in European forests. Programme Co-ordinating Centre of ICP Forests, Thu&#168;nen Institute of Forest Ecosystems. [doi: 10.3220/ICP1525258743000](https://icp-forests.org/pdf/ICPForestsBriefNo2.pdf)      *  Schaub M and Calatayud V (2013) Assessment of Visible Foliar Injury Induced by Ozone. In: Marco Ferretti and Richard Fischer (Eds). Forest Monitoring: Methods for Terrestrial Investigations in Europe with an Overview of North America and Asia, Vol 12, DENS, UK: Elsevier, 2013, pp. 205-221. ISBN: 9780080982229. [doi: 10.1016/B978-0-08-098222-9.00011-X](https://doi.org/10.1016/B978-0-08-098222-9.00011-X)</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:purpose>Ozone risk assessment, i.e. to investigate relationships between ozone exposures and ozone-induced, visible symptoms</gmd:purpose>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Marcus Schaub</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>Swiss Federal Institute for Forest Snow and Landscape Research WSL, Zuercherstrasse 111, 8903 Birmensdorf, Switzerland</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>marcus.schaub@wsl.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>AMBIENT AIR QUALITY</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>GROUND VEGETATION</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>ICP FORESTS</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>LONG-TERM FOREST ECOSYSTEM RESEARCH</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>OZONE</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>SWISS FOREST LAB</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>SYMPTOMS OF VISIBLE INJURIES</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:resourceConstraints>
+            <gmd:MD_LegalConstraints>
+              <gmd:otherConstraints>
+                <gco:CharacterString>Other (Specified in the description)</gco:CharacterString>
+              </gmd:otherConstraints>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:language>
+            <gco:CharacterString>Eng</gco:CharacterString>
+          </gmd:language>
+          <gmd:characterSet>
+            <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="MD_CharacterSetCode_utf8" codeSpace="ISOTC211/19115">MD_CharacterSetCode_utf8</gmd:MD_CharacterSetCode>
+          </gmd:characterSet>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_BoundingPolygon>
+                  <gmd:polygon>
+                    <gml:MultiPoint gml:id="MP002">
+                      <gml:pointMember>
+                        <gml:Point gml:id="P003">
+                          <gml:pos>8.71258 47.04864</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P004">
+                          <gml:pos>7.76234 46.70034</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P005">
+                          <gml:pos>7.41665 47.22516</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P006">
+                          <gml:pos>9.8888 46.49215</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P007">
+                          <gml:pos>8.81217 46.44682</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P008">
+                          <gml:pos>9.85521 46.81535</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P009">
+                          <gml:pos>9.00806 46.1249</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P010">
+                          <gml:pos>6.29085 46.22985</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P011">
+                          <gml:pos>6.65804 46.58377</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P012">
+                          <gml:pos>7.43594 46.26856</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P013">
+                          <gml:pos>10.23009 46.6625</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P014">
+                          <gml:pos>8.53568 47.6837</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P015">
+                          <gml:pos>8.83416 46.02261</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P016">
+                          <gml:pos>8.22676 47.39954</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P017">
+                          <gml:pos>9.06707 47.16505</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P018">
+                          <gml:pos>7.85832 46.29688</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                      <gml:pointMember>
+                        <gml:Point gml:id="P019">
+                          <gml:pos>7.88676 47.27406</gml:pos>
+                        </gml:Point>
+                      </gml:pointMember>
+                    </gml:MultiPoint>
+                  </gmd:polygon>
+                </gmd:EX_BoundingPolygon>
+              </gmd:geographicElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:distributionInfo>
+        <gmd:MD_Distribution>
+          <gmd:distributionFormat>
+            <gmd:MD_Format>
+              <gmd:name>
+                <gco:CharacterString>URL</gco:CharacterString>
+              </gmd:name>
+              <gmd:version>
+                <gco:CharacterString/>
+              </gmd:version>
+            </gmd:MD_Format>
+          </gmd:distributionFormat>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://www.envidat.ch/dataset/envidat-lwf-38</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>HTTPS</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>DATASET METADATA</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://www.wsl.ch/en/forest/forest-development-and-monitoring/long-term-forest-ecosystem-research-lwf.html</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>HTTPS</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>LWF MAIN PAGE</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</gmd:CI_OnLineFunctionCode>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+        </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+    </gmd:MD_Metadata>
+  </metadata>
+</record>
