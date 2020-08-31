@@ -4,7 +4,11 @@ import re
 from urllib.parse import urlparse
 import iso639
 
-from .util import remove_duplicates_from_list, is_valid_url
+from .util import (
+    remove_duplicates_from_list,
+    is_valid_url,
+    is_valid_email
+)
 
 import logging
 
@@ -55,6 +59,8 @@ def format(text, type=None):
         formatted = format_string_word(text)
     elif type == 'language':
         formatted = format_language(text)
+    elif type == 'email':
+        formatted = format_email(text)
     elif type == 'url':
         formatted = format_url(text)
     else:
@@ -137,6 +143,13 @@ def format_language(text):
         logging.warning(f"could not match language: {text}")
         val = ''
     return val
+
+
+def format_email(text):
+    email = format_string(text)
+    if email and is_valid_email(email):
+        email = email.replace('@', '(at)')
+    return email
 
 
 def format_url(text):

@@ -188,7 +188,7 @@ class BaseDoc(object):
 
     @contact.setter
     def contact(self, value):
-        self._contact = format_value(value)
+        self._contact = format_value(value, type='email')
 
     @property
     def language(self):

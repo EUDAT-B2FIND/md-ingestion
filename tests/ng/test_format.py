@@ -31,6 +31,12 @@ def test_format_date_year():
     assert '2020' == format.format_date_year('2020-05-20')
 
 
+def test_format_email():
+    assert 'knocking(at)heavens.door' == format.format_email('knocking@heavens.door')
+    assert 'return to sender' == format.format_email('return to sender')
+    assert 'talking(at)about.revolution' == format.format_email('  talking@about.revolution  ')
+
+
 def test_format_language():
     assert 'English' == format.format_language('en')
     assert 'English' == format.format_language('eng')

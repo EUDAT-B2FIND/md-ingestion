@@ -18,6 +18,7 @@ def test_iso19139():
     assert 'Measuring air pollutants in forests' in doc.description[0]
     assert 'AMBIENT AIR QUALITY' in doc.keywords
     assert 'Marcus Schaub' in doc.creator
+    assert 'marcus.schaub(at)wsl.ch' in doc.contact
     assert 'Swiss Federal Institute for Forest' in doc.publisher[0]
     # assert 'EnviDat' in doc.contributor
     assert '2019' in doc.publication_year
