@@ -13,15 +13,35 @@ from .util import (
 import logging
 
 
+NULL_VALUES = (
+    'n/a',
+    'none',
+    'not stated',
+    'not available',
+)
+
+
+def is_null_value(text):
+    val = True
+    if text:
+        if f"{text}".strip().lower() in NULL_VALUES:
+            val = True
+        else:
+            val = False
+    return val
+
+
 def format_value(value, type=None, one=False, min_length=None, max_length=None):
     # work with value list
     values = value or []
     if not isinstance(values, list):
         values = [values]
+    formatted = values
     # format values to type
-    formatted = [format(val, type) for val in values]
+    formatted = [format(val, type) for val in formatted]
     # drop empty values
-    formatted = [val for val in formatted if val]
+    formatted = [val for val in formatted if not is_null_value(val)]
+    # formatted = [val for val in formatted if val]
     # remove duplicates
     formatted = remove_duplicates_from_list(formatted)
     if min_length:
