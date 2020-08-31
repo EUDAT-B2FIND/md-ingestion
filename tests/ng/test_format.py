@@ -44,6 +44,7 @@ def test_format_language():
 def test_format_url():
     assert 'http://localhost/alice/in/wonderland' == format.format_url('http://localhost/alice/in/wonderland')
     assert 'https://nbn-resolving.org/urn:nbn:de:hbz:5-59155' == format.format_url('urn:nbn:de:hbz:5-59155')
+    assert 'https://nbn-resolving.org/urn:nbn:nl:ui:13-za-fzpt' == format.format_url('urn:nbn:nl:ui:13-za-fzpt')
     assert 'https://doi.org/10.22000/152' == format.format_url('doi:10.22000/152')
     assert 'https://doi.org/10.22000/152' == format.format_url('10.22000/152')
     assert 'http://alice.org/in/wonderland' == format.format_url('\nhttp://alice.org/in/wonderland\n')
