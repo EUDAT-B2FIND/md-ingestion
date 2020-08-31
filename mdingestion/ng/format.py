@@ -2,6 +2,7 @@ from dateutil import parser as date_parser
 from shapely.geometry import shape
 import re
 from urllib.parse import urlparse
+import iso639
 
 from .util import remove_duplicates_from_list, is_valid_url
 
@@ -52,6 +53,8 @@ def format(text, type=None):
         formatted = format_string_words(text)
     elif type == 'string_word':
         formatted = format_string_word(text)
+    elif type == 'language':
+        formatted = format_language(text)
     elif type == 'url':
         formatted = format_url(text)
     else:
@@ -122,6 +125,15 @@ def format_date_year(text):
         val = format_date(text).split('-')[0]
     except Exception:
         logging.warning(f"could not parse date_year: {text}")
+        val = ''
+    return val
+
+
+def format_language(text):
+    try:
+        val = iso639.to_name(format_string_word(text))
+    except Exception:
+        logging.warning(f"could not match language: {text}")
         val = ''
     return val
 

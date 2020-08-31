@@ -23,7 +23,7 @@ def test_common_attributes():
     assert '2010-11-01T00:00:00Z' == doc.temporal_coverage_begin_date
     assert 'Other (Attribution)' in doc.rights
     assert 'Cornelia Brönnimann (WSL)' in doc.contact
-    assert 'en' in doc.language
+    assert 'English' in doc.language
     assert 'Dataset' in doc.resource_type
     assert ['XLSM', 'XLSX'] == doc.format
 

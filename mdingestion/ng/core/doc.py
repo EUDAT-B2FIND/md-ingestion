@@ -196,7 +196,7 @@ class BaseDoc(object):
 
     @language.setter
     def language(self, value):
-        self._language = format_value(value)
+        self._language = format_value(value, type='language')
 
     @property
     def resource_type(self):

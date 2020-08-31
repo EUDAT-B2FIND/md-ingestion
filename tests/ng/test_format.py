@@ -31,6 +31,16 @@ def test_format_date_year():
     assert '2020' == format.format_date_year('2020-05-20')
 
 
+def test_format_language():
+    assert 'English' == format.format_language('en')
+    assert 'English' == format.format_language('eng')
+    assert 'English' == format.format_language('English')
+    assert 'English' == format.format_language('ENGLISH')
+    assert '' == format.format_language('Very English')
+    assert 'German' == format.format_language('German')
+    assert 'German' == format.format_language('Deutsch')
+
+
 def test_format_url():
     assert 'http://localhost/alice/in/wonderland' == format.format_url('http://localhost/alice/in/wonderland')
     assert 'https://nbn-resolving.org/urn:nbn:de:hbz:5-59155' == format.format_url('urn:nbn:de:hbz:5-59155')

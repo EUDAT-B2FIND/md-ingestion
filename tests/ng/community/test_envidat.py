@@ -22,7 +22,7 @@ def test_iso19139():
     # assert 'EnviDat' in doc.contributor
     assert '2019' in doc.publication_year
     assert 'Other (Specified in the description)' in doc.rights
-    assert 'Eng' in doc.language
+    assert 'English' in doc.language
     assert [] == doc.resource_type
     assert 'URL' in doc.format
     assert '' == doc.version
