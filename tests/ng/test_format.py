@@ -8,15 +8,6 @@ def test_format_string():
     assert '123.4' == format.format_string(123.4)
 
 
-def test_format_empty_values():
-    assert [] == format.format_value('n/a')
-    assert [] == format.format_value('not stated')
-    assert [] == format.format_value('not available')
-    assert [] == format.format_value('none')
-    assert [] == format.format_value('None')
-    assert [] == format.format_value('  ')
-
-
 def test_format_string_words():
     assert 'one two three' == format.format_string_words('one. two , three')
     assert '' == format.format_string_words(None)
@@ -79,3 +70,12 @@ def test_format_value():
     assert ['2020'] == format.format_value('2020-05-19', type='date_year')
     assert 'https://alice.org/in/wonderland' == format.format_value(
         'https://alice.org/in/wonderland', type='url', one=True)
+
+
+def test_format_empty_values():
+    assert [] == format.format_value('n/a')
+    assert [] == format.format_value('not stated')
+    assert [] == format.format_value('not available')
+    assert [] == format.format_value('none')
+    assert [] == format.format_value('None')
+    assert [] == format.format_value('  ')
