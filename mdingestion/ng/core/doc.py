@@ -77,7 +77,7 @@ class BaseDoc(object):
 
     @property
     def pid(self):
-        return self._pid
+        return self._pid or ''
 
     @pid.setter
     def pid(self, value):
@@ -224,7 +224,7 @@ class BaseDoc(object):
 
     @property
     def version(self):
-        return self._version
+        return self._version or ''
 
     @version.setter
     def version(self, value):
@@ -341,7 +341,7 @@ class GeoDoc(BaseDoc):
     @property
     def temporal_coverage_begin_date(self):
         """field begin datetime in utc format in single record"""
-        return self._begin_date
+        return self._begin_date or ''
 
     @temporal_coverage_begin_date.setter
     def temporal_coverage_begin_date(self, value):
@@ -350,7 +350,7 @@ class GeoDoc(BaseDoc):
     @property
     def temporal_coverage_end_date(self):
         """field end datetime in utc format in single record"""
-        return self._end_date
+        return self._end_date or ''
 
     @temporal_coverage_end_date.setter
     def temporal_coverage_end_date(self, value):

@@ -11,7 +11,7 @@ class ISO19139Reader(XMLReader):
     SNIFFER = CSWSniffer
 
     def parse(self, doc):
-        ## 'identifier' always defined in community mapfile!
+        # 'identifier' always defined in community mapfile!
         doc.related_identifier = self.find('linkage')
         doc.title = self.find('CI_Citation.title')
         doc.description = self.find('abstract')
