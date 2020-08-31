@@ -131,6 +131,7 @@ def format_date_year(text):
 
 def format_language(text):
     try:
+        # TODO: use https://pypi.org/project/pycountry/
         val = iso639.to_name(format_string_word(text))
     except Exception:
         logging.warning(f"could not match language: {text}")
