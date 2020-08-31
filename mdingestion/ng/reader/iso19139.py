@@ -11,13 +11,7 @@ class ISO19139Reader(XMLReader):
     SNIFFER = CSWSniffer
 
     def parse(self, doc):
-        doc.doi = self.find_doi('MD_Metadata.fileIdentifier')
-        if not doc.doi:
-            doc.doi = self.find_doi('linkage')
-        doc.pid = self.find_pid('MD_Metadata.fileIdentifier')
-        if not doc.pid:
-            doc.pid = self.find_pid('linkage')
-        doc.source = self.find('MD_Identifier')
+        ## 'identifier' always defined in community mapfile!
         doc.related_identifier = self.find('linkage')
         doc.title = self.find('CI_Citation.title')
         doc.description = self.find('abstract')
@@ -31,11 +25,10 @@ class ISO19139Reader(XMLReader):
         doc.contact = self.find('contact.electronicMailAddress')
         # doc.funding_reference = self.find('')
         doc.language = self.find('MD_Metadata.language')
-        doc.resource_type = self.find('hierarchyLevel.MD_ScopeCode')
+        doc.resource_type = self.find('contentInfo.contentType')
         doc.format = self.find('MD_Format.name')
         # doc.size = self.find('')
-        doc.version = self.find('distributionFormat.version')
-        # TODO: fix temporal coverage
+        # doc.version = self.find('distributionFormat.version')
         doc.temporal_coverage_begin_date = self.find('EX_TemporalExtent.beginPosition')
         doc.temporal_coverage_end_date = self.find('EX_TemporalExtent.endPosition')
         doc.geometry = self.geometry()
