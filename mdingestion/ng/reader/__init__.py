@@ -12,7 +12,7 @@ def build_reader(reader_type=None):
     elif reader_type == SchemaType.ISO19139:
         reader = ISO19139Reader()
     elif reader_type == SchemaType.FGDC:
-        reader = FGDCReader()        
+        reader = FGDCReader()
     elif reader_type == SchemaType.JSON:
         reader = JSONReader()
     else:
