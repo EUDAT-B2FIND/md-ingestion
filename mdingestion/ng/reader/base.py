@@ -81,7 +81,6 @@ class Reader(object):
         return urls
 
 
-
 class XMLReader(Reader):
     DOC_PARSER = XMLParser
 
