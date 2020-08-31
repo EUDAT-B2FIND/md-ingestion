@@ -60,6 +60,12 @@ class DataCiteReader(XMLReader):
             bbox = self.parser.doc.find('geoLocationBox').text.split()
             # bbox: minx=west, miny=south, maxx=east, maxy=north
             geometry = shapely.geometry.box(float(bbox[0]), float(bbox[2]), float(bbox[1]), float(bbox[3]))
+        elif self.parser.doc.find('geoLocationPolygon'):
+            polygon_points = self.parser.doc.geoLocationPolygon.find_all('polygonPoint')
+            points = []
+            for point in polygon_points:
+                points.append((float(point.pointLongitude.text), float(point.pointLatitude.text)))
+            geometry = shapely.geometry.Polygon(points)
         else:
             geometry = None
         return geometry
