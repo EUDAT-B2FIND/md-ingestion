@@ -8,16 +8,18 @@ CLOSED_ACCESS_RIGHTS = [
 
 def is_open_access(rights, closed_access_rights=None):
     open_access = True
-    if rights:
-        for lic in CLOSED_ACCESS_RIGHTS:
-            # print(f"{lic}, {rights}")
-            if lic in rights:
+    if not rights:
+        return True
+    if isinstance(rights, list):
+        _rights = rights
+    else:
+        _rights = [rights]
+    _closed_access_rights = CLOSED_ACCESS_RIGHTS.copy()
+    if isinstance(closed_access_rights, list):
+        _closed_access_rights.extend(closed_access_rights)
+    for lic in _closed_access_rights:
+        for _right in _rights:
+            if lic in _right:
                 open_access = False
                 break
-        if isinstance(closed_access_rights, list):
-            for lic in closed_access_rights:
-                if lic in rights:
-                    open_access = False
-                    break
-    # print(f"{open_access}")
     return open_access
