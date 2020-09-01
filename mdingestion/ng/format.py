@@ -169,6 +169,9 @@ def format_email(text):
     email = format_string(text)
     if email and is_valid_email(email):
         email = email.replace('@', '(at)')
+    # TODO: quick fix for email in "contact" (string)
+    if '@' in email:
+        email = email.replace('@', '(at)')
     return email
 
 

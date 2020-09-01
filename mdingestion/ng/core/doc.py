@@ -140,7 +140,7 @@ class BaseDoc(object):
 
     @contributor.setter
     def contributor(self, value):
-        self._contributor = format_value(value)
+        self._contributor = format_value(value, type='email')
 
     @property
     def instrument(self):
