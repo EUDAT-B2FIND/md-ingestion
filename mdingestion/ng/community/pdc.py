@@ -11,7 +11,7 @@ class PDCFGDC(FGDCReader):
 
     def update(self, doc):
         doc.contributor = 'Polar Data Catalogue'
-        #doc.discipline = 'Environmental Research'
+        # doc.discipline = 'Environmental Research'
         self.discipline(doc)
 
     def discipline(self, doc):

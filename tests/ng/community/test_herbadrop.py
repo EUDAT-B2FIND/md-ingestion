@@ -13,7 +13,7 @@ def test_json_1():
     # assert 'HERBARIUM MUSE' in doc.description[1]
     assert ['Gentianaceae'] == doc.keywords
     assert 'http://coldb.mnhn.fr/catalognumber/mnhn/p/p03945291' == doc.source
-    assert 'ark:/87895/1.90-4070723' == doc.related_identifier[0]
+    assert 'https://n2t.net/ark:/87895/1.90-4070723' == doc.related_identifier[0]
     assert 'Raynal, J.' == doc.creator[0]
     assert 'MNHN' == doc.publisher[0]
     assert 'CINES' == doc.contributor[0]
@@ -55,7 +55,7 @@ def test_herbadrop_with_pid():
     # assert 'HERBARIUM MUSE' in doc.description[1]
     assert ['Fabaceae'] == doc.keywords
     assert 'http://coldb.mnhn.fr/catalognumber/mnhn/p/p03068284' == doc.source
-    assert 'ark:/87895/1.90-2785993' == doc.related_identifier[0]
+    assert 'https://n2t.net/ark:/87895/1.90-2785993' == doc.related_identifier[0]
     assert 'unavailable' == doc.creator[0]
     assert 'MNHN' == doc.publisher[0]
     assert 'CINES' == doc.contributor[0]

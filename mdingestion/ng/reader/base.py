@@ -44,9 +44,13 @@ class Reader(object):
         return []
 
     def update_open_access(self, doc):
-        doc.open_access = is_open_access(
-            doc.rights,
-            self.closed_access_rights())
+        for right in doc.rights:
+            doc.open_access = is_open_access(
+                right,
+                self.closed_access_rights())
+            if doc.open_access is False:
+                break
+        #print(f"{doc.open_access}, {doc.rights}")
 
     def update(self, doc):
         pass
@@ -65,6 +69,19 @@ class Reader(object):
 
     def find_pid(self, name=None, **kwargs):
         urls = [url for url in self.find(name, **kwargs) if 'hdl.handle.net' in format_url(url)]
+        return urls
+
+    def find_source(self, name=None, **kwargs):
+        urls = []
+        for url in self.find(name, **kwargs):
+            f_url = format_url(url)
+            if not f_url:
+                continue
+            if 'doi' in f_url:
+                continue
+            if 'hdl.handle.net' in f_url:
+                continue
+            urls.append(f_url)
         return urls
 
 

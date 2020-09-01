@@ -2,10 +2,33 @@ from dateutil import parser as date_parser
 from shapely.geometry import shape
 import re
 from urllib.parse import urlparse
+import iso639
 
-from .util import remove_duplicates_from_list
+from .util import (
+    remove_duplicates_from_list,
+    is_valid_url,
+    is_valid_email
+)
 
 import logging
+
+
+NULL_VALUES = (
+    'n/a',
+    'none',
+    'not stated',
+    'not available',
+)
+
+
+def is_null_value(text):
+    val = True
+    if text:
+        if f"{text}".strip().lower() in NULL_VALUES:
+            val = True
+        else:
+            val = False
+    return val
 
 
 def format_value(value, type=None, one=False, min_length=None, max_length=None):
@@ -13,10 +36,12 @@ def format_value(value, type=None, one=False, min_length=None, max_length=None):
     values = value or []
     if not isinstance(values, list):
         values = [values]
+    formatted = values
     # format values to type
-    formatted = [format(val, type) for val in values]
+    formatted = [format(val, type) for val in formatted]
     # drop empty values
-    formatted = [val for val in formatted if val]
+    formatted = [val for val in formatted if not is_null_value(val)]
+    # formatted = [val for val in formatted if val]
     # remove duplicates
     formatted = remove_duplicates_from_list(formatted)
     if min_length:
@@ -52,6 +77,10 @@ def format(text, type=None):
         formatted = format_string_words(text)
     elif type == 'string_word':
         formatted = format_string_word(text)
+    elif type == 'language':
+        formatted = format_language(text)
+    elif type == 'email':
+        formatted = format_email(text)
     elif type == 'url':
         formatted = format_url(text)
     else:
@@ -126,20 +155,43 @@ def format_date_year(text):
     return val
 
 
+def format_language(text):
+    try:
+        # TODO: use https://pypi.org/project/pycountry/
+        val = iso639.to_name(format_string_word(text))
+    except Exception:
+        logging.warning(f"could not match language: {text}")
+        val = ''
+    return val
+
+
+def format_email(text):
+    email = format_string(text)
+    if email and is_valid_email(email):
+        email = email.replace('@', '(at)')
+    # TODO: quick fix for email in "contact" (string)
+    if '@' in email:
+        email = email.replace('@', '(at)')
+    return email
+
+
 def format_url(text):
     url = format_string(text)
     parsed = urlparse(url)
     if parsed.scheme in ['http', 'https', 'ftp']:
         pass
     elif parsed.scheme == 'urn':
-        url = resolve_urn(text)
-    # TODO: fix herbadrop ark
-    elif parsed.scheme in ['ark', ]:
-        pass
+        url = resolve_urn(url)
+    elif parsed.scheme == 'ark':
+        url = resolve_ark(url)
     elif parsed.scheme == 'doi' or parsed.path.startswith('10.'):
         url = f"https://doi.org/{parsed.path}"
     else:
-        logging.warning(f"could not parse url: {url}")
+        logging.warning(f"could not parse URL: {url}")
+        url = ''
+    # check if url is valid
+    if url and not is_valid_url(url):
+        logging.warning(f"URL is not valid: {url}")
         url = ''
     return url
 
@@ -147,6 +199,15 @@ def format_url(text):
 def resolve_urn(urn):
     if urn.startswith('urn:nbn'):
         url = f'https://nbn-resolving.org/{urn}'
+    else:
+        url = ''
+    return url
+
+
+def resolve_ark(value):
+    if value.startswith('ark:/'):
+        # herbadrop uses: https://www.cines.fr
+        url = f"https://n2t.net/{value}"
     else:
         url = ''
     return url

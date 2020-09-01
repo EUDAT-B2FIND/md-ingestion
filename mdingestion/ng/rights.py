@@ -10,6 +10,7 @@ def is_open_access(rights, closed_access_rights=None):
     open_access = True
     if rights:
         for lic in CLOSED_ACCESS_RIGHTS:
+            # print(f"{lic}, {rights}")
             if lic in rights:
                 open_access = False
                 break
@@ -18,4 +19,5 @@ def is_open_access(rights, closed_access_rights=None):
                 if lic in rights:
                     open_access = False
                     break
+    # print(f"{open_access}")
     return open_access

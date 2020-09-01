@@ -24,7 +24,7 @@ def test_common_attributes():
     # assert '2018' == doc.publication_year
     # assert '???' in doc.open_access
     assert 'Slots- og Kulturstyrelsen (www.slks.dk)' in doc.contact[0]
-    assert 'dan' in doc.language
+    assert 'Danish' in doc.language
     assert 'Dataset' in doc.resource_type
     assert 'Various' in doc.discipline
     # assert '???' in doc.format

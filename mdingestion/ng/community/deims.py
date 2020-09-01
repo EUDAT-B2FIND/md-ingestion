@@ -11,6 +11,9 @@ class DeimsISO19139(ISO19139Reader):
     SNIFFER = CSWSniffer
 
     def update(self, doc):
+        doc.doi = self.find_doi('linkage')
+        doc.pid = self.find_pid('linkage')
+        doc.source = self.find('MD_Identifier')
         doc.contributor = 'DEIMS-SDR Site and Dataset registry deims.org'
         doc.discipline = 'Environmental Monitoring'
         doc.metadata_access = [url for url in self.find('linkage') if 'deims.org/api/' in url]

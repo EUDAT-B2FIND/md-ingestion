@@ -1,0 +1,2711 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:wdcc.dkrz.de:de.dkrz.wdcc.iso_doi2697850</identifier>
+    <datestamp>2019-04-21T05:11:28Z</datestamp>
+    <setSpec>iso-old-doi</setSpec>
+  </header>
+  <metadata>
+    <MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/metadataEntity.xsd" id="de.dkrz.wdcc.iso2697850">
+      <fileIdentifier>
+        <gco:CharacterString>de.dkrz.wdcc.iso2697850</gco:CharacterString>
+      </fileIdentifier>
+      <hierarchyLevel>
+        <MD_ScopeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_ScopeCode" codeListValue="series">series</MD_ScopeCode>
+      </hierarchyLevel>
+      <hierarchyLevelName>
+        <gco:CharacterString>GIGHr6</gco:CharacterString>
+      </hierarchyLevelName>
+      <contact>
+        <CI_ResponsibleParty>
+          <individualName>
+            <gco:CharacterString>Kenneth Lo</gco:CharacterString>
+          </individualName>
+          <organisationName>
+            <gco:CharacterString>NASA Goddard Institute for Space Studies</gco:CharacterString>
+          </organisationName>
+          <contactInfo>
+            <CI_Contact>
+              <onlineResource>
+                <CI_OnlineResource>
+                  <linkage>
+                    <URL>http://www.giss.nasa.gov/</URL>
+                  </linkage>
+                </CI_OnlineResource>
+              </onlineResource>
+            </CI_Contact>
+          </contactInfo>
+          <role>
+            <CI_RoleCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</CI_RoleCode>
+          </role>
+        </CI_ResponsibleParty>
+      </contact>
+      <contact>
+        <CI_ResponsibleParty>
+          <individualName>
+            <gco:CharacterString>Kenneth Lo</gco:CharacterString>
+          </individualName>
+          <organisationName>
+            <gco:CharacterString>NASA Goddard Institute for Space Studies</gco:CharacterString>
+          </organisationName>
+          <contactInfo>
+            <CI_Contact>
+              <onlineResource>
+                <CI_OnlineResource>
+                  <linkage>
+                    <URL>http://www.giss.nasa.gov/</URL>
+                  </linkage>
+                </CI_OnlineResource>
+              </onlineResource>
+            </CI_Contact>
+          </contactInfo>
+          <role>
+            <CI_RoleCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</CI_RoleCode>
+          </role>
+        </CI_ResponsibleParty>
+      </contact>
+      <dateStamp>
+        <gco:DateTime>2019-04-21T06:50:50</gco:DateTime>
+      </dateStamp>
+      <metadataStandardName>
+        <gco:CharacterString>ISO 19115</gco:CharacterString>
+      </metadataStandardName>
+      <metadataStandardVersion>
+        <gco:CharacterString>ISO 19139 / DKRZ ISO Simple Profile V1.0</gco:CharacterString>
+      </metadataStandardVersion>
+      <dataSetURI>
+        <gco:CharacterString>http://doi.org/doi:10.1594/WDCC/CMIP5.GIGHr6</gco:CharacterString>
+      </dataSetURI>
+      <identificationInfo>
+        <MD_DataIdentification>
+          <citation>
+            <CI_Citation>
+              <title>
+                <gco:CharacterString>cmip5 output1 NASA-GISS GISS-E2-H rcp60</gco:CharacterString>
+              </title>
+              <alternateTitle>
+                <gco:CharacterString>cmip5 output1 NASA-GISS GISS-E2-H rcp60</gco:CharacterString>
+              </alternateTitle>
+              <date>
+                <CI_Date>
+                  <date>
+                    <gco:Date>2013-08-29</gco:Date>
+                  </date>
+                  <dateType>
+                    <CI_DateTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</CI_DateTypeCode>
+                  </dateType>
+                </CI_Date>
+              </date>
+              <identifier>
+                <MD_Identifier>
+                  <code>
+                    <gco:CharacterString>None</gco:CharacterString>
+                  </code>
+                </MD_Identifier>
+              </identifier>
+              <identifier>
+                <RS_Identifier>
+                  <code>
+                    <gco:CharacterString>NASA-GISS: GISS-E2-H model output prepared for CMIP5 RCP6, served by ESGF</gco:CharacterString>
+                  </code>
+                  <codeSpace>
+                    <gco:CharacterString>doi:10.1594/WDCC/CMIP5.GIGHr6</gco:CharacterString>
+                  </codeSpace>
+                </RS_Identifier>
+              </identifier>
+              <otherCitationDetails>
+                <gco:CharacterString>doi:10.1594/WDCC/CMIP5.GIGHr6</gco:CharacterString>
+              </otherCitationDetails>
+            </CI_Citation>
+          </citation>
+          <abstract>
+            <gco:CharacterString>'rcp60' is an experiment of the CMIP5 - Coupled Model Intercomparison Project Phase 5
+(https://pcmdi.llnl.gov/mips/cmip5). CMIP5 is meant to provide a framework for coordinated
+climate change experiments for the next five years and thus includes simulations for
+assessment in the AR5 as well as others that extend beyond the AR5.
+
+4.4 rcp60 (4.4 RCP6) - Version 1: Future projection (2006-2100) forced by RCP6. RCP6 is a representative concentration pathway which approximately results in a radiative  forcing of 6 W m-2 at year 2100, relative to pre-industrial conditions.
+
+Experiment design: https://pcmdi.llnl.gov/mips/cmip5/experiment_design.html
+List of output variables: https://pcmdi.llnl.gov/mips/cmip5/datadescription.html
+Output: time series per variable in model grid spatial resolution in netCDF format
+Earth System model and the simulation information: CIM repository
+
+Entry name/title of data are specified according to the Data Reference Syntax
+(https://pcmdi.llnl.gov/mips/cmip5/docs/cmip5_data_reference_syntax.pdf)
+as activity/product/institute/model/experiment/frequency/modeling realm/MIP table/ensemble
+member/version number/variable name/CMOR filename.nc.</gco:CharacterString>
+          </abstract>
+          <pointOfContact>
+            <CI_ResponsibleParty>
+              <individualName>
+                <gco:CharacterString>Kenneth Lo</gco:CharacterString>
+              </individualName>
+              <organisationName>
+                <gco:CharacterString>NASA Goddard Institute for Space Studies</gco:CharacterString>
+              </organisationName>
+              <contactInfo>
+                <CI_Contact>
+                  <onlineResource>
+                    <CI_OnlineResource>
+                      <linkage>
+                        <URL>http://www.giss.nasa.gov/</URL>
+                      </linkage>
+                    </CI_OnlineResource>
+                  </onlineResource>
+                </CI_Contact>
+              </contactInfo>
+              <role>
+                <CI_RoleCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#CI_RoleCode" codeListValue="author">author</CI_RoleCode>
+              </role>
+            </CI_ResponsibleParty>
+          </pointOfContact>
+          <pointOfContact>
+            <CI_ResponsibleParty>
+              <individualName>
+                <gco:CharacterString>Kenneth Lo</gco:CharacterString>
+              </individualName>
+              <organisationName>
+                <gco:CharacterString>NASA Goddard Institute for Space Studies</gco:CharacterString>
+              </organisationName>
+              <contactInfo>
+                <CI_Contact>
+                  <onlineResource>
+                    <CI_OnlineResource>
+                      <linkage>
+                        <URL>http://www.giss.nasa.gov/</URL>
+                      </linkage>
+                    </CI_OnlineResource>
+                  </onlineResource>
+                </CI_Contact>
+              </contactInfo>
+              <role>
+                <CI_RoleCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</CI_RoleCode>
+              </role>
+            </CI_ResponsibleParty>
+          </pointOfContact>
+          <descriptiveKeywords>
+            <MD_Keywords>
+              <keyword>
+                <gco:CharacterString>CMIP5</gco:CharacterString>
+              </keyword>
+              <type>
+                <MD_KeywordTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
+              </type>
+            </MD_Keywords>
+          </descriptiveKeywords>
+          <descriptiveKeywords>
+            <MD_Keywords>
+              <keyword>
+                <gco:CharacterString>IPCC-AR5</gco:CharacterString>
+              </keyword>
+              <type>
+                <MD_KeywordTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
+              </type>
+            </MD_Keywords>
+          </descriptiveKeywords>
+          <descriptiveKeywords>
+            <MD_Keywords>
+              <keyword>
+                <gco:CharacterString>IPCC</gco:CharacterString>
+              </keyword>
+              <type>
+                <MD_KeywordTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
+              </type>
+            </MD_Keywords>
+          </descriptiveKeywords>
+          <descriptiveKeywords>
+            <MD_Keywords>
+              <keyword>
+                <gco:CharacterString>IPCC-DDC</gco:CharacterString>
+              </keyword>
+              <type>
+                <MD_KeywordTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
+              </type>
+            </MD_Keywords>
+          </descriptiveKeywords>
+          <descriptiveKeywords>
+            <MD_Keywords>
+              <keyword>
+                <gco:CharacterString>GISS-E2-H</gco:CharacterString>
+              </keyword>
+              <type>
+                <MD_KeywordTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
+              </type>
+            </MD_Keywords>
+          </descriptiveKeywords>
+          <descriptiveKeywords>
+            <MD_Keywords>
+              <keyword>
+                <gco:CharacterString>climate simulation</gco:CharacterString>
+              </keyword>
+              <type>
+                <MD_KeywordTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
+              </type>
+            </MD_Keywords>
+          </descriptiveKeywords>
+          <language>
+            <LanguageCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#LanguageCode" codeListValue="eng">eng</LanguageCode>
+          </language>
+          <extent>
+            <EX_Extent>
+              <geographicElement>
+                <EX_GeographicBoundingBox>
+                  <westBoundLongitude>
+                    <gco:Decimal>0.0</gco:Decimal>
+                  </westBoundLongitude>
+                  <eastBoundLongitude>
+                    <gco:Decimal>360.0</gco:Decimal>
+                  </eastBoundLongitude>
+                  <southBoundLatitude>
+                    <gco:Decimal>-90.0</gco:Decimal>
+                  </southBoundLatitude>
+                  <northBoundLatitude>
+                    <gco:Decimal>90.0</gco:Decimal>
+                  </northBoundLatitude>
+                </EX_GeographicBoundingBox>
+              </geographicElement>
+              <temporalElement>
+                <EX_TemporalExtent>
+                  <extent>
+                    <gml:TimePeriod gml:id="temporal_extent_year_20060116_21001216_0">
+                      <gml:beginPosition>2006-01-16</gml:beginPosition>
+                      <gml:endPosition>2100-12-16</gml:endPosition>
+                      <gml:timeInterval unit="year" factor="-1">0</gml:timeInterval>
+                    </gml:TimePeriod>
+                  </extent>
+                </EX_TemporalExtent>
+              </temporalElement>
+              <temporalElement>
+                <EX_TemporalExtent>
+                  <extent>
+                    <gml:TimePeriod gml:id="temporal_extent_year_20100116_21001216_0">
+                      <gml:beginPosition>2010-01-16</gml:beginPosition>
+                      <gml:endPosition>2100-12-16</gml:endPosition>
+                      <gml:timeInterval unit="year" factor="-1">0</gml:timeInterval>
+                    </gml:TimePeriod>
+                  </extent>
+                </EX_TemporalExtent>
+              </temporalElement>
+            </EX_Extent>
+          </extent>
+        </MD_DataIdentification>
+      </identificationInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>air_pressure_at_convective_cloud_base</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>Pa</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>air_pressure_at_convective_cloud_top</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>Pa</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>air_pressure_at_sea_level</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>Pa</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>air_temperature</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>K</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>air_temperature</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>K</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>air_temperature</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>K</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>air_temperature</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>K</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>area_fraction</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>0.01</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_absorption_optical_thickness_due_to_ambient_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_cloud_condensed_water_content</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_mass_content_of_ammonium_dry_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_mass_content_of_black_carbon_dry_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_mass_content_of_cloud_ice</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_mass_content_of_dust_dry_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_mass_content_of_seasalt_dry_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_mass_content_of_sulfate_dry_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_net_upward_convective_mass_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_optical_thickness_due_to_ambient_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_optical_thickness_due_to_pm1_ambient_aerosol</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>atmosphere_water_vapor_content</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>cloud_area_fraction</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>0.01</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>cloud_area_fraction_in_atmosphere_layer</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>0.01</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>convection_time_fraction</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>convective_precipitation_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>eastward_wind</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>eastward_wind</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>geopotential_height</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>gross_primary_productivity_of_carbon</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>heterotrophic_respiration_carbon_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>lagrangian_tendency_of_air_pressure</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>Pa s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_ammonium_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_ammonium_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_biomass_burning_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_black_carbon_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_black_carbon_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_dust_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_dust_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_nitrate_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_nitrate_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_primary_particulate_organic_matter_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_primary_particulate_organic_matter_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_seasalt_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_seasalt_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_secondary_particulate_organic_matter_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_secondary_particulate_organic_matter_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_sulfate_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20100116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_concentration_of_sulfate_dry_aerosol_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-3</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_fraction_of_cloud_ice_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mass_fraction_of_cloud_liquid_water_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>moisture_content_of_soil_layer</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>moisture_content_of_soil_layer</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mole_fraction_of_methane_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1e-9</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mole_fraction_of_nitrous_oxide_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1e-9</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>mole_fraction_of_ozone_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1e-9</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>net_downward_radiative_flux_at_top_of_atmosphere_model</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>net_primary_productivity_of_carbon</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>northward_wind</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>northward_wind</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>plant_respiration_carbon_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>precipitation_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>precipitation_flux_onto_canopy</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>relative_humidity</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>0.01</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>relative_humidity</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>0.01</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>runoff_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_ice_area_fraction</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>0.01</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_ice_thickness</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_ice_x_transport</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_ice_y_transport</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_surface_salinity</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>psu</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_surface_temperature</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>K</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_water_potential_temperature</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>K</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_water_salinity</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>psu</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_water_x_velocity</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>sea_water_y_velocity</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>shallow_convection_time_fraction</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>snowfall_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>soil_carbon_content</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>soil_frozen_water_content</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>soil_moisture_content</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>soil_temperature</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>K</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>specific_humidity</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>specific_humidity</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_air_pressure</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_00000101_00000101_0">
+              <descriptor>
+                <gco:CharacterString>Pa</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_downward_eastward_stress</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>Pa</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_downward_northward_stress</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>Pa</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_downwelling_longwave_flux_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_downwelling_longwave_flux_in_air_assuming_clear_sky</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_downwelling_shortwave_flux_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_downwelling_shortwave_flux_in_air_assuming_clear_sky</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes_excluding_anthropogenic_land_use_change</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_runoff_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_snow_amount</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_snow_and_ice_sublimation_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_snow_area_fraction</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>0.01</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_snow_melt_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_snow_thickness</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_temperature</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>K</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_upward_latent_heat_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_upward_sensible_heat_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_upwelling_longwave_flux_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_upwelling_shortwave_flux_in_air</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>surface_upwelling_shortwave_flux_in_air_assuming_clear_sky</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_ammonia_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_due_to_wet_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_wet_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_emission</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_wet_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_emission</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_wet_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_emission</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_wet_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_due_to_wet_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_due_to_emission</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_sulfate_expressed_as_sulfur_dry_aerosol_due_to_wet_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_dry_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_wet_deposition</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>toa_incoming_shortwave_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>toa_outgoing_longwave_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>toa_outgoing_longwave_flux_assuming_clear_sky</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>toa_outgoing_shortwave_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>toa_outgoing_shortwave_flux_assuming_clear_sky</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>W m-2</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>transpiration_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>water_evaporation_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>water_evaporation_flux</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>water_evaporation_flux_from_canopy</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>water_evaporation_flux_from_soil</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>kg m-2 s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <contentInfo>
+        <MD_CoverageDescription>
+          <attributeDescription>
+            <gco:RecordType>wind_speed</gco:RecordType>
+          </attributeDescription>
+          <contentType>
+            <MD_CoverageContentTypeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="modelResult">modelResult</MD_CoverageContentTypeCode>
+          </contentType>
+          <dimension>
+            <MD_RangeDimension uuid="#temporal_extent_year_20060116_21001216_0">
+              <descriptor>
+                <gco:CharacterString>m s-1</gco:CharacterString>
+              </descriptor>
+            </MD_RangeDimension>
+          </dimension>
+        </MD_CoverageDescription>
+      </contentInfo>
+      <distributionInfo>
+        <MD_Distribution>
+          <distributionFormat>
+            <MD_Format>
+              <name>
+                <gco:CharacterString>NetCDF</gco:CharacterString>
+              </name>
+              <version>
+                <gco:CharacterString>network Common Data Format</gco:CharacterString>
+              </version>
+            </MD_Format>
+          </distributionFormat>
+          <distributor>
+            <MD_Distributor>
+              <distributorContact>
+                <CI_ResponsibleParty>
+                  <role>
+                    <CI_RoleCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</CI_RoleCode>
+                  </role>
+                </CI_ResponsibleParty>
+              </distributorContact>
+              <distributorTransferOptions>
+                <MD_DigitalTransferOptions>
+                  <unitsOfDistribution>
+                    <gco:CharacterString>Mb</gco:CharacterString>
+                  </unitsOfDistribution>
+                  <transferSize>
+                    <gco:Real>188183</gco:Real>
+                  </transferSize>
+                  <onLine>
+                    <CI_OnlineResource>
+                      <linkage>
+                        <URL>http://doi.org/doi:10.1594/WDCC/CMIP5.GIGHr6</URL>
+                      </linkage>
+                    </CI_OnlineResource>
+                  </onLine>
+                </MD_DigitalTransferOptions>
+              </distributorTransferOptions>
+            </MD_Distributor>
+          </distributor>
+        </MD_Distribution>
+      </distributionInfo>
+      <dataQualityInfo>
+        <DQ_DataQuality>
+          <scope>
+            <DQ_Scope>
+              <level>
+                <MD_ScopeCode codeList="http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#MD_ScopeCode" codeListValue="series">series</MD_ScopeCode>
+              </level>
+            </DQ_Scope>
+          </scope>
+        </DQ_DataQuality>
+      </dataQualityInfo>
+    </MD_Metadata>
+  </metadata>
+</record>
