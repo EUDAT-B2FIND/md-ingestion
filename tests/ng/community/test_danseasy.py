@@ -10,4 +10,4 @@ def test_datacite():
     reader = DanseasyDatacite()
     doc = reader.read(xmlfile, url='', community='danseasy', mdprefix='oai_datacite')
     assert ['info:eu-repo/semantics/closedAccess', 'DANS License'] == doc.rights
-    assert 'bla' == doc.open_access
+    assert doc.open_access is False

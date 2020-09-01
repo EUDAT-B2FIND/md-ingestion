@@ -3,7 +3,6 @@ from enum import Enum
 from ..core import B2FDoc
 from ..parser import XMLParser
 from ..parser import JSONParser
-from ..rights import is_open_access
 from ..format import format_url
 
 
@@ -30,7 +29,6 @@ class Reader(object):
         if self.SNIFFER:
             sniffer = self.SNIFFER(self.parser)
             sniffer.update(doc)
-        self.update_open_access(doc)
         self.update(doc)
         return doc
 
@@ -39,14 +37,6 @@ class Reader(object):
 
     def parse(self, doc):
         raise NotImplementedError
-
-    def closed_access_rights(self):
-        return []
-
-    def update_open_access(self, doc):
-        doc.open_access = is_open_access(
-            doc.rights,
-            self.closed_access_rights())
 
     def update(self, doc):
         pass

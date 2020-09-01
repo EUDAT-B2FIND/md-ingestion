@@ -9,4 +9,4 @@ class ESSDatacite(DataCiteReader):
     def update(self, doc):
         doc.doi = self.find_doi('identifier', identifierType="URL")
         doc.discipline = 'Particles, Nuclei and Fields'
-        doc.open_access = True
+        # doc.open_access = True

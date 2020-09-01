@@ -6,6 +6,7 @@ import json
 
 from ..format import format_value
 from ..util import utc2seconds
+from ..rights import is_open_access
 
 
 class BaseDoc(object):
@@ -176,11 +177,11 @@ class BaseDoc(object):
 
     @property
     def open_access(self):
-        return self._open_access or True
+        return is_open_access(self.rights)
 
-    @open_access.setter
-    def open_access(self, value):
-        self._open_access = format_value(value, type='boolean', one=True)
+    # @open_access.setter
+    # def open_access(self, value):
+    #     self._open_access = format_value(value, type='boolean', one=True)
 
     @property
     def contact(self):

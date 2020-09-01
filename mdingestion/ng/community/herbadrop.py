@@ -19,7 +19,7 @@ class Herbadrop(JSONReader):
         doc.publication_year = self.find('metadata."aip.meta.archivingDate"')
         doc.rights = self.find('metadata."aip.dc.rights".und')
         doc.contact = doc.publisher
-        doc.open_access = True
+        # doc.open_access = True
         # doc.language = self.find('metadata."aip.dc.language"')
         doc.resource_type = self.find('metadata."aip.dc.type".eng')
         doc.format = self.find('metadata."aip.dc.format".eng')
