@@ -13,7 +13,8 @@ class DanseasyDatacite(DataCiteReader):
     def update(self, doc):
         if not doc.doi:
             doc.doi = self.find_doi('alternateIdentifier')
-        self.update_source(doc)
+        if not doc.source:
+            doc.source = self.find_source('alternateIdentifier')
         doc.discipline = self.discipline(doc)
 
     def discipline(self, doc):
@@ -25,10 +26,3 @@ class DanseasyDatacite(DataCiteReader):
         #if 'Various' in disc:
             #disc = 'Earth System Research'
         return disc
-
-    def update_source(self, doc):
-        if not doc.source:
-            # TODO: cannot resolve urn
-            for url in self.find('alternateIdentifier'):
-                if doc.doi not in url:
-                    doc.source = url
