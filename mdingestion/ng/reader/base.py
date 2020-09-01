@@ -44,9 +44,13 @@ class Reader(object):
         return []
 
     def update_open_access(self, doc):
-        doc.open_access = is_open_access(
-            doc.rights,
-            self.closed_access_rights())
+        for right in doc.rights:
+            doc.open_access = is_open_access(
+                right,
+                self.closed_access_rights())
+            if doc.open_access is False:
+                break
+        #print(f"{doc.open_access}, {doc.rights}")
 
     def update(self, doc):
         pass
