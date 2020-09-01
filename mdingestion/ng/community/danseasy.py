@@ -23,6 +23,6 @@ class DanseasyDatacite(DataCiteReader):
         if 'Various' not in result:
             logging.debug(f"{result} keywords={doc.keywords}")
         disc = result[0]
-        #if 'Various' in disc:
-            #disc = 'Earth System Research'
+        # if 'Various' in disc:
+        #    disc = 'Earth System Research'
         return disc

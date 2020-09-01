@@ -50,7 +50,6 @@ class Reader(object):
                 self.closed_access_rights())
             if doc.open_access is False:
                 break
-        #print(f"{doc.open_access}, {doc.rights}")
 
     def update(self, doc):
         pass
