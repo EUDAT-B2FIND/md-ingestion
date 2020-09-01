@@ -39,3 +39,9 @@ def is_valid_url(value):
     if colander.url.match_object.match(value) is None:
         return False
     return True
+
+
+def is_valid_email(value):
+    if colander.Email().match_object.match(value) is None:
+        return False
+    return True

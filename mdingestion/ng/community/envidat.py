@@ -11,6 +11,8 @@ class EnviDatISO19139(ISO19139Reader):
     SNIFFER = OAISniffer
 
     def update(self, doc):
+        doc.doi = self.find_doi('MD_Metadata.fileIdentifier')
+        doc.pid = self.find_pid('MD_Metadata.fileIdentifier')
         doc.source = self.source(doc)
         doc.discipline = self.discipline(doc)
 

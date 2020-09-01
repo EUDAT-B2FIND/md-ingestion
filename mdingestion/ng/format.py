@@ -2,10 +2,33 @@ from dateutil import parser as date_parser
 from shapely.geometry import shape
 import re
 from urllib.parse import urlparse
+import iso639
 
-from .util import remove_duplicates_from_list, is_valid_url
+from .util import (
+    remove_duplicates_from_list,
+    is_valid_url,
+    is_valid_email
+)
 
 import logging
+
+
+NULL_VALUES = (
+    'n/a',
+    'none',
+    'not stated',
+    'not available',
+)
+
+
+def is_null_value(text):
+    val = True
+    if text:
+        if f"{text}".strip().lower() in NULL_VALUES:
+            val = True
+        else:
+            val = False
+    return val
 
 
 def format_value(value, type=None, one=False, min_length=None, max_length=None):
@@ -13,10 +36,12 @@ def format_value(value, type=None, one=False, min_length=None, max_length=None):
     values = value or []
     if not isinstance(values, list):
         values = [values]
+    formatted = values
     # format values to type
-    formatted = [format(val, type) for val in values]
+    formatted = [format(val, type) for val in formatted]
     # drop empty values
-    formatted = [val for val in formatted if val]
+    formatted = [val for val in formatted if not is_null_value(val)]
+    # formatted = [val for val in formatted if val]
     # remove duplicates
     formatted = remove_duplicates_from_list(formatted)
     if min_length:
@@ -52,6 +77,10 @@ def format(text, type=None):
         formatted = format_string_words(text)
     elif type == 'string_word':
         formatted = format_string_word(text)
+    elif type == 'language':
+        formatted = format_language(text)
+    elif type == 'email':
+        formatted = format_email(text)
     elif type == 'url':
         formatted = format_url(text)
     else:
@@ -124,6 +153,23 @@ def format_date_year(text):
         logging.warning(f"could not parse date_year: {text}")
         val = ''
     return val
+
+
+def format_language(text):
+    try:
+        # TODO: use https://pypi.org/project/pycountry/
+        val = iso639.to_name(format_string_word(text))
+    except Exception:
+        logging.warning(f"could not match language: {text}")
+        val = ''
+    return val
+
+
+def format_email(text):
+    email = format_string(text)
+    if email and is_valid_email(email):
+        email = email.replace('@', '(at)')
+    return email
 
 
 def format_url(text):

@@ -11,6 +11,8 @@ class DataCiteReader(XMLReader):
     def parse(self, doc):
         doc.title = self.find('title')
         doc.description = self.find('description')
+        doc.doi = self.find_doi('resource.identifier')
+        doc.source = self.find_source('resource.identifier')
         doc.keywords = self.find('subject')
         doc.discipline = format_value(self.find('subject'), type='string_words')
         doc.related_identifier = self.find('relatedIdentifier')
@@ -29,7 +31,6 @@ class DataCiteReader(XMLReader):
         doc.temporal_coverage = self.find('date')
         doc.geometry = self.geometry()
         doc.places = self.find('geoLocationPlace')
-        self.update_identifier(doc)
 
     def creator(self):
         creators = []
@@ -41,13 +42,6 @@ class DataCiteReader(XMLReader):
                     name = f"{name} ({affiliation})"
             creators.append(name)
         return creators
-
-    def update_identifier(self, doc):
-        # TODO: need a better way to parse identifiers: doi, pid, source
-        doc.doi = self.find_doi('resource.identifier')
-        for url in self.find('resource.identifier'):
-            if doc.doi not in url:
-                doc.source = url
 
     def geometry(self):
         if self.parser.doc.find('geoLocationPoint'):
@@ -66,6 +60,12 @@ class DataCiteReader(XMLReader):
             bbox = self.parser.doc.find('geoLocationBox').text.split()
             # bbox: minx=west, miny=south, maxx=east, maxy=north
             geometry = shapely.geometry.box(float(bbox[0]), float(bbox[2]), float(bbox[1]), float(bbox[3]))
+        elif self.parser.doc.find('geoLocationPolygon'):
+            polygon_points = self.parser.doc.geoLocationPolygon.find_all('polygonPoint')
+            points = []
+            for point in polygon_points:
+                points.append((float(point.pointLongitude.text), float(point.pointLatitude.text)))
+            geometry = shapely.geometry.Polygon(points)
         else:
             geometry = None
         return geometry
