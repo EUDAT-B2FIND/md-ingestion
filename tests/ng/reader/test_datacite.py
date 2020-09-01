@@ -23,7 +23,7 @@ def test_common_attributes():
     assert '2010-11-01T00:00:00Z' == doc.temporal_coverage_begin_date
     assert 'Other (Attribution)' in doc.rights
     assert 'Cornelia Brönnimann (WSL)' in doc.contact
-    assert 'en' in doc.language
+    assert 'English' in doc.language
     assert 'Dataset' in doc.resource_type
     assert ['XLSM', 'XLSX'] == doc.format
 
@@ -58,3 +58,10 @@ def test_spatial_coverage_bbox():
     doc = reader.read(point_file)
     assert '(6.0W, 10.5S, 45.8E, 47.8N); Switzerland' == doc.spatial_coverage
     # assert "{'type': 'Polygon', 'coordinates': (((47.80838, 5.95587), (47.80838, 10.49203), (45.81802, 10.49203), (45.81802, 5.95587), (47.80838, 5.95587)),)}" == doc.spatial  # noqa
+
+
+def test_spatial_coverage_polygon():
+    point_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'SET_1', 'xml', 'polygon_f7160261-c98d-4d49-8966-10c1b0a32831.xml')  # noqa
+    reader = DataCiteReader()
+    doc = reader.read(point_file)
+    assert '(6.0W, 45.8S, 10.5E, 47.8N); Switzerland' == doc.spatial_coverage

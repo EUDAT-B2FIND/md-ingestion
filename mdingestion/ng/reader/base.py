@@ -67,6 +67,19 @@ class Reader(object):
         urls = [url for url in self.find(name, **kwargs) if 'hdl.handle.net' in format_url(url)]
         return urls
 
+    def find_source(self, name=None, **kwargs):
+        urls = []
+        for url in self.find(name, **kwargs):
+            f_url = format_url(url)
+            if not f_url:
+                continue
+            if 'doi' in f_url:
+                continue
+            if 'hdl.handle.net' in f_url:
+                continue
+            urls.append(f_url)
+        return urls
+
 
 class XMLReader(Reader):
     DOC_PARSER = XMLParser

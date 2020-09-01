@@ -31,9 +31,26 @@ def test_format_date_year():
     assert '2020' == format.format_date_year('2020-05-20')
 
 
+def test_format_email():
+    assert 'knocking(at)heavens.door' == format.format_email('knocking@heavens.door')
+    assert 'return to sender' == format.format_email('return to sender')
+    assert 'talking(at)about.revolution' == format.format_email('  talking@about.revolution  ')
+
+
+def test_format_language():
+    assert 'English' == format.format_language('en')
+    assert 'English' == format.format_language('eng')
+    assert 'English' == format.format_language('English')
+    assert 'English' == format.format_language('ENGLISH')
+    assert '' == format.format_language('Very English')
+    assert 'German' == format.format_language('German')
+    assert 'German' == format.format_language('Deutsch')
+
+
 def test_format_url():
     assert 'http://localhost/alice/in/wonderland' == format.format_url('http://localhost/alice/in/wonderland')
     assert 'https://nbn-resolving.org/urn:nbn:de:hbz:5-59155' == format.format_url('urn:nbn:de:hbz:5-59155')
+    assert 'https://nbn-resolving.org/urn:nbn:nl:ui:13-za-fzpt' == format.format_url('urn:nbn:nl:ui:13-za-fzpt')
     assert 'https://doi.org/10.22000/152' == format.format_url('doi:10.22000/152')
     assert 'https://doi.org/10.22000/152' == format.format_url('10.22000/152')
     assert 'http://alice.org/in/wonderland' == format.format_url('\nhttp://alice.org/in/wonderland\n')
@@ -53,3 +70,12 @@ def test_format_value():
     assert ['2020'] == format.format_value('2020-05-19', type='date_year')
     assert 'https://alice.org/in/wonderland' == format.format_value(
         'https://alice.org/in/wonderland', type='url', one=True)
+
+
+def test_format_empty_values():
+    assert [] == format.format_value('n/a')
+    assert [] == format.format_value('not stated')
+    assert [] == format.format_value('not available')
+    assert [] == format.format_value('none')
+    assert [] == format.format_value('None')
+    assert [] == format.format_value('  ')
