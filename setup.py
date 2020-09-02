@@ -9,7 +9,7 @@ from setuptools import setup
 __author__ = "Heinrich Widmann"
 __contact__ = "widmann@dkrz.de"
 __copyright__ = "Copyright (c) 2013 Heinrich Widmann (DKRZ)"
-__version__ = "0.1.2"
+__version__ = "1.4.0"
 __license__ = "BSD"
 
 
