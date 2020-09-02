@@ -23,7 +23,7 @@ class DataCiteReader(XMLReader):
         doc.funding_reference = self.find('fundingReference.funderName')
         doc.publication_year = self.find('publicationYear')
         doc.rights = self.find('rights')
-        doc.contact = doc.creator
+        doc.contact = self.find('contributor', contributorType="ContactPerson")
         doc.language = self.find('language')
         doc.resource_type = self.find('resourceType')
         doc.format = self.find('format')
