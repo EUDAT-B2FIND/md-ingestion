@@ -20,7 +20,7 @@ class IVOADatacite(DataCiteReader):
         contributor = [name for name in doc.contributor if name not in doc.contact]
         contributor.append('International Virtual Observatory Alliance (IVOA)')
         return contributor
-        
+
     def discipline(self, doc):
         classifier = classify.Classify()
         result = classifier.map_discipline(doc.keywords)

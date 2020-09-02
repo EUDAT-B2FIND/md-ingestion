@@ -7,5 +7,5 @@ class SLKSDublinCore(DublinCoreReader):
     SNIFFER = OAISniffer
 
     def update(self, doc):
-        doc.open_access = True
+        # doc.open_access = True
         doc.discipline = 'Archaeology'

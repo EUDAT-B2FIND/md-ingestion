@@ -45,21 +45,17 @@ class DataCiteReader(XMLReader):
 
     def geometry(self):
         if self.parser.doc.find('geoLocationPoint'):
-            # lon = format_value(self.find('geoLocationPoint.pointLongitude'), type='float', one=True)
-            # lat = format_value(self.find('geoLocationPoint.pointLatitude'), type='float', one=True)
-            # geometry = shapely.geometry.Point(lon, lat)
-            point = self.parser.doc.find('geoLocationPoint').text.split()
+            lon = format_value(self.find('geoLocationPoint.pointLongitude'), type='float', one=True)
+            lat = format_value(self.find('geoLocationPoint.pointLatitude'), type='float', one=True)
             # point: x=lon, y=lat
-            geometry = shapely.geometry.Point(float(point[0]), float(point[1]))
+            geometry = shapely.geometry.Point(lon, lat)
         elif self.parser.doc.find('geoLocationBox'):
-            # west_lon = format_value(self.find('geoLocationBox.westBoundLongitude'), type='float', one=True)
-            # east_lon = format_value(self.find('geoLocationBox.eastBoundLongitude'), type='float', one=True)
-            # south_lat = format_value(self.find('geoLocationBox.southBoundLatitude'), type='float', one=True)
-            # north_lat = format_value(self.find('geoLocationBox.northBoundLatitude'), type='float', one=True)
-            # geometry = shapely.geometry.box(west_lon, east_lon, south_lat, north_lat)
-            bbox = self.parser.doc.find('geoLocationBox').text.split()
+            west = format_value(self.find('geoLocationBox.westBoundLongitude'), type='float', one=True)
+            east = format_value(self.find('geoLocationBox.eastBoundLongitude'), type='float', one=True)
+            south = format_value(self.find('geoLocationBox.southBoundLatitude'), type='float', one=True)
+            north = format_value(self.find('geoLocationBox.northBoundLatitude'), type='float', one=True)
             # bbox: minx=west, miny=south, maxx=east, maxy=north
-            geometry = shapely.geometry.box(float(bbox[0]), float(bbox[2]), float(bbox[1]), float(bbox[3]))
+            geometry = shapely.geometry.box(west, south, east, north)
         elif self.parser.doc.find('geoLocationPolygon'):
             polygon_points = self.parser.doc.geoLocationPolygon.find_all('polygonPoint')
             points = []

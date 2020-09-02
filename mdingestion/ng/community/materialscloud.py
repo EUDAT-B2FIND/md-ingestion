@@ -9,7 +9,7 @@ class MaterialsCloudDublinCore(DublinCoreReader):
     def update(self, doc):
         doc.doi = self.doi(doc)
         doc.source = self.source(doc)
-        doc.open_access = True
+        # doc.open_access = True
         doc.discipline = 'Materials Science and Engineering'
         doc.contact = 'info@materialscloud.org'
 
