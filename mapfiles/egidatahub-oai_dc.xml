@@ -37,13 +37,13 @@
     </field>
     <field name="Contributor">
       <string>EGI-DataHub</string>
-    </field> 
+    </field>
     <field name="PublicationYear">
       <xpath>//dc:date/text()</xpath>
-    </field> 
+    </field>
     <field name="Rights">
       <xpath>//dc:rights/text()</xpath>
-      </field> 
+      </field>
     <field name="OpenAccess">
       <xpath>false</xpath>
     </field>
@@ -56,10 +56,10 @@
     </field>
     <field name="ResourceType">
       <xpath>//dc:type/text()</xpath>
-    </field>  
+    </field>
     <field name="Format">
       <xpath>//dc:format/text()</xpath>
-    </field>  
+    </field>
    <!-- Coverage -->
     <field name="Discipline">
       <xpath>//dc:subject</xpath>
@@ -69,7 +69,7 @@
     </field>
     <field name="TemporalCoverage">
       <xpath>//dc:coverage/text(),//dct:temporal/text()</xpath>
-    </field>    
+    </field>
     <!-- Hidden fields, only shown to logged in CKAN users -->
     <field name="fulltext">
       <xpath>normalize-space(string(/))</xpath>

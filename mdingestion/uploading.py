@@ -159,6 +159,10 @@ class CKAN_CLIENT(object):
 
         self.logger.debug(' CKAN request:\n |- Action\t%s\n |- RequestURL\t%s\n |- Data_dict\t%s' % (action,action_url,data_dict))
 
+        # DEBUG ckan json
+        json.dump(data_dict, open('/tmp/upload.json', 'w'), indent=4, sort_keys=True, ensure_ascii=False)
+        # DEBUG END
+
         # make json data in conformity with URL standards
         encoding='utf-8'
         try:
@@ -265,7 +269,7 @@ class Uploader(object):
             self.b2findfields=json.loads(f.read())
 
         self.ckandeffields = ["author","title","notes","tags","url","version"]
-        self.b2fckandeffields = ["Creator","Title","Description","Tags","Source","Checksum"]
+        self.b2fckandeffields = ["Creator","Title","Description","Keyword","Source","Checksum"]
 
     def purge_group(self,community):
         ## purge_list (UPLOADER object, community) - method
@@ -390,11 +394,16 @@ class Uploader(object):
         self.logger.debug(' CKAN extra fields')
         for key in extrafields :
             if key in jsondata :
-                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum', 'Rights','ResourceType','RelatedIdentifier','Contributor']:
-                    value=';'.join(jsondata[key])
+                if key in ['Contact','Format','Language','Publisher','PublicationYear','Checksum', 'Rights','ResourceType','RelatedIdentifier','Contributor', 'Instrument', 'FundingReference', 'Size', 'DiscHierarchy']:
+                    if isinstance(jsondata[key],list) or isinstance(jsondata[key], set):
+                        value=';'.join(jsondata[key])
+                    else:
+                        value = ''
                 elif key in ['oai_identifier']:
-                    if isinstance(jsondata[key],list) or isinstance(jsondata[key],set) :
-                        value=jsondata[key][-1]
+                    if isinstance(jsondata[key], list) or isinstance(jsondata[key], set):
+                        value = jsondata[key][-1]
+                    else:
+                        value = ''
                 else:
                     value=jsondata[key]
                 jsondata['extras'].append({

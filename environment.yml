@@ -1,0 +1,21 @@
+# conda env create -f environment.yml
+name: b2f
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - python=3.6
+  - owslib
+  # ng
+  - beautifulsoup4
+  - ckanapi
+  - shapely
+  - jsonpath-ng
+  - click
+  - pandas
+  - tqdm
+  - colander
+  # tests
+  - pytest
+  - flake8

@@ -1,5 +1,5 @@
 {
-    "Title" : { 
+    "Title" : {
         "name" : "title",
         "definition" : "A name or title by which a resource is known.",
         "ckanName" : "title",
@@ -9,7 +9,7 @@
         "occurence" : "1",
         "obligation" : "mandatory"
     },
-    "Description" : { 
+    "Description" : {
         "name" : "description",
         "definition" : "An additional information describing the content of the resource. Could be an abstract, a summary or a Table of Content.",
         "ckanName" : "notes",
@@ -19,9 +19,9 @@
         "occurence" : "0-1",
         "obligation" : "recommended"
     },
-    "Tags" : {
-        "name" : "tags",
-        "description" : "A subject, keyword, classification code, or key phrase describing the content.",
+    "Keyword" : {
+        "name" : "keyword",
+        "description" : "Subject, keyword, classification code, or key phrase describing the resource. Could be free text.",
         "ckanName" : "tags",
         "ckanType" : "default",
         "display" : "shown",
@@ -37,7 +37,7 @@
         "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
-    }, 
+    },
     "PID" : {
         "name" : "PID",
         "description" : "A persistent identifier that uniquely identifies a resource.",
@@ -55,16 +55,16 @@
         "display" : "shown",
         "type" : "url",
         "obligation" : "mandatory"
-    }, 
+    },
     "RelatedIdentifier" : {
         "name" : "RelatedIdentifier",
-        "description" : "A link to related resources or supplements.", 
+        "description" : "A link to related resources or supplements.",
         "ckanName" : "url",
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "url",
         "obligation" : "optional"
-    }, 
+    },
     "MetaDataAccess" : {
         "name" : "metadataccess",
         "description" : "Is a link to the originally harvested metadata record (GetRecord request).",
@@ -101,6 +101,15 @@
         "type" : "textual",
         "obligation" : "optional"
     },
+    "Instrument" :  {
+        "name" : "instrument",
+        "description" : "The technical instrument(s) used to generate (observe or measure) the data.",
+        "ckanName" : "Instrument",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
     "PublicationYear" : {
         "name" : "publicationyear",
         "description" : "The year when the data was or will be made publicly available.",
@@ -108,6 +117,15 @@
         "ckanType" : "extra",
         "display" : "shown",
         "type" : "date",
+        "obligation" : "optional"
+    },
+    "FundingReference" :  {
+        "name" : "fundingfeference",
+        "description" : "Information about financial support (funding) for the resource.",
+        "ckanName" : "FundingReference",
+        "ckanType" : "extra",
+        "display" : "shown",
+        "type" : "textual",
         "obligation" : "optional"
     },
     "Rights" : {
@@ -118,7 +136,7 @@
         "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
-    }, 
+    },
     "OpenAccess" : {
         "name" : "OpenAccess",
         "description" : "Is the dataset openly accessible or not.",
@@ -145,7 +163,7 @@
         "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
-    }, 
+    },
     "ResourceType" : {
         "name" : "resourcetype",
         "description" : "A description of the resource, a general type of the resource.",
@@ -163,7 +181,25 @@
         "display" : "shown",
         "type" : "textual",
         "obligation" : "optional"
-    }, 
+    },
+    "Size" : {
+        "name" : "size",
+        "description" : "Size information about the resource.",
+        "ckanName" : "Size",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
+    "Version" : {
+        "name" : "version",
+        "description" : "Version information about the resource.",
+        "ckanName" : "Version",
+        "ckanType" : "default",
+        "display" : "shown",
+        "type" : "textual",
+        "obligation" : "optional"
+    },
     "Discipline" : {
         "name" : "discipline",
         "description" : "A scientific discipline the resource originates from. A closed vocabulary is used.",
@@ -181,7 +217,7 @@
         "display" : "shown",
         "type" : "date",
         "obligation" : "optional"
-    }, 
+    },
     "TemporalCoverage" :  {
         "name" : "temporalcoverage",
         "description" : "Period of time the research data itself is related to. Could be a date format or plain text.",
@@ -208,7 +244,7 @@
         "display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
-    }, 
+    },
     "TemporalCoverage:EndDate" :  {
         "name" : "temporalcoverage_enddate",
         "description" : "",
@@ -217,7 +253,7 @@
         "display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
-    }, 
+    },
     "TempCoverageBegin" :  {
         "name" : "temporalcoveragebegin",
         "description" : "",
@@ -235,7 +271,7 @@
         "display" : "hidden",
         "type" : "integer",
         "obligation" : "optional"
-    }, 
+    },
     "spatial" : {
         "name" : "",
         "description" : "",
@@ -244,7 +280,7 @@
         "display" : "hidden",
         "type" : "date",
         "obligation" : "optional"
-    }, 
+    },
     "PublicationTimestamp" :  {
         "name" : "publicationtimestamp",
         "description" : "",

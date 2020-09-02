@@ -70,7 +70,7 @@ enes	http://c3grid1.dkrz.de:8080/oai/provider   ListIdentifiers  iso	iso-old-doi
 envidat https://www.envidat.ch/oai ListRecords oai_dc
 
 ## ESS SciCat 
-ess https://scicat.esss.se/scicat/oai ListRecords oai_datacite full
+ess https://scicat.esss.se/openaire/oai ListRecords oai_datacite
 
 ## ETSIN
 etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc  

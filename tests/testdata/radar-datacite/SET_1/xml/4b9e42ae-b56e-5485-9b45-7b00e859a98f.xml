@@ -1,0 +1,122 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.22000/271</identifier>
+    <datestamp>2020-02-27T07:56:34Z</datestamp>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.22000/271</identifier>
+      <creators>
+        <creator>
+          <creatorName>Schnabel, Arianne</creatorName>
+          <givenName>Arianne</givenName>
+          <familyName>Schnabel</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-2172-2905</nameIdentifier>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Department of Cell and Metabolic Biology</affiliation>
+        </creator>
+        <creator>
+          <creatorName>Vogt, Thomas</creatorName>
+          <givenName>Thomas</givenName>
+          <familyName>Vogt</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-6155-3360</nameIdentifier>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Department of Cell and Metabolic Biology</affiliation>
+        </creator>
+        <creator>
+          <creatorName>Porzel, Andrea</creatorName>
+          <givenName>Andrea</givenName>
+          <familyName>Porzel</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-8148-6895</nameIdentifier>
+          <affiliation>Leibniz-Institute of Plant Biochemistry, Department of Bioorganic Chemistry</affiliation>
+        </creator>
+        <creator>
+          <creatorName>Brandt, Wolfgang</creatorName>
+          <givenName>Wolfgang</givenName>
+          <familyName>Brandt</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-0825-1491</nameIdentifier>
+          <affiliation>Leibniz-Institute of Plant Biochemistry, Department of Bioorganic Chemistry</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Raw data for "A piperic acid CoA ligase produces a putative precursor of piperine, the pungent principle from black pepper fruits"</title>
+      </titles>
+      <publisher>Leibniz Institute of Plant Biochemistry, Halle, Germany</publisher>
+      <dates>
+        <date dateType="Created">2017-2019</date>
+      </dates>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Biochemistry</subject>
+        <subject>Chemistry</subject>
+        <subject>Life Science</subject>
+        <subject>Piperic acid CoA ligase</subject>
+        <subject>piperine</subject>
+        <subject>NMR</subject>
+        <subject>Piper nigrum L.</subject>
+      </subjects>
+      <resourceType resourceTypeGeneral="Dataset"/>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>Leibniz Institute of Plant Biochemistry, Halle, Germany</contributorName>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName>Cotinguiba, Fernando</contributorName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-7006-0768</nameIdentifier>
+          <affiliation>Instituto de Pesquisas de Produtos Naturais (IPPN), Universidade Federal do Rio de Janeiro (UFRJ)</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName>Athmer, Benedikt</contributorName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-0234-4398</nameIdentifier>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Department of Cell and Metabolic Biology</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName>Yang, Changqing</contributorName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-9761-6850</nameIdentifier>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Department of Cell and Metabolic Biology</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName>Westermann, Bernhard</contributorName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-6228-5991</nameIdentifier>
+          <affiliation>Leibniz-Institute of Plant Biochemistry, Department of Bioorganic Chemistry</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName>Schaks, Angela</contributorName>
+          <affiliation>Leibniz-Institute of Plant Biochemistry, Department of Bioorganic Chemistry</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+          <contributorName>Schumacher, Frank</contributorName>
+          <affiliation>Core Facility Vienna Botanical Gardens</affiliation>
+        </contributor>
+      </contributors>
+      <descriptions>
+        <description descriptionType="Methods">Piper nigrum L.</description>
+      </descriptions>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="GenBank accession number">MN729603</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="CAS Registry Number">111830-76-3</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChI">InChI=1S/C33H44N7O19P3S/c1-33(2,28(44)31(45)36-10-9-23(41)35-11-12-63-24(42)6-4-3-5-19-7-8-20-21(13-19)54-18-53-20)15-56-62(51,52)59-61(49,50)55-14-22-27(58-60(46,47)48)26(43)32(57-22)40-17-39-25-29(34)37-16-38-30(25)40/h3-8,13,16-17,22,26-28,32,43-44H,9-12,14-15,18H2,1-2H3,(H,35,41)(H,36,45)(H,49,50)(H,51,52)(H2,34,37,38)(H2,46,47,48)/b5-3+,6-4+/t22-,26+,27+,28-,32-/m1/s1</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChIKey">GEVZCNXLEOONCV-RJPWVWRHSA-N</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="CAS Registry Number">123022-35-5</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChI">InChI=1S/C12H12O4/c1-16-11-8-9(6-7-10(11)13)4-2-3-5-12(14)15/h2-8,13H,1H3,(H,14,15)/b4-2+,5-3+</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChIKey">PZTHQMWVDHEWPY-ZUVMSYQZSA-N</alternateIdentifier>
+      </alternateIdentifiers>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo">10.1111/tpj.14652</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.5452/ma-2bzsh</relatedIdentifier>
+      </relatedIdentifiers>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft</funderName>
+          <funderIdentifier funderIdentifierType="Crossref Funder ID">501100001659</funderIdentifier>
+          <awardNumber awardURI="https://gepris.dfg.de/gepris/projekt/318064602">318064602</awardNumber>
+          <awardTitle>Biosynthese der Piperamide im schwarzen Pfeffer (Piper nigrum)</awardTitle>
+        </fundingReference>
+      </fundingReferences>
+      <sizes>
+        <size/>
+      </sizes>
+      <formats>
+        <format>application/zip</format>
+      </formats>
+    </resource>
+  </metadata>
+</record>
