@@ -12,6 +12,7 @@ class EnvidatDatacite(DataCiteReader):
 
     def update(self, doc):
         doc.source = self.find_source('alternateIdentifier')
+        doc.contact = 'envidat@wsl.ch'
         if not doc.publisher:
             doc.publisher = 'EnviDat'
         doc.contributor = self.contributor(doc)
