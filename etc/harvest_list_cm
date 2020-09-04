@@ -108,7 +108,8 @@ herbadrop  https://opendata.cines.fr/herbadrop-api/rest/data/search POST json
 iagos http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos csw iso19139
 
 ## IST
-ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
+#ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
+ist https://research-explorer.app.ist.ac.at/oai? ListIdentifiers oai_datacite
 
 ## IVOA
 #ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc
