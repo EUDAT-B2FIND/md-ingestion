@@ -23,7 +23,7 @@ class DataCiteReader(XMLReader):
         doc.funding_reference = self.find('fundingReference.funderName')
         doc.publication_year = self.find('publicationYear')
         doc.rights = self.find('rights')
-        doc.contact = self.find('contributor', contributorType="ContactPerson")
+        doc.contact = self.contact()
         doc.language = self.find('language')
         doc.resource_type = self.find('resourceType')
         doc.format = self.find('format')
@@ -43,6 +43,17 @@ class DataCiteReader(XMLReader):
                     name = f"{name} ({affiliation})"
             creators.append(name)
         return creators
+
+    def contact(self):
+        contacts = []
+        for contact in self.parser.doc.find_all('contributor', contributorType="ContactPerson"):
+            name = format_value(contact.contributorName.text, type='email', one=True)
+            if contact.affiliation:
+                affiliation = format_value(contact.affiliation.text, one=True)
+                if affiliation:
+                    name = f"{name} ({affiliation})"
+            contacts.append(name)
+        return contacts
 
     def geometry(self):
         if self.parser.doc.find('geoLocationPoint'):
