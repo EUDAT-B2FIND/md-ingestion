@@ -12,4 +12,11 @@ def test_vo():
     assert 'Kevin Benson <kmb(at)mssl.ucl.ac.uk>' in doc.contact
     assert 'http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/' == doc.source
     assert ['International Virtual Observatory Alliance (IVOA)'] == doc.contributor
-    assert '2005AJ....130.2541M' in doc.related_identifier[0]
+    # assert '2005AJ....130.2541M' in doc.related_identifier
+
+
+def test_vo_2():
+    xmlfile = os.path.join(TESTDATA_DIR, 'ivoa-oai_datacite', 'SET_1', 'xml', '19cf53ec-4dc5-53d2-9da3-9b8b2ec2c1b7.xml')  # noqa
+    reader = IVOADatacite()
+    doc = reader.read(xmlfile, url='http://dc.g-vo.org/rr/q/pmh/pubreg.xml', community='ivoa', mdprefix='oai_datacite')
+    assert 'https://ui.adsabs.harvard.edu/abs/2005AJ....130.2541M' in doc.related_identifier

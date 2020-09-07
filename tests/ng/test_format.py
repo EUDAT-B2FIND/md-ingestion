@@ -54,6 +54,7 @@ def test_format_url():
     assert 'https://doi.org/10.22000/152' == format.format_url('doi:10.22000/152')
     assert 'https://doi.org/10.22000/152' == format.format_url('10.22000/152')
     assert 'http://alice.org/in/wonderland' == format.format_url('\nhttp://alice.org/in/wonderland\n')
+    assert 'https://ui.adsabs.harvard.edu/abs/2005AJ....130.2541M' == format.format_url('2005AJ....130.2541M')
 
 
 def test_format_url_special():
