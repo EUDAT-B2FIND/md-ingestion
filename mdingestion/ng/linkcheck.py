@@ -120,7 +120,7 @@ class LinkChecker(object):
             uri = self.wqueue.get()
             if uri is None:
                 break
-            status = check()
+            check()
             # self.rqueue.put((uri, status))
 
     def add(self, doc):
