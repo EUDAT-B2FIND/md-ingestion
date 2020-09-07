@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.envidat import EnviDatISO19139
+from mdingestion.ng.community.envidat_iso19139 import EnviDatISO19139
 
 from tests.common import TESTDATA_DIR
 
