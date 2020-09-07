@@ -12,7 +12,7 @@ class IVOADatacite(DataCiteReader):
 
     def update(self, doc):
         doc.source = self.find_source('alternateIdentifier', alternateIdentifierType="reference URL")
-        doc.related_identifier = self.find_source('relatedIdentifier', relatedIdentifierType="bibcode")
+        doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="bibcode")
         doc.contact = self.find('contributor', contributorType="ContactPerson")
         doc.discipline = self.discipline(doc)
         doc.contributor = self.contributor(doc)

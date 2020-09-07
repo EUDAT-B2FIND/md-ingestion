@@ -12,3 +12,4 @@ def test_vo():
     assert 'Kevin Benson <kmb(at)mssl.ucl.ac.uk>' in doc.contact
     assert 'http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/' == doc.source
     assert ['International Virtual Observatory Alliance (IVOA)'] == doc.contributor
+    assert '2005AJ....130.2541M' in doc.related_identifier[0]
