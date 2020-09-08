@@ -11,8 +11,9 @@ class DublinCoreReader(XMLReader):
         doc.title = self.find('title')
         doc.description = self.find('description')
         doc.keywords = self.find('subject')
-        # doc.doi = f"https://doi.org/{doc.oai_identifier[0]}"
-        # doc.source = self.find('identifier')
+        doc.doi = self.find_doi('identifier')
+        doc.pid = self.find_pid('identifier')
+        doc.source = self.find_source('identifier')
         doc.related_identifier = self.find('relation')
         doc.creator = self.find('creator')
         doc.publisher = self.find('publisher')
