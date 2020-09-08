@@ -48,6 +48,9 @@ danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite
 #darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
 darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite
 
+## DataverseNO
+dataverseno https://dataverse.no/oai ListRecords oai_dc dataverseno
+
 ## DEIMS
 deims https://deims.org/pycsw/catalogue/csw csw iso19139 full
 
