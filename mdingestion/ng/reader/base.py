@@ -4,6 +4,9 @@ from ..core import B2FDoc
 from ..parser import XMLParser
 from ..parser import JSONParser
 from ..format import format_url
+from ..classify import Classify
+
+import logging
 
 
 class SchemaType(Enum):
@@ -69,6 +72,17 @@ class Reader(object):
                 continue
             urls.append(f_url)
         return urls
+
+    def discipline(self, doc, default=None):
+        default = default or 'Various'
+        classifier = Classify()
+        result = classifier.map_discipline(doc.keywords)
+        if 'Various' not in result:
+            logging.debug(f"{result} keywords={doc.keywords}")
+        disc = result[0]
+        if 'Various' in disc:
+            disc = default
+        return disc
 
 
 class XMLReader(Reader):
