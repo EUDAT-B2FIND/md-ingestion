@@ -120,6 +120,7 @@ class B2FSchema(colander.MappingSchema):
         name='publication_year',
         title='PublicationYear',
         description='Year when the data is made publicly available. If an embargo period has been in effect, use the date when the embargo period ends.',  # noqa
+        validator=colander.Length(min=1),
     )
     funding_reference = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),
