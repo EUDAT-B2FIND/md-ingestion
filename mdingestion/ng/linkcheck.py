@@ -108,6 +108,8 @@ class LinkChecker(object):
                     break
 
             if status == "working":
+                if len(self.good) > 1000:
+                    self.good.pop()
                 self.good.add(uri)
             elif status == "broken":
                 self.broken[uri] = info
