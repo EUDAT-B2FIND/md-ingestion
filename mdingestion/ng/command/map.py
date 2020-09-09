@@ -5,7 +5,6 @@ from ..walker import Walker
 from ..community import reader
 from ..writer import writer
 from ..validator import Validator
-from ..linkcheck import LinkChecker
 
 import logging
 
@@ -16,14 +15,13 @@ class Map(Command):
         self.walker = Walker(self.outdir)
         self.reader = reader(self.community, self.mdprefix)
         self.writer = None
-        self.lc = LinkChecker()
 
     def run(self, format=format, force=False, linkcheck=True, limit=None):
         limit = limit or -1
         # TODO: refactor writer init
         self.writer = writer(format)
         # TODO: refactor validator usage
-        validator = Validator()
+        validator = Validator(linkcheck=linkcheck)
         validator.summary['_invalid_files_'] = []
         count = 0
         for filename in tqdm(self.walk(), ascii=True, desc=f"Map to {format}", unit=' records', total=limit):
@@ -34,13 +32,10 @@ class Map(Command):
             if force or is_valid:
                 self.writer.write(doc, filename)
                 validator.summary['written'] += 1
-                if linkcheck:
-                    self.lc.add(doc)
             else:
                 logging.warning(f"validation failed: {filename}")
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
-        validator.summary['broken_links'] = self.lc.broken
         validator.print_summary()
         validator.write_summary(self.writer.outdir)
 

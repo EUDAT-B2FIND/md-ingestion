@@ -4,19 +4,23 @@ import json
 
 from .writer import B2FWriter
 from .core import B2FSchema
+from .linkcheck import LinkChecker
 
 import logging
 
 
 class Validator(object):
-    def __init__(self, **args):
+    def __init__(self, linkcheck=True):
         # TODO: write also pandas csv file for statistical evaluation
         self.schema = B2FSchema()
         self.writer = B2FWriter()
+        self.linkcheck = linkcheck
+        self.lc = LinkChecker()
         self.summary = {
             'total': 0,
             'valid': 0,
             'written': 0,
+            'broken_links': [],
             'required': {
                 'title': 0,
                 'identifier': 0,
@@ -33,6 +37,9 @@ class Validator(object):
 
     def validate(self, doc):
         # TODO: use counter? https://pymotw.com/2/collections/counter.html
+        if self.linkcheck:
+            self.lc.add(doc)
+            self.summary['broken_links'] = self.lc.broken
         jsondoc = self.writer.json(doc)
         self.summary['total'] += 1
         try:
