@@ -35,7 +35,7 @@ class LinkChecker(object):
 
     def check_thread(self):
         kwargs = {
-            'allow_redirects': True,
+            'allow_redirects': False,
             'headers': {
                 'Accept': 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8',
                 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',  # noqa
