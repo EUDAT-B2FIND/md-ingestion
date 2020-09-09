@@ -18,7 +18,7 @@ class Map(Command):
         self.writer = None
         self.lc = LinkChecker()
 
-    def run(self, format=format, force=False, limit=None):
+    def run(self, format=format, force=False, linkcheck=True, limit=None):
         limit = limit or -1
         # TODO: refactor writer init
         self.writer = writer(format)
@@ -34,7 +34,8 @@ class Map(Command):
             if force or is_valid:
                 self.writer.write(doc, filename)
                 validator.summary['written'] += 1
-                self.lc.add(doc)
+                if linkcheck:
+                    self.lc.add(doc)
             else:
                 logging.warning(f"validation failed: {filename}")
                 validator.summary['_invalid_files_'].append(filename)

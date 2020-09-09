@@ -95,7 +95,9 @@ class Validator(object):
 
     def print_summary(self):
         print("\nSummary:")
-        print(f"\tvalid={self.summary['valid']}/{self.summary['total']}, written={self.summary['written']}")
+        print(f"\tvalid={self.summary['valid']}/{self.summary['total']}")
+        print(f"\twritten={self.summary['written']}")
+        print(f"\tbroken links={len(self.summary['broken_links'])}")
         print("\nRequired Fields:")
         for key, value in self.summary['required'].items():
             print(f"\t{key}={value}")
