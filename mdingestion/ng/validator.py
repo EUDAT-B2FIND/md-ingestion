@@ -81,7 +81,7 @@ class Validator(object):
                     self.summary['invalid'][key] += 1
                 self._update_values(key, value, valid=valid)
 
-    def _update_values(self, key, value, valid=True, max_value_length=100, max_values=100):
+    def _update_values(self, key, value, valid=True, max_value_length=250, max_values=25):
         if valid:
             values_key = 'values'
         else:
