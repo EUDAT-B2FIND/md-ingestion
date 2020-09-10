@@ -11,6 +11,7 @@ class DublinCoreReader(XMLReader):
         doc.title = self.find('title')
         doc.description = self.find('description')
         doc.keywords = self.find('subject')
+        doc.discipline = self.discipline(doc)
         doc.doi = self.find_doi('metadata.identifier')
         doc.pid = self.find_pid('metadata.identifier')
         doc.source = self.find_source('metadata.identifier')
