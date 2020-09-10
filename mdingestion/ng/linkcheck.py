@@ -6,6 +6,9 @@ import requests
 from requests.exceptions import HTTPError
 from requests.utils import requote_uri
 
+import urllib3
+urllib3.disable_warnings()
+
 
 class LinkChecker(object):
     """
@@ -35,6 +38,7 @@ class LinkChecker(object):
 
     def check_thread(self):
         kwargs = {
+            'verify': False,
             'allow_redirects': False,
             'headers': {
                 'Accept': 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8',

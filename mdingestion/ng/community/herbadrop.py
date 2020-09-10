@@ -19,10 +19,11 @@ class Herbadrop(JSONReader):
         doc.publication_year = self.find('metadata."aip.meta.archivingDate"')
         doc.rights = self.find('metadata."aip.dc.rights".und')
         doc.contact = doc.publisher
-        # doc.open_access = True
+        # language is commented out because always undefined "und_UND" - useless!
         # doc.language = self.find('metadata."aip.dc.language"')
         doc.resource_type = self.find('metadata."aip.dc.type".eng')
         doc.format = self.find('metadata."aip.dc.format".eng')
+        doc.size = self.size()
         doc.discipline = 'Plant Sciences'
         doc.temporal_coverage_begin_date = self.find('metadata."aip.dc.startDate"')
         doc.temporal_coverage_end_date = self.find('metadata."aip.dc.endDate"')
@@ -30,9 +31,8 @@ class Herbadrop(JSONReader):
     def description(self, doc):
         text = []
         text.append("""This record is part of a larger collection of digitized herbarium specimens.
-         The full Herbadrop/ICEDIG-project collection can be accessed and browsed at https://opendata.cines.fr/
-          or https://www.mnhn.fr/fr/collections/ensembles-collections/botanique""")
-        text.append("Scanned files by OCR:")
+         The full Herbadrop/ICEDIG-project collection can be accessed and browsed at https://opendata.cines.fr""")
+        text.append("\n\nScanned files by OCR:")
         text.append(format_value(self.find('images[*].ocr.lat'), one=True))
         return text
 
@@ -44,3 +44,7 @@ class Herbadrop(JSONReader):
 
     def spatial_coverage(self, doc):
         return self.find('metadata."aip.dc.coverage".und')
+
+    def size(self):
+        value = [f"{size} bytes" for size in self.find('metadata."aip.files"[*].sizeInBytes')]
+        return value
