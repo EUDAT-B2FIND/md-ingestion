@@ -16,12 +16,12 @@ class Map(Command):
         self.reader = reader(self.community, self.mdprefix)
         self.writer = None
 
-    def run(self, format=format, force=False, limit=None):
+    def run(self, format=format, force=False, linkcheck=True, limit=None):
         limit = limit or -1
         # TODO: refactor writer init
         self.writer = writer(format)
         # TODO: refactor validator usage
-        validator = Validator()
+        validator = Validator(linkcheck=linkcheck)
         validator.summary['_invalid_files_'] = []
         count = 0
         for filename in tqdm(self.walk(), ascii=True, desc=f"Map to {format}", unit=' records', total=limit):
