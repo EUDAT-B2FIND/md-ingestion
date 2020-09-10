@@ -191,6 +191,8 @@ def format_url(text):
         url = resolve_ark(url)
     elif parsed.scheme == 'doi' or parsed.path.startswith('10.'):
         url = f"https://doi.org/{parsed.path}"
+    elif len(parsed.path) == 19:
+        url = resolve_bibcode(url)
     else:
         logging.warning(f"could not parse URL: {url}")
         url = ''
@@ -213,6 +215,15 @@ def resolve_ark(value):
     if value.startswith('ark:/'):
         # herbadrop uses: https://www.cines.fr
         url = f"https://n2t.net/{value}"
+    else:
+        url = ''
+    return url
+
+
+def resolve_bibcode(value):
+    # TODO: bibcode needs more checking, format: YYYYJJJJJVVVVMPPPPA
+    if len(value) == 19:
+        url = f'https://ui.adsabs.harvard.edu/abs/{value}'
     else:
         url = ''
     return url
