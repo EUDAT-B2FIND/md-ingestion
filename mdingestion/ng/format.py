@@ -14,6 +14,7 @@ import logging
 
 
 NULL_VALUES = (
+    '',
     'n/a',
     'none',
     'not stated',
@@ -22,13 +23,17 @@ NULL_VALUES = (
 
 
 def is_null_value(text):
-    val = True
-    if text:
-        if f"{text}".strip().lower() in NULL_VALUES:
-            val = True
-        else:
-            val = False
-    return val
+    if isinstance(text, bool):
+        return False
+    if isinstance(text, float):
+        return False
+    if isinstance(text, int):
+        return False
+    if not text:
+        return True
+    if f"{text}".strip().lower() in NULL_VALUES:
+        return True
+    return False
 
 
 def format_value(value, type=None, one=False, min_length=None, max_length=None):

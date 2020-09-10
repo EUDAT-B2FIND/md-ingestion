@@ -79,3 +79,15 @@ def test_format_empty_values():
     assert [] == format.format_value('none')
     assert [] == format.format_value('None')
     assert [] == format.format_value('  ')
+
+
+def test_is_null_value():
+    assert format.is_null_value('') is True
+    assert format.is_null_value(' ') is True
+    assert format.is_null_value([]) is True
+    assert format.is_null_value(None) is True
+    assert format.is_null_value('alice') is False
+    assert format.is_null_value(0.0) is False
+    assert format.is_null_value(0) is False
+    assert format.is_null_value(False) is False
+    assert format.is_null_value(True) is False
