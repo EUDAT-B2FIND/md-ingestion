@@ -25,3 +25,11 @@ def test_pangaea_temporal():
     # TODO: fails on travis
     # assert 63079085400 == doc.temp_coverage_begin
     # assert 63080181000 == doc.temp_coverage_end
+
+
+def test_pangaea_bbox():
+    xmlfile = os.path.join(TESTDATA_DIR, 'pangaea-datacite4', 'SET_1', 'xml', 'c1d81bf1-758f-5b85-a93f-17827fce4900.xml')  # noqa
+    reader = PangaeaDatacite()
+    doc = reader.read(xmlfile, url='https://ws.pangaea.de/oai/provider', community='pangaea', mdprefix='datacite4')
+    assert 'https://doi.org/10.1594/PANGAEA.557786' == doc.doi
+    assert '(0.0W, 78.0S, 7.5E, 80.0N); Fram Strait' == doc.spatial_coverage

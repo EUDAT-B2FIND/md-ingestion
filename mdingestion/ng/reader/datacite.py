@@ -15,7 +15,7 @@ class DataCiteReader(XMLReader):
         doc.pid = self.find_pid('alternateIdentifier')
         doc.source = self.find_source('resource.identifier')
         doc.keywords = self.find('subject')
-        doc.discipline = format_value(self.find('subject'), type='string_words')
+        doc.discipline = self.discipline(doc)
         doc.related_identifier = self.find('relatedIdentifier')
         doc.creator = self.creator()
         doc.publisher = self.find('publisher')
@@ -66,6 +66,7 @@ class DataCiteReader(XMLReader):
             east = format_value(self.find('geoLocationBox.eastBoundLongitude'), type='float', one=True)
             south = format_value(self.find('geoLocationBox.southBoundLatitude'), type='float', one=True)
             north = format_value(self.find('geoLocationBox.northBoundLatitude'), type='float', one=True)
+            print(f"{west} {east} {south} {north}")
             # bbox: minx=west, miny=south, maxx=east, maxy=north
             geometry = shapely.geometry.box(west, south, east, north)
         elif self.parser.doc.find('geoLocationPolygon'):

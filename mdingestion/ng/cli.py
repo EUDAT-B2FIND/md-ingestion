@@ -81,8 +81,9 @@ def harvest(ctx, community, url, verb, mdprefix, mdsubset, fromdate, limit, inse
 @click.option('--format', default='ckan', help='output format: ckan (default), legacy or b2f')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
+@click.option('--no-linkcheck', is_flag=True, help='do not check if URLs resolve in validation')
 @click.pass_context
-def map(ctx, community, url, mdprefix, mdsubset, format, limit, force):
+def map(ctx, community, url, mdprefix, mdsubset, format, limit, force, no_linkcheck):
     try:
         map = Map(
             sources=ctx.obj['list'],
@@ -91,7 +92,7 @@ def map(ctx, community, url, mdprefix, mdsubset, format, limit, force):
             mdprefix=mdprefix,
             mdsubset=mdsubset,
             outdir=ctx.obj['outdir'],)
-        map.run(format=format, force=force, limit=limit)
+        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit)
     except Exception as e:
         logging.critical(f"map: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
