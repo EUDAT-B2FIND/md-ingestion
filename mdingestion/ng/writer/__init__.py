@@ -13,6 +13,5 @@ def writer(format):
 __all__ = [
     CKANWriter,
     B2FWriter,
-    LegacyWriter,
     writer,
 ]
