@@ -10,6 +10,6 @@ def test_dataverseno():
     reader = DataverseNODublinCore()
     doc = reader.read(xmlfile, url='', community='dataverseno', mdprefix='oai_dc')
     assert 'https://doi.org/10.18710/DWAC63' == doc.doi
-    assert 'Physics;History' == doc.discipline
+    assert 'Physics;History;History of Science' == doc.discipline
     assert ['DataverseNO'] == doc.publisher
     assert 'EOSC Nordic' in doc.keywords
