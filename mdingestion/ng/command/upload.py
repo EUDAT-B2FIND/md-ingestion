@@ -3,10 +3,6 @@ import json
 from urllib import parse
 from ckanapi import RemoteCKAN, NotFound
 
-from mdingestion.uploading import Uploader as LegacyUploader
-from mdingestion.uploading import CKAN_CLIENT as LegacyCKANClient
-from mdingestion.settings import init as legacy_init_upload
-
 from .base import Command
 from ..walker import Walker
 
@@ -15,10 +11,7 @@ import logging
 
 class Upload(Command):
     def run(self, iphost=None, auth=None, target=None, limit=None, verify=True):
-        if target == 'legacy':
-            self.legacy_upload(iphost=iphost, auth=auth)
-        else:
-            self.upload_to_ckan(iphost=iphost, auth=auth, limit=limit, verify=verify)
+        self.upload_to_ckan(iphost=iphost, auth=auth, limit=limit, verify=verify)
 
     def upload_to_ckan(self, iphost, auth, limit=None, verify=True):
         self.walker = Walker(self.outdir)
@@ -51,23 +44,3 @@ class Upload(Command):
                 format='ckan',
                 ext='json'):
             yield filename
-
-    def legacy_upload(self, iphost=None, auth=None):
-        legacy_init_upload()
-        ckan = LegacyCKANClient(iphost, auth)
-        wrapped = LegacyUploader(
-            OUT=None,
-            CKAN=ckan,
-            ckan_check=None,
-            HandleClient=None,
-            cred=None,
-            base_outdir=self.outdir,
-            fromdate=None,
-            iphost=iphost)
-        request = [
-            self.community,
-            self.url,
-            None,
-            self.mdprefix,
-        ]
-        wrapped.upload(request)
