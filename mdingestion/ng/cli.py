@@ -78,7 +78,7 @@ def harvest(ctx, community, url, verb, mdprefix, mdsubset, fromdate, limit, inse
 @click.option('--url', help='Source URL')
 @click.option('--mdprefix', help='Metadata prefix')
 @click.option('--mdsubset', help='Subset')
-@click.option('--format', default='ckan', help='output format: ckan (default), legacy or b2f')
+@click.option('--format', default='ckan', help='output format: ckan (default) or b2f')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
 @click.option('--no-linkcheck', is_flag=True, help='do not check if URLs resolve in validation')
@@ -102,7 +102,7 @@ def map(ctx, community, url, mdprefix, mdsubset, format, limit, force, no_linkch
 @click.option('--community', '-c', required=True, help='Community')
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
 @click.option('--auth', required=True, help='CKAN API key')
-@click.option('--target', default='ckan', help='Target service: ckan (default) or legacy')
+@click.option('--target', default='ckan', help='Target service: ckan (default)')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
