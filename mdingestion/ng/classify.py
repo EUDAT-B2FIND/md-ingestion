@@ -3,69 +3,90 @@ import re
 import json
 from collections import OrderedDict
 import Levenshtein as lvs
+# import textdistance
+
+from .format import format_value
+from .util import remove_duplicates_from_list
 
 import logging
 
 CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'mapfiles')
 
 
+def tokenize(text):
+    tokens = []
+    values = format_value(text, type='string_words')
+    for value in values:
+        _tokens = re.split(r'[;&\s]\s*', value)
+        tokens.extend(_tokens)
+        tokens.append(value)
+    tokens = remove_duplicates_from_list(tokens)
+    # words start with title case characters, all remaining cased characters have lower case
+    tokens = [token.title() for token in tokens]
+    return tokens
+
+
+def similarity(string1, string2):
+    return lvs.ratio(string1.lower(), string2.lower())
+    # return textdistance.jaro_winkler.normalized_similarity(string1.lower(), string2.lower())
+
+
 class Classify(object):
     def __init__(self):
-        self.disctab = self.load_list()
+        self._discipines = None
 
-    def load_list(self):
+    def load_disciplines(self):
+        discipines = {}
         fname = os.path.join(CFG_DIR, 'b2find_disciplines.json')
         with open(fname) as fp:
-            disctab = json.load(fp)['disciplines']
-        return disctab
-
-    def map_discipline(self, invalue):
-        """
-        Convert disciplines along B2FIND disciplinary list
-        """
-        retval = []
-        if isinstance(invalue, list):
-            # seplist = [re.split(r"[;&\xe2]", i) for i in invalue]
-            swlist = [re.findall(r"[\w']+", i) for i in invalue]
-            inlist = swlist  # +seplist
-            inlist = [item for sublist in inlist for item in sublist]  # ???
-        else:
-            inlist = re.split(r'[;&\s]\s*', invalue)
-            inlist.append(invalue)
-        for indisc in inlist:
-            logging.debug(f'Next input discipline value {indisc} of type {type(indisc)}')
-            indisc = indisc.replace('\n', ' ').replace('\r', ' ').strip().title()
-            maxr = 0.0
-            maxdisc = ''
-            for line in self.disctab:
+            doc = json.load(fp)['disciplines']
+            for line in doc:
                 line = re.split(r'#', line)
-                try:
-                    if len(line) < 3:
-                        logging.critical(f'Missing base element in dicipline array {line}')
-                        raise Exception('Missing base element in dicipline array')
-                    else:
-                        disc = line[2].strip()
-                        r = lvs.ratio(indisc, disc)
-                except Exception as e:
-                    logging.error(f'{e} : {indisc} of type {type(indisc)} can not compared to {disc} of type {type(disc)}')  # noqa
+                if len(line) < 3:
+                    logging.warning(f'Missing base element in dicipline array {line}')
                     continue
-                if r > maxr:
-                    maxdisc = disc
-                    maxr = r
-                    logging.debug(f'--- {line} |{indisc}|{disc}|{r}|{maxr}')
-                    rethier = line
-            if maxr == 1 and indisc == maxdisc:
-                logging.info(f'  | Perfect match of >{indisc}< : nothing to do, DiscHier {line}')
-                retval.append(indisc.strip())
-            elif maxr > 0.90:
-                logging.info(f'   | Similarity ratio {maxr} is > 0.90 : replace value >>{indisc}<< with best match --> {maxdisc}')  # noqa
-                # return maxdisc
-                retval.append(indisc.strip())
-            else:
-                logging.debug(f'   | Similarity ratio {maxr} is < 0.90 compare value >>{indisc}<< and discipline >>{maxdisc}<<')  # noqa
-                continue
-        if len(retval) > 0:
-            retval = list(OrderedDict.fromkeys(retval))  # this elemenates real duplicates
-            return (';'.join(retval), rethier)
+                discipline = line[2].strip()
+                discipines[discipline] = line
+        return discipines
+
+    @property
+    def discipines(self):
+        if self._discipines is None:
+            self._discipines = self.load_disciplines()
+        return self._discipines
+
+    def map_discipline(self, keywords):
+        """
+        Map keywords to B2Find disciplines.
+        """
+        matches = {}
+        tokens = tokenize(keywords)
+        for token in tokens:
+            logging.debug(f'compare token {token}')
+            max_ratio = 0.0
+            best_match = ''
+            for discipline in self.discipines:
+                try:
+                    ratio = similarity(token, discipline)
+                except Exception as e:
+                    logging.warning(f'{token} can not be compared to {discipline}: {e}')
+                    continue
+                if ratio > max_ratio:
+                    max_ratio = ratio
+                    best_match = discipline
+                    logging.debug(f'token={token}, discipline={discipline}, ratio={ratio}, max_ratio={max_ratio}')
+            logging.debug(f'Similarity ratio is {max_ratio} for token "{token}" and best match "{best_match}"')
+            if max_ratio >= 0.9:
+                logging.info(f'ratio >= 0.9. Keep best_match "{best_match}"')
+                if best_match in matches:
+                    if max_ratio > matches[best_match]:
+                        matches[best_match] = max_ratio
+                else:
+                    matches[best_match] = max_ratio
+        if matches:
+            # sort by highest ratio
+            sorted_matches = sorted(matches, key=lambda match: matches[match], reverse=True)
+            result = (';'.join(sorted_matches), self.discipines[sorted_matches[0]])
         else:
-            return ('Various', [])
+            result = ('Various', [])
+        return result
