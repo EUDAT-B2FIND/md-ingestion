@@ -41,6 +41,9 @@ ceric https://data.ceric-eric.eu/oai-pmh/oai2 ListRecords oai_datacite
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
 clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
 
+## CRC 1211 Database
+crc1211db http://doidb.wdc-terra.org/oaip/oai ListRecords oai_datacite DOIDB.CRC1211
+
 ## Dans Easy
 danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite
 
