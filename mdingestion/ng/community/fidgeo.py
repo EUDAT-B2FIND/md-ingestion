@@ -2,6 +2,6 @@ from ..reader import DataCiteReader
 from ..sniffer import OAISniffer
 
 
-class DarusDatacite(DataCiteReader):
+class FidgeoDatacite(DataCiteReader):
     NAME = 'fidgeo-oai_datacite'
     SNIFFER = OAISniffer
