@@ -31,7 +31,7 @@ class ISO19139Reader(XMLReader):
         # doc.version = self.find('distributionFormat.version')
         doc.temporal_coverage_begin_date = self.find('EX_TemporalExtent.beginPosition')
         doc.temporal_coverage_end_date = self.find('EX_TemporalExtent.endPosition')
-        doc.geometry = self.geometry()
+        doc.geometry = self.find_geometry()
 
     def geometry(self):
         geometry = None
