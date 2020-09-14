@@ -89,6 +89,9 @@ etsin https://etsin.avointiede.fi/oai ListRecords   oai_dc
 ## Euro-Argo
 euroargo  http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso19139 euro-argo
 
+## FID GEO
+fidgeo http://doidb.wdc-terra.org/oaip/oai ListRecords oai_datacite DOIDB.FID
+
 ## GET-IT
 #http://getit.lifewatch.unisalento.it/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities
 getit http://getit.lifewatch.unisalento.it/catalogue/csw csw iso19139 full
