@@ -255,7 +255,8 @@ class GeoDoc(BaseDoc):
         if self.geometry:
             coverage = self.format_coverage()
         if self.places:
-            coverage += '; '
+            if coverage:
+                coverage += '; '
             coverage += '; '.join(self.places)
         return coverage
 
