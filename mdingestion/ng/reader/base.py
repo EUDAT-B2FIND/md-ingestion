@@ -22,9 +22,12 @@ class Reader(object):
     SNIFFER = None
 
     def __init__(self):
+        self.filename = None
         self.parser = None
+        self.errors = dict(invalid_geometry=[])
 
     def read(self, filename, url=None, community=None, mdprefix=None):
+        self.filename = filename
         self.parser = self.DOC_PARSER(filename)
         doc = B2FDoc(filename, url, community, mdprefix)
         self._parse(doc)
@@ -83,6 +86,18 @@ class Reader(object):
         if 'Various' in disc:
             disc = default
         return disc
+
+    def find_geometry(self):
+        try:
+            geometry = self.geometry()
+        except Exception as e:
+            logging.warning(f"Could not parse geometry. {e}")
+            self.errors['invalid_geometry'].append(self.filename)
+            geometry = None
+        return geometry
+
+    def geometry(self):
+        raise NotImplementedError
 
 
 class XMLReader(Reader):

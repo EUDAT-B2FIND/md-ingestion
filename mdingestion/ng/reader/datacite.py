@@ -30,7 +30,7 @@ class DataCiteReader(XMLReader):
         doc.size = self.find('size')
         doc.version = self.find('metadata.version')
         doc.temporal_coverage = self.find('date')
-        doc.geometry = self.geometry()
+        doc.geometry = self.find_geometry()
         doc.places = self.find('geoLocationPlace')
 
     def creator(self):
@@ -66,7 +66,7 @@ class DataCiteReader(XMLReader):
             east = format_value(self.find('geoLocationBox.eastBoundLongitude'), type='float', one=True)
             south = format_value(self.find('geoLocationBox.southBoundLatitude'), type='float', one=True)
             north = format_value(self.find('geoLocationBox.northBoundLatitude'), type='float', one=True)
-            print(f"{west} {east} {south} {north}")
+            # print(f"{west} {east} {south} {north}")
             # bbox: minx=west, miny=south, maxx=east, maxy=north
             geometry = shapely.geometry.box(west, south, east, north)
         elif self.parser.doc.find('geoLocationPolygon'):

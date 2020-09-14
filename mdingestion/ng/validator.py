@@ -105,6 +105,7 @@ class Validator(object):
         print(f"\tvalid={self.summary['valid']}/{self.summary['total']}")
         print(f"\twritten={self.summary['written']}")
         print(f"\tbroken links={len(self.summary['broken_links'])}")
+        print(f"\tinvalid geometry={len(self.summary['_errors_']['invalid_geometry'])}")
         print("\nRequired Fields:")
         for key, value in self.summary['required'].items():
             print(f"\t{key}={value}")
