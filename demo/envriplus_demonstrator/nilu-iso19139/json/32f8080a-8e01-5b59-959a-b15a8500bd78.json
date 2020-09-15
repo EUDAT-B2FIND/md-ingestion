@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "\n            "
+    ],
+    "Contributor": "Norwegian Institute for Air Research | https://www.nilu.no/",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=EBAS.CH0001G.20030101000000.20150716000000.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+    "PublicationTimestamp": "2015-07-16T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Rights": [
+        "http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx"
+    ],
+    "SpatialCoverage": "(8 N,47E)",
+    "author": [
+        "Bukowiecki, Nicolas",
+        "Collaud Coen, Martine",
+        "Weingartner, Ernest",
+        "Baltensperger, Urs"
+    ],
+    "fulltext": "EBAS.CH0001G.20030101000000.20150716000000.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;2015-09-16T11:02:07Z;EBASDCPCMETADATA;ENVRIplus flagship demonstrator catalog;EBAS.CH0001G.20030101000000.20150716000000.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;eng;utf-8;not applicable;dataset;not applicable;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;custodian;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;custodian;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;publisher;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;publisher;2018-09-28T00:40:13Z;ISO19115 / GAW-WDCA Profile;1.3;World Geodetic System;1984;WGS 84;Measurements of volume absorption coefficient in air due to dried aerosol particles at Jungfraujoch, Switzerland (20030101 - 20150101);2015-07-16;revision;1;2015-07-16;220148375.20150916110207;Baltensperger, Urs;owner;Bukowiecki, Nicolas;owner;Weingartner, Ernest;owner;Collaud Coen, Martine;owner;Baltensperger, Urs;originator;Bukowiecki, Nicolas;originator;Weingartner, Ernest;originator;Collaud Coen, Martine;originator;Baltensperger, Urs;publisher;Bukowiecki, Nicolas;publisher;Weingartner, Ernest;publisher;Collaud Coen, Martine;publisher;This service provides filter absorption photometer measurements of volume absorption coefficient in air due to dried aerosol particles observed at Jungfraujoch, Switzerland (20030101 - 20150101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/).;onGoing;atmosphericComposition;theme;WMO_CategoryCode;2004-01-30;publication;http://www.wmo.int/pages/prog/www/metadata/WMO-keywords.html;otherRestrictions;otherRestrictions;http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx;grid;eng;utf-8;climatologyMeteorologyAtmosphere;time series of point measurements at surface;46.5475;46.5475;7.9850;7.9850;Switzerland;Jungfraujoch;2003-01-01Z;2015-01-01Z;3582.0000;3582.0000;volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles;physicalMeasurement;NASA Ames 1001;EBAS_1.1;15.0000;http://ebas.nilu.no/DataSets.aspx?stations=CH0001G&InstrumentTypes=filter_absorption_photometer&components=aerosol_absorption_coefficient&matrices=aerosol&fromDate=2003-01-01&toDate=2015-01-01;HTTP;Web-interface to relational data base.;download;dataset;Data collected according to instrument specific standard operating procedures, checked on import into data base.;Regularly calibrated by instrument operator, manually quality assured by instrument operator, boundary checked by data centre, outlier check by data centre.",
+    "group": "nilu",
+    "groups": [
+        {
+            "name": "nilu"
+        }
+    ],
+    "name": "32f8080a-8e01-5b59-959a-b15a8500bd78",
+    "notes": [
+        "This service provides filter absorption photometer measurements of volume absorption coefficient in air due to dried aerosol particles observed at Jungfraujoch, Switzerland (20030101 - 20150101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/)."
+    ],
+    "oai_identifier": [
+        "EBAS.CH0001G.20030101000000.20150716000000.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+        "EBAS.CH0001G.20030101000000.20150716000000.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2"
+    ],
+    "oai_set": [
+        "EBASDCPCMETADATA",
+        "ENVRIplus flagship demonstrator catalog"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[46.5475,7.9850],[46.5475,7.9850],[46.5475,7.9850],[46.5475,7.9850],[46.5475,7.9850]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "atmosphericComposition"
+        }
+    ],
+    "title": [
+        "Measurements of volume absorption coefficient in air due to dried aerosol particles at Jungfraujoch, Switzerland (20030101 - 20150101)"
+    ],
+    "url": "http://ebas.nilu.no/DataSets.aspx?stations=CH0001G&InstrumentTypes=filter_absorption_photometer&components=aerosol_absorption_coefficient&matrices=aerosol&fromDate=2003-01-01&toDate=2015-01-01"
+}

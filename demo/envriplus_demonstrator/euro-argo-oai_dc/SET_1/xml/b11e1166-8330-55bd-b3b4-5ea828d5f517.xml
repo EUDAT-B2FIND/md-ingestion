@@ -1,0 +1,56 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>589bfa51-2219-4cc8-a19e-83f3c3f27bb4</dc:identifier>
+      <dc:date>2018-01-18T13:30:27</dc:date>
+      <dc:title>EGO Gliders : Data and metadata from Global Data Assembly Centre (EGO GDAC)</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>gliders</dc:subject>
+      <dc:subject>global ocean observing system</dc:subject>
+      <dc:subject>ocean circulation</dc:subject>
+      <dc:subject>in-situ</dc:subject>
+      <dc:subject>ocean pressure</dc:subject>
+      <dc:subject>sea water salinity</dc:subject>
+      <dc:subject>sea water temperature</dc:subject>
+      <dc:subject>multi-year</dc:subject>
+      <dc:subject>weather climate and seasonal observation</dc:subject>
+      <dc:subject>global-ocean</dc:subject>
+      <dc:subject>biogeochemical data</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>CDS-IS-CORIOLIS</dc:subject>
+      <dc:subject>/Physical Oceanography/Temperature</dc:subject>
+      <dc:subject>/Physical Oceanography/Salinity</dc:subject>
+      <dc:subject>/Physical Oceanography/Turbidity</dc:subject>
+      <dc:subject>Observation system for research</dc:subject>
+      <dc:subject>Operational oceanography</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Chlorophyll-a and fluorescence</dc:subject>
+      <dc:subject>Dissolved organic matter</dc:subject>
+      <dc:subject>Currents</dc:subject>
+      <dc:subject>Nutrients</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Suspended particulates</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The Everyone's Gliding Observatories (EGO) initiative is a gathering of several teams of oceanographers, interested in developing the use of gliders for ocean observations. EGO started in Europe with members from France, Germany, Italy, Norway, Spain, and the United Kingdom. The partners of EGO have been funded by both European and national agencies to operate gliders for various purposes and at different sites. Coordinated actions are being set up for these sites in order to demonstrate the capabilities of a fleet of gliders for sampling the ocean, with a given scientific and/or operational objective.
+
+Gliders were developed since the 90&#8217;s to carry out in-situ observations of the upper 1km of the ocean, filling the gaps left by the existing observing systems. Gliders look like small autonomous robotic underwater vehicles which that uses an engine to change their buoyancy. While gliding from surface to about 1000 meters, gliders provide real-time physical and biogeochemical data along their transit. 
+They observe temperature, salinity, pressure, biogeochemical data or acoustic data.</dct:abstract>
+      <dc:description>The Everyone's Gliding Observatories (EGO) initiative is a gathering of several teams of oceanographers, interested in developing the use of gliders for ocean observations. EGO started in Europe with members from France, Germany, Italy, Norway, Spain, and the United Kingdom. The partners of EGO have been funded by both European and national agencies to operate gliders for various purposes and at different sites. Coordinated actions are being set up for these sites in order to demonstrate the capabilities of a fleet of gliders for sampling the ocean, with a given scientific and/or operational objective.
+
+Gliders were developed since the 90&#8217;s to carry out in-situ observations of the upper 1km of the ocean, filling the gaps left by the existing observing systems. Gliders look like small autonomous robotic underwater vehicles which that uses an engine to change their buoyancy. While gliding from surface to about 1000 meters, gliders provide real-time physical and biogeochemical data along their transit. 
+They observe temperature, salinity, pressure, biogeochemical data or acoustic data.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>http://www.ego-network.org/dokuwiki/doku.php?id=public:data</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="EGO Web Site" description="EGO Web Site">http://www.ego-network.org/</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-link--download" name="GDAC FTP" description="EGO gliders Glabal Data Assembly Centre (GDAC)">ftp://ftp.ifremer.fr/ifremer/glider/v2/</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="EGO gliders NetCDF format reference manual">http://doi.org/10.13155/34980</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="EGO gliders data processing chain">http://doi.org/10.17882/45402</dc:URI>
+      <dc:URI protocol="image/jpeg" name="thumbnail">https://sextant.ifremer.fr/geonetwork/srv/api/records/589bfa51-2219-4cc8-a19e-83f3c3f27bb4/attachments/Seaglider-underwater2.jpg</dc:URI>
+    </csw:Record>

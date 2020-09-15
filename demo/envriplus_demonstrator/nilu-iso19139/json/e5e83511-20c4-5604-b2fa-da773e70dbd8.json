@@ -1,0 +1,56 @@
+{
+    "Contact": [
+        "\n            "
+    ],
+    "Contributor": "Norwegian Institute for Air Research | https://www.nilu.no/",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=EBAS.FR0020R.20120101000000.20150409090502.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+    "PublicationTimestamp": "2015-04-09T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Rights": [
+        "http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx"
+    ],
+    "SpatialCoverage": "(2 N,49E)",
+    "author": [
+        "Pascal, Nicolas",
+        "Sciare, Jean",
+        "Petit, Jean-Eudes",
+        "Crenn, Vincent"
+    ],
+    "fulltext": "EBAS.FR0020R.20120101000000.20150409090502.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;2015-06-25T10:44:18Z;EBASDCPCMETADATA;ENVRIplus flagship demonstrator catalog;EBAS.FR0020R.20120101000000.20150409090502.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;eng;utf-8;not applicable;dataset;not applicable;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;custodian;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;custodian;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;publisher;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;publisher;2018-09-28T00:40:12Z;ISO19115 / GAW-WDCA Profile;1.3;World Geodetic System;1984;WGS 84;Measurements of volume scattering coefficient in air due to dried aerosol particles at SIRTA Atmospheric Research Observatory, France (20120101 - 20140101);2015-04-09;revision;1;2015-04-09;215144898.20150625104418;Sciare, Jean;+33 169082401;+33 169087716;owner;Crenn, Vincent;+33 169082401;+33 169087716;owner;Pascal, Nicolas;+33 169082401;+33 169087716;owner;Petit, Jean-Eudes;+33 169082401;+33 169087716;owner;Sciare, Jean;+33 169082401;+33 169087716;originator;Crenn, Vincent;+33 169082401;+33 169087716;originator;Pascal, Nicolas;+33 169082401;+33 169087716;originator;Petit, Jean-Eudes;+33 169082401;+33 169087716;originator;Sciare, Jean;+33 169082401;+33 169087716;publisher;Crenn, Vincent;+33 169082401;+33 169087716;publisher;Pascal, Nicolas;+33 169082401;+33 169087716;publisher;Petit, Jean-Eudes;+33 169082401;+33 169087716;publisher;This service provides nephelometer measurements of volume scattering coefficient in air due to dried aerosol particles observed at SIRTA Atmospheric Research Observatory, France (20120101 - 20140101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/).;onGoing;atmosphericComposition;theme;WMO_CategoryCode;2004-01-30;publication;http://www.wmo.int/pages/prog/www/metadata/WMO-keywords.html;otherRestrictions;otherRestrictions;http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx;grid;eng;utf-8;climatologyMeteorologyAtmosphere;time series of point measurements at surface;48.7086;48.7086;2.1589;2.1589;France;SIRTA Atmospheric Research Observatory;2012-01-01Z;2014-01-01Z;168.0000;168.0000;volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles;physicalMeasurement;NASA Ames 1001;EBAS_1.1;15.0000;http://ebas.nilu.no/DataSets.aspx?stations=FR0020R&InstrumentTypes=nephelometer&components=aerosol_light_scattering_coefficient&matrices=aerosol&fromDate=2012-01-01&toDate=2014-01-01;HTTP;Web-interface to relational data base.;download;dataset;Data collected according to instrument specific standard operating procedures, checked on import into data base.;Regularly calibrated by instrument operator, manually quality assured by instrument operator, boundary checked by data centre, outlier check by data centre.",
+    "group": "nilu",
+    "groups": [
+        {
+            "name": "nilu"
+        }
+    ],
+    "name": "e5e83511-20c4-5604-b2fa-da773e70dbd8",
+    "notes": [
+        "This service provides nephelometer measurements of volume scattering coefficient in air due to dried aerosol particles observed at SIRTA Atmospheric Research Observatory, France (20120101 - 20140101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/)."
+    ],
+    "oai_identifier": [
+        "EBAS.FR0020R.20120101000000.20150409090502.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+        "EBAS.FR0020R.20120101000000.20150409090502.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2"
+    ],
+    "oai_set": [
+        "EBASDCPCMETADATA",
+        "ENVRIplus flagship demonstrator catalog"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[48.7086,2.1589],[48.7086,2.1589],[48.7086,2.1589],[48.7086,2.1589],[48.7086,2.1589]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "atmosphericComposition"
+        }
+    ],
+    "title": [
+        "Measurements of volume scattering coefficient in air due to dried aerosol particles at SIRTA Atmospheric Research Observatory, France (20120101 - 20140101)"
+    ],
+    "url": "http://ebas.nilu.no/DataSets.aspx?stations=FR0020R&InstrumentTypes=nephelometer&components=aerosol_light_scattering_coefficient&matrices=aerosol&fromDate=2012-01-01&toDate=2014-01-01"
+}

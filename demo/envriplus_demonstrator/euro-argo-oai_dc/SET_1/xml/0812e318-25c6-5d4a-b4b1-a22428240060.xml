@@ -1,0 +1,35 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>ecbce8ad-79fe-41b2-9bf7-f0d5cd80582d</dc:identifier>
+      <dc:date>2018-06-14T09:52:46</dc:date>
+      <dc:title>Surface Ocean CO2 Atlas (SOCAT)</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>sea_surface_temperature</dc:subject>
+      <dc:subject>sea_surface_salinity</dc:subject>
+      <dc:subject>air_pressure</dc:subject>
+      <dc:subject>surface_fugacity_of_carbon_dioxide_in_sea_water_in_wet_air</dc:subject>
+      <dc:subject>Products</dc:subject>
+      <dc:subject>Carbonate system</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Atmospheric pressure</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The Surface Ocean CO&#8322; Atlas (SOCAT) is a synthesis activity for quality-controlled, surface ocean fCO&#8322; (fugacity of carbon dioxide) observations by the international marine carbon research community (&gt;100 contributors). SOCAT data is publicly available, discoverable and citable. SOCAT enables quantification of the ocean carbon sink and ocean acidification and evaluation of ocean biogeochemical models. SOCAT represents a milestone in biogeochemical and climate research and in informing policy.
+
+SOCAT data are released in versions. Each succeeding version contains new data sets as well as updates of older ones. The first version of SOCAT was released in 2011, the second and third version followed biennially. Automation allowed annual public releases since version 4. The latest SOCAT version (version 5) has 21.5 million observations from 1957 to 2017 for the global oceans and coastal seas. SOCAT contains data from the VOS, OceanSites network and mooring, buoy data in general as well as calibrated sensor data.</dct:abstract>
+      <dc:description>The Surface Ocean CO&#8322; Atlas (SOCAT) is a synthesis activity for quality-controlled, surface ocean fCO&#8322; (fugacity of carbon dioxide) observations by the international marine carbon research community (&gt;100 contributors). SOCAT data is publicly available, discoverable and citable. SOCAT enables quantification of the ocean carbon sink and ocean acidification and evaluation of ocean biogeochemical models. SOCAT represents a milestone in biogeochemical and climate research and in informing policy.
+
+SOCAT data are released in versions. Each succeeding version contains new data sets as well as updates of older ones. The first version of SOCAT was released in 2011, the second and third version followed biennially. Automation allowed annual public releases since version 4. The latest SOCAT version (version 5) has 21.5 million observations from 1957 to 2017 for the global oceans and coastal seas. SOCAT contains data from the VOS, OceanSites network and mooring, buoy data in general as well as calibrated sensor data.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The public SOCAT data collection has quality controlled surface ocean fCO&#8322; (fugacity of CO&#8322;) values in a uniform format from the global oceans and coastal seas. For example, SOCAT version 3 has fCO&#8322; values from 3646 data sets, ranging from 1957 to 2014. Data coverage increased from the 1990s onwards.
+Please see (http://www.socat.info/index.php/frequently-asked-questions) for more information.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="Access to SOCAT" description="Access to SOCAT">https://www.socat.info</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/api/records/ecbce8ad-79fe-41b2-9bf7-f0d5cd80582d/attachments/SOCAT.png</dc:URI>
+    </csw:Record>

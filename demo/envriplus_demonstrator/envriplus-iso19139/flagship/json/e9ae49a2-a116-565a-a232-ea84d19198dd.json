@@ -1,0 +1,84 @@
+{
+    "Contact": [
+        "Johannes Peterseil", 
+        "johannes.peterseil@umweltbundesamt.at"
+    ],
+    "Contributor": [
+        "eLTER"
+    ],
+    "DOI": "",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "",
+    "PID": "",
+    "PublicationTimestamp": "2018-09-29T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "RelatedIdentifier": [
+        "https://deims.org"
+    ],
+    "ResourceType": [
+        "dataproduct"
+    ],
+    "Rights": [
+        "The principal: Administration has granted the access and use permission: Free access and use", 
+        "The principal: Research has granted the access and use permission: Free for access",
+        "The principal: Public has granted the access and use permission: Free for access"
+    ],
+    "SpatialCoverage": "",
+    "author": [
+        ""
+    ],
+    "fulltext": "",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "e9ae49a2-a116-565a-a232-ea84d19198dd",
+    "notes": [
+        "The data product atmospheric deposition encompasses throughfall as well as precipitation chemistry from a range of LTER sites in Europe. Whereas throughfall chemistry focuses on deposition under vegetation cover (e.g. forest cover) the precipitation chemistry focuses on bulk deposition without vegetation cover. The data result from the chemical analysis of precipiation samples collected with bulk deposition samplers installed at the sites. The number of samplers varies at each site and is provided as information with the data. Samples were analysed for pH, conductivity, alkalinity, and element concentrations (e.g. CA, CL, K, , NA, MG, NH4N, NO3N, SO4S, PO4P, DOC). Methodology for most of the sites follwing the UNECE IM Manual for TF and PC. In general deposition data are aggregated to monthly means. Data are provided following the eLTER data specification."
+    ],
+    "oai_identifier": [
+        "e9ae49a2-a116-565a-a232-ea84d19198dd"
+    ],
+    "oai_set": "full",
+    "TempCoverageBegin": 62940193199,
+    "TempCoverageEnd": 62940193199,
+    "TemporalCoverage:BeginDate": "1992-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2017-12-31T11:59:59Z",
+    "state": "active",
+    "tags": [
+        {
+            "name": "deposition"
+        },
+        {
+            "name": "bulk sampler"
+        },
+        {
+            "name": "eLTER VA DataProduct"
+        },
+        {
+            "name": "dataproduct"
+        },
+        {
+            "name": "ENVRIplus"
+        }
+    ],
+    "title": [
+        "eLTER Dataproduct Atmospheric Deposition"
+    ],
+    "url": "https://docs.umweltbundesamt.at/s/tDBSZztzgW3cMxy"
+}

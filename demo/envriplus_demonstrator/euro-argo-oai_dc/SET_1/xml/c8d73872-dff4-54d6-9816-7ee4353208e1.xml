@@ -1,0 +1,63 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>65a891bc-dfed-4349-84ac-291ffb306eb6</dc:identifier>
+      <dc:date>2018-01-18T13:12:29</dc:date>
+      <dc:title>ICES</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Integrators</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Biology</dc:subject>
+      <dc:subject>occurrence</dc:subject>
+      <dc:subject>distribution</dc:subject>
+      <dc:subject>biota</dc:subject>
+      <dc:subject>Fisheries</dc:subject>
+      <dc:subject>Fishing effort</dc:subject>
+      <dc:subject>benthos</dc:subject>
+      <dc:subject>plankton</dc:subject>
+      <dc:subject>birds</dc:subject>
+      <dc:subject>biodiversity</dc:subject>
+      <dc:subject>fish</dc:subject>
+      <dc:subject>invertebrates</dc:subject>
+      <dc:subject>marine mammals</dc:subject>
+      <dc:subject>phytoplankton</dc:subject>
+      <dc:subject>zooplankton</dc:subject>
+      <dc:subject>species</dc:subject>
+      <dc:subject>contaminants</dc:subject>
+      <dc:subject>biological effects</dc:subject>
+      <dc:subject>ocean hydrography</dc:subject>
+      <dc:subject>acoustic trawl</dc:subject>
+      <dc:subject>net trawl</dc:subject>
+      <dc:subject>underwater noise</dc:subject>
+      <dc:subject>marine litter</dc:subject>
+      <dc:subject>fish eggs</dc:subject>
+      <dc:subject>ichthyoplankton</dc:subject>
+      <dc:subject>fish stomach contents</dc:subject>
+      <dc:subject>commercial catch</dc:subject>
+      <dc:subject>VMS</dc:subject>
+      <dc:subject>Logbook</dc:subject>
+      <dc:subject>Vulnerable Marine Ecosystems</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The International Council for the Exploration of the Sea (ICES), is a global organization that develops science and advice to support the sustainable use of the oceans. ICES is a network of more than 5,000 scientists from over 690 marine institutes in 20 member countries and beyond. 1,500 scientists participate in our activities annually. 
+ICES has a well-established Data Centre, which manages a number of large dataset collections related to the marine environment. The majority of data &#8211; covering the Northeast Atlantic, Baltic Sea, Greenland Sea, and Norwegian Sea &#8211; originate from national institutes that are part of the ICES network. The ICES Data Centre provides marine data services to ICES member countries, expert groups, world data centres, regional seas conventions (HELCOM and OSPAR), the European Environment Agency (EEA), Eurostat, and various other European projects and biodiversity portals. ICES aims to provide all data collections online and according to the ICES Data policy, which enables open access to all data that are do not fall under specific commercial or personal privacy concerns.</dct:abstract>
+      <dc:description>The International Council for the Exploration of the Sea (ICES), is a global organization that develops science and advice to support the sustainable use of the oceans. ICES is a network of more than 5,000 scientists from over 690 marine institutes in 20 member countries and beyond. 1,500 scientists participate in our activities annually. 
+ICES has a well-established Data Centre, which manages a number of large dataset collections related to the marine environment. The majority of data &#8211; covering the Northeast Atlantic, Baltic Sea, Greenland Sea, and Norwegian Sea &#8211; originate from national institutes that are part of the ICES network. The ICES Data Centre provides marine data services to ICES member countries, expert groups, world data centres, regional seas conventions (HELCOM and OSPAR), the European Environment Agency (EEA), Eurostat, and various other European projects and biodiversity portals. ICES aims to provide all data collections online and according to the ICES Data policy, which enables open access to all data that are do not fall under specific commercial or personal privacy concerns.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>ICES is a receiver of Marine Data from national programmes and other marine institutes, therefore ICES is not the primary collection point of marine evidence that it holds and disseminates to the users of the data.
+Data are quality assured using internal and external programmes. ICES operates through a network of scientific expert and advisory groups. These groups, and the processes they feed into, act as a quality check on the marine evidence, both in terms of how the evidence was gathered and how the evidence has been subsequently treated. The groups, in cooperation with regional programmes under the Regional Sea Conventions, set standards and guidelines for the collection, transmission and analysis of these data.
+In addition, the ICES Secretariat provides supplementary quality assurance through its internal programmes related to the different types of marine data collection datasets, which is fedback to the participating national and regional programmes. These internal and external programmes and procedures have been established over a period of 30 or more years. They continue to evolve and strive to reflect the best available practices in the collection and treatment of marine data relevant to the ICES community. 
+A catalogue of quality control checks is available on the ICES website.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="ICES Quality control checks" description="ICES Quality control checks">http://www.ices.dk/marine-data/tools/Pages/quality-control.aspx</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="ICES Marine Data" description="ICES Marine Data">http://www.ices.dk/marine-data</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="ICES data portal" description="ICES data portal">http://gis.ices.dk/geonetwork/srv/eng/catalog.search#/home</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/api/records/b2f18ca3-2183-4843-b603-1996c72cf8a2/attachments/ICES.png</dc:URI>
+    </csw:Record>

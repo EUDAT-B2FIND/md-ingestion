@@ -1,0 +1,37 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>74f52a3b-b76a-4b32-8465-c9cccb0eb8e8</dc:identifier>
+      <dc:date>2018-01-18T13:12:28</dc:date>
+      <dc:title>Sea level data from the GLOSS Core Network</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Sea Level</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Air temperature</dc:subject>
+      <dc:subject>Atmospheric pressure</dc:subject>
+      <dc:subject>Sea Level</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Wind direction</dc:subject>
+      <dc:subject>Wind speed</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The Global Sea Level Observing System (GLOSS) was established by the Intergovernmental Oceanographic Commission (IOC) of UNESCO in 1985 to establish a well-designed, high-quality in situ sea level observing network to support a broad research and operational user base. 
+Various tide gauge networks have contributed to GLOSS, each with a different focus and each changing over time as research priorities evolve. The main component is the GLOSS Core Network (GCN), a global set of ~300 tide gauges that serves as the backbone of the global in situ sea level network. GCN gauges were allocated to each island or group of islands at intervals not closer than 500 km, and along continental coasts at intervals generally not less than 1000 km. Preference was given to islands in order to maximise exposure to the open ocean.
+Established in 1933, the Permanent Service for Mean Sea Level (PSMSL) is responsible for the collection, publication, analysis and interpretation of sea level data from the global network of tide gauges, including the GLOSS Core Network.</dct:abstract>
+      <dc:description>The Global Sea Level Observing System (GLOSS) was established by the Intergovernmental Oceanographic Commission (IOC) of UNESCO in 1985 to establish a well-designed, high-quality in situ sea level observing network to support a broad research and operational user base. 
+Various tide gauge networks have contributed to GLOSS, each with a different focus and each changing over time as research priorities evolve. The main component is the GLOSS Core Network (GCN), a global set of ~300 tide gauges that serves as the backbone of the global in situ sea level network. GCN gauges were allocated to each island or group of islands at intervals not closer than 500 km, and along continental coasts at intervals generally not less than 1000 km. Preference was given to islands in order to maximise exposure to the open ocean.
+Established in 1933, the Permanent Service for Mean Sea Level (PSMSL) is responsible for the collection, publication, analysis and interpretation of sea level data from the global network of tide gauges, including the GLOSS Core Network.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>See &#8220;New Data Systems and Products at the Permanent Service for Mean Sea Level&#8221; paper at https://doi.org/10.2112/JCOASTRES-D-12-00175.1</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="PSMSL web site" description="PSMSL web site">http://www.psmsl.org/</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="PSMSL data explorer" description="PSMSL data explorer">http://www.psmsl.org/data/obtaining/map.html</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Complete PSMSL data set" description="Complete PSMSL data set">http://www.psmsl.org/data/obtaining/complete.php</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="GLOSS Core Network Station Availability map" description="GLOSS Core Network Station Availability map">http://www.psmsl.org/products/gloss/glossmap.html</dc:URI>
+      <dc:URI protocol="image/gif">https://sextant.ifremer.fr/geonetwork/srv/api/records/74f52a3b-b76a-4b32-8465-c9cccb0eb8e8/attachments/gloss_logo_og.gif</dc:URI>
+    </csw:Record>

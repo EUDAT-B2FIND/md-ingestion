@@ -1,0 +1,99 @@
+{
+    "Contact": [
+        "christian.pichot@avignon.inra.fr"
+    ],
+    "Contributor": [
+        "AnaEE"
+    ],
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Format": [
+        "inapplicable"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://w3.avignon.inra.fr/geonetwork_anaee/srv/fre/csw-envriplus?verb=GetRecord&metadataPrefix=iso19139&identifier=b2f601cd-aa35-53e5-bba9-665c5349f40d",
+    "PublicationTimestamp": "2018-10-20T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "INRA"
+    ],
+    "ResourceType": "dataset",
+    "Rights": [
+        "See AnaEE-France charters"
+    ],
+    "TempCoverageBegin": 63461015999,
+    "TempCoverageEnd": 63461015999,
+    "TemporalCoverage": " point in time : 2012-01-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "2012-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2012-01-01T11:59:59Z",
+    "author": [
+        "Philippe Clastre",
+        "Christian PICHOT"
+    ],
+    "fulltext": "ec151f7d-fa3f-49b2-8603-0eda7589a3a4;Philippe Clastre;INRA;Christian PICHOT;INRA;+33 4 32 72 29 66;+33 4 90 13 59 59;INRA - Domaine Saint-Paul - Site Agroparc;Avignon Cedex 9;84914;France;christian.pichot@avignon.inra.fr;2018-10-30T11:07:05;ISO 19115:2003/19139;1.0;WGS 84 (EPSG:4326);Projects of experimentation on ecosystems using the AnaEE services;Projets d'experimentation sur les \u00e9cosyst\u00e8mes utilisant les services de AnaEE-France;2018-10-20;http://w3.avignon.inra.fr/geonetwork_anaee/80894c9d-aa65-4808-8870-a04a7bf402f4;Jean-Fran\u00e7ois LE GALLIARD;CNRS;+33 1 64 28 35 33;+33 1 64 28 02 66;78, rue du Ch\u00e2teau;Saint-Pierre-L\u00e8s-Nemours;77140;France;cereep@biologie.ens.fr;Andr\u00e9 CHANZY;INRA;+33 4 32 72 22 11;+33 4 32 72 22 12;Domaine Saint Paul - Site Agroparc CS 40509;Avignon Cedex 9;84914;France;andre.chanzy@avignon.inra.fr;AnaEE-France is the French national infrastructure devoted to the study of continental ecosystems and their biodiversity. It offers experimental facilities in controlled, semi-natural or natural environments, analysis platforms and shared instruments as well as modeling platforms and database Information Systems.\n\nThe research project that use the AnaEE-F experimental facilities will be described by general metadata (description of the experiment, type of ecosystem, studied variables, manipulated factors);Experimentation on continental ecosystems;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng//resources.get?uuid=ec151f7d-fa3f-49b2-8603-0eda7589a3a4&fname=AnaEE4projects.png;large_thumbnail;png;AnaEE-France Locations;2018-07-12;geonetwork.thesaurus.local.place.anaee-france_locations;Environmental monitoring facilities;Installations de suivi environnemental;GEMET - INSPIRE themes, version 1.0 INSPIRE themes;2008-06-01;geonetwork.thesaurus.external.theme.inspire-theme;ecosystem;\u00e9cosyst\u00e8me;experimentation;exp\u00e9rimentation;Manipulated experimental factors;facteurs exp\u00e9rimentaux manipul\u00e9s;forest ecosystem;\u00e9cosyst\u00e8me forestier;cropping system;freshwater lakes;lac d'eau douce;grassland;prairie;experimental ecology;ecologie exp\u00e9rimentale;theme.anaeeThes.rdf;2018-07-12;geonetwork.thesaurus.external.theme.anaeeThes;soil;sol;climate;climat;ecosystem management;gestion des \u00e9cosyst\u00e8mes;theme.drivers.rdf;2018-06-25;geonetwork.thesaurus.external.theme.drivers;biodiversity;biodiversit\u00e9;imaging;imagerie;air chemical property;propri\u00e9t\u00e9 chimique de l'air;meteorology;m\u00e9t\u00e9orologie;soil biology;biologie du sol;organic amendment;amendement organique;surface flux;flux de surface;soil chemistry;chimie du sol;water chemical property;propri\u00e9t\u00e9 chimique de l'eau;water biology;biologie de l'eau;vegetation;v\u00e9g\u00e9tation;mulch;paillis;soil physics;physique du sol;ecosystem management;gestion des \u00e9cosyst\u00e8mes;water physical property;propri\u00e9t\u00e9 physique de l'eau;theme.variableAnaee.rdf;2018-08-24;geonetwork.thesaurus.external.theme.variableAnaee;See AnaEE-France charters;5000;structure;2012-01-01;You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-);inapplicable;inapplicable;https://www.anaee-france.fr/en/about-us/introduction-to-anaee-france;WWW:LINK-1.0-http--link;AnaEE-France web site;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/home;WWW:LINK-1.0-http--link;AnaEE-France metadata catalogue;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/08508ba3-5a7d-44eb-8dc0-06a5c92a9472;WWW:LINK-1.0-http--link;AnaEE-France services for experimentation on continental ecosytems;http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/20b9aa10-5aa5-48e3-bb61-e5a5746796ae;WWW:LINK-1.0-http--link;AnaEE-France modeling platforms and data management services;Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services;2010-12-08;Not evaluated",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "b2f601cd-aa35-53e5-bba9-665c5349f40d",
+    "notes": [
+        "AnaEE-France is the French national infrastructure devoted to the study of continental ecosystems and their biodiversity. It offers experimental facilities in controlled, semi-natural or natural environments, analysis platforms and shared instruments as well as modeling platforms and database Information Systems.\n\nThe research project that use the AnaEE-F experimental facilities will be described by general metadata (description of the experiment, type of ecosystem, studied variables, manipulated factors)"
+    ],
+    "oai_identifier": [
+        "b2f601cd-aa35-53e5-bba9-665c5349f40d"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Environmental monitoring facilities"
+        },
+        {
+            "name": "ecosystem"
+        },
+        {
+            "name": "experimentation"
+        },
+        {
+            "name": "Manipulated experimental factors"
+        },
+        {
+            "name": "forest ecosystem"
+        },
+        {
+            "name": "cropping system"
+        },
+        {
+            "name": "freshwater lakes"
+        },
+        {
+            "name": "grassland"
+        },
+        {
+            "name": "experimental ecology"
+        },
+        {
+            "name": "soil"
+        },
+        {
+            "name": "climate"
+        },
+        {
+            "name": "ecosystem management"
+        }
+    ],
+    "title": [
+        "Projects of experimentation on ecosystems using the AnaEE services"
+    ],
+    "url": "http://w3.avignon.inra.fr/geonetwork_anaee/srv/eng/catalog.search#/metadata/20b9aa10-5aa5-48e3-bb61-e5a5746796ae"
+}

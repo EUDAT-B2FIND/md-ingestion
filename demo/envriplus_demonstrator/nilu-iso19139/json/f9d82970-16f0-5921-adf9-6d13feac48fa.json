@@ -1,0 +1,57 @@
+{
+    "Contact": [
+        "\n            "
+    ],
+    "Contributor": "Norwegian Institute for Air Research | https://www.nilu.no/",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=EBAS.SE0011R.20100101000000.20111019000000.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+    "PublicationTimestamp": "2011-10-19T11:59:59Z",
+    "PublicationYear": [
+        "2011"
+    ],
+    "Publisher": [
+        "Lund University"
+    ],
+    "Rights": [
+        "http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx"
+    ],
+    "SpatialCoverage": "(13N,56E)",
+    "author": [
+        "Hermansson, Emilie",
+        "Roldin, Pontus"
+    ],
+    "fulltext": "EBAS.SE0011R.20100101000000.20111019000000.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;2016-07-04T07:41:17Z;EBASDCPCMETADATA;ENVRIplus flagship demonstrator catalog;EBAS.SE0011R.20100101000000.20111019000000.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;eng;utf-8;not applicable;dataset;not applicable;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;custodian;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;custodian;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;publisher;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;publisher;2018-09-28T00:40:12Z;ISO19115 / GAW-WDCA Profile;1.3;World Geodetic System;1984;WGS 84;Measurements of volume scattering coefficient in air due to dried aerosol particles at Vavihill, Sweden (20100101 - 20140101);2011-10-19;revision;1;2011-10-19;215145579.20160704074117;Roldin, Pontus;owner;Hermansson, Emilie;Lund University;, Lund University,;Box 118,;SE-221 00;SE-221 00;Sweden;emilie.hermansson@nuclear.lu.se;owner;Roldin, Pontus;originator;Hermansson, Emilie;Lund University;, Lund University,;Box 118,;SE-221 00;SE-221 00;Sweden;emilie.hermansson@nuclear.lu.se;originator;Roldin, Pontus;publisher;Hermansson, Emilie;Lund University;, Lund University,;Box 118,;SE-221 00;SE-221 00;Sweden;emilie.hermansson@nuclear.lu.se;publisher;This service provides nephelometer measurements of volume scattering coefficient in air due to dried aerosol particles observed at Vavihill, Sweden (20100101 - 20140101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/).;onGoing;atmosphericComposition;theme;WMO_CategoryCode;2004-01-30;publication;http://www.wmo.int/pages/prog/www/metadata/WMO-keywords.html;otherRestrictions;otherRestrictions;http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx;grid;eng;utf-8;climatologyMeteorologyAtmosphere;time series of point measurements at surface;56.0167;56.0167;13.1500;13.1500;Sweden;Vavihill;2010-01-01Z;2014-01-01Z;172.0000;172.0000;volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles;physicalMeasurement;NASA Ames 1001;EBAS_1.1;15.0000;http://ebas.nilu.no/DataSets.aspx?stations=SE0011R&InstrumentTypes=nephelometer&components=aerosol_light_scattering_coefficient&matrices=aerosol&fromDate=2010-01-01&toDate=2014-01-01;HTTP;Web-interface to relational data base.;download;dataset;Data collected according to instrument specific standard operating procedures, checked on import into data base.;Regularly calibrated by instrument operator, manually quality assured by instrument operator, boundary checked by data centre, outlier check by data centre.",
+    "group": "nilu",
+    "groups": [
+        {
+            "name": "nilu"
+        }
+    ],
+    "name": "f9d82970-16f0-5921-adf9-6d13feac48fa",
+    "notes": [
+        "This service provides nephelometer measurements of volume scattering coefficient in air due to dried aerosol particles observed at Vavihill, Sweden (20100101 - 20140101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/)."
+    ],
+    "oai_identifier": [
+        "EBAS.SE0011R.20100101000000.20111019000000.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+        "EBAS.SE0011R.20100101000000.20111019000000.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2"
+    ],
+    "oai_set": [
+        "EBASDCPCMETADATA",
+        "ENVRIplus flagship demonstrator catalog"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[56.0167,13.1500],[56.0167,13.1500],[56.0167,13.1500],[56.0167,13.1500],[56.0167,13.1500]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "atmosphericComposition"
+        }
+    ],
+    "title": [
+        "Measurements of volume scattering coefficient in air due to dried aerosol particles at Vavihill, Sweden (20100101 - 20140101)"
+    ],
+    "url": "http://ebas.nilu.no/DataSets.aspx?stations=SE0011R&InstrumentTypes=nephelometer&components=aerosol_light_scattering_coefficient&matrices=aerosol&fromDate=2010-01-01&toDate=2014-01-01"
+}

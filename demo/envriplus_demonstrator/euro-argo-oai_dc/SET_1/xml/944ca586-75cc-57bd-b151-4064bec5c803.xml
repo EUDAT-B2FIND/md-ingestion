@@ -1,0 +1,32 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>5f68ed06-542d-46be-8987-fa6cba663f78</dc:identifier>
+      <dc:date>2018-01-18T13:35:01</dc:date>
+      <dc:title>Marine biogeochemistry data from the Voluntary Observing Ships or Ships of Opportunity (VOS/SOOP) network</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>sea_surface_temperature</dc:subject>
+      <dc:subject>sea_surface_salinity</dc:subject>
+      <dc:subject>air_pressure</dc:subject>
+      <dc:subject>surface_fugacity_of_carbon_dioxide_in_sea_water_in_wet_air</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Carbonate system</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>VOS/SOOP tracks are usually repeated several times a year and inform about the marine sinks and sources of atmospheric carbon dioxide on a global bases and their variability. Data from  this network has been made available to the scientific community and interested public via the Carbon Dioxide Information Analysis Centre (CDIAC) Oceans at the Department of Energy, USA, since the early 1990&#8217;s where PIs submitted and shared their data. In 2017, CDIAC Ocean will be named Ocean Carbon Data System (OCADS) and join NOAA&#8217;s National Centers for Environmental Information (NCEI). In 2007, the marine biogeochemistry community coordinated by the International Ocean Carbon Coordination Project (IOCCP), launched the Surface Ocean Carbon Dioxide ATlas (SOCAT) in order to uniformly quality control and format the data with detailed documentation. Underway carbon dioxide data from the VOS network are integrated in SOCAT.</dct:abstract>
+      <dc:description>VOS/SOOP tracks are usually repeated several times a year and inform about the marine sinks and sources of atmospheric carbon dioxide on a global bases and their variability. Data from  this network has been made available to the scientific community and interested public via the Carbon Dioxide Information Analysis Centre (CDIAC) Oceans at the Department of Energy, USA, since the early 1990&#8217;s where PIs submitted and shared their data. In 2017, CDIAC Ocean will be named Ocean Carbon Data System (OCADS) and join NOAA&#8217;s National Centers for Environmental Information (NCEI). In 2007, the marine biogeochemistry community coordinated by the International Ocean Carbon Coordination Project (IOCCP), launched the Surface Ocean Carbon Dioxide ATlas (SOCAT) in order to uniformly quality control and format the data with detailed documentation. Underway carbon dioxide data from the VOS network are integrated in SOCAT.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>Data from this network has been made available to the scientific community and interested public via the OCADS centre from NCEI in US (previously CDIAC), since the early 1990&#8217;s where PIs submitted and shared their data.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="The VOS scheme" description="The VOS scheme">https://www.wmo.int/pages/prog/amp/mmop/JCOMM/OPA/SOT/vos.html</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Access to VOS program data" description="Access to VOS program data">http://cdiac.ornl.gov/oceans/VOS_Program/</dc:URI>
+      <dc:URI protocol="WWW:LINK">http://www.aoml.noaa.gov/phod/soop/index.php</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/api/records/5f68ed06-542d-46be-8987-fa6cba663f78/attachments/VOS_SOOP.png</dc:URI>
+    </csw:Record>

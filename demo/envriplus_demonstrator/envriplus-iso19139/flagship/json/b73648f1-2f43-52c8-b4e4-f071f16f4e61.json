@@ -1,0 +1,81 @@
+{
+    "Contact": [
+        "http://www.iagos.org"
+    ],
+    "DOI": "http://dx.doi.org/null",
+    "Contributor": [
+        "IAGOS"
+    ],
+    "DiscHierarchy": [
+        "4.4.1",
+        "Geosciences",
+        "Atmospheric Sciences",
+        "Atmospheric chemistry"
+    ],
+    "Discipline": "Atmospheric chemistry",
+    "Format": [
+        "NetCDF"
+    ],
+    
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos?verb=GetRecord&metadataPrefix=oai_dc&identifier=b73648f1-2f43-52c8-b4e4-f071f16f4e61",
+    "PublicationTimestamp": "2018-09-06T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "IAGOS"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "restricted"
+    ],
+    "SpatialCoverage": [
+        "180.0 -90.0",
+        "-180.0 90.0"
+    ],
+    "fulltext": "c570d452-0f05-4227-bed4-c1905c2951eb;2018-09-06T18:17:40.891+02:00;IAGOS footprints;dataset;Atmospheric conditions;IAGOS;SEDOO;AERIS;climatologyMeteorologyAtmosphere;NetCDF;This dataset provides footprints for all the vertical profiles of carbon monoxyde over the airports visited by the IAGOS fleet. The footprints are based on model simulations of the up-stream influences on the observation location. Theses footprints are coupled to surface flux maps in order to derive tracer concentration changes at the airport.;This dataset provides footprints for all the vertical profiles of carbon monoxyde over the airports visited by the IAGOS fleet. The footprints are based on model simulations of the up-stream influences on the observation location. Theses footprints are coupled to surface flux maps in order to derive tracer concentration changes at the airport.;restricted;eng;Data produced by the European Research Infrastructure IAGOS.;NetCDF;180.0 -90.0;-180.0 90.0;http://www.iagos.org;http://iagos-data.fr/#CMSConsultPlace:ANCILLARY_DATA;http://dx.doi.org/null;http://iagos-data.fr/images/logo_blue.png;http://iagos-data.fr/portal/rest/images/map:global:thumb",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "b73648f1-2f43-52c8-b4e4-f071f16f4e61",
+    "notes": [
+        "This dataset provides footprints for all the vertical profiles of carbon monoxyde over the airports visited by the IAGOS fleet. The footprints are based on model simulations of the up-stream influences on the observation location. Theses footprints are coupled to surface flux maps in order to derive tracer concentration changes at the airport."
+    ],
+    "oai_identifier": [
+        "b73648f1-2f43-52c8-b4e4-f071f16f4e61"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "conditions"
+        },
+        {
+            "name": "IAGOS"
+        },
+        {
+            "name": "SEDOO"
+        },
+        {
+            "name": "AERIS"
+        },
+        {
+            "name": "climatologyMeteorologyAtmosphere"
+        }
+    ],
+    "title": [
+        "IAGOS footprints"
+    ],
+    "url": "http://iagos-data.fr/portal/rest/images/map:global:thumb"
+}

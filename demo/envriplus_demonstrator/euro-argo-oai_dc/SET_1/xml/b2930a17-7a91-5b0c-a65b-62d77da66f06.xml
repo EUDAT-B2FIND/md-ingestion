@@ -1,0 +1,55 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>102b05a8-5717-4f07-9ed1-f90239701629</dc:identifier>
+      <dc:date>2018-01-18T13:09:21</dc:date>
+      <dc:title>Data from repeat hydrography (GO-SHIP)</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>water column measurements of salinity</dc:subject>
+      <dc:subject>temperature</dc:subject>
+      <dc:subject>inorganic nutrients</dc:subject>
+      <dc:subject>transient tracers</dc:subject>
+      <dc:subject>inorganic carbon</dc:subject>
+      <dc:subject>Dissolved inorganic carbon production and respiration in the water column</dc:subject>
+      <dc:subject>Temperature of the water column</dc:subject>
+      <dc:subject>Salinity of the water column</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Carbon isotope 13C</dc:subject>
+      <dc:subject>Carbonate system</dc:subject>
+      <dc:subject>Chlorophyll-a and fluorescence</dc:subject>
+      <dc:subject>Currents</dc:subject>
+      <dc:subject>Dissolved organic matter</dc:subject>
+      <dc:subject>Nitrous oxide</dc:subject>
+      <dc:subject>Nutrients</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Transient tracers</dc:subject>
+      <dc:subject>Air humidity</dc:subject>
+      <dc:subject>Air temperature</dc:subject>
+      <dc:subject>Atmospheric pressure</dc:subject>
+      <dc:subject>Bottom depth</dc:subject>
+      <dc:subject>Wind direction</dc:subject>
+      <dc:subject>Wind speed</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>GOSUD NetCDF</dc:format>
+      <dct:abstract>GO-SHIP, the Global Ocean Ship-Based Hydrographic Investigations Program, is conducting repeat hydrography with high accuracy high precision reference measurements of a variety of EOVs through the whole water column.
+A selection of continent-to-continent full depth sections are repeated at roughly decadal intervals.
+The data archive for CTD data and bottle data is currently at CCHDO, although the CTD data from European cruises are available at Seadatanet as well.</dct:abstract>
+      <dc:description>GO-SHIP, the Global Ocean Ship-Based Hydrographic Investigations Program, is conducting repeat hydrography with high accuracy high precision reference measurements of a variety of EOVs through the whole water column.
+A selection of continent-to-continent full depth sections are repeated at roughly decadal intervals.
+The data archive for CTD data and bottle data is currently at CCHDO, although the CTD data from European cruises are available at Seadatanet as well.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>The GO-SHIP data encompass a variety of measurements.
+Please go to http://www.go-ship.org/DataDirect.html for more information</dc:source>
+      <dc:format>GOSUD NetCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="CCHDO Web site" description="CCHDO Web site">https://cchdo.ucsd.edu/</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="GO-SHIP web site" description="GO-SHIP web site">http://www.go-ship.org/</dc:URI>
+      <dc:URI protocol="image/jpeg" name="thumbnail">https://sextant.ifremer.fr/geonetwork/srv/api/records/102b05a8-5717-4f07-9ed1-f90239701629/attachments/GOSHIP_logo.jpg</dc:URI>
+    </csw:Record>

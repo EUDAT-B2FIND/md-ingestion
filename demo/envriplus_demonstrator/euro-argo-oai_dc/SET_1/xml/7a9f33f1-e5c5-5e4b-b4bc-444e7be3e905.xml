@@ -1,0 +1,85 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>848cc75f-b33a-4258-89a9-08f89e6ab7f6</dc:identifier>
+      <dc:date>2018-06-13T11:00:56</dc:date>
+      <dc:title>Global Ocean- CORA- In-situ Observations Yearly Delivery in Delayed Mode</dc:title>
+      <dct:alternative>INSITU_GLO_TS_REP_OBSERVATIONS_013_001_b</dct:alternative>
+      <dc:type>series</dc:type>
+      <dc:subject href="http://rdfdata.eionet.europa.eu/inspirethemes/themes/28">Oceanographic geographical features</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/discipline#in-situ-observation">in-situ-observation</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0331/">sea_water_salinity</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0335/">sea_water_temperature</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/temporal-scale#multi-year">multi-year</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/area-of-benefit#coastal-marine-environment">coastal-marine-environment</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/area-of-benefit#marine-safety">marine-safety</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/area-of-benefit#weather-climate-and-seasonal-forecasting">weather-climate-and-seasonal-forecasting</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/area-of-benefit#marine-resources">marine-resources</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/reference-geographical-area#global-ocean">global-ocean</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/processing-level#L2">Level 2</dc:subject>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject>oceans</dc:subject>
+      <dct:abstract>'''Short description:'''
+
+For the Global Ocean- In-situ observation yearly delivery in delayed mode. The In Situ delayed mode product designed for reanalysis purposes integrates the best available version of in situ data for temperature and salinity measurements. These data are collected from main global networks (Argo, GOSUD, OceanSITES, World Ocean Database) completed by European data provided by EUROGOOS regional systems and national system by the regional INS TAC components. It is updated on a yearly basis. The time coverage has been extended in the past by integration of EN4 data for the period 1950-1990. Acces through CMEMS Catalogue after registration: http://marine.copernicus.eu/   
+
+
+'''Detailed description: '''
+
+Ocean circulation models need information on the interior of the ocean to be able to generate accurate forecast. This information is only available from in-situ measurement. However this information is acquired all around the world and not easily available to the operational users. Therefore, INS TAC , by connecting to a lot of international networks, collects, controls and disseminates the relevant in-situ data to operational users . For reanalysis purposes, operational centres needs to access to the best available datasets with the best possible coverage  and where additional quality control procedures have been performed. This dataset suits research community needs Each year, a new release of this product is issued containing all the observations gathered by the INS TAC global component operated by Coriolis. 
+
+
+'''Processing information:'''
+
+From the near real time INS TAC product validated on a daily and weekly basis for forecasting purposes, a scientifically validated product is created . It s a ""reference product"" updated on a yearly basis. This product has been controlled using an objective analysis (statistical tests) method and a visual quality control (QC). This QC procedure has been developed with the main objective to improve the quality of the dataset to the level required by the climate application and the physical ocean re-analysis activities. It provides T and S weekly gridded fields and individual profiles both on their original level and interpolated level. The measured parameters, depending on the data source, are : temperature, salinity. The reference level of measurements is immersion (in meters) or pressure (in decibars). The EN4 data were converted to the CORA NetCDF format without any additional validation.
+
+
+'''Quality/accuracy/calibration information:'''
+
+The process is done in two steps using two different time windows, corresponding to two runs of objective analysis, with an additional visual QC inserted between. The first run was done on a window of three weeks, to capture the most doubtful profiles which were then checked visually by an operator to decide whether or not it was bad data or real oceanic phenomena. The second run was done on a weekly basis to fit the modelling needs. 
+
+
+'''Suitability, Expected type of users / uses: '''
+
+The product is designed for assimilation into operational models operated by ocean forecasting centres for reanalysis purposes or for research community. These users need data aggregated and quality controlled in a reliable and documented manner.</dct:abstract>
+      <dc:description>'''Short description:'''
+
+For the Global Ocean- In-situ observation yearly delivery in delayed mode. The In Situ delayed mode product designed for reanalysis purposes integrates the best available version of in situ data for temperature and salinity measurements. These data are collected from main global networks (Argo, GOSUD, OceanSITES, World Ocean Database) completed by European data provided by EUROGOOS regional systems and national system by the regional INS TAC components. It is updated on a yearly basis. The time coverage has been extended in the past by integration of EN4 data for the period 1950-1990. Acces through CMEMS Catalogue after registration: http://marine.copernicus.eu/   
+
+
+'''Detailed description: '''
+
+Ocean circulation models need information on the interior of the ocean to be able to generate accurate forecast. This information is only available from in-situ measurement. However this information is acquired all around the world and not easily available to the operational users. Therefore, INS TAC , by connecting to a lot of international networks, collects, controls and disseminates the relevant in-situ data to operational users . For reanalysis purposes, operational centres needs to access to the best available datasets with the best possible coverage  and where additional quality control procedures have been performed. This dataset suits research community needs Each year, a new release of this product is issued containing all the observations gathered by the INS TAC global component operated by Coriolis. 
+
+
+'''Processing information:'''
+
+From the near real time INS TAC product validated on a daily and weekly basis for forecasting purposes, a scientifically validated product is created . It s a ""reference product"" updated on a yearly basis. This product has been controlled using an objective analysis (statistical tests) method and a visual quality control (QC). This QC procedure has been developed with the main objective to improve the quality of the dataset to the level required by the climate application and the physical ocean re-analysis activities. It provides T and S weekly gridded fields and individual profiles both on their original level and interpolated level. The measured parameters, depending on the data source, are : temperature, salinity. The reference level of measurements is immersion (in meters) or pressure (in decibars). The EN4 data were converted to the CORA NetCDF format without any additional validation.
+
+
+'''Quality/accuracy/calibration information:'''
+
+The process is done in two steps using two different time windows, corresponding to two runs of objective analysis, with an additional visual QC inserted between. The first run was done on a window of three weeks, to capture the most doubtful profiles which were then checked visually by an operator to decide whether or not it was bad data or real oceanic phenomena. The second run was done on a weekly basis to fit the modelling needs. 
+
+
+'''Suitability, Expected type of users / uses: '''
+
+The product is designed for assimilation into operational models operated by ocean forecasting centres for reanalysis purposes or for research community. These users need data aggregated and quality controlled in a reliable and documented manner.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>license</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dc:source>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::">
+        <ows:LowerCorner>180.0 -90.0</ows:LowerCorner>
+        <ows:UpperCorner>-180.0 90.0</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="OGC:WMS::GetCapabilities" name="CORIOLIS-GLOBAL-CORA05.0-OBS_FULL_TIME_SERIE" description="">http://my.cmems-du.eu/thredds/wms/CORIOLIS-GLOBAL-CORA_LATEST-OBS_FULL_TIME_SERIE</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="PSAL" description="sea_water_salinity">http://my.cmems-du.eu/thredds/wms/CORIOLIS-GLOBAL-CORA05.0-OBS_FULL_TIME_SERIE</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="PSAL_PCTVAR" description="Error on sea_water_salinity (% variance)">http://my.cmems-du.eu/thredds/wms/CORIOLIS-GLOBAL-CORA05.0-OBS_FULL_TIME_SERIE</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="TEMP" description="sea_water_temperature">http://my.cmems-du.eu/thredds/wms/CORIOLIS-GLOBAL-CORA05.0-OBS_FULL_TIME_SERIE</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="TEMP_PCTVAR" description="Error on sea_water_temperature (% variance)">http://my.cmems-du.eu/thredds/wms/CORIOLIS-GLOBAL-CORA05.0-OBS_FULL_TIME_SERIE</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="CORIOLIS-GLOBAL-CORA05.1-OBS" description="FTP download of the lastest version CORIOLIS-GLOBAL-CORA05.1-OBS">ftp://my.cmems-du.eu/Core/INSITU_GLO_TS_REP_OBSERVATIONS_013_001_b/CORIOLIS-GLOBAL-CORA05.1-OBS</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="CMEMS access to product" description="CMEMS access to product">http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&amp;view=details&amp;product_id=INSITU_GLO_TS_REP_OBSERVATIONS_013_001_b</dc:URI>
+      <dc:URI name="INSITU_GLO_TS_REP_OBSERVATIONS_013_001_b">http://marine.copernicus.eu/documents/IMG/INSITU_GLO_TS_REP_OBSERVATIONS_013_001_b.jpg</dc:URI>
+    </csw:Record>

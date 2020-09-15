@@ -1,0 +1,103 @@
+{
+    "author": [
+        "ICOS Atmospheric Thematic Centre @ LSCE, Paris, France"
+    ],
+    "Contact": [
+        "Leonard Rivier;ICOS Atmospheric Thematic Centre @ LSCE, Paris, France"
+    ],
+    "Contributor": [
+        "ICOS"
+    ],
+    "DOI": "",
+    "DiscHierarchy": [
+        "4.4.1",
+        "Geosciences",
+        "Atmospheric Sciences"
+        "4.4.6"
+        "Earth System Research"
+    ],
+    "Discipline": [
+        "Atmospheric Sciences",
+        "Environmental Research"
+    ],
+    "Format": [
+        "text/csv; application/x-netcdf"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "",
+    "PublicationTimestamp": "2018-10-25T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "ICOS Carbon Portal @ Lund University, Lund, Sweden"
+    ],
+    "RelatedIdentifier": [
+        "http://doi.org/10.5281/zenodo.204817"
+    ],
+    "ResourceType": [
+        "Dataset series (INSPIRE); Collection (Dublin Core)"
+    ],
+    "Rights": [
+        "Creative Commons 4.0 CC-BY"
+    ],
+    "SpatialCoverage": [
+        "-20.0 35.0",
+        "35.0 75.0"
+    ],
+    "TemporalCoverage:BeginDate": "2017-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "",
+
+    "fulltext": "",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "febb0a43-a01a-53c8-b1cc-3af247119e8f",
+    "notes": [
+        "Final quality checked observation data. Observational concentration values have been processed with calibration values. Concentration observations are done from towers with a footprint area of more than 100 km2. Produced by the ICOS ATC (Atmospheric Thematic Centre)."
+    ],
+    "oai_identifier": [
+        "b73648f1-2f43-52c8-b4e4-f071f16f4e61"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "conditions"
+        },
+        {
+            "name": "INSPIRE"
+        },
+        {
+            "name": "Environmental"
+        },
+        {
+            "name": "monitoring"
+        },
+        {
+            "name": "facilities"
+        },
+        {
+            "name": "Oceanic features"
+        },
+        {
+            "name": "Athmospheric composition"
+        },
+        {
+            "name": "GEMET"
+        },
+        
+    ],
+    "title": [
+        "ICOS atmospheric observational data (quality-controlled and aggregated)"
+    ],
+    "url": "https://www.icos-cp.eu/"
+}

@@ -1,0 +1,68 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>3df904de-e47d-4bf9-85a0-7c0942aff8b6</dc:identifier>
+      <dc:date>2018-06-06T10:07:28</dc:date>
+      <dc:title>Argo float data and metadata from Global Data Assembly Centre (Argo GDAC)</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>float</dc:subject>
+      <dc:subject>Argo</dc:subject>
+      <dc:subject>global ocean observing system</dc:subject>
+      <dc:subject>ocean circulation</dc:subject>
+      <dc:subject>in-situ</dc:subject>
+      <dc:subject>ocean pressure</dc:subject>
+      <dc:subject>sea water salinity</dc:subject>
+      <dc:subject>sea water temperature</dc:subject>
+      <dc:subject>multi-year</dc:subject>
+      <dc:subject>weather climate and seasonal observation</dc:subject>
+      <dc:subject>global-ocean</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>CDS-IS-CORIOLIS</dc:subject>
+      <dc:subject>/Marine Biogeochemistry/Nutrients</dc:subject>
+      <dc:subject>/Marine Biogeochemistry/Dissolved oxygen</dc:subject>
+      <dc:subject>/Marine Biology/Fluorescence - Chlorophyll a</dc:subject>
+      <dc:subject>/Physical Oceanography/Optical parameters</dc:subject>
+      <dc:subject>/Physical Oceanography/Salinity</dc:subject>
+      <dc:subject>/Marine Biogeochemistry/CDOM</dc:subject>
+      <dc:subject>/Physical Oceanography/Temperature</dc:subject>
+      <dc:subject>/Physical Oceanography/Turbidity</dc:subject>
+      <dc:subject>Operational oceanography</dc:subject>
+      <dc:subject>Observation system for research</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Nutrients</dc:subject>
+      <dc:subject>Currents</dc:subject>
+      <dc:subject>Chlorophyll-a and fluorescence</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Bottom depth</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>Argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean.  This allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection.
+
+The array provides 100,000 temperature/salinity profiles and velocity measurements per year distributed over the global oceans at an average of 3-degree spacing. Some floats provide additional bio-geo parameters such as oxygen or chlorophyll.
+
+All data collected by Argo floats are publically available in near real-time via the Global Data Assembly Centers (GDACs) in Brest (France) and Monterey (California) after an automated quality control (QC), and in scientifically quality controlled form, delayed mode data, via the GDACs within six months of collection.</dct:abstract>
+      <dc:description>Argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean.  This allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection.
+
+The array provides 100,000 temperature/salinity profiles and velocity measurements per year distributed over the global oceans at an average of 3-degree spacing. Some floats provide additional bio-geo parameters such as oxygen or chlorophyll.
+
+All data collected by Argo floats are publically available in near real-time via the Global Data Assembly Centers (GDACs) in Brest (France) and Monterey (California) after an automated quality control (QC), and in scientifically quality controlled form, delayed mode data, via the GDACs within six months of collection.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>http://www.argodatamgt.org/Documentation</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="Coriolis Web Site" description="">http://www.coriolis.eu.org/</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--metadata-URL" name="Argo GDAC snapshots access" description="Argo GDAC snapshots access">http://doi.org/10.17882/42182</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Web app avec carte interactive Flotteurs Argo op&#233;rationnels" description="JCOMMOPS: Web app tous les flotteurs op&#233;rationnels">http://www.jcommops.org/board?t=Argo&amp;modules=%5B%7B"id":48%7D%5D</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Web app avec carte interactive Flotteurs BGC-Argo op&#233;rationnels" description="JCOMMOPS: Web app tous les flotteurs BGC-Argo op&#233;rationnels">http://www.jcommops.org/board?t=Argo&amp;qparams=%7B"lastLocOnly"%3A"on"%2C"allNotGdacs"%3A"1"%2C"networks"%3A"1"%2C"status"%3A"6"%7D&amp;modules=%5B%7B"id":48%7D%5D</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="" description="JCOMMOPS: Argo Op&#233;rationnel">http://www.jcommops.org/maps/interactive_new/?theme=Argo</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Carte interactive seule (tout BGC-Argo op&#233;rationnel)" description="JCOMMOPS: BGC-Argo op&#233;rationnel">http://www.jcommops.org/maps/interactive_new/?theme=Argo&amp;ptfStatuses=%5B6%5D&amp;ptfNetworks=%5B%22Argo%20BioGeoChemical%22%5D</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Carte Argo France" description="">http://map.argo-france.fr/</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-link--download" name="FTP ARGO" description="FTP ARGO">ftp://ftp.ifremer.fr/ifremer/argo/</dc:URI>
+      <dc:URI protocol="OGC:WFS" name="Argo_ARGOLocations:Latest_Locations" description="Argo Latest Locations">http://gis.jcommops.org/arcgis/services/Argo/ARGOLocations/MapServer/WFSServer?</dc:URI>
+      <dc:URI protocol="image/jpeg">https://sextant.ifremer.fr/geonetwork/srv/api/records/3df904de-e47d-4bf9-85a0-7c0942aff8b6/attachments/argo-float.jpg</dc:URI>
+    </csw:Record>

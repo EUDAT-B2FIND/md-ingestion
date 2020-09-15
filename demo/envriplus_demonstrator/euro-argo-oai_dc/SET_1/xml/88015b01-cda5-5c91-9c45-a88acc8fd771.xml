@@ -1,0 +1,45 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>ade2c115-0be4-467d-bdde-d98236ed7588</dc:identifier>
+      <dc:date>2018-01-18T13:13:03</dc:date>
+      <dc:title>SeaDataNet aggregated datasets over the Atlantic Ocean</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Products</dc:subject>
+      <dc:subject>temperature</dc:subject>
+      <dc:subject>salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The SeaDataNet aggregated datasets over the Atlantic Ocean are regional ODV historical collections of all temperature and salinity measurements contained within SeaDataNet database and covering 3 European sea basins: North Arctic Ocean, North Sea, North Atlantic Ocean.
+Two versions have been published during SeaDataNet 2 and they represent a snapshot of the SeaDataNet database content at two different times:
+&#8226;	V1.1 January 2014
+&#8226;	V2   March 2015
+Each of them is the result of the Quality Check Strategy (QCS) implemented during SeaDataNet 2 that contributed to highly improve the quality of temperature and salinity data. The QCS is made by four main phases:
+1.	data harvesting from the central CDI
+2.	file and parameter aggregation
+3.	quality check analysis at regional level
+4.	analysis and correction of data anomalies.
+The aggregated datasets have been prepared and quality checked using ODV software.</dct:abstract>
+      <dc:description>The SeaDataNet aggregated datasets over the Atlantic Ocean are regional ODV historical collections of all temperature and salinity measurements contained within SeaDataNet database and covering 3 European sea basins: North Arctic Ocean, North Sea, North Atlantic Ocean.
+Two versions have been published during SeaDataNet 2 and they represent a snapshot of the SeaDataNet database content at two different times:
+&#8226;	V1.1 January 2014
+&#8226;	V2   March 2015
+Each of them is the result of the Quality Check Strategy (QCS) implemented during SeaDataNet 2 that contributed to highly improve the quality of temperature and salinity data. The QCS is made by four main phases:
+1.	data harvesting from the central CDI
+2.	file and parameter aggregation
+3.	quality check analysis at regional level
+4.	analysis and correction of data anomalies.
+The aggregated datasets have been prepared and quality checked using ODV software.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The agregated datasets includes all open access temperature and salinity in situ data. The data were retrieved from the SeaDataNet infrastructure in January 2014 (v1.1) and march 2015 (v2). Data quality has been analysed and checked using ODV software. Quality Flags of anomalous data have been revised using different QC procedures in conjunction with the visual expert check. Duplicates have been identified and excluded from the dataset.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>93 10</ows:LowerCorner>
+        <ows:UpperCorner>-90 83</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="View and download historical datasets" description="View and download historical datasets">https://sextant.ifremer.fr/en/web/seadatanet#/search?fast=index&amp;_content_type=json&amp;sortBy=popularity&amp;from=1&amp;to=20&amp;any=north%20observation%20collection</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/api/records/ade2c115-0be4-467d-bdde-d98236ed7588/attachments/Atlantic_collection.png</dc:URI>
+    </csw:Record>
