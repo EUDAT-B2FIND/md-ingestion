@@ -14,6 +14,7 @@ class SchemaType(Enum):
     DataCite = 1
     ISO19139 = 2
     FGDC = 3
+    FF = 4
     JSON = 100
 
 
