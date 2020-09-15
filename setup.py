@@ -77,7 +77,6 @@ setup(
     python_requires='>=3.6.0',
     entry_points={
         'console_scripts': [
-            'manager=mdingestion.manager:main',
             'b2f=mdingestion.ng.cli:cli',
         ],
     },

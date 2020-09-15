@@ -1,17 +1,17 @@
 sickle
-SPARQLWrapper
+# SPARQLWrapper
 owslib
 lxml
-simplejson
+# simplejson
 python-Levenshtein
-#git+https://github.com/noumar/iso639.git
+# git+https://github.com/noumar/iso639.git
 iso639
-dublincore
+# dublincore
 ckanapi
-b2handle
-babel
+# b2handle
+# babel
 ###HEW-D?? pyenchant
-pyparsing
+# pyparsing
 beautifulsoup4
 shapely
 jsonpath-ng
