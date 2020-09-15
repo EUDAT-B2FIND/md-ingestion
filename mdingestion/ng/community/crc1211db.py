@@ -2,6 +2,6 @@ from ..reader import DataCiteReader
 from ..sniffer import OAISniffer
 
 
-class DarusDatacite(DataCiteReader):
-    NAME = 'darus-oai_datacite'
+class CRC1211DBDatacite(DataCiteReader):
+    NAME = 'crc1211db-oai_datacite'
     SNIFFER = OAISniffer

@@ -41,12 +41,18 @@ ceric https://data.ceric-eric.eu/oai-pmh/oai2 ListRecords oai_datacite
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
 clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
 
+## CRC 1211 Database
+crc1211db http://doidb.wdc-terra.org/oaip/oai ListRecords oai_datacite DOIDB.CRC1211
+
 ## Dans Easy
 danseasy https://easy.dans.knaw.nl/oai ListRecords oai_datacite
 
 ## DaRUS
 #darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_ddi
 darus https://darus.uni-stuttgart.de/oai ListIdentifiers oai_datacite
+
+## DataverseNO
+dataverseno https://dataverse.no/oai ListRecords oai_dc dataverseno
 
 ## DEIMS
 deims https://deims.org/pycsw/catalogue/csw csw iso19139 full

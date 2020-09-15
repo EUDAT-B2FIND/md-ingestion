@@ -92,10 +92,11 @@ class B2FSchema(colander.MappingSchema):
     )
     publisher = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),
-        colander.SchemaNode(colander.String()),
+        colander.SchemaNode(colander.String(), validator=colander.Length(min=2)),
         name='publisher',
         title='Publisher',
         description='The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role.',  # noqa
+        validator=colander.Length(min=1),
     )
     contributor = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),
@@ -119,6 +120,7 @@ class B2FSchema(colander.MappingSchema):
         name='publication_year',
         title='PublicationYear',
         description='Year when the data is made publicly available. If an embargo period has been in effect, use the date when the embargo period ends.',  # noqa
+        validator=colander.Length(min=1),
     )
     funding_reference = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),

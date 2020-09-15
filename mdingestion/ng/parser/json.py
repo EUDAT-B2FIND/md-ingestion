@@ -22,7 +22,7 @@ class JSONParser(DocParser):
     def find(self, name=None, **kwargs):
         expr = self.get_parseexpr(name)
         tags = expr.find(self.doc)
-        return [format.format(tag.value, type=type) for tag in tags]
+        return [format.format(tag.value) for tag in tags]
 
     @property
     def fulltext(self):

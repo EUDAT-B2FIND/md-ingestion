@@ -1,0 +1,70 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.557786</identifier>
+    <datestamp>2020-01-19T01:13:27Z</datestamp>
+    <setSpec>citable</setSpec>
+    <setSpec>topicGeophysics</setSpec>
+    <setSpec>topicOceans</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.557786</identifier>
+      <creators>
+        <creator>
+          <creatorName>Klenke, Martin</creatorName>
+          <givenName>Martin</givenName>
+          <familyName>Klenke</familyName>
+        </creator>
+        <creator>
+          <creatorName>Schenke, Hans Werner</creatorName>
+          <givenName>Hans Werner</givenName>
+          <familyName>Schenke</familyName>
+        </creator>
+      </creators>
+      <titles>
+        <title>AWI Bathymetric Chart of the Fram Strait (BCFS) (Scale 1:100,000)</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2006</publicationYear>
+      <subjects>
+        <subject subjectScheme="Project">Paleoenvironmental Reconstructions from Marine Sediments @ AWI (AWI_Paleo)</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="HostingInstitution">
+          <contributorName>Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Bremerhaven</contributorName>
+        </contributor>
+      </contributors>
+      <language>en</language>
+      <resourceType resourceTypeGeneral="Collection">Collection of Datasets</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1023/A:1025764206736</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>9 datasets</size>
+      </sizes>
+      <formats>
+        <format>application/zip</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="https://creativecommons.org/licenses/by/3.0/" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-3.0">Creative Commons Attribution 3.0 Unported</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Based on data from R/V Polarstern multibeam sonar surveys between 1984 and 1997 a high resolution bathymetry has been generated for the central Fram Strait. The area ensonified covers approx. 36,500 sqkm between 78&#176;N - 80&#176;N and 0&#176;E - 7.5&#176;E. Basic outcome of the investigation is a Digital Terrain Model (DTM) with 100 m grid spacing which was utilized for contouring and generation of a new series of bathymetric charts at a scale of 1:100,000, the AWI Bathymetric Chart of the Fram Strait (AWI BCFS).</description>
+        <description descriptionType="TechnicalInfo">This set of bathymetric charts consists of 9 sheets with a page size of 91 x 76 cm; the maps were created with ArcInfo Workstation 8 and are provided in EPS and PDF format. The related digital terrain model is published at doi:10.1594/PANGAEA.526589</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>
+            <westBoundLongitude>0.0</westBoundLongitude>
+            <eastBoundLongitude>7.5</eastBoundLongitude>
+            <southBoundLatitude>78.0</southBoundLatitude>
+            <northBoundLatitude>80.0</northBoundLatitude>
+          </geoLocationBox>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Fram Strait</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

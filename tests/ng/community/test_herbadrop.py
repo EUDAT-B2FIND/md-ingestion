@@ -24,6 +24,7 @@ def test_json_1():
     # assert 'und_UND' == doc.language[0]
     assert 'StillImage|PRESERVED_SPECIMEN' == doc.resource_type[0]
     assert 'image/jpeg' == doc.format[0]
+    assert ['3067 bytes', '5108829 bytes'] == doc.size
     assert 'Plant Sciences' == doc.discipline
     # assert 'France|Languedoc-Roussillon||||Eyne' == doc.spatial_coverage
     assert '1968-07-17T00:00:00+01:00Z' == doc.temporal_coverage_begin_date
