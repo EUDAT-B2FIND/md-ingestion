@@ -1,9 +1,0 @@
-# Syntax:
-# fieldname:command1,command2,...
-
-[MAIN]
-title:existence
-notes:existence
-url:existence,validation_url
-[EXTRA]
-oai_identifier:existence
