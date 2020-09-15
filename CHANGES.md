@@ -1,15 +1,30 @@
-## CHANGES 
+## CHANGES
+
+### 1.5.0 (2020-09-15)
+* Fidgeo (#105)
+* fix classify.map_discipline
+* from EUDAT-B2FIND/herbadrop (#101)
+* Toar (#100)
+* Ivoa (#99)
+* Dataverseno (#98)
+* Darus (#97)
+* linkcheck (#95)
+* use common discipline function (#94)
+* Changes in <contact> for EnviDat (#91)
+* changes for relatedIdentifer for IVOA (#92)
+* fixed envidat iso test
+* fixed datacite contact
 
 ### 1.4.0 (2020-09-02)
 * Create schema__transition
 * changes for toar, ess, radar and b2find export
-* Readthedocs (#27) 
-* Update .travis.yml 
-* Update annastest (#26) 
-* Annastest (#25) 
+* Readthedocs (#27)
+* Update .travis.yml
+* Update annastest (#26)
+* Annastest (#25)
 * New entry darus ingestion_list. New cronjob darus.
-* added mapper tests (#24) 
-* Add setup py (#22) (#23) 
+* added mapper tests (#24)
+* Add setup py (#22) (#23)
 
 ### 1.3.0 (2020-05-11)
 * Jsonsraus (#21)
@@ -21,7 +36,7 @@
 * Bugfix mapping (#15)
 * Update docs (#14)
 * added old, but working slks-ff-mapfile (#13)
-* added slks-dc mapfile and updated harvest_list. Added "Archaeology" to B2FIND disciplines.json. (#12) 
+* added slks-dc mapfile and updated harvest_list. Added "Archaeology" to B2FIND disciplines.json. (#12)
 * updated README.md (#10)
 
 ### 1.2.0 (2020-02-27)
@@ -31,9 +46,9 @@
 
 ### 1.1.0 (2020-02-26)
 Integration work for (#7)
-+ ENVRIplus demonstrator 
++ ENVRIplus demonstrator
   - including mapfiles for ENVRI Communities (such as AnaEE, SeaDataNet, Euro-Argo etc.)
-+ oaitestdata 
++ oaitestdata
   - for IVOA (including ivoa_ ivo_vor and ivoa_datacite schema)
   - for DansEASY
   - CLARIN (testing different endpoints)
