@@ -1,0 +1,90 @@
+{
+    "Contact": [
+        "Johannes Peterseil", 
+        "johannes.peterseil@umweltbundesamt.at"
+    ],
+    "Contributor": [
+        "eLTER"
+    ],
+    "DOI": "",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "",
+    "PID": "",
+    "PublicationTimestamp": "2018-09-29T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "RelatedIdentifier": [
+        "https://deims.org"
+    ],
+    "ResourceType": [
+        "dataproduct"
+    ],
+    "Rights": [
+        "The principal: Administration has granted the access and use permission: Free access and use", 
+        "The principal: Research has granted the access and use permission: Free for access",
+        "The principal: Public has granted the access and use permission: Free for access"
+    ],
+    "SpatialCoverage": [
+        "-11.14844",
+        "37.01562",
+        "27.74218",
+        "73.44531"
+    ],
+    "author": [
+        ""
+    ],
+    "fulltext": "",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "e9e14369-0fcb-5892-a3e9-15ded1588f22",
+    "notes": [
+        "The data product site encompasses the delineation or bounding boxes of the site network of LTER Europe. Each of the LTER sites or LTSER platforms is represented by the centre location of the facility as well as by a descriptive EF record providing the boundary and the descriptive information of the LTER facility. Each LTER facility is unambigously identified using the DEIMS-ID as persistent identifier. The LTER facilities describe highly instrumented areas studying ecosystem processes and fluxes in a the long term in order assess the effects of environmental drivers on the studied ecosystems"
+    ],
+    "oai_identifier": [
+        "e9ae49a2-a116-565a-a232-ea84d19198dd"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[4.520980000000,51.307100000000],[4.520980000000,51.309300000000],[4.518670000000,51.309300000000],[4.518670000000,51.307100000000],[4.520980000000,51.307100000000]]]}",
+    "TempCoverageBegin": 62940193199,
+    "TempCoverageEnd": 62940193199,
+    "TemporalCoverage:BeginDate": "1992-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2017-12-31T11:59:59Z",
+    "state": "active",
+    "tags": [
+        {
+            "name": "LTER facility"
+        },
+        {
+            "name": "site location"
+        },
+        {
+            "name": "eLTER VA DataProduct"
+        },
+        {
+            "name": "dataproduct"
+        },
+        {
+            "name": "ENVRIplus"
+        }
+    ],
+    "title": [
+        "eLTER Dataproduct Sites"
+    ],
+    "url": "https://docs.umweltbundesamt.at/s/tDBSZztzgW3cMxy"
+}

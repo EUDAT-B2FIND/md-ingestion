@@ -1,0 +1,189 @@
+
+ Statistics of
+	community	nilu
+	subset		ENVRIplus_flagship_1
+	# of records	29
+  see as well oaidata/nilu-iso19139/ENVRIplus_flagship_1/validation.stat
+
+ |-> Facet name       <-- XPATH                
+  |-- Mapped       | Validated | 
+  |--     # |    % |     # |    % |
+      |- Value statistics:
+      |- #     : Value                          |
+ ----------------------------------------------------------
+
+ |-> Title            <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString/text()
+
+  |--    29 |  100 |    29 |  100
+      |- 1     : Measurements of volume scattering coefficient in air due to dried aerosol partic [...(47 chars follow)...] |
+      |- 1     : Measurements of volume absorption coefficient in air due to dried aerosol partic [...(45 chars follow)...] |
+      |- 1     : Measurements of volume scattering coefficient in air due to dried aerosol partic [...(43 chars follow)...] |
+      |- 1     : Measurements of volume scattering coefficient in air due to dried aerosol partic [...(76 chars follow)...] |
+      |- 1     : Measurements of volume scattering coefficient in air due to dried aerosol partic [...(48 chars follow)...] |
+      |- 1     : Measurements of volume scattering coefficient in air due to dried aerosol partic [...(45 chars follow)...] |
+      |- 1     : Measurements of volume scattering coefficient in air due to dried aerosol partic [...(43 chars follow)...] |
+      |- 1     : Measurements of volume absorption coefficient in air due to dried aerosol partic [...(44 chars follow)...] |
+      |- 1     : Measurements of volume absorption coefficient in air due to dried aerosol partic [...(48 chars follow)...] |
+      |- 1     : Measurements of volume absorption coefficient in air due to dried aerosol partic [...(43 chars follow)...] |
+
+ |-> Description      <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:abstract/gco:CharacterString/text()
+
+  |--    29 |  100 |    29 |  100
+      |- 1     : This service provides nephelometer measurements of volume scattering coefficient [...(227 chars follow)...] |
+      |- 1     : This service provides nephelometer measurements of volume scattering coefficient [...(238 chars follow)...] |
+      |- 1     : This service provides filter absorption photometer measurements of volume absorp [...(248 chars follow)...] |
+      |- 1     : This service provides nephelometer measurements of volume scattering coefficient [...(248 chars follow)...] |
+      |- 1     : This service provides nephelometer measurements of volume scattering coefficient [...(232 chars follow)...] |
+      |- 1     : This service provides nephelometer measurements of volume scattering coefficient [...(229 chars follow)...] |
+      |- 1     : This service provides filter absorption photometer measurements of volume absorp [...(243 chars follow)...] |
+      |- 1     : This service provides nephelometer measurements of volume scattering coefficient [...(229 chars follow)...] |
+      |- 1     : This service provides nephelometer measurements of volume scattering coefficient [...(230 chars follow)...] |
+      |- 1     : This service provides filter absorption photometer measurements of volume absorp [...(246 chars follow)...] |
+
+ |-> Tags             <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString
+
+  |--    29 |  100 |    29 |  100
+      |- 29    : atmosphericComposition              |
+
+ |-> DOI              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> PID              <--                     
+  |--     0 |    0 |     0 |    0
+
+ |-> Source           <--       //gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL
+
+  |--    58 |  200 |    58 |  200
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=FR0030R&InstrumentTypes=filter_absorp [...(112 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=DE0002R&InstrumentTypes=filter_absorp [...(112 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=DE0056R&InstrumentTypes=filter_absorp [...(112 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=BG0001R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=DE0044R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=ES0022R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=ES0100R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=FR0020R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=IT0009R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=BG0001R&InstrumentTypes=filter_absorp [...(112 chars follow)...] |
+
+ |-> RelatedIdentifier <--       //gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL
+
+  |--    58 |  200 |    58 |  200
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=FR0030R&InstrumentTypes=filter_absorp [...(112 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=DE0002R&InstrumentTypes=filter_absorp [...(112 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=DE0056R&InstrumentTypes=filter_absorp [...(112 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=BG0001R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=DE0044R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=ES0022R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=ES0100R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=FR0020R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=IT0009R&InstrumentTypes=nephelometer& [...(102 chars follow)...] |
+      |- 2     : http://ebas.nilu.no/DataSets.aspx?stations=BG0001R&InstrumentTypes=filter_absorp [...(112 chars follow)...] |
+
+ |-> MetaDataAccess   <--                     
+  |--    29 |  100 |    29 |  100
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+      |- 1     : http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifie [...(125 chars follow)...] |
+
+ |-> Creator          <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString
+
+  |--    29 |  100 |    29 |  100
+      |- 6     : Pascal, Nicolas                     |
+      |- 4     : Alastuey, Andrés                    |
+      |- 3     : Sonntag, Andre                      |
+      |- 2     : Kalapov, Ivo Emilov                 |
+      |- 2     : Alados-Arboledas, Lucas             |
+      |- 2     : Marinoni, Angela                    |
+      |- 2     : Bukowiecki, Nicolas                 |
+      |- 1     : Hoffer, Andras                      |
+      |- 1     : Ulevicius, Vidmantas                |
+      |- 1     : Ries, Ludwig                        |
+
+ |-> Publisher        <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:citedResponsibleParty/gmd:CI_ResponsibleParty/gmd:organisationName/gco:CharacterString
+
+  |--    11 |   38 |    11 |   38
+      |- 2     : CNRS-LaMP                           |
+      |- 2     : Observatoire Perenne de l'Environnement      |
+      |- 2     : Observatoire Midi-Pyrenees          |
+      |- 1     : Federal Environment Agency          |
+      |- 1     : Institute of Atmospheric Sciences and Climate      |
+      |- 1     : SSRI Center for Physical Sciences and Technology      |
+      |- 1     : Lund University                     |
+      |- 1     : Leibniz Institute for Tropospheric Research      |
+
+ |-> Contributor      <--       <string>Norwegian Institute for Air Research | https://www.nilu.no/</string>
+
+  |--    29 |  100 |    29 |  100
+      |- 29    : Norwegian Institute for Air Research | https://www.nilu.no/      |
+
+ |-> PublicationYear  <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date
+
+  |--    29 |  100 |    29 |  100
+      |- 7     : 2018                                |
+      |- 6     : 2017                                |
+      |- 4     : 2015                                |
+      |- 4     : 2014                                |
+      |- 3     : 2012                                |
+      |- 2     : 2013                                |
+      |- 1     : 2016                                |
+      |- 1     : 2007                                |
+      |- 1     : 2011                                |
+
+ |-> Rights           <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString
+
+  |--    29 |  100 |    29 |  100
+      |- 29    : http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx      |
+
+ |-> OpenAccess       <--       
+             
+  |--     0 |    0 |     0 |    0
+
+ |-> Contact          <--       //gmd:contact/gmd:CI_ResponsibleParty/gmd:organisationName
+
+  |--    29 |  100 |    29 |  100
+      |- 29    : 
+                                   |
+
+ |-> Language         <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:language/gmd:LanguageCode
+
+  |--    29 |  100 |    29 |  100
+      |- 29    : English                             |
+
+ |-> ResourceType     <--       >//gmd:hierarchyLevel/gmd:MD_ScopeCode/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Format           <--       //gmd:MD_Metadata/gmd:contentInfo/gmd:MD_CoverageDescription/gmd:contentType/gmd:MDCoverageContentTypeCode/text()
+
+  |--     0 |    0 |     0 |    0
+
+ |-> Discipline       <--       //gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory/gmd:MD_TopicCategoryCode/text()
+
+  |--    29 |  100 |    29 |  100
+      |- 29    : Not stated                          |
+
+ |-> SpatialCoverage  <--       //gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:westBoundLongitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal/text(),//gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:eastBoundLongitude/gco:Decimal/text()
+
+  |--    29 |  100 |    29 |  100
+      |- 2     : (4 S,37E)                           |
+      |- 2     : (6 N,49E)                           |
+      |- 2     : (11N,44E)                           |
+      |- 2     : (2 N,42E)                           |
+      |- 2     : (1 N,42E)                           |
+      |- 2     : (24N,42E)                           |
+      |- 2     : (3 N,46E)                           |
+      |- 2     : (0 N,43E)                           |
+      |- 2     : (8 N,47E)                           |
+      |- 1     : (11N,47E)                           |
+
+ |-> TemporalCoverage <--       //gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition/text(),//gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition/text()
+
+  |--     0 |    0 |     0 |    0
+

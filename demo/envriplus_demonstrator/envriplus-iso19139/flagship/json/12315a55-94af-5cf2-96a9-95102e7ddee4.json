@@ -1,0 +1,102 @@
+{
+    "author": [
+        "Argo"
+    ],
+    "Contact": [
+        "Ifremer"
+    ],
+    "Contributor": [
+        "Euro-Argo"
+    ],
+    "DiscHierarchy": [
+        "4.4.5.2",
+        "Geospheric Science",
+        "Geography"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "DOI": "http://doi.org/10.17882/42182",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://sextant.ifremer.fr/en/geoportail/sextant#/metadata/3df904de-e47d-4bf9-85a0-7c0942aff8b6",
+    "PublicationTimestamp": "2000-09-12T11:59:59Z",
+    "PublicationYear": [
+        "2000"
+    ],
+    "Publisher": [
+        "Seanoe"
+    ],
+    "RelatedIdentifier": [
+        "ftp://ftp.ifremer.fr/ifremer/argo/"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "A user should acknowledge use of Argo data in all publications and products where such data are used, preferably with the following standard sentence:\"These data were collected and made freely available by the international Argo project and the national programs that contribute to it.\""
+    ],
+    "SpatialCoverage": "(90S-90N,180W-180E)",
+    "TempCoverageBegin": 62940193199,
+    "TempCoverageEnd": 62940193199,
+    "TemporalCoverage": " point in time : 1995-07-01T11:59:59Z",
+    "TemporalCoverage:BeginDate": "1995-07-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "1995-07-01T11:59:59Z",
+    "fulltext": "3df904de-e47d-4bf9-85a0-7c0942aff8b6;Ifremer;Ifremer;Ifremer;codac@ifremer.fr;codac@ifremer.fr;codac@ifremer.fr;2018-06-06T10:07:28;ISO 19115:2003/19139 - SEXTANT;1.0;1000000000;WGS 84 (EPSG:4326);WGS 84 (EPSG:4326);EPSG;7.9;Argo float data and metadata from Global Data Assembly Centre (Argo GDAC);Argo float data and metadata from Global Data Assembly Centre (Argo GDAC);Argo : Donn\u00e9es et m\u00e9tadonn\u00e9es du Global Data Assembly Centre (Argo GDAC);2000-09-12;1282383d-9b35-4eaa-a9d6-4b0c24c0cfc9;Argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean.  This allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection.\n\nThe array provides 100,000 temperature/salinity profiles and velocity measurements per year distributed over the global oceans at an average of 3-degree spacing. Some floats provide additional bio-geo parameters such as oxygen or chlorophyll.\n\nAll data collected by Argo floats are publically available in near real-time via the Global Data Assembly Centers (GDACs) in Brest (France) and Monterey (California) after an automated quality control (QC), and in scientifically quality controlled form, delayed mode data, via the GDACs within six months of collection.;Argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean.  This allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection.\n\nThe array provides 100,000 temperature/salinity profiles and velocity measurements per year distributed over the global oceans at an average of 3-degree spacing. Some floats provide additional bio-geo parameters such as oxygen or chlorophyll.\n\nAll data collected by Argo floats are publically available in near real-time via the Global Data Assembly Centers (GDACs) in Brest (France) and Monterey (California) after an automated quality control (QC), and in scientifically quality controlled form, delayed mode data, via the GDACs within six months of collection.;Argo est un ensemble mondial de 3 000 flotteurs \u00e0 profil d\u00e9rivant libre qui mesurent la temp\u00e9rature et la salinit\u00e9 des 2000 premier m de la colonne d'eau. Cela permet, pour la premi\u00e8re fois, une surveillance continue de la temp\u00e9rature, de la salinit\u00e9 et de la vitesse des eaux sup\u00e9rieures, toutes les donn\u00e9es \u00e9tant relay\u00e9es et rendues publiques dans les heures qui suivent la collecte.\n\nLe tableau fournit 100 000 profils de temp\u00e9rature / salinit\u00e9 et des mesures de vitesse par an r\u00e9parties sur les oc\u00e9ans globaux \u00e0 un espacement moyen de 3 degr\u00e9s. Certains flotteurs fournissent des param\u00e8tres bio-g\u00e9ochimiques suppl\u00e9mentaires tels que l'oxyg\u00e8ne ou la chlorophylle. \n\nToutes les donn\u00e9es recueillies par les flotteurs Argo sont publiquement disponibles en temps quasi r\u00e9el via Global Data Assembly Centers (GDAC) \u00e0 Brest (France) et \u00e0 Monterey (Californie) apr\u00e8s un contr\u00f4le de qualit\u00e9 automatis\u00e9 (QC) et sous une forme scientifiquement de contr\u00f4le qualit\u00e9, temps diff\u00e9r\u00e9e, via les GDAC dans les six mois suivant la collecte.;Ifremer;Ifremer;Ifremer;Argo;Argo;Argo;codac@ifremer.fr;codac@ifremer.fr;codac@ifremer.fr;Ifremer;Ifremer;Ifremer;codac@ifremer.fr;codac@ifremer.fr;codac@ifremer.fr;https://sextant.ifremer.fr/geonetwork/srv/api/records/3df904de-e47d-4bf9-85a0-7c0942aff8b6/attachments/argo-float.jpg;float;float;Argo;Argo;global ocean observing system;global ocean observing system;ocean circulation;ocean circulation;in-situ;in-situ;ocean pressure;ocean pressure;sea water salinity;sea water salinity;sea water temperature;sea water temperature;multi-year;multi-year;weather climate and seasonal observation;weather climate and seasonal observation;global-ocean;global-ocean;Environmental monitoring facilities;Installations de suivi environnemental;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;GEMET - INSPIRE themes, version 1.0;2009-09-22;geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme;CDS-IS-CORIOLIS;CDS-IS-CORIOLIS;CDS-IS-CORIOLIS;Centre de donn\u00e9es - ODATIS;Centre de donn\u00e9es - ODATIS;2017-10-04;geonetwork.thesaurus.local.theme.odatis_centre_donnees;/Marine Biogeochemistry/Nutrients;/Biog\u00e9ochimie marine/Nutriments (sels nutritifs);/Marine Biogeochemistry/Nutrients;/Marine Biogeochemistry/Dissolved oxygen;/Biog\u00e9ochimie marine/Oxyg\u00e8ne dissous;/Marine Biogeochemistry/Dissolved oxygen;/Marine Biology/Fluorescence - Chlorophyll a;/Biologie marine/Fluorescence - Chlorophylle;/Marine Biology/Fluorescence - Chlorophyll a;/Physical Oceanography/Optical parameters;/Physique de l'Oc\u00e9an/Param\u00e8tres optiques;/Physical Oceanography/Optical parameters;/Physical Oceanography/Salinity;/Physique de l'Oc\u00e9an/Salinit\u00e9;/Physical Oceanography/Salinity;/Marine Biogeochemistry/CDOM;/Biog\u00e9ochimie marine/CDOM;/Marine Biogeochemistry/CDOM;/Physical Oceanography/Temperature;/Physique de l'Oc\u00e9an/Temp\u00e9rature;/Physical Oceanography/Temperature;/Physical Oceanography/Turbidity;/Physique de l'Oc\u00e9an/Turbidit\u00e9;/Physical Oceanography/Turbidity;Variables Odatis;Variables Odatis;2017-10-17;geonetwork.thesaurus.local.theme.odatis_variables;Type de jeux de donn\u00e9e - ODATIS;Type de jeux de donn\u00e9e - ODATIS;2017-09-07;geonetwork.thesaurus.local.theme.type_jeux_donnee;Operational oceanography;Oc\u00e9anographie op\u00e9rationnelle;Operational oceanography;Observation system for research;Dispositifs d\u2019observation pour la recherche;Observation system for research;Th\u00e8matiques - ODATIS;Th\u00e8matiques - ODATIS;2017-10-02;geonetwork.thesaurus.local.theme.odatis_thematiques;Networks;Networks;Networks;AtlantOS Element;AtlantOS Element;2017-11-08;geonetwork.thesaurus.local.theme.atlantos_element;Nutrients;Nutrients;Currents;Currents;Chlorophyll-a and fluorescence;Chlorophyll-a and fluorescence;Salinity;Salinity;Temperature;Temperature;Oxygen;Oxygen;Bottom depth;Bottom depth;AtlantOS Essential Variables;AtlantOS Essential Variables;2017-02-16;geonetwork.thesaurus.external.parameter.NVS.A05;A user should acknowledge use of Argo data in all publications and products where such data are used, preferably with the following standard sentence:\"These data were collected and made freely available by the international Argo project and the national programs that contribute to it.\";A user should acknowledge use of Argo data in all publications and products where such data are used, preferably with the following standard sentence:\"These data were collected and made freely available by the international Argo project and the national programs that contribute to it.\";A user should acknowledge use of Argo data in all publications and products where such data are used, preferably with the following standard sentence:\"These data were collected and made freely available by the international Argo project and the national programs that contribute to it.\";No limitations on public access;No limitations on public access;No limitations on public access;A user of Argo data is expected to read and understand this manual and the documentation about the data contained in the \"attributes\" of the NetCDF data files, as these contain essential information about data quality and accuracy.;A user of Argo data is expected to read and understand this manual and the documentation about the data contained in the \"attributes\" of the NetCDF data files, as these contain essential information about data quality and accuracy.;1000000;oceans;-180;180;-90;90;1995;http://www.coriolis.eu.org/;WWW:LINK;Coriolis Web Site;Coriolis Web Site;http://doi.org/10.17882/42182;WWW:LINK-1.0-http--metadata-URL;Argo GDAC snapshots access;Argo GDAC snapshots access;Argo GDAC snapshots access;Argo GDAC snapshots access;http://www.jcommops.org/board?t=Argo&modules=%5B%7B\"id\":48%7D%5D;WWW:LINK;Web app avec carte interactive Flotteurs Argo op\u00e9rationnels;Web app avec carte interactive Flotteurs Argo op\u00e9rationnels;JCOMMOPS: Web app tous les flotteurs op\u00e9rationnels;JCOMMOPS: Web app tous les flotteurs op\u00e9rationnels;http://www.jcommops.org/board?t=Argo&qparams=%7B\"lastLocOnly\"%3A\"on\"%2C\"allNotGdacs\"%3A\"1\"%2C\"networks\"%3A\"1\"%2C\"status\"%3A\"6\"%7D&modules=%5B%7B\"id\":48%7D%5D;WWW:LINK;Web app avec carte interactive Flotteurs BGC-Argo op\u00e9rationnels;Web app avec carte interactive Flotteurs BGC-Argo op\u00e9rationnels;JCOMMOPS: Web app tous les flotteurs BGC-Argo op\u00e9rationnels;JCOMMOPS: Web app tous les flotteurs BGC-Argo op\u00e9rationnels;http://www.jcommops.org/maps/interactive_new/?theme=Argo;WWW:LINK;JCOMMOPS: Argo Op\u00e9rationnel;JCOMMOPS: Argo Op\u00e9rationnel;http://www.jcommops.org/maps/interactive_new/?theme=Argo&ptfStatuses=%5B6%5D&ptfNetworks=%5B%22Argo%20BioGeoChemical%22%5D;WWW:LINK;Carte interactive seule (tout BGC-Argo op\u00e9rationnel);Carte interactive seule (tout BGC-Argo op\u00e9rationnel);JCOMMOPS: BGC-Argo op\u00e9rationnel;JCOMMOPS: BGC-Argo op\u00e9rationnel;http://map.argo-france.fr/;WWW:LINK;Carte Argo France;Carte Argo France;ftp://ftp.ifremer.fr/ifremer/argo/;WWW:DOWNLOAD-1.0-link--download;FTP ARGO;FTP ARGO;FTP ARGO;FTP ARGO;http://gis.jcommops.org/arcgis/services/Argo/ARGOLocations/MapServer/WFSServer?;OGC:WFS;Argo_ARGOLocations:Latest_Locations;Argo_ARGOLocations:Latest_Locations;Argo Latest Locations;Argo Latest Locations;Inspire specifications;Inspire specifications;2012-01-16;Non \u00e9valu\u00e9;Non \u00e9valu\u00e9;false;http://www.argodatamgt.org/Documentation;http://www.argodatamgt.org/Documentation;http://www.argodatamgt.org/Documentation",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "12315a55-94af-5cf2-96a9-95102e7ddee4",
+    "notes": [
+        "Argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean.  This allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection.\n\nThe array provides 100,000 temperature/salinity profiles and velocity measurements per year distributed over the global oceans at an average of 3-degree spacing. Some floats provide additional bio-geo parameters such as oxygen or chlorophyll.\n\nAll data collected by Argo floats are publically available in near real-time via the Global Data Assembly Centers (GDACs) in Brest (France) and Monterey (California) after an automated quality control (QC), and in scientifically quality controlled form, delayed mode data, via the GDACs within six months of collection."
+    ],
+    "oai_identifier": [
+        "12315a55-94af-5cf2-96a9-95102e7ddee4"
+    ],
+    "oai_set": "euro-argo",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-180,-90],[-180,90],[180,90],[180,-90],[-180,-90]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "float"
+        },
+        {
+            "name": "Argo"
+        },
+        {
+            "name": "global ocean observing system"
+        },
+        {
+            "name": "ocean circulation"
+        },
+        {
+            "name": "in-situ"
+        },
+        {
+            "name": "ocean pressure"
+        },
+        {
+            "name": "sea water salinity"
+        },
+        {
+            "name": "sea water temperature"
+        },
+        {
+            "name": "multi-year"
+        },
+        {
+            "name": "weather climate seasonal observation"
+        },
+        {
+            "name": "global-ocean"
+        },
+        {
+            "name": "Environmental monitoring facilities"
+        }
+    ],
+    "title": [
+        "Argo float data and metadata from Global Data Assembly Centre (Argo GDAC)"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "Contact": [
+        "\n            "
+    ],
+    "Contributor": "Norwegian Institute for Air Research | https://www.nilu.no/",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=EBAS.CH0001G.20140101000000.20150616120436.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+    "PublicationTimestamp": "2015-06-16T11:59:59Z",
+    "PublicationYear": [
+        "2015"
+    ],
+    "Rights": [
+        "http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx"
+    ],
+    "SpatialCoverage": "(8 N,47E)",
+    "author": [
+        "Bukowiecki, Nicolas",
+        "Baltensperger, Urs"
+    ],
+    "fulltext": "EBAS.CH0001G.20140101000000.20150616120436.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;2015-08-11T07:49:58Z;EBASDCPCMETADATA;ENVRIplus flagship demonstrator catalog;EBAS.CH0001G.20140101000000.20150616120436.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;eng;utf-8;not applicable;dataset;not applicable;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;custodian;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;custodian;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;publisher;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;publisher;2018-09-28T00:40:12Z;ISO19115 / GAW-WDCA Profile;1.3;World Geodetic System;1984;WGS 84;Measurements of volume scattering coefficient in air due to dried aerosol particles at Jungfraujoch, Switzerland (20140101 - 20150101);2015-06-16;revision;1;2015-06-16;215145981.20150811074958;Baltensperger, Urs;owner;Bukowiecki, Nicolas;owner;Baltensperger, Urs;originator;Bukowiecki, Nicolas;originator;Baltensperger, Urs;publisher;Bukowiecki, Nicolas;publisher;This service provides nephelometer measurements of volume scattering coefficient in air due to dried aerosol particles observed at Jungfraujoch, Switzerland (20140101 - 20150101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/).;onGoing;atmosphericComposition;theme;WMO_CategoryCode;2004-01-30;publication;http://www.wmo.int/pages/prog/www/metadata/WMO-keywords.html;otherRestrictions;otherRestrictions;http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx;grid;eng;utf-8;climatologyMeteorologyAtmosphere;time series of point measurements at surface;46.5475;46.5475;7.9850;7.9850;Switzerland;Jungfraujoch;2014-01-01Z;2015-01-01Z;volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles;physicalMeasurement;NASA Ames 1001;EBAS_1.1;15.0000;http://ebas.nilu.no/DataSets.aspx?stations=CH0001G&InstrumentTypes=nephelometer&components=aerosol_light_scattering_coefficient&matrices=aerosol&fromDate=2014-01-01&toDate=2015-01-01;HTTP;Web-interface to relational data base.;download;dataset;Data collected according to instrument specific standard operating procedures, checked on import into data base.;Regularly calibrated by instrument operator, manually quality assured by instrument operator, boundary checked by data centre, outlier check by data centre.",
+    "group": "nilu",
+    "groups": [
+        {
+            "name": "nilu"
+        }
+    ],
+    "name": "f6d3f692-cc50-5ef7-93f7-fff2a8c6bb3b",
+    "notes": [
+        "This service provides nephelometer measurements of volume scattering coefficient in air due to dried aerosol particles observed at Jungfraujoch, Switzerland (20140101 - 20150101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/)."
+    ],
+    "oai_identifier": [
+        "EBAS.CH0001G.20140101000000.20150616120436.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+        "EBAS.CH0001G.20140101000000.20150616120436.volume_scattering_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2"
+    ],
+    "oai_set": [
+        "EBASDCPCMETADATA",
+        "ENVRIplus flagship demonstrator catalog"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[46.5475,7.9850],[46.5475,7.9850],[46.5475,7.9850],[46.5475,7.9850],[46.5475,7.9850]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "atmosphericComposition"
+        }
+    ],
+    "title": [
+        "Measurements of volume scattering coefficient in air due to dried aerosol particles at Jungfraujoch, Switzerland (20140101 - 20150101)"
+    ],
+    "url": "http://ebas.nilu.no/DataSets.aspx?stations=CH0001G&InstrumentTypes=nephelometer&components=aerosol_light_scattering_coefficient&matrices=aerosol&fromDate=2014-01-01&toDate=2015-01-01"
+}

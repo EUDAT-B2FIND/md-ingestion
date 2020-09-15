@@ -1,0 +1,32 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>de3cab9a-0776-442e-9f13-4b9e048363df</dc:identifier>
+      <dc:date>2018-01-18T13:23:54</dc:date>
+      <dc:title>Continuous Plankton Recorder(CPR) data from the Sir Alister Hardy Foundation for Ocean Science (SAHFOS)</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Phytoplankton</dc:subject>
+      <dc:subject>Zooplankton</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Chlorophyll-a and fluorescence</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The Sir Alister Hardy Foundation for Ocean Science (SAHFOS) is an international charity that operates the Continuous Plankton Recorder (CPR) Survey. The dataset covers the North Atlantic and the North Sea on since 1958.</dct:abstract>
+      <dc:description>The Sir Alister Hardy Foundation for Ocean Science (SAHFOS) is an international charity that operates the Continuous Plankton Recorder (CPR) Survey. The dataset covers the North Atlantic and the North Sea on since 1958.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>The Continuous Plankton Recorder (CPR) is a robust and reliable instrument designed to capture plankton samples over huge areas of ocean. The CPR is usually towed from the stern of volunteer merchant ships such as RoRo and Container Ships. However this versatile recorder has also been deployed from large sailing vessels, fishing boats and super tankers.  On return to the laboratory, the silk is removed from the mechanism and divided into samples representing 10 nautical miles of towing. The plankton on these samples are then analysed according to standard procedures.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>22.168904630175 -69.5400225350063</ows:LowerCorner>
+        <ows:UpperCorner>-100.88107292377 66.7664772182701</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="SAHFOS Web SIte" description="SAHFOS Web SIte">https://www.sahfos.ac.uk/</dc:URI>
+      <dc:URI protocol="WWW:LINK" description="Agreement for the use of CPR data">https://sextant.ifremer.fr/geonetwork/srv/api/records/de3cab9a-0776-442e-9f13-4b9e048363df/attachments/Agreement_for_the_use_of_CPR_data.pdf</dc:URI>
+      <dc:URI protocol="image/jpeg">https://sextant.ifremer.fr/geonetwork/srv/api/records/de3cab9a-0776-442e-9f13-4b9e048363df/attachments/Optimized-RS2951_SAHFOS%20Logo%20Trademarked%20(1).jpg</dc:URI>
+    </csw:Record>

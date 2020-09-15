@@ -1,0 +1,41 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>432938d2-3750-4089-8d16-cea12016ba3a</dc:identifier>
+      <dc:date>2018-01-18T13:18:29</dc:date>
+      <dc:title>European database for underway data from FerryBoxes</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Air humidity</dc:subject>
+      <dc:subject>Air temperature</dc:subject>
+      <dc:subject>Atmospheric pressure</dc:subject>
+      <dc:subject>Carbonate system</dc:subject>
+      <dc:subject>Chlorophyll-a and fluorescence</dc:subject>
+      <dc:subject>Dissolved organic matter</dc:subject>
+      <dc:subject>Nutrients</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Radiative fluxes</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Suspended particulates</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Wind direction</dc:subject>
+      <dc:subject>Wind speed</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Chlorophyll-a fluorescence</dc:subject>
+      <dc:subject>Dissolved oxygen from surface waters</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>Data from FerryBoxes on ships of opportunity going on permanent routes are stored inside this database (ferrydata.hzg.de). Parameters are temperature, salinity, chlorophyll-a fluorescence, oxygen and different others. The data model is transect oriented. A data portal to access and visualise the data is also provided.</dct:abstract>
+      <dc:description>Data from FerryBoxes on ships of opportunity going on permanent routes are stored inside this database (ferrydata.hzg.de). Parameters are temperature, salinity, chlorophyll-a fluorescence, oxygen and different others. The data model is transect oriented. A data portal to access and visualise the data is also provided.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>Quality control is quite different and depends on the data provider, quality flags according Data-Meq recommendations for realtime data</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>42 30</ows:LowerCorner>
+        <ows:UpperCorner>-30 72</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="HZG FerryBox Database" description="HZG FerryBox Database">http://ferrydata.hzg.de</dc:URI>
+      <dc:URI>https://sextant.ifremer.fr/geonetwork/srv/api/records/432938d2-3750-4089-8d16-cea12016ba3a/attachments/logo.PNG</dc:URI>
+    </csw:Record>

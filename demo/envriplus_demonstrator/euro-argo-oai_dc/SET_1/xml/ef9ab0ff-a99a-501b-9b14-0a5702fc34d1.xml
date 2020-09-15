@@ -1,0 +1,26 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>b1634126-4ac1-4fbc-8b74-9c29f1e7f27d</dc:identifier>
+      <dc:date>2018-01-18T13:12:08</dc:date>
+      <dc:title>JCOMMOPS</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Monitoring</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The Joint WMO-IOC Technical Commission for Oceanography and Marine Meteorology Observing Programmes Support Centre, provides technical coordination at international level for the sustained elements of the Global Ocean Observing System. The Centre monitors in real-time the status of the observing networks and provides a toolbox to evaluate their performance and optimize their implementation and data flow.
+Currently JCOMMOPS monitors the Argo profiling floats, the DBCP surface drifters, coastal and tropical moorings, ice buoys, tsunami buoys, the OceanSITES moorings time-series, the GO-SHIP hydrographic reference lines, the SOT mat/ocean ship based observations and the GLOSS sea level tide gauges. A number of other observing systems are being added gradually, including ocean gliders, polar systems, marine mammals and potentially HF radars.</dct:abstract>
+      <dc:description>The Joint WMO-IOC Technical Commission for Oceanography and Marine Meteorology Observing Programmes Support Centre, provides technical coordination at international level for the sustained elements of the Global Ocean Observing System. The Centre monitors in real-time the status of the observing networks and provides a toolbox to evaluate their performance and optimize their implementation and data flow.
+Currently JCOMMOPS monitors the Argo profiling floats, the DBCP surface drifters, coastal and tropical moorings, ice buoys, tsunami buoys, the OceanSITES moorings time-series, the GO-SHIP hydrographic reference lines, the SOT mat/ocean ship based observations and the GLOSS sea level tide gauges. A number of other observing systems are being added gradually, including ocean gliders, polar systems, marine mammals and potentially HF radars.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>All metadata made available by JCOMMOPS are quality controlled by dedicated coordinators, and platform operators.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="JCOMMOPS web site">http://www.jcommops.org</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="GIS API">http://gis.jcommops.org/arcgis/rest/services</dc:URI>
+      <dc:URI>https://sextant.ifremer.fr/geonetwork/srv/api/records/b1634126-4ac1-4fbc-8b74-9c29f1e7f27d/attachments/jcommops.PNG</dc:URI>
+    </csw:Record>

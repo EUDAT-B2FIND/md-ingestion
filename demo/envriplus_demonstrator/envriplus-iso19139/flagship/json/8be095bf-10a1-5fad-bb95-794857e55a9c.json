@@ -1,0 +1,88 @@
+{
+    "Contact": [
+        "sdn-userdesk@seadatanet.org"
+    ],
+    "Contributor": [
+        "SeaDataNet"
+    ],
+    "DiscHierarchy": [
+        "4.4.4",
+        "Geosciences",
+        "Oceanography/Marine Science"
+    ],
+    "Discipline": "Marine Science",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "https://sextant.ifremer.fr/en/geoportail/sextant#/metadata/639a97f9-b863-41a3-9b5f-604767356415",
+    "OpenAccess": "No limitations on public access.  For data access please register at http://www.marine-id.org",
+    "PublicationTimestamp": "2017-07-11T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "SeaDataNet"
+    ],
+    "RelatedIdentifier": [
+        "https://www.seadatanet.org/Products#/search?fast=index&_content_type=json&sortBy=popularity&from=1&to=20&any=climatology"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "SeaDataNet Usage Agreement: If you use SeaDataNet data in your publications please include the following in the Acknowledgements: Data were provided through SeaDataNet Pan-European infrastructure for ocean and marine data management (https://www.seadatanet.org)"
+    ],
+    "SpatialCoverage": "(10N-82N,90W-65E)",
+    "TempCoverageBegin": 59926651199,
+    "TempCoverageEnd": 63560721599,
+    "TemporalCoverage": " period : ( 1900-01-01T11:59:59Z - 2015-02-28T11:59:59Z ) ",
+    "TemporalCoverage:BeginDate": "1900-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2015-02-28T11:59:59Z",
+    "fulltext": "639a97f9-b863-41a3-9b5f-604767356415;SeaDataNet;sdn-userdesk@seadatanet.org;2018-01-18T13:26:34;ISO 19115:2003/19139 - SEXTANT;1.0;WGS 84 (EPSG:4326);EPSG;8.6;SeaDataNet climatologies over the Atlantic Ocean;2017-07-11;ATLANTOS_SEADATANET_CLIMATOLOGIES;SeaDataNet gridded climatologies are based on the SeaDataNet Temperature and Salinity historical data collection v1.1. For the Atlantic Ocean there are covering 2 European sea basins: North Arctic Ocean, and North Atlantic Ocean The preparation of the products has also improved the quality, the consistency and the overall coherence of the data made available by SeaDataNet. They have been computed using DIVA software.;SeaDataNet;SeaDataNet;sdn-userdesk@seadatanet.org;SeaDataNet;sdn-userdesk@seadatanet.org;https://sextant.ifremer.fr/geonetwork/srv/api/records/639a97f9-b863-41a3-9b5f-604767356415/attachments/Atlantic_climato.png;/Human Activities/Ocean Observation Network;Th\u00e8mes Sextant;2017-09-22;geonetwork.thesaurus.local.theme.sextant-theme;Environmental monitoring facilities;GEMET - INSPIRE themes, version 1.0;2009-09-22;geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme;Products;AtlantOS Element;2017-11-08;geonetwork.thesaurus.local.theme.atlantos_element;temperature;salinity;Temperature;Salinity;AtlantOS Essential Variables;2017-02-16;geonetwork.thesaurus.external.parameter.NVS.A05;SeaDataNet Usage Agreement: If you use SeaDataNet data in your publications please include the following in the Acknowledgements: Data were provided through SeaDataNet Pan-European infrastructure for ocean and marine data management (https://www.seadatanet.org);No limitations on public access.  For data access please register at http://www.marine-id.org;oceans;-90;65;10;82;1900-01-01;2015-02-28;https://sextant.ifremer.fr/en/web/seadatanet#/search?fast=index&_content_type=json&sortBy=popularity&from=1&to=20&any=north%20Climatology;WWW:LINK;View and download climatologies;View and download climatologies;SeaDataNet gridded climatologies are based on the aggregated datasets v1.1 issued in January 2014",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "8be095bf-10a1-5fad-bb95-794857e55a9c",
+    "notes": [
+        "SeaDataNet gridded climatologies are based on the SeaDataNet Temperature and Salinity historical data collection v1.1. For the Atlantic Ocean there are covering 2 European sea basins: North Arctic Ocean, and North Atlantic Ocean The preparation of the products has also improved the quality, the consistency and the overall coherence of the data made available by SeaDataNet. They have been computed using DIVA software."
+    ],
+    "oai_identifier": [
+        "8be095bf-10a1-5fad-bb95-794857e55a9c"
+    ],
+    "oai_set": "seadatanet",
+    "relatedIdentifier": [
+        "https://sextant.ifremer.fr/geonetwork/srv/api/records/639a97f9-b863-41a3-9b5f-604767356415/attachments/Atlantic_climato.png"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[-90,10],[-90,82],[65,82],[65,10],[-90,10]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Human Activities Ocean Observation Network"
+        },
+        {
+            "name": "Environmental monitoring facilities"
+        },
+        {
+            "name": "Products"
+        },
+        {
+            "name": "temperature"
+        },
+        {
+            "name": "salinity"
+        },
+        {
+            "name": "Temperature"
+        },
+        {
+            "name": "Salinity"
+        }
+    ],
+    "title": [
+        "SeaDataNet climatologies over the Atlantic Ocean"
+    ],
+    "url": "https://www.seadatanet.org/Data-Access"
+}

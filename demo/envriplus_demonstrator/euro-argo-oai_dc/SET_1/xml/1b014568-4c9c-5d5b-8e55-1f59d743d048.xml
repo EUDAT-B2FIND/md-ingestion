@@ -1,0 +1,44 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>8fa68a4d-d9d9-4057-baf8-dc68f2052d2b</dc:identifier>
+      <dc:date>2018-01-18T13:10:05</dc:date>
+      <dc:title>OceanSites, a worldwide system of deepwater reference station</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>/Physical Environment/Climatology</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>ITS-90 water temperature</dc:subject>
+      <dc:subject>Water body salinity</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Air humidity</dc:subject>
+      <dc:subject>Air temperature</dc:subject>
+      <dc:subject>Atmospheric pressure</dc:subject>
+      <dc:subject>Carbonate system</dc:subject>
+      <dc:subject>Chlorophyll-a and fluorescence</dc:subject>
+      <dc:subject>Currents</dc:subject>
+      <dc:subject>Nutrients</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Radiative fluxes</dc:subject>
+      <dc:subject>Rainfall</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Waves</dc:subject>
+      <dc:subject>Wind speed</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:modified>2012-08-28</dct:modified>
+      <dct:abstract>The mission of OceanSITES is to collect, deliver and promote the use of high-quality data from long-term, high-frequency observations at fixed locations in the open ocean. OceanSITES typically aim to collect multidisciplinary data worldwide from the full-depth water column as well as the overlying atmosphere.
+OceanSITES delivers high-quality data from long-term, high-frequency observations at fixed locations in the open ocean.</dct:abstract>
+      <dc:description>The mission of OceanSITES is to collect, deliver and promote the use of high-quality data from long-term, high-frequency observations at fixed locations in the open ocean. OceanSITES typically aim to collect multidisciplinary data worldwide from the full-depth water column as well as the overlying atmosphere.
+OceanSITES delivers high-quality data from long-term, high-frequency observations at fixed locations in the open ocean.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>copyright</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>OceanSITES delivers high-quality data from long-term, high-frequency observations at fixed locations in the open ocean.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>180 -85</ows:LowerCorner>
+        <ows:UpperCorner>-180 85</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="OceanSites web site" description="OceanSites web site">http://www.oceansites.org/</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-link--download" name="Coriolis GDAC FTP" description="Coriolis GDAC FTP">ftp://ftp.ifremer.fr/ifremer/oceansites/</dc:URI>
+      <dc:URI protocol="image/jpeg">https://sextant.ifremer.fr/geonetwork/srv/api/records/8fa68a4d-d9d9-4057-baf8-dc68f2052d2b/attachments/oceansites.jpg</dc:URI>
+    </csw:Record>

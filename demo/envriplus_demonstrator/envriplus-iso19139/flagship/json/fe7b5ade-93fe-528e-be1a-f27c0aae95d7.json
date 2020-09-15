@@ -1,0 +1,101 @@
+
+{
+    "author": [
+        "ICOS Ecosystem Thematic Centre @ University of Tuscia, Viterbo, Italy"
+    ],
+    "Contact": [
+        "Dario Papale;ICOS Ecosystem Thematic Centre @ University of Tuscia, Viterbo, Italy"
+    ],
+    "DOI": "",
+    "DiscHierarchy": [
+        "4.4.1",
+        "Geosciences",
+        "Atmospheric Sciences"
+        "4.4.6"
+        "Earth System Research"
+    ],
+    "Discipline": "Atmospheric Sciences","Environmental Research"
+    "Format": [
+        "text/csv; application/x-netcdf"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "",
+    "PublicationTimestamp": "2018-10-25T11:59:59Z",
+    "PublicationYear": [
+        "2017"
+    ],
+    "Publisher": [
+        "ICOS Carbon Portal @ Lund University, Lund, Sweden"
+    ],
+    "Contributor": [
+        "ICOS"
+    ],
+    "RelatedIdentifier": [
+        "http://doi.org/10.5281/zenodo.204817"
+    ],
+    "ResourceType": [
+        "Dataset series (INSPIRE); Collection (Dublin Core)"
+    ],
+    "Rights": [
+        "Creative Commons 4.0 CC-BY"
+    ],
+    "SpatialCoverage": [
+        "-20.0 35.0",
+        "35.0 75.0"
+    ],
+    "TemporalCoverage:BeginDate": "2017-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "",
+
+    "fulltext": "",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "fe7b5ade-93fe-528e-be1a-f27c0aae95d7",
+    "notes": [
+        "Near Real Time data is automated processed data. the ICOS Ecosystem station NRT data is Net Ecosystem Exchange CO2 flux and energy balance variables. The usually half-hourly data are quality checked and flagged following several standard processing schemes described by the ICOS protocol, including tilt correction, turbulent tests and friction velocity threshold. Data should be available within 10-30 days after actual measurement. Produced by the ICOS ETC (Ecosystem Thematic Centre)."
+    ],
+    "oai_identifier": [
+        "b73648f1-2f43-52c8-b4e4-f071f16f4e61"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "conditions"
+        },
+        {
+            "name": "INSPIRE"
+        },
+        {
+            "name": "Environmental"
+        },
+        {
+            "name": "monitoring"
+        },
+        {
+            "name": "facilities"
+        },
+        {
+            "name": "Meteorological features"
+        },
+        {
+            "name": "Athmospheric composition"
+        },
+        {
+            "name": "GEMET"
+        },
+        
+    ],
+    "title": [
+        "ICOS ecosystem near-realtime observational data"
+    ],
+    "url": "https://icos-cp.eu/"
+}

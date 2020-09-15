@@ -1,0 +1,54 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>6d17886e-b643-4db0-9ce5-60feb13337d8</dc:identifier>
+      <dc:date>2018-01-18T13:15:36</dc:date>
+      <dc:title>EMODnet Physics</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Monitoring</dc:subject>
+      <dc:subject>Integrators</dc:subject>
+      <dc:subject>Air humidity</dc:subject>
+      <dc:subject>Air temperature</dc:subject>
+      <dc:subject>Atmospheric pressure</dc:subject>
+      <dc:subject>Chlorophyll-a and fluorescence</dc:subject>
+      <dc:subject>Currents</dc:subject>
+      <dc:subject>Dissolved organic matter</dc:subject>
+      <dc:subject>Nitrous oxide</dc:subject>
+      <dc:subject>Nutrients</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Sea Level</dc:subject>
+      <dc:subject>Suspended particulates</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Transient tracers</dc:subject>
+      <dc:subject>Waves</dc:subject>
+      <dc:subject>Wind direction</dc:subject>
+      <dc:subject>Wind speed</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>temperature and salinity of the water column</dc:subject>
+      <dc:subject>atmospheric data at the sea level</dc:subject>
+      <dc:subject>sea ice coverage and sea level trends</dc:subject>
+      <dc:subject>light attenuation</dc:subject>
+      <dc:subject>horizontal velocity of the water column</dc:subject>
+      <dc:subject>sea surface currents</dc:subject>
+      <dc:subject>wave height and period</dc:subject>
+      <dc:subject>wind speed and direction</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>EMODnet Physics provides a combined array of services and functionalities to obtain free-of-charge data, meta-data and data products on the physical conditions of European sea basins and oceans as recorded by more than 20.000 platforms (fixed stations, surface loads, ARGOs, HF radars, etc.) The system provides full interoperability with third-party software through WMS services, Web Services and Web catalogues in order to exchange data and products according to the most recent standards. 
+EMODnet Physics builds on and is based on the cooperation and collaboration with the three established pillars of the European Oceanographic Community: 1) EuroGOOS and its Regional Operational Oceanographic Systems (ROOSs); 2) Copernicus Marine Environment Monitoring Service (CMEMS) , and in particular with the In Situ Thematic Assembly Center (INSTAC); 3) SeaDataNet network of National Oceanographic Data Centres (NODCs). Data are made available by EMODnet Physics, funded by the European Commission Directorate General for Maritime Affairs and Fisheries, in collaboration with Copernicus Marine Service (CMEMS) and EuroGOOS ROOSs INSTAC. Delayed mode data integrates the best available version of in situ data. These data are collected from national observing systems operated by EuroGOOS ROOS members, SeaDataNet NODCs completed by main global networks</dct:abstract>
+      <dc:description>EMODnet Physics provides a combined array of services and functionalities to obtain free-of-charge data, meta-data and data products on the physical conditions of European sea basins and oceans as recorded by more than 20.000 platforms (fixed stations, surface loads, ARGOs, HF radars, etc.) The system provides full interoperability with third-party software through WMS services, Web Services and Web catalogues in order to exchange data and products according to the most recent standards. 
+EMODnet Physics builds on and is based on the cooperation and collaboration with the three established pillars of the European Oceanographic Community: 1) EuroGOOS and its Regional Operational Oceanographic Systems (ROOSs); 2) Copernicus Marine Environment Monitoring Service (CMEMS) , and in particular with the In Situ Thematic Assembly Center (INSTAC); 3) SeaDataNet network of National Oceanographic Data Centres (NODCs). Data are made available by EMODnet Physics, funded by the European Commission Directorate General for Maritime Affairs and Fisheries, in collaboration with Copernicus Marine Service (CMEMS) and EuroGOOS ROOSs INSTAC. Delayed mode data integrates the best available version of in situ data. These data are collected from national observing systems operated by EuroGOOS ROOS members, SeaDataNet NODCs completed by main global networks</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The data are transmitted in near real time whenever it is possible. The data are then quality controlled and adjusted using water sample analysis.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="Access to Web GIS EMODnet Physics customized for AtlantOS">http://www.emodnet-physics.eu/atlantos</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="EMODnet physics - THREDDS Data server">http://thredds.emodnet-physics.eu/thredds/catalog.html</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="EMODnet physics - Web Map Services customized for AtlantOS">http://www.emodnet-physics.eu/atlantos/Service/GeoServerDefaultWMS.aspx</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="EMODnet physics - Web Feature Services customized for AtlantOS">http://www.emodnet-physics.eu/atlantos/Service/GeoServerDefaultWFS.aspx</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/api/records/6d17886e-b643-4db0-9ce5-60feb13337d8/attachments/emodnet.png</dc:URI>
+    </csw:Record>

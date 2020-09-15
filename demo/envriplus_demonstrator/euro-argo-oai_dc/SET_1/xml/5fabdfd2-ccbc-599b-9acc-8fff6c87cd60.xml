@@ -1,0 +1,44 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>b6642ffa-3a7c-4633-a404-3ba134aabc7d</dc:identifier>
+      <dc:date>2018-01-18T13:09:14</dc:date>
+      <dc:title>EurOBIS</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Integrators</dc:subject>
+      <dc:subject>Biology</dc:subject>
+      <dc:subject>occurrence</dc:subject>
+      <dc:subject>biota</dc:subject>
+      <dc:subject>benthos</dc:subject>
+      <dc:subject>plankton</dc:subject>
+      <dc:subject>birds</dc:subject>
+      <dc:subject>biodiversity</dc:subject>
+      <dc:subject>fish</dc:subject>
+      <dc:subject>flora</dc:subject>
+      <dc:subject>fauna</dc:subject>
+      <dc:subject>invertebrates</dc:subject>
+      <dc:subject>macroalgae</dc:subject>
+      <dc:subject>mammals</dc:subject>
+      <dc:subject>nekton</dc:subject>
+      <dc:subject>phytoplankton</dc:subject>
+      <dc:subject>plants</dc:subject>
+      <dc:subject>reptiles</dc:subject>
+      <dc:subject>zooplankton</dc:subject>
+      <dc:subject>biogeography</dc:subject>
+      <dc:subject>species</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The European Ocean Biogeographic Information System - EurOBIS - is an online marine biogeographic database compiling data on all living marine creatures. The principle aims of EurOBIS are to centralize the largely scattered biogeographic data on marine species collected by European institutions and to make these data freely available and easily accessible. All data go through a number of quality control procedures before they are made available online, assuring a minimum level of quality necessary to put the data to good use. The available data are either collected within European marine waters or by European researchers and institutes outside Europe. The database focuses on taxonomy and distribution records in space and time; all data can be searched and visualised through a set of online mapping tools. All data are freely available online and easily accessible, without requiring a login or password.</dct:abstract>
+      <dc:description>The European Ocean Biogeographic Information System - EurOBIS - is an online marine biogeographic database compiling data on all living marine creatures. The principle aims of EurOBIS are to centralize the largely scattered biogeographic data on marine species collected by European institutions and to make these data freely available and easily accessible. All data go through a number of quality control procedures before they are made available online, assuring a minimum level of quality necessary to put the data to good use. The available data are either collected within European marine waters or by European researchers and institutes outside Europe. The database focuses on taxonomy and distribution records in space and time; all data can be searched and visualised through a set of online mapping tools. All data are freely available online and easily accessible, without requiring a login or password.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>Data submitted to EurOBIS go through a series of quality control procedures before being made available online. An in-depth quality control of each contributing data record on three levels (taxonomy, geography and units) improves the quality of both the individual data source and of the integrated database as all inconsistencies or doubts are communicated with the data provider.
+This not only provides a strong added value for the data custodian, but also for the user: being able to access and use high-quality data controlled on different levels can lead to more reliable analyses.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="EurOBIS website" description="EurOBIS website">http://www.eurobis.eu/</dc:URI>
+      <dc:URI>https://sextant.ifremer.fr/geonetwork/srv/api/records/b6642ffa-3a7c-4633-a404-3ba134aabc7d/attachments/logo.PNG</dc:URI>
+    </csw:Record>

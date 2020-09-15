@@ -1,0 +1,53 @@
+{
+    "Contact": [
+        "\n            "
+    ],
+    "Contributor": "Norwegian Institute for Air Research | https://www.nilu.no/",
+    "DiscHierarchy": [],
+    "Discipline": "Not stated",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://ebasoai-test.nilu.no/oai?verb=GetRecord&metadataPrefix=iso19139&identifier=EBAS.ES1778R.20170123180000.20180520031117.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+    "PublicationTimestamp": "2018-05-20T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Rights": [
+        "http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx"
+    ],
+    "SpatialCoverage": "(2 N,42E)",
+    "author": [
+        "Alastuey, Andr\u00e9s"
+    ],
+    "fulltext": "EBAS.ES1778R.20170123180000.20180520031117.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;2018-08-07T12:45:14Z;EBASDCPCMETADATA;ENVRIplus flagship demonstrator catalog;EBAS.ES1778R.20170123180000.20180520031117.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2;eng;utf-8;not applicable;dataset;not applicable;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;custodian;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;custodian;Lund Myhre, Cathrine, Dr.;Norwegian Institute for Air Research (NILU);Senior Scientist, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8042;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;Cathrine.Lund.Myhre@nilu.no;http://actris.eu/;publisher;Torseth, Kjetil;Norwegian Institute for Air Research (NILU);Research Director, Dept. Atmospheric and Climate Research (ATMOS), Norwegian Institute for Air Research (NILU);+47 6389-8158;+47 6389-8050;Instituttveien 18;Kjeller;2007;Norway;kjetil.torseth@nilu.no;http://www.gaw-wdca.org;publisher;2018-09-28T00:40:36Z;ISO19115 / GAW-WDCA Profile;1.3;World Geodetic System;1984;WGS 84;Measurements of volume absorption coefficient in air due to dried aerosol particles at Montseny, Spain (20170123 - 20180101);2018-05-20;revision;1;2018-05-20;235207905.20180807124514;Alastuey, Andr\u00e9s;, , IDAEA-CSIC;Jordi Girona 18-26, Jordi Girona 18-26;08034;08034;Spain;andres.alastuey@idaea.csic.es;owner;Alastuey, Andr\u00e9s;, , IDAEA-CSIC;Jordi Girona 18-26, Jordi Girona 18-26;08034;08034;Spain;andres.alastuey@idaea.csic.es;originator;Alastuey, Andr\u00e9s;, , IDAEA-CSIC;Jordi Girona 18-26, Jordi Girona 18-26;08034;08034;Spain;andres.alastuey@idaea.csic.es;publisher;This service provides filter absorption photometer measurements of volume absorption coefficient in air due to dried aerosol particles observed at Montseny, Spain (20170123 - 20180101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/).;onGoing;atmosphericComposition;theme;WMO_CategoryCode;2004-01-30;publication;http://www.wmo.int/pages/prog/www/metadata/WMO-keywords.html;otherRestrictions;otherRestrictions;http://www.gaw-wdca.org/BrowseObtainData/tabid/2797/Default.aspx;grid;eng;utf-8;climatologyMeteorologyAtmosphere;time series of point measurements at surface;41.7667;41.7667;2.3500;2.3500;Spain;Montseny;2017-01-23Z;2018-01-01Z;710.0000;710.0000;volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles;physicalMeasurement;NASA Ames 1001;EBAS_1.1;15.0000;http://ebas.nilu.no/DataSets.aspx?stations=ES1778R&InstrumentTypes=filter_absorption_photometer&components=aerosol_absorption_coefficient&matrices=aerosol&fromDate=2017-01-23&toDate=2018-01-01;HTTP;Web-interface to relational data base.;download;dataset;Data collected according to instrument specific standard operating procedures, checked on import into data base.;Regularly calibrated by instrument operator, manually quality assured by instrument operator, boundary checked by data centre, outlier check by data centre.",
+    "group": "nilu",
+    "groups": [
+        {
+            "name": "nilu"
+        }
+    ],
+    "name": "74cd33e4-63da-5c0a-8763-6647733911fd",
+    "notes": [
+        "This service provides filter absorption photometer measurements of volume absorption coefficient in air due to dried aerosol particles observed at Montseny, Spain (20170123 - 20180101). The observations contain level 2 data. The time resolution is 1h. The observations are stored in the EBAS database (http://ebas.nilu.no/)."
+    ],
+    "oai_identifier": [
+        "EBAS.ES1778R.20170123180000.20180520031117.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2",
+        "EBAS.ES1778R.20170123180000.20180520031117.volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles.aerosol.1h.2"
+    ],
+    "oai_set": [
+        "EBASDCPCMETADATA",
+        "ENVRIplus flagship demonstrator catalog"
+    ],
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[41.7667,2.3500],[41.7667,2.3500],[41.7667,2.3500],[41.7667,2.3500],[41.7667,2.3500]]]}",
+    "state": "active",
+    "tags": [
+        {
+            "name": "atmosphericComposition"
+        }
+    ],
+    "title": [
+        "Measurements of volume absorption coefficient in air due to dried aerosol particles at Montseny, Spain (20170123 - 20180101)"
+    ],
+    "url": "http://ebas.nilu.no/DataSets.aspx?stations=ES1778R&InstrumentTypes=filter_absorption_photometer&components=aerosol_absorption_coefficient&matrices=aerosol&fromDate=2017-01-23&toDate=2018-01-01"
+}

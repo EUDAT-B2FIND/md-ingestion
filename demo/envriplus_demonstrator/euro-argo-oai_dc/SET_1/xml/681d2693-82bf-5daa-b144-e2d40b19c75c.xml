@@ -1,0 +1,43 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>b2f18ca3-2183-4843-b603-1996c72cf8a2</dc:identifier>
+      <dc:date>2018-01-18T13:07:14</dc:date>
+      <dc:title>ICES datasets from coordinated survey sampling of fish and plankton for the North East Atlantic Ocean</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Fish abundance</dc:subject>
+      <dc:subject>Population age structure</dc:subject>
+      <dc:subject>Fish biomass</dc:subject>
+      <dc:subject>Fish distribution</dc:subject>
+      <dc:subject>Zooplankton</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>ICES hosts data collected from both net trawl surveys (primarily bottom trawling), and from echo sounding (acoustic sampling in the pelagic zone). The net trawls are primarily hosted in the DATRAS data portal, and the acoustics in the acoustic trawl surveys portal.
+
+DATRAS (the Database of Trawl Surveys) stores data collected primarily from bottom trawl fish surveys coordinated by ICES expert groups. The survey data are covering the Baltic Sea, Skagerrak, Kattegat, North Sea, English Channel, Celtic Sea, Irish Sea, Bay of Biscay and the eastern Atlantic from the Shetlands to Gibraltar. At present, there are more than 45 years of continuous time series data in DATRAS, and survey data are continuously updated by national institutions.
+The acoustic database hosts information on fisheries observations collected from various pelagic surveys coordinated by ICES and falls into two categories: acoustic data, derived from readings taken on vessels, and those obtained through trawls in the open ocean &#8211; pelagic &#8211; zone. Combined, this provides key biological data on fish stocks such as herring, mackerel and blue whiting as well as krill and other prey species.
+
+The data from both systems are used for stock assessments and fish community studies by the ICES community and form the basis of management advice to the relevant regulatory bodies.</dct:abstract>
+      <dc:description>ICES hosts data collected from both net trawl surveys (primarily bottom trawling), and from echo sounding (acoustic sampling in the pelagic zone). The net trawls are primarily hosted in the DATRAS data portal, and the acoustics in the acoustic trawl surveys portal.
+
+DATRAS (the Database of Trawl Surveys) stores data collected primarily from bottom trawl fish surveys coordinated by ICES expert groups. The survey data are covering the Baltic Sea, Skagerrak, Kattegat, North Sea, English Channel, Celtic Sea, Irish Sea, Bay of Biscay and the eastern Atlantic from the Shetlands to Gibraltar. At present, there are more than 45 years of continuous time series data in DATRAS, and survey data are continuously updated by national institutions.
+The acoustic database hosts information on fisheries observations collected from various pelagic surveys coordinated by ICES and falls into two categories: acoustic data, derived from readings taken on vessels, and those obtained through trawls in the open ocean &#8211; pelagic &#8211; zone. Combined, this provides key biological data on fish stocks such as herring, mackerel and blue whiting as well as krill and other prey species.
+
+The data from both systems are used for stock assessments and fish community studies by the ICES community and form the basis of management advice to the relevant regulatory bodies.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The data are collected under coordinated survey protocols. These protocols, known as the Series of ICES Survey Protocols (SISPS) are available from the ICES website and provide a comprehensive description of the objectives of the sampling programme, spatial and temporal coverage of each survey, the sampling gear used, the sampling and observation methodology as well as any products derived from the sampling programme.</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>68.5 36</ows:LowerCorner>
+        <ows:UpperCorner>-44 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="Trawl survey data portal" description="Trawl survey data portal">http://gis.ices.dk/geonetwork/srv/eng/catalog.search#/metadata/68a3376b-c85c-4b4e-a6b8-8ebea73bb427</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Acoustic data portal meta data record" description="Acoustic data portal meta data record">http://gis.ices.dk/geonetwork/srv/eng/catalog.search#/metadata/8f4651a7-904c-4bac-95dc-414312f24527</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Survey protocols" description="Survey protocols">http://www.ices.dk/publications/library/Pages/default.aspx#Default=%7B%22k%22%3A%22%22%2C%22r%22%3A%5B%7B%22n%22%3A%22owstaxIdPublicationType%22%2C%22t%22%3A%5B%22string(%5C%22%230dc2b6e46-df87-4031-b86a-e61a0be3bdbd%5C%22)%22%5D%2C%22o%22%3A%22and%22%2C%22k%22%3Afalse%2C%22m%22%3Anull%7D%5D%7D</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/api/records/b2f18ca3-2183-4843-b603-1996c72cf8a2/attachments/ICES.png</dc:URI>
+    </csw:Record>

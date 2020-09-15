@@ -1,0 +1,99 @@
+{
+    "Contact": [
+        "http://www.iagos.org"
+    ],
+    "Contributor": [
+        "IAGOS"
+    ],
+    "DOI": "http://dx.doi.org/10.25326/06",
+    "DiscHierarchy": [
+        "4.4.1.3",
+        "Geosciences",
+        "Atmospheric Sciences", 
+        "Atmospheric chemistry"
+    ],
+    "Discipline": "Atmospheric chemistry",
+    "Format": [
+        "Nasa Ames",
+        "NetCDF"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos?verb=GetRecord&metadataPrefix=oai_dc&identifier=4b383073-20a8-5b74-8dfd-0af5a57415f4",
+    "PublicationTimestamp": "2018-09-06T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "IAGOS"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "restricted"
+    ],
+    "SpatialCoverage": [
+        "180.0 -44.0",
+        "-180.0 83.0"
+    ],
+    "fulltext": "575882c0-64ce-4648-bb19-00030d5d63af;2018-09-06T18:17:33.758+02:00;IAGOS Time series;dataset;Atmospheric chemistry > Nitrogen compounds > Nitrogen oxides;Atmospheric chemistry > Oxygen compounds > Ozone;Atmospheric winds;Atmospheric temperature;Atmospheric chemistry > Carbon and hydrocarbon compounds > Carbon dioxide;Atmospheric winds > Wind dynamics > Vorticity > Potential vorticity;Altitude > Planetary boundary layer height;Atmospheric temperature;Atmospheric chemistry > Nitrogen compounds > Nitrogen oxides;Atmospheric winds;Altitude > Barometric altitude;Atmospheric winds;Atmospheric temperature;Atmospheric chemistry > Nitrogen compounds > Nitrogen oxides;Atmospheric water vapor > Water vapor indicators > Humidity > Relative humidity;Atmospheric chemistry > Nitrogen compounds > Nitrogen oxides;Altitude > Geopotential height;Atmospheric winds > Wind dynamics > Vorticity > Potential vorticity;Atmospheric pressure > Static pressure;Platform characteristics > Airspeed/ground speed;Altitude > Planetary boundary layer height;Atmospheric water vapor > Water vapor indicators > Water vapor;Atmospheric temperature > Surface temperature > Potential temperature;Atmospheric chemistry > Carbon and hydrocarbon compounds > Carbon monoxide;Atmospheric chemistry > Carbon and hydrocarbon compounds > Methane;Atmospheric winds;Atmospheric winds > Wind dynamics > Vertical wind velocity/speed;Atmospheric pressure > Surface pressure;Atmospheric temperature;Platform characteristics > Airspeed/ground speed;Atmospheric conditions;IAGOS;SEDOO;AERIS;climatologyMeteorologyAtmosphere;Nasa Ames;NetCDF;This dataset provides all time series, each one matching a IAGOS flight. The dataset includes values of all species measured by IAGOS instrumentation with a time acquisition resolution of 4 seconds as well as meteorological fields provided by the aircraft or the ECMWF.;This dataset provides all time series, each one matching a IAGOS flight. The dataset includes values of all species measured by IAGOS instrumentation with a time acquisition resolution of 4 seconds as well as meteorological fields provided by the aircraft or the ECMWF.;restricted;eng;Data produced by the European Research Infrastructure IAGOS.;Nasa Ames;NetCDF;180.0 -44.0;-180.0 83.0;http://www.iagos.org;http://iagos-data.fr/#TimeseriesPlace:;http://dx.doi.org/10.25326/06;http://iagos-data.fr/images/logo_blue.png;http://iagos-data.fr/portal/rest/images/map:global:thumb",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "5b383073-20a8-5b74-8dfd-0af5a57415f4",
+    "notes": [
+        "This dataset provides all time series, each one matching a IAGOS flight. The dataset includes values of all species measured by IAGOS instrumentation with a time acquisition resolution of 4 seconds as well as meteorological fields provided by the aircraft or the ECMWF."
+    ],
+    "oai_identifier": [
+        "4b383073-20a8-5b74-8dfd-0af5a57415f4"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "chemistry"
+        },
+        {
+            "name": "Nitrogen"
+        },
+        {
+            "name": "compounds"
+        },
+        {
+            "name": "Nitrogen"
+        },
+        {
+            "name": "oxides"
+        },
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "chemistry"
+        },
+        {
+            "name": "Oxygen"
+        },
+        {
+            "name": "compounds"
+        },
+        {
+            "name": "Ozone"
+        },
+        {
+            "name": "Atmospheric"
+        }
+    ],
+    "title": [
+        "IAGOS Time series"
+    ],
+    "url": "http://iagos-data.fr/portal/rest/images/map:global:thumb"
+}

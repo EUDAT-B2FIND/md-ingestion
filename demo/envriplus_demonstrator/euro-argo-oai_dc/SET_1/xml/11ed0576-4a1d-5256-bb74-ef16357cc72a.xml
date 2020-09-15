@@ -1,0 +1,33 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>43a2dc55-1c49-4ecf-8d07-91a9a0eccff2</dc:identifier>
+      <dc:date>2018-04-12T14:18:31</dc:date>
+      <dc:title>EuroMapApp &#8211; Bathymetric integration and visualisation of European deep seafloor mapping results</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Physical Environment/Bathymetry/Digital Terrain Model</dc:subject>
+      <dc:subject>Elevation</dc:subject>
+      <dc:subject>Seafloor mapping</dc:subject>
+      <dc:subject>DTM</dc:subject>
+      <dc:subject>Bathymetry</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>Bottom depth</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>elevation</dc:subject>
+      <dc:format/>
+      <dct:abstract>The EuroMapApp task of the AtlantOS project aims to integrate Europe&#8217;s existing and future bathymetric data sets from the Atlantic Ocean into a seamless whole and put these results into a widely accessible format allowing immediate visualization of the seafloor for the specialist and non-specialist user alike. The partner institutions are GEOMAR, Ifremer, NIOZ, and NERC-BODC.</dct:abstract>
+      <dc:description>The EuroMapApp task of the AtlantOS project aims to integrate Europe&#8217;s existing and future bathymetric data sets from the Atlantic Ocean into a seamless whole and put these results into a widely accessible format allowing immediate visualization of the seafloor for the specialist and non-specialist user alike. The partner institutions are GEOMAR, Ifremer, NIOZ, and NERC-BODC.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>To be completed</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>6.62 -0.0026</ows:LowerCorner>
+        <ows:UpperCorner>-83.0149 68.6387</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="Access to National Centers for Environmental Information portal of NOAA" description="NCEI portal of NOAA">https://www.ngdc.noaa.gov</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Access to GeoMapApp" description="GeoMapApp">http://www.geomapapp.org/</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Access to EMODnet Bathymetry portal" description="EMODnet Bathymetry portal">http://www.emodnet-bathymetry.eu/</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="PANGAEA data publisher" description="PANGAEA data publisher">https://www.pangaea.de/?q=%40geomarBathymetryUnderway&amp;f.project%5B%5D=AtlantOS</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/api/records/43a2dc55-1c49-4ecf-8d07-91a9a0eccff2/attachments/EuroMapApp.png</dc:URI>
+    </csw:Record>

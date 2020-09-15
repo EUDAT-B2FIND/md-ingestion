@@ -1,0 +1,40 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>81117be9-7b90-4bab-9082-702301323028</dc:identifier>
+      <dc:date>2018-01-18T13:32:47</dc:date>
+      <dc:title>Sea Surface Salinity from Research Vessels and VOS (NRT &amp; DM)</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>/Physical Environment/Hydrodynamics/Water Column</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Salinity of the water column</dc:subject>
+      <dc:subject>Temperature of the water column</dc:subject>
+      <dc:subject>Networks</dc:subject>
+      <dc:subject>/Physical Oceanography/Salinity</dc:subject>
+      <dc:subject>CDS-IS-CORIOLIS</dc:subject>
+      <dc:subject>Observation system for research</dc:subject>
+      <dc:subject>Operational oceanography</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>GOSUD NetCDF</dc:format>
+      <dct:abstract>GOSUD aims at assembling in-situ observations of the world ocean surface collected by a variety of ships and at distributing quality controlled datasets.  At present time the variables considered by GOSUD are temperature and salinity.
+The GOSUD data are mostly collected using thermosalinographs (TSG) installed on research vessels, on commercial ships and in some cases on sailing exploration ships. GOSUD manages both near-real time (RT and NRT) data and delayed mode (DM-reprocessed) data.
+The GOSUD GDAC is hosted by the Coriolis data centre (France) and a back-up (permanent archived) is performed on a daily basis by NCEIS (NOAA's National Centers for Environmental Information).</dct:abstract>
+      <dc:description>GOSUD aims at assembling in-situ observations of the world ocean surface collected by a variety of ships and at distributing quality controlled datasets.  At present time the variables considered by GOSUD are temperature and salinity.
+The GOSUD data are mostly collected using thermosalinographs (TSG) installed on research vessels, on commercial ships and in some cases on sailing exploration ships. GOSUD manages both near-real time (RT and NRT) data and delayed mode (DM-reprocessed) data.
+The GOSUD GDAC is hosted by the Coriolis data centre (France) and a back-up (permanent archived) is performed on a daily basis by NCEIS (NOAA's National Centers for Environmental Information).</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights/>
+      <dc:language>eng</dc:language>
+      <dc:source>The GOSUD data are T &amp; S surface data acquired using thermosalinograph instruments on board R/V and Ships of opportunity.
+The data are transmitted in Near real time whenever it is possible.
+The data are then quality controlled and ajusted using water sample analysis.</dc:source>
+      <dc:format>GOSUD NetCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::WGS 84 (EPSG:4326)">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="GOSUD web site" description="GOSUD web site">http://www.gosud.org</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-link--download" name="Latest" description="Latest">ftp://ftp.ifremer.fr/ifremer/gosudv3/latest</dc:URI>
+      <dc:URI protocol="WWW:DOWNLOAD-1.0-link--download" name="Delayed mode" description="Delayed mode">ftp://ftp.ifremer.fr/ifremer/gosudv3/delayed_mode</dc:URI>
+      <dc:URI>https://sextant.ifremer.fr/geonetwork/srv/api/records/81117be9-7b90-4bab-9082-702301323028/attachments/Gosud_logo.PNG</dc:URI>
+    </csw:Record>

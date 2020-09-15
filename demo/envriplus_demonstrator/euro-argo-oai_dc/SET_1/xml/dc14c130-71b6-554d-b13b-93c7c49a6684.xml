@@ -1,0 +1,114 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>5e2d0ce0-a660-4665-8c43-a898162f53a0</dc:identifier>
+      <dc:date>2018-06-13T10:16:52</dc:date>
+      <dc:title>Global Ocean- In-Situ Near-Real-Time Observations</dc:title>
+      <dct:alternative>INSITU_GLO_NRT_OBSERVATIONS_013_030</dct:alternative>
+      <dc:type>series</dc:type>
+      <dc:subject href="http://rdfdata.eionet.europa.eu/inspirethemes/themes/28">Oceanographic geographical features</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/discipline#in-situ-observation">in-situ-observation</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CF14N7/">mass_concentration_of_chlorophyll_a_in_sea_water</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0517/">moles_of_oxygen_per_unit_mass_in_sea_water</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0375/">sea_surface_height_above_sea_level</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0331/">sea_water_salinity</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0335/">sea_water_temperature</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0336/">sea_water_x_velocity</dc:subject>
+      <dc:subject href="http://vocab.nerc.ac.uk/collection/P07/current/CFSN0337/">sea_water_y_velocity</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/temporal-scale#near-real-time">near-real-time</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/area-of-benefit#marine-safety">marine-safety</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/area-of-benefit#coastal-marine-environment">coastal-marine-environment</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/area-of-benefit#weather-climate-and-seasonal-forecasting">weather-climate-and-seasonal-forecasting</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/area-of-benefit#marine-resources">marine-resources</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/reference-geographical-area#global-ocean">global-ocean</dc:subject>
+      <dc:subject href="http://purl.org/myocean/ontology/vocabulary/processing-level#L2">Level 2</dc:subject>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject href=""/>
+      <dc:subject>oceans</dc:subject>
+      <dct:abstract>'''Short description: '''
+
+For the Global Ocean- The In Situ Thematic Assembly Centre (INS TAC) integrates near real-time in situ in situ observation data. These data are collected from main global networks (Argo, GOSUD, OceanSITES, GTS) completed by European data provided by EUROGOOS regional systems and national data providers assembled by the In Situ TAC regional components. The data are quality controlled using automated procedures and assessed using statistical analysis residuals. It is updated continuously and provides observations with 24-48 hours from acquisition in average. Acces through CMEMS Catalogue after registration: http://marine.copernicus.eu/   
+
+
+'''Detailed description:'''
+
+Ocean circulation models need information on the interior of the ocean to be able to generate accurate forecast. This information is only available from in-situ measurements. However this information is acquired all around the world and not easily accessible to operational users. Therefore, In Situ Thematic Assembly Centre (INS-TAC), by connecting to a lot of international networks, collects, controls and disseminates the relevant in-situ data to operational users and research community. It also integrates the in situ data collected by the regional components of the INS-TAC. The INS-TAC portal is updated continuously with the observations which have never been disseminated in previous release or have been updated. The latest month of data is available in the "latest" directory, while the data are then accumulated month by month on the same portal.
+
+
+'''Processing information:'''
+
+The product is the homogeneous aggregation of observation data coming from various in-situ sources, quality controlled according to standardized procedures that have been defined in collaboration with EUROGOOS, SeaDataNet and international programs such as Argo, GOSUD or OceanSITES. Duplicate observations have been removed. The data are coming from the following platforms:
+# Profile data from Argo profiling floats including Euro-Argo, CTD and XBT from research vessels or vessels of opportunity, mooring from OceanSITES including EuroSites and National systems, profiles from Gliders including EGO , from sea mammals as well as profile data from GTS (Global Telecommunication System in BUOY, BATHY and TESAC format).
+# along the track data from thermosalinograph European Ferrybox vessels, Argo profiling floats and drifting buoys .
+# Timeseries from fixed stations mainly in European seas
+# sea level from EUROGOOS ROOSesThe reference level of the measurements is immersion (in meters) or pressure (in decibars). The data are available in the same format on a unique portal develop jointly with EurOGOOS for the European Seas. 
+
+
+'''Quality/accuracy/calibration information:'''
+
+On each profile or underway data individual automatic tests (peak detection, ....) and statistical tests (comparison with climatology and neighbouring measurements) are performed. On doubtful data visual control by ocean experts is performed. As a result of these tests, quality control flags are assigned to each measurement and included in the product. The data format and Quality Control procedures for Temperature, Salinity, Current, Sea Level , and some biogeochemical parameters are documented at CMEMS INS-TAC Documentation.
+ 
+
+'''Suitability, Expected type of users / uses:'''
+
+The product is designed for assimilation into operational models operated by ocean forecasting centres or for scientists interested in near real time products. These users need data aggregated and quality controlled in a reliable and documented manner. As the different releases of the product are not archived by INS TAC, users have to manage their own in-situ data archive if they need it. Only the best copy of the data is archived at the INS TAC.</dct:abstract>
+      <dc:description>'''Short description: '''
+
+For the Global Ocean- The In Situ Thematic Assembly Centre (INS TAC) integrates near real-time in situ in situ observation data. These data are collected from main global networks (Argo, GOSUD, OceanSITES, GTS) completed by European data provided by EUROGOOS regional systems and national data providers assembled by the In Situ TAC regional components. The data are quality controlled using automated procedures and assessed using statistical analysis residuals. It is updated continuously and provides observations with 24-48 hours from acquisition in average. Acces through CMEMS Catalogue after registration: http://marine.copernicus.eu/   
+
+
+'''Detailed description:'''
+
+Ocean circulation models need information on the interior of the ocean to be able to generate accurate forecast. This information is only available from in-situ measurements. However this information is acquired all around the world and not easily accessible to operational users. Therefore, In Situ Thematic Assembly Centre (INS-TAC), by connecting to a lot of international networks, collects, controls and disseminates the relevant in-situ data to operational users and research community. It also integrates the in situ data collected by the regional components of the INS-TAC. The INS-TAC portal is updated continuously with the observations which have never been disseminated in previous release or have been updated. The latest month of data is available in the "latest" directory, while the data are then accumulated month by month on the same portal.
+
+
+'''Processing information:'''
+
+The product is the homogeneous aggregation of observation data coming from various in-situ sources, quality controlled according to standardized procedures that have been defined in collaboration with EUROGOOS, SeaDataNet and international programs such as Argo, GOSUD or OceanSITES. Duplicate observations have been removed. The data are coming from the following platforms:
+# Profile data from Argo profiling floats including Euro-Argo, CTD and XBT from research vessels or vessels of opportunity, mooring from OceanSITES including EuroSites and National systems, profiles from Gliders including EGO , from sea mammals as well as profile data from GTS (Global Telecommunication System in BUOY, BATHY and TESAC format).
+# along the track data from thermosalinograph European Ferrybox vessels, Argo profiling floats and drifting buoys .
+# Timeseries from fixed stations mainly in European seas
+# sea level from EUROGOOS ROOSesThe reference level of the measurements is immersion (in meters) or pressure (in decibars). The data are available in the same format on a unique portal develop jointly with EurOGOOS for the European Seas. 
+
+
+'''Quality/accuracy/calibration information:'''
+
+On each profile or underway data individual automatic tests (peak detection, ....) and statistical tests (comparison with climatology and neighbouring measurements) are performed. On doubtful data visual control by ocean experts is performed. As a result of these tests, quality control flags are assigned to each measurement and included in the product. The data format and Quality Control procedures for Temperature, Salinity, Current, Sea Level , and some biogeochemical parameters are documented at CMEMS INS-TAC Documentation.
+ 
+
+'''Suitability, Expected type of users / uses:'''
+
+The product is designed for assimilation into operational models operated by ocean forecasting centres or for scientists interested in near real time products. These users need data aggregated and quality controlled in a reliable and documented manner. As the different releases of the product are not archived by INS TAC, users have to manage their own in-situ data archive if they need it. Only the best copy of the data is archived at the INS TAC.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>license</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dc:source>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::">
+        <ows:LowerCorner>180.0 -90.0</ows:LowerCorner>
+        <ows:UpperCorner>-180.0 90.0</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:FTP" name="INSITU_GLO_NRT_OBSERVATIONS_013_030" description="FTP Download of INSITU_GLO_NRT_OBSERVATIONS_013_030">ftp://nrt.cmems-du.eu/Core/INSITU_GLO_NRT_OBSERVATIONS_013_030</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Access to view and download of the product" description="CMEMS access to product">http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&amp;view=details&amp;product_id=INSITU_GLO_NRT_OBSERVATIONS_013_030</dc:URI>
+      <dc:URI protocol="image/png" name="INSITU_GLO_NRT_OBSERVATIONS_013_030">http://marine.copernicus.eu/documents/IMG/INSITU_GLO_NRT_OBSERVATIONS_013_030.png</dc:URI>
+    </csw:Record>

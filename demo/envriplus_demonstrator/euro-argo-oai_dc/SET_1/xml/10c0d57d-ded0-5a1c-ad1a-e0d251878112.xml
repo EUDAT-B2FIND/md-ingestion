@@ -1,0 +1,63 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>c457e612-3e6a-4811-ae70-5ae48f940223</dc:identifier>
+      <dc:date>2018-01-18T13:09:23</dc:date>
+      <dc:title>In Situ Thematic Centre for Copernicus Marine Environment Monitoring Service</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>/Human Activities/Ocean Observation Network</dc:subject>
+      <dc:subject>Environmental monitoring facilities</dc:subject>
+      <dc:subject>Integrators</dc:subject>
+      <dc:subject>Monitoring</dc:subject>
+      <dc:subject>temperature and salinity of the water column</dc:subject>
+      <dc:subject>wave height and period</dc:subject>
+      <dc:subject>sea surface currents</dc:subject>
+      <dc:subject>horizontal velocity of the water column</dc:subject>
+      <dc:subject>sea level</dc:subject>
+      <dc:subject>biogeochemecal parameters</dc:subject>
+      <dc:subject>Chlrophill-a</dc:subject>
+      <dc:subject>fluorescence</dc:subject>
+      <dc:subject>oxygen</dc:subject>
+      <dc:subject>bbp</dc:subject>
+      <dc:subject>irradiance</dc:subject>
+      <dc:subject>nitrate</dc:subject>
+      <dc:subject>pH</dc:subject>
+      <dc:subject>Air temperature</dc:subject>
+      <dc:subject>Air humidity</dc:subject>
+      <dc:subject>Atmospheric pressure</dc:subject>
+      <dc:subject>Chlorophyll-a and fluorescence</dc:subject>
+      <dc:subject>Currents</dc:subject>
+      <dc:subject>Dissolved organic matter</dc:subject>
+      <dc:subject>Nitrous oxide</dc:subject>
+      <dc:subject>Nutrients</dc:subject>
+      <dc:subject>Oxygen</dc:subject>
+      <dc:subject>Salinity</dc:subject>
+      <dc:subject>Suspended particulates</dc:subject>
+      <dc:subject>Sea Level</dc:subject>
+      <dc:subject>Transient tracers</dc:subject>
+      <dc:subject>Temperature</dc:subject>
+      <dc:subject>Waves</dc:subject>
+      <dc:subject>Wind direction</dc:subject>
+      <dc:subject>Wind speed</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format/>
+      <dct:abstract>The in-situ TAC integrates and quality control in a homogeneous manner in situ data from outside Copernicus Marine Environment Monitoring Service (CMEMS) data providers to fit the needs of internal and external users. It provides access to integrated datasets of core parameters for initialization, forcing, assimilation and validation of ocean numerical models which are used for forecasting, analysis and re-analysis of ocean physical and biogeochemical conditions. The in-situ TAC comprises a global in-situ centre and 6 regional in-situ centres (one for each EuroGOOS ROOSs). The focus of the CMEMS in-situ TAC is on parameters that are presently necessary for Copernicus Monitoring and Forecasting Centres namely temperature, salinity, sea level, current, waves, chlorophyll / fluorescence, oxygen and nutrients. The initial focus has been on observations from autonomous observatories at sea (e.g. floats, buoys, gliders, ferrybox, drifters, and ships of opportunity). The second objective was to integrate products over the past 25 to 50 years for re-analysis purposes...  Gathering data from outsider organisations requires strong mutual agreements. Integrating data into ONE data base requires strong format standard definition and quality control procedures. The complexity of handling in situ observation depends not only on the wide range of sensors that have been used to acquire them but, in addition to that, the different operational behaviour of the platforms (i.e vessels allow on board human supervision, while the supervision of others should be put off until recovering or message/ping reception)&#176;</dct:abstract>
+      <dc:description>The in-situ TAC integrates and quality control in a homogeneous manner in situ data from outside Copernicus Marine Environment Monitoring Service (CMEMS) data providers to fit the needs of internal and external users. It provides access to integrated datasets of core parameters for initialization, forcing, assimilation and validation of ocean numerical models which are used for forecasting, analysis and re-analysis of ocean physical and biogeochemical conditions. The in-situ TAC comprises a global in-situ centre and 6 regional in-situ centres (one for each EuroGOOS ROOSs). The focus of the CMEMS in-situ TAC is on parameters that are presently necessary for Copernicus Monitoring and Forecasting Centres namely temperature, salinity, sea level, current, waves, chlorophyll / fluorescence, oxygen and nutrients. The initial focus has been on observations from autonomous observatories at sea (e.g. floats, buoys, gliders, ferrybox, drifters, and ships of opportunity). The second objective was to integrate products over the past 25 to 50 years for re-analysis purposes...  Gathering data from outsider organisations requires strong mutual agreements. Integrating data into ONE data base requires strong format standard definition and quality control procedures. The complexity of handling in situ observation depends not only on the wide range of sensors that have been used to acquire them but, in addition to that, the different operational behaviour of the platforms (i.e vessels allow on board human supervision, while the supervision of others should be put off until recovering or message/ping reception)&#176;</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>license</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>For the Near Real Time products generated by the CMEMS INSTAC the  data are transmitted within 24hours to a week from acquisition depending of the plaftforms and networks . Thses data are assessed using automated procedure that are 
+&#8226;	Recommendations for in-situ data Near Real Time Quality Control http://doi.org/10.13155/36230
+&#8226;	Copernicus In Situ TAC, Real Time Quality Control for WAVES: http://doi.org/10.13155/46607
+&#8226;	Real Time Quality Control of biogeochemical measurements: http://doi.org/10.13155/36232
+.
+For the products elaborated for re-analysis activities ( Mainly Temperature and Salinity parameters ) they are assessed using both statistical methods that allow to check their consistency with the neighbour measurements and the outliers are checked by scientists that are able to determine if it&#8217;s a real oceanographic feature or a sensor anomaly( drift or offset) Suspicious measurements are fllgged as bad . .</dc:source>
+      <dc:format/>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="CMEMS web site">http://marine.copernicus.eu</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Access to observation collections : INS-CORIOLIS-GLO-NRT-OBS_*" description="Oceanotron services for OGC/WMS, WFS, SOS and Opendap">http://www.ifremer.fr/oceanotron/</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="Service for WMS and OPENDAP access to gridded analysis" description="THREDDS Data Server">http://tds0.ifremer.fr/thredds/CORIOLIS-GLOBAL-CORA-OBS/CORIOLIS-GLOBAL-CORA-OBS.html</dc:URI>
+      <dc:URI protocol="WWW:LINK" name="CMEMS INS TAC Dashboard" description="CMEMS INS TAC Dashboard">http://www.marineinsitu.eu/dashboard/</dc:URI>
+      <dc:URI protocol="image/png">https://sextant.ifremer.fr/geonetwork/srv/api/records/c457e612-3e6a-4811-ae70-5ae48f940223/attachments/cmems_insitu.png</dc:URI>
+    </csw:Record>

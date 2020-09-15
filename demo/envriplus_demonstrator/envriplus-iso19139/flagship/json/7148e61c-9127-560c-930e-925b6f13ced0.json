@@ -1,0 +1,80 @@
+{
+    "Contact": [
+        "http://www.iagos.org"
+    ],
+    "Contributor": [
+        "IAGOS"
+    ],
+    "DOI": "http://dx.doi.org/10.25326/4",
+    "DiscHierarchy": [
+        "4.4.1",
+        "Geosciences",
+        "Atmospheric Sciences",
+        "Atmospheric chemistry"
+    ],
+    "Discipline": "Atmospheric chemistry",
+    "Format": [
+        "CSV"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos?verb=GetRecord&metadataPrefix=oai_dc&identifier=7148e61c-9127-560c-930e-925b6f13ced0",
+    "PublicationTimestamp": "2018-09-06T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "IAGOS"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "restricted"
+    ],
+    "SpatialCoverage": [
+        "180.0 -90.0",
+        "-180.0 90.0"
+    ],
+    "fulltext": "a9b2506a-c606-49c7-b387-1d722c69fa03;2018-09-06T18:17:39.700+02:00;IAGOS PBL-referenced profiles of O3 and CO;dataset;Atmospheric conditions;IAGOS;SEDOO;AERIS;climatologyMeteorologyAtmosphere;CSV;The climatological vertical stratification of ozone (O3) and carbon monoxide (CO) within the planetary boundary layer (PBL) and at the interface with free troposphere (FT) was derived using all IAGOS (In-service Aircraft for a Global Observing System) and WOUDC (World Ozone and Ultraviolet Radiation Data Centre) vertical profiles available at northern mid-latitudes (25\u00b0N-60\u00b0N) between August 1994 and December 2016 (Petetin et al., 2018).\n\nThe methodology is the following :\n1) All profiles with a surface-based temperature inversion (i.e. increase of temperature with altitude starting from the surface) are discarded. \n2) All remaining profiles are then interpolated on a fixed vertical grid of 50 m vertical resolution between 0 and 4 km above ground level (i.e. 80 altitude levels). For each of these profiles, the PBL height is estimated as the base altitude of the first elevated temperature inversion (i.e. the altitude level above which temperature starts to increase with altitude). An upper limit of 4 km is fixed for the PBL height. In order to reduce uncertainties associated with data gaps, we discarded (i) all profiles with more than 25% of missing temperature data between 0 and 4 km (i.e. cumulated data gaps larger than 0.25x4000=2000 m), and/or (ii) all profiles with more than 4 missing data between the surface and the estimated PBL height (i.e. cumulated data gaps larger than 4x50=200 m). \n3) The profiles are expressed in the z/h vertical coordinate system where z is the altitude and h the PBL height estimate. O3 and CO mixing ratios are interpolated along z/h values ranging between 0 (the surface) and 2 (two times the PBL height) with a vertical resolution of of 0.05 (i.e. 40 altitude levels). All profiles with missing O3 or CO data are discarded. Then all the remaining profiles are averaged, which gives the so-called PBL-referenced profiles. This is done for the different seasons (DJF : December-January-February, MAM : March-April-May, JJA : June-July-August, SON : September-October-November, ANN : annual) and times of day (night\u00a0: sunset to sunrise, morning\u00a0: sunrise to solar noon, midday\u00a0: solar noon to 3 h past solar noon, afternoon\u00a0: 3 h past solar noon to sunset, daytime\u00a0: sunrise to sunset, all\u00a0: the whole day).\n\nA more complete description of the methodology as well as an analysis of the results is available in the reference paper of Petetin et al. (2018).\n\nL4 IAGOS PBL-referenced profiles are available on the IAGOS data portal (http://iagos-data.fr) and are part of the IAGOS ancillary data. They are subject to the IAGOS data protocol.;The climatological vertical stratification of ozone (O3) and carbon monoxide (CO) within the planetary boundary layer (PBL) and at the interface with free troposphere (FT) was derived using all IAGOS (In-service Aircraft for a Global Observing System) and WOUDC (World Ozone and Ultraviolet Radiation Data Centre) vertical profiles available at northern mid-latitudes (25\u00b0N-60\u00b0N) between August 1994 and December 2016 (Petetin et al., 2018).\n\nThe methodology is the following :\n1) All profiles with a surface-based temperature inversion (i.e. increase of temperature with altitude starting from the surface) are discarded. \n2) All remaining profiles are then interpolated on a fixed vertical grid of 50 m vertical resolution between 0 and 4 km above ground level (i.e. 80 altitude levels). For each of these profiles, the PBL height is estimated as the base altitude of the first elevated temperature inversion (i.e. the altitude level above which temperature starts to increase with altitude). An upper limit of 4 km is fixed for the PBL height. In order to reduce uncertainties associated with data gaps, we discarded (i) all profiles with more than 25% of missing temperature data between 0 and 4 km (i.e. cumulated data gaps larger than 0.25x4000=2000 m), and/or (ii) all profiles with more than 4 missing data between the surface and the estimated PBL height (i.e. cumulated data gaps larger than 4x50=200 m). \n3) The profiles are expressed in the z/h vertical coordinate system where z is the altitude and h the PBL height estimate. O3 and CO mixing ratios are interpolated along z/h values ranging between 0 (the surface) and 2 (two times the PBL height) with a vertical resolution of of 0.05 (i.e. 40 altitude levels). All profiles with missing O3 or CO data are discarded. Then all the remaining profiles are averaged, which gives the so-called PBL-referenced profiles. This is done for the different seasons (DJF : December-January-February, MAM : March-April-May, JJA : June-July-August, SON : September-October-November, ANN : annual) and times of day (night\u00a0: sunset to sunrise, morning\u00a0: sunrise to solar noon, midday\u00a0: solar noon to 3 h past solar noon, afternoon\u00a0: 3 h past solar noon to sunset, daytime\u00a0: sunrise to sunset, all\u00a0: the whole day).\n\nA more complete description of the methodology as well as an analysis of the results is available in the reference paper of Petetin et al. (2018).\n\nL4 IAGOS PBL-referenced profiles are available on the IAGOS data portal (http://iagos-data.fr) and are part of the IAGOS ancillary data. They are subject to the IAGOS data protocol.;restricted;eng;Data produced by the European Research Infrastructure IAGOS.;CSV;180.0 -90.0;-180.0 90.0;http://www.iagos.org;http://iagos-data.fr/#CMSConsultPlace:PBL_PROFILES;http://dx.doi.org/10.25326/4;http://iagos-data.fr/images/logo_blue.png;http://iagos-data.fr/portal/rest/images/map:global:thumb;http://iagos-data.fr/portal/rest/image/storedById/6990116025497246148;http://iagos-data.fr/portal/rest/image/storedById/4641718511330911523",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "7148e61c-9127-560c-930e-925b6f13ced0",
+    "notes": [
+        "The climatological vertical stratification of ozone (O3) and carbon monoxide (CO) within the planetary boundary layer (PBL) and at the interface with free troposphere (FT) was derived using all IAGOS (In-service Aircraft for a Global Observing System) and WOUDC (World Ozone and Ultraviolet Radiation Data Centre) vertical profiles available at northern mid-latitudes (25\u00b0N-60\u00b0N) between August 1994 and December 2016 (Petetin et al., 2018).\n\nThe methodology is the following :\n1) All profiles with a surface-based temperature inversion (i.e. increase of temperature with altitude starting from the surface) are discarded. \n2) All remaining profiles are then interpolated on a fixed vertical grid of 50 m vertical resolution between 0 and 4 km above ground level (i.e. 80 altitude levels). For each of these profiles, the PBL height is estimated as the base altitude of the first elevated temperature inversion (i.e. the altitude level above which temperature starts to increase with altitude). An upper limit of 4 km is fixed for the PBL height. In order to reduce uncertainties associated with data gaps, we discarded (i) all profiles with more than 25% of missing temperature data between 0 and 4 km (i.e. cumulated data gaps larger than 0.25x4000=2000 m), and/or (ii) all profiles with more than 4 missing data between the surface and the estimated PBL height (i.e. cumulated data gaps larger than 4x50=200 m). \n3) The profiles are expressed in the z/h vertical coordinate system where z is the altitude and h the PBL height estimate. O3 and CO mixing ratios are interpolated along z/h values ranging between 0 (the surface) and 2 (two times the PBL height) with a vertical resolution of of 0.05 (i.e. 40 altitude levels). All profiles with missing O3 or CO data are discarded. Then all the remaining profiles are averaged, which gives the so-called PBL-referenced profiles. This is done for the different seasons (DJF : December-January-February, MAM : March-April-May, JJA : June-July-August, SON : September-October-November, ANN : annual) and times of day (night\u00a0: sunset to sunrise, morning\u00a0: sunrise to solar noon, midday\u00a0: solar noon to 3 h past solar noon, afternoon\u00a0: 3 h past solar noon to sunset, daytime\u00a0: sunrise to sunset, all\u00a0: the whole day).\n\nA more complete description of the methodology as well as an analysis of the results is available in the reference paper of Petetin et al. (2018).\n\nL4 IAGOS PBL-referenced profiles are available on the IAGOS data portal (http://iagos-data.fr) and are part of the IAGOS ancillary data. They are subject to the IAGOS data protocol."
+    ],
+    "oai_identifier": [
+        "7148e61c-9127-560c-930e-925b6f13ced0"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "conditions"
+        },
+        {
+            "name": "IAGOS"
+        },
+        {
+            "name": "SEDOO"
+        },
+        {
+            "name": "AERIS"
+        },
+        {
+            "name": "climatologyMeteorologyAtmosphere"
+        }
+    ],
+    "title": [
+        "IAGOS PBL-referenced profiles of O3 and CO"
+    ],
+    "url": "http://iagos-data.fr/portal/rest/image/storedById/4641718511330911523"
+}

@@ -1,0 +1,93 @@
+{
+    "Contact": [
+        "Johannes Peterseil", 
+        "johannes.peterseil@umweltbundesamt.at"
+    ],
+    "Contributor": [
+        "eLTER"
+    ],
+    "DOI": "",
+    "DiscHierarchy": [
+        "4.4.7.1",
+        "Environmental Research",
+        "Environmental Monitoring"
+    ],
+    "Discipline": "Environmental Monitoring",
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "",
+    "PID": "",
+    "PublicationTimestamp": "2018-09-29T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "LTER Europe"
+    ],
+    "RelatedIdentifier": [
+        "https://deims.org"
+    ],
+    "ResourceType": [
+        "dataproduct"
+    ],
+    "Rights": [
+        "The principal: Administration has granted the access and use permission: Free access and use", 
+        "The principal: Research has granted the access and use permission: Free for access",
+        "The principal: Public has granted the access and use permission: Free for access"
+    ],
+    "SpatialCoverage": [
+        "-11.14844",
+        "37.01562",
+        "27.74218",
+        "73.44531"
+    ],
+    "author": [
+        ""
+    ],
+    "fulltext": "",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "e9e67221-eb00-55b2-8477-93e137bb5bba",
+    "notes": [
+        "The data product vegetation encompasses biodiversity data from a range of LTER sites in Europe. The result from vegetation survey data covering frequency plots following the UNECE IM protocol. For frequency plots 5 × 5 m areas were used with replicates at each LTER sites. Within each of these areas, vegetation was recorded on two permanently marked 0.5 × 0.5 m subplots. For each subplot, the percentage ground cover of every vascular plant was determined. Harmonisation of species names was done with the R-package TLP was used"
+    ],
+    "oai_identifier": [
+        "e9ae49a2-a116-565a-a232-ea84d19198dd"
+    ],
+    "oai_set": "full",
+    "spatial": "{\"type\":\"Polygon\",\"coordinates\":[[[4.520980000000,51.307100000000],[4.520980000000,51.309300000000],[4.518670000000,51.309300000000],[4.518670000000,51.307100000000],[4.520980000000,51.307100000000]]]}",
+    "TempCoverageBegin": 62940193199,
+    "TempCoverageEnd": 62940193199,
+    "TemporalCoverage:BeginDate": "1992-01-01T11:59:59Z",
+    "TemporalCoverage:EndDate": "2017-12-31T11:59:59Z",
+    "state": "active",
+    "tags": [
+        {
+            "name": "terrestrial vegetation"
+        },
+        {
+            "name": "frequency plots"
+        },
+        {
+            "name": "vegetation"
+        },
+        {
+            "name": "eLTER VA DataProduct"
+        },
+        {
+            "name": "dataproduct"
+        },
+        {
+            "name": "ENVRIplus"
+        }
+    ],
+    "title": [
+        "eLTER Dataproduct Vegetation"
+    ],
+    "url": "https://docs.umweltbundesamt.at/s/tDBSZztzgW3cMxy"
+}

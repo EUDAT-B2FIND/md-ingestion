@@ -1,0 +1,98 @@
+{
+    "Contact": [
+        "http://www.iagos.org"
+    ],
+    "Contributor": [
+        "IAGOS"
+    ],
+    "DOI": "http://dx.doi.org/10.25326/08",
+    "DiscHierarchy": [
+        "4.4.1",
+        "Geosciences",
+        "Atmospheric Sciences",
+        "Atmospheric chemistry"
+    ],
+    "Discipline": "Atmospheric chemistry",
+    "Format": [
+        "NetCDF"
+    ],
+    "Language": [
+        "English"
+    ],
+    "MetaDataAccess": "http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos?verb=GetRecord&metadataPrefix=oai_dc&identifier=22c3ef58-9355-5825-8950-765b050e7018",
+    "PublicationTimestamp": "2018-09-06T11:59:59Z",
+    "PublicationYear": [
+        "2018"
+    ],
+    "Publisher": [
+        "IAGOS"
+    ],
+    "ResourceType": [
+        "dataset"
+    ],
+    "Rights": [
+        "restricted"
+    ],
+    "SpatialCoverage": [
+        "180.0 -44.0",
+        "-180.0 83.0"
+    ],
+    "fulltext": "95941ca3-7251-4bed-877a-d2a99fb719cc;2018-09-06T18:17:37.253+02:00;IAGOS Climatologies;dataset;Atmospheric chemistry > Oxygen compounds > Ozone;Atmospheric chemistry > Carbon and hydrocarbon compounds > Carbon monoxide;Atmospheric conditions;IAGOS;SEDOO;AERIS;climatologyMeteorologyAtmosphere;NetCDF;This dataset provides climatologies for ozone and carbon monoxyde over a decade (2001-2010). Two types of climatologies are available: with 10 fixed pressure levels (from 288 hPa to 186 hPa) or with 4 dynamic pressure levels (lower stratosphere, upper statisphere, tropopause, upper troposphere).;This dataset provides climatologies for ozone and carbon monoxyde over a decade (2001-2010). Two types of climatologies are available: with 10 fixed pressure levels (from 288 hPa to 186 hPa) or with 4 dynamic pressure levels (lower stratosphere, upper statisphere, tropopause, upper troposphere).;restricted;eng;Data produced by the European Research Infrastructure IAGOS.;NetCDF;180.0 -44.0;-180.0 83.0;http://www.iagos.org;http://www.iagos-data.fr;http://dx.doi.org/10.25326/08;http://iagos-data.fr/images/logo_blue.png;http://iagos-data.fr/portal/rest/images/map:global:thumb",
+    "group": "envriplus",
+    "groups": [
+        {
+            "name": "envriplus"
+        }
+    ],
+    "name": "22c3ef58-9355-5825-8950-765b050e7018",
+    "notes": [
+        "This dataset provides climatologies for ozone and carbon monoxyde over a decade (2001-2010). Two types of climatologies are available: with 10 fixed pressure levels (from 288 hPa to 186 hPa) or with 4 dynamic pressure levels (lower stratosphere, upper statisphere, tropopause, upper troposphere)."
+    ],
+    "oai_identifier": [
+        "22c3ef58-9355-5825-8950-765b050e7018"
+    ],
+    "oai_set": "",
+    "state": "active",
+    "tags": [
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "chemistry"
+        },
+        {
+            "name": "Oxygen"
+        },
+        {
+            "name": "compounds"
+        },
+        {
+            "name": "Ozone"
+        },
+        {
+            "name": "Atmospheric"
+        },
+        {
+            "name": "chemistry"
+        },
+        {
+            "name": "Carbon"
+        },
+        {
+            "name": "hydrocarbon"
+        },
+        {
+            "name": "compounds"
+        },
+        {
+            "name": "Carbon"
+        },
+        {
+            "name": "monoxide"
+        }
+    ],
+    "title": [
+        "IAGOS Climatologies"
+    ],
+    "url": "http://iagos-data.fr/portal/rest/images/map:global:thumb"
+}
