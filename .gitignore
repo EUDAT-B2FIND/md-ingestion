@@ -1,6 +1,5 @@
 communities/
 oaidata/
-harvest_list
 log/
 *.log
 DONE/
@@ -11,9 +10,7 @@ B2FIND.pyc
 *.pyc
 *~
 envriplus_demonstrator/*
-oldstuff/*
 community_list
-oaidata_old/*
 results*.txt
 *.crt
 __pycache__/
