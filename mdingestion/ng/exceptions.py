@@ -27,5 +27,13 @@ class OAISetNotSupported(HarvesterError):
     message = "OAI set not supported by OAI service."
 
 
+class MappingError(B2FError):
+    message = "Mapping raised an error"
+
+
+class GeometryNotValid(MappingError):
+    message = "Geometry could not be mapped"
+
+
 class UserInfo(Exception):
     pass

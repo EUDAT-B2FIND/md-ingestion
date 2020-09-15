@@ -31,7 +31,7 @@ class FGDCReader(XMLReader):
         # doc.version = self.find('metadata.version')
         doc.temporal_coverage_begin_date = self.find('begdate')
         doc.temporal_coverage_end_date = self.find('enddate')
-        doc.geometry = self.geometry()
+        doc.geometry = self.find_geometry()
         # doc.places = self.find('placekt')
 
     def geometry(self):

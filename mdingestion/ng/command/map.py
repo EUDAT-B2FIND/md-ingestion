@@ -13,7 +13,7 @@ class Map(Command):
     def __init__(self, **args):
         super().__init__(**args)
         self.walker = Walker(self.outdir)
-        self.reader = reader(self.community, self.mdprefix)
+        self.reader = reader(self.community, self.mdprefix)()
         self.writer = None
 
     def run(self, format=format, force=False, linkcheck=True, limit=None):
@@ -27,6 +27,7 @@ class Map(Command):
         for filename in tqdm(self.walk(), ascii=True, desc=f"Map to {format}", unit=' records', total=limit):
             if limit > 0 and count >= limit:
                 break
+            logging.info(f'mapping {filename}')
             doc = self.map(filename)
             is_valid = validator.validate(doc)
             if force or is_valid:
@@ -36,6 +37,7 @@ class Map(Command):
                 logging.warning(f"validation failed: {filename}")
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
+        validator.summary['_errors_'] = self.reader.errors
         validator.print_summary()
         validator.write_summary(self.writer.outdir)
 
@@ -48,7 +50,6 @@ class Map(Command):
             yield filename
 
     def map(self, filename):
-        reader = self.reader()
-        doc = reader.read(filename, self.url, self.community, self.mdprefix)
+        doc = self.reader.read(filename, self.url, self.community, self.mdprefix)
         logging.info(f'map: community={self.community}, mdprefix={self.mdprefix}, file={filename}')
         return doc
