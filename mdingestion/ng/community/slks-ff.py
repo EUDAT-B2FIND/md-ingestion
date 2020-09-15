@@ -13,3 +13,6 @@ class SLKSFF(FFReader):
         doc.rights = 'For scientific use'
         doc.contact = 'post@slks.dk'
         doc.language = 'Danish'
+        keywords = doc.keywords
+        keywords.append('EOSC Nordic')
+        keywords.append('Viking Age')

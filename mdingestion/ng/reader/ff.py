@@ -31,11 +31,20 @@ class FFReader(XMLReader):
         # doc.format = self.find('format')
         # doc.size = self.find('size')
         # doc.version = self.find('metadata.version')
-        doc.temporal_coverage = self.find('primaryObject.mainPeriod')
+        doc.temporal_coverage = self.temporal_coverage()
         doc.temporal_coverage_begin_date = self.find('primaryObject.date.fromYear')
         doc.temporal_coverage_end_date = self.find('primaryObject.date.toYear')
         doc.geometry = self.find_geometry()
         doc.places = self.find('geoLocationPlace')
+
+    def temporal_coverage(self):
+        from_year = format_value(self.find('primaryObject.date.fromYear'), one=True)
+        to_year = format_value(self.find('primaryObject.date.toYear'), one=True)
+        main_period = format_value(self.find('primaryObject.mainPeriod'), one=True)
+        period = format_value(self.find('primaryObject.period.publicTerm'), one=True)
+        coverage = f"{from_year} - {to_year}; {period}; {main_period}"
+        return coverage
+
 
     def geometry(self):
         """
