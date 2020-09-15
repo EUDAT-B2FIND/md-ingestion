@@ -10,7 +10,7 @@ from .util import remove_duplicates_from_list
 
 import logging
 
-CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'mapfiles')
+CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'etc')
 
 
 def tokenize(text):
