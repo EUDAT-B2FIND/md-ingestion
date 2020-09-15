@@ -32,4 +32,4 @@ def test_pangaea_bbox():
     reader = PangaeaDatacite()
     doc = reader.read(xmlfile, url='https://ws.pangaea.de/oai/provider', community='pangaea', mdprefix='datacite4')
     assert 'https://doi.org/10.1594/PANGAEA.557786' == doc.doi
-    assert '(0.0W, 78.0S, 7.5E, 80.0N); Fram Strait' == doc.spatial_coverage
+    assert '(7.5W, 0.0S, 80.0E, 78.0N); Fram Strait' == doc.spatial_coverage
