@@ -7,7 +7,7 @@ from mdingestion.ng.reader import DublinCoreReader
 from tests.common import TESTDATA_DIR
 
 
-def test_dc_slks():
+def test_dc_slks_point():
     point_file = os.path.join(TESTDATA_DIR, 'slks-oai_dc', 'SET_1', 'xml', 'point_a937f99e-da2a-5c39-ac8d-37e3b0c7e6bd.xml')  # noqa
     reader = DublinCoreReader()
     doc = reader.read(point_file)
@@ -28,7 +28,7 @@ def test_dc_slks():
     assert 'Dataset' in doc.resource_type
     assert 'Various' in doc.discipline
     # assert '???' in doc.format
-    # assert 'POINT (9.811246000000001 56.302585)' == doc.spatial_coverage
+    assert doc.spatial_coverage == '(9.8 LON, 56.3 LAT); Thorsø'
     # assert "{'type': 'Polygon', 'coordinates': (((9.811246, 56.302585), (9.811246, 56.302585), (9.811246, 56.302585), (9.811246, 56.302585)),)}" == doc.spatial  # noqa
     # assert '2018-12-31' == doc.temporal_coverage
 
