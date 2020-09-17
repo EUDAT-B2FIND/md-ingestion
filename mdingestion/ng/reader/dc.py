@@ -32,11 +32,25 @@ class DublinCoreReader(XMLReader):
         doc.version = self.find('hasVersion')
 
     def geometry(self):
-        # <dcterms:spatial xsi:type="dcterms:POINT">9.811246,56.302585</dcterms:spatial>
-        point = self.parser.doc.find('spatial', attrs={'xsi:type': 'dcterms:POINT'})
-        if point:
+        if self.parser.doc.find('spatial', attrs={'xsi:type': 'dcterms:POINT'}):
+            # <dcterms:spatial xsi:type="dcterms:POINT">9.811246,56.302585</dcterms:spatial>
+            point = self.parser.doc.find('spatial', attrs={'xsi:type': 'dcterms:POINT'})
             coords = point.text.split(',')
-            geometry = shapely.geometry.Point(float(coords[0]), float(coords[1]))
+            lon = float(point[0])
+            lat = float(point[1])
+            # point: x=lon, y=lat
+            geometry = shapely.geometry.Point(lon, lat)
+        elif self.parser.doc.find('spatial', attrs={'xsi:type': 'DCTERMS:Box'}):
+            # <dc:coverage>North 37.30134, South 37.2888, East -32.275618, West -32.27982</dc:coverage>
+            # <dcterms:spatial xsi:type="DCTERMS:Box">37.2888 -32.27982 37.30134 -32.275618</dcterms:spatial>
+            bbox = self.parser.doc.find('spatial', attrs={'xsi:type': 'DCTERMS:Box'})
+            coords = bbox.text.split()
+            south = float(coords[0])
+            east = float(coords[1])
+            north = float(coords[2])
+            west = float(coords[3])
+            # bbox: minx=west, miny=south, maxx=east, maxy=north
+            geometry = shapely.geometry.box(west, south, east, north)
         else:
             geometry = None
         return geometry
