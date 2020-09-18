@@ -7,7 +7,6 @@ class SeanoeDublinCore(DublinCoreReader):
     SNIFFER = OAISniffer
 
     def update(self, doc):
-        # doc.contributor = ['DataverseNO']
         doc.related_identifier = self.find('references')
         doc.discipline = self.discipline(doc, 'Marine Science')
         doc.keywords = self.keywords(doc)
