@@ -167,9 +167,9 @@ seadatanet http://sextant.ifremer.fr/geonetwork/srv/eng/csw-ATLANTOS csw iso1913
 seanoe http://www.seanoe.org/oai/OAIHandler   ListRecords   oai_dc
 
 ## SLKS with ff
-slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers ff
+#slks http://www.kulturarv.dk/ffrepox/OAIHandler ListIdentifiers ff
 ## SLKS with dc
-#slks https://www.archaeo.dk/ff/oai-pmh/ ListRecords oai_dc
+slks https://www.archaeo.dk/ff/oai-pmh/ ListRecords oai_dc
 
 ## STARS4ALL
 starsforall https://eudat-b2share-test.csc.fi/api/oai2d ListRecords oai_dc STARS4ALL
