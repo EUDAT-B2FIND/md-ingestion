@@ -111,7 +111,7 @@ class CKANWriter(Writer):
         }]
         data['state'] = 'active'
         if doc.publication_year:
-            data['PublicationTimestamp'] = f"{doc.publication_year[0]}-07-01T11:59:59Z"
+            data['PublicationTimestamp'] = f"{doc.publication_year}-07-01T11:59:59Z"
         data['fulltext'] = doc.fulltext
         return data
 
