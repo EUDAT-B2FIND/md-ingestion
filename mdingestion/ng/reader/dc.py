@@ -25,8 +25,8 @@ class DublinCoreReader(XMLReader):
         doc.language = self.find('language')
         doc.resource_type = self.find('type')
         doc.format = self.find('format')
-        doc.temporal_coverage_begin = ''
-        doc.temporal_coverage_end = ''
+        # doc.temporal_coverage_begin = ''
+        # doc.temporal_coverage_end = ''
         doc.geometry = self.find_geometry()
         doc.places = self.places()
         doc.size = self.find('extent')
