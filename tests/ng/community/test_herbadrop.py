@@ -17,7 +17,7 @@ def test_json_1():
     assert 'Raynal, J.' == doc.creator[0]
     assert 'MNHN' == doc.publisher[0]
     assert 'CINES' == doc.contributor[0]
-    assert '2019' == doc.publication_year[0]
+    assert '2019' == doc.publication_year
     assert 'http://creativecommons.org/licenses/by/4.0/' == doc.rights[0]
     assert 'MNHN' == doc.contact[0]
     assert doc.open_access is True
@@ -60,7 +60,7 @@ def test_herbadrop_with_pid():
     assert 'unavailable' == doc.creator[0]
     assert 'MNHN' == doc.publisher[0]
     assert 'CINES' == doc.contributor[0]
-    assert '2019' == doc.publication_year[0]
+    assert '2019' == doc.publication_year
     assert 'http://creativecommons.org/licenses/by/4.0/' == doc.rights[0]
     assert 'MNHN' == doc.contact[0]
     assert doc.open_access is True

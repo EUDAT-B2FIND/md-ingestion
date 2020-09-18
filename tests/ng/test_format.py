@@ -71,7 +71,8 @@ def test_format_value():
     assert ['2020'] == format.format_value('2020-05-19', type='date_year')
     assert 'https://alice.org/in/wonderland' == format.format_value(
         'https://alice.org/in/wonderland', type='url', one=True)
-
+    assert '3001' == format.format_value(['3001'], type='date_year', one=True)
+    assert '3001' == format.format_value('3001', type='date_year', one=True)
 
 def test_format_empty_values():
     assert [] == format.format_value('n/a')

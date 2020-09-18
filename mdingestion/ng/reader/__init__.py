@@ -4,6 +4,7 @@ from .iso19139 import ISO19139Reader
 from .json import JSONReader
 from .base import SchemaType
 from .fgdc import FGDCReader
+from .ff import FFReader
 
 
 def build_reader(reader_type=None):
@@ -13,6 +14,8 @@ def build_reader(reader_type=None):
         reader = ISO19139Reader()
     elif reader_type == SchemaType.FGDC:
         reader = FGDCReader()
+    elif reader_type == SchemaType.FF:
+        reader = FFReader()
     elif reader_type == SchemaType.JSON:
         reader = JSONReader()
     else:
@@ -28,4 +31,5 @@ __all__ = [
     SchemaType,
     build_reader,
     FGDCReader,
+    FFReader,
 ]
