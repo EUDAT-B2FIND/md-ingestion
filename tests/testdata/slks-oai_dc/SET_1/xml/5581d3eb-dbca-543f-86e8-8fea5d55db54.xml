@@ -1,0 +1,27 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4831/</identifier>
+    <datestamp>2020-03-06T17:00:01.743162+01:00</datestamp>
+  </header>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/">
+    <dc:identifier>http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/4831/</dc:identifier>
+    <dc:title>080112-47 Mejl&#248;</dc:title>
+    <dc:creator>Ark&#230;ologi Sydfyn</dc:creator>
+    <dc:description>This record describes ancient sites and monuments as well archaeological excavations undertaken by Danish museums. Excerpt of the Danish description of events:
+2004-03-15: Fejl ved digitalisering 1981 rettet.1884      : Raat tilhuggede Flintredskaber ere tidligere fundne (se Overs. ov. Vidsk. Selsk. Forh. 1861 S. 269) og fandtes ogsaa ved Meddelerens Bes&#248;g, navnlig paa &#216;ens vestlige Kyst under det n&#230;rmeste Vand.1957      : Fund af flint.1957      : P 9473.
+</dc:description>
+    <dc:publisher>Slots- og Kulturstyrelsen (www.slks.dk)</dc:publisher>
+    <dc:publisher>Aarhus University (www.au.dk)</dc:publisher>
+    <dc:type>Dataset</dc:type>
+    <dcterms:alternative>080112-47</dcterms:alternative>
+    <dc:language>dan</dc:language>
+    <dcterms:spatial>Mejl&#248;</dcterms:spatial>
+    <dcterms:spatial xsi:type="dcterms:POINT">10.615118,55.585866</dcterms:spatial>
+    <dc:subject xml:lang="da">Enkeltfund</dc:subject>
+    <dc:subject xml:lang="en">Single find, Settlement</dc:subject>
+    <dcterms:temporal>Stenalder</dcterms:temporal>
+    <dcterms:temporal>-250000,-1701</dcterms:temporal>
+    <dcterms:temporal>AXXX</dcterms:temporal>
+    <dc:rights>Public</dc:rights>
+  </metadata>
+</record>
