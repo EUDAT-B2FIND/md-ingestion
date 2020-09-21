@@ -1,7 +1,7 @@
 import click
 import pathlib
 
-from .command import Harvest, Map, Upload
+from .command import List, Harvest, Map, Upload
 from .exceptions import UserInfo
 
 
@@ -35,6 +35,17 @@ def cli(ctx, debug, dry_run, outdir):
         logging.basicConfig(filename='out.log', level=logging.DEBUG)
     else:
         logging.basicConfig(filename='out.log', level=logging.INFO)
+
+
+@cli.command()
+@click.pass_context
+def list(ctx):
+    try:
+        list = List()
+        list.run()
+    except Exception as e:
+        logging.critical(f"list: {e}", exc_info=True)
+        raise click.ClickException(f"{e}")
 
 
 @cli.command()
