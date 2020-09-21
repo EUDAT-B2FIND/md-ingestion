@@ -32,7 +32,6 @@ class DublinCoreReader(XMLReader):
         doc.size = self.find('extent')
         doc.version = self.find('hasVersion')
 
-
     def related_identifier(self):
         urls = self.find('relation')
         urls.extend(self.find('source'))

@@ -15,7 +15,6 @@ class BaseClarin(DublinCoreReader):
     SNIFFER = OAISniffer
     URL = ''
 
-
     def update(self, doc):
         doc._community = self.COMMUNITY
         doc.discipline = 'Linguistics'
@@ -31,7 +30,7 @@ class ClarinOne(BaseClarin):
     community/schema/uuidFORurl/set/raw
     community/schema/uuidFORurl/set/ckan
     """
-    #NAME = 'clarin-oai_dc'
+    # NAME = 'clarin-oai_dc'
     NAME = 'clarin_one'
     URL = 'http://clarin.eurac.edu/repository/oai/request'
 
@@ -47,13 +46,14 @@ class ClarinOne(BaseClarin):
         keywords.append('Clarin ONE')
         return keywords
 
+
 class ClarinTwo(BaseClarin):
     """
     new folderstructure:
     community/schema/uuidFORurl/set/raw
     community/schema/uuidFORurl/set/ckan
     """
-    #NAME = 'clarin-oai_dc'
+    # NAME = 'clarin-oai_dc'
     NAME = 'clarin_two'
     URL = 'http://dspace-clarin-it.ilc.cnr.it/repository/oai/request'
 
@@ -68,6 +68,7 @@ class ClarinTwo(BaseClarin):
         keywords = doc.keywords
         keywords.append('Clarin TWO')
         return keywords
+
 
 class ClarinThree(BaseClarin):
     """
