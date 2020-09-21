@@ -15,7 +15,7 @@ class DublinCoreReader(XMLReader):
         doc.doi = self.find_doi('metadata.identifier')
         doc.pid = self.find_pid('metadata.identifier')
         doc.source = self.find_source('metadata.identifier')
-        doc.related_identifier = self.find('relation')
+        doc.related_identifier = self.related_identifier()
         doc.creator = self.find('creator')
         doc.publisher = self.find('publisher')
         doc.contributor = self.find('contributor')
@@ -31,6 +31,12 @@ class DublinCoreReader(XMLReader):
         doc.places = self.places()
         doc.size = self.find('extent')
         doc.version = self.find('hasVersion')
+
+
+    def related_identifier(self):
+        urls = self.find('relation')
+        urls.extend(self.find('source'))
+        return urls
 
     def places(self):
         places = [s.text.strip() for s in self.parser.doc.find_all('spatial') if not s.attrs]
