@@ -7,16 +7,13 @@ import logging
 
 
 class Harvester(object):
-    def __init__(self, community, url, mdprefix, mdsubset, fromdate, limit, outdir, verify=True):
+    def __init__(self, community, url, fromdate, limit, outdir, verify=True):
         self.community = community
         self.url = url
-        self.mdprefix = mdprefix
-        self.mdsubset = mdsubset
         self.fromdate = fromdate
         self.limit = limit or -1
         self.outdir = outdir
         self.verify = verify
-        self.format = 'xml'
         self.ext = 'xml'
 
     def identifier(self, record):
@@ -32,7 +29,7 @@ class Harvester(object):
             else:
                 total = self.matches()
         except Exception as e:
-            msg = f"Harvester failed: {e}. url={self.url}, mdprefix={self.mdprefix}, mdsubset={self.mdsubset}"
+            msg = f"Harvester failed: {e}. url={self.url}"
             logging.critical(msg, exc_info=True)
             raise HarvesterError(f"Harvester failed: {e}")
         return total
@@ -43,9 +40,8 @@ class Harvester(object):
     def filename(self, record):
         out = pathlib.Path(
             self.outdir,
-            f"{self.community}-{self.mdprefix}",
-            self.mdsubset,
-            self.format,
+            self.community,
+            "raw",
             f"{self.uid(record)}.{self.ext}")
         return out
 
@@ -58,7 +54,7 @@ class Harvester(object):
                     break
                 yield record
         except Exception as e:
-            msg = f"Harvester failed: {e}. url={self.url}, mdprefix={self.mdprefix}, mdsubset={self.mdsubset}"
+            msg = f"Harvester failed: {e}. url={self.url}"
             logging.critical(msg, exc_info=True)
             raise HarvesterError(f"Harvester failed: {e}")
 

@@ -13,9 +13,11 @@ import logging
 
 
 class OAIHarvester(Harvester):
-    def __init__(self, community, url, mdprefix, mdsubset, fromdate, limit, outdir, verify):
-        super().__init__(community, url, mdprefix, mdsubset, fromdate, limit, outdir, verify)
+    def __init__(self, community, url, fromdate, limit, outdir, verify):
+        super().__init__(community, url, fromdate, limit, outdir, verify)
         logging.captureWarnings(True)
+        self.mdprefix = 'oai_dc'
+        self.mdsubset = 'SET_1'
         self.sickle = Sickle(self.url, max_retries=3, timeout=300, verify=self.verify)
 
     def identifier(self, record):

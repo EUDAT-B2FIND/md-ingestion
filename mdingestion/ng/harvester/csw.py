@@ -13,8 +13,8 @@ class CSWHarvester(Harvester):
     """
     OWSLib csw: https://geopython.github.io/OWSLib/#csw
     """
-    def __init__(self, community, url, mdprefix, mdsubset, fromdate, limit, outdir, verify):
-        super().__init__(community, url, mdprefix, mdsubset, fromdate, limit, outdir, verify)
+    def __init__(self, community, url, fromdate, limit, outdir, verify):
+        super().__init__(community, url, fromdate, limit, outdir, verify)
         logging.captureWarnings(True)
         self.csw = CatalogueServiceWeb(self.url, auth=Authentication(verify=self.verify))
         self._schema = None

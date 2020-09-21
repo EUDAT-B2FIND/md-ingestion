@@ -1,6 +1,6 @@
 from .base import Community
 from ..reader import SchemaType
-from ..sniffer import ServiceType
+from ..harvester import ServiceType
 
 
 class BaseClarin(Community):
