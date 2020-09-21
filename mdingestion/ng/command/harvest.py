@@ -16,6 +16,8 @@ class Harvest(Command):
             community=_community.identifier,
             url=_community.url,
             service_type=_community.service_type,
+            oai_metadata_prefix=_community.oai_metadata_prefix,
+            oai_set=_community.oai_set,
             fromdate=fromdate,
             limit=limit,
             outdir=self.outdir,

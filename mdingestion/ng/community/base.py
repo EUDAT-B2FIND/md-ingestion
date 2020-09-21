@@ -8,6 +8,8 @@ class Community(object):
     URL = None
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = None
 
     def __init__(self):
         self._reader = None
@@ -31,6 +33,14 @@ class Community(object):
     @property
     def service_type(self):
         return self.SERVICE_TYPE
+
+    @property
+    def oai_metadata_prefix(self):
+        return self.OAI_METADATA_PREFIX
+
+    @property
+    def oai_set(self):
+        return self.OAI_SET
 
     @property
     def reader(self):

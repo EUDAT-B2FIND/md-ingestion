@@ -14,11 +14,11 @@ class ServiceType(Enum):
     HERBADROP = 100
 
 
-def harvester(community, url, service_type, fromdate, limit, outdir, verify):
+def harvester(community, url, service_type, oai_metadata_prefix, oai_set, fromdate, limit, outdir, verify):
     if service_type == ServiceType.HERBADROP:
         harvester = HerbadropHarvester(community, url, fromdate, limit, outdir, verify)
     elif service_type == ServiceType.OAI:
-        harvester = OAIHarvester(community, url, fromdate, limit, outdir, verify)
+        harvester = OAIHarvester(community, url, oai_metadata_prefix, oai_set, fromdate, limit, outdir, verify)
     elif service_type == ServiceType.CSW:
         harvester = CSWHarvester(community, url, fromdate, limit, outdir, verify)
     else:

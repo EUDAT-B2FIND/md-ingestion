@@ -7,6 +7,8 @@ class BaseClarin(Community):
     NAME = 'clarin'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = None
 
     def update(self, doc):
         doc.discipline = 'Linguistics'
