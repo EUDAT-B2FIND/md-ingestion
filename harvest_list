@@ -39,8 +39,9 @@ ceric https://data.ceric-eric.eu/oai-pmh/oai2 ListRecords oai_datacite
 ## CLARIN
 ## this is only one repo, a full list on eudatmd1/ingestion_list
 #clarin http://www.clarin.si/repository/oai/request ListRecords oai_dc
-# (=clarin_one) clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
-clarin http://dspace-clarin-it.ilc.cnr.it/repository/oai/request ListRecords oai_dc
+#(=clarin_one) clarin http://clarin.eurac.edu/repository/oai/request ListRecords oai_dc
+#(=clarin_two) clarin http://dspace-clarin-it.ilc.cnr.it/repository/oai/request ListRecords oai_dc
+clarin http://repository.clarin.dk/repository/oai/request ListRecords oai_dc
 
 ## CRC 1211 Database
 crc1211db http://doidb.wdc-terra.org/oaip/oai ListRecords oai_datacite DOIDB.CRC1211

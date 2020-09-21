@@ -53,8 +53,8 @@ class ClarinTwo(BaseClarin):
     community/schema/uuidFORurl/set/raw
     community/schema/uuidFORurl/set/ckan
     """
-    NAME = 'clarin-oai_dc'
-    # new: 'clarin_two'
+    #NAME = 'clarin-oai_dc'
+    NAME = 'clarin_two'
     URL = 'http://dspace-clarin-it.ilc.cnr.it/repository/oai/request'
 
     def update(self, doc):
@@ -67,4 +67,26 @@ class ClarinTwo(BaseClarin):
     def keywords(self, doc):
         keywords = doc.keywords
         keywords.append('Clarin TWO')
+        return keywords
+
+class ClarinThree(BaseClarin):
+    """
+    new folderstructure:
+    community/schema/uuidFORurl/set/raw
+    community/schema/uuidFORurl/set/ckan
+    """
+    NAME = 'clarin-oai_dc'
+    # new: 'clarin_three'
+    URL = 'http://repository.clarin.dk/repository/oai/request'
+
+    def update(self, doc):
+        super().update(doc)
+        doc.keywords = self.keywords(doc)
+        if not doc.publisher:
+            doc.publisher = 'CLARIN three'
+        doc.contact = 'clarinthree@something.eu'
+
+    def keywords(self, doc):
+        keywords = doc.keywords
+        keywords.append('Clarin THREE')
         return keywords
