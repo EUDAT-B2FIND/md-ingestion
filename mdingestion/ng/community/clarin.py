@@ -1,22 +1,14 @@
-from ..reader import DublinCoreReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..reader import SchemaType
+from ..sniffer import ServiceType
 
 
-class BaseClarin(DublinCoreReader):
-    """
-    new folderstructure:
-    community/schema/uuidFORurl/set/raw
-    community/schema/uuidFORurl/set/ckan
-    """
-    COMMUNITY = 'clarin'
-    NAME = ''
-    OAI_METADATA_PREFIX = 'oai_dc'
-    OAI_SET = ''
-    SNIFFER = OAISniffer
-    URL = ''
+class BaseClarin(Community):
+    NAME = 'clarin'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
 
     def update(self, doc):
-        doc._community = self.COMMUNITY
         doc.discipline = 'Linguistics'
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
@@ -25,13 +17,7 @@ class BaseClarin(DublinCoreReader):
 
 
 class ClarinOne(BaseClarin):
-    """
-    new folderstructure:
-    community/schema/uuidFORurl/set/raw
-    community/schema/uuidFORurl/set/ckan
-    """
-    # NAME = 'clarin-oai_dc'
-    NAME = 'clarin_one'
+    IDENTIFIER = 'clarin_one'
     URL = 'http://clarin.eurac.edu/repository/oai/request'
 
     def update(self, doc):
@@ -48,13 +34,7 @@ class ClarinOne(BaseClarin):
 
 
 class ClarinTwo(BaseClarin):
-    """
-    new folderstructure:
-    community/schema/uuidFORurl/set/raw
-    community/schema/uuidFORurl/set/ckan
-    """
-    # NAME = 'clarin-oai_dc'
-    NAME = 'clarin_two'
+    IDENTIFIER = 'clarin_two'
     URL = 'http://dspace-clarin-it.ilc.cnr.it/repository/oai/request'
 
     def update(self, doc):
@@ -71,13 +51,7 @@ class ClarinTwo(BaseClarin):
 
 
 class ClarinThree(BaseClarin):
-    """
-    new folderstructure:
-    community/schema/uuidFORurl/set/raw
-    community/schema/uuidFORurl/set/ckan
-    """
-    NAME = 'clarin-oai_dc'
-    # new: 'clarin_three'
+    IDENTIFIER = 'clarin_three'
     URL = 'http://repository.clarin.dk/repository/oai/request'
 
     def update(self, doc):

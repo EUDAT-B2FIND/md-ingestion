@@ -6,8 +6,10 @@ from .base import SchemaType
 from .fgdc import FGDCReader
 from .ff import FFReader
 
+from ..sniffer import get_sniffer
 
-def build_reader(reader_type=None):
+
+def build_reader(reader_type=None, service_type=None):
     if reader_type == SchemaType.DataCite:
         reader = DataCiteReader()
     elif reader_type == SchemaType.ISO19139:
@@ -20,6 +22,7 @@ def build_reader(reader_type=None):
         reader = JSONReader()
     else:
         reader = DublinCoreReader()
+    reader.SNIFFER = get_sniffer(service_type)
     return reader
 
 

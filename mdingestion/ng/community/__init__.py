@@ -1,4 +1,4 @@
-from ..reader.base import Reader
+from .base import Community
 from ..exceptions import CommunityNotSupported
 
 import logging
@@ -16,18 +16,18 @@ for f in Path(__file__).parent.glob("*.py"):
 del import_module, Path
 
 
-def get_readers(cls=None):
-    cls = cls or Reader
+def get_communities(cls=None):
+    cls = cls or Community
     if len(cls.__subclasses__()) == 0:
         yield cls
     else:
         for subcls in cls.__subclasses__():
-            yield from get_readers(subcls)
+            yield from get_communities(subcls)
 
 
-def reader(community, mdprefix):
-    logging.debug(f'community={community}, mdprefix={mdprefix}')
-    for reader in get_readers():
-        if reader.NAME == f'{community}-{mdprefix}':
-            return reader
-    raise CommunityNotSupported(f'Community not supported: {community}-{mdprefix}')
+def community(identifier):
+    logging.debug(f'community identifier={identifier}')
+    for community in get_communities():
+        if community.IDENTIFIER == identifier:
+            return community
+    raise CommunityNotSupported(f'Community not supported: {identifier}')

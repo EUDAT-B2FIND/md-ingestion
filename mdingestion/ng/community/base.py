@@ -1,35 +1,43 @@
-from ..reader import build_reader
-from ..sniffer import build_sniffer
+from ..reader import build_reader, SchemaType
+from ..sniffer import ServiceType
 
 
 class Community(object):
-    def __init__(self, name, url=None, mdprefix=None, schema=None, service_type=None):
-        self.name = name
-        self.url = url
-        self.mdprefix = mdprefix
-        self.service_type = service_type
-        self.reader = build_reader(schema)
-        self._sniffer = None
+    NAME = None
+    IDENTIFIER = None
+    URL = None
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+
+    def __init__(self):
+        self.reader = build_reader(self.SCHEMA, self.SERVICE_TYPE)
 
     def read(self, filename):
-        doc = self.reader.read(
-            filename,
-            url=self.url,
-            community=self.name,
-            mdprefix=self.mdprefix)
-        self.sniffer.update(doc)
+        doc = self.reader.read(filename, community=self.NAME, url=self.URL)
         self.update(doc)
         return doc
 
-    @property
-    def sniffer(self):
-        if not self._sniffer:
-            self._sniffer = build_sniffer(self.parser, self.service_type)
-        return self._sniffer
+    def find(self, name=None, **kwargs):
+        return self.reader.find(name=name, **kwargs)
+
+    def find_ok(self, name=None, **kwargs):
+        return self.reader.find_ok(name=name, **kwargs)
+
+    def find_doi(self, name=None, **kwargs):
+        return self.reader.find_doi(name=None, **kwargs)
+
+    def find_pid(self, name=None, **kwargs):
+        return self.reader.find_pid(name=None, **kwargs)
+
+    def find_source(self, name=None, **kwargs):
+        return self.reader.find_source(name=None, **kwargs)
+
+    def discipline(self, doc, default=None):
+        return self.reader.discipline(doc, default)
 
     @property
-    def parser(self):
-        return self.reader.parser
+    def errors(self):
+        return self.reader.errors
 
     def update(self, doc):
         raise NotImplementedError

@@ -6,11 +6,11 @@ class ServiceType(Enum):
     CSW = 1
 
 
-def build_sniffer(parser, service_type=None):
+def get_sniffer(service_type=None):
     if service_type == ServiceType.CSW:
-        sniffer = CSWSniffer(parser)
+        sniffer = CSWSniffer
     else:
-        sniffer = OAISniffer(parser)
+        sniffer = OAISniffer
     return sniffer
 
 

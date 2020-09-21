@@ -25,18 +25,18 @@ class Reader(object):
     def __init__(self):
         self.filename = None
         self.parser = None
+        self.sniffer = None
         self.errors = dict(invalid_geometry=[])
 
-    def read(self, filename, url=None, community=None, mdprefix=None):
+    def read(self, filename, community=None, url=None):
         self.filename = filename
         self.parser = self.DOC_PARSER(filename)
-        doc = B2FDoc(filename, url, community, mdprefix)
+        doc = B2FDoc(filename, community, url)
         self._parse(doc)
         self.parse(doc)
         if self.SNIFFER:
             sniffer = self.SNIFFER(self.parser)
             sniffer.update(doc)
-        self.update(doc)
         return doc
 
     def _parse(self, doc):
@@ -44,9 +44,6 @@ class Reader(object):
 
     def parse(self, doc):
         raise NotImplementedError
-
-    def update(self, doc):
-        pass
 
     def find(self, name=None, **kwargs):
         return self.parser.find(name=name, **kwargs)
