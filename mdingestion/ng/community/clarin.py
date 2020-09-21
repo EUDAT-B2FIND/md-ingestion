@@ -5,6 +5,7 @@ from ..sniffer import OAISniffer
 class ClarinDublinCore(DublinCoreReader):
     NAME = 'clarin-oai_dc'
     SNIFFER = OAISniffer
+    URL = 'http://clarin.eurac.edu/repository/oai/request'
 
     def update(self, doc):
         #doc.related_identifier = self.find('references')
