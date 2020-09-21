@@ -10,7 +10,7 @@ class Community(object):
     SERVICE_TYPE = ServiceType.OAI
 
     def __init__(self):
-        self.reader = build_reader(self.SCHEMA, self.SERVICE_TYPE)
+        self._reader = None
 
     @property
     def identifier(self):
@@ -32,8 +32,14 @@ class Community(object):
     def service_type(self):
         return self.SERVICE_TYPE
 
+    @property
+    def reader(self):
+        if not self._reader:
+            self._reader = build_reader(self.schema, self.service_type)
+        return self._reader
+
     def read(self, filename):
-        doc = self.reader.read(filename, community=self.NAME, url=self.URL)
+        doc = self.reader.read(filename, community=self.name, url=self.url)
         self.update(doc)
         return doc
 
