@@ -16,4 +16,4 @@ def test_dublin_core():
     assert '4831' in doc.metadata_access
     assert doc.publication_year == '2020'
     assert doc.spatial_coverage == '(10.6 LON, 55.6 LAT); Mejlø'
-    assert doc.temporal_coverage == 'blabal'
+    assert doc.temporal_coverage == '250000 BC - 1701 BC; Stenalder; AXXX'
