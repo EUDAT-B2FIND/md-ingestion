@@ -13,9 +13,9 @@ class Harvest(Command):
     def harvest(self, fromdate=None, limit=None, dry_run=False):
         _community = community(self.community)
         _harvester = harvester(
-            community=_community.IDENTIFIER,
-            url=_community.URL,
-            service_type=_community.SERVICE_TYPE,
+            community=_community.identifier,
+            url=_community.url,
+            service_type=_community.service_type,
             fromdate=fromdate,
             limit=limit,
             outdir=self.outdir,

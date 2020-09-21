@@ -13,7 +13,7 @@ class Map(Command):
     def __init__(self, **args):
         super().__init__(**args)
         self.walker = Walker(self.outdir)
-        self.reader = community(self.community)()
+        self.reader = community(self.community)
         self.writer = None
 
     def run(self, format=format, force=False, linkcheck=True, limit=None):
@@ -43,7 +43,7 @@ class Map(Command):
 
     def walk(self):
         import os
-        path = os.path.join(self.reader.IDENTIFIER, 'raw')
+        path = os.path.join(self.reader.identifier, 'raw')
         for filename in self.walker.walk(path=path, ext='.xml'):
             yield filename
 

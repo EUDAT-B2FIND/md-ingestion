@@ -29,5 +29,5 @@ def community(identifier):
     logging.debug(f'community identifier={identifier}')
     for community in get_communities():
         if community.IDENTIFIER == identifier:
-            return community
+            return community()
     raise CommunityNotSupported(f'Community not supported: {identifier}')

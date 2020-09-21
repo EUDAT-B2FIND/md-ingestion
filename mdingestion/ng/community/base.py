@@ -12,6 +12,26 @@ class Community(object):
     def __init__(self):
         self.reader = build_reader(self.SCHEMA, self.SERVICE_TYPE)
 
+    @property
+    def identifier(self):
+        return self.IDENTIFIER
+
+    @property
+    def name(self):
+        return self.NAME
+
+    @property
+    def url(self):
+        return self.URL
+
+    @property
+    def schema(self):
+        return self.SCHEMA
+
+    @property
+    def service_type(self):
+        return self.SERVICE_TYPE
+
     def read(self, filename):
         doc = self.reader.read(filename, community=self.NAME, url=self.URL)
         self.update(doc)
