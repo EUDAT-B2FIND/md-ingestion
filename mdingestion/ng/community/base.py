@@ -76,7 +76,7 @@ class Community(object):
         return self.reader.errors
 
     def update(self, doc):
-        raise NotImplementedError
+        pass
 
     def __str__(self):
         return self.NAME
