@@ -6,7 +6,7 @@ from .base import SchemaType
 from .fgdc import FGDCReader
 from .ff import FFReader
 
-from ..sniffer import get_sniffer
+from ..sniffer import sniffer
 
 
 def build_reader(reader_type=None, service_type=None):
@@ -22,7 +22,7 @@ def build_reader(reader_type=None, service_type=None):
         reader = JSONReader()
     else:
         reader = DublinCoreReader()
-    reader.SNIFFER = get_sniffer(service_type)
+    reader.SNIFFER = sniffer(service_type)
     return reader
 
 

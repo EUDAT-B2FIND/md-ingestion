@@ -1,12 +1,7 @@
-from enum import Enum
+from .harvester import ServiceType
 
 
-class ServiceType(Enum):
-    OAI = 0
-    CSW = 1
-
-
-def get_sniffer(service_type=None):
+def sniffer(service_type=None):
     if service_type == ServiceType.CSW:
         sniffer = CSWSniffer
     else:

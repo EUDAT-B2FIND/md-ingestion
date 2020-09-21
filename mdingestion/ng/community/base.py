@@ -1,5 +1,5 @@
 from ..reader import build_reader, SchemaType
-from ..sniffer import ServiceType
+from ..harvester import ServiceType
 
 
 class Community(object):
