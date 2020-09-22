@@ -1,5 +1,5 @@
 from ..reader import build_reader
-from .._types import SchemaType
+from ..service_types import SchemaType
 from ..harvester import ServiceType
 
 

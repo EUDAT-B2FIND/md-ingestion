@@ -5,7 +5,7 @@ from .json import JSONReader
 from .fgdc import FGDCReader
 from .ff import FFReader
 
-from .._types import SchemaType
+from ..service_types import SchemaType
 from ..sniffer import sniffer
 
 

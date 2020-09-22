@@ -5,7 +5,7 @@ from owslib.util import Authentication
 from lxml import etree
 
 from .base import Harvester
-from .._types import SchemaType
+from ..service_types import SchemaType
 
 import logging
 
