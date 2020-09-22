@@ -57,6 +57,10 @@ class Community(object):
         self.update(doc)
         return doc
 
+    @property
+    def extension(self):
+        return self.reader.extension()
+
     def find(self, name=None, **kwargs):
         return self.reader.find(name=name, **kwargs)
 

@@ -44,7 +44,7 @@ class Map(Command):
 
     def walk(self):
         path = os.path.join(self.reader.identifier, 'raw')
-        for filename in self.walker.walk(path=path, ext='.xml'):
+        for filename in self.walker.walk(path=path, ext=self.reader.extension):
             yield filename
 
     def map(self, filename):
