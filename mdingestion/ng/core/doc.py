@@ -380,11 +380,12 @@ class GeoDoc(BaseDoc):
 
 class B2FDoc(GeoDoc):
 
-    def __init__(self, filename, community=None, url=None):
+    def __init__(self, filename, community=None, url=None, oai_metadata_prefix=None):
         super().__init__()
         self.filename = filename
         self._community = community
         self._url = url
+        self._oai_metadata_prefix = oai_metadata_prefix
         self._oai_set = None
         self._oai_identifier = None
         self._file_identifier = None
@@ -399,16 +400,16 @@ class B2FDoc(GeoDoc):
         return self._url
 
     @property
-    def mdprefix(self):
-        return ''
-
-    @property
     def fulltext(self):
         return self._fulltext
 
     @fulltext.setter
     def fulltext(self, value):
         self._fulltext = value
+
+    @property
+    def oai_metadata_prefix(self):
+        return self._oai_metadata_prefix
 
     @property
     def oai_set(self):

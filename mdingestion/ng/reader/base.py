@@ -28,10 +28,11 @@ class Reader(object):
         self.sniffer = None
         self.errors = dict(invalid_geometry=[])
 
-    def read(self, filename, community=None, url=None):
+    def read(self, filename, community=None, url=None, oai_metadata_prefix=None):
         self.filename = filename
         self.parser = self.DOC_PARSER(filename)
-        doc = B2FDoc(filename, community, url)
+        # TODO: handling of oai_metadata_prefix parameter needs to be refactored
+        doc = B2FDoc(filename, community, url, oai_metadata_prefix)
         self._parse(doc)
         self.parse(doc)
         if self.SNIFFER:

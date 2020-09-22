@@ -49,7 +49,11 @@ class Community(object):
         return self._reader
 
     def read(self, filename):
-        doc = self.reader.read(filename, community=self.name, url=self.url)
+        doc = self.reader.read(
+            filename,
+            community=self.name,
+            url=self.url,
+            oai_metadata_prefix=self.oai_metadata_prefix)
         self.update(doc)
         return doc
 
