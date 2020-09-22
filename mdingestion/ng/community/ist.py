@@ -9,6 +9,7 @@ class ISTDublinCore(DublinCoreReader):
     def update(self, doc):
         doc.doi = self.doi(doc)
         doc.source = self.source(doc)
+        #doc.related_identifier = self.related_identifier(doc)
         #doc.discipline = ''
         doc.contact = 'office@ist.ac.at'
 
@@ -23,3 +24,7 @@ class ISTDublinCore(DublinCoreReader):
     def source(self, doc):
         urls = [url for url in self.find('metadata.identifier') if 'app.ist.ac.at/record' in url]
         return urls
+
+    #def related_identifier(self, doc):
+        #urls = [url for url in self.find('metadata.identifier') if 'app.ist.ac.at/download' in url]
+        #return urls
