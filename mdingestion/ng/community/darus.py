@@ -1,5 +1,5 @@
 from .base import Community
-from ..reader import SchemaType
+from .._types import SchemaType
 from ..harvester import ServiceType
 
 

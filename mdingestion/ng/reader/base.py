@@ -1,5 +1,3 @@
-from enum import Enum
-
 from ..core import B2FDoc
 from ..parser import XMLParser
 from ..parser import JSONParser
@@ -7,15 +5,6 @@ from ..format import format_url
 from ..classify import Classify
 
 import logging
-
-
-class SchemaType(Enum):
-    DublinCore = 0
-    DataCite = 1
-    ISO19139 = 2
-    FGDC = 3
-    FF = 4
-    JSON = 100
 
 
 class Reader(object):

@@ -2,10 +2,10 @@ from .datacite import DataCiteReader
 from .dc import DublinCoreReader
 from .iso19139 import ISO19139Reader
 from .json import JSONReader
-from .base import SchemaType
 from .fgdc import FGDCReader
 from .ff import FFReader
 
+from .._types import SchemaType
 from ..sniffer import sniffer
 
 
@@ -31,7 +31,6 @@ __all__ = [
     DublinCoreReader,
     ISO19139Reader,
     JSONReader,
-    SchemaType,
     build_reader,
     FGDCReader,
     FFReader,
