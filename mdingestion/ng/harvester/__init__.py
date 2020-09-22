@@ -18,7 +18,13 @@ def harvester(community,
               outdir,
               verify):
     if service_type == ServiceType.HERBADROP:
-        harvester = HerbadropHarvester(community, url, fromdate, limit, outdir, verify)
+        harvester = HerbadropHarvester(
+            community=community,
+            url=url,
+            fromdate=fromdate,
+            limit=limit,
+            outdir=outdir,
+            verify=verify)
     elif service_type == ServiceType.OAI:
         harvester = OAIHarvester(community, url, oai_metadata_prefix, oai_set, fromdate, limit, outdir, verify)
     elif service_type == ServiceType.CSW:
