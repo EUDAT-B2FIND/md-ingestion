@@ -9,17 +9,16 @@ from ..walker import Walker
 import logging
 
 
-def upload(data, host=None, apikey=None, verify=True):
+def upload(data, action=None, host=None, apikey=None, verify=True):
+    action = action or 'package_update'
     requests_kwargs = None
     if not verify:
         requests_kwargs = {'verify': False}
-    with RemoteCKAN(f'http://{host}', apikey=apikey) as ckan:
-        try:
-            # ckan.action.package_update(**data)
-            ckan.call_action('package_update', data, requests_kwargs=requests_kwargs)
-        except NotFound:
-            # ckan.action.package_create(**data)
-            ckan.call_action('package_create', data, requests_kwargs=requests_kwargs)
+    try:
+        with RemoteCKAN(f'http://{host}', apikey=apikey) as ckan:
+            ckan.call_action(action, data, requests_kwargs=requests_kwargs)
+    except NotFound:
+        upload(data, action='package_create', host=host, apikey=apikey, verify=verify)
 
 
 class Upload(Command):
