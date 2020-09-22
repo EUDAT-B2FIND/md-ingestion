@@ -1,3 +1,4 @@
+import os
 from tqdm import tqdm
 
 from .base import Command
@@ -42,7 +43,6 @@ class Map(Command):
         validator.write_summary(self.writer.outdir)
 
     def walk(self):
-        import os
         path = os.path.join(self.reader.identifier, 'raw')
         for filename in self.walker.walk(path=path, ext='.xml'):
             yield filename
