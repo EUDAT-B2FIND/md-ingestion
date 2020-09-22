@@ -4,14 +4,7 @@ from .herbadrop import HerbadropHarvester
 from .oai import OAIHarvester
 from .csw import CSWHarvester
 
-
-from enum import Enum
-
-
-class ServiceType(Enum):
-    OAI = 0
-    CSW = 1
-    HERBADROP = 100
+from ..service_types import ServiceType
 
 
 def harvester(community,

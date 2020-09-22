@@ -1,6 +1,5 @@
 from .base import Community
-from ..service_types import SchemaType
-from ..harvester import ServiceType
+from ..service_types import SchemaType, ServiceType
 
 
 class DarusDatacite(Community):

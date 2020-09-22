@@ -8,3 +8,9 @@ class SchemaType(Enum):
     FGDC = 3
     FF = 4
     JSON = 100
+
+
+class ServiceType(Enum):
+    OAI = 0
+    CSW = 1
+    HERBADROP = 100

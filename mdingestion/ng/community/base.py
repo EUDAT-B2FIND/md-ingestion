@@ -1,6 +1,5 @@
 from ..reader import build_reader
-from ..service_types import SchemaType
-from ..harvester import ServiceType
+from ..service_types import SchemaType, ServiceType
 
 
 class Community(object):

@@ -1,4 +1,4 @@
-from .harvester import ServiceType
+from .service_types import ServiceType
 
 
 def sniffer(service_type=None):
