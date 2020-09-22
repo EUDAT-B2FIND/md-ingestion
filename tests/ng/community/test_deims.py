@@ -1,13 +1,13 @@
 import os
 
-from mdingestion.ng.community.deims import DeimsISO19139
+from mdingestion.ng.community.deims import Deims
 
 from tests.common import TESTDATA_DIR
 
 
 def test_iso19139_partone():
-    xmlfile = os.path.join(TESTDATA_DIR, 'deims-iso19139', 'full', 'xml', '65b17960-85fa-5733-8e28-62af33a8ba8e.xml')  # noqa
-    reader = DeimsISO19139()
+    xmlfile = os.path.join(TESTDATA_DIR, 'deims', 'raw', '65b17960-85fa-5733-8e28-62af33a8ba8e.xml')
+    reader = Deims()
     doc = reader.read(xmlfile)
 
     assert 'http://hdl.handle.net/11097/217f9245-12e6-4676-af68-2e9d0c27262e' == doc.pid
@@ -16,8 +16,8 @@ def test_iso19139_partone():
 
 
 def test_iso19139_parttwo():
-    xmlfile = os.path.join(TESTDATA_DIR, 'deims-iso19139', 'full', 'xml', 'a6249d0b-b617-56ce-b20c-2e102f5ea26c.xml')  # noqa
-    reader = DeimsISO19139()
+    xmlfile = os.path.join(TESTDATA_DIR, 'deims', 'raw', 'a6249d0b-b617-56ce-b20c-2e102f5ea26c.xml')
+    reader = Deims()
     doc = reader.read(xmlfile)
 
     assert 'http://doi.org/10.34730/8d9f021268d44ac1a78156912d6cb255' == doc.doi

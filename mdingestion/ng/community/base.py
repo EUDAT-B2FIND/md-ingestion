@@ -64,13 +64,13 @@ class Community(object):
         return self.reader.find_ok(name=name, **kwargs)
 
     def find_doi(self, name=None, **kwargs):
-        return self.reader.find_doi(name=None, **kwargs)
+        return self.reader.find_doi(name=name, **kwargs)
 
     def find_pid(self, name=None, **kwargs):
-        return self.reader.find_pid(name=None, **kwargs)
+        return self.reader.find_pid(name=name, **kwargs)
 
     def find_source(self, name=None, **kwargs):
-        return self.reader.find_source(name=None, **kwargs)
+        return self.reader.find_source(name=name, **kwargs)
 
     def discipline(self, doc, default=None):
         return self.reader.discipline(doc, default)
