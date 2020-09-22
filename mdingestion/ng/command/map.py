@@ -14,7 +14,7 @@ class Map(Command):
     def __init__(self, **args):
         super().__init__(**args)
         self.walker = Walker(self.outdir)
-        self.reader = community(self.community)
+        self._community = community(self.community)
         self.writer = None
 
     def run(self, format=format, force=False, linkcheck=True, limit=None):
@@ -38,16 +38,16 @@ class Map(Command):
                 logging.warning(f"validation failed: {filename}")
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
-        validator.summary['_errors_'] = self.reader.errors
+        validator.summary['_errors_'] = self._community.errors
         validator.print_summary()
         validator.write_summary(self.writer.outdir)
 
     def walk(self):
-        path = os.path.join(self.reader.identifier, 'raw')
-        for filename in self.walker.walk(path=path, ext=self.reader.extension):
+        path = os.path.join(self._community.identifier, 'raw')
+        for filename in self.walker.walk(path=path, ext=self._community.extension):
             yield filename
 
     def map(self, filename):
-        doc = self.reader.read(filename)
+        doc = self._community.read(filename)
         logging.info(f'map: community={self.community}, file={filename}')
         return doc
