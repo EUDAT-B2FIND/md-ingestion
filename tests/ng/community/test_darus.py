@@ -12,7 +12,8 @@ def test_datacite():
     assert 'Deep enzymology data' in doc.title[0]
     assert 'https://doi.org/10.18419/darus-629' == doc.doi
     assert 'https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-629' == doc.metadata_access  # noqa
-    assert 'Medicine Health and Life Sciences' in doc.keywords
+    assert 'Medicine' in doc.keywords
+    assert 'Health and Life Sciences' in doc.keywords
     assert 'Medicine' == doc.discipline
     assert 'Jeltsch, Albert (Universität Stuttgart)' in doc.contact
     assert 'application/pdf' in doc.format

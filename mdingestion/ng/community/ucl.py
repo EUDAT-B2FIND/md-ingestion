@@ -8,4 +8,7 @@ class UCLDatacite(DataCiteReader):
     SNIFFER = OAISniffer
 
     def update(self, doc):
-        doc.contributor = 'University College London'
+        doc.contributor = 'Figshare'
+        doc.contact = 'researchdatarepository@ucl.ac.uk'
+        doc.publisher = 'University College London UCL'
+        doc.language = 'eng'

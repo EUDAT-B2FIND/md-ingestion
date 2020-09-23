@@ -101,6 +101,9 @@ fidgeo http://doidb.wdc-terra.org/oaip/oai ListRecords oai_datacite DOIDB.FID
 #http://getit.lifewatch.unisalento.it/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities
 getit http://getit.lifewatch.unisalento.it/catalogue/csw csw iso19139 full
 
+## GEOFON
+geofon http://doidb.wdc-terra.org/oaip/oai ListRecords oai_datacite DOIDB.GEOFON
+
 ## HBP
 #hbp http://148.187.98.42:8081/oai/provider GetRecord oai_dc
 #hbp https://148.187.98.42:8443/oai/provider ListRecords oai_dc
@@ -120,7 +123,8 @@ iagos http://catalogue2.sedoo.fr/geonetwork/srv/eng/csw-iagos csw iso19139
 
 ## IST
 #ist	http://datarep.app.ist.ac.at/cgi/oai2 ListRecords  oai_dc
-ist https://research-explorer.app.ist.ac.at/oai? ListIdentifiers oai_datacite
+#ist https://research-explorer.app.ist.ac.at/oai? ListIdentifiers oai_datacite
+ist https://research-explorer.app.ist.ac.at/oai ListRecords oai_dc research_dataFtxt
 
 ## IVOA
 #ivoa  http://registry.euro-vo.org/oai.jsp ListRecords  oai_dc
