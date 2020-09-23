@@ -1,10 +1,15 @@
-from ..reader import DublinCoreReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class MaterialsCloudDublinCore(DublinCoreReader):
-    NAME = 'materialscloud-oai_dc'
-    SNIFFER = OAISniffer
+class MaterialscloudDublinCore(Community):
+    NAME = 'materialscloud'
+    IDENTIFIER = 'materialscloud'
+    URL = 'https://archive.materialscloud.org/xml'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = None
 
     def update(self, doc):
         doc.doi = self.doi(doc)
