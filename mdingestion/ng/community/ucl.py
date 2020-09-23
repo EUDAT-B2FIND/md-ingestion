@@ -2,7 +2,7 @@ from .base import Community
 from ..service_types import SchemaType, ServiceType
 
 
-class UclDatacite(Community):
+class Ucl(Community):
     NAME = 'ucl'
     IDENTIFIER = 'ucl'
     URL = 'https://api.figshare.com/v2/oai'

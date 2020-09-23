@@ -1,10 +1,15 @@
-from ..reader import FFReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class SLKSFF(FFReader):
-    NAME = 'slks-ff'
-    SNIFFER = OAISniffer
+class SlksFF(Community):
+    NAME = 'slks_ff'
+    IDENTIFIER = 'slks_ff'
+    URL = 'http://www.kulturarv.dk/ffrepox/OAIHandler'
+    SCHEMA = SchemaType.FF
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'ff'
+    OAI_SET = None
 
     def update(self, doc):
         doc.description = 'This record describes ancient sites and monuments as well as archaeological excavations undertaken by Danish museums.'
