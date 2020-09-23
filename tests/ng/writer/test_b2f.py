@@ -10,9 +10,9 @@ from tests.common import TESTDATA_DIR
 
 
 def test_b2f_darus_oai_datacite():
-    xmlfile = os.path.join(TESTDATA_DIR, 'darus-oai_datacite', 'SET_1', 'xml', '02baec53-8e79-5611-981e-11df59b824e4.xml')  # noqa
+    xmlfile = os.path.join(TESTDATA_DIR, 'darus', 'raw', '02baec53-8e79-5611-981e-11df59b824e4.xml')
     reader = DarusDatacite()
-    doc = reader.read(xmlfile, url='https://darus.uni-stuttgart.de/oai', community='darus', mdprefix='oai_datacite')
+    doc = reader.read(xmlfile)
     writer = B2FWriter()
     result = writer.json(doc)
     assert 'Deep enzymology data' in result['title'][0]
