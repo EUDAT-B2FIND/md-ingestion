@@ -2,7 +2,7 @@ from .base import Community
 from ..service_types import SchemaType, ServiceType
 
 
-class DansEasyDatacite(Community):
+class DanseasyDatacite(Community):
     NAME = 'danseasy'
     IDENTIFIER = 'danseasy'
     URL = 'https://easy.dans.knaw.nl/oai'
