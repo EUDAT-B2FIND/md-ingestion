@@ -7,6 +7,7 @@ class SchemaType(Enum):
     ISO19139 = 2
     FGDC = 3
     FF = 4
+    DDI = 5
     JSON = 100
 
 
