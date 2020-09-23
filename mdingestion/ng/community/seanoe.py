@@ -11,7 +11,6 @@ class Seanoe(Community):
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
 
-
     def update(self, doc):
         doc.related_identifier = self.find('references')
         doc.discipline = self.discipline(doc, 'Marine Science')
