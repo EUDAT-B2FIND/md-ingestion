@@ -1,10 +1,16 @@
-from ..reader import DublinCoreReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class SeanoeDublinCore(DublinCoreReader):
-    NAME = 'seanoe-oai_dc'
-    SNIFFER = OAISniffer
+class Seanoe(Community):
+    NAME = 'seanoe'
+    IDENTIFIER = NAME
+    URL = 'http://www.seanoe.org/oai/OAIHandler'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = None
+
 
     def update(self, doc):
         doc.related_identifier = self.find('references')
