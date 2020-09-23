@@ -1,11 +1,16 @@
-from ..reader import ISO19139Reader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class EnviDatISO19139(ISO19139Reader):
-    NAME = 'envidat-iso19139'
-    SNIFFER = OAISniffer
+class Envidat(Community):
+    NAME = 'envidat'
+    IDENTIFIER = 'envidat_iso19139'
+    URL = 'https://www.envidat.ch/oai'
+    SCHEMA = SchemaType.ISO19139
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'iso19139'
+    OAI_SET = None
 
     def update(self, doc):
         doc.doi = self.find_doi('MD_Metadata.fileIdentifier')
