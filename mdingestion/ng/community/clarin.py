@@ -16,6 +16,14 @@ class BaseClarin(Community):
         if not doc.publisher:
             doc.publisher = 'CLARIN'
 
+    def keywords(self, doc, keywords):
+        # TODO: clean up code
+        if not isinstance(keywords, list):
+            keywords = [keywords]
+        keywords = doc.keywords
+        keywords.extend(keywords)
+        return keywords
+
 
 class ClarinOne(BaseClarin):
     IDENTIFIER = 'clarin_one'
@@ -23,17 +31,12 @@ class ClarinOne(BaseClarin):
 
     def update(self, doc):
         super().update(doc)
-        doc.keywords = self.keywords(doc)
+        doc.keywords = self.keywords(doc, 'clarin ONE')
         doc.doi = self.find_doi('metadata.relation')
         doc.pid = self.find_pid('metadata.relation')
         if not doc.publisher:
             doc.publisher = 'CLARIN one'
         doc.contact = 'clarinone@something.eu'
-
-    def keywords(self, doc):
-        keywords = doc.keywords
-        keywords.append('Clarin ONE')
-        return keywords
 
 
 class ClarinTwo(BaseClarin):
@@ -42,16 +45,10 @@ class ClarinTwo(BaseClarin):
 
     def update(self, doc):
         super().update(doc)
-        doc.keywords = self.keywords(doc)
+        doc.keywords = self.keywords(doc, 'clarin TWO')
         if not doc.publisher:
             doc.publisher = 'CLARIN two'
         doc.contact = 'clarintwo@something.eu'
-
-    def keywords(self, doc):
-        keywords = doc.keywords
-        keywords.append('Clarin TWO')
-        return keywords
-
 
 class ClarinThree(BaseClarin):
     IDENTIFIER = 'clarin_three'
@@ -59,12 +56,18 @@ class ClarinThree(BaseClarin):
 
     def update(self, doc):
         super().update(doc)
-        doc.keywords = self.keywords(doc)
+        doc.keywords = self.keywords(doc, 'clarin THREE')
         if not doc.publisher:
             doc.publisher = 'CLARIN three'
         doc.contact = 'clarinthree@something.eu'
 
-    def keywords(self, doc):
-        keywords = doc.keywords
-        keywords.append('Clarin THREE')
-        return keywords
+class ClarinFour(BaseClarin):
+    IDENTIFIER = 'clarin_four'
+    URL = 'http://lindat.mff.cuni.cz/repository/oai/request'
+
+    def update(self, doc):
+        super().update(doc)
+        doc.keywords = self.keywords(doc, 'clarin FOUR')
+        if not doc.publisher:
+            doc.publisher = 'CLARIN four'
+        doc.contact = 'clarinfour@something.eu'
