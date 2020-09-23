@@ -7,7 +7,7 @@ class BaseClarin(Community):
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
-    OAI_SET = None
+    #OAI_SET = None
 
     def update(self, doc):
         doc.discipline = 'Linguistics'
@@ -71,3 +71,15 @@ class ClarinFour(BaseClarin):
         if not doc.publisher:
             doc.publisher = 'CLARIN four'
         doc.contact = 'clarinfour@something.eu'
+
+class ClarinFromB2SatCSC(BaseClarin):
+    IDENTIFIER = 'clarin_b2s'
+    URL = 'https://b2share.eudat.eu/api/oai2d'
+    OAI_SET = '0afede87-2bf2-4d89-867e-d2ee57251c62'
+
+    def update(self, doc):
+        super().update(doc)
+        doc.keywords = self.keywords(doc, 'clarin B2SHARE')
+        if not doc.publisher:
+            doc.publisher = 'CLARIN B2SHARE'
+        doc.contact = 'clarinb2s@something.eu'
