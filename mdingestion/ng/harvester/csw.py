@@ -5,6 +5,7 @@ from owslib.util import Authentication
 from lxml import etree
 
 from .base import Harvester
+from ..service_types import SchemaType
 
 import logging
 
@@ -13,10 +14,11 @@ class CSWHarvester(Harvester):
     """
     OWSLib csw: https://geopython.github.io/OWSLib/#csw
     """
-    def __init__(self, community, url, mdprefix, mdsubset, fromdate, limit, outdir, verify):
-        super().__init__(community, url, mdprefix, mdsubset, fromdate, limit, outdir, verify)
+    def __init__(self, community, url, schema, fromdate, limit, outdir, verify):
+        super().__init__(community, url, fromdate, limit, outdir, verify)
         logging.captureWarnings(True)
         self.csw = CatalogueServiceWeb(self.url, auth=Authentication(verify=self.verify))
+        self._schema_type = schema
         self._schema = None
         self._constraints = None
 
@@ -33,7 +35,7 @@ class CSWHarvester(Harvester):
     @property
     def schema(self):
         if not self._schema:
-            if 'iso19139' in self.mdprefix:
+            if self._schema_type == SchemaType.ISO19139:
                 ns_name = 'gmd'
             else:
                 ns_name = 'csw'

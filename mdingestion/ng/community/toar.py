@@ -1,10 +1,15 @@
-from ..reader import DublinCoreReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class TOARDublinCore(DublinCoreReader):
-    NAME = 'toar-oai_dc'
-    SNIFFER = OAISniffer
+class Toar(Community):
+    NAME = 'toar'
+    IDENTIFIER = 'toar'
+    URL = 'https://b2share.fz-juelich.de/api/oai2d'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = '381a24f1-18d4-405d-af36-c76ba199a754'
 
     def update(self, doc):
         doc.contributor = 'B2SHARE'

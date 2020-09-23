@@ -1,10 +1,15 @@
-from ..reader import FGDCReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class PDCFGDC(FGDCReader):
-    NAME = 'pdc-fgdc'
-    SNIFFER = OAISniffer
+class Pdc(Community):
+    NAME = 'pdc'
+    IDENTIFIER = NAME
+    URL = 'http://www.polardata.ca/oai/provider'
+    SCHEMA = SchemaType.FGDC
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'fgdc'
+    OAI_SET = None
 
     def update(self, doc):
         doc.contributor = 'Polar Data Catalogue'

@@ -3,6 +3,7 @@ from tqdm import tqdm
 from .base import Command
 from ..harvester import harvester
 from ..exceptions import UserInfo
+from ..community import community
 
 import logging
 
@@ -10,12 +11,14 @@ import logging
 class Harvest(Command):
 
     def harvest(self, fromdate=None, limit=None, dry_run=False):
+        _community = community(self.community)
         _harvester = harvester(
-            community=self.community,
-            url=self.url,
-            verb=self.verb,
-            mdprefix=self.mdprefix,
-            mdsubset=self.mdsubset,
+            community=_community.identifier,
+            url=_community.url,
+            service_type=_community.service_type,
+            schema=_community.schema,
+            oai_metadata_prefix=_community.oai_metadata_prefix,
+            oai_set=_community.oai_set,
             fromdate=fromdate,
             limit=limit,
             outdir=self.outdir,

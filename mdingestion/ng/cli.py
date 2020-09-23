@@ -1,7 +1,7 @@
 import click
 import pathlib
 
-from .command import Harvest, Map, Upload
+from .command import List, Harvest, Map, Upload
 from .exceptions import UserInfo
 
 
@@ -16,16 +16,14 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'], obj=CONTEXT_OBJ)
 @click.version_option()
 @click.option('--debug', is_flag=True)
 @click.option('--dry-run', is_flag=True, help='use dry run mode')
-@click.option('--list', '-l', default='harvest_list', help='Filename with list of source.')
 @click.option('--outdir', '-o', default='oaidata',
               help='The absolute root dir in which all harvested files will be saved.')
 @click.pass_context
-def cli(ctx, debug, dry_run, list, outdir):
+def cli(ctx, debug, dry_run, outdir):
     # ensure that ctx.obj exists and is a dict (in case `cli()` is called
     # by means other than the `if` block below)
     ctx.ensure_object(dict)
 
-    ctx.obj['list'] = list
     ctx.obj['dry_run'] = dry_run
 
     out = pathlib.Path(outdir)
@@ -40,26 +38,29 @@ def cli(ctx, debug, dry_run, list, outdir):
 
 
 @cli.command()
+@click.pass_context
+def list(ctx):
+    try:
+        list = List()
+        list.run()
+    except Exception as e:
+        logging.critical(f"list: {e}", exc_info=True)
+        raise click.ClickException(f"{e}")
+
+
+@cli.command()
 @click.option('--community', '-c', required=True, help='Community')
 @click.option('--url', help='Source URL')
-@click.option('--verb',
-              help='Requests defined in OAI-PMH: ListRecords (default) or ListIdentifers.')
-@click.option('--mdprefix', help='Metadata prefix')
-@click.option('--mdsubset', help='Subset')
 @click.option('--fromdate', type=click.DateTime(formats=["%Y-%m-%d"]),
               help='Filter by date.')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def harvest(ctx, community, url, verb, mdprefix, mdsubset, fromdate, limit, insecure):
+def harvest(ctx, community, url, fromdate, limit, insecure):
     try:
         cmd = Harvest(
-            sources=ctx.obj['list'],
             community=community,
             url=url,
-            verb=verb,
-            mdprefix=mdprefix,
-            mdsubset=mdsubset,
             outdir=ctx.obj['outdir'],
             verify=not insecure,
         )
@@ -75,22 +76,15 @@ def harvest(ctx, community, url, verb, mdprefix, mdsubset, fromdate, limit, inse
 
 @cli.command()
 @click.option('--community', '-c', required=True, help='Community')
-@click.option('--url', help='Source URL')
-@click.option('--mdprefix', help='Metadata prefix')
-@click.option('--mdsubset', help='Subset')
 @click.option('--format', default='ckan', help='output format: ckan (default) or b2f')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
 @click.option('--no-linkcheck', is_flag=True, help='do not check if URLs resolve in validation')
 @click.pass_context
-def map(ctx, community, url, mdprefix, mdsubset, format, limit, force, no_linkcheck):
+def map(ctx, community, format, limit, force, no_linkcheck):
     try:
         map = Map(
-            sources=ctx.obj['list'],
             community=community,
-            url=url,
-            mdprefix=mdprefix,
-            mdsubset=mdsubset,
             outdir=ctx.obj['outdir'],)
         map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit)
     except Exception as e:
@@ -108,7 +102,7 @@ def map(ctx, community, url, mdprefix, mdsubset, format, limit, force, no_linkch
 @click.pass_context
 def upload(ctx, community, iphost, auth, target, limit, insecure):
     try:
-        upload = Upload(outdir=ctx.obj['outdir'], sources=ctx.obj['list'], community=community)
+        upload = Upload(outdir=ctx.obj['outdir'], community=community)
         upload.run(iphost=iphost, auth=auth, target=target, limit=limit, verify=not insecure)
     except Exception as e:
         logging.critical(f"upload: {e}", exc_info=True)

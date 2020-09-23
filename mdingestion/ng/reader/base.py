@@ -1,5 +1,3 @@
-from enum import Enum
-
 from ..core import B2FDoc
 from ..parser import XMLParser
 from ..parser import JSONParser
@@ -9,15 +7,6 @@ from ..classify import Classify
 import logging
 
 
-class SchemaType(Enum):
-    DublinCore = 0
-    DataCite = 1
-    ISO19139 = 2
-    FGDC = 3
-    FF = 4
-    JSON = 100
-
-
 class Reader(object):
     DOC_PARSER = None
     SNIFFER = None
@@ -25,18 +14,19 @@ class Reader(object):
     def __init__(self):
         self.filename = None
         self.parser = None
+        self.sniffer = None
         self.errors = dict(invalid_geometry=[])
 
-    def read(self, filename, url=None, community=None, mdprefix=None):
+    def read(self, filename, community=None, url=None, oai_metadata_prefix=None):
         self.filename = filename
         self.parser = self.DOC_PARSER(filename)
-        doc = B2FDoc(filename, url, community, mdprefix)
+        # TODO: handling of oai_metadata_prefix parameter needs to be refactored
+        doc = B2FDoc(filename, community, url, oai_metadata_prefix)
         self._parse(doc)
         self.parse(doc)
         if self.SNIFFER:
             sniffer = self.SNIFFER(self.parser)
             sniffer.update(doc)
-        self.update(doc)
         return doc
 
     def _parse(self, doc):
@@ -44,9 +34,6 @@ class Reader(object):
 
     def parse(self, doc):
         raise NotImplementedError
-
-    def update(self, doc):
-        pass
 
     def find(self, name=None, **kwargs):
         return self.parser.find(name=name, **kwargs)

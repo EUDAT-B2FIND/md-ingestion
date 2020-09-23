@@ -6,7 +6,7 @@ from tests.common import TESTDATA_DIR
 
 
 def test_json_1():
-    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')  # noqa
+    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop', 'raw', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')
     reader = Herbadrop()
     doc = reader.read(jsonfile)
     assert 'Gentiana ×marcailhouana Rouy' in doc.title[0]
@@ -32,7 +32,7 @@ def test_json_1():
 
 
 def test_json_2():
-    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', '4dec3f1d-0140-5d52-869b-2377d361a786.json')  # noqa
+    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop', 'raw', '4dec3f1d-0140-5d52-869b-2377d361a786.json')
     reader = Herbadrop()
     doc = reader.read(jsonfile)
     assert 'Senecio Herbarium Practice' in doc.title[0]
@@ -40,14 +40,14 @@ def test_json_2():
 
 
 def test_json_metadata_access():
-    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')  # noqa
+    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop', 'raw', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')
     reader = Herbadrop()
     doc = reader.read(jsonfile)
     assert 'https://opendata.cines.fr/herbadrop-api/rest/data/mnhnftp/P03945291' in doc.metadata_access
 
 
 def test_herbadrop_with_pid():
-    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', 'pid_P03068284_6b35f27e-b5d9-526c-b92e-390fa939fa12.json')  # noqa
+    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop', 'raw', 'pid_P03068284_6b35f27e-b5d9-526c-b92e-390fa939fa12.json')  # noqa
     reader = Herbadrop()
     doc = reader.read(jsonfile)
     assert 'http://hdl.handle.net/21.T12996/dc6e1c9e-06c6-11ea-99e1-525400276111' == doc.pid

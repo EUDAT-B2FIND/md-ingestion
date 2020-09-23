@@ -1,11 +1,14 @@
-from ..reader import ISO19139Reader
-from ..sniffer import CSWSniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class DeimsISO19139(ISO19139Reader):
-    NAME = 'deims-iso19139'
-    SNIFFER = CSWSniffer
+class Deims(Community):
+    NAME = 'deims'
+    IDENTIFIER = 'deims'
+    URL = 'https://deims.org/pycsw/catalogue/csw'
+    SCHEMA = SchemaType.ISO19139
+    SERVICE_TYPE = ServiceType.CSW
 
     def update(self, doc):
         doc.doi = self.find_doi('linkage')

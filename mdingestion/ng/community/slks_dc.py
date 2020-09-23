@@ -1,10 +1,15 @@
-from ..reader import DublinCoreReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class SLKSDublinCore(DublinCoreReader):
-    NAME = 'slks-oai_dc'
-    SNIFFER = OAISniffer
+class Slks(Community):
+    NAME = 'slks'
+    IDENTIFIER = 'slks'
+    URL = 'https://www.archaeo.dk/ff/oai-pmh/'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = None
 
     def update(self, doc):
         # doc.open_access = True

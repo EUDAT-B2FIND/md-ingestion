@@ -1,13 +1,13 @@
 import os
 
-from mdingestion.ng.community.enes import ENESISO19139
+from mdingestion.ng.community.enes import Enes
 
 from tests.common import TESTDATA_DIR
 
 
 def test_iso19139():
     xmlfile = os.path.join(TESTDATA_DIR, 'enes-iso', 'iso-old-doi', 'xml', 'fff0c660-1eec-5cff-aaaf-498ef7731ad6.xml')  # noqa
-    reader = ENESISO19139()
+    reader = Enes()
     doc = reader.read(xmlfile)
 
     assert 'http://doi.org/doi:10.1594/WDCC/CMIP5.GIGHr6' == doc.doi

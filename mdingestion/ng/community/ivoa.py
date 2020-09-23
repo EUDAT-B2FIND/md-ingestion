@@ -1,10 +1,15 @@
-from ..reader import DataCiteReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class IVOADatacite(DataCiteReader):
-    NAME = 'ivoa-oai_datacite'
-    SNIFFER = OAISniffer
+class IvoaDatacite(Community):
+    NAME = 'ivoa'
+    IDENTIFIER = 'ivoa'
+    URL = 'http://dc.g-vo.org/rr/q/pmh/pubreg.xml'
+    SCHEMA = SchemaType.DataCite
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_datacite'
+    OAI_SET = None
 
     def update(self, doc):
         doc.source = self.find_source('alternateIdentifier', alternateIdentifierType="reference URL")

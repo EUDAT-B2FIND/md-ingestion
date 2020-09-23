@@ -1,8 +1,9 @@
+import os
 from tqdm import tqdm
 
 from .base import Command
 from ..walker import Walker
-from ..community import reader
+from ..community import community
 from ..writer import writer
 from ..validator import Validator
 
@@ -13,7 +14,7 @@ class Map(Command):
     def __init__(self, **args):
         super().__init__(**args)
         self.walker = Walker(self.outdir)
-        self.reader = reader(self.community, self.mdprefix)()
+        self._community = community(self.community)
         self.writer = None
 
     def run(self, format=format, force=False, linkcheck=True, limit=None):
@@ -37,19 +38,16 @@ class Map(Command):
                 logging.warning(f"validation failed: {filename}")
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
-        validator.summary['_errors_'] = self.reader.errors
+        validator.summary['_errors_'] = self._community.errors
         validator.print_summary()
         validator.write_summary(self.writer.outdir)
 
     def walk(self):
-        for filename in self.walker.walk_community(
-                community=self.community,
-                mdprefix=self.mdprefix,
-                mdsubset=self.mdsubset,
-                ext=self.reader.extension()):
+        path = os.path.join(self._community.identifier, 'raw')
+        for filename in self.walker.walk(path=path, ext=self._community.extension):
             yield filename
 
     def map(self, filename):
-        doc = self.reader.read(filename, self.url, self.community, self.mdprefix)
-        logging.info(f'map: community={self.community}, mdprefix={self.mdprefix}, file={filename}')
+        doc = self._community.read(filename)
+        logging.info(f'map: community={self.community}, file={filename}')
         return doc

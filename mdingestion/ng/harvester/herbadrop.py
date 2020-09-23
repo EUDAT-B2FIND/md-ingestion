@@ -8,9 +8,14 @@ import logging
 
 
 class HerbadropHarvester(Harvester):
-    def __init__(self, community, url, mdprefix, mdsubset, fromdate, limit, outdir, verify):
-        super().__init__(community, url, 'json', mdsubset, fromdate, limit, outdir, verify)
-        self.format = 'hjson'
+    def __init__(self, community, url, fromdate, limit, outdir, verify):
+        super().__init__(
+            community=community,
+            url=url,
+            fromdate=fromdate,
+            limit=limit,
+            outdir=outdir,
+            verify=verify)
         self.ext = 'json'
         self._query = None
         self.headers = {'content-type': 'application/json'}

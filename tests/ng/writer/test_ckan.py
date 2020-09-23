@@ -10,9 +10,9 @@ from tests.common import TESTDATA_DIR
 
 
 def test_darus_oai_datacite():
-    xmlfile = os.path.join(TESTDATA_DIR, 'darus-oai_datacite', 'SET_1', 'xml', '02baec53-8e79-5611-981e-11df59b824e4.xml')  # noqa
+    xmlfile = os.path.join(TESTDATA_DIR, 'darus', 'raw', '02baec53-8e79-5611-981e-11df59b824e4.xml')
     reader = DarusDatacite()
-    doc = reader.read(xmlfile, url='https://darus.uni-stuttgart.de/oai', community='darus', mdprefix='oai_datacite')
+    doc = reader.read(xmlfile)
     writer = CKANWriter()
     result = writer.json(doc)
     assert 'Deep enzymology data' in result['title']
@@ -31,7 +31,7 @@ def test_darus_oai_datacite():
 
 
 def test_herbdrop_json():
-    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')  # noqa
+    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop', 'raw', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')
     reader = Herbadrop()
     doc = reader.read(jsonfile)
     writer = CKANWriter()

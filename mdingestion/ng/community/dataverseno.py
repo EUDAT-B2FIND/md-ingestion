@@ -1,10 +1,15 @@
-from ..reader import DublinCoreReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class DataverseNODublinCore(DublinCoreReader):
-    NAME = 'dataverseno-oai_dc'
-    SNIFFER = OAISniffer
+class DataverseNODublinCore(Community):
+    NAME = 'dataverseno'
+    IDENTIFIER = 'dataverseno'
+    URL = 'https://dataverse.no/oai'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = 'dataverseno'
 
     def update(self, doc):
         # doc.contributor = ['DataverseNO']

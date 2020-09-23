@@ -1,11 +1,16 @@
-from ..reader import ISO19139Reader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class ENESISO19139(ISO19139Reader):
-    NAME = 'enes-iso'
-    SNIFFER = OAISniffer
+class Enes(Community):
+    NAME = 'enes'
+    IDENTIFIER = 'enes'
+    URL = 'http://c3grid1.dkrz.de:8080/oai/provider'
+    SCHEMA = SchemaType.ISO19139
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'iso'
+    OAI_SET = 'iso-old-doi'
 
     def update(self, doc):
         doc.doi = self.find_doi('linkage')

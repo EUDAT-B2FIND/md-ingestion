@@ -1,3 +1,4 @@
+import os
 from tqdm import tqdm
 import json
 from urllib import parse
@@ -5,6 +6,7 @@ from ckanapi import RemoteCKAN, NotFound
 
 from .base import Command
 from ..walker import Walker
+from ..community import community
 
 import logging
 
@@ -40,10 +42,7 @@ class Upload(Command):
             count += 1
 
     def walk(self):
-        for filename in self.walker.walk_community(
-                community=self.community,
-                mdprefix=self.mdprefix,
-                mdsubset=self.mdsubset,
-                format='ckan',
-                ext='json'):
+        _community = community(self.community)
+        path = os.path.join(_community.identifier, 'ckan')
+        for filename in self.walker.walk(path=path, ext='.json'):
             yield filename

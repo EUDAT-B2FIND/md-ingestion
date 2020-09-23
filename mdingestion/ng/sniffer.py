@@ -1,16 +1,11 @@
-from enum import Enum
+from .service_types import ServiceType
 
 
-class ServiceType(Enum):
-    OAI = 0
-    CSW = 1
-
-
-def build_sniffer(parser, service_type=None):
+def sniffer(service_type=None):
     if service_type == ServiceType.CSW:
-        sniffer = CSWSniffer(parser)
+        sniffer = CSWSniffer
     else:
-        sniffer = OAISniffer(parser)
+        sniffer = OAISniffer
     return sniffer
 
 
@@ -30,7 +25,7 @@ class OAISniffer(CatalogSniffer):
 
     def metadata_access(self, doc):
         if doc.oai_identifier:
-            mdaccess = f"{doc.url}?verb=GetRecord&metadataPrefix={doc.mdprefix}&identifier={doc.oai_identifier}"
+            mdaccess = f"{doc.url}?verb=GetRecord&metadataPrefix={doc.oai_metadata_prefix}&identifier={doc.oai_identifier}"  # noqa
         else:
             mdaccess = None
         return mdaccess

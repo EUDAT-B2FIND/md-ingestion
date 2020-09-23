@@ -1,13 +1,13 @@
 import os
 
-from mdingestion.ng.community.envidat_iso19139 import EnviDatISO19139
+from mdingestion.ng.community.envidat_iso19139 import Envidat
 
 from tests.common import TESTDATA_DIR
 
 
 def test_iso19139():
     xmlfile = os.path.join(TESTDATA_DIR, 'envidat-iso19139', 'SET_1', 'xml', '2eff7dec-8e24-5046-b690-e87840ce65ac.xml')  # noqa
-    reader = EnviDatISO19139()
+    reader = Envidat()
     doc = reader.read(xmlfile)
     assert 'https://doi.org/10.16904/envidat.lwf.38' == doc.doi
     assert '' == doc.pid

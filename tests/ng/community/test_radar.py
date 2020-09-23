@@ -1,13 +1,13 @@
 import os
 
-from mdingestion.ng.community.radar import RadarDatacite
+from mdingestion.ng.community.radar import Radar
 
 from tests.common import TESTDATA_DIR
 
 
 def test_datacite():
     xmlfile = os.path.join(TESTDATA_DIR, 'radar-datacite', 'SET_1', 'xml', '4b9e42ae-b56e-5485-9b45-7b00e859a98f.xml')  # noqa
-    reader = RadarDatacite()
+    reader = Radar()
     doc = reader.read(xmlfile)
     assert 'Raw data for' in doc.title[0]
     assert 'Biochemistry' in doc.discipline

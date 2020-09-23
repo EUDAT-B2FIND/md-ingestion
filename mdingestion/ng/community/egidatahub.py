@@ -1,10 +1,15 @@
-from ..reader import DublinCoreReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class EGIDatahubDublinCore(DublinCoreReader):
-    NAME = 'egidatahub-oai_dc'
-    SNIFFER = OAISniffer
+class EgidatahubDublinCore(Community):
+    NAME = 'egidatahub'
+    IDENTIFIER = 'egidatahub'
+    URL = 'http://datahub.egi.eu/oai_pmh'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = None
 
     def update(self, doc):
         doc.contributor = ['EGI Datahub']

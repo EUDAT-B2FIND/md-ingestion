@@ -73,9 +73,9 @@ def test_b2f_invalid_date():
 
 def test_b2f_doc_validation_darus():
     xmlfile = os.path.join(
-        TESTDATA_DIR, 'darus-oai_datacite', 'SET_1', 'xml', '02baec53-8e79-5611-981e-11df59b824e4.xml')
+        TESTDATA_DIR, 'darus', 'raw', '02baec53-8e79-5611-981e-11df59b824e4.xml')
     reader = DarusDatacite()
-    doc = reader.read(xmlfile, url='https://darus.uni-stuttgart.de/oai', community='darus', mdprefix='oai_datacite')
+    doc = reader.read(xmlfile)
     writer = B2FWriter()
     cstruct = writer.json(doc)
     schema = B2FSchema()
@@ -89,7 +89,7 @@ def test_b2f_doc_validation_darus():
 def test_b2f_doc_validation_herbadrop():
     jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')  # noqa
     reader = Herbadrop()
-    doc = reader.read(jsonfile, community='herbadrop')
+    doc = reader.read(jsonfile)
     writer = B2FWriter()
     cstruct = writer.json(doc)
     schema = B2FSchema()

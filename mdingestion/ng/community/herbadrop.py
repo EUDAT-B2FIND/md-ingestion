@@ -1,9 +1,15 @@
-from ..reader import JSONReader
+from .base import Community
+from ..service_types import SchemaType, ServiceType
+
 from ..format import format_value
 
 
-class Herbadrop(JSONReader):
-    NAME = 'herbadrop-hjson'
+class Herbadrop(Community):
+    NAME = 'herbadrop'
+    IDENTIFIER = NAME
+    URL = 'https://opendata.cines.fr/herbadrop-api/rest/data/search'
+    SCHEMA = SchemaType.JSON
+    SERVICE_TYPE = ServiceType.HERBADROP
 
     def update(self, doc):
         doc.title = self.find('metadata."aip.dc.title".lat')
