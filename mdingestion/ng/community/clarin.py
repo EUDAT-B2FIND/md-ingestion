@@ -7,7 +7,7 @@ class BaseClarin(Community):
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
-    #OAI_SET = None
+    # OAI_SET = None
 
     def update(self, doc):
         doc.discipline = 'Linguistics'
@@ -50,6 +50,7 @@ class ClarinTwo(BaseClarin):
             doc.publisher = 'CLARIN two'
         doc.contact = 'clarintwo@something.eu'
 
+
 class ClarinThree(BaseClarin):
     IDENTIFIER = 'clarin_three'
     URL = 'http://repository.clarin.dk/repository/oai/request'
@@ -61,6 +62,7 @@ class ClarinThree(BaseClarin):
             doc.publisher = 'CLARIN three'
         doc.contact = 'clarinthree@something.eu'
 
+
 class ClarinFour(BaseClarin):
     IDENTIFIER = 'clarin_four'
     URL = 'http://lindat.mff.cuni.cz/repository/oai/request'
@@ -71,6 +73,7 @@ class ClarinFour(BaseClarin):
         if not doc.publisher:
             doc.publisher = 'CLARIN four'
         doc.contact = 'clarinfour@something.eu'
+
 
 class ClarinFromB2SatCSC(BaseClarin):
     IDENTIFIER = 'clarin_b2s'
