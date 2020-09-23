@@ -1,5 +1,16 @@
 ## CHANGES
 
+### 2.0.0 (2020-09-23)
+
+* Fixed upload (#120).
+* geofon (#119).
+* Commtesting (#118).
+* Slks (#114, #115, #116, #122).
+* Seanoe (#113).
+* Parse DublinCore bbox (#112).
+* New folder 'demo' for EnvriPlus demonstrator (#110).
+* Removed legacy code (#106, #107, #109).
+
 ### 1.5.0 (2020-09-15)
 * Fidgeo (#105)
 * fix classify.map_discipline
