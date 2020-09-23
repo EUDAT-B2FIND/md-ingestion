@@ -1,11 +1,15 @@
-from ..reader import DataCiteReader
-from ..sniffer import OAISniffer
-from ..format import format_value
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class UCLDatacite(DataCiteReader):
-    NAME = 'ucl-oai_datacite'
-    SNIFFER = OAISniffer
+class UclDatacite(Community):
+    NAME = 'ucl'
+    IDENTIFIER = 'ucl'
+    URL = 'https://api.figshare.com/v2/oai'
+    SCHEMA = SchemaType.DataCite
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_datacite'
+    OAI_SET = 'portal_549'
 
     def update(self, doc):
         doc.contributor = 'Figshare'
