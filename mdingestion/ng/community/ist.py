@@ -1,10 +1,15 @@
-from ..reader import DublinCoreReader
-from ..sniffer import OAISniffer
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class ISTDublinCore(DublinCoreReader):
-    NAME = 'ist-oai_dc'
-    SNIFFER = OAISniffer
+class IstDublinCore(Community):
+    NAME = 'ist'
+    IDENTIFIER = 'ist'
+    URL = 'https://research-explorer.app.ist.ac.at/oai'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = 'research_dataFtxt'
 
     def update(self, doc):
         doc.doi = self.doi(doc)
