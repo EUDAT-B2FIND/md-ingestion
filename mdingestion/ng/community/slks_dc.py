@@ -19,12 +19,8 @@ class SLKSDublinCore(DublinCoreReader):
         doc.metadata_access = f'http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&identifier={oai_id}'
         doc.discipline = 'Archaeology'
         doc.publication_year = self.find('header.datestamp')
-        doc.description = 'This record describes ancient sites and monuments as well as archaeological excavations undertaken by Danish museums.'
-        doc.publisher = 'Aarhus University (www.au.dk); Slots- og Kulturstyrelsen (www.slks.dk)'
-        doc.rights = 'For scientific use'
-        doc.contact = 'Aarhus University (www.au.dk); Slots- og Kulturstyrelsen (www.slks.dk)'
-        # doc.language = 'Danish'
-        keywords = doc.keywords
+        doc.contact = self.find('publisher')
+        # keywords = doc.keywords
         # keywords.append('EOSC Nordic')
         # keywords.append('Viking Age')
         doc.temporal_coverage = self.temporal_coverage(doc)

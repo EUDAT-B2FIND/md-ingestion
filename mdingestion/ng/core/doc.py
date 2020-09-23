@@ -66,7 +66,11 @@ class BaseDoc(object):
 
     @keywords.setter
     def keywords(self, value):
-        self._keywords = format_value(value, type='string_words', min_length=2, max_length=100)
+        # TODO: clean up code
+        _keywords = []
+        for val in value:
+            _keywords.extend(val.split(','))
+        self._keywords = format_value(_keywords, type='string_words', min_length=2, max_length=100)
 
     @property
     def doi(self):
