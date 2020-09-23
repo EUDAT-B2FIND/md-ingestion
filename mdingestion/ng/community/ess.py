@@ -12,7 +12,6 @@ class EssDatacite(Community):
     OAI_SET = None
     # harvesting with: b2f harvest -c ess -k
 
-
     def update(self, doc):
         doc.doi = self.find_doi('identifier', identifierType="URL")
         doc.discipline = 'Particles, Nuclei and Fields'
