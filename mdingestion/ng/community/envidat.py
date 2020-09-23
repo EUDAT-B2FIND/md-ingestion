@@ -1,11 +1,15 @@
-from ..reader import DataCiteReader
-from ..sniffer import OAISniffer
-from ..format import format_value
+from .base import Community
+from ..service_types import SchemaType, ServiceType
 
 
-class EnvidatDatacite(DataCiteReader):
-    NAME = 'envidat-datacite'
-    SNIFFER = OAISniffer
+class EnvidatDatacite(Community):
+    NAME = 'envidat'
+    IDENTIFIER = 'envidat'
+    URL = 'https://www.envidat.ch/oai'
+    SCHEMA = SchemaType.DataCite
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'datacite'
+    OAI_SET = None
 
     def update(self, doc):
         doc.source = self.find_source('alternateIdentifier')
