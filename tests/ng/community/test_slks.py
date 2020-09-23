@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.slks_dc import SLKSDublinCore
+from mdingestion.ng.community.slks_dc import Slks
 
 from tests.common import TESTDATA_DIR
 
@@ -8,7 +8,7 @@ from tests.common import TESTDATA_DIR
 def test_dublin_core():
     xmlfile = os.path.join(TESTDATA_DIR, 'slks-oai_dc', 'SET_1', 'xml',
                            '5581d3eb-dbca-543f-86e8-8fea5d55db54.xml')
-    reader = SLKSDublinCore()
+    reader = Slks()
     doc = reader.read(xmlfile)
     assert '080112-47 Mejlø' in doc.title[0]
     assert 'Archaeology' in doc.discipline
