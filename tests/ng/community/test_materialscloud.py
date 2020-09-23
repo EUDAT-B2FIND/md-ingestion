@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.materialscloud import MaterialsCloudDublinCore
+from mdingestion.ng.community.materialscloud import MaterialscloudDublinCore
 
 from tests.common import TESTDATA_DIR
 
@@ -10,7 +10,7 @@ def test_dublin_core():
         TESTDATA_DIR,
         'materialscloud-oai_dc', 'full', 'xml',
         '013459fc-ad63-5bd7-a580-c882c925dcfa.xml')
-    reader = MaterialsCloudDublinCore()
+    reader = MaterialscloudDublinCore()
     doc = reader.read(xmlfile)
     assert 'Balancing DFT' in doc.title[0]
     assert 'Materials Science and Engineering' in doc.discipline
