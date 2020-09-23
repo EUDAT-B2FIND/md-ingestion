@@ -24,6 +24,8 @@ class ClarinOne(BaseClarin):
     def update(self, doc):
         super().update(doc)
         doc.keywords = self.keywords(doc)
+        doc.doi = self.find_doi('metadata.relation')
+        doc.pid = self.find_pid('metadata.relation')
         if not doc.publisher:
             doc.publisher = 'CLARIN one'
         doc.contact = 'clarinone@something.eu'
