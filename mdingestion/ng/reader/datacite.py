@@ -58,7 +58,7 @@ class DataCiteReader(XMLReader):
     def geometry(self):
         """
         parse datacite geometry.
-
+        https://schema.datacite.org/meta/kernel-4.3/doc/DataCite-MetadataKernel_v4.3.pdf
         https://guidelines.openaire.eu/en/latest/data/field_geolocation.html
         """
         if self.find('geoLocationPoint.pointLongitude'):

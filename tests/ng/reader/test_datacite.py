@@ -55,3 +55,9 @@ def test_bbox():
     # <northBoundLatitude>23.15</northBoundLatitude>
     # </geoLocationBox>
     assert '(62.883W, 21.966S, 64.183E, 23.150N); Northern Arabian Sea' == doc.spatial_coverage
+
+def test_point():
+    xml_file = os.path.join(TESTDATA_DIR, 'danseasy', 'raw', '989ff5fa-d6d3-52c0-a6c3-41bf01236231.xml')
+    reader = DataCiteReader()
+    doc = reader.read(xml_file)
+    assert '(6.197 LON, 52.714 LAT); Plangebied Eekhorstweg 22; Meppel; Drenthe' == doc.spatial_coverage
