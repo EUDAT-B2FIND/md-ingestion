@@ -8,7 +8,7 @@ from tests.common import TESTDATA_DIR
 
 
 def test_common_attributes():
-    xml_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'SET_1', 'xml', 'point_3dea0629-16cb-55b4-8bdb-30d2a57a7fb9.xml')  # noqa
+    xml_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'raw', 'point_3dea0629-16cb-55b4-8bdb-30d2a57a7fb9.xml')  # noqa
     reader = DataCiteReader()
     doc = reader.read(xml_file)
     assert 'TRAMM project' in doc.title[0]
@@ -61,3 +61,9 @@ def test_point():
     reader = DataCiteReader()
     doc = reader.read(xml_file)
     assert '(6.197 LON, 52.714 LAT); Plangebied Eekhorstweg 22; Meppel; Drenthe' == doc.spatial_coverage
+
+def test_polygon():
+    xml_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'raw', '6bd42527-0a4f-563f-88ed-999b1c8ded9e.xml')
+    reader = DataCiteReader()
+    doc = reader.read(xml_file)
+    assert '(114.000W, -66.000S, 122.000E, -63.000N); Antarctica, Southern Ocean [-66 114 -63 122]' == doc.spatial_coverage

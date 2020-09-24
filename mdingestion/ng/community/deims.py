@@ -17,7 +17,7 @@ class Deims(Community):
         doc.contributor = 'DEIMS-SDR Site and Dataset registry deims.org'
         doc.discipline = 'Environmental Monitoring'
         # TODO: why do we not use csw-metadataccess? It points to dc metadata though...fix it, Carsten!
-        # doc.metadata_access = [url for url in self.find('linkage') if 'deims.org/api/' in url]
+        doc.metadata_access = [url for url in self.find('linkage') if 'deims.org/api/' in url]
         doc.discipline = self.discipline(doc, 'Environmental Monitoring')
         self.fix_source(doc)
 

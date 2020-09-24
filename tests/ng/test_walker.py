@@ -17,7 +17,7 @@ def test_walk():
 
 def test_filter_after_date():
     file = pathlib.Path(os.path.join(
-        TESTDATA_DIR, 'envidat-datacite', 'SET_1', 'xml', 'bbox_80e203d7-7c64-5c00-8d1f-a91d49b0fa16.xml'))
+        TESTDATA_DIR, 'envidat-datacite', 'raw', 'bbox_80e203d7-7c64-5c00-8d1f-a91d49b0fa16.xml'))
     assert walker.filter_after_date(file) is True
     assert walker.filter_after_date(file, date=walker.parse_date('2020-05-01')) is True
     assert walker.filter_after_date(file, date=walker.parse_date('2120-05-01')) is False
