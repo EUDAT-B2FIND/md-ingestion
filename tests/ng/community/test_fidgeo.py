@@ -11,4 +11,4 @@ def test_fidgeo():
     doc = reader.read(xmlfile)
     assert ['CC BY 4.0'] == doc.rights
     assert doc.open_access is True
-    assert '(67.5W, 25.0S, 95.0E, 45.0N); High Mountain Asia, 1987-2016' == doc.spatial_coverage
+    assert '(67.500W, 25.000S, 95.000E, 45.000N); High Mountain Asia, 1987-2016' == doc.spatial_coverage
