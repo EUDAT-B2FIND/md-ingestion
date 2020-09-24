@@ -28,7 +28,7 @@ def test_dc_slks_point():
     assert 'Dataset' in doc.resource_type
     assert 'Various' in doc.discipline
     # assert '???' in doc.format
-    assert doc.spatial_coverage == '(9.8 LON, 56.3 LAT); Thorsø'
+    assert doc.spatial_coverage == '(9.811 LON, 56.303 LAT); Thorsø'
     # assert "{'type': 'Polygon', 'coordinates': (((9.811246, 56.302585), (9.811246, 56.302585), (9.811246, 56.302585), (9.811246, 56.302585)),)}" == doc.spatial  # noqa
     # assert '2018-12-31' == doc.temporal_coverage
 
@@ -39,4 +39,4 @@ def test_dc_seanoe_bbox():
     reader = DublinCoreReader()
     doc = reader.read(xml_file)
     # <dc:coverage>North 37.30134, South 37.2888, East -32.275618, West -32.27982</dc:coverage>
-    assert doc.spatial_coverage == '(-32.3W, 37.3S, -32.3E, 37.3N)'
+    assert doc.spatial_coverage == '(-32.280W, 37.289S, -32.276E, 37.301N)'

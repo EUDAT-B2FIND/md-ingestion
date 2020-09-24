@@ -8,7 +8,7 @@ from tests.common import TESTDATA_DIR
 
 
 def test_common_attributes():
-    xml_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'SET_1', 'xml', 'point_3dea0629-16cb-55b4-8bdb-30d2a57a7fb9.xml')  # noqa
+    xml_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'raw', 'point_3dea0629-16cb-55b4-8bdb-30d2a57a7fb9.xml')  # noqa
     reader = DataCiteReader()
     doc = reader.read(xml_file)
     assert 'TRAMM project' in doc.title[0]
@@ -43,3 +43,27 @@ def test_doi():
     reader = DataCiteReader()
     doc = reader.read(xml_file)
     assert 'https://doi.org/10.18419/darus-470' in doc.doi
+
+def test_bbox():
+    xml_file = os.path.join(TESTDATA_DIR, 'pangaea', 'raw', '5755f06f-a5a9-5794-9d05-ab23e51452be.xml')
+    reader = DataCiteReader()
+    doc = reader.read(xml_file)
+    #   <geoLocationBox>
+    # <westBoundLongitude>62.883</westBoundLongitude>
+    # <eastBoundLongitude>64.183</eastBoundLongitude>
+    # <southBoundLatitude>21.966</southBoundLatitude>
+    # <northBoundLatitude>23.15</northBoundLatitude>
+    # </geoLocationBox>
+    assert '(62.883W, 21.966S, 64.183E, 23.150N); Northern Arabian Sea' == doc.spatial_coverage
+
+def test_point():
+    xml_file = os.path.join(TESTDATA_DIR, 'danseasy', 'raw', '989ff5fa-d6d3-52c0-a6c3-41bf01236231.xml')
+    reader = DataCiteReader()
+    doc = reader.read(xml_file)
+    assert '(6.197 LON, 52.714 LAT); Plangebied Eekhorstweg 22; Meppel; Drenthe' == doc.spatial_coverage
+
+def test_polygon():
+    xml_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'raw', '6bd42527-0a4f-563f-88ed-999b1c8ded9e.xml')
+    reader = DataCiteReader()
+    doc = reader.read(xml_file)
+    assert '(114.000W, -66.000S, 122.000E, -63.000N); Antarctica, Southern Ocean [-66 114 -63 122]' == doc.spatial_coverage

@@ -58,10 +58,10 @@ class DataCiteReader(XMLReader):
     def geometry(self):
         """
         parse datacite geometry.
-
+        https://schema.datacite.org/meta/kernel-4.3/doc/DataCite-MetadataKernel_v4.3.pdf
         https://guidelines.openaire.eu/en/latest/data/field_geolocation.html
         """
-        if self.parser.doc.find('geoLocationPoint.pointLongitude'):
+        if self.find('geoLocationPoint.pointLongitude'):
             lon = format_value(self.find('geoLocationPoint.pointLongitude'), type='float', one=True)
             lat = format_value(self.find('geoLocationPoint.pointLatitude'), type='float', one=True)
             # point: x=lon, y=lat
@@ -73,15 +73,17 @@ class DataCiteReader(XMLReader):
             lon = float(point[1])
             # point: x=lon, y=lat
             geometry = shapely.geometry.Point(lon, lat)
-        elif self.parser.doc.find('geoLocationBox.westBoundLongitude'):
+        elif self.find('geoLocationBox.westBoundLongitude'):
             west = format_value(self.find('geoLocationBox.westBoundLongitude'), type='float', one=True)
             east = format_value(self.find('geoLocationBox.eastBoundLongitude'), type='float', one=True)
             south = format_value(self.find('geoLocationBox.southBoundLatitude'), type='float', one=True)
             north = format_value(self.find('geoLocationBox.northBoundLatitude'), type='float', one=True)
             # print(f"{west} {east} {south} {north}")
             # bbox: minx=west, miny=south, maxx=east, maxy=north
+            # print(f"{west}w, {east}e, {south}s, {north}n")
             geometry = shapely.geometry.box(west, south, east, north)
         elif self.parser.doc.find('geoLocationBox'):
+            # print('wrong location')
             bbox = self.parser.doc.find('geoLocationBox').text.split()
             # print(bbox)
             south = float(bbox[0])

@@ -38,6 +38,7 @@ class CSWSniffer(CatalogSniffer):
 
     def metadata_access(self, doc):
         if doc.file_identifier:
+            # TODO: add schema for iso19139
             mdaccess = f"{doc.url}?service=CSW&version=2.0.2&request=GetRecordById&Id={doc.file_identifier}"
         else:
             mdaccess = None

@@ -269,10 +269,11 @@ class GeoDoc(BaseDoc):
         if self.geometry:
             if self.geometry.geom_type == 'Point':
                 point = self.geometry
-                geom = f"({point.x:.1f} LON, {point.y:.1f} LAT)"
+                geom = f"({point.x:.3f} LON, {point.y:.3f} LAT)"
             else:
                 bounds = self.geometry.bounds
-                geom = f"({bounds[0]:.1f}W, {bounds[1]:.1f}S, {bounds[2]:.1f}E, {bounds[3]:.1f}N)"
+                print(f"{bounds}")
+                geom = f"({bounds[0]:.3f}W, {bounds[1]:.3f}S, {bounds[2]:.3f}E, {bounds[3]:.3f}N)"
         return geom
 
     def format_geometry(self):

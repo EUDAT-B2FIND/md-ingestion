@@ -1,0 +1,68 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.548413</identifier>
+    <datestamp>2020-01-19T02:08:16Z</datestamp>
+    <setSpec>citable</setSpec>
+    <setSpec>paleoclimate</setSpec>
+    <setSpec>supplement</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.548413</identifier>
+      <creators>
+        <creator>
+          <creatorName>Martini, Erlend</creatorName>
+          <givenName>Erlend</givenName>
+          <familyName>Martini</familyName>
+        </creator>
+        <creator>
+          <creatorName>M&#252;ller, Carla</creatorName>
+          <givenName>Carla</givenName>
+          <familyName>M&#252;ller</familyName>
+        </creator>
+      </creators>
+      <titles>
+        <title>Nannoplankton of multi-net samples, sediment surface and sediment core samples from the northern Arabian Sea, supplement to: Martini, Erlend; M&#252;ller, Carla (1972): Nannoplankton aus dem n&#246;rdlichen Arabischen Meer. Meteor Forschungsergebnisse, Deutsche Forschungsgemeinschaft, Reihe C Geologie und Geophysik, Gebr&#252;der Borntr&#228;ger, Berlin, Stuttgart, C10, 63-74</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>1972</publicationYear>
+      <subjects>
+        <subject subjectScheme="Method">Box corer</subject>
+        <subject subjectScheme="Method">Indian Ocean Standard Net</subject>
+        <subject subjectScheme="Campaign">M1</subject>
+        <subject subjectScheme="Basis">Meteor (1964)</subject>
+        <subject subjectScheme="Project">Institute for Geosciences, Christian Albrechts University, Kiel (GIK/IfG)</subject>
+      </subjects>
+      <dates>
+        <date dateType="Collected">1965-03-19T00:00:00/1965-03-21T00:00:00</date>
+      </dates>
+      <language>en</language>
+      <resourceType resourceTypeGeneral="Collection">Supplementary Collection of Datasets</resourceType>
+      <sizes>
+        <size>4 datasets</size>
+      </sizes>
+      <formats>
+        <format>application/zip</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="https://creativecommons.org/licenses/by/3.0/" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-3.0">Creative Commons Attribution 3.0 Unported</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Recent nannoplankton from the "Meteor&#8221;-stations M 242, M 243 and M 245 in the northern Arabian Sea were studied by means of the light and electron microscope, and 19 species were found. The nannoplankton assemblage of the northern Arabian Sea is compared with those of the eastern and western Mediterranean Sea and the Atlantic Ocean. Gephyrocapsa oceanica (Kamptner), Cyclococcolithus leptoporus (Murray &amp; Blackman), Emiliania huxleyi (Lohmann), Helicopontospbaera kamptneri (Hay &amp; Mohler), and Umbilicosphaera mirabilis (Lohmann) are the most common species in the northern Arabian Sea. Reworked nannoplankton and nannoplankton species agglutinated by tintinnids are discussed.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>
+            <westBoundLongitude>62.883</westBoundLongitude>
+            <eastBoundLongitude>64.183</eastBoundLongitude>
+            <southBoundLatitude>21.966</southBoundLatitude>
+            <northBoundLatitude>23.15</northBoundLatitude>
+          </geoLocationBox>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Northern Arabian Sea</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>
