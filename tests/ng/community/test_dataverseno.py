@@ -17,4 +17,4 @@ def test_dataversenoparttwo():
     xmlfile = os.path.join(TESTDATA_DIR, 'dataverseno-oai_dc', 'dataverseno', 'xml', '6a57038a-9ceb-58f9-a687-947cdca263b5.xml')  # noqa
     reader = DataverseNODublinCore()
     doc = reader.read(xmlfile)
-    assert '2020-02-15T01:00:05Z' == doc.publication_year
+    assert '2020' == doc.publication_year
