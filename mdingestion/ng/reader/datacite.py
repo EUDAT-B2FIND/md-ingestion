@@ -80,10 +80,10 @@ class DataCiteReader(XMLReader):
             north = format_value(self.find('geoLocationBox.northBoundLatitude'), type='float', one=True)
             # print(f"{west} {east} {south} {north}")
             # bbox: minx=west, miny=south, maxx=east, maxy=north
-            print(f"{west}w, {east}e, {south}s, {north}n")
+            # print(f"{west}w, {east}e, {south}s, {north}n")
             geometry = shapely.geometry.box(west, south, east, north)
         elif self.parser.doc.find('geoLocationBox'):
-            print('wrong location')
+            # print('wrong location')
             bbox = self.parser.doc.find('geoLocationBox').text.split()
             # print(bbox)
             south = float(bbox[0])

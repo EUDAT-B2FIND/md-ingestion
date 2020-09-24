@@ -22,6 +22,25 @@ def test_envidat_iso19139():
     # assert '2018-12-31T00:00:00Z' == doc.temporal_coverage_begin_date
     # assert '2018-12-31T00:00:00Z' == doc.temporal_coverage_end_date
 
+def test_boundingbox():
+    point_file = os.path.join(
+        TESTDATA_DIR, 'deims', 'raw', '8708dd68-f413-5414-80fb-da439a4224f9.xml')
+    reader = ISO19139Reader()
+    doc = reader.read(point_file)
+    # <gmd:westBoundLongitude>
+    # <gco:Decimal>34.611499754704</gco:Decimal>
+    # </gmd:westBoundLongitude>
+    # <gmd:eastBoundLongitude>
+    # <gco:Decimal>35.343095815055</gco:Decimal>
+    # </gmd:eastBoundLongitude>
+    # <gmd:southBoundLatitude>
+    # <gco:Decimal>29.491402811787</gco:Decimal>
+    # </gmd:southBoundLatitude>
+    # <gmd:northBoundLatitude>
+    # <gco:Decimal>30.968572510749</gco:Decimal>
+    # </gmd:northBoundLatitude>
+    assert '(34.611W, 29.491S, 35.343E, 30.969N)' == doc.spatial_coverage
+
 
 @pytest.mark.xfail(reason='missing in reader')
 def test_iso19139_temporal_coverage():
