@@ -43,3 +43,15 @@ def test_doi():
     reader = DataCiteReader()
     doc = reader.read(xml_file)
     assert 'https://doi.org/10.18419/darus-470' in doc.doi
+
+def test_bbox():
+    xml_file = os.path.join(TESTDATA_DIR, 'pangaea', 'raw', '5755f06f-a5a9-5794-9d05-ab23e51452be.xml')
+    reader = DataCiteReader()
+    doc = reader.read(xml_file)
+    #   <geoLocationBox>
+    # <westBoundLongitude>62.883</westBoundLongitude>
+    # <eastBoundLongitude>64.183</eastBoundLongitude>
+    # <southBoundLatitude>21.966</southBoundLatitude>
+    # <northBoundLatitude>23.15</northBoundLatitude>
+    # </geoLocationBox>
+    assert '(62.883W, 21.966S, 64.183E, 23.150N); Northern Arabian Sea' == doc.spatial_coverage
