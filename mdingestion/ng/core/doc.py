@@ -90,7 +90,10 @@ class BaseDoc(object):
 
     @property
     def source(self):
-        return self._source or ''
+        url = self._source or ''
+        if url in [self.pid, self.doi]:
+            url = ''
+        return url
 
     @source.setter
     def source(self, value):
@@ -272,7 +275,7 @@ class GeoDoc(BaseDoc):
                 geom = f"({point.x:.3f} LON, {point.y:.3f} LAT)"
             else:
                 bounds = self.geometry.bounds
-                print(f"{bounds}")
+                # print(f"{bounds}")
                 geom = f"({bounds[0]:.3f}W, {bounds[1]:.3f}S, {bounds[2]:.3f}E, {bounds[3]:.3f}N)"
         return geom
 
