@@ -80,13 +80,19 @@ def harvest(ctx, community, url, fromdate, limit, insecure):
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
 @click.option('--no-linkcheck', is_flag=True, help='do not check if URLs resolve in validation')
+@click.option('--summary', default='summary',
+              help='The absolute root dir in which all summary files will be saved.')
 @click.pass_context
-def map(ctx, community, format, limit, force, no_linkcheck):
+def map(ctx, community, format, limit, force, no_linkcheck, summary):
+    summary_dir = pathlib.Path(summary)
+    if not summary_dir.is_absolute():
+        summary_dir = pathlib.Path.cwd().joinpath(summary_dir)
+    summary_dir = summary_dir.absolute().as_posix()
     try:
         map = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit)
+        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit, summary_dir=summary_dir)
     except Exception as e:
         logging.critical(f"map: {e}", exc_info=True)
         raise click.ClickException(f"{e}")

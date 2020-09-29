@@ -1,12 +1,19 @@
 import colander
 import pathlib
 import json
+import datetime
 
 from .writer import B2FWriter
 from .core import B2FSchema
 from .linkcheck import LinkChecker
 
 import logging
+
+
+def uniq_name():
+    dt = datetime.datetime.now()
+    name = f"{dt.strftime('%Y-%m-%d')}"
+    return name
 
 
 class Validator(object):
@@ -100,35 +107,47 @@ class Validator(object):
         else:
             self.summary[values_key][key][val_key] += 1
 
-    def print_summary(self):
-        print("\nSummary:")
-        print(f"\tvalid={self.summary['valid']}/{self.summary['total']}")
-        print(f"\twritten={self.summary['written']}")
-        print(f"\tbroken links={len(self.summary['broken_links'])}")
-        print(f"\tinvalid geometry={len(self.summary['_errors_']['invalid_geometry'])}")
-        print("\nRequired Fields:")
-        for key, value in self.summary['required'].items():
-            print(f"\t{key}={value}")
-        print("\nOptional Fields (complete):")
-        for key, value in self.summary['optional'].items():
-            if value == self.summary['total']:
-                print(f"\t{key}")
-        print("\nOptional Fields (incomplete):")
-        for key, value in self.summary['optional'].items():
-            if value < self.summary['total']:
-                print(f"\t{key}={value}")
-        if self.summary['invalid']:
-            print("\nInvalid Fields:")
-            for key, value in self.summary['invalid'].items():
-                print(f"\t{key}={value}")
-        if self.summary['missing']:
-            print("\nMissing Fields:")
-            for key in self.summary['missing']:
-                print(f"\t{key}")
+    def write_short_summary(self, out, show=True):
+        with out.open(mode='w') as fh:
+            fh.write("\nSummary:\n")
+            fh.write(f"\tvalid={self.summary['valid']}/{self.summary['total']}\n")
+            fh.write(f"\twritten={self.summary['written']}\n")
+            fh.write(f"\tbroken links={len(self.summary['broken_links'])}\n")
+            fh.write(f"\tinvalid geometry={len(self.summary['_errors_']['invalid_geometry'])}\n")
+            fh.write("\nRequired Fields:\n")
+            for key, value in self.summary['required'].items():
+                fh.write(f"\t{key}={value}\n")
+            fh.write("\nOptional Fields (complete):\n")
+            for key, value in self.summary['optional'].items():
+                if value == self.summary['total']:
+                    fh.write(f"\t{key}\n")
+            fh.write("\nOptional Fields (incomplete):\n")
+            for key, value in self.summary['optional'].items():
+                if value < self.summary['total']:
+                    fh.write(f"\t{key}={value}\n")
+            if self.summary['invalid']:
+                fh.write("\nInvalid Fields:\n")
+                for key, value in self.summary['invalid'].items():
+                    fh.write(f"\t{key}={value}\n")
+            if self.summary['missing']:
+                fh.write("\nMissing Fields:\n")
+                for key in self.summary['missing']:
+                    fh.write(f"\t{key}\n")
+        if show is True:
+            with out.open(mode='r') as fh:
+                for line in fh:
+                    print(line.rstrip())
 
-    def write_summary(self, outdir=None):
-        outdir = outdir or pathlib.Path.cwd()
-        out = outdir.joinpath('summary.json')
-        # out.parent.mkdir(parents=True, exist_ok=True)
+    def write_summary(self, prefix, outdir):
+        # TODO: refactor summary output
+        id = uniq_name()
+        # summary as json
+        name = f"{id}_{prefix}_summary.json"
+        out = pathlib.Path(outdir).joinpath(prefix, name)
+        out.parent.mkdir(parents=True, exist_ok=True)
         with out.open(mode='w') as outfile:
             json.dump(self.summary, outfile, indent=4, sort_keys=True, ensure_ascii=False)
+        # short summary as text
+        short_name = f"{id}_{prefix}_summary_short.txt"
+        out = pathlib.Path(outdir).joinpath(prefix, short_name)
+        self.write_short_summary(out)

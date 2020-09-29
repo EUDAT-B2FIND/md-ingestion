@@ -17,7 +17,7 @@ class Map(Command):
         self._community = community(self.community)
         self.writer = None
 
-    def run(self, format=format, force=False, linkcheck=True, limit=None):
+    def run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None):
         limit = limit or -1
         # TODO: refactor writer init
         self.writer = writer(format)
@@ -39,8 +39,7 @@ class Map(Command):
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
         validator.summary['_errors_'] = self._community.errors
-        validator.print_summary()
-        validator.write_summary(self.writer.outdir)
+        validator.write_summary(prefix=self.community, outdir=summary_dir)
 
     def walk(self):
         path = os.path.join(self._community.identifier, 'raw')
