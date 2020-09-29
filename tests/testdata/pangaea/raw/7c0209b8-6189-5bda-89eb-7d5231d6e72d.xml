@@ -1,0 +1,113 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.472241</identifier>
+    <datestamp>2020-04-11T00:18:22Z</datestamp>
+    <setSpec>citable</setSpec>
+    <setSpec>ORFOIS</setSpec>
+    <setSpec>supplement</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.472241</identifier>
+      <creators>
+        <creator>
+          <creatorName>Michels, Klaus</creatorName>
+          <givenName>Klaus</givenName>
+          <familyName>Michels</familyName>
+        </creator>
+        <creator>
+          <creatorName>Kuhn, Gerhard</creatorName>
+          <givenName>Gerhard</givenName>
+          <familyName>Kuhn</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-6069-7485</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Hillenbrand, Claus-Dieter</creatorName>
+          <givenName>Claus-Dieter</givenName>
+          <familyName>Hillenbrand</familyName>
+        </creator>
+        <creator>
+          <creatorName>Diekmann, Bernhard</creatorName>
+          <givenName>Bernhard</givenName>
+          <familyName>Diekmann</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-5129-3649</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>F&#252;tterer, Dieter K</creatorName>
+          <givenName>Dieter K</givenName>
+          <familyName>F&#252;tterer</familyName>
+        </creator>
+        <creator>
+          <creatorName>Grobe, Hannes</creatorName>
+          <givenName>Hannes</givenName>
+          <familyName>Grobe</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-4133-2218</nameIdentifier>
+        </creator>
+        <creator>
+          <creatorName>Uenzelmann-Neben, Gabriele</creatorName>
+          <givenName>Gabriele</givenName>
+          <familyName>Uenzelmann-Neben</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-0115-5923</nameIdentifier>
+        </creator>
+      </creators>
+      <titles>
+        <title>Grain size composition of sediment cores from the Weddell Sea, Antarctica, supplement to: Michels, Klaus; Kuhn, Gerhard; Hillenbrand, Claus-Dieter; Diekmann, Bernhard; F&#252;tterer, Dieter K; Grobe, Hannes; Uenzelmann-Neben, Gabriele (2002): The southern Weddell Sea: combined contourite-turbidite sedimentation at the southeastern margin of the Weddell Gyre. In: Stow, D A V; Pudsey, C; Howe, J C; Faug&#232;res, J-C &amp; Viana, A R (eds.), Deep-water contourite systems: modern drifts and ancient series, seismic and sedimentary characteristics. Geological Society of London, Memoirs, London, 22, 305-323</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2002</publicationYear>
+      <subjects>
+        <subject>gcmd1</subject>
+        <subject subjectScheme="Method">Gravity corer (Kiel type)</subject>
+        <subject subjectScheme="Method">Giant box corer</subject>
+        <subject subjectScheme="Method">Piston corer (BGR type)</subject>
+        <subject subjectScheme="Campaign">ANT-IV/3</subject>
+        <subject subjectScheme="Campaign">ANT-VI/3</subject>
+        <subject subjectScheme="Campaign">ANT-VIII/5</subject>
+        <subject subjectScheme="Basis">Polarstern</subject>
+        <subject subjectScheme="Project">Paleoenvironmental Reconstructions from Marine Sediments @ AWI (AWI_Paleo)</subject>
+      </subjects>
+      <dates>
+        <date dateType="Collected">1985-12-18T23:15:00/1990-01-15T00:04:00</date>
+      </dates>
+      <language>en</language>
+      <resourceType resourceTypeGeneral="Collection">Supplementary Collection of Datasets</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="Handle" relationType="IsSupplementTo">10013/epic.14690.d001</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>13 datasets</size>
+      </sizes>
+      <formats>
+        <format>application/zip</format>
+      </formats>
+      <rightsList>
+        <rights rightsURI="https://creativecommons.org/licenses/by/3.0/" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-3.0">Creative Commons Attribution 3.0 Unported</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">Sedimentary processes in the southeastern Weddell Sea are influenced by glacial-interglacial ice-shelf dynamics and the cyclonic circulation of the Weddell Gyre, which affects all water masses down to the sea floor. Significantly increased sedimentation rates occur during glacial stages, when ice sheets advance to the shelf edge and trigger gravitational sediment transport to the deep sea. Downslope transport on the Crary Fan and off Dronning Maud and Coats Land is channelized into three huge channel systems, which originate on the eastern-, the central and the western Crary Fan. They gradually turn from a northerly direction eastward until they follow a course parallel to the continental slope. All channels show strongly asymmetric cross sections with well-developed levees on their northwestern sides, forming wedge-shaped sediment bodies. They level off very gently. Levees on the southeastern sides are small, if present at all. This characteristic morphology likely results from the process of combined turbidite-contourite deposition. Strong thermohaline currents of the Weddell Gyre entrain particles from turbidity-current suspensions, which flow down the channels, and carry them westward out of the channel where they settle on a surface gently dipping away from the channel. These sediments are intercalated with overbank deposits of high-energy and high-volume turbidity currents, which preferentially flood the left of the channels (looking downchannel) as a result of Coriolis force. In the distal setting of the easternmost channel-levee complex, where thermohaline currents are directed northeastward as a result of a recirculation of water masses from the Enderby Basin, the setting and the internal structures of a wedge-shaped sediment body indicate a contourite drift rather than a channel levee. Dating of the sediments reveals that the levees in their present form started to develop with a late Miocene cooling event, which caused an expansion of the East Antarctic Ice Sheet and an invigoration of thermohaline current activity.</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationBox>
+            <westBoundLongitude>-33.648829999999975</westBoundLongitude>
+            <eastBoundLongitude>-16.5</eastBoundLongitude>
+            <southBoundLatitude>-74.24116</southBoundLatitude>
+            <northBoundLatitude>-71.86933</northBoundLatitude>
+          </geoLocationBox>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Camp Norway</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Halley Bay</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Weddell Sea</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationPlace>Lyddan Island</geoLocationPlace>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>

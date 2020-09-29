@@ -13,3 +13,4 @@ class PangaeaDatacite(Community):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Earth System Research')
+        doc.contact = 'something@pangaea.de'
