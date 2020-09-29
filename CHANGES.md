@@ -1,5 +1,10 @@
 ## CHANGES
 
+### 2.0.1 (2020-09-29)
+
+* slks ingestion on productive B2FIND
+
+
 ### 2.0.0 (2020-09-23)
 
 * Fixed upload (#120).
