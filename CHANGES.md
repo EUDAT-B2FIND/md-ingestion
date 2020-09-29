@@ -3,7 +3,9 @@
 ### 2.0.1 (2020-09-29)
 
 * slks ingestion on productive B2FIND
-
+* different mapfiles for one Community = CLARIN, new folder structure (#124)
+* additional tests and Community specific mapping issues (DataverseNO, DEIMS, Pangaea) (#125)
+* fixed geo datacite (bbox, polygon, point) (#126)
 
 ### 2.0.0 (2020-09-23)
 
