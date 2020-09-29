@@ -12,7 +12,7 @@ class DataCiteReader(XMLReader):
         doc.title = self.find('title')
         doc.description = self.find('description')
         doc.doi = self.find_doi('resource.identifier')
-        doc.pid = self.find_pid('alternateIdentifier')
+        doc.pid = self.pid()
         doc.source = self.find_source('resource.identifier')
         doc.keywords = self.find('subject')
         doc.discipline = self.discipline(doc)
@@ -32,6 +32,11 @@ class DataCiteReader(XMLReader):
         doc.temporal_coverage = self.find('date')
         doc.geometry = self.find_geometry()
         doc.places = self.find('geoLocationPlace')
+
+    def pid(self):
+        urls = self.find_pid('alternateIdentifier')
+        urls.extend(self.find_pid('relatedIdentifier', relatedIdentifierType="Handle"))
+        return urls
 
     def creator(self):
         creators = []
