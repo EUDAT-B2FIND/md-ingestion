@@ -1,0 +1,115 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>10.22000/99</identifier>
+    <datestamp>2020-02-27T07:56:33Z</datestamp>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <identifier identifierType="DOI">10.22000/99</identifier>
+      <creators>
+        <creator>
+          <creatorName>Lam, Thi Hai Yen</creatorName>
+          <givenName>Thi Hai Yen</givenName>
+          <familyName>Lam</familyName>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Halle, Germany</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Supplementary data for "Nor-guanacastepene pigments from Chilean mushroom Cortinarius pyromyxa"</title>
+      </titles>
+      <publisher>Leibniz Institute of Plant Biochemistry, Halle, Germany</publisher>
+      <dates>
+        <date dateType="Created">2016-2019</date>
+      </dates>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Chemistry</subject>
+        <subject>Life Science</subject>
+        <subject>Pyromyxon A</subject>
+        <subject>Pyromyxon B</subject>
+        <subject>Pyromyxon C</subject>
+        <subject>Pyromyxon D</subject>
+        <subject>1H NMR</subject>
+        <subject>13C NMR</subject>
+        <subject>2D NMR</subject>
+        <subject>DEPT</subject>
+        <subject>DQCOSY</subject>
+        <subject>HMBCAD</subject>
+        <subject>HSQCAD</subject>
+        <subject>NOESY 1D</subject>
+        <subject>ROESY</subject>
+        <subject>TOCSY</subject>
+        <subject>TOCSY 1D</subject>
+        <subject>ROESY 1D</subject>
+        <subject>ROESYAD</subject>
+        <subject>HR-ESI-MS</subject>
+        <subject>Circular dichroism</subject>
+        <subject>CD spectroscopy</subject>
+        <subject>UV-Vis spectroscopy</subject>
+        <subject>Ultraviolet&#8211;visible spectroscopy</subject>
+        <subject>Nor-guanacastepene pigments</subject>
+        <subject>Diterpenoids</subject>
+        <subject>FTIR</subject>
+      </subjects>
+      <resourceType resourceTypeGeneral="Dataset">NMR, MS, UV, CD &amp; FTIR data</resourceType>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>Leibniz Institute of Plant Biochemistry, Halle, Germany</contributorName>
+        </contributor>
+        <contributor contributorType="Researcher">
+          <contributorName>Porzel, Andrea</contributorName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-8148-6895</nameIdentifier>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Halle, Germany</affiliation>
+        </contributor>
+        <contributor contributorType="Researcher">
+          <contributorName>Frolov, Andrej</contributorName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-7593-7717</nameIdentifier>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Halle, Germany</affiliation>
+        </contributor>
+        <contributor contributorType="DataCollector">
+          <contributorName>Hahn, Gudrun</contributorName>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Halle, Germany</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectLeader">
+          <contributorName>Arnold, Norbert</contributorName>
+          <affiliation>Leibniz Institute of Plant Biochemistry, Halle, Germany</affiliation>
+        </contributor>
+      </contributors>
+      <descriptions>
+        <description descriptionType="Methods">Cortinarius pyromyxa</description>
+        <description descriptionType="Methods">Varian/Agilent VNMRS 600 NMR spectrometer</description>
+        <description descriptionType="Methods">Orbitrap Elite mass spectrometer (Thermo Fisher Scientific, Germany)</description>
+        <description descriptionType="Methods">Jasco J-815 CD spectrophotometer</description>
+        <description descriptionType="Methods">Jasco V-560 UV/Vis spectrophotometer</description>
+        <description descriptionType="Methods">Thermo Scientific Nicolet 5700 FTIR spectrometer</description>
+      </descriptions>
+      <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="InChI">InChI=1S/C19H23NO2/c1-10(2)13-9-14(21)15-11(13)6-8-19(3)7-4-5-12-16(19)17(15)20-18(12)22/h6,10,13H,4-5,7-9H2,1-3H3,(H,20,22)/t13-,19 /m1/s1</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChIKey">GAOKFRULUQQUPL-YJYMSZOUSA-N</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChI">InChI=1S/C19H21NO2/c1-10(2)13-9-14(21)15-11(13)6-8-19(3)7-4-5-12-16(19)17(15)20-18(12)22/h6,9-10H,4-5,7-8H2,1-3H3,(H,20,22)/t19-/m0/s1</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChIKey">UMXRMRDYHWWXEV-IBGZPJMESA-N</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChI">InChI=1S/C19H21NO3/c1-9(2)19-11-6-8-18(3)7-4-5-10-13(18)14(20-17(10)22)12(11)15(21)16(19)23-19/h6,9,16H,4-5,7-8H2,1-3H3,(H,20,22)/t16-,18-,19 /m0/s1</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChIKey">HMQZMPJIWRCDOL-YTQUADARSA-N</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChI">InChI=1S/C19H20O3/c1-10(2)13-9-14(20)15-11(13)6-8-19(3)7-4-5-12-16(19)17(15)22-18(12)21/h6,9-10H,4-5,7-8H2,1-3H3/t19-/m0/s1</alternateIdentifier>
+        <alternateIdentifier alternateIdentifierType="InChIKey">SUVNZKPKTKQRDF-IBGZPJMESA-N</alternateIdentifier>
+      </alternateIdentifiers>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Comisi&#243;n Nacional de Investigaci&#243;n Cient&#237;fica y Tecnol&#243;gica</funderName>
+          <funderIdentifier funderIdentifierType="Crossref Funder ID">501100002848</funderIdentifier>
+          <awardNumber awardURI="">FONDEF ID16I10286</awardNumber>
+        </fundingReference>
+        <fundingReference>
+          <funderName>B&#7897; Gi&#225;o d&#7909;c v&#224; &#208;&#224;o t&#7841;o</funderName>
+          <funderIdentifier funderIdentifierType="Crossref Funder ID">501100005645</funderIdentifier>
+        </fundingReference>
+      </fundingReferences>
+      <sizes>
+        <size/>
+      </sizes>
+      <formats>
+        <format>application/zip</format>
+      </formats>
+    </resource>
+  </metadata>
+</record>
