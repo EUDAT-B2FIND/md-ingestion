@@ -1,0 +1,63 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>RADAR/323</identifier>
+    <datestamp>2020-06-26T12:15:39Z</datestamp>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+      <creators>
+        <creator>
+          <creatorName>Friedrich-Alexander-Universit&#228;t Erlangen-N&#252;rnberg (FAU)</creatorName>
+          <affiliation/>
+        </creator>
+        <creator>
+          <creatorName>Ott, Christian</creatorName>
+          <givenName>Christian</givenName>
+          <familyName>Ott</familyName>
+          <affiliation>Friedrich-Alexander-Universit&#228;t Erlangen-N&#252;rnberg (FAU)</affiliation>
+        </creator>
+        <creator>
+          <creatorName>G&#246;tzinger, Stephan</creatorName>
+          <givenName>Stephan</givenName>
+          <familyName>G&#246;tzinger</familyName>
+          <affiliation>Friedrich-Alexander-Universit&#228;t Erlangen-N&#252;rnberg (FAU)</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Thermal origin of light emission in non-resonant and resonant tunnel junctions - experimental data</title>
+      </titles>
+      <publisher>Weber, Heiko,Ott, Christian</publisher>
+      <dates>
+        <date dateType="Created">2020</date>
+      </dates>
+      <publicationYear/>
+      <subjects>
+        <subject>Physics</subject>
+      </subjects>
+      <resourceType resourceTypeGeneral="Dataset"/>
+      <contributors>
+        <contributor contributorType="RightsHolder">
+          <contributorName>Weber, Heiko</contributorName>
+        </contributor>
+        <contributor contributorType="RightsHolder">
+          <contributorName>Ott, Christian</contributorName>
+        </contributor>
+      </contributors>
+      <descriptions/>
+      <fundingReferences>
+        <fundingReference>
+          <funderName>Deutsche Forschungsgemeinschaft</funderName>
+          <funderIdentifier funderIdentifierType="GRID">grid.424150.6 </funderIdentifier>
+          <awardNumber awardURI="">182849149</awardNumber>
+          <awardTitle>SFB 953</awardTitle>
+        </fundingReference>
+      </fundingReferences>
+      <sizes>
+        <size/>
+      </sizes>
+      <formats>
+        <format>application/zip</format>
+      </formats>
+    </resource>
+  </metadata>
+</record>
