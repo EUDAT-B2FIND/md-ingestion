@@ -39,7 +39,7 @@ class DataCiteReader(XMLReader):
         return urls
 
     def publication_year(self):
-        year = self.find('publicationYear')
+        year = format_value(self.find('publicationYear'), one=True)        
         if not year:
             year = self.find('header.datestamp')
         return year
