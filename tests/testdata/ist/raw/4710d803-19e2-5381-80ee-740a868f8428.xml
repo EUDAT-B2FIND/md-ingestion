@@ -1,0 +1,33 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pub.research-explorer.app.ist.ac.at:5580</identifier>
+    <datestamp>2020-07-14T23:05:36Z</datestamp>
+    <setSpec>research_data</setSpec>
+    <setSpec>ddc:020</setSpec>
+    <setSpec>research_dataFtxt</setSpec>
+    <setSpec>driver</setSpec>
+    <setSpec>open_access</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:title>SAGE Austrian Publications 2013-2017</dc:title>
+      <dc:creator>Vill&#225;nyi, M&#225;rton</dc:creator>
+      <dc:subject>Publication analysis</dc:subject>
+      <dc:subject>Bibliography</dc:subject>
+      <dc:subject>Open Access</dc:subject>
+      <dc:subject>ddc:020</dc:subject>
+      <dc:description>Data on Austrian open access publication output at SAGE from 2013-2017 including data analysis.</dc:description>
+      <dc:publisher>IST Austria</dc:publisher>
+      <dc:date>2018</dc:date>
+      <dc:type>info:eu-repo/semantics/other</dc:type>
+      <dc:type>doc-type:ResearchData</dc:type>
+      <dc:type>text</dc:type>
+      <dc:type>http://purl.org/coar/resource_type/c_ddb1</dc:type>
+      <dc:identifier>https://research-explorer.app.ist.ac.at/record/5580</dc:identifier>
+      <dc:identifier>https://research-explorer.app.ist.ac.at/download/5580/5619</dc:identifier>
+      <dc:source>Vill&#225;nyi M. &lt;i&gt;SAGE Austrian Publications 2013-2017&lt;/i&gt;. IST Austria; 2018. doi:&lt;a href="https://doi.org/10.15479/AT:ISTA:92"&gt;10.15479/AT:ISTA:92&lt;/a&gt;</dc:source>
+      <dc:relation>info:eu-repo/semantics/altIdentifier/doi/10.15479/AT:ISTA:92</dc:relation>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+    </oai_dc:dc>
+  </metadata>
+</record>

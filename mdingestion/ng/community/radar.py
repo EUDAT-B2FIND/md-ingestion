@@ -13,4 +13,3 @@ class Radar(Community):
 
     def update(self, doc):
         doc.contributor = 'RADAR'
-        

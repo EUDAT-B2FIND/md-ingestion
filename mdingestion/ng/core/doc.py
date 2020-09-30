@@ -102,16 +102,17 @@ class BaseDoc(object):
     @property
     def related_identifier(self):
         urls = []
-        for url in self._related_identifier:
-            if self.doi and self.doi in url:
-                continue
-            if self.pid and self.pid in url:
-                continue
-            if self.source and self.source in url:
-                continue
-            if self.metadata_access and self.metadata_access in url:
-                continue
-            urls.append(url)
+        if self._related_identifier:
+            for url in self._related_identifier:
+                if self.doi and self.doi in url:
+                    continue
+                if self.pid and self.pid in url:
+                    continue
+                if self.source and self.source in url:
+                    continue
+                if self.metadata_access and self.metadata_access in url:
+                    continue
+                urls.append(url)
         return urls
 
     @related_identifier.setter
