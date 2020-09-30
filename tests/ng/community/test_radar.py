@@ -24,3 +24,9 @@ def test_radar_2():
     assert 'Chemistry;Life Sciences' == doc.discipline
     assert ['Comisión Nacional de Investigación Científica y Tecnológica',
             'Bộ Giáo dục và Ðào tạo'] == doc.funding_reference
+
+def test_radar_3():
+    xmlfile = os.path.join(TESTDATA_DIR, 'radar', 'raw', 'd812138e-2e73-5dd3-8258-fc783f47db39.xml')
+    reader = Radar()
+    doc = reader.read(xmlfile)
+    assert '2020-06-26T12:15:39Z' == doc.publication_year

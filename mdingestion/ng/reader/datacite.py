@@ -21,7 +21,7 @@ class DataCiteReader(XMLReader):
         doc.publisher = self.find('publisher')
         doc.contributor = self.find('contributorName')
         doc.funding_reference = self.find('fundingReferences.funderName')
-        doc.publication_year = self.find('publicationYear')
+        doc.publication_year = self.publication_year()
         doc.rights = self.find('rights')
         doc.contact = self.contact()
         doc.language = self.find('language')
@@ -37,6 +37,12 @@ class DataCiteReader(XMLReader):
         urls = self.find_pid('alternateIdentifier')
         urls.extend(self.find_pid('relatedIdentifier', relatedIdentifierType="Handle"))
         return urls
+
+    def publication_year(self):
+        year = self.find('publicationYear')
+        if not year:
+            year = self.find('header.datestamp')
+        return year
 
     def creator(self):
         creators = []

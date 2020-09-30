@@ -12,4 +12,5 @@ class Radar(Community):
     OAI_SET = None
 
     def update(self, doc):
-        doc.contributor = 'Radar'
+        doc.contributor = 'RADAR'
+        
