@@ -14,9 +14,10 @@ class IstDublinCore(Community):
     def update(self, doc):
         doc.doi = self.doi(doc)
         doc.source = self.source(doc)
+        doc.discipline = self.discipline(doc, 'Life Sciences, Natural Sciences, Engineering Sciences')
         # doc.related_identifier = self.related_identifier(doc)
         # doc.discipline = ''
-        doc.contact = 'office@ist.ac.at'
+        doc.contact = 'repository.manager@ist.ac.at'
 
     def doi(self, doc):
         dois = [id for id in self.find('metadata.source') if id.startswith('https://doi.org/')]

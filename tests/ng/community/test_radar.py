@@ -29,4 +29,4 @@ def test_radar_3():
     xmlfile = os.path.join(TESTDATA_DIR, 'radar', 'raw', 'd812138e-2e73-5dd3-8258-fc783f47db39.xml')
     reader = Radar()
     doc = reader.read(xmlfile)
-    assert '2020-06-26T12:15:39Z' == doc.publication_year
+    assert '2020' == doc.publication_year
