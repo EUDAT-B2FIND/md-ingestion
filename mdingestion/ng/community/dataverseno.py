@@ -14,12 +14,12 @@ class DataverseNODublinCore(Community):
     def update(self, doc):
         # doc.contributor = ['DataverseNO']
         doc.publication_year = self.find('header.datestamp')
-        #doc.discipline = self.discipline(doc, 'Earth and Environmental Science')
-        #doc.keywords = self.keywords(doc)
+        # doc.discipline = self.discipline(doc, 'Earth and Environmental Science')
+        # doc.keywords = self.keywords(doc)
         if not doc.publisher:
             doc.publisher = 'DataverseNO'
 
-    #def keywords(self, doc):
-        #keywords = doc.keywords
-        #keywords.append('EOSC Nordic')
-        #return keywords
+    # def keywords(self, doc):
+        # keywords = doc.keywords
+        # keywords.append('EOSC Nordic')
+        # return keywords
