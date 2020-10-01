@@ -12,5 +12,7 @@ class Pdc(Community):
     OAI_SET = None
 
     def update(self, doc):
-        doc.contributor = 'Polar Data Catalogue'
+        if not doc.contributor:
+            doc.contributor = 'Polar Data Catalogue'
         doc.discipline = self.discipline(doc, 'Environmental Research')
+        doc.language = 'eng'
