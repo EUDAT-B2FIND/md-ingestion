@@ -11,16 +11,19 @@ from ..community import community
 import logging
 
 
-def upload(data, action=None, host=None, apikey=None, verify=True):
-    action = action or 'package_update'
+def upload(data, host=None, apikey=None, verify=True):
     requests_kwargs = None
     if not verify:
         requests_kwargs = {'verify': False}
     try:
         with RemoteCKAN(f'http://{host}', apikey=apikey) as ckan:
-            ckan.call_action(action, data, requests_kwargs=requests_kwargs)
+            ckan.call_action('package_update', data, requests_kwargs=requests_kwargs)
+            logging.info("upload update")
     except NotFound:
-        upload(data, action='package_create', host=host, apikey=apikey, verify=verify)
+        # TODO: clean up code ...
+        with RemoteCKAN(f'http://{host}', apikey=apikey) as ckan:
+            ckan.call_action('package_create', data, requests_kwargs=requests_kwargs)
+            logging.info("upload create")
 
 
 class Upload(Command):
