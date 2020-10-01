@@ -1,0 +1,142 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>105_fgdc</identifier>
+    <datestamp>2017-04-09T22:01:55Z</datestamp>
+    <setSpec>PDCMetadata</setSpec>
+  </header>
+  <metadata>
+    <metadata>
+      <idinfo>
+        <citation>
+          <citeinfo>
+            <origin>Martin Sharp</origin>
+            <origin>Martin Sharp</origin>
+            <origin>Dave Burgess</origin>
+            <origin>Lisa Hryciw</origin>
+            <origin>Scott Williamson</origin>
+            <origin>William Colgan</origin>
+            <pubdate>20140918</pubdate>
+            <title>Devon Island Ice Cap: core C chemical stratigraphy</title>
+            <geoform>Computer file</geoform>
+            <pubinfo>
+              <pubplace>unknown</pubplace>
+              <publish>Colgan, W. and M. Sharp, 2008. Combined oceanic and atmospheric influence on net accumulation on the Devon Island Ice Cap, Nunavut, Canada. J. Glaciol. 54(184): 28-40.</publish>
+            </pubinfo>
+            <othercit>unavailable</othercit>
+            <onlink>https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=105</onlink>
+          </citeinfo>
+        </citation>
+        <descript>
+          <abstract>Devon Island Ice Cap core C was recovered from 75.3399&#176;N and 82.6763&#176;W at 1825 m elevation on 10 May 2004. After high resolution physical stratigraphy (accompanying file), the core was sectioned with a band saw into anion analysis. A Dionex ICS-2500 ion chromatograph was used to measure the concentrations of methanesulphonic acid (CH3SO3H), sulphate (SO42-), nitrate (NO3-) and chloride (Cl-) in each sample. delta18O ratios were measured with a GV Isoprime continuous flow mass spectrometer with EuroEA combustion chamber for the top half of the core. The ice core has been dated with the Nye time-scale (Nye, 1963), which correctly identifies the 1963 137Cs "bomb" layer, resulting from fallout from atmospheric thermonuclear weapons testing, which was measured independently in the borehole (accompanying file).</abstract>
+          <purpose>The purpose is to reconstruct the net accumulation and anion deposition histories of the high elevation region of the Devon Island Ice Cap, using annual layer counting of chemical strata revealed by high resolution anion chromatography.</purpose>
+          <supplinf>Summary: Not Applicable Research Program(s): ArcticNet. For further information: martin.sharp@ualberta.ca</supplinf>
+        </descript>
+        <timeperd>
+          <timeinfo>
+            <rngdates>
+              <begdate>19490601</begdate>
+              <enddate>20020601</enddate>
+            </rngdates>
+          </timeinfo>
+          <current>NULL</current>
+        </timeperd>
+        <status>
+          <progress>Complete</progress>
+          <update>As needed</update>
+        </status>
+        <spdom>
+          <bounding>
+            <westbc>-84.5</westbc>
+            <eastbc>-79.4</eastbc>
+            <northbc>75.8</northbc>
+            <southbc>74.6</southbc>
+          </bounding>
+        </spdom>
+        <keywords>
+          <theme>
+            <themekt>NULL</themekt>
+            <themekey>Devon Island</themekey>
+            <themekey>Glaciers</themekey>
+            <themekey>Ice cores</themekey>
+            <themekey>Paleoclimatic reconstruction</themekey>
+            <themekey>Water chemistry</themekey>
+          </theme>
+          <place>
+            <placekt>Devon Island Ice Cap, Nunavut, Canada</placekt>
+            <placekey>NULL</placekey>
+          </place>
+        </keywords>
+        <accconst>Public</accconst>
+        <useconst>NULL</useconst>
+        <ptcontac>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>University of Alberta</cntorg>
+              <cntper>Martin Sharp</cntper>
+            </cntorgp>
+            <cntpos>NULL</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>1-26 Earth Sciences Building</address>
+              <city>Edmonton</city>
+              <state>AB</state>
+              <postal>T6E2G3</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>780-492-5249 </cntvoice>
+            <cntemail>martin.sharp@ualberta.ca</cntemail>
+          </cntinfo>
+        </ptcontac>
+        <datacred>NULL</datacred>
+      </idinfo>
+      <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntperp>
+              <cntper>Polar Data Catalogue</cntper>
+              <cntorg>Canadian Cryospheric Information Network</cntorg>
+            </cntperp>
+            <cntpos>Director</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>200 University Avenue West, University of Waterloo</address>
+              <city>Waterloo</city>
+              <state>Ontario</state>
+              <postal>N2L 3G1</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>(519) 888-4567 x32689</cntvoice>
+            <cntfax>(519) 888-6768</cntfax>
+            <cntemail>pdc@uwaterloo.ca</cntemail>
+          </cntinfo>
+        </distrib>
+        <resdesc>105</resdesc>
+        <distliab>Research programs, CCIN, or ArcticNet take no liability for the use or transmission of this data</distliab>
+      </distinfo>
+      <metainfo>
+        <metd>20140918</metd>
+        <metrd>20140918</metrd>
+        <metc>
+          <cntinfo>
+            <cntperp>
+              <cntper>Martin Sharp</cntper>
+              <cntorg>University of Alberta</cntorg>
+            </cntperp>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>1-26 Earth Sciences Building</address>
+              <city>Edmonton</city>
+              <state>AB</state>
+              <postal>T6E2G3</postal>
+              <country>Canada</country>
+            </cntaddr>
+            <cntvoice>780-492-5249 </cntvoice>
+            <cntemail>martin.sharp@ualberta.ca</cntemail>
+          </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+      </metainfo>
+    </metadata>
+  </metadata>
+</record>

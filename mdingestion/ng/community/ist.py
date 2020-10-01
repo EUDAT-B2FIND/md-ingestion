@@ -12,25 +12,20 @@ class IstDublinCore(Community):
     OAI_SET = 'research_dataFtxt'
 
     def update(self, doc):
-        doc.doi = self.doi(doc)
-        doc.source = self.source(doc)
+        doc.doi = self.doi()
+        doc.source = self.source()
         doc.discipline = self.discipline(doc, 'Life Sciences, Natural Sciences, Engineering Sciences')
-        # doc.related_identifier = self.related_identifier(doc)
-        # doc.discipline = ''
         doc.contact = 'repository.manager@ist.ac.at'
 
-    def doi(self, doc):
-        dois = [id for id in self.find('metadata.source') if id.startswith('https://doi.org/')]
+    def doi(self):
+        doi_info = 'info:eu-repo/semantics/altIdentifier/doi/'
+        dois = [id for id in self.find('metadata.relation') if id.startswith(doi_info)]
         if dois:
-            url = f"https://doi.org/{dois[0][4:]}"
+            url = f"https://doi.org/{dois[0].split(doi_info)[1]}"
         else:
             url = ''
         return url
 
-    def source(self, doc):
+    def source(self):
         urls = [url for url in self.find('metadata.identifier') if 'app.ist.ac.at/record' in url]
         return urls
-
-    # def related_identifier(self, doc):
-        # urls = [url for url in self.find('metadata.identifier') if 'app.ist.ac.at/download' in url]
-        # return urls
