@@ -13,21 +13,31 @@ import logging
 
 
 class OAIHarvester(Harvester):
-    # TODO: use resumption token to get number of records?
-    # records = sickle.ListRecords(ignore_deleted=True, metadataPrefix='oai_dc')
-    # records.resumption_token
-    # Out[26]: <ResumptionToken 1601498668423!500!675!oai_dc>
-    # records.resumption_token.complete_list_size
-    # '675'
+
     def __init__(self, community, url, oai_metadata_prefix, oai_set, fromdate, limit, outdir, verify):
         super().__init__(community, url, fromdate, limit, outdir, verify)
         logging.captureWarnings(True)
         self.mdprefix = oai_metadata_prefix
         self.mdsubset = oai_set
-        self.sickle = Sickle(self.url, max_retries=3, timeout=300, verify=self.verify)
+        self.sickle = Sickle(self.url, max_retries=3, timeout=120, verify=self.verify)
 
     def identifier(self, record):
         return record.header.identifier
+
+    def matches(self):
+        try:
+            records = self.sickle.ListIdentifiers(**{
+                'metadataPrefix': self.mdprefix,
+                'set': self.oai_set,
+                'ignore_deleted': True,
+                'from': self.fromdate,
+            })
+            # TODO: complete_list_size is not always set by OAI
+            matches = int(records.resumption_token.complete_list_size)
+        except Exception:
+            logging.warning('Could not get complete list size from OAI.')
+            matches = super().matches()
+        return matches
 
     @property
     def oai_set(self):
