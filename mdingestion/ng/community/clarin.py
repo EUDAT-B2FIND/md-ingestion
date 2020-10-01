@@ -20,9 +20,9 @@ class BaseClarin(Community):
         # TODO: clean up code
         if not isinstance(keywords, list):
             keywords = [keywords]
-        keywords = doc.keywords
-        keywords.extend(keywords)
-        return keywords
+        _keywords = doc.keywords
+        _keywords.extend(keywords)
+        return _keywords
 
 
 class ClarinOne(BaseClarin):
