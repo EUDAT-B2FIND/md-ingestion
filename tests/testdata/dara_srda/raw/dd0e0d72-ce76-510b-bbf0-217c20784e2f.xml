@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.da-ra.de:549364</identifier>
+    <datestamp>2017-12-05T04:10:23Z</datestamp>
+    <setSpec>128</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/&#10;                http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type xml:lang="en">Dataset</dc:type>
+      <dc:title xml:lang="en">Taiwan Fertility and Family Survey, 1998(Restricted Access Data)</dc:title>
+      <dc:source xml:lang="en">Taiwan Fertility and Family Survey </dc:source>
+      <dc:creator>Health Promotion Administration, Ministry of Health and Welfare</dc:creator>
+      <dc:identifier>10.6141/TW-SRDA-R040001-1</dc:identifier>
+      <dc:date>2014-06-03</dc:date>
+      <dc:rights xml:lang="en">On-site</dc:rights>
+      <dc:publisher xml:lang="en">SRDA - Survey Research Data Archive Taiwan </dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>

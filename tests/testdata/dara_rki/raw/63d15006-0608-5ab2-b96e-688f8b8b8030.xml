@@ -1,0 +1,19 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.da-ra.de:461204</identifier>
+    <datestamp>2015-09-16T06:25:34Z</datestamp>
+    <setSpec>98</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/&#10;                http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type xml:lang="en">Text</dc:type>
+      <dc:title xml:lang="de">"Neuerungen in den aktuellen Empfehlungen der St&#228;ndigen Impfkommission (STIKO) am RKI vom August 2015"</dc:title>
+      <dc:creator>Robert Koch-Institut</dc:creator>
+      <dc:identifier>10.17886/EpiBull-2015-002</dc:identifier>
+      <dc:date>2015-08-31</dc:date>
+      <dc:language xml:lang="en">German</dc:language>
+      <dc:rights xml:lang="en">Download</dc:rights>
+      <dc:publisher xml:lang="en">RKI-Bib1 (Robert Koch-Institut)</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>
