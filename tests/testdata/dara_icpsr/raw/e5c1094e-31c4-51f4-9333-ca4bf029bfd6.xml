@@ -1,0 +1,50 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:oai.da-ra.de:440957</identifier>
+    <datestamp>2015-06-16T15:35:34Z</datestamp>
+    <setSpec>39</setSpec>
+  </header>
+  <metadata>
+    <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/&#10;                http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+      <dc:type xml:lang="en">Dataset</dc:type>
+      <dc:type xml:lang="en">survey data</dc:type>
+      <dc:title xml:lang="en">Integrated Postsecondary Education Data System (IPEDS): Salaries, Tenure, and Fringe Benefits of Full-Time Faculty, 1993-1994</dc:title>
+      <dc:title xml:lang="en">Archival Version</dc:title>
+      <dc:source xml:lang="en">Integrated Postsecondary Education Data System (IPEDS) Series </dc:source>
+      <dc:creator>United States Department of Education. National Center for Education Statistics</dc:creator>
+      <dc:identifier>10.3886/ICPSR06936</dc:identifier>
+      <dc:date>2004-02-27</dc:date>
+      <dc:language xml:lang="en">English</dc:language>
+      <dc:description xml:lang="en">The primary purpose of this survey is to collect data on the salaries, tenure, and fringe benefits of full-time instructional faculty by contract length, sex, and academic rank. These data permit analysis, from a national perspective, of the number and tenure status of full-time faculty members in relation to enrollment and number of degrees granted, and the evaluation of faculty compensation in relation to institutional financial resources for an indication of the economic status of institutions. These data also enable trend analysis of average full-time salaries for an assessment of the economic status of full-time faculty. Salary data include total salary outlays and the total number of instructional faculty that were paid those outlays. Tenure data include number of faculty with tenure, number on tenure track, and number not on tenure track. Benefits data include fringe benefit expenditures and the number of full-time faculty covered by retirement, medical/dental, and group life insurance plans.</dc:description>
+      <dc:description xml:lang="en">ICPSR data undergo a confidentiality review and are altered when necessary to limit the risk of disclosure. ICPSR also routinely creates ready-to-go data files along with setups in the major statistical software formats as well as standard codebooks to accompany the data. In addition to these procedures, ICPSR performed the following processing steps for this data collection: Checked for undocumented or out-of-range codes..</dc:description>
+      <dc:description xml:lang="en">Postsecondary institutions in the 50 states, the District of Columbia, and outlying areas (American Samoa, Guam, Puerto Rico, the Virgin Islands, the Marshall Islands, the Federated States of Micronesia, the Northern Mariana Islands, and Palau) that were eligible to participate in Title IV federal financial aid programs in 1995.</dc:description>
+      <dc:coverage xml:lang="en">American Samoa</dc:coverage>
+      <dc:coverage xml:lang="en">Global</dc:coverage>
+      <dc:coverage xml:lang="en">Guam</dc:coverage>
+      <dc:coverage xml:lang="en">Marshall Islands</dc:coverage>
+      <dc:coverage xml:lang="en">Micronesia (Federated States)</dc:coverage>
+      <dc:coverage xml:lang="en">Northern Mariana Islands</dc:coverage>
+      <dc:coverage xml:lang="en">Palau</dc:coverage>
+      <dc:coverage xml:lang="en">Puerto Rico</dc:coverage>
+      <dc:coverage xml:lang="en">United States</dc:coverage>
+      <dc:coverage xml:lang="en">Virgin Islands of the United States</dc:coverage>
+      <dc:coverage>1993 - 1994</dc:coverage>
+      <dc:coverage xml:lang="en">Time period: 1993--1994</dc:coverage>
+      <dc:subject xml:lang="en">academic degrees</dc:subject>
+      <dc:subject xml:lang="en">academic tenure</dc:subject>
+      <dc:subject xml:lang="en">college faculty</dc:subject>
+      <dc:subject xml:lang="en">colleges</dc:subject>
+      <dc:subject xml:lang="en">community colleges</dc:subject>
+      <dc:subject xml:lang="en">higher education</dc:subject>
+      <dc:subject xml:lang="en">postsecondary education</dc:subject>
+      <dc:subject xml:lang="en">school enrollments</dc:subject>
+      <dc:subject xml:lang="en">universities</dc:subject>
+      <dc:subject xml:lang="en">wages and salaries</dc:subject>
+      <dc:identifier>ICPSR Study Number: 6936</dc:identifier>
+      <dc:relation>DOI: 10.3886/ICPSR06936.v1</dc:relation>
+      <dc:rights xml:lang="en">Download</dc:rights>
+      <dc:rights xml:lang="en">This study is freely available to ICPSR member institutions via web download.</dc:rights>
+      <dc:publisher xml:lang="en">ICPSR - Interuniversity Consortium for Political and Social Research</dc:publisher>
+    </oai_dc:dc>
+  </metadata>
+</record>
