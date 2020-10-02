@@ -17,6 +17,10 @@ def uniq_name():
 
 
 class Validator(object):
+    """
+    TODO: collect invalid files with reason and metadata-access.
+    TODO: collect broken links with reference to file, metadata-access.
+    """
     def __init__(self, linkcheck=True):
         # TODO: write also pandas csv file for statistical evaluation
         self.schema = B2FSchema()

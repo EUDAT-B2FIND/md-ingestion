@@ -6,8 +6,17 @@ import requests
 from requests.exceptions import HTTPError
 from requests.utils import requote_uri
 
+from .config import to_ignore
+
 import urllib3
 urllib3.disable_warnings()
+
+
+def ignore_url(uri):
+    for rex in to_ignore():
+        if rex.match(uri):
+            return True
+    return False
 
 
 class LinkChecker(object):
@@ -18,7 +27,7 @@ class LinkChecker(object):
     https://www.sphinx-doc.org/en/2.0/_modules/sphinx/builders/linkcheck.html
     """
     def __init__(self):
-        self.to_ignore = []
+        # self.to_ignore = to_ignore()
         self.good = set()
         self.broken = {}
         self.redirected = {}
@@ -101,9 +110,8 @@ class LinkChecker(object):
                 return 'broken', self.broken[uri], 0
             elif uri in self.redirected:
                 return 'redirected', self.redirected[uri][0], self.redirected[uri][1]
-            for rex in self.to_ignore:
-                if rex.match(uri):
-                    return 'ignored', '', 0
+            if ignore_url(uri):
+                return 'ignored', '', 0
 
             # need to actually check the URI
             for _ in range(1):

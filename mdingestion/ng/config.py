@@ -1,34 +1,33 @@
 import pandas as pd
-
-from .exceptions import CommunityNotFound
+from os import path
+import re
 
 import logging
 
-SOURCES = None
+
+ETC_DIR = path.abspath(path.join(path.dirname(__file__), '..', '..', 'etc'))
+IGNORE_LIST = path.join(ETC_DIR, 'ignore_urls.txt')
+TO_IGNORE = None
 
 
-def read_harvest_list(filename):
-    sources = dict()
+def read_ignore_list():
+    to_ignore = []
     try:
         df = pd.read_csv(
-            filename,
+            IGNORE_LIST,
             delim_whitespace=True,
             comment='#',
             header=None,
-            names=['community', 'url', 'verb', 'mdprefix', 'mdsubset'])
-        df['mdsubset'] = df['mdsubset'].fillna('')
-        for row_dict in df.to_dict(orient='records'):
-            sources[row_dict['community']] = row_dict
+            names=['url'])
+        to_ignore = [re.compile(pattern) for pattern in list(df['url'][0:])]
     except Exception:
-        logging.warning(f"Could not read harvest list {filename}")
-    return sources
+        logging.exception("Could not read ignore list")
+    return to_ignore
 
 
-def get_source(filename, community):
-    global SOURCES
+def to_ignore():
+    global TO_IGNORE
 
-    if not SOURCES:
-        SOURCES = read_harvest_list(filename)
-    if community not in SOURCES:
-        raise CommunityNotFound
-    return SOURCES[community]
+    if not TO_IGNORE:
+        TO_IGNORE = read_ignore_list()
+    return TO_IGNORE
