@@ -19,7 +19,7 @@ class FGDCReader(XMLReader):
         # doc.related_identifier = self.find('relatedIdentifier')
         doc.creator = self.find('origin')
         doc.publisher = self.find('distinfo.cntorg')
-        doc.contributor = self.find('idinfo.cntorg')
+        # doc.contributor = self.find('idinfo.cntorg')
         # doc.funding_reference = self.find('fundingReference.funderName')
         doc.publication_year = self.find('pubdate')
         doc.rights = self.find('distliab')
