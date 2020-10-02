@@ -10,6 +10,8 @@ from .util import (
     is_valid_email
 )
 
+from .linkcheck import ignore_url
+
 import logging
 
 
@@ -201,6 +203,9 @@ def format_url(text):
     # check if url is valid
     if url and not is_valid_url(url):
         logging.warning(f"URL is not valid: {url}")
+        url = ''
+    if ignore_url(url):
+        logging.warning(f"URL is ignored: {url}")
         url = ''
     return url
 

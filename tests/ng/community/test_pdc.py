@@ -5,7 +5,7 @@ from mdingestion.ng.community.pdc import Pdc
 from tests.common import TESTDATA_DIR
 
 
-def test_ist_dc_1():
+def test_pdc_dc_1():
     xmlfile = os.path.join(TESTDATA_DIR, 'pdc', 'raw',
                            '64bf054b-5cba-5322-bc32-f2ed88217ac5.xml')
     reader = Pdc()
