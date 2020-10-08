@@ -12,4 +12,5 @@ class CRC1211DBDatacite(Community):
     OAI_SET = 'DOIDB.CRC1211'
 
     def update(self, doc):
+        doc.discipline = self.discipline(doc, 'Geosciences')
         doc.contact = 'crc1211db-admin@uni-koeln.de'

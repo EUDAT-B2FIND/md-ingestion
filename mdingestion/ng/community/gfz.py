@@ -13,4 +13,3 @@ class GfzDatacite(Community):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geosciences')
-        # doc.contact = im datacite reader auf contributor.ContactPerson mappen; wenn nicht vorhanden

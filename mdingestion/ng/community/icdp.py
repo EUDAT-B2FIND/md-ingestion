@@ -13,4 +13,4 @@ class IcdpDatacite(Community):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Scientific drilling')
-        # doc.contact = im datacite reader auf contributor.ContactPerson mappen; wenn nicht vorhanden
+        doc.contact = 'www.icdp-online.org/contact'

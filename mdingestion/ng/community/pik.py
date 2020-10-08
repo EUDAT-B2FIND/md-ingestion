@@ -13,4 +13,3 @@ class PikDatacite(Community):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Earth System Research')
-        # doc.contact = im datacite reader auf contributor.ContactPerson mappen; wenn nicht vorhanden

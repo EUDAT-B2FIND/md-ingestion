@@ -13,4 +13,3 @@ class IcgemDatacite(Community):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geodesy, Geoinformatics and Remote Sensing')
-        # doc.contact = im datacite reader auf contributor.ContactPerson mappen; wenn nicht vorhanden
