@@ -20,7 +20,7 @@ class DataCiteReader(XMLReader):
         doc.creator = self.creator()
         doc.publisher = self.find('publisher')
         doc.contributor = self.find('contributorName')
-        doc.funding_reference = self.find('fundingReferences.funderName')
+        doc.funding_reference = self.funding_reference()
         doc.publication_year = self.publication_year()
         doc.rights = self.find('rights')
         doc.contact = self.contact()
@@ -36,6 +36,7 @@ class DataCiteReader(XMLReader):
     def pid(self):
         urls = self.find_pid('alternateIdentifier')
         urls.extend(self.find_pid('relatedIdentifier', relatedIdentifierType="Handle"))
+        urls.extend(self.find('alternateIdentifier', alternateIdentifierType="URN"))
         return urls
 
     def publication_year(self):
@@ -66,6 +67,12 @@ class DataCiteReader(XMLReader):
             contacts.append(name)
         return contacts
 
+    def funding_reference(self):
+        funding_reference = self.find('fundingReferences.funderName')
+        if not funding_reference:
+            funding_reference = self.find('contributor', contributorType="Funder")
+        return funding_reference
+        
     def geometry(self):
         """
         parse datacite geometry.
