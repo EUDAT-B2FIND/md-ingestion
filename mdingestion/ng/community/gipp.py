@@ -12,5 +12,11 @@ class GeofonDatacite(Community):
     OAI_SET = 'DOIDB.GIPP'
 
     def update(self, doc):
-        doc.discipline = self.discipline(doc, 'Seismology')
-        # TODO: discipline für GIPP dois 'Seismology, für Gipp-MT dois 'Geophysics'
+        doc.discipline = self.gipp_discipline(doc)
+
+    def gipp_discipline(self, doc):
+        if not 'GIPP-MT' in doc.doi:
+            discipline = 'Seismology'
+        else:
+            discipline = 'Geophysics'
+        return discipline
