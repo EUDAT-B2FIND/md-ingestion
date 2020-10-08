@@ -13,4 +13,3 @@ class WsmDatacite(Community):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geophysics')
-        # doc.contact = im datacite reader auf contributor.ContactPerson mappen; wenn nicht vorhanden
