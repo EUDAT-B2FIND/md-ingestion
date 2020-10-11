@@ -15,7 +15,7 @@ class GeofonDatacite(Community):
         doc.discipline = self.gipp_discipline(doc)
 
     def gipp_discipline(self, doc):
-        if not 'GIPP-MT' in doc.doi:
+        if 'GIPP-MT' not in doc.doi:
             discipline = 'Seismology'
         else:
             discipline = 'Geophysics'
