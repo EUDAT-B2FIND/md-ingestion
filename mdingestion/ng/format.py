@@ -107,7 +107,7 @@ def format_string_words(text):
     if text is None:
         value = ''
     else:
-        value = ' '.join(re.findall(r'\w+', text.strip()))
+        value = ' '.join(re.findall(r'\w+', text.strip(), flags=re.ASCII))
     return value
 
 

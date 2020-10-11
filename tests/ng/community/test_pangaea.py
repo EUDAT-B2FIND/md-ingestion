@@ -50,4 +50,4 @@ def test_pangaea_keywords():
     reader = PangaeaDatacite()
     doc = reader.read(xmlfile)
     assert 'https://doi.org/10.1594/PANGAEA.889006' == doc.doi
-    assert ['EPD', 'DEPTH', 'sediment rock', 'Age', 'comment', 'dated standard deviation', 'Calendar age', 'maximum old', 'minimum young', '²¹⁰Pbₓₛ ¹³⁷Cs Lead Caesium', 'calibrated'] == doc.keywords  # noqa
+    assert ['EPD', 'DEPTH', 'sediment rock', 'Age', 'comment', 'dated standard deviation', 'Calendar age', 'maximum old', 'minimum young', 'Pb Cs Lead Caesium', 'calibrated'] == doc.keywords  # noqa
