@@ -12,7 +12,7 @@ def test_format_string_words():
     assert 'one two three' == format.format_string_words('one. two , three')
     assert '' == format.format_string_words(None)
     assert 'what' == format.format_string_words('.  what ;-')
-    assert 'Pb Cs Lead Caesium' == format.format_string_words('²¹⁰Pbₓₛ ¹³⁷Cs Lead Caesium')
+    assert '²¹⁰Pbₓₛ ¹³⁷Cs Lead Caesium' == format.format_string_words('²¹⁰Pbₓₛ ¹³⁷Cs Lead Caesium')
 
 
 def test_format_string_word():

@@ -68,7 +68,9 @@ class BaseDoc(object):
     def keywords(self, value):
         # TODO: clean up code
         _keywords = []
+        delchars = {8347: None}
         for val in value:
+            val = val.translate(delchars)
             _keywords.extend(val.split(','))
         self._keywords = format_value(_keywords, type='string_words', min_length=2, max_length=100)
 
