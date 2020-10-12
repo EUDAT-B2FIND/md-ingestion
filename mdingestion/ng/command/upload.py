@@ -17,6 +17,7 @@ def upload(data, host=None, apikey=None, verify=True):
         requests_kwargs = {'verify': False}
     try:
         with RemoteCKAN(f'http://{host}', apikey=apikey) as ckan:
+            # ckan.call_action('package_show', {'id': '62c44616-b8b3-4e35-8afa-81d4631a6456'})
             ckan.call_action('package_update', data, requests_kwargs=requests_kwargs)
             logging.info("upload update")
     except NotFound:
