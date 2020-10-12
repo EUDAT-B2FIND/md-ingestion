@@ -1,0 +1,103 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18710/4XTXMH</identifier>
+    <datestamp>2020-02-15T01:00:05Z</datestamp>
+    <setSpec>dataverseno</setSpec>
+    <setSpec>trolling</setSpec>
+    <setSpec>uit</setSpec>
+    <setSpec>HarvesterDataverseNO</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="Handle">10037.1/10294</identifier>
+      <creators>
+        <creator>
+          <creatorName nameType="Personal">Janda, Laura A.</creatorName>
+          <givenName>Laura A.</givenName>
+          <familyName>Janda</familyName>
+          <affiliation>UiT, The Arctic University of Norway</affiliation>
+        </creator>
+        <creator>
+          <creatorName nameType="Personal">Antonsen, Lene</creatorName>
+          <givenName>Lene</givenName>
+          <familyName>Antonsen</familyName>
+          <affiliation>UiT, The Arctic University of Norway</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>Replication data for: The ongoing eclipse of possessive suffixes in North Saami: A case study in reduction of morphological complexity</title>
+      </titles>
+      <publisher>DataverseNO</publisher>
+      <publicationYear>2016</publicationYear>
+      <subjects>
+        <subject>Arts and Humanities</subject>
+        <subject>North Saami</subject>
+        <subject>possessive suffix</subject>
+        <subject>Uralic</subject>
+        <subject>S-curve</subject>
+        <subject>vocative</subject>
+        <subject>possession</subject>
+        <subject>language change</subject>
+        <subject>complexity</subject>
+        <subject>Morphology</subject>
+        <subject>diachronic</subject>
+        <subject>affixes</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Janda, Laura</contributorName>
+          <givenName>Laura</givenName>
+          <familyName>Janda</familyName>
+          <affiliation>UiT, The Arctic University of Norway</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName nameType="Organizational">UiT, The Arctic University of Norway</contributorName>
+        </contributor>
+        <contributor contributorType="Distributor">
+          <contributorName nameType="Organizational">UiT Open Research Data</contributorName>
+          <affiliation>UiT The Arctic University of Norway</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Issued">2016</date>
+        <date dateType="Created">2016</date>
+        <date dateType="Submitted">2016-04-01</date>
+        <date dateType="Updated">2019-01-02</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">corpus</resourceType>
+      <sizes>
+        <size>426441</size>
+        <size>136001</size>
+        <size>3035</size>
+        <size>3040</size>
+        <size>632421</size>
+        <size>74777</size>
+        <size>2784</size>
+        <size>765</size>
+        <size>350</size>
+        <size>167158</size>
+      </sizes>
+      <formats>
+        <format>text/plain; charset=UTF-8</format>
+        <format>text/plain; charset=US-ASCII</format>
+        <format>text/plain; charset=UTF-8</format>
+        <format>text/plain; charset=UTF-8</format>
+        <format>application/pdf</format>
+        <format>application/pdf</format>
+        <format>text/plain; charset=UTF-8</format>
+        <format>text/plain; charset=US-ASCII</format>
+        <format>text/plain; charset=US-ASCII</format>
+        <format>application/pdf</format>
+      </formats>
+      <version>2.2</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/publicdomain/zero/1.0/">CC0 Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">North Saami is replacing the use of possessive suffixes on nouns with a morphologically simpler analytic construction. Our data (&gt;2K examples culled from &gt;.5M words) track this change through three generations and parameters of semantics, syntax, and geography. Intense contact pressure on this minority language probably promotes morphological simplification, yielding an advantage for the innovative construction. The innovative construction is additionally advantaged because it has a wider syntactic and semantic range and is indispensable, whereas its competitor can always be replaced. The one environment where the possessive suffix is most strongly retained even in the youngest generation is in the Nominative singular case, and here we find evidence that the possessive suffix is being reinterpreted as a vocative case marker. The files make it possible to see all of our data and to do the statistical analysis and plots in R.</description>
+      </descriptions>
+      <geoLocations/>
+    </resource>
+  </metadata>
+</record>
