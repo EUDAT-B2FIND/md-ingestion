@@ -46,7 +46,10 @@ class Upload(Command):
             logging.info(f"uploading {filename}")
             with open(filename, 'rb') as fp:
                 data = json.load(fp)
-                upload(data=data, host=iphost, apikey=auth, verify=verify)
+                try:
+                    upload(data=data, host=iphost, apikey=auth, verify=verify)
+                except Exception:
+                    logging.error(f'upload failed: {filename}')
             count += 1
 
     def walk(self):
