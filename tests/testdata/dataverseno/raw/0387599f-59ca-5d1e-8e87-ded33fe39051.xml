@@ -1,0 +1,100 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>doi:10.18710/41U4VL</identifier>
+    <datestamp>2020-02-15T01:00:05Z</datestamp>
+    <setSpec>dataverseno</setSpec>
+    <setSpec>uit</setSpec>
+    <setSpec>tgo</setSpec>
+    <setSpec>earth_and_environmental</setSpec>
+    <setSpec>HarvesterDataverseNO</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.1/metadata.xsd">
+      <identifier identifierType="DOI">10.18710/41U4VL</identifier>
+      <creators>
+        <creator>
+          <creatorName>Troms&#248; Geophysical Observatory</creatorName>
+          <affiliation>UiT The Arctic University of Norway</affiliation>
+        </creator>
+      </creators>
+      <titles>
+        <title>TGO Ramfjordmoen Ionosonde Data December 1994 </title>
+      </titles>
+      <publisher>DataverseNO</publisher>
+      <publicationYear>2019</publicationYear>
+      <subjects>
+        <subject>Earth and Environmental Sciences</subject>
+        <subject>Physics</subject>
+        <subject>ionodata</subject>
+        <subject>ionosonde</subject>
+        <subject>ionosphere</subject>
+        <subject>ionogram</subject>
+        <subject>aurora</subject>
+        <subject schemeURI="https://earthdata.nasa.gov/about/gcmd/global-change-master-directory-gcmd-keywords" subjectScheme="Global Change Master Directory (GCMD) Science Keywords">SUN-EARTH INTERACTIONS</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Johnsen, Magnar Gulliksen</contributorName>
+          <givenName>Magnar Gulliksen</givenName>
+          <familyName>Johnsen</familyName>
+          <affiliation>UiT The Arctic University of Norway</affiliation>
+        </contributor>
+        <contributor contributorType="ContactPerson">
+          <contributorName nameType="Personal">Hall, Chris</contributorName>
+          <givenName>Chris</givenName>
+          <familyName>Hall</familyName>
+          <affiliation>UiT The Arctic University of Norway</affiliation>
+        </contributor>
+        <contributor contributorType="Producer">
+          <contributorName nameType="Organizational">UiT The Arctic University of Norway</contributorName>
+        </contributor>
+        <contributor contributorType="HostingInstitution">
+          <contributorName nameType="Organizational">Troms&#248; Geophysical Observatory, UiT The Arctic University of Norway</contributorName>
+        </contributor>
+        <contributor contributorType="DataCurator">
+          <contributorName nameType="Organizational">Troms&#248; Geophysical Observatory, UiT The Arctic University of Norway</contributorName>
+        </contributor>
+        <contributor contributorType="Distributor">
+          <contributorName nameType="Organizational">UiT Open Research Data</contributorName>
+          <affiliation>UiT The Arctic University of Norway</affiliation>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Submitted">2019-02-08</date>
+        <date dateType="Updated">2019-02-08</date>
+      </dates>
+      <resourceType resourceTypeGeneral="Dataset">ionosonde data</resourceType>
+      <sizes>
+        <size>1854</size>
+        <size>351559</size>
+      </sizes>
+      <formats>
+        <format>text/plain</format>
+        <format>application/zip</format>
+      </formats>
+      <version>1.0</version>
+      <rightsList>
+        <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+        <rights rightsURI="https://creativecommons.org/publicdomain/zero/1.0/">CC0 Waiver</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="Abstract">&lt;p&gt;About this dataset: This dataset contains ionosonde data in SAO format, and covers data from December 01-31, 1994.&lt;/p&gt;&lt;p&gt;About the Troms&#248; Ionosonde (1993-present): Since 1980, the ionosonde was situated at 69&#176; 35' N, 19&#176; 13' E at Ramfjordmoen near Troms&#248;, Norway and operated by the Auroral Observatory of the University of Troms&#248; and later on, in collaboration with QinetiQ. The Lowell ionosonde replaced the Auroral Observatory unit in 1992; see the related publication for details.&lt;/p&gt; &#13;
+&#13;
+</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPlace>Troms&#248; Geophysical Observatory's Ramfjordmoen field station</geoLocationPlace>
+        </geoLocation>
+        <geoLocation>
+          <geoLocationBox>
+            <eastBoundLongitude>eastlimit=19.216667</eastBoundLongitude>
+            <westBoundLongitude>westlimit=19.216667</westBoundLongitude>
+            <southBoundLatitude>southlimit=69.583333</southBoundLatitude>
+            <northBoundLatitude>northlimit=69.583333</northBoundLatitude>
+          </geoLocationBox>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>
