@@ -12,7 +12,12 @@ class Harvest(Command):
 
     def harvest(self, fromdate=None, limit=None, dry_run=False):
         _communities = communities(self.community)
-        self._harvest(identifier=_communities[0], fromdate=fromdate, limit=limit, dry_run=dry_run)
+        for identifier in tqdm(_communities,
+                               ascii=True,
+                               desc=f"Harvesting {self.community}",
+                               unit=' community',
+                               total=len(_communities)):
+            self._harvest(identifier, fromdate=fromdate, limit=limit, dry_run=dry_run)
 
     def _harvest(self, identifier, fromdate=None, limit=None, dry_run=False):
         _community = community(identifier)
@@ -31,7 +36,7 @@ class Harvest(Command):
             raise UserInfo(f'Found records={_harvester.total(limited=False)}')
         for record in tqdm(_harvester.harvest(),
                            ascii=True,
-                           desc=f"Harvesting {self.community}",
+                           desc=f"Harvesting {identifier}",
                            unit=' records',
                            total=_harvester.total()):
             _harvester.write_record(record, pretty_print=True)
