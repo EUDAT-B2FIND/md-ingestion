@@ -3,7 +3,7 @@ from tqdm import tqdm
 from .base import Command
 from ..harvester import harvester
 from ..exceptions import UserInfo
-from ..community import community
+from ..community import community, communities
 
 import logging
 
@@ -11,7 +11,11 @@ import logging
 class Harvest(Command):
 
     def harvest(self, fromdate=None, limit=None, dry_run=False):
-        _community = community(self.community)
+        _communities = communities(self.community)
+        self._harvest(identifier=_communities[0], fromdate=fromdate, limit=limit, dry_run=dry_run)
+
+    def _harvest(self, identifier, fromdate=None, limit=None, dry_run=False):
+        _community = community(identifier)
         _harvester = harvester(
             community=_community.identifier,
             url=_community.url,
