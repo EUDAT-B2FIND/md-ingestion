@@ -117,7 +117,8 @@ def format_string_word(text):
 
 def format_float(text):
     try:
-        val = float(text)
+        val = re.findall(r'[0-9\.,-]+', text.strip())[0]
+        val = float(val)
     except Exception:
         logging.warning(f"could not parse float: {text}")
         val = float("nan")  # nan = not a number
