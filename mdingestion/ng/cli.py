@@ -104,12 +104,13 @@ def map(ctx, community, format, limit, force, no_linkcheck, summary):
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--target', default='ckan', help='Target service: ckan (default)')
 @click.option('--limit', type=int, help='Limit')
+@click.option('--from', '-f', 'from_', type=int, help='From index')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def upload(ctx, community, iphost, auth, target, limit, insecure):
+def upload(ctx, community, iphost, auth, target, from_, limit, insecure):
     try:
         upload = Upload(outdir=ctx.obj['outdir'], community=community)
-        upload.run(iphost=iphost, auth=auth, target=target, limit=limit, verify=not insecure)
+        upload.run(iphost=iphost, auth=auth, target=target, from_=from_, limit=limit, verify=not insecure)
     except Exception as e:
         logging.critical(f"upload: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
