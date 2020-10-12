@@ -8,6 +8,8 @@ import logging
 from importlib import import_module
 from pathlib import Path
 
+COMMUNITIES = None
+
 for f in Path(__file__).parent.glob("*.py"):
     module_name = f.stem
     if (not module_name.startswith("_")) and (module_name not in globals()):
@@ -16,13 +18,20 @@ for f in Path(__file__).parent.glob("*.py"):
 del import_module, Path
 
 
-def get_communities(cls=None):
+def _communities(cls=None):
     cls = cls or Community
     if len(cls.__subclasses__()) == 0:
         yield cls
     else:
         for subcls in cls.__subclasses__():
-            yield from get_communities(subcls)
+            yield from _communities(subcls)
+
+
+def get_communities():
+    global COMMUNITIES
+    if not COMMUNITIES:
+        COMMUNITIES = _communities()
+    return COMMUNITIES
 
 
 def community(identifier):
