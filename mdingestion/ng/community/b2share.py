@@ -19,10 +19,11 @@ class BaseB2Share(Community):
         _keywords.extend(keywords)
         return _keywords
 
+
 class B2ShareCSC(BaseB2Share):
     IDENTIFIER = 'b2share_csc'
     URL = 'https://b2share.eudat.eu/api/oai2d'
-    OAI_SET = 'e9b9792e-79fb-4b07-b6b4-b9c2bd06d095' # EUDAT
+    OAI_SET = 'e9b9792e-79fb-4b07-b6b4-b9c2bd06d095'  # EUDAT
 
     def update(self, doc):
         super().update(doc)
@@ -34,7 +35,7 @@ class B2ShareCSC(BaseB2Share):
 class B2ShareFZJ(BaseB2Share):
     IDENTIFIER = 'b2share_fzj'
     URL = 'https://b2share.fz-juelich.de/api/oai2d'
-    OAI_SET = 'e9b9792e-79fb-4b07-b6b4-b9c2bd06d095' # EUDAT
+    OAI_SET = 'e9b9792e-79fb-4b07-b6b4-b9c2bd06d095'  # EUDAT
 
     def update(self, doc):
         super().update(doc)

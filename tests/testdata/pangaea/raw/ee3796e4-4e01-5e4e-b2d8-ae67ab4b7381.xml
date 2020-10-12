@@ -1,0 +1,72 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:pangaea.de:doi:10.1594/PANGAEA.889006</identifier>
+    <datestamp>2020-01-17T17:39:55Z</datestamp>
+    <setSpec>citable</setSpec>
+    <setSpec>topicBiologicalClassification</setSpec>
+    <setSpec>topicPaleontology</setSpec>
+  </header>
+  <metadata>
+    <resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+      <identifier identifierType="DOI">10.1594/PANGAEA.889006</identifier>
+      <creators>
+        <creator>
+          <creatorName>Grant, Michael J</creatorName>
+          <givenName>Michael J</givenName>
+          <familyName>Grant</familyName>
+          <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-4766-6913</nameIdentifier>
+        </creator>
+      </creators>
+      <titles>
+        <title>Age determination of sediment core BRADFIEL, Bradfiel Woods, United Kingdom</title>
+      </titles>
+      <publisher>PANGAEA - Data Publisher for Earth &amp; Environmental Science</publisher>
+      <publicationYear>2018</publicationYear>
+      <subjects>
+        <subject>EPD</subject>
+        <subject subjectScheme="Parameter">DEPTH, sediment/rock</subject>
+        <subject subjectScheme="Parameter">Age, comment</subject>
+        <subject subjectScheme="Parameter">Age</subject>
+        <subject subjectScheme="Parameter">Age, dated standard deviation</subject>
+        <subject subjectScheme="Parameter">Calendar age</subject>
+        <subject subjectScheme="Parameter">Calendar age, maximum/old</subject>
+        <subject subjectScheme="Parameter">Calendar age, minimum/young</subject>
+        <subject subjectScheme="Method">Age, &#178;&#185;&#8304;Pb&#8339;&#8347;/&#185;&#179;&#8311;Cs Lead-Caesium</subject>
+        <subject subjectScheme="Method">Age, calibrated</subject>
+      </subjects>
+      <contributors>
+        <contributor contributorType="HostingInstitution">
+          <contributorName>European Pollen Database (EPD)</contributorName>
+        </contributor>
+      </contributors>
+      <dates>
+        <date dateType="Collected">2005-01-01T00:00:00</date>
+      </dates>
+      <language>en</language>
+      <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+      <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1016/j.revpalbo.2012.08.008</relatedIdentifier>
+      </relatedIdentifiers>
+      <sizes>
+        <size>89 data points</size>
+      </sizes>
+      <formats>
+        <format>text/tab-separated-values</format>
+      </formats>
+      <rightsList>
+        <rights>Data access is restricted (moratorium, sensitive data, license constraints)</rights>
+      </rightsList>
+      <descriptions>
+        <description descriptionType="TechnicalInfo">This dataset was archived on 2018-04-23 from the EPD database (http://www.europeanpollendatabase.net).</description>
+      </descriptions>
+      <geoLocations>
+        <geoLocation>
+          <geoLocationPoint>
+            <pointLongitude>0.83416</pointLongitude>
+            <pointLatitude>52.18194</pointLatitude>
+          </geoLocationPoint>
+        </geoLocation>
+      </geoLocations>
+    </resource>
+  </metadata>
+</record>
