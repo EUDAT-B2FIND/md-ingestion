@@ -74,6 +74,63 @@ class ClarinFour(BaseClarin):
             doc.publisher = 'CLARIN four'
         doc.contact = 'clarinfour@something.eu'
 
+class ClarinFive(BaseClarin):
+    IDENTIFIER = 'clarin_five'
+    URL = 'http://www.clarin.si/repository/oai/request '
+
+    def update(self, doc):
+        super().update(doc)
+        doc.keywords = self.keywords(doc, 'clarin FIVE')
+        doc.doi = self.find_doi('metadata.relation')
+        doc.pid = self.find_pid('metadata.relation')
+        if not doc.publisher:
+            doc.publisher = 'CLARIN five'
+        doc.contact = 'clarinfive@something.eu'
+
+class ClarinSix(BaseClarin):
+    IDENTIFIER = 'clarin_six'
+    URL = 'https://repo.spraakbanken.gu.se/oai/request ListRecords'
+
+class ClarinSeven(BaseClarin):
+    IDENTIFIER = 'clarin_seven'
+    URL = 'http://fedora.clarin-d.uni-saarland.de/oaiprovider/'
+
+class ClarinEight(BaseClarin):
+    IDENTIFIER = 'clarin_eight'
+    URL = 'https://repo.clarino.uib.no/oai/request ListRecords'
+
+class ClarinNine(BaseClarin):
+    IDENTIFIER = 'clarin_nine'
+    URL = 'https://portulanclarin.net/repository/oaipmh/'
+    OAI_SET = 'hdl_11321_1'
+
+class ClarinTen(BaseClarin):
+    IDENTIFIER = 'clarin_ten'
+    URL = 'https://clarin-pl.eu/oai/request'
+    OAI_SET = 'hdl_11321_1'
+
+class ClarinEleven(BaseClarin):
+    IDENTIFIER = 'clarin_eleven'
+    URL = 'https://clarin-pl.eu/oai/request'
+    OAI_SET = 'hdl_11321_2'
+
+class ClarinTwelve(BaseClarin):
+    IDENTIFIER = 'clarin_twelve'
+    URL = 'https://clarin-pl.eu/oai/request'
+    OAI_SET = 'hdl_11321_3'
+
+class ClarinThirteen(BaseClarin):
+    IDENTIFIER = 'clarin_thirteen'
+    URL = 'https://clarin-pl.eu/oai/request'
+    OAI_SET = 'hdl_11321_4'
+
+class ClarinFourteen(BaseClarin):
+    IDENTIFIER = 'clarin_fourteen'
+    URL = 'https://metashare.ut.ee/oai_pmh/'
+
+class ClarinFifteen(BaseClarin):
+    IDENTIFIER = 'clarin_fifteen'
+    URL = 'https://clarin.vdu.lt/oai/request'
 
 class ClarinFromB2SatCSC(BaseClarin):
     IDENTIFIER = 'clarin_b2s'
