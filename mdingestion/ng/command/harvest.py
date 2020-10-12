@@ -15,6 +15,7 @@ class Harvest(Command):
         for identifier in tqdm(_communities,
                                ascii=True,
                                desc=f"Harvesting {self.community}",
+                               # position=0,
                                unit=' community',
                                total=len(_communities)):
             self._harvest(identifier, fromdate=fromdate, limit=limit, dry_run=dry_run)
