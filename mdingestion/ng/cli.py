@@ -38,11 +38,12 @@ def cli(ctx, debug, dry_run, outdir):
 
 
 @cli.command()
+@click.option('--name', help='Community name or identifier')
 @click.pass_context
-def list(ctx):
+def list(ctx, name):
     try:
         list = List()
-        list.run()
+        list.run(name=name)
     except Exception as e:
         logging.critical(f"list: {e}", exc_info=True)
         raise click.ClickException(f"{e}")

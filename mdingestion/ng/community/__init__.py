@@ -30,7 +30,9 @@ def _communities(cls=None):
 def get_communities():
     global COMMUNITIES
     if not COMMUNITIES:
-        COMMUNITIES = _communities()
+        COMMUNITIES = []
+        for com in _communities():
+            COMMUNITIES.append(com)
     return COMMUNITIES
 
 
@@ -40,3 +42,18 @@ def community(identifier):
         if community.IDENTIFIER == identifier:
             return community()
     raise CommunityNotSupported(f'Community not supported: {identifier}')
+
+
+def communities(name):
+    logging.debug(f'community name={name}')
+    com_list = []
+    for community in get_communities():
+        if name == 'all':
+            com_list.append(community.IDENTIFIER)
+        elif community.NAME == name:
+            com_list.append(community.IDENTIFIER)
+        elif community.IDENTIFIER == name:
+            com_list.append(community.IDENTIFIER)
+    if not com_list:
+        raise CommunityNotSupported(f'Community not supported: {name}')
+    return com_list
