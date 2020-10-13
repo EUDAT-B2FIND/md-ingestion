@@ -29,9 +29,10 @@ class B2ShareCSC(BaseEudat):
 
     def update(self, doc):
         super().update(doc)
-        #doc.keywords = self.keywords(doc, 'whatever')
+        # doc.keywords = self.keywords(doc, 'whatever')
         if not doc.publisher:
             doc.publisher = 'B2SHARE'
+
 
 class B2ShareFZJ(BaseEudat):
     IDENTIFIER = 'b2share_fzj'
@@ -40,6 +41,6 @@ class B2ShareFZJ(BaseEudat):
 
     def update(self, doc):
         super().update(doc)
-        #doc.keywords = self.keywords(doc, 'whichever')
+        # doc.keywords = self.keywords(doc, 'whichever')
         if not doc.publisher:
             doc.publisher = 'B2SHARE FZJ'
