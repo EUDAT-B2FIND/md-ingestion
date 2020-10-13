@@ -3,7 +3,7 @@ from tqdm import tqdm
 from .base import Command
 from ..harvester import harvester
 from ..exceptions import UserInfo
-from ..community import community
+from ..community import community, communities
 
 import logging
 
@@ -11,7 +11,20 @@ import logging
 class Harvest(Command):
 
     def harvest(self, fromdate=None, limit=None, dry_run=False):
-        _community = community(self.community)
+        _communities = communities(self.community)
+        for identifier in tqdm(_communities,
+                               ascii=True,
+                               desc=f"Harvesting {self.community}",
+                               # position=0,
+                               unit=' community',
+                               total=len(_communities)):
+            try:
+                self._harvest(identifier, fromdate=fromdate, limit=limit, dry_run=dry_run)
+            except Exception as e:
+                logging.error(f"Harvesting off {identifier} failed.")
+
+    def _harvest(self, identifier, fromdate=None, limit=None, dry_run=False):
+        _community = community(identifier)
         _harvester = harvester(
             community=_community.identifier,
             url=_community.url,
@@ -27,7 +40,7 @@ class Harvest(Command):
             raise UserInfo(f'Found records={_harvester.total(limited=False)}')
         for record in tqdm(_harvester.harvest(),
                            ascii=True,
-                           desc=f"Harvesting {self.community}",
+                           desc=f"Harvesting {identifier}",
                            unit=' records',
                            total=_harvester.total()):
             _harvester.write_record(record, pretty_print=True)

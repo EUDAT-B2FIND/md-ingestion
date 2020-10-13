@@ -6,7 +6,7 @@ from ckanapi import RemoteCKAN, NotFound
 
 from .base import Command
 from ..walker import Walker
-from ..community import community
+from ..community import community, communities
 
 import logging
 
@@ -30,14 +30,23 @@ def upload(data, host=None, apikey=None, no_update=False, verify=True):
 
 class Upload(Command):
     def run(self, iphost=None, auth=None, target=None, from_=None, limit=None, no_update=False, verify=True):
-        self.upload_to_ckan(iphost=iphost, auth=auth, from_=from_, limit=limit,
-                            no_update=no_update, verify=verify)
+        # TODO: refactor community loop
+        _communities = communities(self.community)
+        for identifier in tqdm(_communities,
+                               ascii=True,
+                               desc=f"Uploading {self.community}",
+                               # position=0,
+                               unit=' community',
+                               total=len(_communities)):
+            self._community = community(identifier)
+            self.upload_to_ckan(iphost=iphost, auth=auth, from_=from_, limit=limit,
+                                no_update=no_update, verify=verify)
 
     def upload_to_ckan(self, iphost, auth, from_=None, limit=None, no_update=False, verify=True):
         self.walker = Walker(self.outdir)
         limit = limit or -1
         count = 0
-        for filename in tqdm(self.walk(), ascii=True, desc=f"Uploading {self.community}",
+        for filename in tqdm(self.walk(), ascii=True, desc=f"Uploading {self._community.identifier}",
                              unit=' records', total=limit):
             if from_ and count < from_:
                 logging.info(f"skipping {filename}")
@@ -55,7 +64,6 @@ class Upload(Command):
             count += 1
 
     def walk(self):
-        _community = community(self.community)
-        path = os.path.join(_community.identifier, 'ckan')
+        path = os.path.join(self._community.identifier, 'ckan')
         for filename in self.walker.walk(path=path, ext='.json'):
             yield filename

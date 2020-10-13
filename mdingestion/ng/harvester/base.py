@@ -29,9 +29,9 @@ class Harvester(object):
             else:
                 total = self.matches()
         except Exception as e:
-            msg = f"Harvester failed: {e}. url={self.url}"
+            msg = f"Harvester failed: {e}. community={self.community}, url={self.url}"
             logging.critical(msg, exc_info=True)
-            raise HarvesterError(f"Harvester failed: {e}")
+            raise HarvesterError(f"{msg}")
         return total
 
     def uid(self, record):
@@ -54,9 +54,9 @@ class Harvester(object):
                     break
                 yield record
         except Exception as e:
-            msg = f"Harvester failed: {e}. url={self.url}"
+            msg = f"Harvester failed: {e}. community={self.community}, url={self.url}"
             logging.critical(msg, exc_info=True)
-            raise HarvesterError(f"Harvester failed: {e}")
+            raise HarvesterError(f"{msg}")
 
     def get_records(self):
         raise NotImplementedError
