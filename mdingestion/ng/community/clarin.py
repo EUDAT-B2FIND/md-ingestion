@@ -11,6 +11,8 @@ class BaseClarin(Community):
 
     def update(self, doc):
         doc.discipline = 'Linguistics'
+        #doc.doi = self.find_doi('metadata.relation')
+        #doc.pid = self.find_pid('metadata.relation')
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
         if not doc.publisher:
@@ -31,118 +33,69 @@ class ClarinOne(BaseClarin):
 
     def update(self, doc):
         super().update(doc)
-        doc.keywords = self.keywords(doc, 'clarin ONE')
-        doc.doi = self.find_doi('metadata.relation')
-        doc.pid = self.find_pid('metadata.relation')
-        if not doc.publisher:
-            doc.publisher = 'CLARIN one'
-        doc.contact = 'clarinone@something.eu'
-
+        #doc.keywords = self.keywords(doc, 'clarin ONE')
+        #doc.contact = 'clarinone@something.eu'
 
 class ClarinTwo(BaseClarin):
     IDENTIFIER = 'clarin_two'
     URL = 'http://dspace-clarin-it.ilc.cnr.it/repository/oai/request'
 
-    def update(self, doc):
-        super().update(doc)
-        doc.keywords = self.keywords(doc, 'clarin TWO')
-        if not doc.publisher:
-            doc.publisher = 'CLARIN two'
-        doc.contact = 'clarintwo@something.eu'
-
-
 class ClarinThree(BaseClarin):
     IDENTIFIER = 'clarin_three'
     URL = 'http://repository.clarin.dk/repository/oai/request'
-
-    def update(self, doc):
-        super().update(doc)
-        doc.keywords = self.keywords(doc, 'clarin THREE')
-        if not doc.publisher:
-            doc.publisher = 'CLARIN three'
-        doc.contact = 'clarinthree@something.eu'
-
 
 class ClarinFour(BaseClarin):
     IDENTIFIER = 'clarin_four'
     URL = 'http://lindat.mff.cuni.cz/repository/oai/request'
 
-    def update(self, doc):
-        super().update(doc)
-        doc.keywords = self.keywords(doc, 'clarin FOUR')
-        if not doc.publisher:
-            doc.publisher = 'CLARIN four'
-        doc.contact = 'clarinfour@something.eu'
-
-
 class ClarinFive(BaseClarin):
     IDENTIFIER = 'clarin_five'
     URL = 'http://www.clarin.si/repository/oai/request '
 
-    def update(self, doc):
-        super().update(doc)
-        doc.keywords = self.keywords(doc, 'clarin FIVE')
-        doc.doi = self.find_doi('metadata.relation')
-        doc.pid = self.find_pid('metadata.relation')
-        if not doc.publisher:
-            doc.publisher = 'CLARIN five'
-        doc.contact = 'clarinfive@something.eu'
-
-
 class ClarinSix(BaseClarin):
     IDENTIFIER = 'clarin_six'
-    URL = 'https://repo.spraakbanken.gu.se/oai/request ListRecords'
-
+    URL = 'https://repo.spraakbanken.gu.se/oai/request'
 
 class ClarinSeven(BaseClarin):
     IDENTIFIER = 'clarin_seven'
     URL = 'http://fedora.clarin-d.uni-saarland.de/oaiprovider/'
 
-
 class ClarinEight(BaseClarin):
     IDENTIFIER = 'clarin_eight'
-    URL = 'https://repo.clarino.uib.no/oai/request ListRecords'
-
+    URL = 'https://repo.clarino.uib.no/oai/request'
 
 class ClarinNine(BaseClarin):
     IDENTIFIER = 'clarin_nine'
     URL = 'https://portulanclarin.net/repository/oaipmh/'
     OAI_SET = 'hdl_11321_1'
 
-
 class ClarinTen(BaseClarin):
     IDENTIFIER = 'clarin_ten'
     URL = 'https://clarin-pl.eu/oai/request'
     OAI_SET = 'hdl_11321_1'
-
 
 class ClarinEleven(BaseClarin):
     IDENTIFIER = 'clarin_eleven'
     URL = 'https://clarin-pl.eu/oai/request'
     OAI_SET = 'hdl_11321_2'
 
-
 class ClarinTwelve(BaseClarin):
     IDENTIFIER = 'clarin_twelve'
     URL = 'https://clarin-pl.eu/oai/request'
     OAI_SET = 'hdl_11321_3'
-
 
 class ClarinThirteen(BaseClarin):
     IDENTIFIER = 'clarin_thirteen'
     URL = 'https://clarin-pl.eu/oai/request'
     OAI_SET = 'hdl_11321_4'
 
-
 class ClarinFourteen(BaseClarin):
     IDENTIFIER = 'clarin_fourteen'
     URL = 'https://metashare.ut.ee/oai_pmh/'
 
-
 class ClarinFifteen(BaseClarin):
     IDENTIFIER = 'clarin_fifteen'
     URL = 'https://clarin.vdu.lt/oai/request'
-
 
 class ClarinFromB2SatCSC(BaseClarin):
     IDENTIFIER = 'clarin_b2s'
@@ -151,7 +104,6 @@ class ClarinFromB2SatCSC(BaseClarin):
 
     def update(self, doc):
         super().update(doc)
-        doc.keywords = self.keywords(doc, 'clarin B2SHARE')
+        doc.keywords = self.keywords(doc, 'B2SHARE')
         if not doc.publisher:
-            doc.publisher = 'CLARIN B2SHARE'
-        doc.contact = 'clarinb2s@something.eu'
+            doc.publisher = 'B2SHARE'
