@@ -18,7 +18,10 @@ class Harvest(Command):
                                # position=0,
                                unit=' community',
                                total=len(_communities)):
-            self._harvest(identifier, fromdate=fromdate, limit=limit, dry_run=dry_run)
+            try:
+                self._harvest(identifier, fromdate=fromdate, limit=limit, dry_run=dry_run)
+            except Exception as e:
+                logging.error(f"Harvesting off {identifier} failed.")
 
     def _harvest(self, identifier, fromdate=None, limit=None, dry_run=False):
         _community = community(identifier)
