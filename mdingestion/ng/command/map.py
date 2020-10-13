@@ -18,6 +18,7 @@ class Map(Command):
         self.writer = None
 
     def run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None):
+        # TODO: refactor community loop
         _communities = communities(self.community)
         for identifier in tqdm(_communities,
                                ascii=True,
