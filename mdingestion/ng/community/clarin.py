@@ -147,7 +147,7 @@ class ClarinFifteen(BaseClarin):
 class ClarinFromB2SatCSC(BaseClarin):
     IDENTIFIER = 'clarin_b2s'
     URL = 'https://b2share.eudat.eu/api/oai2d'
-    OAI_SET = '0afede87-2bf2-4d89-867e-d2ee57251c62'
+    OAI_SET = '0afede87-2bf2-4d89-867e-d2ee57251c62' # CLARIN Subset
 
     def update(self, doc):
         super().update(doc)
