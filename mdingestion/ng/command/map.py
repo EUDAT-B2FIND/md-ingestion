@@ -52,7 +52,7 @@ class Map(Command):
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
         validator.summary['_errors_'] = self._community.errors
-        validator.write_summary(prefix=self.community, outdir=summary_dir)
+        validator.write_summary(prefix=self._community.identifier, outdir=summary_dir)
 
     def walk(self):
         path = os.path.join(self._community.identifier, 'raw')
@@ -61,5 +61,5 @@ class Map(Command):
 
     def map(self, filename):
         doc = self._community.read(filename)
-        logging.info(f'map: community={self.community}, file={filename}')
+        logging.info(f'map: community={self._community.identifier}, file={filename}')
         return doc

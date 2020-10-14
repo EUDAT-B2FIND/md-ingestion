@@ -20,7 +20,7 @@ class Harvest(Command):
                                total=len(_communities)):
             try:
                 self._harvest(identifier, fromdate=fromdate, limit=limit, dry_run=dry_run)
-            except Exception as e:
+            except Exception:
                 logging.error(f"Harvesting off {identifier} failed.")
 
     def _harvest(self, identifier, fromdate=None, limit=None, dry_run=False):
