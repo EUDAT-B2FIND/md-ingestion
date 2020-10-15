@@ -1,5 +1,6 @@
 from .base import Community
 from ..service_types import SchemaType, ServiceType
+from ..format import format_value
 
 
 class BaseDara(Community):
@@ -20,6 +21,7 @@ class DaraGESIS(BaseDara):
     def update(self, doc):
         doc.discipline = 'Social Sciences'
         doc.rights = self.find('rights', attrs={'xml:lang': 'en'})
+        doc.places = format_value(self.find('coverage'))
 
 
 class DaraRKI(BaseDara):
