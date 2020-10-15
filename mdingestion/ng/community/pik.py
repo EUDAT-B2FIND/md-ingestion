@@ -12,4 +12,4 @@ class PikDatacite(Community):
     OAI_SET = 'DOIDB.PIK'
 
     def update(self, doc):
-        doc.discipline = self.discipline(doc, 'Earth System Research')
+        doc.discipline = 'Earth System Research'
