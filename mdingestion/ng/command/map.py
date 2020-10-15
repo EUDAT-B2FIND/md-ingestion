@@ -16,20 +16,31 @@ class Map(Command):
         self.walker = Walker(self.outdir)
         # self._community = community(self.community)
         self.writer = None
+        self.summary = {}
 
     def run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None):
         # TODO: refactor community loop
         _communities = communities(self.community)
+        show = len(_communities) == 1
         for identifier in tqdm(_communities,
                                ascii=True,
                                desc=f"Map {self.community}",
                                # position=0,
                                unit=' community',
-                               total=len(_communities)):
+                               total=len(_communities),
+                               disable=len(_communities) == 1):
             self._community = community(identifier)
-            self._run(format=format, force=force, linkcheck=linkcheck, limit=limit, summary_dir=summary_dir)
+            self._run(format=format, force=force, linkcheck=linkcheck, limit=limit, summary_dir=summary_dir, show=show)
+        if len(_communities) > 1:
+            self.print_concise_summary()
 
-    def _run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None):
+    def print_concise_summary(self):
+        print(f"\nMapping Summary for {self.community}:")
+        for name in self.summary.keys():
+            summary = self.summary[name]
+            print(f"\t{name}: {summary['valid']}/{summary['total']}")
+
+    def _run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None, show=True):
         limit = limit or -1
         # TODO: refactor writer init
         self.writer = writer(format)
@@ -52,7 +63,8 @@ class Map(Command):
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
         validator.summary['_errors_'] = self._community.errors
-        validator.write_summary(prefix=self._community.identifier, outdir=summary_dir)
+        validator.write_summary(prefix=self._community.identifier, outdir=summary_dir, show=show)
+        self.summary[self._community.identifier] = validator.concise_summary()
 
     def walk(self):
         path = os.path.join(self._community.identifier, 'raw')
