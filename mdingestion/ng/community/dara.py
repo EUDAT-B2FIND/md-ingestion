@@ -17,11 +17,17 @@ class DaraGESIS(BaseDara):
     IDENTIFIER = 'dara_gesis'
     OAI_SET = '1'  # GESIS Data Archive, 7783 records
 
+    def update(self, doc):
+        doc.discipline = 'Social Sciences'
+        doc.rights = self.find('rights', attrs={'xml:lang': 'en'})
+
 
 class DaraRKI(BaseDara):
     IDENTIFIER = 'dara_rki'
     OAI_SET = '10'  # RKI Robert Koch-Institut, 15 records
 
+    def update(self, doc):
+        doc.discipline = 'Public Health'
 
 class DaraIHI(BaseDara):
     IDENTIFIER = 'dara_ihi'
