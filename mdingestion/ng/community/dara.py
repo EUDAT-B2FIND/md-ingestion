@@ -1,5 +1,6 @@
 from .base import Community
 from ..service_types import SchemaType, ServiceType
+from ..format import format_value
 
 
 class BaseDara(Community):
@@ -17,11 +18,18 @@ class DaraGESIS(BaseDara):
     IDENTIFIER = 'dara_gesis'
     OAI_SET = '1'  # GESIS Data Archive, 7783 records
 
+    def update(self, doc):
+        doc.discipline = 'Social Sciences'
+        doc.rights = self.find('rights', attrs={'xml:lang': 'en'})
+        doc.places = format_value(self.find('coverage'))
+
 
 class DaraRKI(BaseDara):
     IDENTIFIER = 'dara_rki'
     OAI_SET = '10'  # RKI Robert Koch-Institut, 15 records
 
+    def update(self, doc):
+        doc.discipline = 'Public Health'
 
 class DaraIHI(BaseDara):
     IDENTIFIER = 'dara_ihi'

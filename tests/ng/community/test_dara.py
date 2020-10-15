@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.dara import DaraRKI, DaraICPSR, DaraSRDA
+from mdingestion.ng.community.dara import DaraRKI, DaraICPSR, DaraSRDA, DaraGESIS
 
 from tests.common import TESTDATA_DIR
 
@@ -14,7 +14,7 @@ def test_dara_rki():
     assert 'Neuerungen in den aktuellen Empfehlungen' in doc.title[0]
     # assert 'Data on Austrian open access' in doc.description[0]
     assert ['Robert Koch-Institut'] == doc.creator
-    assert 'Various' in doc.discipline
+    assert 'Public Health' in doc.discipline
     assert doc.open_access is True
     assert 'metadataPrefix=oai_dc&identifier=oai:oai.da-ra.de:461204' in doc.metadata_access
     assert doc.publication_year == '2015'
@@ -57,3 +57,14 @@ def test_dara_srda():
     assert doc.keywords == []
     assert doc.doi == 'https://doi.org/10.6141/TW-SRDA-R040001-1'
     assert doc.language == []
+
+
+def test_dara_gesis():
+    xmlfile = os.path.join(TESTDATA_DIR, 'dara_gesis', 'raw',
+                           'd9bf3e91-9a61-51cd-94bd-c082a7b9c17f.xml')
+    reader = DaraGESIS()
+    doc = reader.read(xmlfile)
+    assert ['Rothenbacher, Franz'] == doc.creator
+    assert 'Social Sciences' in doc.discipline
+    assert doc.rights[0] == 'All metadata from GESIS DBK are available free of restriction under the Creative Commons CC0 1.0 Universal Public Domain Dedication. However, GESIS requests that you actively acknowledge and give attribution to all metadata sources, such as the data providers and any data aggregators, including GESIS. For further information see https://dbk.gesis.org/dbksearch/guidelines.asp'
+    assert 'German Empire from 1971 to 1945. Federal German Repuclib from 1949 to 1975. Prussia from 1817 to 1900' in doc.places 
