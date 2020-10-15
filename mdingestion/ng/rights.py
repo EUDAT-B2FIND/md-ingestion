@@ -3,6 +3,8 @@ CLOSED_ACCESS_RIGHTS = [
     'closedAccess',
     'embargoedAccess',
     'restrictedAccess',
+    'restricted',
+    'closed',
 ]
 
 
