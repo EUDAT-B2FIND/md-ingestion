@@ -67,6 +67,12 @@ class Validator(object):
         self._update_summary(jsondoc)
         return valid
 
+    def concise_summary(self):
+        return dict(
+            valid=self.summary['valid'],
+            total=self.summary['total'],
+        )
+
     def _update_summary(self, fields, valid=True):
         if valid:
             for key, value in fields.items():
@@ -142,7 +148,7 @@ class Validator(object):
                 for line in fh:
                     print(line.rstrip())
 
-    def write_summary(self, prefix, outdir):
+    def write_summary(self, prefix, outdir, show=True):
         # TODO: refactor summary output
         id = uniq_name()
         # summary as json
@@ -154,4 +160,4 @@ class Validator(object):
         # short summary as text
         short_name = f"{id}_{prefix}_summary_short.txt"
         out = pathlib.Path(outdir).joinpath(prefix, short_name)
-        self.write_short_summary(out)
+        self.write_short_summary(out, show=show)
