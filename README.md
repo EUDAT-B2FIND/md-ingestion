@@ -2,6 +2,10 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+## Description
+
+Python library to harvest, map and upload research community specific metadata into B2FIND CKAN portal. Currently, supported metadata schemas are DublinCore, DataCite and ISO 19139.
+
 ## Installation
 
 Create conda env:
