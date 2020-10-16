@@ -16,7 +16,7 @@ class MaterialscloudDublinCore(Community):
         doc.source = self.source(doc)
         # doc.open_access = True
         doc.discipline = 'Materials Science and Engineering'
-        doc.contact = 'info@materialscloud.org'
+        doc.contact = 'archive@materialscloud.org'
 
     def doi(self, doc):
         dois = [id for id in self.find('metadata.identifier') if id.startswith('doi:')]
