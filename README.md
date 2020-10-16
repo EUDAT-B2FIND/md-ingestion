@@ -36,7 +36,7 @@ Files are written to `oaidata/darus/ckan`.
 
 Check the validation result:
 ```
-$ less oaidata/darus/ckan/summary.json
+$ less summary/darus/2020-10-16_darus_summary.json
 ```
 
 Upload:
@@ -53,10 +53,10 @@ $ conda install pytest
 
 Run all tests:
 ```
-$ pytest -v tests/
+$ pytest tests/
 ```
 
 Run single test:
 ```
-$ pytest -v tests/ng/community/test_darus.py
+$ pytest tests/community/test_darus.py
 ```
