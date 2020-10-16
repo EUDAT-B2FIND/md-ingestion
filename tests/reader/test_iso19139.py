@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from mdingestion.ng.reader import ISO19139Reader
+from mdingestion.reader import ISO19139Reader
 
 from tests.common import TESTDATA_DIR
 

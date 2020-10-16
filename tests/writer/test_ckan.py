@@ -2,9 +2,9 @@ import os
 
 import pytest
 
-from mdingestion.ng.community.darus import DarusDatacite
-from mdingestion.ng.community.herbadrop import Herbadrop
-from mdingestion.ng.writer import CKANWriter
+from mdingestion.community.darus import DarusDatacite
+from mdingestion.community.herbadrop import Herbadrop
+from mdingestion.writer import CKANWriter
 
 from tests.common import TESTDATA_DIR
 

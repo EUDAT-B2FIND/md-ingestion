@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.ist import IstDublinCore
+from mdingestion.community.ist import IstDublinCore
 
 from tests.common import TESTDATA_DIR
 

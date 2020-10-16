@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.deims import Deims
+from mdingestion.community.deims import Deims
 
 from tests.common import TESTDATA_DIR
 

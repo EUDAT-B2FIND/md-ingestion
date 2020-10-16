@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.enes import Enes
+from mdingestion.community.enes import Enes
 
 from tests.common import TESTDATA_DIR
 

@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.pangaea import PangaeaDatacite
+from mdingestion.community.pangaea import PangaeaDatacite
 
 from tests.common import TESTDATA_DIR
 

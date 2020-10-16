@@ -1,4 +1,4 @@
-from mdingestion.ng.core import B2FDoc
+from mdingestion.core import B2FDoc
 
 
 def test_doc_temporal_coverage():

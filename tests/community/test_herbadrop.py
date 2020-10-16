@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.herbadrop import Herbadrop
+from mdingestion.community.herbadrop import Herbadrop
 
 from tests.common import TESTDATA_DIR
 

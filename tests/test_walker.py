@@ -2,9 +2,9 @@
 import os
 import pathlib
 
-from mdingestion.ng import walker
+from mdingestion import walker
 
-from ..common import TESTDATA_DIR
+from .common import TESTDATA_DIR
 
 
 def test_walk():

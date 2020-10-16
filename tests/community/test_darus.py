@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.darus import DarusDatacite
+from mdingestion.community.darus import DarusDatacite
 
 from tests.common import TESTDATA_DIR
 

@@ -1,4 +1,4 @@
-from mdingestion.ng import config
+from mdingestion import config
 
 
 def test_to_ignore():

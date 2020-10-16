@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.dataverseno import DataverseNODatacite
+from mdingestion.community.dataverseno import DataverseNODatacite
 
 from tests.common import TESTDATA_DIR
 

@@ -1,4 +1,4 @@
-from mdingestion.ng import format
+from mdingestion import format
 
 
 def test_format_string():

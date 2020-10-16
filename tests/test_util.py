@@ -1,7 +1,7 @@
 import pytest
 
-from mdingestion.ng import util
-from mdingestion.ng.format import format_datetime
+from mdingestion import util
+from mdingestion.format import format_datetime
 
 
 def test_remove_duplicates_from_list():

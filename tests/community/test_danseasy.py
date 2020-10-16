@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.danseasy import DanseasyDatacite
+from mdingestion.community.danseasy import DanseasyDatacite
 
 from tests.common import TESTDATA_DIR
 

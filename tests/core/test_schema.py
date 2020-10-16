@@ -3,10 +3,10 @@ import pytest
 import os
 import colander
 
-from mdingestion.ng.community.darus import DarusDatacite
-from mdingestion.ng.community.herbadrop import Herbadrop
-from mdingestion.ng.writer import B2FWriter
-from mdingestion.ng.core import B2FSchema
+from mdingestion.community.darus import DarusDatacite
+from mdingestion.community.herbadrop import Herbadrop
+from mdingestion.writer import B2FWriter
+from mdingestion.core import B2FSchema
 
 from tests.common import TESTDATA_DIR
 

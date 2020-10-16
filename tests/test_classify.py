@@ -1,4 +1,4 @@
-from mdingestion.ng import classify
+from mdingestion import classify
 import Levenshtein as lvs
 
 

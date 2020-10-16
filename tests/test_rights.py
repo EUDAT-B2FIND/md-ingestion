@@ -1,4 +1,4 @@
-from mdingestion.ng import rights
+from mdingestion import rights
 
 
 def test_is_open_access():

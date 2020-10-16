@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.dara import DaraRKI, DaraICPSR, DaraSRDA, DaraGESIS
+from mdingestion.community.dara import DaraRKI, DaraICPSR, DaraSRDA, DaraGESIS
 
 from tests.common import TESTDATA_DIR
 
@@ -67,4 +67,4 @@ def test_dara_gesis():
     assert ['Rothenbacher, Franz'] == doc.creator
     assert 'Social Sciences' in doc.discipline
     assert doc.rights[0] == 'All metadata from GESIS DBK are available free of restriction under the Creative Commons CC0 1.0 Universal Public Domain Dedication. However, GESIS requests that you actively acknowledge and give attribution to all metadata sources, such as the data providers and any data aggregators, including GESIS. For further information see https://dbk.gesis.org/dbksearch/guidelines.asp'
-    assert 'German Empire from 1971 to 1945. Federal German Repuclib from 1949 to 1975. Prussia from 1817 to 1900' in doc.places 
+    assert 'German Empire from 1971 to 1945. Federal German Repuclib from 1949 to 1975. Prussia from 1817 to 1900' in doc.places

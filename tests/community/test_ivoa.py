@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.ivoa import IvoaDatacite
+from mdingestion.community.ivoa import IvoaDatacite
 
 from tests.common import TESTDATA_DIR
 

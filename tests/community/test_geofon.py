@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.geofon import GeofonDatacite
+from mdingestion.community.geofon import GeofonDatacite
 
 from tests.common import TESTDATA_DIR
 

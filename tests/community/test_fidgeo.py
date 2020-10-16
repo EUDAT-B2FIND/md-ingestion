@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.fidgeo import FidgeoDatacite
+from mdingestion.community.fidgeo import FidgeoDatacite
 
 from tests.common import TESTDATA_DIR
 

@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.seanoe import Seanoe
+from mdingestion.community.seanoe import Seanoe
 
 from tests.common import TESTDATA_DIR
 

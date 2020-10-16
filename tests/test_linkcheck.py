@@ -1,7 +1,7 @@
 import os
 
-from mdingestion.ng.reader import DataCiteReader
-from mdingestion.ng.linkcheck import LinkChecker, ignore_url
+from mdingestion.reader import DataCiteReader
+from mdingestion.linkcheck import LinkChecker, ignore_url
 
 from tests.common import TESTDATA_DIR
 

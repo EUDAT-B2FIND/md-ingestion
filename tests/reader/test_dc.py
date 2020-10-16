@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from mdingestion.ng.reader import DublinCoreReader
+from mdingestion.reader import DublinCoreReader
 
 from tests.common import TESTDATA_DIR
 

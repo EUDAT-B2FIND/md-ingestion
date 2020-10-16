@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.pdc import Pdc
+from mdingestion.community.pdc import Pdc
 
 from tests.common import TESTDATA_DIR
 

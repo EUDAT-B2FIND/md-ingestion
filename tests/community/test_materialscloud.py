@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.materialscloud import MaterialscloudDublinCore
+from mdingestion.community.materialscloud import MaterialscloudDublinCore
 
 from tests.common import TESTDATA_DIR
 

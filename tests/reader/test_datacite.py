@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from mdingestion.ng.reader import DataCiteReader
+from mdingestion.reader import DataCiteReader
 
 from tests.common import TESTDATA_DIR
 

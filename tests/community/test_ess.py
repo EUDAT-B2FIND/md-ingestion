@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.ng.community.ess import EssDatacite
+from mdingestion.community.ess import EssDatacite
 
 from tests.common import TESTDATA_DIR
 
