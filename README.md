@@ -1,4 +1,10 @@
-# Readme Next Generation
+# B2FIND Metadata Integration Tool
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+## Description
+
+Python library to harvest, map and upload research community specific metadata into B2FIND CKAN portal. Currently, supported metadata schemas are DublinCore, DataCite and ISO 19139.
 
 ## Installation
 
@@ -36,7 +42,7 @@ Files are written to `oaidata/darus/ckan`.
 
 Check the validation result:
 ```
-$ less oaidata/darus/ckan/summary.json
+$ less summary/darus/2020-10-16_darus_summary.json
 ```
 
 Upload:
@@ -53,10 +59,10 @@ $ conda install pytest
 
 Run all tests:
 ```
-$ pytest -v tests/
+$ pytest tests/
 ```
 
 Run single test:
 ```
-$ pytest -v tests/ng/community/test_darus.py
+$ pytest tests/community/test_darus.py
 ```
