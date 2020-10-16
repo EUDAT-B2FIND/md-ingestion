@@ -1,5 +1,10 @@
 ## CHANGES
 
+### 2.0.2 (2020-10-15)
+
+* support for community groups
+* added community mapfiles for gfz, dara, eudat
+
 ### 2.0.1 (2020-09-29)
 
 * slks ingestion on productive B2FIND
