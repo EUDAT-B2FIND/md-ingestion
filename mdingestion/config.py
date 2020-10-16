@@ -5,7 +5,7 @@ import re
 import logging
 
 
-ETC_DIR = path.abspath(path.join(path.dirname(__file__), '..', '..', 'etc'))
+ETC_DIR = path.abspath(path.join(path.dirname(__file__), '..', 'etc'))
 IGNORE_LIST = path.join(ETC_DIR, 'ignore_urls.txt')
 TO_IGNORE = None
 
