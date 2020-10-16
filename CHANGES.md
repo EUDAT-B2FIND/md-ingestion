@@ -1,18 +1,22 @@
 ## CHANGES
 
-### 2.0.2 (2020-10-15)
+### 3.0.0 (2020-10-16)
+
+* cleaned-up version after integration of "next generation" code
+
+### 2.8.0 (2020-10-15)
 
 * support for community groups
 * added community mapfiles for gfz, dara, eudat
 
-### 2.0.1 (2020-09-29)
+### 2.7.0 (2020-09-29)
 
 * slks ingestion on productive B2FIND
 * different mapfiles for one Community = CLARIN, new folder structure (#124)
 * additional tests and Community specific mapping issues (DataverseNO, DEIMS, Pangaea) (#125)
 * fixed geo datacite (bbox, polygon, point) (#126)
 
-### 2.0.0 (2020-09-23)
+### 2.6.0 (2020-09-23)
 
 * Fixed upload (#120).
 * geofon (#119).
@@ -23,7 +27,7 @@
 * New folder 'demo' for EnvriPlus demonstrator (#110).
 * Removed legacy code (#106, #107, #109).
 
-### 1.5.0 (2020-09-15)
+### 2.5.0 (2020-09-15)
 * Fidgeo (#105)
 * fix classify.map_discipline
 * from EUDAT-B2FIND/herbadrop (#101)
@@ -38,7 +42,7 @@
 * fixed envidat iso test
 * fixed datacite contact
 
-### 1.4.0 (2020-09-02)
+### 2.4.0 (2020-09-02)
 * Create schema__transition
 * changes for toar, ess, radar and b2find export
 * Readthedocs (#27)
@@ -49,7 +53,7 @@
 * added mapper tests (#24)
 * Add setup py (#22) (#23)
 
-### 1.3.0 (2020-05-11)
+### 2.3.0 (2020-05-11)
 * Jsonsraus (#21)
 * bugfix geopoint-cloud (#20)
 * Darus comm (#19)
@@ -62,12 +66,12 @@
 * added slks-dc mapfile and updated harvest_list. Added "Archaeology" to B2FIND disciplines.json. (#12)
 * updated README.md (#10)
 
-### 1.2.0 (2020-02-27)
+### 2.2.0 (2020-02-27)
 * Converted B2FIND code from Python 2.7 to Python 3.6 (#9)
 * updated harvest_list with ESS, DaRUS and Uni Maribor
 * new mapfile for Uni Maribor
 
-### 1.1.0 (2020-02-26)
+### 2.1.0 (2020-02-26)
 Integration work for (#7)
 + ENVRIplus demonstrator
   - including mapfiles for ENVRI Communities (such as AnaEE, SeaDataNet, Euro-Argo etc.)
@@ -94,6 +98,6 @@ Integration work for (#7)
 + hw_harvest_list as old references to harvesting endpoints from Heiner
 + EISCAT json mapfile (#8)
 
-### 1.0.0 (2019-11-18)
+### 2.0.0 (2019-11-18)
 
 Initial release for B2FIND software stack, including development during several funded projects.  
