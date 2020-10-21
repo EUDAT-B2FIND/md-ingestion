@@ -138,6 +138,7 @@ def format_datetime(text):
     try:
         parsed = date_parser.parse(text)
         val = parsed.isoformat(timespec='seconds')
+        val = val.split('+')[0]
         val = f"{val}Z"
     except Exception:
         logging.warning(f"could not parse datetime: {text}")
