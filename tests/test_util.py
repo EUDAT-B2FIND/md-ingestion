@@ -10,6 +10,7 @@ def test_remove_duplicates_from_list():
 
 # @pytest.mark.xfail(reason='fails on travis')
 def test_utc2seconds():
+    # TODO: 62135604000 on travis
     assert 62135600400 == util.utc2seconds(format_datetime("1970-01-01T01:00:00Z"))
     assert 63734079600 == util.utc2seconds(format_datetime('2020-08-27'))
     assert 63715939200 == util.utc2seconds(format_datetime('2020-01-30'))
