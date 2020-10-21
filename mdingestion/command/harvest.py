@@ -17,7 +17,8 @@ class Harvest(Command):
                                desc=f"Harvesting {self.community}",
                                # position=0,
                                unit=' community',
-                               total=len(_communities)):
+                               total=len(_communities),
+                               disable=len(_communities) == 1):
             try:
                 self._harvest(identifier, fromdate=fromdate, limit=limit, dry_run=dry_run)
             except Exception:
