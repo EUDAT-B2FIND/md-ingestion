@@ -37,7 +37,8 @@ class Upload(Command):
                                desc=f"Uploading {self.community}",
                                # position=0,
                                unit=' community',
-                               total=len(_communities)):
+                               total=len(_communities),
+                               disable=len(_communities) == 1):
             self._community = community(identifier)
             self.upload_to_ckan(iphost=iphost, auth=auth, from_=from_, limit=limit,
                                 no_update=no_update, verify=verify)
