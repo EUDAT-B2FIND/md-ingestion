@@ -20,6 +20,8 @@ def test_utc2seconds():
     assert 59926651199 == util.utc2seconds(format_datetime('1900-01-01T00:00:00Z'))
     assert 59895115199 == util.utc2seconds(format_datetime('1899-01-01'))
     assert 58664347199 == util.utc2seconds(format_datetime('1860-01-01'))
+    assert 58553841599 == util.utc2seconds(format_datetime("1856-07-01T11:59:59Z"))
+    assert 52400260799 == util.utc2seconds(format_datetime("1661-07-01T11:59:59Z"))
     assert 50459543999 == util.utc2seconds(format_datetime('1600-01-01'))
     assert 25213982399 == util.utc2seconds(format_datetime('0800-01-01'))
     assert 43199 == util.utc2seconds(format_datetime('0001-01-01'))
