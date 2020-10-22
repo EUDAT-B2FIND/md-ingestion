@@ -17,7 +17,7 @@ def map_ckan_fields(fields):
                     value = '; '.join(value)
             elif key in ['title', 'notes']:
                 if isinstance(value, list):
-                    value = '\n'.join(value)
+                    value = '\n\n'.join(value)
             ckan_fields[key] = value
     return ckan_fields
 

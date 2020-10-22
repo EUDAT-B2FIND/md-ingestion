@@ -36,10 +36,9 @@ class Herbadrop(Community):
 
     def description(self, doc):
         text = []
-        text.append("""This record is part of a larger collection of digitized herbarium specimens.
-         The full Herbadrop/ICEDIG-project collection can be accessed and browsed at https://opendata.cines.fr""")
-        text.append("\n\nScanned files by OCR:")
-        text.append(format_value(self.find('images[*].ocr.lat'), one=True))
+        text.append("This record is part of a larger collection of digitized herbarium specimens. The full Herbadrop/ICEDIG-project collection can be accessed and browsed at https://opendata.cines.fr")
+        image = format_value(self.find('images[*].ocr.lat'), one=True)
+        text.append(f"Scanned files by OCR:{image}")
         return text
 
     def metadata_access(self, doc):
