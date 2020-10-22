@@ -94,6 +94,8 @@ class CKANWriter(Writer):
             'TempCoverageBegin': doc.temp_coverage_begin,
             'TempCoverageEnd': doc.temp_coverage_end,
         }
+        if doc.publication_year:
+            data['PublicationTimestamp'] = f"{doc.publication_year}-01-01T12:00:00Z"
         return data
 
     def _ckan_fields(self, doc):
@@ -110,8 +112,6 @@ class CKANWriter(Writer):
             'name': doc.community,
         }]
         data['state'] = 'active'
-        if doc.publication_year:
-            data['PublicationTimestamp'] = f"{doc.publication_year}-07-01T11:59:59Z"
         data['fulltext'] = doc.fulltext
         return data
 

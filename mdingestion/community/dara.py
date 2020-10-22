@@ -31,6 +31,7 @@ class DaraRKI(BaseDara):
     def update(self, doc):
         doc.discipline = 'Public Health'
 
+
 class DaraIHI(BaseDara):
     IDENTIFIER = 'dara_ihi'
     OAI_SET = '105'  # Ifakara Health Institute, 20 records

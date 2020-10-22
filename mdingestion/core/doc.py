@@ -374,7 +374,7 @@ class GeoDoc(BaseDoc):
         """Mikail's seconds since B.C. extension - TODO"""
         try:
             # tstamp = int(date_parser.parse(self._begin_date).timestamp())
-            tstamp = utc2seconds(self._begin_date)
+            tstamp = utc2seconds(self.temporal_coverage_begin_date)
         except Exception:
             tstamp = None
         return tstamp
@@ -383,7 +383,7 @@ class GeoDoc(BaseDoc):
     def temp_coverage_end(self):
         try:
             # tstamp = int(date_parser.parse(self._end_date).timestamp())
-            tstamp = utc2seconds(self._end_date)
+            tstamp = utc2seconds(self.temporal_coverage_end_date)
         except Exception:
             tstamp = None
         return tstamp

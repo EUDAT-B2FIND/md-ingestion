@@ -22,6 +22,8 @@ def test_format_string_word():
 
 def test_format_datetime():
     assert '2020-05-19T00:00:00Z' == format.format_datetime('2020-05-19')
+    assert '2020-05-19T00:00:00Z' == format.format_datetime('2020-05-19T00:00:00Z')
+    assert '2020-05-19T00:00:00Z' == format.format_datetime('2020-05-19T00:00:00')
 
 
 def test_format_date():

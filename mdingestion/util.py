@@ -17,7 +17,7 @@ def utc2seconds(dt):
     Licensed under AGPLv3.
     """
     # Time('0000-12-31 23:00:00', format='iso', scale='utc').unix
-    year1epochsec = 62135600400
+    year1epochsec = 62135600400  # 1970-01-01T01:00:00Z
     utc1900 = datetime.datetime.strptime("1900-01-01T11:59:59Z", "%Y-%m-%dT%H:%M:%SZ")
     # utc=self.date2UTC(dt)
     utc = dt
