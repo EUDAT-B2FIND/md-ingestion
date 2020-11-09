@@ -15,16 +15,18 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'], obj=CONTEXT_OBJ)
 @click.group(context_settings=CONTEXT_SETTINGS)
 @click.version_option()
 @click.option('--debug', is_flag=True)
+@click.option('--silent', is_flag=True, help='silent mode')
 @click.option('--dry-run', is_flag=True, help='use dry run mode')
 @click.option('--outdir', '-o', default='oaidata',
               help='The absolute root dir in which all harvested files will be saved.')
 @click.pass_context
-def cli(ctx, debug, dry_run, outdir):
+def cli(ctx, debug, silent, dry_run, outdir):
     # ensure that ctx.obj exists and is a dict (in case `cli()` is called
     # by means other than the `if` block below)
     ctx.ensure_object(dict)
 
     ctx.obj['dry_run'] = dry_run
+    ctx.obj['silent'] = silent
 
     out = pathlib.Path(outdir)
     if not out.is_absolute():
@@ -34,7 +36,7 @@ def cli(ctx, debug, dry_run, outdir):
     if debug:
         logging.basicConfig(filename='out.log', level=logging.DEBUG)
     else:
-        logging.basicConfig(filename='out.log', level=logging.INFO)
+        logging.basicConfig(filename='out.log', level=logging.ERROR)
 
 
 @cli.command()
@@ -68,7 +70,8 @@ def harvest(ctx, community, url, fromdate, clean, limit, insecure):
         )
         if fromdate:
             fromdate = str(fromdate.date())
-        cmd.harvest(fromdate=fromdate, clean=clean, limit=limit, dry_run=ctx.obj['dry_run'])
+        cmd.harvest(fromdate=fromdate, clean=clean, limit=limit,
+                    dry_run=ctx.obj['dry_run'], silent=ctx.obj['silent'])
     except UserInfo as e:
         click.echo(f'{e}')
     except Exception as e:
@@ -90,7 +93,8 @@ def map(ctx, community, format, limit, force, no_linkcheck, summary):
         map = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit, summary_dir=summary)
+        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit, summary_dir=summary,
+                silent=ctx.obj['silent'])
     except Exception as e:
         logging.critical(f"map: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
@@ -110,7 +114,8 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, insecu
     try:
         upload = Upload(outdir=ctx.obj['outdir'], community=community)
         upload.run(iphost=iphost, auth=auth, target=target, from_=from_, limit=limit,
-                   no_update=no_update, verify=not insecure)
+                   no_update=no_update, verify=not insecure,
+                   silent=ctx.obj['silent'])
     except Exception as e:
         logging.critical(f"upload: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
@@ -136,16 +141,19 @@ def combine(ctx, community, iphost, auth, fromdate, limit, no_update, insecure):
         )
         if fromdate:
             fromdate = str(fromdate.date())
-        cmd.harvest(fromdate=fromdate, clean=True, limit=limit, dry_run=ctx.obj['dry_run'])
+        cmd.harvest(fromdate=fromdate, clean=True, limit=limit,
+                    dry_run=ctx.obj['dry_run'], silent=ctx.obj['silent'])
         # map
         cmd = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        cmd.run(format='ckan', force=False, linkcheck=True, limit=limit, summary_dir='summary')
+        cmd.run(format='ckan', force=False, linkcheck=True, limit=limit, summary_dir='summary',
+                silent=ctx.obj['silent'])
         # upload
         upload = Upload(outdir=ctx.obj['outdir'], community=community)
         upload.run(iphost=iphost, auth=auth, target='ckan', from_=None, limit=limit,
-                   no_update=no_update, verify=not insecure)
+                   no_update=no_update, verify=not insecure,
+                   silent=ctx.obj['silent'])
     except UserInfo as e:
         click.echo(f'{e}')
     except Exception as e:
