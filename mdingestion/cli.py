@@ -54,10 +54,11 @@ def list(ctx, community):
 @click.option('--url', help='Source URL')
 @click.option('--fromdate', type=click.DateTime(formats=["%Y-%m-%d"]),
               help='Filter by date.')
+@click.option('--clean', is_flag=True, help='Clean output folder before harvesting')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def harvest(ctx, community, url, fromdate, limit, insecure):
+def harvest(ctx, community, url, fromdate, clean, limit, insecure):
     try:
         cmd = Harvest(
             community=community,
@@ -67,7 +68,7 @@ def harvest(ctx, community, url, fromdate, limit, insecure):
         )
         if fromdate:
             fromdate = str(fromdate.date())
-        cmd.harvest(fromdate=fromdate, limit=limit, dry_run=ctx.obj['dry_run'])
+        cmd.harvest(fromdate=fromdate, clean=clean, limit=limit, dry_run=ctx.obj['dry_run'])
     except UserInfo as e:
         click.echo(f'{e}')
     except Exception as e:
