@@ -86,15 +86,11 @@ def harvest(ctx, community, url, fromdate, clean, limit, insecure):
               help='The absolute root dir in which all summary files will be saved.')
 @click.pass_context
 def map(ctx, community, format, limit, force, no_linkcheck, summary):
-    summary_dir = pathlib.Path(summary)
-    if not summary_dir.is_absolute():
-        summary_dir = pathlib.Path.cwd().joinpath(summary_dir)
-    summary_dir = summary_dir.absolute().as_posix()
     try:
         map = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit, summary_dir=summary_dir)
+        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit, summary_dir=summary)
     except Exception as e:
         logging.critical(f"map: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
@@ -117,6 +113,43 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, insecu
                    no_update=no_update, verify=not insecure)
     except Exception as e:
         logging.critical(f"upload: {e}", exc_info=True)
+        raise click.ClickException(f"{e}")
+
+
+@cli.command()
+@click.option('--community', '-c', required=True, help='Community')
+@click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
+@click.option('--auth', required=True, help='CKAN API key')
+@click.option('--fromdate', type=click.DateTime(formats=["%Y-%m-%d"]),
+              help='Filter by date.')
+@click.option('--limit', type=int, help='Limit')
+@click.option('--no-update', is_flag=True, help='do not update existing record')
+@click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
+@click.pass_context
+def combine(ctx, community, iphost, auth, fromdate, limit, no_update, insecure):
+    try:
+        # harvest
+        cmd = Harvest(
+            community=community,
+            outdir=ctx.obj['outdir'],
+            verify=not insecure,
+        )
+        if fromdate:
+            fromdate = str(fromdate.date())
+        cmd.harvest(fromdate=fromdate, clean=True, limit=limit, dry_run=ctx.obj['dry_run'])
+        # map
+        cmd = Map(
+            community=community,
+            outdir=ctx.obj['outdir'],)
+        cmd.run(format='ckan', force=False, linkcheck=True, limit=limit, summary_dir='summary')
+        # upload
+        upload = Upload(outdir=ctx.obj['outdir'], community=community)
+        upload.run(iphost=iphost, auth=auth, target='ckan', from_=None, limit=limit,
+                   no_update=no_update, verify=not insecure)
+    except UserInfo as e:
+        click.echo(f'{e}')
+    except Exception as e:
+        logging.critical(f"combine: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
 
 

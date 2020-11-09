@@ -1,4 +1,5 @@
 import os
+import pathlib
 from tqdm import tqdm
 
 from .base import Command
@@ -19,6 +20,10 @@ class Map(Command):
         self.summary = {}
 
     def run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None):
+        summary_path = pathlib.Path(summary_dir)
+        if not summary_path.is_absolute():
+            summary_path = pathlib.Path.cwd().joinpath(summary_path)
+        summary_dir = summary_path.absolute().as_posix()
         # TODO: refactor community loop
         _communities = communities(self.community)
         show = len(_communities) == 1
