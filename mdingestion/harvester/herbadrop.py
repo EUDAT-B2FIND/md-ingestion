@@ -8,11 +8,12 @@ import logging
 
 
 class HerbadropHarvester(Harvester):
-    def __init__(self, community, url, fromdate, limit, outdir, verify):
+    def __init__(self, community, url, fromdate, clean, limit, outdir, verify):
         super().__init__(
             community=community,
             url=url,
             fromdate=fromdate,
+            clean=clean,
             limit=limit,
             outdir=outdir,
             verify=verify)

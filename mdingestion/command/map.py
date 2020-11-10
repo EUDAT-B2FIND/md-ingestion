@@ -1,4 +1,5 @@
 import os
+import pathlib
 from tqdm import tqdm
 
 from .base import Command
@@ -18,20 +19,25 @@ class Map(Command):
         self.writer = None
         self.summary = {}
 
-    def run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None):
+    def run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None, silent=False):
+        summary_path = pathlib.Path(summary_dir)
+        if not summary_path.is_absolute():
+            summary_path = pathlib.Path.cwd().joinpath(summary_path)
+        summary_dir = summary_path.absolute().as_posix()
         # TODO: refactor community loop
         _communities = communities(self.community)
-        show = len(_communities) == 1
+        show = len(_communities) == 1 and not silent
         for identifier in tqdm(_communities,
                                ascii=True,
                                desc=f"Map {self.community}",
                                # position=0,
                                unit=' community',
                                total=len(_communities),
-                               disable=len(_communities) == 1):
+                               disable=len(_communities) == 1 or silent):
             self._community = community(identifier)
-            self._run(format=format, force=force, linkcheck=linkcheck, limit=limit, summary_dir=summary_dir, show=show)
-        if len(_communities) > 1:
+            self._run(format=format, force=force, linkcheck=linkcheck, limit=limit, summary_dir=summary_dir,
+                      show=show, silent=silent)
+        if len(_communities) > 1 and not silent:
             self.print_concise_summary()
 
     def print_concise_summary(self):
@@ -40,7 +46,8 @@ class Map(Command):
             summary = self.summary[name]
             print(f"\t{name}: {summary['valid']}/{summary['total']}")
 
-    def _run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None, show=True):
+    def _run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None,
+             show=True, silent=False):
         limit = limit or -1
         # TODO: refactor writer init
         self.writer = writer(format)
@@ -49,7 +56,7 @@ class Map(Command):
         validator.summary['_invalid_files_'] = []
         count = 0
         for filename in tqdm(self.walk(), ascii=True, desc=f"Map {self._community.identifier} to {format}",
-                             unit=' records', total=limit):
+                             unit=' records', total=limit, disable=silent):
             if limit > 0 and count >= limit:
                 break
             logging.info(f'mapping {filename}')

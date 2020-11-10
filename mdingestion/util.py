@@ -30,7 +30,7 @@ def utc2seconds(dt):
         else:
             sec = int(time.mktime(utctime.timetuple())) + year1epochsec
     except Exception:
-        logging.exception(f'utc2seconds date-time {utc} can not converted!')
+        logging.warning(f'utc2seconds date-time {utc} can not converted!')
         return None
     return sec
 

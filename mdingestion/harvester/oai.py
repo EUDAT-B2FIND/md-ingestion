@@ -14,8 +14,8 @@ import logging
 
 class OAIHarvester(Harvester):
 
-    def __init__(self, community, url, oai_metadata_prefix, oai_set, fromdate, limit, outdir, verify):
-        super().__init__(community, url, fromdate, limit, outdir, verify)
+    def __init__(self, community, url, oai_metadata_prefix, oai_set, fromdate, clean, limit, outdir, verify):
+        super().__init__(community, url, fromdate, clean, limit, outdir, verify)
         logging.captureWarnings(True)
         self.mdprefix = oai_metadata_prefix
         self.mdsubset = oai_set

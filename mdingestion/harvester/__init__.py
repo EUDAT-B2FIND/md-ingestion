@@ -14,6 +14,7 @@ def harvester(community,
               oai_metadata_prefix,
               oai_set,
               fromdate,
+              clean,
               limit,
               outdir,
               verify):
@@ -22,13 +23,14 @@ def harvester(community,
             community=community,
             url=url,
             fromdate=fromdate,
+            clean=clean,
             limit=limit,
             outdir=outdir,
             verify=verify)
     elif service_type == ServiceType.OAI:
-        harvester = OAIHarvester(community, url, oai_metadata_prefix, oai_set, fromdate, limit, outdir, verify)
+        harvester = OAIHarvester(community, url, oai_metadata_prefix, oai_set, fromdate, clean, limit, outdir, verify)
     elif service_type == ServiceType.CSW:
-        harvester = CSWHarvester(community, url, schema, fromdate, limit, outdir, verify)
+        harvester = CSWHarvester(community, url, schema, fromdate, clean, limit, outdir, verify)
     else:
         raise HarvesterNotSupported()
     return harvester

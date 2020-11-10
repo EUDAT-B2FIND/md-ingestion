@@ -29,7 +29,8 @@ def upload(data, host=None, apikey=None, no_update=False, verify=True):
 
 
 class Upload(Command):
-    def run(self, iphost=None, auth=None, target=None, from_=None, limit=None, no_update=False, verify=True):
+    def run(self, iphost=None, auth=None, target=None, from_=None, limit=None, no_update=False, verify=True,
+            silent=False):
         # TODO: refactor community loop
         _communities = communities(self.community)
         for identifier in tqdm(_communities,
@@ -38,17 +39,19 @@ class Upload(Command):
                                # position=0,
                                unit=' community',
                                total=len(_communities),
-                               disable=len(_communities) == 1):
+                               disable=len(_communities) == 1 or silent):
             self._community = community(identifier)
             self.upload_to_ckan(iphost=iphost, auth=auth, from_=from_, limit=limit,
-                                no_update=no_update, verify=verify)
+                                no_update=no_update, verify=verify,
+                                silent=silent)
 
-    def upload_to_ckan(self, iphost, auth, from_=None, limit=None, no_update=False, verify=True):
+    def upload_to_ckan(self, iphost, auth, from_=None, limit=None, no_update=False, verify=True,
+                       silent=False):
         self.walker = Walker(self.outdir)
         limit = limit or -1
         count = 0
         for filename in tqdm(self.walk(), ascii=True, desc=f"Uploading {self._community.identifier}",
-                             unit=' records', total=limit):
+                             unit=' records', total=limit, disable=silent):
             if from_ and count < from_:
                 logging.info(f"skipping {filename}")
                 count += 1

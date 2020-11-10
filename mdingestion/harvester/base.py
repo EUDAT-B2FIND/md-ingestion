@@ -1,5 +1,7 @@
 import uuid
 import pathlib
+import shutil
+import os
 
 from ..exceptions import HarvesterError
 
@@ -7,10 +9,11 @@ import logging
 
 
 class Harvester(object):
-    def __init__(self, community, url, fromdate, limit, outdir, verify=True):
+    def __init__(self, community, url, fromdate, clean, limit, outdir, verify=True):
         self.community = community
         self.url = url
         self.fromdate = fromdate
+        self.clean = clean
         self.limit = limit or -1
         self.outdir = outdir
         self.verify = verify
@@ -46,6 +49,10 @@ class Harvester(object):
         return out
 
     def harvest(self):
+        if self.clean:
+            outdir = os.path.join(self.outdir, self.community)
+            logging.info(f'removing folder: {outdir}')
+            shutil.rmtree(outdir)
         count = 0
         try:
             for record in self.get_records():
