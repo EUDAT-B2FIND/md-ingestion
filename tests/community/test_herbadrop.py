@@ -68,7 +68,7 @@ def test_herbadrop_with_pid():
     assert 'StillImage|PRESERVED_SPECIMEN' == doc.resource_type[0]
     assert 'image/jpeg' == doc.format[0]
     assert 'Plant Sciences' == doc.discipline
-    assert 'HERBARIUM MUSEI PARISIENSIS' == doc.description[2]
+    assert 'Scanned files by OCR:HERBARIUM MUSEI PARISIENSIS' in doc.description
     # assert 'France|Languedoc-Roussillon||||Eyne' == doc.spatial_coverage
     # assert '1968-07-17T00:00:00Z' == doc.temporal_coverage_begin_date
     # assert '1968-07-17T00:00:00Z' == doc.temporal_coverage_end_date

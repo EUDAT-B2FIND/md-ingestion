@@ -127,11 +127,12 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, insecu
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--fromdate', type=click.DateTime(formats=["%Y-%m-%d"]),
               help='Filter by date.')
+@click.option('--clean', is_flag=True, help='Clean output folder before harvesting')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--no-update', is_flag=True, help='do not update existing record')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def combine(ctx, community, iphost, auth, fromdate, limit, no_update, insecure):
+def combine(ctx, community, iphost, auth, fromdate, clean, limit, no_update, insecure):
     try:
         # harvest
         cmd = Harvest(
@@ -141,7 +142,7 @@ def combine(ctx, community, iphost, auth, fromdate, limit, no_update, insecure):
         )
         if fromdate:
             fromdate = str(fromdate.date())
-        cmd.harvest(fromdate=fromdate, clean=True, limit=limit,
+        cmd.harvest(fromdate=fromdate, clean=clean, limit=limit,
                     dry_run=ctx.obj['dry_run'], silent=ctx.obj['silent'])
         # map
         cmd = Map(
