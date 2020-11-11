@@ -52,7 +52,8 @@ class Harvester(object):
         if self.clean:
             outdir = os.path.join(self.outdir, self.community)
             logging.info(f'removing folder: {outdir}')
-            shutil.rmtree(outdir)
+            if os.path.exists(outdir):
+                shutil.rmtree(outdir)
         count = 0
         try:
             for record in self.get_records():
