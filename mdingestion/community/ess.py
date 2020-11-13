@@ -18,7 +18,7 @@ class EssDatacite(Community):
         doc.keywords = self.keywords(doc)
         # doc.open_access = True
 
-        def keywords(self, doc):
-            keywords = doc.keywords
-            keywords.append('PaN')
-            return keywords
+    def keywords(self, doc):
+        keywords = doc.keywords
+        keywords.append('PaN')
+        return keywords
