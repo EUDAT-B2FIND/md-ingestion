@@ -15,4 +15,10 @@ class EssDatacite(Community):
     def update(self, doc):
         doc.doi = self.find_doi('identifier', identifierType="URL")
         doc.discipline = 'Particles, Nuclei and Fields'
+        doc.keywords = self.keywords(doc)
         # doc.open_access = True
+
+        def keywords(self, doc):
+            keywords = doc.keywords
+            keywords.append('PaN')
+            return keywords
