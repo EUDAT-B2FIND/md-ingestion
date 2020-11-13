@@ -19,7 +19,7 @@ class DaraGESIS(BaseDara):
     OAI_SET = '1'  # GESIS Data Archive, 7783 records
 
     def update(self, doc):
-        doc.discipline = 'Social Sciences'
+        doc.discipline = self.discipline(doc, 'Social Sciences')
         doc.rights = self.find('rights', attrs={'xml:lang': 'en'})
         doc.places = format_value(self.find('coverage'))
 
@@ -29,7 +29,7 @@ class DaraRKI(BaseDara):
     OAI_SET = '10'  # RKI Robert Koch-Institut, 15 records
 
     def update(self, doc):
-        doc.discipline = 'Public Health, Health Services Research, Social Medicine'
+        doc.discipline = self.discipline(doc, 'Public Health, Health Services Research, Social Medicine')
 
 
 class DaraIHI(BaseDara):
