@@ -2,8 +2,8 @@
 
 ## Cronjob for B2FIND ingestion
 
-syntax="Syntax: cron_test.sh community [fromdays targethost]"
-MGR="${HOME}/miniconda3/envs/python3.6/bin/manager"
+syntax="Syntax: cron_test.sh community [fromdays targethost authkey]"
+B2F="${HOME}/miniconda3/envs/b2f/bin/b2f"
 
 
 # check arguments
@@ -30,34 +30,37 @@ else
     else
 	NDAYSAGO="${daysago} day ago"
 	fromdateval=`date --date="${NDAYSAGO}" +%Y-%m-%d`
-	fromdateset="--fromdate ${fromdateval}"
+	fromdateset="${fromdateval}"
     fi
 fi
 if [[ -z $3 ]];
 then
-    targethost='eudatmd1.dkrz.de:8080'
+    targethost='eudatmd2.dkrz.de:8080'
 else
     targethost=$3
 fi
 
-# handle generation only for productive host (currently eudatmd1* )
-handlecheck=''
-if [[ $targethost == eudatmd1* ]]; 
-then
-    handlecheck='--handle_check=credentials_11098'
-fi
+authkey=$4
+
+# handle generation only for productive host (currently eudatmd2* )
+# handlecheck=''
+# if [[ $targethost == eudatmd1* ]]; 
+# then
+    # handlecheck='--handle_check=credentials_11098'
+# fi
 
 # set work directory
-if [[ $(hostname) == centos* ]]; 
-then
-    WORK="${HOME}/Projects/EUDAT/EUDAT-B2FIND/md-ingestion"
-else
-    WORK="${HOME}/md-ingestion"
-fi
-    
+# if [[ $(hostname) == centos* ]]; 
+# then
+    #WORK="${HOME}/Projects/EUDAT/EUDAT-B2FIND/md-ingestion"
+# else
+    #WORK="${HOME}/md-ingestion"
+#fi
+  
+WORK="${HOME}/md-ingestion"    
 TODAY=`date +\%F`
 cd $WORK
 set -x
-$MGR -c $community -i $targethost $handlecheck $fromdateset >log/ingest_${community}_${TODAY}.out 2> >(tee -a log/ingest_${community}_${TODAY}.err >&2)
+$B2F combine -c $community -i $targethost --auth $authkey --fromdate $fromdateset --clean >log/ingest_${community}_${TODAY}.out 2> >(tee -a log/ingest_${community}_${TODAY}.err >&2)
 
 exit 0
