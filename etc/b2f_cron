@@ -1,6 +1,8 @@
 # Run the b2f harvest jobs
 # copy to /etc/cron.d/b2f
 SHELL=/bin/bash
-PATH=/sbin:/bin:/usr/sbin:/usr/bin
-MAILTO=b2f
-01 01 * * * b2f /home/b2f/bin/b2f --silent combine -c all --fromdays 1 -i host --auth key
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/home/eudat_data/miniconda3/envs/b2f/bin
+MAILTO=martens@dkrz.de,fluegel@dkrz.de
+AUTHKEY=replaceme
+HOST=notforyou
+50 12 * * * eudat_data b2f --silent combine -c darus --clean --fromdays 1 -i $HOST --auth $AUTHKEY
