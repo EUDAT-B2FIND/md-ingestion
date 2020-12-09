@@ -1,5 +1,6 @@
 import click
 import pathlib
+from datetime import datetime, timedelta
 
 from .command import List, Harvest, Map, Upload
 from .exceptions import UserInfo
@@ -126,13 +127,14 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, insecu
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--fromdate', type=click.DateTime(formats=["%Y-%m-%d"]),
-              help='Filter by date.')
+              help='Harvest records not older than given date.')
+@click.option('--fromdays', type=int, help='Harvest records not older than given days ago.')
 @click.option('--clean', is_flag=True, help='Clean output folder before harvesting')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--no-update', is_flag=True, help='do not update existing record')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def combine(ctx, community, iphost, auth, fromdate, clean, limit, no_update, insecure):
+def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_update, insecure):
     try:
         # harvest
         cmd = Harvest(
@@ -140,6 +142,8 @@ def combine(ctx, community, iphost, auth, fromdate, clean, limit, no_update, ins
             outdir=ctx.obj['outdir'],
             verify=not insecure,
         )
+        if fromdays:
+            fromdate = datetime.now() - timedelta(days=fromdays)
         if fromdate:
             fromdate = str(fromdate.date())
         cmd.harvest(fromdate=fromdate, clean=clean, limit=limit,
