@@ -47,7 +47,7 @@ class Upload(Command):
 
     def upload_to_ckan(self, iphost, auth, from_=None, limit=None, no_update=False, verify=True,
                        silent=False):
-        self.walker = Walker(self.outdir)
+        self.walker = Walker(self.datadir)
         limit = limit or -1
         count = 0
         for filename in tqdm(self.walk(), ascii=True, desc=f"Uploading {self._community.identifier}",

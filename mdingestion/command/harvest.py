@@ -37,7 +37,7 @@ class Harvest(Command):
             fromdate=fromdate,
             clean=clean,
             limit=limit,
-            outdir=self.outdir,
+            outdir=self.datadir,
             verify=self.verify)
         if dry_run:
             raise UserInfo(f'Found records={_harvester.total(limited=False)}')
