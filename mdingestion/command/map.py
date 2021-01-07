@@ -50,6 +50,7 @@ class Map(Command):
         validator = Validator(linkcheck=linkcheck)
         validator.summary['_invalid_files_'] = []
         count = 0
+        success = True
         for filename in tqdm(self.walk(), ascii=True, desc=f"Map {self._community.identifier} to {format}",
                              unit=' records', total=limit, disable=silent):
             if limit > 0 and count >= limit:
@@ -62,11 +63,14 @@ class Map(Command):
                 validator.summary['written'] += 1
             else:
                 logging.warning(f"validation failed: {filename}")
+                success = False
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
         validator.summary['_errors_'] = self._community.errors
         validator.write_summary(prefix=self._community.identifier, outdir=self.summary_dir, show=show)
         self.summary[self._community.identifier] = validator.concise_summary()
+        if not success:
+            raise Exception(f"some files are not valid. community={self._community.identifier}")
 
     def walk(self):
         path = os.path.join(self._community.identifier, 'raw')

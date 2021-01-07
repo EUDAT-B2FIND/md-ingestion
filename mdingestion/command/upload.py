@@ -2,7 +2,8 @@ import os
 from tqdm import tqdm
 import json
 from urllib import parse
-from ckanapi import RemoteCKAN, NotFound
+from ckanapi import RemoteCKAN, NotFound, NotAuthorized
+from requests.exceptions import ConnectionError
 
 from .base import Command
 from ..walker import Walker
@@ -50,6 +51,7 @@ class Upload(Command):
         self.walker = Walker(self.datadir)
         limit = limit or -1
         count = 0
+        success = True
         for filename in tqdm(self.walk(), ascii=True, desc=f"Uploading {self._community.identifier}",
                              unit=' records', total=limit, disable=silent):
             if from_ and count < from_:
@@ -63,9 +65,18 @@ class Upload(Command):
                 data = json.load(fp)
                 try:
                     upload(data=data, host=iphost, apikey=auth, no_update=no_update, verify=verify)
-                except Exception as e:
-                    logging.error(f'upload failed: {filename}. error: {e}')
+                except ConnectionError:
+                    logging.exception('upload connection error.')
+                    raise
+                except NotAuthorized:
+                    logging.exception('upload not authorized.')
+                    raise
+                except Exception:
+                    logging.exception(f'upload failed: {filename}.')
+                    success = False
             count += 1
+        if not success:
+            raise Excepton(f'upload of some files failed. community={self._community.identifier}')
 
     def walk(self):
         path = os.path.join(self._community.identifier, 'ckan')
