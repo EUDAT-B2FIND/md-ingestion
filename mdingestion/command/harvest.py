@@ -23,7 +23,9 @@ class Harvest(Command):
                 self._harvest(identifier, fromdate=fromdate, clean=clean, limit=limit,
                               dry_run=dry_run, silent=silent)
             except Exception:
-                logging.exception(f"Harvesting off {identifier} failed.")
+                msg = f"Harvesting of {identifier} failed."
+                logging.exception(msg)
+                raise Exception(msg)
 
     def _harvest(self, identifier, fromdate=None, clean=False, limit=None, dry_run=False, silent=False):
         _community = community(identifier)
@@ -37,7 +39,7 @@ class Harvest(Command):
             fromdate=fromdate,
             clean=clean,
             limit=limit,
-            outdir=self.outdir,
+            outdir=self.datadir,
             verify=self.verify)
         if dry_run:
             raise UserInfo(f'Found records={_harvester.total(limited=False)}')

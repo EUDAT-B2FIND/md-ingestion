@@ -18,7 +18,7 @@ class OAIHarvester(Harvester):
         super().__init__(community, url, fromdate, clean, limit, outdir, verify)
         logging.captureWarnings(True)
         self.mdprefix = oai_metadata_prefix
-        self.mdsubset = oai_set
+        self.oai_set = oai_set
         self.sickle = Sickle(self.url, max_retries=3, timeout=120, verify=self.verify)
 
     def identifier(self, record):
@@ -38,28 +38,6 @@ class OAIHarvester(Harvester):
             logging.warning('Could not get complete list size from OAI.')
             matches = super().matches()
         return matches
-
-    @property
-    def oai_set(self):
-        """
-        TODO: refactor this code ... how to handle oai sets
-        """
-        if self.mdsubset not in self.oai_sets():
-            oai_set = None
-            logging.warning(f"OAI does not support set {self.mdsubset}.")
-        else:
-            oai_set = self.mdsubset
-        return oai_set
-
-    def oai_sets(self):
-        oai_sets = []
-        try:
-            oai_sets = [s.setSpec for s in self.sickle.ListSets()]
-        except NoSetHierarchy:
-            logging.warning("OAI does not support sets.")
-        except Exception:
-            logging.warning("OAI does not support ListSets request.")
-        return oai_sets
 
     def check_metadata_format(self):
         md_formats = None
@@ -85,7 +63,7 @@ class OAIHarvester(Harvester):
             for record in records:
                 yield record
         except NoRecordsMatch:
-            raise HarvesterError(f'No records match the OAI query. from={self.fromdate}, set={self.mdsubset}')
+            logging.warning(f'No records match the OAI query. from={self.fromdate}, set={self.mdsubset}')
         except CannotDisseminateFormat:
             raise HarvesterError(f'The metadata format {self.mdprefix} is not supported by the OAI repository.')
 

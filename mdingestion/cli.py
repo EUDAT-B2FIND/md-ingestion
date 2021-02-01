@@ -18,8 +18,8 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'], obj=CONTEXT_OBJ)
 @click.option('--debug', is_flag=True)
 @click.option('--silent', is_flag=True, help='silent mode')
 @click.option('--dry-run', is_flag=True, help='use dry run mode')
-@click.option('--outdir', '-o', default='oaidata',
-              help='The absolute root dir in which all harvested files will be saved.')
+@click.option('--outdir', '-o', default='.',
+              help='The root dir for all outputs.')
 @click.pass_context
 def cli(ctx, debug, silent, dry_run, outdir):
     # ensure that ctx.obj exists and is a dict (in case `cli()` is called
@@ -32,12 +32,14 @@ def cli(ctx, debug, silent, dry_run, outdir):
     out = pathlib.Path(outdir)
     if not out.is_absolute():
         out = pathlib.Path.cwd().joinpath(out)
+    out.mkdir(parents=True, exist_ok=True)
     ctx.obj['outdir'] = out.absolute().as_posix()
-
+    # logging
+    logfile = out.joinpath('b2f.log').as_posix()
     if debug:
-        logging.basicConfig(filename='out.log', level=logging.DEBUG)
+        logging.basicConfig(filename=logfile, level=logging.DEBUG)
     else:
-        logging.basicConfig(filename='out.log', level=logging.ERROR)
+        logging.basicConfig(filename=logfile, level=logging.ERROR)
 
 
 @cli.command()
@@ -86,15 +88,13 @@ def harvest(ctx, community, url, fromdate, clean, limit, insecure):
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
 @click.option('--no-linkcheck', is_flag=True, help='do not check if URLs resolve in validation')
-@click.option('--summary', default='summary',
-              help='The absolute root dir in which all summary files will be saved.')
 @click.pass_context
-def map(ctx, community, format, limit, force, no_linkcheck, summary):
+def map(ctx, community, format, limit, force, no_linkcheck):
     try:
         map = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit, summary_dir=summary,
+        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit,
                 silent=ctx.obj['silent'])
     except Exception as e:
         logging.critical(f"map: {e}", exc_info=True)
@@ -152,7 +152,7 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_u
         cmd = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        cmd.run(format='ckan', force=False, linkcheck=True, limit=limit, summary_dir='summary',
+        cmd.run(format='ckan', force=False, linkcheck=True, limit=limit,
                 silent=ctx.obj['silent'])
         # upload
         upload = Upload(outdir=ctx.obj['outdir'], community=community)
