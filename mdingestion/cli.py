@@ -131,10 +131,11 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, insecu
 @click.option('--fromdays', type=int, help='Harvest records not older than given days ago.')
 @click.option('--clean', is_flag=True, help='Clean output folder before harvesting')
 @click.option('--limit', type=int, help='Limit')
+@click.option('--no-linkcheck', is_flag=True, help='do not check if URLs resolve in validation')
 @click.option('--no-update', is_flag=True, help='do not update existing record')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_update, insecure):
+def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_linkcheck, no_update, insecure):
     try:
         # harvest
         cmd = Harvest(
@@ -152,7 +153,7 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_u
         cmd = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        cmd.run(format='ckan', force=False, linkcheck=True, limit=limit,
+        cmd.run(format='ckan', force=False, linkcheck=not no_linkcheck, limit=limit,
                 silent=ctx.obj['silent'])
         # upload
         upload = Upload(outdir=ctx.obj['outdir'], community=community)
