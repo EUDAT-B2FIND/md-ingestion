@@ -63,7 +63,7 @@ class OAIHarvester(Harvester):
             for record in records:
                 yield record
         except NoRecordsMatch:
-            logging.warning(f'No records match the OAI query. from={self.fromdate}, set={self.mdsubset}')
+            logging.warning(f'No records match the OAI query. from={self.fromdate}')
         except CannotDisseminateFormat:
             raise HarvesterError(f'The metadata format {self.mdprefix} is not supported by the OAI repository.')
 
