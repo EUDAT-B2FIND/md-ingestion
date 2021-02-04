@@ -76,7 +76,7 @@ class Upload(Command):
                     success = False
             count += 1
         if not success:
-            raise Excepton(f'upload of some files failed. community={self._community.identifier}')
+            raise Exception(f'upload of some files failed. community={self._community.identifier}')
 
     def walk(self):
         path = os.path.join(self._community.identifier, 'ckan')
