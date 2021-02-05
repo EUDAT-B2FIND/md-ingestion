@@ -48,7 +48,7 @@ class DataCiteReader(XMLReader):
     def rights(self):
         rights = self.find('rights')
         for right in self.parser.doc.find_all('rights'):
-            URI =  right.get('rightsURI')
+            URI = right.get('rightsURI')
             if URI:
                 rights.append(URI)
         return rights
