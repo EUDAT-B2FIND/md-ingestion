@@ -45,6 +45,7 @@ class B2ShareFZJ(BaseEudat):
         if not doc.publisher:
             doc.publisher = 'B2SHARE FZJ'
 
+
 class SecureB2Share(BaseEudat):
     IDENTIFIER = 'secure_b2share'
     URL = 'https://secure-b2share-test.uio.no/api/oai2d'
