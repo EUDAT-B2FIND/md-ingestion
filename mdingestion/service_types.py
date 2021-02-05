@@ -15,3 +15,4 @@ class ServiceType(Enum):
     OAI = 0
     CSW = 1
     HERBADROP = 100
+    ArcGIS = 200
