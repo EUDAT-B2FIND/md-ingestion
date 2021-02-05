@@ -22,7 +22,7 @@ class DataCiteReader(XMLReader):
         doc.contributor = self.find('contributorName')
         doc.funding_reference = self.funding_reference()
         doc.publication_year = self.publication_year()
-        doc.rights = self.find('rights')
+        doc.rights = self.rights()
         doc.contact = self.contact()
         doc.language = self.find('language')
         doc.resource_type = self.find('resourceType')
@@ -44,6 +44,14 @@ class DataCiteReader(XMLReader):
         if not year:
             year = self.find('header.datestamp')
         return year
+
+    def rights(self):
+        rights = self.find('rights')
+        for right in self.parser.doc.find_all('rights'):
+            URI =  right.get('rightsURI')
+            if URI:
+                rights.append(URI)
+        return rights
 
     def creator(self):
         creators = []
