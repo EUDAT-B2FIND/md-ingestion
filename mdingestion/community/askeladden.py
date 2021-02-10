@@ -1,3 +1,6 @@
+from shapely.geometry import shape
+import json
+
 from .base import Community
 from ..service_types import SchemaType, ServiceType
 
@@ -23,3 +26,8 @@ class Askeladden(Community):
             self.find('properties.kulturminneLokalitetArt')[0]]
         doc.places = self.find('properties.kommune')
         doc.version = self.find('properties.versjonId')
+        doc.geometry = self.geometry()
+
+    def geometry(self):
+        geom = shape(self.reader.parser.doc['geometry'])
+        return geom
