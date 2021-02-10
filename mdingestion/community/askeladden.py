@@ -13,6 +13,7 @@ class Askeladden(Community):
 
     def update(self, doc):
         doc.title = self.find('properties.navn')
+        doc.discipline = ['Archaeology']
         doc.description = self.find('properties.informasjon')
         doc.source = self.find('properties.linkKulturminnesok')
         doc.publisher = ['Askeladden']
@@ -20,3 +21,4 @@ class Askeladden(Community):
         doc.keywords = [self.find('properties.kulturminneKategori')[0], self.find('properties.kulturminneLokalitetArt')[0]]
         doc.places = self.find('properties.kommune')
         doc.version = self.find('properties.versjonId')
+
