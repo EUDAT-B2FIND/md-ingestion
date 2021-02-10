@@ -18,7 +18,8 @@ class Askeladden(Community):
         doc.source = self.find('properties.linkKulturminnesok')
         doc.publisher = ['Askeladden']
         doc.publication_year = self.find('properties.forsteDigitaliseringsdato')
-        doc.keywords = [self.find('properties.kulturminneKategori')[0], self.find('properties.kulturminneLokalitetArt')[0]]
+        doc.keywords = [
+            self.find('properties.kulturminneKategori')[0],
+            self.find('properties.kulturminneLokalitetArt')[0]]
         doc.places = self.find('properties.kommune')
         doc.version = self.find('properties.versjonId')
-
