@@ -43,7 +43,7 @@ import logging
 
 
 class ArcGISHarvester(Harvester):
-    def __init__(self, community, url, fromdate, clean, limit, outdir, verify):
+    def __init__(self, community, url, filter, fromdate, clean, limit, outdir, verify):
         super().__init__(
             community=community,
             url=url,
@@ -54,6 +54,7 @@ class ArcGISHarvester(Harvester):
             verify=verify)
         self.ext = 'json'
         self._query = None
+        self.filter = filter
         self.headers = {'content-type': 'application/json'}
         logging.captureWarnings(True)
 
@@ -61,7 +62,7 @@ class ArcGISHarvester(Harvester):
     def query(self):
         if not self._query:
             self._query = {
-                "where": "kulturminneKategori='Arkeologisk minne'",
+                "where": f"{self.filter}",
                 "outFields": "*",
                 "returnGeometry": True,
                 "f": "geojson",

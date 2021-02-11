@@ -13,6 +13,7 @@ class Askeladden(Community):
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS
+    FILTER = "kulturminneKategori='Arkeologisk minne'"
 
     def update(self, doc):
         doc.title = self.find('properties.navn')
