@@ -61,16 +61,16 @@ class ArcGISHarvester(Harvester):
     def query(self):
         if not self._query:
             self._query = {
-                'where': 'lokalid>=0',
-                'outFields': '*',
-                'returnGeometry': True,
-                'f': 'geojson',
+                "where": "kulturminneKategori='Arkeologisk minne'",
+                "outFields": "*",
+                "returnGeometry": True,
+                "f": "geojson",
                 # 'returnIdsOnly': False,
             }
         return self._query
 
     def identifier(self, record):
-        return f"{record['id']}"
+        return f"arcgis-{self.community}-{record['id']}"
 
     def matches(self):
         query = {
