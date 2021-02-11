@@ -90,10 +90,11 @@ class ArcGISHarvester(Harvester):
         ok = True
         while ok:
             response = requests.get(self.url, params=query, headers=self.headers, verify=self.verify)
-            records = response.json().get('features', [])
-            for record in records:
-                yield record
-            if len(records) == 0:
+            fc = response.json()
+            features = fc.get('features', [])
+            for feature in features:
+                yield feature
+            if len(features) == 0:
                 ok = False
             query['resultOffset'] += query['resultRecordCount']
 
