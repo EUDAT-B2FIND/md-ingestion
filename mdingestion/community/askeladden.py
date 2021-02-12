@@ -25,6 +25,7 @@ class Askeladden(Community):
         doc.keywords = [
             self.find('properties.kulturminneKategori')[0],
             self.find('properties.kulturminneLokalitetArt')[0]]
+        doc.language = ['Norwegian']
         doc.places = self.find('properties.kommune')
         doc.version = self.find('properties.versjonId')
         doc.geometry = self.geometry()
