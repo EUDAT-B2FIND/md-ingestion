@@ -31,4 +31,4 @@ class Askeladden(Community):
 
     def geometry(self):
         geom = shape(self.reader.parser.doc['geometry'])
-        return geom
+        return geom.centroid
