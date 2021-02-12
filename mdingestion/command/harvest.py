@@ -36,6 +36,7 @@ class Harvest(Command):
             schema=_community.schema,
             oai_metadata_prefix=_community.oai_metadata_prefix,
             oai_set=_community.oai_set,
+            filter=_community.filter,
             fromdate=fromdate,
             clean=clean,
             limit=limit,

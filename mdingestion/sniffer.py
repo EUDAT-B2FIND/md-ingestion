@@ -4,6 +4,8 @@ from .service_types import ServiceType
 def sniffer(service_type=None):
     if service_type == ServiceType.CSW:
         sniffer = CSWSniffer
+    elif service_type == ServiceType.ArcGIS:
+        sniffer = ArcGISSniffer
     else:
         sniffer = OAISniffer
     return sniffer
@@ -40,6 +42,19 @@ class CSWSniffer(CatalogSniffer):
         if doc.file_identifier:
             # TODO: add schema for iso19139
             mdaccess = f"{doc.url}?service=CSW&version=2.0.2&request=GetRecordById&Id={doc.file_identifier}"
+        else:
+            mdaccess = None
+        return mdaccess
+
+
+class ArcGISSniffer(CatalogSniffer):
+    def update(self, doc):
+        doc.metadata_access = self.metadata_access(doc)
+
+    def metadata_access(self, doc):
+        identifier = self.parser.find('properties.OBJECTID')[0]
+        if identifier:
+            mdaccess = f"{doc.url}?objectIds={identifier}&outFields=*&returnGeometry=true&f=geojson"
         else:
             mdaccess = None
         return mdaccess
