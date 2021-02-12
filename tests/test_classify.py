@@ -56,7 +56,7 @@ def test_map_discipline():
     assert classifier.map_discipline(['Humanities', 'Engineering']) == \
         ('Humanities;Engineering', ['1', 'Humanities', 'Humanities'])
     assert classifier.map_discipline('Earth and Environmental Sciences') == \
-        ('Various', [])
+        ('Earth and Environmental Science', ['4.4.7.2', 'Environmental Research', 'Earth and Environmental Science'])
 
 
 def test_map_discipline_darus():
@@ -68,13 +68,13 @@ def test_map_discipline_darus():
         'Carrara marble',
         'micro X ray computed tomography',
         'cracks', 'fractures', 'rock mechanics']) == \
-        ('Engineering;Mechanicsy;Computer Information Science',
-         ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
+        ('Engineering;Earth and Environmental Science;Mechanicsy;Computer Information Science',
+            ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
     assert classifier.map_discipline([
         'Agricultural Sciences',
         'Computer and Information Science',
         'Earth and Environmental Sciences']) == \
-        ('Agricultural Sciences;Computer Information Science',
+        ('Agricultural Sciences;Earth and Environmental Science;Computer Information Science',
          ['3.3.1.10', 'Agriculture, Forestry, Horticulture', 'Agricultural Sciences'])
     assert classifier.map_discipline(
         ['Arts and Humanities',
