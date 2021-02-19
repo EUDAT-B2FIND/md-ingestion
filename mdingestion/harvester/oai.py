@@ -46,7 +46,7 @@ class OAIHarvester(Harvester):
         except Exception:
             logging.warning("OAI does not support ListMetadataFormats request.")
         if md_formats and self.mdprefix not in md_formats:
-            raise HarvesterError(
+            logging.error(
                 f'The metadata format {self.mdprefix} is not supported by the OAI repository. Formats={md_formats}')
 
     def get_records(self):
