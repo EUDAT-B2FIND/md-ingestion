@@ -19,7 +19,7 @@ class DataverseNODatacite(Community):
             urls.append(f'http://hdl.handle.net/{handle}')
             doc.pid = urls
         if not doc.publisher:
-            doc.publisher = 'INRAe'
+            doc.publisher = 'INRAE'
 
     # def keywords(self, doc):
         # keywords = doc.keywords
