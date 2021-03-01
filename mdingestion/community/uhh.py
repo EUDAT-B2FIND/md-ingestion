@@ -19,11 +19,11 @@ class UhhUhh(BaseUhh):
     OAI_SET = 'user-uhh'  # Universität Hamburg
 
     def update(self, doc):
-        doc.discipline = self.discipline(doc, 'Social Sciences')
+        doc.discipline = self.discipline(doc, 'Various')
 
 class UhhUke(BaseUhh):
     IDENTIFIER = 'uhh_uke'
-    OAI_SET = 'user_uke'  # Universitätsklinikum Hamburg
+    OAI_SET = 'user-uke'  # Universitätsklinikum Hamburg
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Medicine')
@@ -33,14 +33,14 @@ class UhhSignlang(BaseUhh):
     OAI_SET = 'user-sign-lang'  # This collection contains all kinds of language resources for sign languages
 
     def update(self, doc):
-        doc.discipline = self.discipline(doc, 'tbd')
+        doc.discipline = self.discipline(doc, 'Linguistics')
 
 class UhhCsmc(BaseUhh):
     IDENTIFIER = 'uhh_csmc'
     OAI_SET = 'user-csmc'  # Community for the Centre for the Studies of Manuscript Cultures
 
     def update(self, doc):
-        doc.discipline = self.discipline(doc, 'Social Sciences')
+        doc.discipline = self.discipline(doc, 'Humanities')
 
 class UhhHzsk(BaseUhh):
     IDENTIFIER = 'uhh_hzsk'
@@ -54,7 +54,7 @@ class UhhNcac(BaseUhh):
     OAI_SET = 'user-ncac'  # National Digital Archive of The Gambia
 
     def update(self, doc):
-        doc.discipline = self.discipline(doc, 'tbd')
+        doc.discipline = self.discipline(doc, 'Humanities')
 
 class UhhFakew(BaseUhh):
     IDENTIFIER = 'uhh_fakew'
