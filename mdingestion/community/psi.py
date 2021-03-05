@@ -12,4 +12,4 @@ class PsiDatacite(Community):
     OAI_SET = 'ETHZ.PSI'
 
     def update(self, doc):
-        doc.discipline = self.discipline(doc, 'Basic Biological and Medical Research')
+        doc.discipline = self.discipline(doc, ['Life Sciences','Biology','Basic Biological and Medical Research'])

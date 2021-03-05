@@ -10,7 +10,7 @@ def test_radar_1():
     reader = Radar()
     doc = reader.read(xmlfile)
     assert 'Raw data for' in doc.title[0]
-    assert 'Biochemistry' in doc.discipline
+    assert 'Biochemistry' in doc.discipline[0]
     assert 'Deutsche Forschungsgemeinschaft' in doc.funding_reference
     # assert 'CC BY 4.0 Attribution' in doc.rights
     # assert 'https://doi.org/10.22000/81' in doc.doi
@@ -21,7 +21,7 @@ def test_radar_2():
     reader = Radar()
     doc = reader.read(xmlfile)
     assert 'Supplementary data for' in doc.title[0]
-    assert 'Chemistry;Life Sciences' == doc.discipline
+    assert 'Chemistry;Life Sciences' == doc.discipline[0]
     assert ['Comisión Nacional de Investigación Científica y Tecnológica',
             'Bộ Giáo dục và Ðào tạo'] == doc.funding_reference
 

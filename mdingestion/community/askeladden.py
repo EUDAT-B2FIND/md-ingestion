@@ -35,7 +35,7 @@ class Askeladden(Community):
         title = self.find('properties.navn')
         if not title:
             title = 'Untitled'
-        elif len(title[0]) <4:
+        elif len(title[0]) < 4:
             title = 'Untitled'
 
         return title

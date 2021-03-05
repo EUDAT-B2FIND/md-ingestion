@@ -14,7 +14,7 @@ def test_dara_rki():
     assert 'Neuerungen in den aktuellen Empfehlungen' in doc.title[0]
     # assert 'Data on Austrian open access' in doc.description[0]
     assert ['Robert Koch-Institut'] == doc.creator
-    assert 'Public Health' in doc.discipline
+    assert 'Public Health' in doc.discipline[0]
     assert doc.open_access is True
     assert 'metadataPrefix=oai_dc&identifier=oai:oai.da-ra.de:461204' in doc.metadata_access
     assert doc.publication_year == '2015'

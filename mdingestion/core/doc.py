@@ -243,11 +243,11 @@ class BaseDoc(object):
 
     @property
     def discipline(self):
-        return self._discipline or 'Various'
+        return self._discipline or 'Other'
 
     @discipline.setter
     def discipline(self, value):
-        self._discipline = format_value(value, one=True)
+        self._discipline = format_value(value)
 
 
 class GeoDoc(BaseDoc):

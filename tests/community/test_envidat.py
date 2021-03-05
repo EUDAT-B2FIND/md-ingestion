@@ -13,7 +13,7 @@ def test_iso19139():
     assert '' == doc.pid
     assert 'https://www.envidat.ch/dataset/envidat-lwf-38' == doc.source
     assert 'https://www.wsl.ch/en/forest/forest-development-and-monitoring/long-term-forest-ecosystem-research-lwf.html' in doc.related_identifier  # noqa
-    assert 'Environmental Research' == doc.discipline
+    assert 'Environmental Research' == doc.discipline[0]
     assert 'Symptoms of O3 injuries LWF' in doc.title
     assert 'Measuring air pollutants in forests' in doc.description[0]
     assert 'AMBIENT AIR QUALITY' in doc.keywords
