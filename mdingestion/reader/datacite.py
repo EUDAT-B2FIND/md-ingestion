@@ -25,7 +25,7 @@ class DataCiteReader(XMLReader):
         doc.rights = self.rights()
         doc.contact = self.contact()
         doc.language = self.find('language')
-        doc.resource_type = self.find('resourceType')
+        doc.resource_type = self.resource_type()
         doc.format = self.find('format')
         doc.size = self.find('size')
         doc.version = self.find('metadata.version')
@@ -74,6 +74,14 @@ class DataCiteReader(XMLReader):
                     name = f"{name} ({affiliation})"
             contacts.append(name)
         return contacts
+
+    def resource_type(self):
+        resource_types = self.find('resourceType')
+        for resource_type in self.parser.doc.find_all('resourceType'):
+            attribute = resource_type.get('resourceTypeGeneral')
+            if attribute:
+                resource_types.append(attribute)
+        return resource_types
 
     def funding_reference(self):
         funding_reference = self.find('fundingReferences.funderName')
