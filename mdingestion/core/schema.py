@@ -220,7 +220,7 @@ class B2FSchema(colander.MappingSchema):
     discipline = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),
         colander.SchemaNode(colander.String(), validator=colander.Length(min=1)),
-        ##colander.String(),
+        ## colander.String(),
         name='discipline',
         title='Discipline',
         description='The research discipline(s) the resource can be categorized in.',
