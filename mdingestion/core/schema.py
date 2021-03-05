@@ -218,10 +218,13 @@ class B2FSchema(colander.MappingSchema):
         ## occ = 0-1
     )
     discipline = colander.SchemaNode(
-        colander.String(),
+        colander.Sequence(accept_scalar=True),
+        colander.SchemaNode(colander.String(), validator=colander.Length(min=1)),
+        ##colander.String(),
         name='discipline',
         title='Discipline',
         description='The research discipline(s) the resource can be categorized in.',
+        validator=colander.Length(min=1),
         ## occ = 1 -> aber eigentlich soll es sein: occ = 1-n
         ## TODO: wir übergeben derzeit einen semikolon getrennt string an CKAN, der aber die values als Liste interpretiert; eigentlich sollten wir auch im schema eine Liste haben, die wir an CKAN übergeben!
     )
