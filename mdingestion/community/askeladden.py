@@ -16,19 +16,42 @@ class Askeladden(Community):
     FILTER = "kulturminneKategori='Arkeologisk minne'"
 
     def update(self, doc):
-        doc.title = self.find('properties.navn')
         doc.discipline = ['Archaeology']
         doc.description = self.find('properties.informasjon')
         doc.source = self.find('properties.linkKulturminnesok')
+        doc.relatedIdentifier = self.find('linkAskeladden')
         doc.publisher = ['Askeladden']
         doc.publication_year = self.find('properties.forsteDigitaliseringsdato')
-        doc.keywords = [
-            self.find('properties.kulturminneKategori')[0],
-            self.find('properties.kulturminneLokalitetArt')[0]]
         doc.language = ['Norwegian']
+        doc.creator = self.find('properties.opphav')
+        doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
         doc.places = self.find('properties.kommune')
         doc.version = self.find('properties.versjonId')
+        doc.title = self.title()
+        doc.keywords = self.keywords()
         doc.geometry = self.geometry()
+
+    def title(self):
+        title = self.find('properties.navn')
+        if not title:
+            title = 'Untitled'
+        elif len(title[0]) <4:
+            title = 'Untitled'
+
+        return title
+
+    def keywords(self):
+        keywords = []
+        keyword = self.find('properties.kulturminneOpprinneligfunksjon')
+        if keyword:
+            keywords.append(keyword[0])
+        keyword = self.find('properties.kulturminneKategori')
+        if keyword:
+            keywords.append(keyword[0])
+        keyword = self.find('properties.kulturminneLokalitetArt')
+        if keyword:
+            keywords.append(keyword[0])
+        return keywords
 
     def geometry(self):
         geom = shape(self.reader.parser.doc['geometry'])
