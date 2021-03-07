@@ -33,8 +33,8 @@ class List(Command):
                 'URL': com.URL},
                 ignore_index=True)
         # df.set_index('Group', inplace=True)
-        df = df.sort_values(by='Community')
+        df = df.sort_values(by=['Community', 'Group'])
         df_sorted = pd.DataFrame(
             data=df.values,
-            columns=['Community', 'Group', 'Schema', 'Service', 'URL'])
+            columns=df.columns)
         return df_sorted
