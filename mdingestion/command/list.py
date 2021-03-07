@@ -6,10 +6,12 @@ from ..community import community, communities
 
 class List(Command):
 
-    def run(self, name=None, groups=False, all=False, summary=False):
+    def run(self, name=None, groups=False, all=False, summary=False, out=None):
         name = name or 'all'
         df = self.build_dataframe(name)
-        if all:
+        if out:
+            df.to_csv(out)
+        elif all:
             print(df)
         elif groups:
             print(df.Group.unique())
@@ -30,4 +32,9 @@ class List(Command):
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL},
                 ignore_index=True)
-        return df
+        # df.set_index('Group', inplace=True)
+        df = df.sort_values(by='Community')
+        df_sorted = pd.DataFrame(
+            data=df.values,
+            columns=['Community', 'Group', 'Schema', 'Service', 'URL'])
+        return df_sorted

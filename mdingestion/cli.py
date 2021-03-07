@@ -47,11 +47,12 @@ def cli(ctx, debug, silent, dry_run, outdir):
 @click.option('--groups', '-g', is_flag=True, help='Show Groups')
 @click.option('--all', '-a', is_flag=True, help='Detailed Infos')
 @click.option('--summary', '-s', is_flag=True, help='Summary')
+@click.option('--out', '-o', help='Output as CSV file')
 @click.pass_context
-def list(ctx, community, groups, all, summary):
+def list(ctx, community, groups, all, summary, out):
     try:
         list = List()
-        list.run(name=community, groups=groups, all=all, summary=summary)
+        list.run(name=community, groups=groups, all=all, summary=summary, out=out)
     except Exception as e:
         logging.critical(f"list: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
