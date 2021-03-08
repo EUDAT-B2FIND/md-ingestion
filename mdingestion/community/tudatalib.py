@@ -12,4 +12,4 @@ class DarusDatacite(Community):
     OAI_SET = None
 
     def update(self, doc):
-        doc.contact = 'tudata@tu-darmstadt.de'
+        doc.contact = 'https://tudatalib.ulb.tu-darmstadt.de/page/contact'
