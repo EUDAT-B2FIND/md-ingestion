@@ -26,7 +26,7 @@ def test_dc_slks_point():
     assert 'Slots- og Kulturstyrelsen (www.slks.dk)' in doc.contact[0]
     assert 'Danish' in doc.language
     assert 'Dataset' in doc.resource_type
-    assert 'Various' in doc.discipline
+    assert 'Other' in doc.discipline
     # assert '???' in doc.format
     assert doc.spatial_coverage == '(9.811 LON, 56.303 LAT); Thorsø'
     # assert "{'type': 'Polygon', 'coordinates': (((9.811246, 56.302585), (9.811246, 56.302585), (9.811246, 56.302585), (9.811246, 56.302585)),)}" == doc.spatial  # noqa

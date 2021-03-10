@@ -52,7 +52,7 @@ def test_map_discipline():
     assert classifier.map_discipline(['Engineering', 'Scientific satellites', 'Aerospace telemetry']) == \
         ('Engineering', ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
     assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == \
-        ('Various', [])
+        ('Other', [])
     assert classifier.map_discipline(['Humanities', 'Engineering']) == \
         ('Humanities;Engineering', ['1', 'Humanities', 'Humanities'])
     assert classifier.map_discipline('Earth and Environmental Sciences') == \
@@ -90,4 +90,4 @@ def test_map_discipline_darus():
     assert classifier.map_discipline(['Social Sciences']) == \
         ('Social Sciences', ['2.3.5', 'Social Sciences', 'Social Sciences'])
     assert classifier.map_discipline('other') == \
-        ('Various', [])
+        ('Other', [])

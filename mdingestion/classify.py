@@ -88,5 +88,5 @@ class Classify(object):
             sorted_matches = sorted(matches, key=lambda match: matches[match], reverse=True)
             result = (';'.join(sorted_matches), self.discipines[sorted_matches[0]])
         else:
-            result = ('Various', [])
+            result = ('Other', [])
         return result
