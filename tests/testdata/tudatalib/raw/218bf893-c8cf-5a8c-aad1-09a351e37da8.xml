@@ -1,0 +1,64 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:tudatalib.ulb.tu-darmstadt.de:tudatalib/2460</identifier>
+    <datestamp>2020-10-29T11:35:19Z</datestamp>
+    <setSpec>com_tudatalib_1511</setSpec>
+    <setSpec>com_tudatalib_1436</setSpec>
+    <setSpec>col_tudatalib_2325</setSpec>
+    <setSpec>openaire_data</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xmlns:solrAuthorityUtil="de.tu_darmstadt.ulb.tudata.content.authority.SolrAuthorityUtil" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ oai_datacite.xsd">
+      <isReferenceQuality>true</isReferenceQuality>
+      <schemaVersion>4.1</schemaVersion>
+      <resource xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+        <identifier identifierType="URL">https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2460</identifier>
+        <creators>
+          <creator>
+            <creatorName>Sauer, Hans Martin</creatorName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-8134-5144</nameIdentifier>
+          </creator>
+        </creators>
+        <titles>
+          <title>FilmcalcX liquid film stability analysis</title>
+        </titles>
+        <publisher>TU Darmstadt</publisher>
+        <publicationYear>2020</publicationYear>
+        <subjects>
+          <subject>Functional printing</subject>
+          <subject>printed electronics</subject>
+          <subject>thin liquid films</subject>
+          <subject>pattern formation</subject>
+          <subject>Marangoni effect</subject>
+          <subject subjectScheme="DDC" schemeURI="https://www.oclc.org/de/dewey.html">620</subject>
+          <subject subjectScheme="DDC" schemeURI="https://www.oclc.org/de/dewey.html">530</subject>
+          <subject subjectScheme="DDC" schemeURI="https://www.oclc.org/de/dewey.html">540</subject>
+          <subject subjectScheme="DFG" schemeURI="https://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher">302-02 Physikalische Chemie von Festk&#246;rpern und Oberfl&#228;chen, Materialcharakterisierung</subject>
+          <subject subjectScheme="DFG" schemeURI="https://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher">310-01 Statistische Physik, Weiche Materie, Biologische Physik, Nichtlineare Dynamik</subject>
+          <subject subjectScheme="DFG" schemeURI="https://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher">405-05 Beschichtungs- und Oberfl&#228;chentechnik</subject>
+        </subjects>
+        <dates>
+          <date dateType="Issued">2020-07-27</date>
+          <date dateType="Submitted">2020-07-27T11:01:09Z</date>
+          <date dateType="Available">2020-07-27T11:01:09Z</date>
+        </dates>
+        <language>en</language>
+        <resourceType resourceTypeGeneral="Software">Software</resourceType>
+        <alternateIdentifiers>
+          <alternateIdentifier alternateIdentifierType="DOI">https://doi.org/10.25534/tudatalib-306</alternateIdentifier>
+        </alternateIdentifiers>
+        <relatedIdentifier relationType="IsSupplementTo" relatedIdentifierType="DOI">10.1002/admt.202000160</relatedIdentifier>
+        <formats>
+          <format>application/zip</format>
+        </formats>
+        <rightsList>
+          <rights rightsURI="info:eu-repo/semantics/openAccess"/>
+          <rights>Open Data Commons Attribution License (ODC-By) v1.0</rights>
+        </rightsList>
+        <descriptions>
+          <description descriptionType="Other">FimCalcX is a MS-Excel-based calculation sheet for stability analysis of thin liquid films of a two-component mixture or solution, one of which is evaporating into the gas atmosphere. Typical applications of FilmCalcX is the evaporation and solidification  process of liquid inks, polymer solutions, organic semiconductor solutions which have been deposited on a substrate by coating or printing.</description>
+        </descriptions>
+      </resource>
+    </oai_datacite>
+  </metadata>
+</record>
