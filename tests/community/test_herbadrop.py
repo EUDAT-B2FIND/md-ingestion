@@ -25,7 +25,7 @@ def test_json_1():
     assert 'StillImage|PRESERVED_SPECIMEN' == doc.resource_type[0]
     assert 'image/jpeg' == doc.format[0]
     assert ['3067 bytes', '5108829 bytes'] == doc.size
-    assert 'Plant Sciences' == doc.discipline
+    assert 'Plant Sciences' == doc.discipline[0]
     # assert 'France|Languedoc-Roussillon||||Eyne' == doc.spatial_coverage
     assert '1968-07-17T00:00:00Z' == doc.temporal_coverage_begin_date
     assert '1968-07-17T00:00:00Z' == doc.temporal_coverage_end_date
@@ -67,7 +67,7 @@ def test_herbadrop_with_pid():
     # assert 'und_UND' == doc.language[0]
     assert 'StillImage|PRESERVED_SPECIMEN' == doc.resource_type[0]
     assert 'image/jpeg' == doc.format[0]
-    assert 'Plant Sciences' == doc.discipline
+    assert 'Plant Sciences' == doc.discipline[0]
     assert 'Scanned files by OCR:HERBARIUM MUSEI PARISIENSIS' in doc.description
     # assert 'France|Languedoc-Roussillon||||Eyne' == doc.spatial_coverage
     # assert '1968-07-17T00:00:00Z' == doc.temporal_coverage_begin_date

@@ -10,6 +10,7 @@ class Community(object):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
+    FILTER = None
 
     def __init__(self):
         self._reader = None
@@ -41,6 +42,10 @@ class Community(object):
     @property
     def oai_set(self):
         return self.OAI_SET
+
+    @property
+    def filter(self):
+        return self.FILTER
 
     @property
     def reader(self):

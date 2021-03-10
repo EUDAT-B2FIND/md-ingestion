@@ -11,7 +11,7 @@ def test_datacite():
     doc = reader.read(xmlfile)
     assert 'Sample Data from V20' in doc.title[0]
     assert 'https://github.com/ess-dmsc/ess_file_formats/wiki/HDF5' in doc.description
-    assert 'Particles, Nuclei and Fields' == doc.discipline
+    assert 'Particles, Nuclei and Fields' == doc.discipline[0]
     assert 'https://doi.org/10.17199/BRIGHTNESS/V200111' == doc.doi
     assert 'https://scicat.esss.se/openaire/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == doc.metadata_access  # noqa
 
