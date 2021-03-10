@@ -12,7 +12,7 @@ def test_datacite():
     assert 'GEOFON event gfz2012mfau' in doc.title[0]
     assert 'https://doi.org/10.5880/GEOFON.gfz2012mfau' == doc.doi
     assert 'http://doidb.wdc-terra.org/oaip/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=oai:doidb.wdc-terra.org:4317' == doc.metadata_access  # noqa
-    assert 'Seismology' == doc.discipline
+    assert 'Seismology' == doc.discipline[0]
     assert 'Deutsches GeoForschungsZentrum GFZ' in doc.contributor
     # assert 'application/pdf' in doc.format
     # assert len(doc.format) == 2
