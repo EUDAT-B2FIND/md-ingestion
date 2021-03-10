@@ -16,7 +16,7 @@ class List(Command):
         elif groups:
             print(df.Group.unique())
         elif summary:
-            print(df.nunique())
+            print(df.nunique().to_string())
         else:
             print(df.Community.unique())
 
