@@ -23,6 +23,7 @@ class Askeladden(Community):
         doc.publisher = ['Askeladden']
         doc.publication_year = self.find('properties.forsteDigitaliseringsdato')
         doc.language = ['Norwegian']
+        doc.contact = ['askeladden.hjelp@ra.no']
         doc.creator = self.find('properties.opphav')
         doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
         doc.places = self.find('properties.kommune')
@@ -34,9 +35,9 @@ class Askeladden(Community):
     def title(self):
         title = self.find('properties.navn')
         if not title:
-            title = 'Untitled'
+            title = 'Uten navn'
         elif len(title[0]) < 4:
-            title = 'Untitled'
+            title = 'Uten navn'
 
         return title
 
