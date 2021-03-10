@@ -65,13 +65,13 @@ class Reader(object):
         return urls
 
     def discipline(self, doc, default=None):
-        default = default or 'Various'
+        default = default or 'Other'
         classifier = Classify()
         result = classifier.map_discipline(doc.keywords)
-        if 'Various' not in result:
+        if 'Other' not in result:
             logging.debug(f"{result} keywords={doc.keywords}")
         disc = result[0]
-        if 'Various' in disc:
+        if 'Other' in disc:
             disc = default
         return disc
 

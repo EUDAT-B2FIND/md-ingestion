@@ -1,0 +1,60 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fdr.uni-hamburg.de:8451</identifier>
+    <datestamp>2021-01-11T20:31:40Z</datestamp>
+    <setSpec>user-uhh</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ oai_datacite.xsd">
+      <isReferenceQuality>true</isReferenceQuality>
+      <schemaVersion>3.1</schemaVersion>
+      <datacentreSymbol>UHH.FDR</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.25592/uhhfdm.8451</identifier>
+          <creators>
+            <creator>
+              <creatorName>Salfr&#225;n, Daniel</creatorName>
+              <affiliation>Universit&#228;t Hamburg</affiliation>
+            </creator>
+            <creator>
+              <creatorName>Jordan, Pascal</creatorName>
+              <affiliation>Universit&#228;t Hamburg</affiliation>
+            </creator>
+            <creator>
+              <creatorName>Spiess, Martin</creatorName>
+              <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0003-1855-643X</nameIdentifier>
+              <affiliation>Universit&#228;t Hamburg</affiliation>
+            </creator>
+          </creators>
+          <titles>
+            <title>Missing Data: On criteria to evaluate imputation methods</title>
+          </titles>
+          <publisher>Universit&#228;t Hamburg</publisher>
+          <publicationYear>2016</publicationYear>
+          <subjects>
+            <subject>missing data</subject>
+            <subject>imputation</subject>
+            <subject>mean squared error</subject>
+            <subject>comparison</subject>
+            <subject>statistical properties</subject>
+          </subjects>
+          <dates>
+            <date dateType="Issued">2016-01-21</date>
+          </dates>
+          <resourceType resourceTypeGeneral="Text">Working paper</resourceType>
+          <relatedIdentifiers>
+            <relatedIdentifier relatedIdentifierType="DOI" relationType="IsPartOf">10.25592/uhhfdm.8450</relatedIdentifier>
+          </relatedIdentifiers>
+          <rightsList>
+            <rights rightsURI="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International</rights>
+            <rights rightsURI="info:eu-repo/semantics/openAccess">Open Access</rights>
+          </rightsList>
+          <descriptions>
+            <description descriptionType="Abstract">&lt;pre&gt;Empirical data analyses often require complete data sets. Therefore, in case of incompletely observed data sets, methods are attractive that generate plausible values (imputations) for the unobserved data. The idea is to then analyze the completed data set in an easy way. Thus, various  imputation techniques have been proposed and evaluated. Popular measures used for evaluating these techniques are based on distances between true and imputed values applied in simulation studies. In this paper we show through a theoretical example and a simulation study that these measures may be misleading: From the fact that they are zero if all the imputed values were equal to the true but unobserved values and are usually larger than zero otherwise, it does not follow that the smaller the value of such a measure, the `closer&amp;#39; the inference based on the imputed data set to the inference based on the complete data set without missing values. Moreover, since these measures are usually only applied in simulations, corresponding findings can not be generalized.&lt;/pre&gt;</description>
+          </descriptions>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>
