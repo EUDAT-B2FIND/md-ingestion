@@ -18,8 +18,6 @@ class UhhUhh(BaseUhh):
     IDENTIFIER = 'uhh_uhh'
     OAI_SET = 'user-uhh'  # Universität Hamburg
 
-    def update(self, doc):
-        doc.discipline = self.discipline(doc, 'Various')
 
 class UhhUke(BaseUhh):
     IDENTIFIER = 'uhh_uke'
@@ -28,12 +26,14 @@ class UhhUke(BaseUhh):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Medicine')
 
+
 class UhhSignlang(BaseUhh):
     IDENTIFIER = 'uhh_signlang'
     OAI_SET = 'user-sign-lang'  # This collection contains all kinds of language resources for sign languages
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Linguistics')
+
 
 class UhhCsmc(BaseUhh):
     IDENTIFIER = 'uhh_csmc'
@@ -42,12 +42,14 @@ class UhhCsmc(BaseUhh):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Humanities')
 
+
 class UhhHzsk(BaseUhh):
     IDENTIFIER = 'uhh_hzsk'
     OAI_SET = 'user-hzsk'  # Hamburger Zentrum für Sprachkorpora
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Linguistics')
+
 
 class UhhNcac(BaseUhh):
     IDENTIFIER = 'uhh_ncac'
@@ -56,12 +58,14 @@ class UhhNcac(BaseUhh):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Humanities')
 
+
 class UhhFakew(BaseUhh):
     IDENTIFIER = 'uhh_fakew'
     OAI_SET = 'user-fak-ew'  # Fakultät für Erziehungswissenschaft
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Education Sciences')
+
 
 class UhhIcdc(BaseUhh):
     IDENTIFIER = 'uhh_icdc'
@@ -70,12 +74,14 @@ class UhhIcdc(BaseUhh):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Earth System Research')
 
+
 class UhhCen(BaseUhh):
     IDENTIFIER = 'uhh_cen'
     OAI_SET = 'user-cen'  # Center for Earth System Research and Sustainability
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Earth System Research')
+
 
 class UhhCliccs(BaseUhh):
     IDENTIFIER = 'uhh_cliccs'

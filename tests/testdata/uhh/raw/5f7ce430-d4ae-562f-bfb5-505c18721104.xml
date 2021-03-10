@@ -1,0 +1,53 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:fdr.uni-hamburg.de:1732</identifier>
+    <datestamp>2020-09-29T21:12:41Z</datestamp>
+    <setSpec>user-hzsk</setSpec>
+    <setSpec>user-uhh</setSpec>
+  </header>
+  <metadata>
+    <oai_datacite xmlns="http://schema.datacite.org/oai/oai-1.0/" xsi:schemaLocation="http://schema.datacite.org/oai/oai-1.0/ oai_datacite.xsd">
+      <isReferenceQuality>true</isReferenceQuality>
+      <schemaVersion>3.1</schemaVersion>
+      <datacentreSymbol>UHH.FDR</datacentreSymbol>
+      <payload>
+        <resource xmlns="http://datacite.org/schema/kernel-3" xsi:schemaLocation="http://datacite.org/schema/kernel-3 http://schema.datacite.org/meta/kernel-3/metadata.xsd">
+          <identifier identifierType="DOI">10.25592/uhhfdm.1732</identifier>
+          <creators>
+            <creator>
+              <creatorName>House, Juliane</creatorName>
+            </creator>
+          </creators>
+          <titles>
+            <title>Covert translation: Business Communication (old)</title>
+          </titles>
+          <publisher>Universit&#228;t Hamburg</publisher>
+          <publicationYear>2009</publicationYear>
+          <subjects>
+            <subject>translated texts</subject>
+            <subject>business communication</subject>
+            <subject>parallel corpus</subject>
+            <subject>comparable corpus</subject>
+            <subject>linguistics</subject>
+            <subject>German</subject>
+            <subject>English</subject>
+          </subjects>
+          <dates>
+            <date dateType="Issued">2009-01-01</date>
+          </dates>
+          <resourceType resourceTypeGeneral="Dataset"/>
+          <relatedIdentifiers>
+            <relatedIdentifier relatedIdentifierType="DOI" relationType="IsPartOf">10.25592/uhhfdm.1731</relatedIdentifier>
+          </relatedIdentifiers>
+          <version>0.1</version>
+          <rightsList>
+            <rights rightsURI="info:eu-repo/semantics/restrictedAccess">Restricted Access</rights>
+          </rightsList>
+          <descriptions>
+            <description descriptionType="Abstract">&lt;p&gt;Translation corpora of original texts with translations and comparable texts from the genre external business communication.&lt;/p&gt;</description>
+          </descriptions>
+        </resource>
+      </payload>
+    </oai_datacite>
+  </metadata>
+</record>
