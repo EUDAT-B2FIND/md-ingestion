@@ -2,9 +2,12 @@ from .base import Community
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 import pandas as pd
+import os
 
 
 CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'etc', 'Community')
+FNAME = os.path.join(CFG_DIR, 'INRAE_MappingSubject__Discipline.csv')
+DF = pd.read_csv(open(FNAME))
 
 
 class DataverseNODatacite(Community):
@@ -27,12 +30,11 @@ class DataverseNODatacite(Community):
         doc.discipline = self.discipline(doc, self.discipline_mapping(doc.keywords))
 
     def discipline_mapping(self, subjects):
-        fname = os.path.join(CFG_DIR, 'INRAE_MappingSubject__Discipline.csv')
-        df = pd.read_csv(open(fname))
         values = []
         for subject in subjects:
-            result = df.loc[df.Subject == subject]
-            result_discipline = list(result.Discipline.to_dict().values())[0]
-            values.extend(result_discipline.split(';'))
+            result = DF.loc[DF.Subject == subject]
+            result_disciplines = list(result.Discipline.to_dict().values())
+            if result_disciplines:
+                values.extend(result_disciplines[0].split(';'))
         return values
 
