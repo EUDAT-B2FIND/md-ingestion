@@ -37,4 +37,3 @@ class DataverseNODatacite(Community):
             if result_disciplines:
                 values.extend(result_disciplines[0].split(';'))
         return values
-
