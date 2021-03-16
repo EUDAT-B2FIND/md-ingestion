@@ -13,10 +13,6 @@ class StarsforallDublinCore(Community):
 
     def update(self, doc):
         doc.contact = 'contact@stars4all.eu'
-        #doc.contributor = ['EGI Datahub']
-        #doc.pid = self.find_pid('identifier')
-        #doc.source = self.source(doc)
-        #doc.keywords = self.keywords(doc)
         if not doc.publisher:
             doc.publisher = ['STARS4ALL']
 
