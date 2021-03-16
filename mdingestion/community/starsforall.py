@@ -16,11 +16,7 @@ class StarsforallDublinCore(Community):
         if not doc.publisher:
             doc.publisher = ['STARS4ALL']
 
-    #def keywords(self, doc):
-        #keywords = doc.keywords
-        #keywords.append('EGI')
-        #return keywords
-
-    #def source(self, doc):
-        #urls = [url for url in self.find('metadata.identifier') if 'handle' not in url]
-        #return urls
+    def keywords(self, doc):
+        keywords = doc.keywords
+        keywords.append('light pullution')
+        return keywords
