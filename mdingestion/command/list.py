@@ -6,7 +6,7 @@ from ..community import community, communities
 
 class List(Command):
 
-    def run(self, name=None, groups=False, all=False, summary=False, productive=False, out=None):
+    def run(self, name=None, all=False, summary=False, productive=False, out=None):
         name = name or 'all'
         df = self.build_dataframe(name)
         if productive:
@@ -15,12 +15,10 @@ class List(Command):
             df.to_csv(out)
         elif all:
             print(df)
-        elif groups:
-            print(df.Group.unique())
         elif summary:
             print(df.nunique().to_string())
         else:
-            print(df.Community.unique())
+            print(df['Sub Community'].unique())
 
     def build_dataframe(self, name):
         df = pd.DataFrame(columns=['Community', 'Sub Community', 'Schema', 'Service', 'URL', 'OAI Set', 'Productive'])
