@@ -66,3 +66,9 @@ Run single test:
 ```
 $ pytest tests/community/test_darus.py
 ```
+## Update b2f list
+
+Update PRODUCTIVE=True and DATE='whatever' in Community mapfiles
+```
+b2f list -p -o b2flist.csv
+```
