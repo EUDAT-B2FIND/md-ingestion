@@ -19,7 +19,7 @@ class List(Command):
             print(df)
 
     def build_dataframe(self, name):
-        df = pd.DataFrame(columns=['Community', 'Sub Community', 'Schema', 'Service', 'URL', 'OAI Set', 'Productive'])
+        df = pd.DataFrame(columns=['Community', 'Sub Community', 'Schema', 'Service', 'URL', 'OAI Set', 'Productive', 'Date'])
         pd.set_option('display.max_rows', None)
         for identifier in communities(name):
             com = community(identifier)
@@ -30,7 +30,8 @@ class List(Command):
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
                 'OAI Set': com.OAI_SET,
-                'Productive': com.PRODUCTIVE,},
+                'Productive': com.PRODUCTIVE,
+                'Date': com.DATE if com.PRODUCTIVE else ''},
                 ignore_index=True)
         # df.set_index('Group', inplace=True)
         df = df.sort_values(by=['Community', 'Sub Community'])
