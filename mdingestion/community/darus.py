@@ -11,4 +11,3 @@ class DarusDatacite(Community):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
     PRODUCTIVE = True
-    

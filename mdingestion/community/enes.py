@@ -11,6 +11,7 @@ class Enes(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'iso'
     OAI_SET = 'iso-old-doi'
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.doi = self.find_doi('linkage')

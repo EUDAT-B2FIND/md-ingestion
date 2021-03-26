@@ -9,6 +9,7 @@ class Deims(Community):
     URL = 'https://deims.org/pycsw/catalogue/csw'
     SCHEMA = SchemaType.ISO19139
     SERVICE_TYPE = ServiceType.CSW
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.doi = self.find_doi('linkage')
