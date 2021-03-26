@@ -11,7 +11,7 @@ class GeofonDatacite(Community):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.GIPP'
     PRODUCTIVE = True
-    
+
     def update(self, doc):
         doc.discipline = self.gipp_discipline(doc)
 

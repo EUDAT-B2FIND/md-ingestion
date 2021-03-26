@@ -10,7 +10,7 @@ class List(Command):
         name = name or 'all'
         df = self.build_dataframe(name)
         if productive:
-            df = df.loc[df.Productive==productive]
+            df = df.loc[df.Productive == productive]
         if out:
             df.to_csv(out)
         elif summary:
@@ -30,8 +30,7 @@ class List(Command):
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
                 'OAI Set': com.OAI_SET,
-                'Productive': com.PRODUCTIVE,
-                 },
+                'Productive': com.PRODUCTIVE,},
                 ignore_index=True)
         # df.set_index('Group', inplace=True)
         df = df.sort_values(by=['Community', 'Sub Community'])
