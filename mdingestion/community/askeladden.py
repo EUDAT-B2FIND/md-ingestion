@@ -14,7 +14,8 @@ class Askeladden(Community):
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS
     FILTER = "kulturminneKategori='Arkeologisk minne'"
-
+    PRODUCTIVE = True
+    
     def update(self, doc):
         doc.discipline = ['Archaeology']
         doc.description = self.find('properties.informasjon')

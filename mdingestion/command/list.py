@@ -21,7 +21,7 @@ class List(Command):
             print(df.Community.unique())
 
     def build_dataframe(self, name):
-        df = pd.DataFrame(columns=['Community', 'Group', 'Schema', 'Service', 'URL'])
+        df = pd.DataFrame(columns=['Community', 'Group', 'Schema', 'Service', 'URL', 'OAI Set', 'Productive'])
         pd.set_option('display.max_rows', None)
         for identifier in communities(name):
             com = community(identifier)
@@ -30,7 +30,10 @@ class List(Command):
                 'Group': com.IDENTIFIER,
                 'Schema': com.SCHEMA,
                 'Service': com.SERVICE_TYPE,
-                'URL': com.URL},
+                'URL': com.URL,
+                'OAI Set': com.OAI_SET,
+                'Productive': com.PRODUCTIVE,
+                 },
                 ignore_index=True)
         # df.set_index('Group', inplace=True)
         df = df.sort_values(by=['Community', 'Group'])
