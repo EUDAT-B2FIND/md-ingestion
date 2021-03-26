@@ -19,19 +19,19 @@ class List(Command):
             print(df)
 
     def build_dataframe(self, name):
-        df = pd.DataFrame(columns=['Community', 'Sub Community', 'Schema', 'Service', 'URL', 'OAI Set', 'Productive', 'Date'])
+        df = pd.DataFrame(columns=['Community', 'Sub Community', 'Productive', 'Date', 'Schema', 'Service', 'URL', 'OAI Set'])
         pd.set_option('display.max_rows', None)
         for identifier in communities(name):
             com = community(identifier)
             df = df.append({
                 'Community': com.NAME,
                 'Sub Community': com.IDENTIFIER,
+                'Productive': com.PRODUCTIVE,
+                'Date': com.DATE if com.PRODUCTIVE else '',
                 'Schema': com.SCHEMA,
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
-                'OAI Set': com.OAI_SET,
-                'Productive': com.PRODUCTIVE,
-                'Date': com.DATE if com.PRODUCTIVE else ''},
+                'OAI Set': com.OAI_SET},
                 ignore_index=True)
         # df.set_index('Group', inplace=True)
         df = df.sort_values(by=['Community', 'Sub Community'])
