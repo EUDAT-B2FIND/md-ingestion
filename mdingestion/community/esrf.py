@@ -14,4 +14,4 @@ class ESRFDublinCore(Community):
     def update(self, doc):
         doc.discipline = 'Particles, Nuclei and Fields'
         doc.publication_year = '2020'
-        #doc.open_access = True
+        # doc.open_access = True
