@@ -6,9 +6,11 @@ from ..community import community, communities
 
 class List(Command):
 
-    def run(self, name=None, groups=False, all=False, summary=False, out=None):
+    def run(self, name=None, groups=False, all=False, summary=False, productive=False, out=None):
         name = name or 'all'
         df = self.build_dataframe(name)
+        if productive:
+            df = df.loc[df.Productive==productive]
         if out:
             df.to_csv(out)
         elif all:
@@ -21,13 +23,13 @@ class List(Command):
             print(df.Community.unique())
 
     def build_dataframe(self, name):
-        df = pd.DataFrame(columns=['Community', 'Group', 'Schema', 'Service', 'URL', 'OAI Set', 'Productive'])
+        df = pd.DataFrame(columns=['Community', 'Sub Community', 'Schema', 'Service', 'URL', 'OAI Set', 'Productive'])
         pd.set_option('display.max_rows', None)
         for identifier in communities(name):
             com = community(identifier)
             df = df.append({
                 'Community': com.NAME,
-                'Group': com.IDENTIFIER,
+                'Sub Community': com.IDENTIFIER,
                 'Schema': com.SCHEMA,
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
@@ -36,7 +38,7 @@ class List(Command):
                  },
                 ignore_index=True)
         # df.set_index('Group', inplace=True)
-        df = df.sort_values(by=['Community', 'Group'])
+        df = df.sort_values(by=['Community', 'Sub Community'])
         df_sorted = pd.DataFrame(
             data=df.values,
             columns=df.columns)
