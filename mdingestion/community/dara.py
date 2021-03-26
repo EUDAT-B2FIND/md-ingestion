@@ -9,6 +9,7 @@ class BaseDara(Community):
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
+    PRODUCTIVE = True
 
     def update(self, doc):
         pass

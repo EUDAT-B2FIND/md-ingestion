@@ -9,6 +9,7 @@ class BaseUhh(Community):
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
+    PRODUCTIVE = True
 
     def update(self, doc):
         pass
