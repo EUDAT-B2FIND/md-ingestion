@@ -14,4 +14,10 @@ class ESRFDublinCore(Community):
     def update(self, doc):
         doc.discipline = 'Particles, Nuclei and Fields'
         doc.publication_year = '2020'
+        doc.keywords = self.keywords(doc)
         # doc.open_access = True
+
+    def keywords(self, doc):
+        keywords = doc.keywords
+        keywords.append('PaN')
+        return keywords
