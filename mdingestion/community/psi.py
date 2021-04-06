@@ -14,3 +14,9 @@ class PsiDatacite(Community):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, ['Life Sciences','Biology','Basic Biological and Medical Research'])
+        doc.keywords = self.keywords(doc)
+
+    def keywords(self, doc):
+        keywords = doc.keywords
+        keywords.append('PaN')
+        return keywords
