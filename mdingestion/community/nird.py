@@ -10,6 +10,11 @@ class NIRDDublinCore(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
+    PRODUCTIVE = False
+
+    def update(self, doc):
+        if not doc.publication_year:
+            doc.publication_year = self.find('header.datestamp')
 
     #def update(self, doc):
         #doc.contributor = self.contributor(doc)
