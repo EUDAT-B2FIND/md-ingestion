@@ -10,6 +10,7 @@ class IstDublinCore(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = 'research_dataFtxt'
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.doi = self.doi()

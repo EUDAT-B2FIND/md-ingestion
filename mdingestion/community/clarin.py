@@ -8,6 +8,7 @@ class BaseClarin(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     # OAI_SET = None
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.discipline = 'Linguistics'
@@ -105,6 +106,7 @@ class ClarinThirteen(BaseClarin):
 class ClarinFourteen(BaseClarin):
     IDENTIFIER = 'clarin_fourteen'
     URL = 'https://metashare.ut.ee/oai_pmh/'
+    PRODUCTIVE = False
 
 
 class ClarinFifteen(BaseClarin):

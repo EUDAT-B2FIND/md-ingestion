@@ -11,6 +11,8 @@ class Community(object):
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
     FILTER = None
+    PRODUCTIVE = False
+    DATE = ''
 
     def __init__(self):
         self._reader = None

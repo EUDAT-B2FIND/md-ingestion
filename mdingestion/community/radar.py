@@ -10,6 +10,7 @@ class Radar(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'datacite'
     OAI_SET = None
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.contributor = 'RADAR'

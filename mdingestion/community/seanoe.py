@@ -10,6 +10,7 @@ class Seanoe(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.related_identifier = self.find('references')

@@ -18,6 +18,7 @@ class DataverseNODatacite(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'NoGeneticResource'
+    PRODUCTIVE = True
 
     def update(self, doc):
         handle = format_value(self.find('resource.identifier', identifierType="Handle"), one=True)
