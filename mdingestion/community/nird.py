@@ -15,5 +15,3 @@ class NIRDDublinCore(Community):
     def update(self, doc):
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
-
-    
