@@ -16,18 +16,4 @@ class NIRDDublinCore(Community):
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
 
-    #def update(self, doc):
-        #doc.contributor = self.contributor(doc)
-        #doc.keywords = self.keywords(doc)
-        #if not doc.publisher:
-            #doc.publisher = ['Life+Respira']
-
-    #def keywords(self, doc):
-        #keywords = doc.keywords
-        #keywords.append('PAIRQURS')
-        #return keywords
-
-    #def contributor(self, doc):
-        #con = doc.contributor
-        #con.append('B2SHARE')
-        #return con
+    
