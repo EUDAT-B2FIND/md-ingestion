@@ -5,7 +5,7 @@ from ..service_types import SchemaType, ServiceType
 class PsiDatacite(Community):
     NAME = 'psi'
     IDENTIFIER = NAME
-    URL = 'https://doi.psi.ch/'
+    URL = 'https://doi.psi.ch/oaipmh/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
