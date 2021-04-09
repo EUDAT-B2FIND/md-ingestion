@@ -6,9 +6,9 @@ class PsiDatacite(Community):
     NAME = 'psi'
     IDENTIFIER = NAME
     URL = 'https://doi.psi.ch/oaipmh/oai'
-    SCHEMA = SchemaType.DataCite
+    SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_datacite'
+    OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
     PRODUCTIVE = False
 
