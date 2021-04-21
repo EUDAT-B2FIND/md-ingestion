@@ -10,7 +10,7 @@ class PsiDatacite(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
-    PRODUCTIVE = False
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, ['Life Sciences','Biology','Basic Biological and Medical Research'])
