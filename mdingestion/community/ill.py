@@ -14,3 +14,9 @@ class ILLDatacite(Community):
 
     def update(self, doc):
         doc.discipline = 'Particles, Nuclei and Fields'
+        doc.keywords = self.keywords(doc)
+
+    def keywords(self, doc):
+        keywords = doc.keywords
+        keywords.append('PaN')
+        return keywords
