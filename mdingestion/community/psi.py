@@ -5,12 +5,12 @@ from ..service_types import SchemaType, ServiceType
 class PsiDatacite(Community):
     NAME = 'psi'
     IDENTIFIER = NAME
-    URL = 'https://oai.datacite.org/oai'
-    SCHEMA = SchemaType.DataCite
+    URL = 'https://doi.psi.ch/oaipmh/oai'
+    SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = 'ETHZ.PSI'
-    PRODUCTIVE = True
+    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_SET = None
+    PRODUCTIVE = False
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, ['Life Sciences','Biology','Basic Biological and Medical Research'])
