@@ -88,7 +88,7 @@ class DataCiteReader(XMLReader):
         for funding_reference in self.parser.doc.find_all('fundingReference'):
             funder_name = format_value(funding_reference.funderName.text, one=True)
             if funding_reference.awardNumber:
-                award_number = format_value(funding_reference.awardNumber.text, one=True)
+                award_number = format_value(funding_reference.awardNumber.text, type='string_words', one=True)
                 if award_number:
                     funder_name = f"{funder_name}, {award_number}"
             funding_refs.append(funder_name)
