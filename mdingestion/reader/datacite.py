@@ -84,10 +84,23 @@ class DataCiteReader(XMLReader):
         return resource_types
 
     def funding_reference(self):
-        funding_reference = self.find('fundingReferences.funderName')
-        if not funding_reference:
-            funding_reference = self.find('contributor', contributorType="Funder")
-        return funding_reference
+        funding_refs = []
+        for funding_reference in self.parser.doc.find_all('fundingReference'):
+            funder_name = format_value(funding_reference.funderName.text, one=True)
+            if funding_reference.awardNumber:
+                award_number = format_value(funding_reference.awardNumber.text, one=True)
+                if award_number:
+                    funder_name = f"{funder_name}, {award_number}"
+            funding_refs.append(funder_name)
+        return funding_refs
+
+        # funding_reference = self.find('fundingReferences.funderName')
+        # if not funding_reference:
+        #     funding_reference = self.find('contributor', contributorType="Funder")
+        # award = self.find('fundingReferences.awardNumber')
+        # if award:
+        #     funding_reference = f"{funding_reference}, {award}"
+        # return funding_reference
 
     def geometry(self):
         """
