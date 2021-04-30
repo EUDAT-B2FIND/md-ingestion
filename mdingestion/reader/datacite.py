@@ -95,7 +95,7 @@ class DataCiteReader(XMLReader):
         if not funding_refs:
             funding_refs = self.find('contributor', contributorType="Funder")
         return funding_refs
-        
+
     def geometry(self):
         """
         parse datacite geometry.
