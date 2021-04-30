@@ -92,16 +92,10 @@ class DataCiteReader(XMLReader):
                 if award_number:
                     funder_name = f"{funder_name}, {award_number}"
             funding_refs.append(funder_name)
+        if not funding_refs:
+            funding_refs = self.find('contributor', contributorType="Funder")
         return funding_refs
-
-        # funding_reference = self.find('fundingReferences.funderName')
-        # if not funding_reference:
-        #     funding_reference = self.find('contributor', contributorType="Funder")
-        # award = self.find('fundingReferences.awardNumber')
-        # if award:
-        #     funding_reference = f"{funding_reference}, {award}"
-        # return funding_reference
-
+        
     def geometry(self):
         """
         parse datacite geometry.
