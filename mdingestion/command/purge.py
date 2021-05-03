@@ -24,12 +24,13 @@ def get_dataset_list(group, iphost):
 
     return dataset_list
 
+
 def purge_dataset_list(dataset_list, iphost, apikey):
     '''purge_dataset_list'''
     with RemoteCKAN(f"http://{iphost}", apikey=apikey, user_agent=agent) as ckan:
         for dataset_id in dataset_list:
             try:
-                pkg = ckan.action.dataset_purge(id=dataset_id)
+                ckan.action.dataset_purge(id=dataset_id)
                 print('Dataset \'' + dataset_id + '\' purged')
             except NotAuthorized:
                 print('Dataset \'' + dataset_id + '\' not authorized')

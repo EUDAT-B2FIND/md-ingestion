@@ -180,8 +180,7 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_l
 def purge(ctx, community, iphost, auth, insecure):
     try:
         purge = Purge(community=community)
-        purge.run(iphost=iphost, auth=auth, verify=not insecure,
-                   silent=ctx.obj['silent'])
+        purge.run(iphost=iphost, auth=auth, verify=not insecure, silent=ctx.obj['silent'])
     except Exception as e:
         logging.critical(f"purge: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
