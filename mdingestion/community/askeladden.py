@@ -8,8 +8,8 @@ from ..format import format_value
 
 
 class Askeladden(Community):
-    NAME = 'askeladden'
-    IDENTIFIER = NAME
+    NAME = 'askeladden_single'
+    IDENTIFIER = 'askeladden_single'
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS
