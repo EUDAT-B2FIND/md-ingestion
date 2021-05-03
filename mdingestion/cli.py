@@ -2,7 +2,7 @@ import click
 import pathlib
 from datetime import datetime, timedelta
 
-from .command import List, Harvest, Map, Upload
+from .command import List, Harvest, Map, Upload, Purge
 from .exceptions import UserInfo
 
 
@@ -168,6 +168,21 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_l
         click.echo(f'{e}')
     except Exception as e:
         logging.critical(f"combine: {e}", exc_info=True)
+        raise click.ClickException(f"{e}")
+
+
+@cli.command()
+@click.option('--community', '-c', required=True, help='Community')
+@click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
+@click.option('--auth', required=True, help='CKAN API key')
+@click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
+@click.pass_context
+def purge(ctx, community, iphost, auth, insecure):
+    try:
+        purge = Purge(community=community)
+        purge.run(iphost=iphost, auth=auth, verify=not insecure, silent=ctx.obj['silent'])
+    except Exception as e:
+        logging.critical(f"purge: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
 
 
