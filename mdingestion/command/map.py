@@ -70,7 +70,7 @@ class Map(Command):
         validator.write_summary(prefix=self._community.identifier, outdir=self.summary_dir, show=show)
         self.summary[self._community.identifier] = validator.concise_summary()
         if not success:
-            raise Exception(f"some files are not valid. community={self._community.identifier}")
+            logging.warning(f"some files are not valid. community={self._community.identifier}")
 
     def walk(self):
         path = os.path.join(self._community.identifier, 'raw')
