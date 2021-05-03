@@ -11,7 +11,7 @@ class BaseNordicar(Community):
     NAME = 'nordicar'
     PRODUCTIVE = False
 
-    
+
 class Slks(BaseNordicar):
     IDENTIFIER = 'slks'
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
@@ -62,6 +62,7 @@ class Slks(BaseNordicar):
         else:
             coverage = f"{from_year} - {to_year}; {period}"
         return coverage
+
 
 class Askeladden(BaseNordicar):
     IDENTIFIER = 'askeladden'
