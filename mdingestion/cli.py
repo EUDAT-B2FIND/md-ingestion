@@ -172,15 +172,17 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_l
 
 
 @cli.command()
-@click.option('--community', '-c', required=True, help='Community')
+@click.option('--community', '-c', required=False, 
+              help='delete all datasets of this community')
+@click.option('--dataset', '-d', required=False, help='delete single dataset')
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def purge(ctx, community, iphost, auth, insecure):
+def purge(ctx, community, dataset, iphost, auth, insecure):
     try:
         purge = Purge(community=community)
-        purge.run(iphost=iphost, auth=auth, verify=not insecure, silent=ctx.obj['silent'])
+        purge.run(iphost=iphost, dataset=dataset, auth=auth, verify=not insecure, silent=ctx.obj['silent'])
     except Exception as e:
         logging.critical(f"purge: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
