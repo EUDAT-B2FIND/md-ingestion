@@ -202,6 +202,5 @@ def search(ctx, community, iphost, insecure, limit, pattern):
         raise click.ClickException(f"{e}")
 
 
-
 if __name__ == '__main__':
     cli(obj={})
