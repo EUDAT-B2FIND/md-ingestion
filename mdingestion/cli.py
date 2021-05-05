@@ -2,7 +2,7 @@ import click
 import pathlib
 from datetime import datetime, timedelta
 
-from .command import List, Harvest, Map, Upload, Purge
+from .command import List, Harvest, Map, Upload, Purge, Search
 from .exceptions import UserInfo
 
 
@@ -184,6 +184,23 @@ def purge(ctx, community, iphost, auth, insecure):
     except Exception as e:
         logging.critical(f"purge: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
+
+
+@cli.command()
+@click.option('--community', '-c', required=True, help='Community')
+@click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
+@click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
+@click.option('--limit', type=int, help='Limit of shown datasets', default=20)
+@click.option('--pattern', help='Search criteria', default="")
+@click.pass_context
+def search(ctx, community, iphost, insecure, limit, pattern):
+    try:
+        search = Search(community=community)
+        search.run(iphost=iphost, limit=limit, pattern=pattern, verify=not insecure, silent=ctx.obj['silent'])
+    except Exception as e:
+        logging.critical(f"search: {e}", exc_info=True)
+        raise click.ClickException(f"{e}")
+
 
 
 if __name__ == '__main__':
