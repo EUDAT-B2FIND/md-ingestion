@@ -172,7 +172,7 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_l
 
 
 @cli.command()
-@click.option('--community', '-c', required=False, 
+@click.option('--community', '-c', required=False,
               help='delete all datasets of this community')
 @click.option('--dataset', '-d', required=False, help='delete single dataset')
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
