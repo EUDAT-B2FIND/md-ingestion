@@ -187,8 +187,8 @@ def purge(ctx, community, iphost, auth, insecure):
 
 
 @cli.command()
-@click.option('--community', '-c', required=True, help='Community')
-@click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
+@click.option('--community', '-c', help='Community')
+@click.option('--iphost', '-i', required=True, help='IP address of CKAN instance', default="b2find.eudat.eu")
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.option('--limit', type=int, help='Limit of shown datasets', default=20)
 @click.option('--pattern', help='Search criteria', default="")

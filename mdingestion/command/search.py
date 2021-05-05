@@ -15,15 +15,19 @@ agent = 'b2f'
 def ckan_search(iphost, community, limit, pattern):
     
     # create pattern for CKAN:
-    ckan_pattern = pattern
+    ckan_pattern = ""
     if community:
-        ckan_pattern += f"groups:{community}"
-    
+        ckan_pattern = f"groups:{community}"
+    if pattern:
+        if ckan_pattern:
+            ckan_pattern += " AND "
+        ckan_pattern += pattern
+
     with RemoteCKAN(f"http://{iphost}", user_agent=agent) as ckan:
         answer = ckan.action.package_search(q=ckan_pattern, rows=limit)
         
         # print results:
-        print(f"{answer}")
+        # print(f"{answer}")
         print("Results on CKAN (%s), %d dataset(s), show max. %d:" % (iphost, answer['count'], limit))
         for ds in answer['results']:
             print('[%s]' % ds['name'])

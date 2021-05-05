@@ -50,6 +50,21 @@ Upload:
 $ b2f upload -c darus -i CKAN_HOST --auth AUTH_KEY
 ```
 
+Combine
+```
+$ b2f combine -c darus --clean -i CKAN_HOST --auth AUTH_KEY
+```
+
+Purge
+```
+$ b2f purge -c darus -i CKAN_HOST --auth AUTH_KEY
+```
+Search
+```
+$ b2f search --pattern "ice caps" --limit 20
+$ b2f search -c darus -i CKAN_HOST 
+```
+
 ## Run tests
 
 Install pytest:
