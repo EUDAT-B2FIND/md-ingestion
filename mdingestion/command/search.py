@@ -17,14 +17,15 @@ def ckan_search(iphost, community, limit, pattern):
     # create pattern for CKAN:
     ckan_pattern = pattern
     if community:
-        ckan_pattern += f" AND groups:{community}"
+        ckan_pattern += f"groups:{community}"
     
     with RemoteCKAN(f"http://{iphost}", user_agent=agent) as ckan:
         answer = ckan.action.package_search(q=ckan_pattern, rows=limit)
         
         # print results:
-        print("Results on CKAN (%s), %d dataset(s), show max. %d:" % (iphost, answer['result']['count'], limit))
-        for ds in answer['result']['results']:
+        print(f"{answer}")
+        print("Results on CKAN (%s), %d dataset(s), show max. %d:" % (iphost, answer['count'], limit))
+        for ds in answer['results']:
             print('[%s]' % ds['name'])
             print('    title: %s' % ds['title'])
         
