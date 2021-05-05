@@ -40,7 +40,10 @@ def purge_dataset_list(dataset_list, iphost, apikey):
 
 
 class Purge(Command):
-    def run(self, iphost=None, auth=None, verify=True,
+    def run(self, iphost=None, dataset=None, auth=None, verify=True,
             silent=False):
-        datasets = get_dataset_list(self.community, iphost=iphost)
+        if self.community:
+            datasets = get_dataset_list(self.community, iphost=iphost)
+        else:
+            datasets = [dataset]
         purge_dataset_list(datasets, iphost=iphost, apikey=auth)
