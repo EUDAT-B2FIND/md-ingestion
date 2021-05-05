@@ -174,7 +174,7 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_l
 @cli.command()
 @click.option('--community', '-c', required=False,
               help='delete all datasets of this community')
-@click.option('--dataset', '-d', required=False, help='delete single dataset')
+@click.option('--dataset', '-d', metavar='DATASET_ID', required=False, help='delete single dataset')
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
