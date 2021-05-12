@@ -10,7 +10,6 @@ class Bluecloud(Community):
     SERVICE_TYPE = ServiceType.CSW
     PRODUCTIVE = False
 
-
     def update(self, doc):
         doc.source = self.find('transferOptions.linkage')
         doc.description = self.description()
