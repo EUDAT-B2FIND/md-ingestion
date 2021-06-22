@@ -11,94 +11,32 @@ class EudatcoreReader(XMLReader):
     def parse(self, doc):
         doc.title = self.find('title')
         doc.description = self.find('description')
-        doc.doi = self.find_doi('resource.identifier')
-        doc.pid = self.pid()
-        doc.source = self.find_source('resource.identifier')
+        doc.doi = self.find('identifier')
+        doc.pid = self.find('identifier')
+        doc.source = self.find('identifier')
         doc.keywords = self.find('subject')
         doc.discipline = self.discipline(doc)
         doc.related_identifier = self.find('relatedIdentifier')
-        doc.creator = self.creator()
+        doc.creator = self.find('creator')
         doc.publisher = self.find('publisher')
-        doc.contributor = self.find('contributorName')
-        doc.funding_reference = self.funding_reference()
-        doc.publication_year = self.publication_year()
-        doc.rights = self.rights()
-        doc.contact = self.contact()
+        doc.contributor = self.find('contributor')
+        doc.funding_reference = self.find('fundingReference')
+        doc.publication_year = self.find('publicationYear')
+        doc.rights = self.find('rights')
+        doc.contact = self.find('contact')
         doc.language = self.find('language')
-        doc.resource_type = self.resource_type()
+        doc.resource_type = self.find('resource_type')
         doc.format = self.find('format')
         doc.size = self.find('size')
-        doc.version = self.find('metadata.version')
-        doc.temporal_coverage = self.find('date')
+        doc.version = self.find('version')
+        doc.temporal_coverage = self.find('temporal_coverage')
         doc.geometry = self.find_geometry()
         doc.places = self.find('geoLocationPlace')
 
-    def pid(self):
-        urls = self.find_pid('alternateIdentifier')
-        urls.extend(self.find_pid('relatedIdentifier', relatedIdentifierType="Handle"))
-        urls.extend(self.find('alternateIdentifier', alternateIdentifierType="URN"))
-        return urls
-
-    def publication_year(self):
-        year = format_value(self.find('publicationYear'), one=True)
-        if not year:
-            year = self.find('header.datestamp')
-        return year
-
-    def rights(self):
-        rights = self.find('rights')
-        for right in self.parser.doc.find_all('rights'):
-            URI = right.get('rightsURI')
-            if URI:
-                rights.append(URI)
-        return rights
-
-    def creator(self):
-        creators = []
-        for creator in self.parser.doc.find_all('creator'):
-            name = creator.creatorName.text
-            if creator.affiliation:
-                affiliation = format_value(creator.affiliation.text, one=True)
-                if affiliation:
-                    name = f"{name} ({affiliation})"
-            creators.append(name)
-        return creators
-
-    def contact(self):
-        contacts = []
-        for contact in self.parser.doc.find_all('contributor', contributorType="ContactPerson"):
-            name = format_value(contact.contributorName.text, type='email', one=True)
-            if contact.affiliation:
-                affiliation = format_value(contact.affiliation.text, one=True)
-                if affiliation:
-                    name = f"{name} ({affiliation})"
-            contacts.append(name)
-        return contacts
-
-    def resource_type(self):
-        resource_types = self.find('resourceType')
-        for resource_type in self.parser.doc.find_all('resourceType'):
-            attribute = resource_type.get('resourceTypeGeneral')
-            if attribute:
-                resource_types.append(attribute)
-        return resource_types
-
-    def funding_reference(self):
-        funding_refs = []
-        for funding_reference in self.parser.doc.find_all('fundingReference'):
-            funder_name = format_value(funding_reference.funderName.text, one=True)
-            if funding_reference.awardNumber:
-                award_number = format_value(funding_reference.awardNumber.text, type='string_words', one=True)
-                if award_number:
-                    funder_name = f"{funder_name}, {award_number}"
-            funding_refs.append(funder_name)
-        if not funding_refs:
-            funding_refs = self.find('contributor', contributorType="Funder")
-        return funding_refs
 
     def geometry(self):
         """
-        parse datacite geometry.
+        parse eudatcore geometry based on datacite for now.
         https://schema.datacite.org/meta/kernel-4.3/doc/DataCite-MetadataKernel_v4.3.pdf
         https://guidelines.openaire.eu/en/latest/data/field_geolocation.html
         """
