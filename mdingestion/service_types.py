@@ -8,6 +8,7 @@ class SchemaType(Enum):
     FGDC = 3
     FF = 4
     DDI = 5
+    Eudatcore = 6
     JSON = 100
 
 
