@@ -13,5 +13,13 @@ class NIRDDublinCore(Community):
     PRODUCTIVE = False
 
     def update(self, doc):
+        doc.keywords = self.cleankeywords(doc)
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
+
+    def cleankeywords(self, doc):
+        newkeywords = []
+        for keyword in doc.keywords:
+            if 'subfield' in keyword:
+                newkeywords.append(keyword.split('subfield')[1])
+        return newkeywords
