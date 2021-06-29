@@ -33,7 +33,6 @@ class EudatcoreReader(XMLReader):
         doc.geometry = self.find_geometry()
         doc.places = self.find('geoLocationPlace')
 
-
     def geometry(self):
         """
         parse eudatcore geometry based on datacite for now.
