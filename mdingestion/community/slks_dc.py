@@ -3,8 +3,8 @@ from ..service_types import SchemaType, ServiceType
 
 
 class Slks(Community):
-    NAME = 'slks'
-    IDENTIFIER = 'slks'
+    NAME = 'slks_single'
+    IDENTIFIER = 'slks_single'
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
