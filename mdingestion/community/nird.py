@@ -10,7 +10,8 @@ class NIRDDublinCore(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
-    PRODUCTIVE = False
+    PRODUCTIVE = True
+    DATE = '2021-07-01'
 
     def update(self, doc):
         doc.keywords = self.cleankeywords(doc)
