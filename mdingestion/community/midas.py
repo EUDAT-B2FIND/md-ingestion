@@ -12,3 +12,7 @@ class MIDASDublinCore(Community):
     OAI_SET = None
     PRODUCTIVE = False
     #Date =
+
+    def update(self, doc):
+        if not doc.publisher:
+            doc.publisher = 'Lithuanian National Open Access Research Data Archive (MIDAS)'
