@@ -10,8 +10,8 @@ class MIDASDublinCore(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
-    PRODUCTIVE = False
-    #Date =
+    PRODUCTIVE = True
+    Date = '2021-07-05'
 
     def update(self, doc):
         if not doc.publisher:
