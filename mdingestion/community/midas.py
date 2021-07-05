@@ -16,4 +16,3 @@ class MIDASDublinCore(Community):
     def update(self, doc):
         if not doc.publisher:
             doc.publisher = 'Lithuanian National Open Access Research Data Archive (MIDAS)'
-            
