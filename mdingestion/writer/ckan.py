@@ -96,6 +96,20 @@ class CKANWriter(Writer):
         }
         if doc.publication_year:
             data['PublicationTimestamp'] = f"{doc.publication_year}-01-01T12:00:00Z"
+        # build date range field for temporal coverage
+        # https://solr.apache.org/guide/6_6/working-with-dates.html
+        if doc.temporal_coverage_begin_date or doc.temporal_coverage_end_date:
+            begin = end = '*'
+            if doc.temporal_coverage_begin_date:
+                # keep the day 2021-08-06 ... not hours, secs
+                begin = doc.temporal_coverage_begin_date.split('T')[0]
+            else:
+                begin = '*'
+            if doc.temporal_coverage_end_date:
+                end = doc.temporal_coverage_end_date.split('T')[0]
+            else:
+                end = '*'
+            data['TempCoverage'] = f"[{begin} TO {end}]"
         return data
 
     def _ckan_fields(self, doc):
