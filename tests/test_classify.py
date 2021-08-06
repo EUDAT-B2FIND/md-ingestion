@@ -18,9 +18,9 @@ def test_similarity():
     assert round(classify.similarity(
         'Computer and Information Science', 'Computer Information Science'), 2) == 0.93
     assert round(classify.similarity(
-        'rock mechanics', 'Mechanicsy'), 2) == 0.75
+        'rock mechanics', 'Mechanics'), 2) == 0.78
     assert round(classify.similarity(
-        'mechanics', 'Mechanicsy'), 2) == 0.95
+        'mechanics', 'Mechanics'), 2) == 1.0
     assert round(classify.similarity(
         'Earth and Environmental Sciences', 'Earth System Research'), 2) == 0.45
     assert round(classify.similarity(
@@ -68,7 +68,7 @@ def test_map_discipline_darus():
         'Carrara marble',
         'micro X ray computed tomography',
         'cracks', 'fractures', 'rock mechanics']) == \
-        ('Engineering;Earth and Environmental Science;Mechanics',
+        ('Engineering;Mechanics;Earth and Environmental Science',
             ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
     assert classifier.map_discipline([
         'Agricultural Sciences',
