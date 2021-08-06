@@ -68,7 +68,7 @@ def test_map_discipline_darus():
         'Carrara marble',
         'micro X ray computed tomography',
         'cracks', 'fractures', 'rock mechanics']) == \
-        ('Engineering;Earth and Environmental Science;Mechanicsy',
+        ('Engineering;Earth and Environmental Science;Mechanics',
             ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
     assert classifier.map_discipline([
         'Agricultural Sciences',
