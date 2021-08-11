@@ -10,7 +10,7 @@ FNAME = os.path.join(CFG_DIR, 'INRAE_MappingSubject__Discipline.csv')
 DF = pd.read_csv(open(FNAME))
 
 
-class DataverseNODatacite(Community):
+class INRAEDatacite(Community):
     NAME = 'inrae'
     IDENTIFIER = 'inrae'
     URL = 'https://data.inrae.fr/oai'
