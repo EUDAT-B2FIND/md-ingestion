@@ -28,13 +28,19 @@ class INRAEDatacite(Community):
             doc.pid = urls
         if not doc.publisher:
             doc.publisher = 'INRAE'
-        doc.discipline = self.discipline(doc, self.discipline_mapping(doc.keywords))
+        doc.discipline = self.discipline_mapping(doc, doc.keywords)
 
-    def discipline_mapping(self, subjects):
+    def discipline_mapping(self, doc, subjects):
         values = []
-        for subject in subjects:
+        _subjects = subjects.copy()
+        if "Health and Life Sciences" in _subjects:
+            if "Medicine" in _subjects:
+                _subjects.remove("Medicine")
+        for subject in _subjects:
             result = DF.loc[DF.Subject == subject]
             result_disciplines = list(result.Discipline.to_dict().values())
             if result_disciplines:
                 values.extend(result_disciplines[0].split(';'))
+            else:
+                values.extend(self.discipline(doc, [subject]))
         return values
