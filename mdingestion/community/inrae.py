@@ -42,5 +42,5 @@ class INRAEDatacite(Community):
             if result_disciplines:
                 values.extend(result_disciplines[0].split(';'))
             else:
-                values.extend(self.discipline(doc, [subject]))
+                values.extend(self.discipline(doc, [subject]).split(';'))
         return values
