@@ -15,3 +15,4 @@ class DaticeDatacite(Community):
 
     def update(self, doc):
         doc.discipline = 'Social Sciences'
+        doc.contact = 'gagnis@hi.is'
