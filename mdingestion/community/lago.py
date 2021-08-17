@@ -20,11 +20,11 @@ class LagoDublinCore(Community):
         if not doc.publisher:
             doc.publisher = ['EGI Datahub']
 
-    #def keywords(self, doc):
+    # def keywords(self, doc):
     #    keywords = doc.keywords
     #    keywords.append('EGI')
     #    return keywords
 
-    #def source(self, doc):
+    # def source(self, doc):
     #    urls = [url for url in self.find('metadata.identifier') if 'handle' not in url]
     #    return urls
