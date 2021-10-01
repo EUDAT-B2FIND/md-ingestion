@@ -32,7 +32,7 @@ class B2ShareCSC(BaseEudat):
         super().update(doc)
         # doc.keywords = self.keywords(doc, 'whatever')
         if not doc.publisher:
-            doc.publisher = 'B2SHARE'
+            doc.publisher = 'EUDAT'
 
 
 class B2ShareFZJ(BaseEudat):
@@ -44,18 +44,18 @@ class B2ShareFZJ(BaseEudat):
         super().update(doc)
         # doc.keywords = self.keywords(doc, 'whichever')
         if not doc.publisher:
-            doc.publisher = 'B2SHARE FZJ'
+            doc.publisher = 'EUDAT'
 
 
-class SecureB2Share(BaseEudat):
-    IDENTIFIER = 'secure_b2share'
-    URL = 'https://secure-b2share-test.uio.no/api/oai2d'
-    OAI_SET = 'EUDAT'
+#class SecureB2Share(BaseEudat):
+#    IDENTIFIER = 'secure_b2share'
+#    URL = 'https://secure-b2share-test.uio.no/api/oai2d'
+#    OAI_SET = 'EUDAT'
 
-    def update(self, doc):
-        super().update(doc)
+#    def update(self, doc):
+#        super().update(doc)
         # TODO: mapped to test records, clean up when ready
         # doc.keywords = self.keywords(doc, 'whatever')
-        if not doc.publisher:
-            doc.publisher = 'B2SHARE'
-        doc.discipline = self.discipline(doc, 'Unknown')
+#        if not doc.publisher:
+#            doc.publisher = 'EUDAT'
+#        doc.discipline = self.discipline(doc, 'Unknown')
