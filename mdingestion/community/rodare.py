@@ -14,6 +14,5 @@ class RodareDataCite(Community):
     #DATE = '2021-10-20'
 
     def update(self, doc):
-        if not doc.publisher:
-            doc.publisher = ['Rodare']
-        doc.discipline = self.discipline(doc, 'Life Sciences, Natural Sciences, Engineering Sciences')
+        doc.discipline = self.discipline(doc, 'Life Sciences; Natural Sciences; Engineering Sciences')
+        doc.contact = 'https://rodare.hzdr.de/support'
