@@ -7,19 +7,16 @@ class DDI25Reader(XMLReader):
     SNIFFER = OAISniffer
 
     def parse(self, doc):
+        self.identifier(doc)
         doc.title = self.find('titl')
         doc.creator = self.find('AuthEnty')
         doc.keywords = self.find('keyword') #TODO: add method TopcClas
-        doc.source = self.find('sources')
         doc.description = self.find('abstract')
         doc.publisher = self.find('producer') #TODO: method if producer is missing?
         doc.contributor = self.find('othId')
         doc.publication_year = self.find('prodDate')
         doc.resource_type = self.find('dataKind')
         doc.format = self.find('fileType')
-        #doc.doi = self.find_doi('holdings.URI') TODO: how to extract attribute URI value?
-        #doc.pid = self.find_pid(holdings.URI') TODO: how to extract attribute URI value?
-        #doc.source = self.find_source('holdings.URI') TODO: how to extract attribute URI value?
         doc.discipline = self.discipline(doc)
         doc.related_identifier = self.find('othrStdyMat')
         doc.rights = self.find('copyright')
@@ -32,3 +29,15 @@ class DDI25Reader(XMLReader):
         #doc.size = self.find('extent')
         #doc.version = self.find('hasVersion')
 
+    def identifier(self, doc):
+        for holdings in self.parser.doc.find_all('holdings'):
+            URI = holdings.get('URI')
+            if not URI:
+                print(self.find('titl'))
+                continue
+            if 'doi' in URI:
+                doc.doi = URI
+            elif 'handle' in URI:
+                doc.pid = URI
+            else:
+                doc.source = URI
