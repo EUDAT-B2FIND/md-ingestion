@@ -14,12 +14,15 @@ import logging
 
 class OAIHarvester(Harvester):
 
-    def __init__(self, community, url, oai_metadata_prefix, oai_set, fromdate, clean, limit, outdir, verify):
-        super().__init__(community, url, fromdate, clean, limit, outdir, verify)
+    def __init__(self, community, url, oai_metadata_prefix, oai_set, fromdate, clean, limit, outdir, verify,
+                 username, password):
+        super().__init__(community, url, fromdate, clean, limit, outdir, verify,
+                         username, password)
         logging.captureWarnings(True)
         self.mdprefix = oai_metadata_prefix
         self.oai_set = oai_set
-        self.sickle = Sickle(self.url, max_retries=3, timeout=120, verify=self.verify)
+        self.sickle = Sickle(self.url, max_retries=3, timeout=120, verify=self.verify,
+                             auth=(self.username, self.password))
 
     def identifier(self, record):
         return record.header.identifier

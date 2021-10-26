@@ -9,7 +9,8 @@ import logging
 
 
 class Harvester(object):
-    def __init__(self, community, url, fromdate, clean, limit, outdir, verify=True):
+    def __init__(self, community, url, fromdate, clean, limit, outdir, verify=True,
+                 username=None, password=None):
         self.community = community
         self.url = url
         self.fromdate = fromdate
@@ -18,6 +19,9 @@ class Harvester(object):
         self.outdir = outdir
         self.verify = verify
         self.ext = 'xml'
+        self.username = username
+        self.password = password
+
 
     def identifier(self, record):
         raise NotImplementedError
