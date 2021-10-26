@@ -21,13 +21,14 @@ class DDI25Reader(XMLReader):
         doc.related_identifier = self.find('othrStdyMat')
         doc.rights = self.find('copyright')
         #doc.contact = 
-        #doc.language = self.find('') TODO: abstract attribut auslesen?
-        # doc.temporal_coverage_begin = self.find('timePrd.date, event=start')
-        # doc.temporal_coverage_end = self.find('timePrd.date, event=end')
+        #doc.language = self.find('') TODO: do we choose only en?
+        self.temporal_coverage(doc)
         #doc.geometry = self.find_geometry('geogCover')
-        #doc.places = self.find('geogCover, nation')
+        self.places(doc)
         #doc.size = self.find('extent')
         #doc.version = self.find('hasVersion')
+        doc.funding_reference = self.find('fundAg')
+        #doc.instrument = self.find()
 
     def identifier(self, doc):
         for holdings in self.parser.doc.find_all('holdings'):
@@ -43,7 +44,6 @@ class DDI25Reader(XMLReader):
         if not doc.doi:
             for idno in self.find('IDNo', agency="datacite"):
                 doc.doi = idno
-
 
     def keywords(self,doc):
         keywords = []
@@ -63,6 +63,21 @@ class DDI25Reader(XMLReader):
     def publication_year(self,doc):
         distdate = self.parser.doc.find('distDate')
         if distdate:
-            doc.publication_year = distdate.get('date') 
+            doc.publication_year = distdate.get('date')
+
+    def temporal_coverage(self,doc):
+        tempbegin = self.parser.doc.find('timePrd', event="start")
+        if tempbegin:
+            doc.temporal_coverage_begin_date = tempbegin.get('date')
+        tempend = self.parser.doc.find('timePrd', event="end")
+        if tempend:
+            doc.temporal_coverage_end_date = tempend.get('date')
+
+    def places(self,doc):
+        places = []
+        places.extend(self.find('geogCover'))
+        places.extend(self.find('nation'))
+        doc.places = places
+
 
 
