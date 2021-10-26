@@ -10,11 +10,11 @@ class DDI25Reader(XMLReader):
         self.identifier(doc)
         doc.title = self.find('titl')
         doc.creator = self.find('AuthEnty')
-        doc.keywords = self.find('keyword') #TODO: add method TopcClas
+        self.keywords(doc)
         doc.description = self.find('abstract')
-        doc.publisher = self.find('producer') #TODO: method if producer is missing?
+        self.publisher(doc)
         doc.contributor = self.find('othId')
-        doc.publication_year = self.find('prodDate')
+        self.publication_year(doc)
         doc.resource_type = self.find('dataKind')
         doc.format = self.find('fileType')
         doc.discipline = self.discipline(doc)
@@ -33,7 +33,6 @@ class DDI25Reader(XMLReader):
         for holdings in self.parser.doc.find_all('holdings'):
             URI = holdings.get('URI')
             if not URI:
-                print(self.find('titl'))
                 continue
             if 'doi' in URI:
                 doc.doi = URI
@@ -41,3 +40,29 @@ class DDI25Reader(XMLReader):
                 doc.pid = URI
             else:
                 doc.source = URI
+        if not doc.doi:
+            for idno in self.find('IDNo', agency="datacite"):
+                doc.doi = idno
+
+
+    def keywords(self,doc):
+        keywords = []
+        keywords.extend(self.find('keyword'))
+        keywords.extend(self.find('topcClas'))
+        doc.keywords = keywords
+
+    def publisher(self,doc):
+        publisher = []
+        publisher.extend(self.find('producer'))
+        if not publisher:
+            publisher.extend(self.find('distrbtr'))
+        if not publisher:
+            publisher.append('CESSDA')
+        doc.publisher = publisher
+
+    def publication_year(self,doc):
+        distdate = self.parser.doc.find('distDate')
+        if distdate:
+            doc.publication_year = distdate.get('date') 
+
+
