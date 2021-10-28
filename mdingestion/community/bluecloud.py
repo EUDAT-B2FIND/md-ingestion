@@ -27,7 +27,7 @@ class Bluecloud(Community):
         #doc.creator = self.find('properties.opphav')
         #doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
         #doc.version = self.find('properties.versjonId')
-        doc.title = self.find('Title') or ["Blue-Cloud record"]
+        doc.title = self.find('Title') or self.find('Abstract')
         doc.keywords = self.find('Keywords')
         doc.temporal_coverage_begin_date = self.find('Temporal_Extent_Begin')
         doc.temporal_coverage_end_date = self.find('Temporal_Extent_End')
@@ -35,6 +35,7 @@ class Bluecloud(Community):
         doc.instrument = self.instruments()
         doc.publisher = self.publishers()
 
+    # TODO: fix list problem in json parser = json.py in Carsten weiss wo
     def instruments(self):
         instruments = []
         instruments.extend(self.find('Instruments'))
