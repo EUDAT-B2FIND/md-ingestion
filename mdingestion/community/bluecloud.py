@@ -38,8 +38,8 @@ class Bluecloud(Community):
     # TODO: fix list problem in json parser = json.py in Carsten weiss wo
     def instruments(self):
         instruments = []
-        instruments.extend(self.find('Instruments'))
-        instruments.extend(self.find('Platforms'))
+        instruments.extend(self.reader.parser.doc['Instruments'])
+        instruments.extend(self.reader.parser.doc['Platforms'])
         return instruments
 
     def publishers(self):
@@ -49,12 +49,12 @@ class Bluecloud(Community):
 
     def geometry(self):
         try:
-            south = float(self.find('Bounding_Box_SouthLatitude', one=True)[0])
-            west = float(self.find('Bounding_Box_WestLongitude', one=True)[0])
-            north = float(self.find('Bounding_Box_NorthLatitude', one=True)[0])
-            east = float(self.find('Bounding_Box_EastLongitude', one=True)[0])
+            south = self.reader.parser.doc['Bounding_Box_SouthLatitude']
+            west = self.reader.parser.doc['Bounding_Box_WestLongitude']
+            north = self.reader.parser.doc['Bounding_Box_NorthLatitude']
+            east = self.reader.parser.doc['Bounding_Box_EastLongitude']
             # bbox: minx=west, miny=south, maxx=east, maxy=north
             geometry = shapely.geometry.box(west, south, east, north)
-        except:
+        except Exception:
             geometry = None
         return geometry
