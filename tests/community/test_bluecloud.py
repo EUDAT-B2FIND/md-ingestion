@@ -14,6 +14,7 @@ def test_json_1():
     assert ['RBR_PRES_A', 'RBR_ARGO3', '8979'] == doc.instrument
     assert ['31', 'SIO_IDG', 'ARGO'] == doc.keywords
     assert ['Blue-Cloud', 'EuroArgo – Argo'] == doc.publisher
+    assert ['AOML'] == doc.contributor
     assert '2021' == doc.publication_year
     assert '(-164.679W, -2.201S, -164.310E, -2.081N)' == doc.spatial_coverage
     assert '2021-09-26T08:38:34Z' == doc.temporal_coverage_begin_date
