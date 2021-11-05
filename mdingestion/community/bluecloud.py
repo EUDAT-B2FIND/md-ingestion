@@ -36,17 +36,17 @@ class Bluecloud(Community):
         #doc.relatedIdentifier = self.find('linkAskeladden')
         doc.publication_year = self._find('Last_Update')
         doc.contributor = self._find('Organisations')
-        #doc.language = ['Norwegian']
-        #doc.contact = ['askeladden.hjelp@ra.no']
+        #doc.language = ['']
+        #doc.contact = ['']
         #doc.creator = self.find('properties.opphav')
         #doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
         #doc.version = self.find('properties.versjonId')
         doc.title = self._find('Title') or self._find('Abstract')
-        doc.keywords = self._find('Keywords')
         doc.temporal_coverage_begin_date = self._find('Temporal_Extent_Begin')
         doc.temporal_coverage_end_date = self._find('Temporal_Extent_End')
         doc.geometry = self.geometry()
         doc.instrument = self.instruments()
+        doc.keywords = self.keywords()
         doc.publisher = self.publishers()
 
     # TODO: fix list problem in json parser = json.py in Carsten weiss wo
@@ -56,8 +56,14 @@ class Bluecloud(Community):
         instruments.extend(self._find('Platforms'))
         return instruments
 
+    def keywords(self):
+        keywords = []
+        keywords.extend(self._find('Keywords'))
+        keywords.extend(self._find('Parameters'))
+        return keywords
+
     def publishers(self):
-        publishers = ['Blue-Cloud']
+        publishers = ['Blue-Cloud Data Discovery & Access service']
         publishers.extend(self._find('Source'))
         return publishers
 
