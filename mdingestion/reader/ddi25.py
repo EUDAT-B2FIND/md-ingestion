@@ -18,17 +18,17 @@ class DDI25Reader(XMLReader):
         doc.resource_type = self.find('dataKind')
         doc.format = self.find('fileType')
         doc.discipline = self.discipline(doc)
-        doc.related_identifier = self.find('othrStdyMat')
-        doc.rights = self.find('copyright')
+        self.related_identifier(doc)
+        self.rights(doc)
         #doc.contact = 
-        #doc.language = self.find('') TODO: do we choose only en?
+        self.language(doc)
         self.temporal_coverage(doc)
         #doc.geometry = self.find_geometry('geogCover')
         self.places(doc)
         #doc.size = self.find('extent')
         #doc.version = self.find('hasVersion')
         doc.funding_reference = self.find('fundAg')
-        #doc.instrument = self.find()
+        self.instrument(doc)
 
     def identifier(self, doc):
         for holdings in self.parser.doc.find_all('holdings'):
@@ -45,17 +45,28 @@ class DDI25Reader(XMLReader):
             for idno in self.find('IDNo', agency="datacite"):
                 doc.doi = idno
 
+    def related_identifier(self,doc):
+        related_ids = []
+        related_ids.extend(self.find('othrStdyMat'))
+        related_ids.extend(self.find('sources'))
+        doc.related_identifier = related_ids
+
     def keywords(self,doc):
         keywords = []
         keywords.extend(self.find('keyword'))
         keywords.extend(self.find('topcClas'))
         doc.keywords = keywords
 
+    def language(self,doc)
+        langs = []
+        for holdings in self.parser.doc.find_all('holdings'):
+            langs.append(holdings.get('xml:lang'))
+        doc.language = langs
+
     def publisher(self,doc):
         publisher = []
-        publisher.extend(self.find('producer'))
-        if not publisher:
-            publisher.extend(self.find('distrbtr'))
+        #publisher.extend(self.find('producer'))
+        publisher.extend(self.find('distrbtr'))
         if not publisher:
             publisher.append('CESSDA')
         doc.publisher = publisher
@@ -64,6 +75,18 @@ class DDI25Reader(XMLReader):
         distdate = self.parser.doc.find('distDate')
         if distdate:
             doc.publication_year = distdate.get('date')
+
+    def rights(self,doc):
+        _rights = []
+        _rights.extend(self.find('copyright'))
+        _rights.extend(self.find('restrctn'))
+        doc.rights = _rights
+
+    def instrument(self,doc):
+        instrs = []
+        instrs.extend(self.find('sampProc'))
+        keywords.extend(self.find('collMode'))
+        doc.instrument = instrs
 
     def temporal_coverage(self,doc):
         tempbegin = self.parser.doc.find('timePrd', event="start")
