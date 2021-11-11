@@ -85,7 +85,7 @@ class DDI25Reader(XMLReader):
     def instrument(self,doc):
         instrs = []
         instrs.extend(self.find('sampProc'))
-        keywords.extend(self.find('collMode'))
+        instrs.extend(self.find('collMode'))
         doc.instrument = instrs
 
     def temporal_coverage(self,doc):
