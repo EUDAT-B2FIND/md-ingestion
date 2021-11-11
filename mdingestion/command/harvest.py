@@ -10,7 +10,8 @@ import logging
 
 class Harvest(Command):
 
-    def harvest(self, fromdate=None, clean=False, limit=None, dry_run=False, silent=False):
+    def harvest(self, fromdate=None, clean=False, limit=None, dry_run=False, silent=False,
+                username=None, password=None):
         _communities = communities(self.community)
         for identifier in tqdm(_communities,
                                ascii=True,
@@ -21,13 +22,14 @@ class Harvest(Command):
                                disable=len(_communities) == 1 or silent):
             try:
                 self._harvest(identifier, fromdate=fromdate, clean=clean, limit=limit,
-                              dry_run=dry_run, silent=silent)
+                              dry_run=dry_run, silent=silent, username=username, password=password)
             except Exception:
                 msg = f"Harvesting of {identifier} failed."
                 logging.exception(msg)
                 raise Exception(msg)
 
-    def _harvest(self, identifier, fromdate=None, clean=False, limit=None, dry_run=False, silent=False):
+    def _harvest(self, identifier, fromdate=None, clean=False, limit=None, dry_run=False, silent=False,
+                 username=None, password=None):
         _community = community(identifier)
         _harvester = harvester(
             community=_community.identifier,
@@ -41,7 +43,9 @@ class Harvest(Command):
             clean=clean,
             limit=limit,
             outdir=self.datadir,
-            verify=self.verify)
+            verify=self.verify,
+            username=username,
+            password=password)
         if dry_run:
             raise UserInfo(f'Found records={_harvester.total(limited=False)}')
         for record in tqdm(_harvester.harvest(),
