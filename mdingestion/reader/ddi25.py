@@ -20,7 +20,7 @@ class DDI25Reader(XMLReader):
         doc.discipline = self.discipline(doc)
         self.related_identifier(doc)
         self.rights(doc)
-#       doc.contact = 
+#       doc.contact =
         self.language(doc)
         self.temporal_coverage(doc)
 #       doc.geometry = self.find_geometry('geogCover')
