@@ -22,7 +22,6 @@ class Harvester(object):
         self.username = username
         self.password = password
 
-
     def identifier(self, record):
         raise NotImplementedError
 

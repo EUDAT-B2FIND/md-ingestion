@@ -28,7 +28,7 @@ class Harvest(Command):
                 logging.exception(msg)
                 raise Exception(msg)
 
-    def _harvest(self, identifier, fromdate=None, clean=False, limit=None, dry_run=False, silent=False, 
+    def _harvest(self, identifier, fromdate=None, clean=False, limit=None, dry_run=False, silent=False,
                  username=None, password=None):
         _community = community(identifier)
         _harvester = harvester(

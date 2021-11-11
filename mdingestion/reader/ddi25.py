@@ -20,13 +20,13 @@ class DDI25Reader(XMLReader):
         doc.discipline = self.discipline(doc)
         self.related_identifier(doc)
         self.rights(doc)
-        #doc.contact = 
+#       doc.contact = 
         self.language(doc)
         self.temporal_coverage(doc)
-        #doc.geometry = self.find_geometry('geogCover')
+#       doc.geometry = self.find_geometry('geogCover')
         self.places(doc)
-        #doc.size = self.find('extent')
-        #doc.version = self.find('hasVersion')
+#       doc.size = self.find('extent')
+#       doc.version = self.find('hasVersion')
         doc.funding_reference = self.find('fundAg')
         self.instrument(doc)
 
@@ -65,7 +65,7 @@ class DDI25Reader(XMLReader):
 
     def publisher(self,doc):
         publisher = []
-        #publisher.extend(self.find('producer'))
+#       publisher.extend(self.find('producer'))
         publisher.extend(self.find('distrbtr'))
         if not publisher:
             publisher.append('CESSDA')
@@ -101,6 +101,3 @@ class DDI25Reader(XMLReader):
         places.extend(self.find('geogCover'))
         places.extend(self.find('nation'))
         doc.places = places
-
-
-
