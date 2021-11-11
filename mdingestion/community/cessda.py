@@ -12,3 +12,6 @@ class CessdaDDI25(Community):
     OAI_SET = None
     #PRODUCTIVE = True
     #DATE = '2021-10-20'
+
+    def update(self, doc):
+        doc.discipline = self.discipline(doc, 'Social Sciences')
