@@ -52,10 +52,10 @@ class DDI25Reader(XMLReader):
         doc.related_identifier = related_ids
 
     def keywords(self,doc):
-        keywords = []
-        keywords.extend(self.find('keyword'))
-        keywords.extend(self.find('topcClas'))
-        doc.keywords = keywords
+        _keywords = []
+        _keywords.extend(self.find('keyword'))
+        _keywords.extend(self.find('topcClas'))
+        doc.keywords = _keywords
 
     def language(self,doc):
         langs = []
