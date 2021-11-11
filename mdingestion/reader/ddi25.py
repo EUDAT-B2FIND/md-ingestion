@@ -57,7 +57,7 @@ class DDI25Reader(XMLReader):
         keywords.extend(self.find('topcClas'))
         doc.keywords = keywords
 
-    def language(self,doc)
+    def language(self,doc):
         langs = []
         for holdings in self.parser.doc.find_all('holdings'):
             langs.append(holdings.get('xml:lang'))
