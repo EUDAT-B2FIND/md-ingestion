@@ -10,8 +10,8 @@ class RodareDataCite(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'user-rodare'
-    #PRODUCTIVE = True
-    #DATE = '2021-10-20'
+    PRODUCTIVE = True
+    DATE = '2021-11-16'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Life Sciences; Natural Sciences; Engineering Sciences')
