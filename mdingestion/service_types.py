@@ -17,3 +17,4 @@ class ServiceType(Enum):
     CSW = 1
     HERBADROP = 100
     ArcGIS = 200
+    BC = 300

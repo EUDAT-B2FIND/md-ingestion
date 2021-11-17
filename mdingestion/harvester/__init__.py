@@ -4,6 +4,7 @@ from .herbadrop import HerbadropHarvester
 from .oai import OAIHarvester
 from .csw import CSWHarvester
 from .arcgis import ArcGISHarvester
+from .bc import BlueCloudHarvester
 
 from ..service_types import ServiceType
 
@@ -38,6 +39,16 @@ def harvester(community,
         harvester = CSWHarvester(community, url, schema, fromdate, clean, limit, outdir, verify)
     elif service_type == ServiceType.ArcGIS:
         harvester = ArcGISHarvester(
+            community=community,
+            url=url,
+            filter=filter,
+            fromdate=fromdate,
+            clean=clean,
+            limit=limit,
+            outdir=outdir,
+            verify=verify)
+    elif service_type == ServiceType.BC:
+        harvester = BlueCloudHarvester(
             community=community,
             url=url,
             filter=filter,

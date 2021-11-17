@@ -1,0 +1,34 @@
+{
+    "Abstract": "8979 - 5906739 - Argo SIO",
+    "Bounding_Box_EastLongitude": -164.30957,
+    "Bounding_Box_NorthLatitude": -2.0806899,
+    "Bounding_Box_SouthLatitude": -2.2009101,
+    "Bounding_Box_WestLongitude": -164.67903,
+    "Identifier": "004EC2760F11C211B24C3F35CF95E9FE0E9C4F04",
+    "Instruments": [
+        "RBR_PRES_A",
+        "RBR_ARGO3"
+    ],
+    "Keywords": [
+        "31",
+        "SIO_IDG",
+        "ARGO"
+    ],
+    "Last_Update": "2021-10-31T17:47:21",
+    "OnlineResourceUrl": "https://data.blue-cloud.org/search-details?step=~012004EC2760F11C211B24C3F35CF95E9FE0E9C4F04",
+    "Organisations": [
+        "AOML"
+    ],
+    "Parameters": [
+        "SUBSURFACE PRESSURE",
+        "SUBSURFACE SALINITY",
+        "SUBSURFACE TEMPERATURE"
+    ],
+    "Platforms": [
+        "8979"
+    ],
+    "Source": "EuroArgo – Argo",
+    "Temporal_Extent_Begin": "2021-09-26T08:38:34",
+    "Temporal_Extent_End": "2021-10-09T18:05:02",
+    "Title": "8979 - 5906739 - Argo SIO"
+}
