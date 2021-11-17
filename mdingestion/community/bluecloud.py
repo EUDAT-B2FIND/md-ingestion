@@ -37,7 +37,7 @@ class Bluecloud(Community):
         doc.publication_year = self._find('Last_Update')
         doc.contributor = self._find('Organisations')
         #doc.language = ['']
-        #doc.contact = ['']
+        doc.contact = ['blue-cloud-support@maris.nl']
         #doc.creator = self.find('properties.opphav')
         #doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
         #doc.version = self.find('properties.versjonId')
