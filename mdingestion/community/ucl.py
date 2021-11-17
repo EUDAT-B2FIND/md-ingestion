@@ -10,6 +10,7 @@ class Ucl(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'portal_549'
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.contributor = 'Figshare'

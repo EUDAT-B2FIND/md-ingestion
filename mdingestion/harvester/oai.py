@@ -14,12 +14,15 @@ import logging
 
 class OAIHarvester(Harvester):
 
-    def __init__(self, community, url, oai_metadata_prefix, oai_set, fromdate, clean, limit, outdir, verify):
-        super().__init__(community, url, fromdate, clean, limit, outdir, verify)
+    def __init__(self, community, url, oai_metadata_prefix, oai_set, fromdate, clean, limit, outdir, verify,
+                 username, password):
+        super().__init__(community, url, fromdate, clean, limit, outdir, verify,
+                         username, password)
         logging.captureWarnings(True)
         self.mdprefix = oai_metadata_prefix
-        self.mdsubset = oai_set
-        self.sickle = Sickle(self.url, max_retries=3, timeout=120, verify=self.verify)
+        self.oai_set = oai_set
+        self.sickle = Sickle(self.url, max_retries=3, timeout=120, verify=self.verify,
+                             auth=(self.username, self.password))
 
     def identifier(self, record):
         return record.header.identifier
@@ -39,28 +42,6 @@ class OAIHarvester(Harvester):
             matches = super().matches()
         return matches
 
-    @property
-    def oai_set(self):
-        """
-        TODO: refactor this code ... how to handle oai sets
-        """
-        if self.mdsubset not in self.oai_sets():
-            oai_set = None
-            logging.warning(f"OAI does not support set {self.mdsubset}.")
-        else:
-            oai_set = self.mdsubset
-        return oai_set
-
-    def oai_sets(self):
-        oai_sets = []
-        try:
-            oai_sets = [s.setSpec for s in self.sickle.ListSets()]
-        except NoSetHierarchy:
-            logging.warning("OAI does not support sets.")
-        except Exception:
-            logging.warning("OAI does not support ListSets request.")
-        return oai_sets
-
     def check_metadata_format(self):
         md_formats = None
         try:
@@ -68,7 +49,7 @@ class OAIHarvester(Harvester):
         except Exception:
             logging.warning("OAI does not support ListMetadataFormats request.")
         if md_formats and self.mdprefix not in md_formats:
-            raise HarvesterError(
+            logging.error(
                 f'The metadata format {self.mdprefix} is not supported by the OAI repository. Formats={md_formats}')
 
     def get_records(self):
@@ -85,7 +66,7 @@ class OAIHarvester(Harvester):
             for record in records:
                 yield record
         except NoRecordsMatch:
-            raise HarvesterError(f'No records match the OAI query. from={self.fromdate}, set={self.mdsubset}')
+            logging.warning(f'No records match the OAI query. from={self.fromdate}')
         except CannotDisseminateFormat:
             raise HarvesterError(f'The metadata format {self.mdprefix} is not supported by the OAI repository.')
 

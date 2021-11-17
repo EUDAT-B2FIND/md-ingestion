@@ -10,3 +10,5 @@ class DarusDatacite(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
+    PRODUCTIVE = True
+    DATE = '2020-09-20'

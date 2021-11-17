@@ -14,7 +14,7 @@ def test_dara_rki():
     assert 'Neuerungen in den aktuellen Empfehlungen' in doc.title[0]
     # assert 'Data on Austrian open access' in doc.description[0]
     assert ['Robert Koch-Institut'] == doc.creator
-    assert 'Public Health' in doc.discipline
+    assert 'Public Health' in doc.discipline[0]
     assert doc.open_access is True
     assert 'metadataPrefix=oai_dc&identifier=oai:oai.da-ra.de:461204' in doc.metadata_access
     assert doc.publication_year == '2015'
@@ -32,7 +32,7 @@ def test_dara_icpsr():
     assert 'Integrated Postsecondary Education Data System (IPEDS)' in doc.title[0]
     # assert 'Data on Austrian open access' in doc.description[0]
     assert ['United States Department of Education. National Center for Education Statistics'] == doc.creator
-    assert 'Various' in doc.discipline
+    assert 'Social Sciences' in doc.discipline
     assert doc.open_access is True
     assert 'metadataPrefix=oai_dc&identifier=oai:oai.da-ra.de:440957' in doc.metadata_access
     assert doc.publication_year == '2004'
@@ -50,7 +50,7 @@ def test_dara_srda():
     assert 'Taiwan Fertility and Family Survey, 1998(Restricted Access Data)' in doc.title[0]
     # assert 'Data on Austrian open access' in doc.description[0]
     assert ['Health Promotion Administration, Ministry of Health and Welfare'] == doc.creator
-    assert 'Various' in doc.discipline
+    assert 'Empirical Social Research' in doc.discipline
     assert doc.open_access is True
     assert 'metadataPrefix=oai_dc&identifier=oai:oai.da-ra.de:549364' in doc.metadata_access
     assert doc.publication_year == '2014'

@@ -28,3 +28,6 @@ docs/_build
 
 # summary
 summary.json
+
+# jupyter notebooks
+.ipynb_checkpoints/

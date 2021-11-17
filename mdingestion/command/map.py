@@ -1,5 +1,4 @@
 import os
-import pathlib
 from tqdm import tqdm
 
 from .base import Command
@@ -14,16 +13,12 @@ import logging
 class Map(Command):
     def __init__(self, **args):
         super().__init__(**args)
-        self.walker = Walker(self.outdir)
+        self.walker = Walker(self.datadir)
         # self._community = community(self.community)
         self.writer = None
         self.summary = {}
 
-    def run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None, silent=False):
-        summary_path = pathlib.Path(summary_dir)
-        if not summary_path.is_absolute():
-            summary_path = pathlib.Path.cwd().joinpath(summary_path)
-        summary_dir = summary_path.absolute().as_posix()
+    def run(self, format=format, force=False, linkcheck=True, limit=None, silent=False):
         # TODO: refactor community loop
         _communities = communities(self.community)
         show = len(_communities) == 1 and not silent
@@ -35,7 +30,7 @@ class Map(Command):
                                total=len(_communities),
                                disable=len(_communities) == 1 or silent):
             self._community = community(identifier)
-            self._run(format=format, force=force, linkcheck=linkcheck, limit=limit, summary_dir=summary_dir,
+            self._run(format=format, force=force, linkcheck=linkcheck, limit=limit,
                       show=show, silent=silent)
         if len(_communities) > 1 and not silent:
             self.print_concise_summary()
@@ -46,7 +41,7 @@ class Map(Command):
             summary = self.summary[name]
             print(f"\t{name}: {summary['valid']}/{summary['total']}")
 
-    def _run(self, format=format, force=False, linkcheck=True, limit=None, summary_dir=None,
+    def _run(self, format=format, force=False, linkcheck=True, limit=None,
              show=True, silent=False):
         limit = limit or -1
         # TODO: refactor writer init
@@ -55,6 +50,7 @@ class Map(Command):
         validator = Validator(linkcheck=linkcheck)
         validator.summary['_invalid_files_'] = []
         count = 0
+        success = True
         for filename in tqdm(self.walk(), ascii=True, desc=f"Map {self._community.identifier} to {format}",
                              unit=' records', total=limit, disable=silent):
             if limit > 0 and count >= limit:
@@ -67,11 +63,14 @@ class Map(Command):
                 validator.summary['written'] += 1
             else:
                 logging.warning(f"validation failed: {filename}")
+                success = False
                 validator.summary['_invalid_files_'].append(filename)
             count += 1
         validator.summary['_errors_'] = self._community.errors
-        validator.write_summary(prefix=self._community.identifier, outdir=summary_dir, show=show)
+        validator.write_summary(prefix=self._community.identifier, outdir=self.summary_dir, show=show)
         self.summary[self._community.identifier] = validator.concise_summary()
+        if not success:
+            logging.warning(f"some files are not valid. community={self._community.identifier}")
 
     def walk(self):
         path = os.path.join(self._community.identifier, 'raw')

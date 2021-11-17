@@ -10,6 +10,7 @@ class EssDatacite(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
+    PRODUCTIVE = True
     # harvesting with: b2f harvest -c ess -k
 
     def update(self, doc):

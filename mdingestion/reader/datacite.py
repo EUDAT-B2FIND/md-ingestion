@@ -22,10 +22,10 @@ class DataCiteReader(XMLReader):
         doc.contributor = self.find('contributorName')
         doc.funding_reference = self.funding_reference()
         doc.publication_year = self.publication_year()
-        doc.rights = self.find('rights')
+        doc.rights = self.rights()
         doc.contact = self.contact()
         doc.language = self.find('language')
-        doc.resource_type = self.find('resourceType')
+        doc.resource_type = self.resource_type()
         doc.format = self.find('format')
         doc.size = self.find('size')
         doc.version = self.find('metadata.version')
@@ -44,6 +44,14 @@ class DataCiteReader(XMLReader):
         if not year:
             year = self.find('header.datestamp')
         return year
+
+    def rights(self):
+        rights = self.find('rights')
+        for right in self.parser.doc.find_all('rights'):
+            URI = right.get('rightsURI')
+            if URI:
+                rights.append(URI)
+        return rights
 
     def creator(self):
         creators = []
@@ -67,11 +75,26 @@ class DataCiteReader(XMLReader):
             contacts.append(name)
         return contacts
 
+    def resource_type(self):
+        resource_types = self.find('resourceType')
+        for resource_type in self.parser.doc.find_all('resourceType'):
+            attribute = resource_type.get('resourceTypeGeneral')
+            if attribute:
+                resource_types.append(attribute)
+        return resource_types
+
     def funding_reference(self):
-        funding_reference = self.find('fundingReferences.funderName')
-        if not funding_reference:
-            funding_reference = self.find('contributor', contributorType="Funder")
-        return funding_reference
+        funding_refs = []
+        for funding_reference in self.parser.doc.find_all('fundingReference'):
+            funder_name = format_value(funding_reference.funderName.text, one=True)
+            if funding_reference.awardNumber:
+                award_number = format_value(funding_reference.awardNumber.text, type='string_words', one=True)
+                if award_number:
+                    funder_name = f"{funder_name}, {award_number}"
+            funding_refs.append(funder_name)
+        if not funding_refs:
+            funding_refs = self.find('contributor', contributorType="Funder")
+        return funding_refs
 
     def geometry(self):
         """

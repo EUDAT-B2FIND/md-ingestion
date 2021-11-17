@@ -21,7 +21,7 @@ def is_open_access(rights, closed_access_rights=None):
         _closed_access_rights.extend(closed_access_rights)
     for lic in _closed_access_rights:
         for _right in _rights:
-            if lic in _right:
+            if lic.lower() in _right.lower():
                 open_access = False
                 break
     return open_access

@@ -9,7 +9,7 @@ def test_rights():
     xmlfile = os.path.join(TESTDATA_DIR, 'danseasy', 'raw', '6ab25834-a565-5d61-b77d-f08f5b3c7b14.xml')  # noqa
     reader = DanseasyDatacite()
     doc = reader.read(xmlfile)
-    assert ['info:eu-repo/semantics/closedAccess', 'DANS License'] == doc.rights
+    assert ['info:eu-repo/semantics/closedAccess', 'DANS License', 'https://dans.knaw.nl/en/about/organisation-and-policy/legal-information/DANSLicence.pdf'] == doc.rights
     assert doc.open_access is False
 
 
@@ -17,7 +17,7 @@ def test_geo_point():
     xmlfile = os.path.join(TESTDATA_DIR, 'danseasy', 'raw', '989ff5fa-d6d3-52c0-a6c3-41bf01236231.xml')  # noqa
     reader = DanseasyDatacite()
     doc = reader.read(xmlfile)
-    assert ['info:eu-repo/semantics/openAccess', 'DANS License'] == doc.rights
+    assert ['info:eu-repo/semantics/openAccess', 'DANS License', 'https://dans.knaw.nl/en/about/organisation-and-policy/legal-information/DANSLicence.pdf'] == doc.rights
     assert doc.open_access is True
     assert '(6.197 LON, 52.714 LAT); Plangebied Eekhorstweg 22; Meppel; Drenthe' == doc.spatial_coverage
     assert '{"type":"Point","coordinates": [6.20,52.71]}' == doc.spatial

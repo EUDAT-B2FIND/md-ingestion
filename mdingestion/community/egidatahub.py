@@ -6,10 +6,11 @@ class EgidatahubDublinCore(Community):
     NAME = 'egidatahub'
     IDENTIFIER = 'egidatahub'
     URL = 'http://datahub.egi.eu/oai_pmh'
+    OAI_SET = 'eeaa135fa0822240a3cd4ac2ba5ce1fb'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
-    OAI_SET = None
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.contributor = ['EGI Datahub']

@@ -10,6 +10,7 @@ class Herbadrop(Community):
     URL = 'https://opendata.cines.fr/herbadrop-api/rest/data/search'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.HERBADROP
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.title = self.find('metadata."aip.dc.title".lat')

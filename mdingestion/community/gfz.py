@@ -10,6 +10,7 @@ class GfzDatacite(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.GFZ'
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geosciences')

@@ -18,9 +18,9 @@ def test_similarity():
     assert round(classify.similarity(
         'Computer and Information Science', 'Computer Information Science'), 2) == 0.93
     assert round(classify.similarity(
-        'rock mechanics', 'Mechanicsy'), 2) == 0.75
+        'rock mechanics', 'Mechanics'), 2) == 0.78
     assert round(classify.similarity(
-        'mechanics', 'Mechanicsy'), 2) == 0.95
+        'mechanics', 'Mechanics'), 2) == 1.0
     assert round(classify.similarity(
         'Earth and Environmental Sciences', 'Earth System Research'), 2) == 0.45
     assert round(classify.similarity(
@@ -52,11 +52,11 @@ def test_map_discipline():
     assert classifier.map_discipline(['Engineering', 'Scientific satellites', 'Aerospace telemetry']) == \
         ('Engineering', ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
     assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == \
-        ('Various', [])
+        ('Other', [])
     assert classifier.map_discipline(['Humanities', 'Engineering']) == \
         ('Humanities;Engineering', ['1', 'Humanities', 'Humanities'])
     assert classifier.map_discipline('Earth and Environmental Sciences') == \
-        ('Various', [])
+        ('Earth and Environmental Science', ['4.4.7.02', 'Environmental Research', 'Earth and Environmental Science'])
 
 
 def test_map_discipline_darus():
@@ -68,26 +68,26 @@ def test_map_discipline_darus():
         'Carrara marble',
         'micro X ray computed tomography',
         'cracks', 'fractures', 'rock mechanics']) == \
-        ('Engineering;Mechanicsy;Computer Information Science',
-         ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
+        ('Engineering;Mechanics;Earth and Environmental Science',
+            ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
     assert classifier.map_discipline([
         'Agricultural Sciences',
         'Computer and Information Science',
         'Earth and Environmental Sciences']) == \
-        ('Agricultural Sciences;Computer Information Science',
-         ['3.3.1.10', 'Agriculture, Forestry, Horticulture', 'Agricultural Sciences'])
+        ('Agricultural Sciences;Earth and Environmental Science',
+         ['3.3.1.11', 'Agriculture, Forestry, Horticulture, Aquaculture', 'Agricultural Sciences'])
     assert classifier.map_discipline(
         ['Arts and Humanities',
          'Computer and Information Science',
          'JSON', 'schema', 'process metadata']) == \
-        ('Humanities;Computer Information Science', ['1', 'Humanities', 'Humanities'])
+        ('Humanities', ['1', 'Humanities', 'Humanities'])
     assert classifier.map_discipline(['Medicine Health and Life Sciences', 'protein domain']) == \
         ('Medicine', ['3.2.2', 'Medicine', 'Medicine'])
     assert classifier.map_discipline(['Chemistry']) == \
         ('Chemistry', ['4.1', 'Natural Sciences', 'Chemistry'])
     assert classifier.map_discipline('Social Sciences') == \
-        ('Social Sciences', ['2.3.5', 'Social Sciences', 'Social Sciences'])
+        ('Social Sciences', ['2.3', 'Social and Behavioural Sciences', 'Social Sciences'])
     assert classifier.map_discipline(['Social Sciences']) == \
-        ('Social Sciences', ['2.3.5', 'Social Sciences', 'Social Sciences'])
+        ('Social Sciences', ['2.3', 'Social and Behavioural Sciences', 'Social Sciences'])
     assert classifier.map_discipline('other') == \
-        ('Various', [])
+        ('Other', [])
