@@ -7,7 +7,7 @@ class SchemaType(Enum):
     ISO19139 = 2
     FGDC = 3
     FF = 4
-    DDI = 5
+    DDI25 = 5
     Eudatcore = 6
     JSON = 100
 

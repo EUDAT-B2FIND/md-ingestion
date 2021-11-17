@@ -10,8 +10,8 @@ class DaticeDatacite(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'GESIS.SSRI'
-    PRODUCTIVE = False
-    Date = ''
+    PRODUCTIVE = True
+    Date = '2021-08-20'
 
     def update(self, doc):
         doc.discipline = 'Social Sciences'

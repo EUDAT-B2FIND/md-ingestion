@@ -66,19 +66,22 @@ def list(ctx, community, summary, productive, out):
 @click.option('--clean', is_flag=True, help='Clean output folder before harvesting')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
+@click.option('--username', '-u', help='Username for secured OAI server')
+@click.option('--password', '-p', help='Password for secured OAI server')
 @click.pass_context
-def harvest(ctx, community, url, fromdate, clean, limit, insecure):
+def harvest(ctx, community, url, fromdate, clean, limit, insecure, username, password):
     try:
         cmd = Harvest(
             community=community,
             url=url,
             outdir=ctx.obj['outdir'],
-            verify=not insecure,
+            verify=not insecure
         )
         if fromdate:
             fromdate = str(fromdate.date())
         cmd.harvest(fromdate=fromdate, clean=clean, limit=limit,
-                    dry_run=ctx.obj['dry_run'], silent=ctx.obj['silent'])
+                    dry_run=ctx.obj['dry_run'], silent=ctx.obj['silent'],
+                    username=username, password=password)
     except UserInfo as e:
         click.echo(f'{e}')
     except Exception as e:
