@@ -1,11 +1,6 @@
 from .base import Community
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
-<<<<<<< HEAD
-
-
-class DataverseNODatacite(Community):
-=======
 import pandas as pd
 import os
 
@@ -16,7 +11,6 @@ DF = pd.read_csv(open(FNAME))
 
 
 class INRAEDatacite(Community):
->>>>>>> master
     NAME = 'inrae'
     IDENTIFIER = 'inrae'
     URL = 'https://data.inrae.fr/oai'
@@ -24,10 +18,7 @@ class INRAEDatacite(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'NoGeneticResource'
-<<<<<<< HEAD
-=======
     PRODUCTIVE = True
->>>>>>> master
 
     def update(self, doc):
         handle = format_value(self.find('resource.identifier', identifierType="Handle"), one=True)
@@ -36,14 +27,6 @@ class INRAEDatacite(Community):
             urls.append(f'http://hdl.handle.net/{handle}')
             doc.pid = urls
         if not doc.publisher:
-<<<<<<< HEAD
-            doc.publisher = 'INRAe'
-
-    # def keywords(self, doc):
-        # keywords = doc.keywords
-        # keywords.append('EOSC Nordic')
-        # return keywords
-=======
             doc.publisher = 'INRAE'
         doc.discipline = self.discipline_mapping(doc, doc.keywords)
 
@@ -61,4 +44,3 @@ class INRAEDatacite(Community):
             else:
                 values.extend(self.discipline(doc, [subject]).split(';'))
         return values
->>>>>>> master
