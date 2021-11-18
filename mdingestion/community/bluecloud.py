@@ -11,6 +11,8 @@ def fix_list(value):
     if value:
         if isinstance(value, list):
             fix = value
+        elif isinstance(value, dict):
+            fix = list(value.values())
         else:
             fix = [value]
     else:
@@ -33,6 +35,7 @@ class Bluecloud(Community):
         doc.discipline = ['Marine Science']
         doc.description = self._find('Abstract')
         doc.source = self._find('OnlineResourceUrl')
+        #print(doc.source)
         #doc.relatedIdentifier = self.find('linkAskeladden')
         doc.publication_year = self._find('Last_Update')
         doc.contributor = self._find('Organisations')
