@@ -5,7 +5,7 @@ from ..service_types import SchemaType, ServiceType
 class FMI(Community):
     NAME = 'fmi'
     IDENTIFIER = NAME
-    URL = 'https://hy.b2share.csc.fi/api/oai2d'
+    URL = 'https://fmi.b2share.csc.fi/api/oai2d'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'

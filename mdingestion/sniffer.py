@@ -6,6 +6,8 @@ def sniffer(service_type=None):
         sniffer = CSWSniffer
     elif service_type == ServiceType.ArcGIS:
         sniffer = ArcGISSniffer
+    elif service_type == ServiceType.BC:
+        sniffer = BlueCloudSniffer
     else:
         sniffer = OAISniffer
     return sniffer
@@ -55,6 +57,18 @@ class ArcGISSniffer(CatalogSniffer):
         identifier = self.parser.find('properties.OBJECTID')[0]
         if identifier:
             mdaccess = f"{doc.url}?objectIds={identifier}&outFields=*&returnGeometry=true&f=geojson"
+        else:
+            mdaccess = None
+        return mdaccess
+
+class BlueCloudSniffer(CatalogSniffer):
+    def update(self, doc):
+        doc.metadata_access = self.metadata_access(doc)
+
+    def metadata_access(self, doc):
+        identifier = self.parser.find('Identifier')[0]
+        if identifier:
+            mdaccess = f"{doc.url}/{identifier}"
         else:
             mdaccess = None
         return mdaccess
