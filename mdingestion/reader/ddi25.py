@@ -11,7 +11,7 @@ class DDI25Reader(XMLReader):
         doc.title = self.find('titl')
         doc.creator = self.find('AuthEnty')
         self.keywords(doc)
-        doc.description = self.find('abstract')
+        self.description(doc)
         self.publisher(doc)
         doc.contributor = self.find('othId')
         self.publication_year(doc)
@@ -20,7 +20,7 @@ class DDI25Reader(XMLReader):
         doc.discipline = self.discipline(doc)
         self.related_identifier(doc)
         self.rights(doc)
-#       doc.contact =
+        self.contact(doc)
         self.language(doc)
         self.temporal_coverage(doc)
 #       doc.geometry = self.find_geometry('geogCover')
@@ -28,7 +28,7 @@ class DDI25Reader(XMLReader):
 #       doc.size = self.find('extent')
 #       doc.version = self.find('hasVersion')
         doc.funding_reference = self.find('fundAg')
-        self.instrument(doc)
+#       doc.instrument = self.find('')
 
     def identifier(self, doc):
         for holdings in self.parser.doc.find_all('holdings'):
@@ -71,6 +71,11 @@ class DDI25Reader(XMLReader):
             publisher.append('CESSDA')
         doc.publisher = publisher
 
+    def contact(self,doc):
+        _contact = self.parser.doc.find('distrbtr')
+        if _contact:
+            doc.contact = _contact.get('URI')
+
     def publication_year(self,doc):
         distdate = self.parser.doc.find('distDate')
         if distdate:
@@ -82,11 +87,12 @@ class DDI25Reader(XMLReader):
         _rights.extend(self.find('restrctn'))
         doc.rights = _rights
 
-    def instrument(self,doc):
-        instrs = []
-        instrs.extend(self.find('sampProc'))
-        instrs.extend(self.find('collMode'))
-        doc.instrument = instrs
+    def description(self,doc):
+        descr = []
+        descr.extend(self.find('abstract'))
+        descr.extend(self.find('sampProc'))
+        descr.extend(self.find('collMode'))
+        doc.description = descr
 
     def temporal_coverage(self,doc):
         tempbegin = self.parser.doc.find('timePrd', event="start")
