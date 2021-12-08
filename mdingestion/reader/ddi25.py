@@ -12,7 +12,8 @@ class DDI25Reader(XMLReader):
         doc.creator = self.find('AuthEnty')
         self.keywords(doc)
         self.description(doc)
-        self.publisher(doc)
+        doc.publisher = self.find('producer')
+#        self.publisher(doc)
         doc.contributor = self.find('othId')
         self.publication_year(doc)
         doc.resource_type = self.find('dataKind')
@@ -63,13 +64,10 @@ class DDI25Reader(XMLReader):
             langs.append(holdings.get('xml:lang'))
         doc.language = langs
 
-    def publisher(self,doc):
-        publisher = []
+#    def publisher(self,doc):
+#        publisher = []
 #       publisher.extend(self.find('producer'))
-        publisher.extend(self.find('distrbtr'))
-        if not publisher:
-            publisher.append('CESSDA')
-        doc.publisher = publisher
+#        publisher.extend(self.find('distrbtr'))
 
     def contact(self,doc):
         _contact = self.parser.doc.find('distrbtr')

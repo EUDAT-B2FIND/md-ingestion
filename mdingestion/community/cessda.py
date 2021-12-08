@@ -15,3 +15,11 @@ class CessdaDDI25(Community):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Social Sciences')
+        doc.publisher = self.publisher()
+
+    def publisher(self):
+        publisher = []
+        publisher.extend(self.find('distrbtr'))
+        if not publisher:
+            publisher.append('CESSDA')
+        return publisher
