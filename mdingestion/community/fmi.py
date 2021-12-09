@@ -16,10 +16,10 @@ class FMI(Community):
         doc.publisher = 'Finnish Meteorological Institute'
         doc.keywords = self.keywords()
         doc.language = self.language()
-        #self.identifier(doc)
-        # doc.funding_reference = self.find('Funder')
+        self._identifier(doc)
+        #doc.funding_reference = self.find('Funder')
 
-    def identifier(self, doc):
+    def _identifier(self, doc):
         for id in self.find('identifier'):
             if 'doi:' in id:
                 doc.doi = id.split('doi:')[-1]
