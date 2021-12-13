@@ -12,8 +12,8 @@ def test_json_1():
     assert ['8979 - 5906739 - Argo SIO'] == doc.title
     assert 'https://data.blue-cloud.org/search-details?step=~012004EC2760F11C211B24C3F35CF95E9FE0E9C4F04' == doc.source
     assert ['RBR_PRES_A', 'RBR_ARGO3', '8979'] == doc.instrument
-    assert ['31', 'SIO_IDG', 'ARGO'] == doc.keywords
-    assert ['Blue-Cloud', 'EuroArgo – Argo'] == doc.publisher
+    assert ['31', 'SIO_IDG', 'ARGO', 'SUBSURFACE PRESSURE', 'SUBSURFACE SALINITY', 'SUBSURFACE TEMPERATURE'] == doc.keywords
+    assert ['Blue-Cloud Data Discovery & Access service', 'EuroArgo – Argo'] == doc.publisher
     assert ['AOML'] == doc.contributor
     assert '2021' == doc.publication_year
     assert '(-164.679W, -2.201S, -164.310E, -2.081N)' == doc.spatial_coverage

@@ -61,6 +61,7 @@ class ArcGISSniffer(CatalogSniffer):
             mdaccess = None
         return mdaccess
 
+
 class BlueCloudSniffer(CatalogSniffer):
     def update(self, doc):
         doc.metadata_access = self.metadata_access(doc)

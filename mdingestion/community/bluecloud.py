@@ -35,15 +35,15 @@ class Bluecloud(Community):
         doc.discipline = ['Marine Science']
         doc.description = self._find('Abstract')
         doc.source = self._find('OnlineResourceUrl')
-        #print(doc.source)
-        #doc.relatedIdentifier = self.find('linkAskeladden')
+        # print(doc.source)
+        # doc.relatedIdentifier = self.find('linkAskeladden')
         doc.publication_year = self._find('Last_Update')
         doc.contributor = self._find('Organisations')
-        #doc.language = ['']
+        # doc.language = ['']
         doc.contact = ['blue-cloud-support@maris.nl']
-        #doc.creator = self.find('properties.opphav')
-        #doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
-        #doc.version = self.find('properties.versjonId')
+        # doc.creator = self.find('properties.opphav')
+        # doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
+        # doc.version = self.find('properties.versjonId')
         doc.title = self._find('Title') or self._find('Abstract')
         doc.temporal_coverage_begin_date = self._find('Temporal_Extent_Begin')
         doc.temporal_coverage_end_date = self._find('Temporal_Extent_End')

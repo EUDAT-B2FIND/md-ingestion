@@ -17,7 +17,7 @@ class FMI(Community):
         doc.keywords = self.keywords()
         doc.language = self.language()
         self._identifier(doc)
-        #doc.funding_reference = self.find('Funder')
+        # doc.funding_reference = self.find('Funder')
 
     def _identifier(self, doc):
         for id in self.find('identifier'):
