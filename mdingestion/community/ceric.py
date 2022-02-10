@@ -13,6 +13,4 @@ class CERICDatacite(Community):
 
     def update(self, doc):
         doc.discipline = 'Particles, Nuclei and Fields'
-        doc.open_access = True
-#        doc.doi = ""
-        doc.source = self.find("datacite:identifier", identifierType='URL')
+        doc.source = self.find("datacite:identifier")
