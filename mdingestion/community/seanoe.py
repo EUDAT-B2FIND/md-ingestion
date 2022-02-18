@@ -13,7 +13,7 @@ class Seanoe(Community):
     PRODUCTIVE = True
 
     def update(self, doc):
-        doc.related_identifier = self.find('references')
+        doc.related_identifier = self.find('relation')
         doc.discipline = self.discipline(doc, 'Marine Science')
         doc.keywords = self.keywords(doc)
         if not doc.publisher:
