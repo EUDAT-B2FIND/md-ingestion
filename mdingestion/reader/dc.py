@@ -21,6 +21,7 @@ class DublinCoreReader(XMLReader):
         doc.contributor = self.find('contributor')
         doc.publication_year = self.find('date')
         doc.rights = self.find('rights')
+        doc.funding_reference = self.funding_reference()
         doc.contact = doc.publisher
         doc.language = self.find('language')
         doc.resource_type = self.find('type')
@@ -36,6 +37,10 @@ class DublinCoreReader(XMLReader):
         urls = self.find('relation')
         urls.extend(self.find('source'))
         return urls
+
+    def funding_reference(self):
+        funding_refs = [info for info in self.find('relation') if 'info:eu-repo/grantAgreement' in info]
+        return funding_refs
 
     def places(self):
         places = [s.text.strip() for s in self.parser.doc.find_all('spatial') if not s.attrs]
