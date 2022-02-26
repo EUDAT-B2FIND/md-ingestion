@@ -85,17 +85,13 @@ class CKANWriter(Writer):
             'Size': doc.size,
             'Version': doc.version,
             'Discipline': doc.discipline,
-            'DiscHierarchy': [],
+            # 'DiscHierarchy': [],
             'SpatialCoverage': doc.spatial_coverage,
             'spatial': doc.spatial,
             'TemporalCoverage': doc.temporal_coverage,
             'TemporalCoverage:BeginDate': doc.temporal_coverage_begin_date,
             'TemporalCoverage:EndDate': doc.temporal_coverage_end_date,
-            'TempCoverageBegin': doc.temp_coverage_begin,
-            'TempCoverageEnd': doc.temp_coverage_end,
         }
-        if doc.publication_year:
-            data['PublicationTimestamp'] = f"{doc.publication_year}-01-01T12:00:00Z"
         # build date range field for temporal coverage
         # https://solr.apache.org/guide/6_6/working-with-dates.html
         if doc.temporal_coverage_begin_date or doc.temporal_coverage_end_date:
