@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 import shapely
+from shapely import wkt
 from dateutil import parser as date_parser
 from pathlib import Path
 import json
@@ -301,7 +302,10 @@ class GeoDoc(BaseDoc):
 
     @property
     def spatial(self):
-        return self.format_geometry()
+        if not self.geometry:
+            return None
+        # return self.format_geometry()
+        return wkt.dumps(self.geometry)
 
     @property
     def geometry(self):
@@ -331,6 +335,15 @@ class GeoDoc(BaseDoc):
             return None
         bbox = shapely.geometry.box(*self.geometry.bounds)
         return shapely.geometry.mapping(bbox)
+
+    @property
+    def envelope(self):
+        if not self.geometry:
+            return None
+        # bounds: minx, miny, maxx, maxy
+        # envelop: minX, maxX, maxY, minY
+        return "ENVELOPE({0}, {2}, {3}, {1})".format(
+            *self.geometry.bounds)
 
     @property
     def temporal_coverage(self):

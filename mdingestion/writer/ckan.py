@@ -88,6 +88,7 @@ class CKANWriter(Writer):
             # 'DiscHierarchy': [],
             'SpatialCoverage': doc.spatial_coverage,
             'spatial': doc.spatial,
+            'bbox': doc.envelope,
             'TemporalCoverage': doc.temporal_coverage,
             'TemporalCoverage:BeginDate': doc.temporal_coverage_begin_date,
             'TemporalCoverage:EndDate': doc.temporal_coverage_end_date,
