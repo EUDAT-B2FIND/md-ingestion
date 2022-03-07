@@ -55,7 +55,7 @@ class B2FWriter(Writer):
             'version': doc.version,
             'discipline': doc.discipline,
             'spatial_coverage': doc.spatial_coverage,
-            'spatial': doc.spatial,
+            'spatial': doc.wkt,
             'temporal_coverage': doc.temporal_coverage,
             'temporal_coverage_begin_date': doc.temporal_coverage_begin_date,
             'temporal_coverage_end_date': doc.temporal_coverage_end_date,

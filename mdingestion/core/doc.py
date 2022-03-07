@@ -284,7 +284,7 @@ class GeoDoc(BaseDoc):
         return geom
 
     @property
-    def spatial(self):
+    def wkt(self):
         if not self.geometry:
             return None
         return wkt.dumps(self.geometry)
@@ -304,12 +304,6 @@ class GeoDoc(BaseDoc):
     @places.setter
     def places(self, value):
         self._places = value
-
-    @property
-    def geojson(self):
-        if not self.geometry:
-            return ''
-        return shapely.geometry.mapping(self.geometry)
 
     @property
     def bbox(self):
