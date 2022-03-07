@@ -283,28 +283,10 @@ class GeoDoc(BaseDoc):
                 geom = f"({bounds[0]:.3f}W, {bounds[1]:.3f}S, {bounds[2]:.3f}E, {bounds[3]:.3f}N)"
         return geom
 
-    def format_geometry(self):
-        geom = ''
-        if self.geometry:
-            if self.geometry.geom_type == 'Point':
-                point = self.geometry
-                x = f"{point.x:.2f}"
-                y = f"{point.y:.2f}"
-                geom = "{\"type\":\"Point\",\"coordinates\": [%s,%s]}" % (x, y)
-            else:
-                bounds = self.geometry.bounds
-                w = f"{bounds[0]:.2f}"
-                s = f"{bounds[1]:.2f}"
-                e = f"{bounds[2]:.2f}"
-                n = f"{bounds[3]:.2f}"
-                geom = "{\"type\":\"Polygon\",\"coordinates\": [[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (w, s, w, n, e, n, e, s, w, s)  # noqa
-        return geom
-
     @property
     def spatial(self):
         if not self.geometry:
             return None
-        # return self.format_geometry()
         return wkt.dumps(self.geometry)
 
     @property
