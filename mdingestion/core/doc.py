@@ -287,7 +287,7 @@ class GeoDoc(BaseDoc):
     def wkt(self):
         if not self.geometry:
             return None
-        return wkt.dumps(self.geometry)
+        return wkt.dumps(self.geometry.centroid)
 
     @property
     def geometry(self):
