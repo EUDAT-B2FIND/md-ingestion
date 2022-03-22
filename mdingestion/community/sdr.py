@@ -16,6 +16,7 @@ class SDRDublinCore(Community):
     def update(self, doc):
         doc.contact = self.contact(doc)
         doc.keywords = self.keywords_(doc)
+        doc.publication_year = self.publication_year(doc)
 
     def contact(self, doc):
         contacts = []
@@ -35,3 +36,12 @@ class SDRDublinCore(Community):
                 lc_keywords = [k.lower() for k in new_keywords]
                 keywords.extend(lc_keywords)
         return keywords
+
+    def publication_year(self,doc):
+        pubyear = doc.publication_year
+        embargo = 'info:eu-repo/date/embargoEnd/'
+        for date in self.find('date'):
+            if embargo in date:
+                pubyear = date.split(embargo)[1]
+                break
+        return pubyear
