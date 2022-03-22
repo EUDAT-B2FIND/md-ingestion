@@ -191,12 +191,14 @@ def format_url(text):
         pass
     elif parsed.scheme == 'urn':
         url = resolve_urn(url)
+    elif parsed.scheme == 'hdl':
+        url = f"https://hdl.handle.net/{parsed.path}"
     elif parsed.scheme == 'ark':
         url = resolve_ark(url)
     elif parsed.scheme == 'doi' or parsed.path.startswith('10.'):
         url = f"https://doi.org/{parsed.path}"
     elif 'epic' in parsed.path:
-        url = f"http://hdl.handle.net/{parsed.path}"
+        url = f"https://hdl.handle.net/{parsed.path}"
     elif len(parsed.path) == 19:
         url = resolve_bibcode(url)
     else:
