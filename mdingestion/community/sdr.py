@@ -15,6 +15,7 @@ class SDRDublinCore(Community):
 
     def update(self, doc):
         doc.contact = self.contact(doc)
+        doc.keywords = self.keywords_(doc)
 
     def contact(self, doc):
         contacts = []
@@ -23,3 +24,14 @@ class SDRDublinCore(Community):
             if '@' in relation:
                 contacts.append(relation)
         return contacts
+
+    def keywords_(self, doc):
+        keywords = []
+        keywords.extend(doc.keywords)
+        arrow = chr(8594)
+        for relation in self.find('relation'):
+            if arrow in relation:
+                new_keywords = relation.split(arrow)[1:]
+                lc_keywords = [k.lower() for k in new_keywords]
+                keywords.extend(lc_keywords)
+        return keywords
