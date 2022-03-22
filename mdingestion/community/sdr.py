@@ -14,5 +14,12 @@ class SDRDublinCore(Community):
 #   DATE = '2022-03-20'
 
     def update(self, doc):
-        if not doc.publisher:
-            doc.publisher = 'SURF Data Repository'
+        doc.contact = self.contact(doc)
+
+    def contact(self, doc):
+        contacts = []
+#        contacts.extend(doc.contact) TODO: keep double publisher info? see dc-reader: contact = publisher
+        for relation in self.find('relation'):
+            if '@' in relation:
+                contacts.append(relation)
+        return contacts
