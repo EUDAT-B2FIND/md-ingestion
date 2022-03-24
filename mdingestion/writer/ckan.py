@@ -56,7 +56,7 @@ class CKANWriter(Writer):
     def json(self, doc):
         data = map_ckan_fields(self._ckan_fields(doc))
         data['extras'] = map_extra_fields(self._extra_fields(doc))
-        data['extras'].extend(map_extra_fields(self._oai_fields(doc)))
+        # data['extras'].extend(map_extra_fields(self._oai_fields(doc)))
         return data
 
     def update_version(self, data):
@@ -117,12 +117,13 @@ class CKANWriter(Writer):
         data['notes'] = doc.description
         data['tags'] = [dict(name=tag) for tag in doc.keywords]
         data['url'] = doc.source
-        data['owner_org'] = "eudat-b2find"
+        # data['owner_org'] = "eudat-b2find"
+        data['owner_org'] = doc.community
         data['name'] = doc.name
-        data['group'] = doc.community
-        data['groups'] = [{
-            'name': doc.community,
-        }]
+        # data['group'] = doc.community
+        # data['groups'] = [{
+        #     'name': doc.community,
+        # }]
         data['state'] = 'active'
         data['fulltext'] = doc.fulltext
         return data
