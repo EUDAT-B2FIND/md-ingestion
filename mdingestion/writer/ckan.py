@@ -66,7 +66,7 @@ class CKANWriter(Writer):
 
     def _extra_fields(self, doc):
         data = {
-            'Creator': doc.creator,
+            # 'Creator': doc.creator,
             'DOI': doc.doi,
             'PID': doc.pid,
             'RelatedIdentifier': doc.related_identifier,
