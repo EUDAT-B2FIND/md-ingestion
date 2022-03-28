@@ -16,6 +16,7 @@ dependencies:
   - pandas
   - tqdm
   - colander
+  - dirty_cat
   # tests
   - pytest
   - flake8
