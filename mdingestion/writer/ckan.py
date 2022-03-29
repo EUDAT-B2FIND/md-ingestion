@@ -115,12 +115,16 @@ class CKANWriter(Writer):
         data['notes'] = doc.description
         data['tags'] = [dict(name=tag) for tag in doc.keywords]
         data['url'] = doc.source
-        # data['owner_org'] = "eudat-b2find"
         data['owner_org'] = doc.community
         data['name'] = doc.name
-        # data['group'] = doc.community
+        if "POINT" in doc.wkt:
+            group = "point"
+        elif "POLYGON" in doc.wkt:
+            group = "polygon"
+        else:
+            group = "non-spatial"
         data['groups'] = [{
-            'name': doc.community,
+            'name': group,
         }]
         data['state'] = 'active'
         data['fulltext'] = doc.fulltext
