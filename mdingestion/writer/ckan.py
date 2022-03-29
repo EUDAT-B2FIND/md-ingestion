@@ -84,7 +84,6 @@ class CKANWriter(Writer):
             'Size': doc.size,
             'Version': doc.version,
             'Discipline': doc.discipline,
-            # 'DiscHierarchy': [],
             'SpatialCoverage': doc.spatial_coverage,
             'spatial': doc.wkt,
             'geom': doc.wkt_simple,
