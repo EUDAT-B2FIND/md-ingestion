@@ -17,6 +17,7 @@ class SDRDublinCore(Community):
         doc.contact = self.contact(doc)
         doc.keywords = self.keywords_(doc)
         doc.publication_year = self.publication_year(doc)
+        doc.discipline = self.discipline(doc)
 
     def contact(self, doc):
         contacts = []
@@ -36,6 +37,14 @@ class SDRDublinCore(Community):
                 lc_keywords = [k.lower() for k in new_keywords]
                 keywords.extend(lc_keywords)
         return keywords
+
+    def discipline(self, doc):
+        disciplines = doc.discipline
+        if 'astrophysics' in doc.keywords:
+            if 'Other' in disciplines:
+                disciplines = []
+            disciplines.append('Astrophysics and Astronomy')
+        return disciplines
 
     def publication_year(self,doc):
         pubyear = doc.publication_year
