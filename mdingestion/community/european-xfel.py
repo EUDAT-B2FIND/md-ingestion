@@ -11,3 +11,6 @@ class EuropeanXFEL(Community):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
     PRODUCTIVE = True
+
+    def update(self, doc):
+        doc.discipline = ['Natural Sciences','Life Sciences', 'Materials Science']
