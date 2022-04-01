@@ -10,11 +10,11 @@ class B2FSchema(colander.MappingSchema):
         validator=colander.Length(min=1),
         ## m, occ = 1
     )
-    group = colander.SchemaNode(
+    groups = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),
         colander.SchemaNode(colander.String(), missing=colander.drop),
-        name='group',
-        title='Group',
+        name='groups',
+        title='Groups',
         description='Optional groups this record belongs to.',
         missing=colander.drop,
         ## o, occ = 0-n, liste

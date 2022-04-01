@@ -13,7 +13,7 @@ from ..rights import is_open_access
 class BaseDoc(object):
     def __init__(self):
         self._community = None
-        self._group = None
+        self._groups = None
         self._title = None
         self._description = None
         self._keywords = None
@@ -43,12 +43,12 @@ class BaseDoc(object):
         return self._community
 
     @property
-    def group(self):
-        return self._group
+    def groups(self):
+        return self._groups
 
-    @group.setter
-    def group(self, value):
-        self._group = format_value(value)
+    @groups.setter
+    def groups(self, value):
+        self._groups = format_value(value)
 
     @property
     def identifier(self):

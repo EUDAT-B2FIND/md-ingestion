@@ -117,15 +117,16 @@ class CKANWriter(Writer):
         data['url'] = doc.source
         data['owner_org'] = doc.community
         data['name'] = doc.name
+        data['groups'] = [dict(name=group) for group in doc.groups]
+        # TODO: dummy code for group example
         if "POINT" in doc.wkt:
             group = "point"
         elif "POLYGON" in doc.wkt:
             group = "polygon"
         else:
             group = "non-spatial"
-        data['groups'] = [{
-            'name': group,
-        }]
+        data['groups'].append(dict(name=group))
+        # group end
         data['state'] = 'active'
         data['fulltext'] = doc.fulltext
         return data
