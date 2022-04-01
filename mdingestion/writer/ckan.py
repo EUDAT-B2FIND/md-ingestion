@@ -118,16 +118,28 @@ class CKANWriter(Writer):
         data['owner_org'] = doc.community
         data['name'] = doc.name
         data['groups'] = [dict(name=group) for group in doc.groups]
-        # TODO: dummy code for group example
+        data['state'] = 'active'
+        data['fulltext'] = doc.fulltext
+        # TODO: just for group tests
+        data = self._update_groups(doc, data)
+        return data
+
+    def _update_groups(self, doc, data):
+        # dummy code for group example
+        # spatial
         if doc.wkt:
             if "POINT" in doc.wkt:
                 group = "point"
             elif "POLYGON" in doc.wkt:
                 group = "polygon"
+            data["groups"].append(dict(name="spatial"))
+            data["groups"].append(dict(name=group))
         else:
-            group = "non-spatial"
-        data['groups'].append(dict(name=group))
-        # group end
-        data['state'] = 'active'
-        data['fulltext'] = doc.fulltext
+            data["groups"].append(dict(name="non-spatial"))
+        # temporal
+        if doc.temporal_coverage_begin_date or doc.temporal_coverage_end_date:
+            group = "temporal"
+        else:
+            group = "non-temporal"
+        data["groups"].append(dict(name=group))
         return data
