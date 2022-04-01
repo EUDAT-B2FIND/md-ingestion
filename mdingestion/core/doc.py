@@ -42,6 +42,10 @@ class BaseDoc(object):
     def community(self):
         return self._community
 
+    @community.setter
+    def community(self, value):
+        self._community = format_value(value, one=True)
+
     @property
     def groups(self):
         return self._groups
