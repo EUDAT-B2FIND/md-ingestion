@@ -10,8 +10,8 @@ class SDRDublinCore(Community):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
-#   PRODUCTIVE = True
-#   DATE = '2022-03-20'
+    PRODUCTIVE = True
+    DATE = '2022-04-01'
 
     def update(self, doc):
         doc.contact = self.contact(doc)
