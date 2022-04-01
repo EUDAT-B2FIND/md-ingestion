@@ -13,7 +13,7 @@ from ..rights import is_open_access
 class BaseDoc(object):
     def __init__(self):
         self._community = None
-        self._groups = None
+        self._groups = []
         self._title = None
         self._description = None
         self._keywords = None
