@@ -42,10 +42,11 @@ class Classify(object):
             self._discipines = self.load_disciplines()
         return self._discipines
 
-    def map_discipline(self, text):
+    def map_discipline(self, text, default=None):
         """
         Map text to B2Find disciplines.
         """
+        default = default or "Other"
         matches = set()
         if isinstance(text, list):
             tokens = text
@@ -62,5 +63,8 @@ class Classify(object):
                     matches.add(discipline)
                     matches.update(nx.ancestors(self._disc_graph, discipline))
         result = list(matches)
-        result.sort()
+        if not result:
+            result = [default]
+        else:
+            result.sort()
         return result

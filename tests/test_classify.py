@@ -45,7 +45,8 @@ def test_map_discipline():
         'Engineering',
         'Engineering Sciences',
     ]
-    assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == []
+    assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == ["Other"]
+    assert classifier.map_discipline('Antarctica', default="not avaiable") == ["not avaiable"]
     assert classifier.map_discipline(['Humanities', 'Engineering']) == [
         'Construction Engineering and Architecture',
         'Engineering',
@@ -56,5 +57,14 @@ def test_map_discipline():
         'Earth and Environmental Science',
         'Environmental Research',
         'Geosciences',
+        'Natural Sciences',
+    ]
+    assert classifier.map_discipline(["Medicine", 'Health and Life Sciences']) == [
+        'Life Sciences',
+        'Medicine'
+    ]
+    assert classifier.map_discipline(["Chemistry", "Life Science"]) == [
+        'Chemistry',
+        'Life Sciences',
         'Natural Sciences',
     ]

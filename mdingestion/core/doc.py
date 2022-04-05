@@ -34,7 +34,7 @@ class BaseDoc(object):
         self._format = None
         self._size = None
         self._version = None
-        self._discipline = None
+        self._discipline = ["Other"]
 
     @property
     def community(self):
@@ -243,7 +243,7 @@ class BaseDoc(object):
 
     @property
     def discipline(self):
-        return self._discipline or 'Other'
+        return self._discipline
 
     @discipline.setter
     def discipline(self, value):
