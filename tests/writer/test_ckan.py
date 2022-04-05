@@ -25,6 +25,7 @@ def test_darus_oai_datacite():
     fields = {}
     for field in result['extras']:
         fields[field['key']] = field['value']
+    assert "Life Sciences; Medicine" == fields["Discipline"]
     assert '2020-01-01T12:00:00Z' == fields['PublicationTimestamp']
     assert '2020-01-30T00:00:00Z' == fields['TemporalCoverage:BeginDate']
     # assert 63715939200 == fields['TempCoverageBegin']  # TODO: fails on ci
