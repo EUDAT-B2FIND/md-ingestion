@@ -38,6 +38,11 @@ def test_tokenize():
         'social',
         'social sciences'
     ]
+    assert classify.tokenize(' Social &   Sciences!') == [
+        'sciences',
+        'social',
+        'social sciences'
+    ]
     assert classify.tokenize(['Scientific satellites']) == [
         'satellites',
         'scientific',

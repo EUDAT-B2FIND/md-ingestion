@@ -1,5 +1,4 @@
 import os
-import re
 import json
 import Levenshtein as lvs
 # import textdistance
@@ -22,7 +21,7 @@ def tokenize(text):
     values = format_value(text, type='string_words')
     tokens.update(values)
     for value in values:
-        _tokens = re.split(r'[;&\s]\s*', value)
+        _tokens = value.split(" ")
         tokens.update(_tokens)
     tokens = [token.lower() for token in tokens]
     tokens.sort()
