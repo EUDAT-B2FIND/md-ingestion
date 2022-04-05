@@ -32,6 +32,23 @@ def test_load_list():
     assert 'Humanities' in classifier.discipines
 
 
+def test_tokenize():
+    assert classify.tokenize('Social Sciences') == [
+        'sciences',
+        'social',
+        'social sciences'
+    ]
+    assert classify.tokenize(['Scientific satellites']) == [
+        'satellites',
+        'scientific',
+        'scientific satellites'
+    ]
+    assert classify.tokenize(['Humanities', 'Engineering']) == [
+        'engineering',
+        'humanities'
+    ]
+
+
 def test_map_discipline():
     classifier = classify.Classify()
     assert classifier.map_discipline('Humanities') == ["Humanities"]

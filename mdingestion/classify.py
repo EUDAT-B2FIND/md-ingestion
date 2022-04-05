@@ -1,8 +1,11 @@
 import os
+import re
 import json
 import Levenshtein as lvs
 # import textdistance
 import networkx as nx
+
+from .format import format_value
 
 import logging
 
@@ -12,6 +15,18 @@ CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'etc')
 def similarity(string1, string2):
     return lvs.ratio(string1.lower(), string2.lower())
     # return textdistance.jaro_winkler.normalized_similarity(string1.lower(), string2.lower())
+
+
+def tokenize(text):
+    tokens = set()
+    values = format_value(text, type='string_words')
+    tokens.update(values)
+    for value in values:
+        _tokens = re.split(r'[;&\s]\s*', value)
+        tokens.update(_tokens)
+    tokens = [token.lower() for token in tokens]
+    tokens.sort()
+    return tokens
 
 
 class Classify(object):
@@ -48,10 +63,7 @@ class Classify(object):
         """
         default = default or "Other"
         matches = set()
-        if isinstance(text, list):
-            tokens = text
-        else:
-            tokens = [text]
+        tokens = tokenize(text)
         for token in tokens:
             for discipline in self.discipines:
                 try:
