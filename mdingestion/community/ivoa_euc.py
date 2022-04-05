@@ -14,6 +14,7 @@ class IvoaEudatcore(Community):
 
     def update(self, doc):
         doc.source = self.find_source('relatedIdentifier', relatedIdentifierType="URL")
+        doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="bibcode")
         doc.discipline = self.discipline(doc, 'Astrophysics and Astronomy')
         doc.contributor = self.contributor(doc)
 
