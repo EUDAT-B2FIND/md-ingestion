@@ -1,29 +1,13 @@
 import os
 import re
 import json
-from collections import OrderedDict
 import Levenshtein as lvs
 # import textdistance
-
-from .format import format_value
-from .util import remove_duplicates_from_list
+import networkx as nx
 
 import logging
 
 CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'etc')
-
-
-def tokenize(text):
-    tokens = []
-    values = format_value(text, type='string_words')
-    for value in values:
-        _tokens = re.split(r'[;&\s]\s*', value)
-        tokens.extend(_tokens)
-        tokens.append(value)
-    tokens = remove_duplicates_from_list(tokens)
-    # words start with title case characters, all remaining cased characters have lower case
-    tokens = [token.title() for token in tokens]
-    return tokens
 
 
 def similarity(string1, string2):
@@ -55,14 +39,16 @@ class Classify(object):
             self._discipines = self.load_disciplines()
         return self._discipines
 
-    def map_discipline(self, keywords):
+    def map_discipline(self, text):
         """
-        Map keywords to B2Find disciplines.
+        Map text to B2Find disciplines.
         """
         matches = {}
-        tokens = tokenize(keywords)
+        if isinstance(text, list):
+            tokens = text
+        else:
+            tokens = [text]
         for token in tokens:
-            logging.debug(f'compare token {token}')
             max_ratio = 0.0
             best_match = ''
             for discipline in self.discipines:
