@@ -91,6 +91,7 @@ class CKANWriter(Writer):
             'TemporalCoverage': doc.temporal_coverage,
             'TemporalCoverage:BeginDate': doc.temporal_coverage_begin_date,
             'TemporalCoverage:EndDate': doc.temporal_coverage_end_date,
+            "fulltext": doc.fulltext,
         }
         # build date range field for temporal coverage
         # https://solr.apache.org/guide/6_6/working-with-dates.html
@@ -119,7 +120,7 @@ class CKANWriter(Writer):
         data['name'] = doc.name
         data['groups'] = [dict(name=group) for group in doc.groups]
         data['state'] = 'active'
-        data['fulltext'] = doc.fulltext
+        # data['fulltext'] = doc.fulltext
         # TODO: just for group tests
         data = self._update_groups(doc, data)
         return data
