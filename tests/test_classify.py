@@ -52,6 +52,12 @@ def test_tokenize():
 def test_map_discipline():
     classifier = classify.Classify()
     assert classifier.map_discipline('Humanities') == ["Humanities"]
+    assert classifier.map_discipline('Astrophysics') == ['Other']
+    assert classifier.map_discipline('Astrophysics and Astronomy') == [
+        'Astrophysics and Astronomy',
+        'Natural Sciences',
+        'Physics',
+    ]
     assert classifier.map_discipline('Engineering') == [
         'Construction Engineering and Architecture',
         'Engineering',
