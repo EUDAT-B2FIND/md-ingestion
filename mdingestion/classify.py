@@ -1,5 +1,4 @@
 import os
-import re
 import json
 import Levenshtein as lvs
 # import textdistance
@@ -17,21 +16,25 @@ def similarity(string1, string2):
 
 class Classify(object):
     def __init__(self):
+        self._disc_graph = None
         self._discipines = None
 
     def load_disciplines(self):
-        discipines = {}
         fname = os.path.join(CFG_DIR, 'b2find_disciplines.json')
         with open(fname) as fp:
-            doc = json.load(fp)['disciplines']
-            for line in doc:
-                line = re.split(r'#', line)
-                if len(line) < 3:
-                    logging.warning(f'Missing base element in dicipline array {line}')
+            doc = json.load(fp)
+            # build graph
+            self._disc_graph = nx.DiGraph()
+            for value in doc["disciplines"]:
+                parts = value.split("#")
+                if len(parts) != 3:
                     continue
-                discipline = line[2].strip()
-                discipines[discipline] = line
-        return discipines
+                nodes = [node.strip() for node in parts]
+                start = nodes[1]
+                end = nodes[2]
+                if start != end:
+                    self._disc_graph.add_edge(start, end)
+        return self._disc_graph.nodes
 
     @property
     def discipines(self):
@@ -43,36 +46,21 @@ class Classify(object):
         """
         Map text to B2Find disciplines.
         """
-        matches = {}
+        matches = set()
         if isinstance(text, list):
             tokens = text
         else:
             tokens = [text]
         for token in tokens:
-            max_ratio = 0.0
-            best_match = ''
             for discipline in self.discipines:
                 try:
                     ratio = similarity(token, discipline)
-                except Exception as e:
-                    logging.warning(f'{token} can not be compared to {discipline}: {e}')
+                except Exception:
+                    logging.warning(f'{token} can not be compared to {discipline}')
                     continue
-                if ratio > max_ratio:
-                    max_ratio = ratio
-                    best_match = discipline
-                    logging.debug(f'token={token}, discipline={discipline}, ratio={ratio}, max_ratio={max_ratio}')
-            logging.debug(f'Similarity ratio is {max_ratio} for token "{token}" and best match "{best_match}"')
-            if max_ratio >= 0.9:
-                logging.info(f'ratio >= 0.9. Keep best_match "{best_match}"')
-                if best_match in matches:
-                    if max_ratio > matches[best_match]:
-                        matches[best_match] = max_ratio
-                else:
-                    matches[best_match] = max_ratio
-        if matches:
-            # sort by highest ratio
-            sorted_matches = sorted(matches, key=lambda match: matches[match], reverse=True)
-            result = (';'.join(sorted_matches), self.discipines[sorted_matches[0]])
-        else:
-            result = ('Other', [])
+                if ratio >= 0.9:
+                    matches.add(discipline)
+                    matches.update(nx.ancestors(self._disc_graph, discipline))
+        result = list(matches)
+        result.sort()
         return result

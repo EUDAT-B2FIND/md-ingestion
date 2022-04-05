@@ -34,15 +34,27 @@ def test_load_list():
 
 def test_map_discipline():
     classifier = classify.Classify()
-    assert classifier.map_discipline('Humanities') == \
-        ('Humanities', ['1', 'Humanities', 'Humanities'])
-    assert classifier.map_discipline('Engineering') == \
-        ('Engineering', ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
-    assert classifier.map_discipline(['Engineering', 'Scientific satellites', 'Aerospace telemetry']) == \
-        ('Engineering', ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
-    assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == \
-        ('Other', [])
-    assert classifier.map_discipline(['Humanities', 'Engineering']) == \
-        ('Humanities;Engineering', ['1', 'Humanities', 'Humanities'])
-    assert classifier.map_discipline('Earth and Environmental Sciences') == \
-        ('Earth and Environmental Science', ['4.4.7.02', 'Environmental Research', 'Earth and Environmental Science'])
+    assert classifier.map_discipline('Humanities') == ["Humanities"]
+    assert classifier.map_discipline('Engineering') == [
+        'Construction Engineering and Architecture',
+        'Engineering',
+        'Engineering Sciences',
+    ]
+    assert classifier.map_discipline(['Engineering', 'Scientific satellites', 'Aerospace telemetry']) == [
+        'Construction Engineering and Architecture',
+        'Engineering',
+        'Engineering Sciences',
+    ]
+    assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == []
+    assert classifier.map_discipline(['Humanities', 'Engineering']) == [
+        'Construction Engineering and Architecture',
+        'Engineering',
+        'Engineering Sciences',
+        "Humanities",
+    ]
+    assert classifier.map_discipline('Earth and Environmental Sciences') == [
+        'Earth and Environmental Science',
+        'Environmental Research',
+        'Geosciences',
+        'Natural Sciences',
+    ]
