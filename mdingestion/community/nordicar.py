@@ -12,6 +12,7 @@ CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', '
 FNAME = os.path.join(CFG_DIR, 'NORDICAR_MappingKeywords.csv')
 TL = pd.read_csv(FNAME, sep = ';', encoding='ISO-8859-1')
 
+
 class BaseNordicar(Community):
     NAME = 'nordicar'
     PRODUCTIVE = False
@@ -19,16 +20,15 @@ class BaseNordicar(Community):
     def keywords_append(self, doc):
         keywords = copy.copy(doc.keywords)
         for keyword in doc.keywords:
-            #print(keyword, self.IDENTIFIER)
+            # print(keyword, self.IDENTIFIER)
             result = TL.loc[TL[self.IDENTIFIER] == keyword]
-            #print(result, self.IDENTIFIER)
+            # print(result, self.IDENTIFIER)
             if result.values.any():
                 found = result.values[0].tolist()
-                #print(found)
+                # print(found)
                 found = [val for val in found if not pd.isnull(val)]
                 keywords.extend(found)
         return keywords
-
 
 class Slks(BaseNordicar):
     IDENTIFIER = 'slks'
@@ -58,7 +58,6 @@ class Slks(BaseNordicar):
         # keywords.append('Viking Age')
         doc.keywords = self.keywords_append(doc)
         doc.temporal_coverage = self.temporal_coverage(doc)
-
 
     def temporal_coverage(self, doc):
         temporal = self.find('temporal')
