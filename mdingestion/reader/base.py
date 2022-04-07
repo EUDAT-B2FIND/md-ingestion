@@ -65,15 +65,8 @@ class Reader(object):
         return urls
 
     def discipline(self, doc, default=None):
-        default = default or 'Other'
         classifier = Classify()
-        result = classifier.map_discipline(doc.keywords)
-        if 'Other' not in result:
-            logging.debug(f"{result} keywords={doc.keywords}")
-        disc = result[0]
-        if 'Other' in disc:
-            disc = default
-        return disc
+        return classifier.map_discipline(doc.keywords, default)
 
     def find_geometry(self):
         try:
