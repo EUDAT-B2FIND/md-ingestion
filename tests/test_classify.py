@@ -33,61 +33,66 @@ def test_load_list():
 
 
 def test_tokenize():
-    assert classify.tokenize('Social Sciences') == \
-        ['Social', 'Sciences', 'Social Sciences']
-    assert classify.tokenize(['Engineering', 'Scientific satellites', 'Aerospace telemetry']) == \
-        ['Engineering',
-         'Scientific', 'Satellites', 'Scientific Satellites',
-         'Aerospace', 'Telemetry', 'Aerospace Telemetry']
-    assert classify.tokenize(['Humanities', 'Engineering']) == \
-        ['Humanities', 'Engineering']
+    assert classify.tokenize('Social Sciences') == [
+        'sciences',
+        'social',
+        'social sciences'
+    ]
+    assert classify.tokenize(' Social &   Sciences!') == [
+        'sciences',
+        'social',
+        'social sciences'
+    ]
+    assert classify.tokenize(['Scientific satellites']) == [
+        'satellites',
+        'scientific',
+        'scientific satellites'
+    ]
+    assert classify.tokenize(['Humanities', 'Engineering']) == [
+        'engineering',
+        'humanities'
+    ]
 
 
 def test_map_discipline():
     classifier = classify.Classify()
-    assert classifier.map_discipline('Humanities') == \
-        ('Humanities', ['1', 'Humanities', 'Humanities'])
-    assert classifier.map_discipline('Engineering') == \
-        ('Engineering', ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
-    assert classifier.map_discipline(['Engineering', 'Scientific satellites', 'Aerospace telemetry']) == \
-        ('Engineering', ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
-    assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == \
-        ('Other', [])
-    assert classifier.map_discipline(['Humanities', 'Engineering']) == \
-        ('Humanities;Engineering', ['1', 'Humanities', 'Humanities'])
-    assert classifier.map_discipline('Earth and Environmental Sciences') == \
-        ('Earth and Environmental Science', ['4.4.7.02', 'Environmental Research', 'Earth and Environmental Science'])
-
-
-def test_map_discipline_darus():
-    classifier = classify.Classify()
-    assert classifier.map_discipline([
-        'Computer and Information Science',
-        'Earth and Environmental Sciences',
+    assert classifier.map_discipline('Humanities') == ["Humanities"]
+    assert classifier.map_discipline('Astrophysics') == ['Other']
+    assert classifier.map_discipline('Astrophysics and Astronomy') == [
+        'Astrophysics and Astronomy',
+        'Natural Sciences',
+        'Physics',
+    ]
+    assert classifier.map_discipline('Engineering') == [
+        'Construction Engineering and Architecture',
         'Engineering',
-        'Carrara marble',
-        'micro X ray computed tomography',
-        'cracks', 'fractures', 'rock mechanics']) == \
-        ('Engineering;Mechanics;Earth and Environmental Science',
-            ['5.5.6', 'Construction Engineering and Architecture', 'Engineering'])
-    assert classifier.map_discipline([
-        'Agricultural Sciences',
-        'Computer and Information Science',
-        'Earth and Environmental Sciences']) == \
-        ('Agricultural Sciences;Earth and Environmental Science',
-         ['3.3.1.11', 'Agriculture, Forestry, Horticulture, Aquaculture', 'Agricultural Sciences'])
-    assert classifier.map_discipline(
-        ['Arts and Humanities',
-         'Computer and Information Science',
-         'JSON', 'schema', 'process metadata']) == \
-        ('Humanities', ['1', 'Humanities', 'Humanities'])
-    assert classifier.map_discipline(['Medicine Health and Life Sciences', 'protein domain']) == \
-        ('Medicine', ['3.2.2', 'Medicine', 'Medicine'])
-    assert classifier.map_discipline(['Chemistry']) == \
-        ('Chemistry', ['4.1', 'Natural Sciences', 'Chemistry'])
-    assert classifier.map_discipline('Social Sciences') == \
-        ('Social Sciences', ['2.3', 'Social and Behavioural Sciences', 'Social Sciences'])
-    assert classifier.map_discipline(['Social Sciences']) == \
-        ('Social Sciences', ['2.3', 'Social and Behavioural Sciences', 'Social Sciences'])
-    assert classifier.map_discipline('other') == \
-        ('Other', [])
+        'Engineering Sciences',
+    ]
+    assert classifier.map_discipline(['Engineering', 'Scientific satellites', 'Aerospace telemetry']) == [
+        'Construction Engineering and Architecture',
+        'Engineering',
+        'Engineering Sciences',
+    ]
+    assert classifier.map_discipline(['Antarctica', 'Sampling drilling ice']) == ["Other"]
+    assert classifier.map_discipline('Antarctica', default="not avaiable") == ["not avaiable"]
+    assert classifier.map_discipline(['Humanities', 'Engineering']) == [
+        'Construction Engineering and Architecture',
+        'Engineering',
+        'Engineering Sciences',
+        "Humanities",
+    ]
+    assert classifier.map_discipline('Earth and Environmental Sciences') == [
+        'Earth and Environmental Science',
+        'Environmental Research',
+        'Geosciences',
+        'Natural Sciences',
+    ]
+    assert classifier.map_discipline(["Medicine", 'Health and Life Sciences']) == [
+        'Life Sciences',
+        'Medicine'
+    ]
+    assert classifier.map_discipline(["Chemistry", "Life Science"]) == [
+        'Chemistry',
+        'Life Sciences',
+        'Natural Sciences',
+    ]
