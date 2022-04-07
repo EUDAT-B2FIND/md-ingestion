@@ -1,15 +1,33 @@
 from shapely.geometry import shape
 import json
+import pandas as pd
+import os
+import copy
 
 from .base import Community
 from ..service_types import SchemaType, ServiceType
 
 from ..format import format_value
-
+CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'etc', 'Community')
+FNAME = os.path.join(CFG_DIR, 'NORDICAR_MappingKeywords.csv')
+TL = pd.read_csv(FNAME, sep = ';', encoding='ISO-8859-1')
 
 class BaseNordicar(Community):
     NAME = 'nordicar'
     PRODUCTIVE = False
+
+    def keywords_append(self, doc):
+        keywords = copy.copy(doc.keywords)
+        for keyword in doc.keywords:
+            #print(keyword, self.IDENTIFIER)
+            result = TL.loc[TL[self.IDENTIFIER] == keyword]
+            #print(result, self.IDENTIFIER)
+            if result.values.any():
+                found = result.values[0].tolist()
+                #print(found)
+                found = [val for val in found if not pd.isnull(val)]
+                keywords.extend(found)
+        return keywords
 
 
 class Slks(BaseNordicar):
@@ -38,7 +56,9 @@ class Slks(BaseNordicar):
         # keywords = doc.keywords
         # keywords.append('EOSC Nordic')
         # keywords.append('Viking Age')
+        doc.keywords = self.keywords_append(doc)
         doc.temporal_coverage = self.temporal_coverage(doc)
+
 
     def temporal_coverage(self, doc):
         temporal = self.find('temporal')
@@ -87,6 +107,7 @@ class Askeladden(BaseNordicar):
         doc.version = self.find('properties.versjonId')
         doc.title = self.title()
         doc.keywords = self.keywords()
+        doc.keywords = self.keywords_append(doc)
         doc.geometry = self.geometry()
 
     def title(self):
