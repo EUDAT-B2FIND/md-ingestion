@@ -10,7 +10,7 @@ from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'etc', 'Community')
 FNAME = os.path.join(CFG_DIR, 'NORDICAR_MappingKeywords.csv')
-TL = pd.read_csv(FNAME, sep = ';', encoding='ISO-8859-1')
+TL = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
 
 
 class BaseNordicar(Community):
@@ -29,6 +29,7 @@ class BaseNordicar(Community):
                 found = [val for val in found if not pd.isnull(val)]
                 keywords.extend(found)
         return keywords
+
 
 class Slks(BaseNordicar):
     IDENTIFIER = 'slks'
