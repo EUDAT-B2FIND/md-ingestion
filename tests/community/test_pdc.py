@@ -14,11 +14,13 @@ def test_pdc_dc_1():
     assert 'Devon Island Ice Cap core C was recovered from 75.3399°N and 82.6763°W' in doc.description[0]
     assert 'Lisa Hryciw' in doc.creator
     assert 'Polar Data Catalogue' in doc.contributor
-    assert 'Chemistry' == doc.discipline[0]
+    print(doc.keywords)
+    assert 'Water chemistry' in doc.keywords
+    print(doc.discipline)
+    assert 'Chemistry' in doc.discipline
     assert doc.open_access is True
     assert 'metadataPrefix=fgdc&identifier=105_fgdc' in doc.metadata_access
     assert doc.publication_year == '2014'
-    assert 'Water chemistry' in doc.keywords
     # assert doc.doi == 'https://doi.org/10.15479/AT:ISTA:92'
     assert doc.source == 'https://www.polardata.ca/pdcsearch/PDCSearchDOI.jsp?doi_id=105'
     assert doc.related_identifier == []

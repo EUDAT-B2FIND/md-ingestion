@@ -257,7 +257,7 @@ class BaseDoc(object):
 
     @property
     def discipline(self):
-        return self._discipline or 'Other'
+        return self._discipline or ["Other"]
 
     @discipline.setter
     def discipline(self, value):
