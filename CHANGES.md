@@ -1,5 +1,13 @@
 ## CHANGES
 
+### 3.2.0 (2022-04-25)
+
+* Update classify (#234,#232)
+* NordicArchaeology keyword mapping (#233)
+* added disciplines to European XFEL (#231)
+* added SDR (#228)
+* harvest CERIC from productive instance (#226)
+
 ### 3.1.0 (2021-12-15)
 
 * new and updated Communities, integrated via different channels
