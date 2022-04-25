@@ -122,7 +122,7 @@ class CKANWriter(Writer):
         data['state'] = 'active'
         # data['fulltext'] = doc.fulltext
         # TODO: just for group tests
-        data = self._update_groups(doc, data)
+        # data = self._update_groups(doc, data)
         return data
 
     def _update_groups(self, doc, data):
