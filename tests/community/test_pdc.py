@@ -29,7 +29,7 @@ def test_pdc_dc_1():
     # <northbc>75.8</northbc>
     # <southbc>74.6</southbc>
     assert doc.spatial_coverage == '(-84.500W, 74.600S, -79.400E, 75.800N)'
-    assert doc.spatial == '{"type":"Polygon","coordinates": [[[-84.50,74.60],[-84.50,75.80],[-79.40,75.80],[-79.40,74.60],[-84.50,74.60]]]}'  # noqa
+    assert doc.wkt == "POLYGON ((-79.4000000000000057 74.5999999999999943, -79.4000000000000057 75.7999999999999972, -84.5000000000000000 75.7999999999999972, -84.5000000000000000 74.5999999999999943, -79.4000000000000057 74.5999999999999943))"  # noqa
     # <begdate>19490601</begdate>
     # <enddate>20020601</enddate>
     assert doc.temporal_coverage_begin_date == '1949-06-01T00:00:00Z'
