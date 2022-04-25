@@ -56,7 +56,6 @@ class CKANWriter(Writer):
     def json(self, doc):
         data = map_ckan_fields(self._ckan_fields(doc))
         data['extras'] = map_extra_fields(self._extra_fields(doc))
-        data['extras'].extend(map_extra_fields(self._oai_fields(doc)))
         return data
 
     def update_version(self, data):
@@ -66,7 +65,7 @@ class CKANWriter(Writer):
 
     def _extra_fields(self, doc):
         data = {
-            'Creator': doc.creator,
+            # 'Creator': doc.creator,
             'DOI': doc.doi,
             'PID': doc.pid,
             'RelatedIdentifier': doc.related_identifier,
@@ -85,17 +84,29 @@ class CKANWriter(Writer):
             'Size': doc.size,
             'Version': doc.version,
             'Discipline': doc.discipline,
-            'DiscHierarchy': [],
             'SpatialCoverage': doc.spatial_coverage,
-            'spatial': doc.spatial,
+            'spatial': doc.wkt,
+            'geom': doc.wkt_simple,
+            'bbox': doc.envelope,
             'TemporalCoverage': doc.temporal_coverage,
             'TemporalCoverage:BeginDate': doc.temporal_coverage_begin_date,
             'TemporalCoverage:EndDate': doc.temporal_coverage_end_date,
-            'TempCoverageBegin': doc.temp_coverage_begin,
-            'TempCoverageEnd': doc.temp_coverage_end,
+            "fulltext": doc.fulltext,
         }
-        if doc.publication_year:
-            data['PublicationTimestamp'] = f"{doc.publication_year}-01-01T12:00:00Z"
+        # build date range field for temporal coverage
+        # https://solr.apache.org/guide/6_6/working-with-dates.html
+        if doc.temporal_coverage_begin_date or doc.temporal_coverage_end_date:
+            begin = end = '*'
+            if doc.temporal_coverage_begin_date:
+                # keep the day 2021-08-06 ... not hours, secs
+                begin = doc.temporal_coverage_begin_date.split('T')[0]
+            else:
+                begin = '*'
+            if doc.temporal_coverage_end_date:
+                end = doc.temporal_coverage_end_date.split('T')[0]
+            else:
+                end = '*'
+            data['TempCoverage'] = f"[{begin} TO {end}]"
         return data
 
     def _ckan_fields(self, doc):
@@ -105,19 +116,31 @@ class CKANWriter(Writer):
         data['notes'] = doc.description
         data['tags'] = [dict(name=tag) for tag in doc.keywords]
         data['url'] = doc.source
-        data['owner_org'] = "eudat-b2find"
+        data['owner_org'] = doc.community
         data['name'] = doc.name
-        data['group'] = doc.community
-        data['groups'] = [{
-            'name': doc.community,
-        }]
+        data['groups'] = [dict(name=group) for group in doc.groups]
         data['state'] = 'active'
-        data['fulltext'] = doc.fulltext
+        # data['fulltext'] = doc.fulltext
+        # TODO: just for group tests
+        # data = self._update_groups(doc, data)
         return data
 
-    def _oai_fields(self, doc):
-        data = {}
-        if hasattr(doc, 'oai_set'):
-            data['oai_set'] = doc.oai_set
-            data['oai_identifier'] = doc.oai_identifier
+    def _update_groups(self, doc, data):
+        # dummy code for group example
+        # spatial
+        if doc.wkt:
+            if "POINT" in doc.wkt:
+                group = "point"
+            elif "POLYGON" in doc.wkt:
+                group = "polygon"
+            data["groups"].append(dict(name="spatial"))
+            data["groups"].append(dict(name=group))
+        else:
+            data["groups"].append(dict(name="non-spatial"))
+        # temporal
+        if doc.temporal_coverage_begin_date or doc.temporal_coverage_end_date:
+            group = "temporal"
+        else:
+            group = "non-temporal"
+        data["groups"].append(dict(name=group))
         return data

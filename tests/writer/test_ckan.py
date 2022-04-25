@@ -15,18 +15,17 @@ def test_darus_oai_datacite():
     doc = reader.read(xmlfile)
     writer = CKANWriter()
     result = writer.json(doc)
+    assert "darus" == result['owner_org']
     assert 'Deep enzymology data' in result['title']
     assert '02baec53-8e79-5611-981e-11df59b824e4' == result['name']
-    assert 'darus' == result['group']
-    assert 'darus' == result['groups'][0]['name']
     assert 'active' == result['state']
-    assert 'Deep enzymology data' in result['fulltext']
     assert 'Medicine' in [tag['name'] for tag in result['tags']]
     fields = {}
     for field in result['extras']:
         fields[field['key']] = field['value']
+    assert 'Deep enzymology data' in fields['fulltext']
     assert "Life Sciences; Medicine" == fields["Discipline"]
-    assert '2020-01-01T12:00:00Z' == fields['PublicationTimestamp']
+    assert '2020' == fields['PublicationYear']
     assert '2020-01-30T00:00:00Z' == fields['TemporalCoverage:BeginDate']
     # assert 63715939200 == fields['TempCoverageBegin']  # TODO: fails on ci
     assert 'true' == fields['OpenAccess']
@@ -39,5 +38,8 @@ def test_herbdrop_json():
     doc = reader.read(jsonfile)
     writer = CKANWriter()
     result = writer.json(doc)
-    assert 'Gentiana ×marcailhouana Rouy' in result['fulltext']
-    assert 'StillImage|PRESERVED_SPECIMEN' in result['fulltext']
+    fields = {}
+    for field in result['extras']:
+        fields[field['key']] = field['value']
+    assert 'Gentiana ×marcailhouana Rouy' in fields['fulltext']
+    assert 'StillImage|PRESERVED_SPECIMEN' in fields['fulltext']

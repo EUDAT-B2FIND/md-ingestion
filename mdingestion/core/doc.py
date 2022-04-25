@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 import shapely
+from shapely import wkt
 from dateutil import parser as date_parser
 from pathlib import Path
 import json
@@ -12,6 +13,7 @@ from ..rights import is_open_access
 class BaseDoc(object):
     def __init__(self):
         self._community = None
+        self._groups = []
         self._title = None
         self._description = None
         self._keywords = None
@@ -39,6 +41,18 @@ class BaseDoc(object):
     @property
     def community(self):
         return self._community
+
+    @community.setter
+    def community(self, value):
+        self._community = format_value(value, one=True)
+
+    @property
+    def groups(self):
+        return self._groups
+
+    @groups.setter
+    def groups(self, value):
+        self._groups = format_value(value)
 
     @property
     def identifier(self):
@@ -282,26 +296,17 @@ class GeoDoc(BaseDoc):
                 geom = f"({bounds[0]:.3f}W, {bounds[1]:.3f}S, {bounds[2]:.3f}E, {bounds[3]:.3f}N)"
         return geom
 
-    def format_geometry(self):
-        geom = ''
-        if self.geometry:
-            if self.geometry.geom_type == 'Point':
-                point = self.geometry
-                x = f"{point.x:.2f}"
-                y = f"{point.y:.2f}"
-                geom = "{\"type\":\"Point\",\"coordinates\": [%s,%s]}" % (x, y)
-            else:
-                bounds = self.geometry.bounds
-                w = f"{bounds[0]:.2f}"
-                s = f"{bounds[1]:.2f}"
-                e = f"{bounds[2]:.2f}"
-                n = f"{bounds[3]:.2f}"
-                geom = "{\"type\":\"Polygon\",\"coordinates\": [[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (w, s, w, n, e, n, e, s, w, s)  # noqa
-        return geom
+    @property
+    def wkt(self):
+        if not self.geometry:
+            return None
+        return wkt.dumps(self.geometry)
 
     @property
-    def spatial(self):
-        return self.format_geometry()
+    def wkt_simple(self):
+        if not self.geometry:
+            return None
+        return wkt.dumps(self.geometry.centroid)
 
     @property
     def geometry(self):
@@ -320,17 +325,20 @@ class GeoDoc(BaseDoc):
         self._places = value
 
     @property
-    def geojson(self):
-        if not self.geometry:
-            return ''
-        return shapely.geometry.mapping(self.geometry)
-
-    @property
     def bbox(self):
         if not self.geometry:
             return None
         bbox = shapely.geometry.box(*self.geometry.bounds)
         return shapely.geometry.mapping(bbox)
+
+    @property
+    def envelope(self):
+        if not self.geometry:
+            return None
+        # bounds: minx, miny, maxx, maxy
+        # envelop: minX, maxX, maxY, minY
+        return "ENVELOPE({0}, {2}, {3}, {1})".format(
+            *self.geometry.bounds)
 
     @property
     def temporal_coverage(self):
