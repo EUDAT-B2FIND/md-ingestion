@@ -31,3 +31,6 @@ summary.json
 
 # jupyter notebooks
 .ipynb_checkpoints/
+
+# open office
+.~lock.*
