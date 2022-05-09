@@ -6,7 +6,6 @@ from pathlib import Path
 import json
 
 from ..format import format_value
-from ..util import utc2seconds
 from ..rights import is_open_access
 
 
