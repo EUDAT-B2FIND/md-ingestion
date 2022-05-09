@@ -60,7 +60,6 @@ class Slks(BaseNordicar):
         # keywords.append('Viking Age')
         doc.keywords = self.keywords_append(doc)
         doc.temporal_coverage = self.temporal_coverage(doc)
-        doc.groups = [self.GROUP]
 
     def temporal_coverage(self, doc):
         temporal = self.find('temporal')
@@ -112,7 +111,6 @@ class Askeladden(BaseNordicar):
         doc.keywords = self.keywords()
         doc.keywords = self.keywords_append(doc)
         doc.geometry = self.geometry()
-        doc.groups = [self.GROUP]
 
     def title(self):
         title = self.find('properties.navn')
