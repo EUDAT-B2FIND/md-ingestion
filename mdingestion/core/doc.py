@@ -377,25 +377,6 @@ class GeoDoc(BaseDoc):
     def temporal_coverage_end_date(self, value):
         self._end_date = format_value(value, type='datetime', one=True)
 
-    @property
-    def temp_coverage_begin(self):
-        """Mikail's seconds since B.C. extension - TODO"""
-        try:
-            # tstamp = int(date_parser.parse(self._begin_date).timestamp())
-            tstamp = utc2seconds(self.temporal_coverage_begin_date)
-        except Exception:
-            tstamp = None
-        return tstamp
-
-    @property
-    def temp_coverage_end(self):
-        try:
-            # tstamp = int(date_parser.parse(self._end_date).timestamp())
-            tstamp = utc2seconds(self.temporal_coverage_end_date)
-        except Exception:
-            tstamp = None
-        return tstamp
-
 
 class B2FDoc(GeoDoc):
 
