@@ -112,7 +112,7 @@ class Askeladden(BaseNordicar):
         doc.keywords = self.keywords()
         doc.keywords = self.keywords_append(doc)
         doc.geometry = self.geometry()
-        doc.group = [self.GROUP]
+        doc.groups = [self.GROUP]
 
     def title(self):
         title = self.find('properties.navn')
