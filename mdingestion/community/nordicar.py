@@ -33,6 +33,7 @@ class BaseNordicar(Community):
 
 class Slks(BaseNordicar):
     IDENTIFIER = 'slks'
+    GROUP = 'slks'
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
@@ -59,6 +60,7 @@ class Slks(BaseNordicar):
         # keywords.append('Viking Age')
         doc.keywords = self.keywords_append(doc)
         doc.temporal_coverage = self.temporal_coverage(doc)
+        doc.groups = [self.GROUP]
 
     def temporal_coverage(self, doc):
         temporal = self.find('temporal')
@@ -86,6 +88,7 @@ class Slks(BaseNordicar):
 
 class Askeladden(BaseNordicar):
     IDENTIFIER = 'askeladden'
+    GROUP = 'askeladden'
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS
@@ -109,6 +112,7 @@ class Askeladden(BaseNordicar):
         doc.keywords = self.keywords()
         doc.keywords = self.keywords_append(doc)
         doc.geometry = self.geometry()
+        doc.group = [self.GROUP]
 
     def title(self):
         title = self.find('properties.navn')
