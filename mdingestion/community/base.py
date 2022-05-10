@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class Community(object):
     NAME = None
+    GROUP = None
     IDENTIFIER = None
     URL = None
     SCHEMA = SchemaType.DublinCore
@@ -24,6 +25,10 @@ class Community(object):
     @property
     def name(self):
         return self.NAME
+
+    @property
+    def group(self):
+        return self.GROUP
 
     @property
     def url(self):
@@ -61,6 +66,7 @@ class Community(object):
             community=self.name,
             url=self.url,
             oai_metadata_prefix=self.oai_metadata_prefix)
+        doc.groups = self.group
         self.update(doc)
         return doc
 
