@@ -16,7 +16,8 @@ class BaseDara(Community):
 
 
 class DaraGESIS(BaseDara):
-    IDENTIFIER = 'dara_gesis'
+    GROUP = 'gesis'
+    IDENTIFIER = GROUP
     OAI_SET = '1'  # GESIS Data Archive, 7783 records
 
     def update(self, doc):
@@ -26,7 +27,8 @@ class DaraGESIS(BaseDara):
 
 
 class DaraRKI(BaseDara):
-    IDENTIFIER = 'dara_rki'
+    GROUP = 'rki'
+    IDENTIFIER = GROUP
     OAI_SET = '10'  # RKI Robert Koch-Institut, 15 records
 
     def update(self, doc):
@@ -34,7 +36,8 @@ class DaraRKI(BaseDara):
 
 
 class DaraIHI(BaseDara):
-    IDENTIFIER = 'dara_ihi'
+    GROUP = 'ihi'
+    IDENTIFIER = GROUP
     OAI_SET = '105'  # Ifakara Health Institute, 20 records
 
     def update(self, doc):
