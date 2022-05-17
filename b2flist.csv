@@ -1,4 +1,4 @@
-,Community,Group,Identifier,Productive,Date,Schema,Service,URL,OAI Set,Logo,Description
+,Community,Repository,Identifier,Productive,Date,Schema,Service,URL,OAI Set,Logo,Description
 0,askeladden_single,,askeladden_single,True,2021-03-11,SchemaType.JSON,ServiceType.ArcGIS,https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query,,,
 1,b2find,,b2find,False,,SchemaType.DataCite,ServiceType.OAI,http://eudatmd2.dkrz.de/oai,eudat-b2find,,
 2,bbmri,,bbmri,False,,SchemaType.DublinCore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,99916f6f-9a2c-4feb-a342-6552ac7f1529,,
