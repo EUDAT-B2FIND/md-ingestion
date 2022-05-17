@@ -19,25 +19,37 @@ class List(Command):
             print(df)
 
     def build_dataframe(self, name):
-        df = pd.DataFrame(columns=['Community', 'Sub Community', 'Productive', 'Date', 'Schema', 'Service', 'URL', 'OAI Set'])
+        df = pd.DataFrame(columns=[
+            'Community', 
+            'Group', 
+            'Identifier', 
+            'Productive', 
+            'Date', 
+            'Schema', 
+            'Service', 
+            'URL', 
+            'OAI Set',
+            'Logo',
+            'Description'])
         pd.set_option('display.max_rows', None)
         for identifier in communities(name):
             com = community(identifier)
             row = {
                 'Community': com.NAME,
-                'Sub Community': com.IDENTIFIER,
+                'Group': com.GROUP,
+                'Identifier': com.IDENTIFIER,
                 'Productive': com.PRODUCTIVE,
                 'Date': com.DATE if com.PRODUCTIVE else '',
                 'Schema': com.SCHEMA,
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
                 'OAI Set': com.OAI_SET,
+                'Logo': com.LOGO,
                 'Description': com.DESCRIPTION,
-                'Logo': com.LOGO
             }
             df = pd.concat([df, pd.DataFrame(row, index=[0])], ignore_index=True)
         # df.set_index('Group', inplace=True)
-        df = df.sort_values(by=['Community', 'Sub Community'])
+        df = df.sort_values(by=['Community', 'Group'])
         df_sorted = pd.DataFrame(
             data=df.values,
             columns=df.columns)
