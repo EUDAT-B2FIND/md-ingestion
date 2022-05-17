@@ -21,7 +21,7 @@ class List(Command):
     def build_dataframe(self, name):
         df = pd.DataFrame(columns=[
             'Community', 
-            'Group', 
+            'Repository', 
             'Identifier', 
             'Productive', 
             'Date', 
@@ -36,7 +36,7 @@ class List(Command):
             com = community(identifier)
             row = {
                 'Community': com.NAME,
-                'Group': com.GROUP,
+                'Repository': com.GROUP,
                 'Identifier': com.IDENTIFIER,
                 'Productive': com.PRODUCTIVE,
                 'Date': com.DATE if com.PRODUCTIVE else '',
@@ -49,7 +49,7 @@ class List(Command):
             }
             df = pd.concat([df, pd.DataFrame(row, index=[0])], ignore_index=True)
         # df.set_index('Group', inplace=True)
-        df = df.sort_values(by=['Community', 'Group'])
+        df = df.sort_values(by=['Community', 'Repository'])
         df_sorted = pd.DataFrame(
             data=df.values,
             columns=df.columns)
