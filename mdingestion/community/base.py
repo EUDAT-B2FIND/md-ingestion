@@ -14,6 +14,8 @@ class Community(object):
     FILTER = None
     PRODUCTIVE = False
     DATE = ''
+    DESCRIPTION = None
+    LOGO = None
 
     def __init__(self):
         self._reader = None

@@ -23,7 +23,7 @@ class List(Command):
         pd.set_option('display.max_rows', None)
         for identifier in communities(name):
             com = community(identifier)
-            df = df.append({
+            row = {
                 'Community': com.NAME,
                 'Sub Community': com.IDENTIFIER,
                 'Productive': com.PRODUCTIVE,
@@ -31,8 +31,11 @@ class List(Command):
                 'Schema': com.SCHEMA,
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
-                'OAI Set': com.OAI_SET},
-                ignore_index=True)
+                'OAI Set': com.OAI_SET,
+                'Description': com.DESCRIPTION,
+                'Logo': com.LOGO
+            }
+            df = pd.concat([df, pd.DataFrame(row, index=[0])], ignore_index=True)
         # df.set_index('Group', inplace=True)
         df = df.sort_values(by=['Community', 'Sub Community'])
         df_sorted = pd.DataFrame(
