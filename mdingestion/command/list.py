@@ -20,8 +20,10 @@ class List(Command):
 
     def build_dataframe(self, name):
         df = pd.DataFrame(columns=[
-            'Community', 
+            'Community',
+            'Community Title', 
             'Repository', 
+            'Repository Title',
             'Identifier', 
             'Productive', 
             'Date', 
@@ -36,7 +38,9 @@ class List(Command):
             com = community(identifier)
             row = {
                 'Community': com.NAME,
+                'Community Title': com.TITLE,
                 'Repository': com.GROUP,
+                'Repository Title': com.GROUP_TITLE,
                 'Identifier': com.IDENTIFIER,
                 'Productive': com.PRODUCTIVE,
                 'Date': com.DATE if com.PRODUCTIVE else '',
