@@ -15,6 +15,7 @@ TL = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
 
 class BaseNordicar(Community):
     NAME = 'nordicar'
+    TITLE = 'Nordic Archaeology'
     PRODUCTIVE = False
 
     def keywords_append(self, doc):
@@ -33,6 +34,7 @@ class BaseNordicar(Community):
 
 class Slks(BaseNordicar):
     GROUP = 'slks'
+    GROUP_TITLE = 'SLKS'
     IDENTIFIER = GROUP
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
     SCHEMA = SchemaType.DublinCore
@@ -87,6 +89,7 @@ class Slks(BaseNordicar):
 
 class Askeladden(BaseNordicar):
     GROUP = 'askeladden'
+    GROUP_TITLE = 'Askeladden'
     IDENTIFIER = GROUP
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON

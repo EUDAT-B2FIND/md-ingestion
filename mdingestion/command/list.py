@@ -19,22 +19,41 @@ class List(Command):
             print(df)
 
     def build_dataframe(self, name):
-        df = pd.DataFrame(columns=['Community', 'Sub Community', 'Productive', 'Date', 'Schema', 'Service', 'URL', 'OAI Set'])
+        df = pd.DataFrame(columns=[
+            'Community',
+            'Community Title', 
+            'Repository', 
+            'Repository Title',
+            'Identifier', 
+            'Productive', 
+            'Date', 
+            'Schema', 
+            'Service', 
+            'URL', 
+            'OAI Set',
+            'Logo',
+            'Description'])
         pd.set_option('display.max_rows', None)
         for identifier in communities(name):
             com = community(identifier)
-            df = df.append({
+            row = {
                 'Community': com.NAME,
-                'Sub Community': com.IDENTIFIER,
+                'Community Title': com.TITLE,
+                'Repository': com.GROUP,
+                'Repository Title': com.GROUP_TITLE,
+                'Identifier': com.IDENTIFIER,
                 'Productive': com.PRODUCTIVE,
                 'Date': com.DATE if com.PRODUCTIVE else '',
                 'Schema': com.SCHEMA,
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
-                'OAI Set': com.OAI_SET},
-                ignore_index=True)
+                'OAI Set': com.OAI_SET,
+                'Logo': com.LOGO,
+                'Description': com.DESCRIPTION,
+            }
+            df = pd.concat([df, pd.DataFrame(row, index=[0])], ignore_index=True)
         # df.set_index('Group', inplace=True)
-        df = df.sort_values(by=['Community', 'Sub Community'])
+        df = df.sort_values(by=['Community', 'Repository'])
         df_sorted = pd.DataFrame(
             data=df.values,
             columns=df.columns)

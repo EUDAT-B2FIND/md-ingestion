@@ -4,7 +4,9 @@ from ..service_types import SchemaType, ServiceType
 
 class Community(object):
     NAME = None
+    TITLE = None
     GROUP = None
+    GROUP_TITLE = None
     IDENTIFIER = None
     URL = None
     SCHEMA = SchemaType.DublinCore
@@ -14,6 +16,8 @@ class Community(object):
     FILTER = None
     PRODUCTIVE = False
     DATE = ''
+    DESCRIPTION = None
+    LOGO = None
 
     def __init__(self):
         self._reader = None
