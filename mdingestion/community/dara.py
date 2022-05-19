@@ -54,7 +54,8 @@ class DaraDIPF(BaseDara):
 
 
 class DaraBIFIE(BaseDara):
-    IDENTIFIER = 'dara_bifie'
+    GROUP = 'bifie'
+    IDENTIFIER = GROUP
     OAI_SET = '112'  # BIFIE (Federal Institute for Education Research, Austria), 138 records
 
     def update(self, doc):
@@ -71,7 +72,8 @@ class DaraZfKD(BaseDara):
 
 
 class DaraZBW(BaseDara):
-    IDENTIFIER = 'dara_zbw'
+    GROUP = 'zbw'
+    IDENTIFIER = GROUP
     OAI_SET = '118'  # ZBW Journal Data Archive, 153 records
 
     def update(self, doc):
@@ -79,7 +81,8 @@ class DaraZBW(BaseDara):
 
 
 class DaraSRDA(BaseDara):
-    IDENTIFIER = 'dara_srda'
+    GROUP = 'srda'
+    IDENTIFIER = GROUP
     OAI_SET = '128'  # SRDA - Survey Research Data Archive Taiwan, 2680
 
     def update(self, doc):
@@ -87,15 +90,17 @@ class DaraSRDA(BaseDara):
 
 
 class DaraEBDC(BaseDara):
-    IDENTIFIER = 'dara_ebdc'
-    OAI_SET = '13'  # LMU-ifo Economics & Business Data Center (EBDC), 131 records
+    GROUP = 'ebdc'
+    IDENTIFIER = GROUP
+    OAI_SET = '13'  # EBDC - Economics & Business Data Center (LMU/ifo), 131 records
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Economics')
 
 
 class DaraIWH(BaseDara):
-    IDENTIFIER = 'dara_iwh'
+    GROUP = 'iwh'
+    IDENTIFIER = GROUP
     OAI_SET = '130'  # IWH - The Halle Institute for Economic Research, 7 records
 
     def update(self, doc):
@@ -103,7 +108,8 @@ class DaraIWH(BaseDara):
 
 
 class DaraAHRI(BaseDara):
-    IDENTIFIER = 'dara_ahri'
+    GROUP = 'ahri'
+    IDENTIFIER = GROUP
     OAI_SET = '132'  # AHRI Africa Health Research Institute, 82 records
 
     def update(self, doc):
@@ -111,7 +117,8 @@ class DaraAHRI(BaseDara):
 
 
 class DaraRDC(BaseDara):
-    IDENTIFIER = 'dara_rdc'
+    GROUP = 'rdc'
+    IDENTIFIER = GROUP
     OAI_SET = '136'  # RDC of the Federal Statistical Office and the statistical offices of the LÃ¤nder, 1843 records
 
     def update(self, doc):
@@ -119,19 +126,21 @@ class DaraRDC(BaseDara):
 
 
 class DaraDZHW(BaseDara):
-    IDENTIFIER = 'dara_dzhw'
+    GROUP = 'dzhw'
+    IDENTIFIER = GROUP
     OAI_SET = '138'  # German Centre for Higher Education Research and Science Studies (DZHW)
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Education Sciences')
 
 
-class DaraXHUB(BaseDara):
-    IDENTIFIER = 'dara_xhub'
-    OAI_SET = '139'  # xhub, 46 records
+#class DaraXHUB(BaseDara):
+ #   GROUP = 'xhub'
+  #  IDENTIFIER = GROUP
+   # OAI_SET = '139'  # xhub, 46 records
 
-    def update(self, doc):
-        doc.discipline = self.discipline(doc, 'Social Sciences')
+    #def update(self, doc):
+     #   doc.discipline = self.discipline(doc, 'Social Sciences')
 
 
 class DaraManifesto(BaseDara):
