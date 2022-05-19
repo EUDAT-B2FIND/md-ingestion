@@ -45,7 +45,8 @@ class DaraIHI(BaseDara):
 
 
 class DaraDIPF(BaseDara):
-    IDENTIFIER = 'dara_dipf'
+    GROUP = 'dipf'
+    IDENTIFIER = GROUP
     OAI_SET = '11'  # DIPF Leibniz Institute for Research and Information in Education, 901 records
 
     def update(self, doc):
@@ -61,7 +62,8 @@ class DaraBIFIE(BaseDara):
 
 
 class DaraZfKD(BaseDara):
-    IDENTIFIER = 'dara_zfkd'
+    GROUP = 'zfkd'
+    IDENTIFIER = GROUP
     OAI_SET = '114'  # ZfKD German Center for Cancer Registry Data at the RKI, 10 records
 
     def update(self, doc):
