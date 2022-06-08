@@ -4,7 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class DanseasyDatacite(Community):
     NAME = 'danseasy'
-    IDENTIFIER = 'danseasy'
+    IDENTIFIER = NAME
     URL = 'https://easy.dans.knaw.nl/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
