@@ -16,6 +16,8 @@ def test_convert_to_lon_180():
     assert util.convert_to_lon_180(180) == 180
     assert util.convert_to_lon_180(-180) == -180
     assert util.convert_to_lon_180(360) == 0
+    assert util.convert_to_lon_180(370) == 10
     assert util.convert_to_lon_180(190) == -170
     assert util.convert_to_lon_180(-10) == -10
     assert util.convert_to_lon_180(-190) == 170
+    assert util.convert_to_lon_180(-340) == 20
