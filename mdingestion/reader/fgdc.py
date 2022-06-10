@@ -3,6 +3,7 @@ import shapely
 from .base import XMLReader
 from ..sniffer import OAISniffer
 from ..format import format_value
+from ..util import convert_to_lon_180
 
 import logging
 
@@ -37,7 +38,9 @@ class FGDCReader(XMLReader):
     def geometry(self):
         if self.parser.doc.find('bounding'):
             west = format_value(self.find('bounding.westbc'), type='float', one=True)
+            west = convert_to_lon_180(west)
             east = format_value(self.find('bounding.eastbc'), type='float', one=True)
+            east = convert_to_lon_180(east)
             north = format_value(self.find('bounding.northbc'), type='float', one=True)
             south = format_value(self.find('bounding.southbc'), type='float', one=True)
             try:
