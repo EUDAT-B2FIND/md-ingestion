@@ -19,14 +19,16 @@ def is_valid_email(value):
     return True
 
 def convert_to_lon_180(lon):
+    # TODO: how to handle 0-360 bbox?
     # converts longitude value to range [-180, 180]
     #
     # Longitude can be between 0~360 and -180~180.
     #
     # see:
     # https://confluence.ecmwf.int/pages/viewpage.action?pageId=149337515
-    if lon > 180 or lon < 0:
+    """ if lon > 180 or lon < 0:
         lon_180 = (lon + 180) % 360 - 180
     else:
-        lon_180 = lon
-    return lon_180 
+        lon_180 = lon """
+    # return lon_180 
+    return lon
