@@ -2,19 +2,20 @@ from .base import Community
 from ..service_types import SchemaType, ServiceType
 
 
-class IvoaEudatcore(Community):
-    NAME = 'ivoa'
-    IDENTIFIER = 'ivoa'
+class IvoaDatacite(Community):
+    NAME = 'ivoa_datacite'
+    IDENTIFIER = 'ivoa_datacite'
     URL = 'http://dc.g-vo.org/rr/q/pmh/pubreg.xml'
-    SCHEMA = SchemaType.Eudatcore
+    SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_b2find'
+    OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
-    PRODUCTIVE = False
+    PRODUCTIVE = True
 
     def update(self, doc):
-        doc.source = self.find_source('relatedIdentifier', relatedIdentifierType="URL")
+        doc.source = self.find_source('alternateIdentifier', alternateIdentifierType="reference URL")
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="bibcode")
+        doc.contact = self.find('contributor', contributorType="ContactPerson")
         doc.discipline = self.discipline(doc, 'Astrophysics and Astronomy')
         doc.contributor = self.contributor(doc)
 

@@ -1,11 +1,12 @@
 CLOSED_ACCESS_RIGHTS = [
-    # https://wiki.surfnet.nl/display/standards/info-eu-repo#infoeurepo-AccessRights
     'closedAccess',
     'embargoedAccess',
     'restrictedAccess',
     'restricted',
     'closed',
 ]
+
+
 
 
 def is_open_access(rights, closed_access_rights=None):
