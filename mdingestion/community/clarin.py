@@ -58,9 +58,9 @@ class ClarinFive(BaseClarin):
     URL = 'http://www.clarin.si/repository/oai/request '
 
 
-class ClarinSix(BaseClarin):
-    IDENTIFIER = 'clarin_six'
-    URL = 'https://repo.spraakbanken.gu.se/oai/request'
+# class ClarinSix(BaseClarin):
+  #  IDENTIFIER = 'clarin_six'
+  #  URL = 'https://repo.spraakbanken.gu.se/oai/request'
 
 
 class ClarinSeven(BaseClarin):
