@@ -21,8 +21,12 @@ class OAIHarvester(Harvester):
         logging.captureWarnings(True)
         self.mdprefix = oai_metadata_prefix
         self.oai_set = oai_set
+        if self.username:
+            auth = (self.username, self.password)
+        else:
+            auth = None
         self.sickle = Sickle(self.url, max_retries=3, timeout=120, verify=self.verify,
-                             auth=(self.username, self.password))
+                             auth=auth)
 
     def identifier(self, record):
         return record.header.identifier

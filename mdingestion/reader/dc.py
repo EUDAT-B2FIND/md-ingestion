@@ -2,6 +2,7 @@ import shapely
 
 from .base import XMLReader
 from ..sniffer import OAISniffer
+from ..util import convert_to_lon_180
 
 
 class DublinCoreReader(XMLReader):
@@ -51,6 +52,7 @@ class DublinCoreReader(XMLReader):
             # <dcterms:spatial xsi:type="dcterms:POINT">9.811246,56.302585</dcterms:spatial>
             point = self.parser.doc.find('spatial', attrs={'xsi:type': 'dcterms:POINT'}).text.split(',')
             lon = float(point[0])
+            lon = convert_to_lon_180(lon)
             lat = float(point[1])
             # point: x=lon, y=lat
             geometry = shapely.geometry.Point(lon, lat)
@@ -60,8 +62,10 @@ class DublinCoreReader(XMLReader):
             bbox = self.parser.doc.find('spatial', attrs={'xsi:type': 'DCTERMS:Box'}).text.split()
             south = float(bbox[0])
             east = float(bbox[1])
+            east = convert_to_lon_180(east)
             north = float(bbox[2])
             west = float(bbox[3])
+            west = convert_to_lon_180(west)
             # bbox: minx=west, miny=south, maxx=east, maxy=north
             geometry = shapely.geometry.box(west, south, east, north)
         else:

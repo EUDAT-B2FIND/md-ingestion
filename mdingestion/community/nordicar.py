@@ -139,4 +139,5 @@ class Askeladden(BaseNordicar):
 
     def geometry(self):
         geom = shape(self.reader.parser.doc['geometry'])
-        return geom.centroid
+        # return geom.centroid
+        return geom
