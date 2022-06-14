@@ -58,9 +58,9 @@ class ClarinFive(BaseClarin):
     URL = 'http://www.clarin.si/repository/oai/request '
 
 
-class ClarinSix(BaseClarin):
-    IDENTIFIER = 'clarin_six'
-    URL = 'https://repo.spraakbanken.gu.se/oai/request'
+# class ClarinSix(BaseClarin):
+  #  IDENTIFIER = 'clarin_six'
+  #  URL = 'https://repo.spraakbanken.gu.se/oai/request'
 
 
 class ClarinSeven(BaseClarin):
@@ -103,10 +103,10 @@ class ClarinThirteen(BaseClarin):
     OAI_SET = 'hdl_11321_4'
 
 
-class ClarinFourteen(BaseClarin):
-    IDENTIFIER = 'clarin_fourteen'
-    URL = 'https://metashare.ut.ee/oai_pmh/'
-    PRODUCTIVE = False
+# class ClarinFourteen(BaseClarin): --> doesn work properly
+  #  IDENTIFIER = 'clarin_fourteen'
+  #  URL = 'https://metashare.ut.ee/oai_pmh/'
+  #  PRODUCTIVE = False
 
 
 class ClarinFifteen(BaseClarin):
