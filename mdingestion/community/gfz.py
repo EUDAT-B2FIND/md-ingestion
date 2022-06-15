@@ -16,6 +16,12 @@ class BaseGfz(Community):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geosciences')
 
+
+class Gfzdb(BaseGfz):
+    NAME = 'GFZ'
+    IDENTIFIER = 'gfz'
+    OAI_SET = 'DOIDB.GFZ' 
+
 class GfzCrc1211db(BaseGfz):
     GROUP = 'crc1211db'
     IDENTIFIER = GROUP
