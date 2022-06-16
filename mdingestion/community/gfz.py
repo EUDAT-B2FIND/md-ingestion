@@ -5,12 +5,11 @@ from ..format import format_value
 
 class BaseGfz(Community):
     NAME = 'gfz'
-    IDENTIFIER = NAME
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = 'DOIDB.GFZ'
+#    OAI_SET = 'DOIDB.GFZ'
     PRODUCTIVE = False
 
     def update(self, doc):
@@ -18,8 +17,8 @@ class BaseGfz(Community):
 
 
 class Gfzdb(BaseGfz):
-    NAME = 'GFZ'
-    IDENTIFIER = 'gfz'
+    GROUP = 'gfzdataservices'
+    IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.GFZ' 
 
 class GfzCrc1211db(BaseGfz):
@@ -60,6 +59,9 @@ class GfzIgets(BaseGfz):
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.IGETS'
 
+    def update(self, doc):
+        doc.discipline = self.discipline(doc, 'Geodesy, Geoinformatics and Remote Sensing')
+
 class GfzIntermagnet(BaseGfz):
     GROUP = 'intermagnet'
     IDENTIFIER = GROUP
@@ -79,11 +81,6 @@ class GfzPik(BaseGfz):
     GROUP = 'pik'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.PIK'
-
-class GfzGeofon(BaseGfz):
-    GROUP = 'geofon'
-    IDENTIFIER = GROUP
-    OAI_SET = 'DOIDB.SEISNET'
 
 class GfzTereno(BaseGfz):
     GROUP = 'tereno'
