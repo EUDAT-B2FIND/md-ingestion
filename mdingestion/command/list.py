@@ -21,15 +21,15 @@ class List(Command):
     def build_dataframe(self, name):
         df = pd.DataFrame(columns=[
             'Community',
-            'Community Title', 
-            'Repository', 
+            'Community Title',
+            'Repository',
             'Repository Title',
-            'Identifier', 
-            'Productive', 
-            'Date', 
-            'Schema', 
-            'Service', 
-            'URL', 
+            'Identifier',
+            'Productive',
+            'Date',
+            'Schema',
+            'Service',
+            'URL',
             'OAI Set',
             'Logo',
             'Description'])

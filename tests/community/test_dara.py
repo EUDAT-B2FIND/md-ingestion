@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.community.dara import DaraRKI, DaraICPSR, DaraSRDA, DaraGESIS
+from mdingestion.community.dara import DaraRKI, DaraSRDA, DaraGESIS
 
 from tests.common import TESTDATA_DIR
 
@@ -21,24 +21,6 @@ def test_dara_rki():
     assert doc.keywords == []
     assert doc.doi == 'https://doi.org/10.17886/EpiBull-2015-002'
     assert doc.language == ['German']
-
-
-def test_dara_icpsr():
-    # Set: 39, ICPSR - Interuniversity Consortium for Political and Social Research, 39334
-    xmlfile = os.path.join(TESTDATA_DIR, 'dara_icpsr', 'raw',
-                           'e5c1094e-31c4-51f4-9333-ca4bf029bfd6.xml')
-    reader = DaraICPSR()
-    doc = reader.read(xmlfile)
-    assert 'Integrated Postsecondary Education Data System (IPEDS)' in doc.title[0]
-    # assert 'Data on Austrian open access' in doc.description[0]
-    assert ['United States Department of Education. National Center for Education Statistics'] == doc.creator
-    assert 'Social Sciences' in doc.discipline
-    assert doc.open_access is True
-    assert 'metadataPrefix=oai_dc&identifier=oai:oai.da-ra.de:440957' in doc.metadata_access
-    assert doc.publication_year == '2004'
-    assert 'academic degrees' in doc.keywords
-    assert doc.doi == 'https://doi.org/10.3886/ICPSR06936'
-    assert doc.language == ['English']
 
 
 def test_dara_srda():
