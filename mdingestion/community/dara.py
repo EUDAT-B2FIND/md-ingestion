@@ -134,7 +134,7 @@ class DaraDZHW(BaseDara):
         doc.discipline = self.discipline(doc, 'Education Sciences')
 
 
-#class DaraICPSR(BaseDara):
+# class DaraICPSR(BaseDara):
 #    GROUP = 'icpsr'
 #    IDENTIFIER = GROUP
 #    OAI_SET = '39'  # ICPSR - Interuniversity Consortium for Political and Social Research, 39419 records
@@ -143,7 +143,7 @@ class DaraDZHW(BaseDara):
 #        doc.discipline = self.discipline(doc, 'Social Sciences')
 
 
-#class DaraXHUB(BaseDara):
+# class DaraXHUB(BaseDara):
 #    IDENTIFIER = 'dara_xhub'
 #    OAI_SET = '139'  # xhub, 46 records
 #
@@ -151,7 +151,7 @@ class DaraDZHW(BaseDara):
 #        doc.discipline = self.discipline(doc, 'Social Sciences')
 
 
-#class DaraManifesto(BaseDara):
+# class DaraManifesto(BaseDara):
 #    IDENTIFIER = 'dara_manifesto'
 #    OAI_SET = '143'  # Manifesto Project, 25 records
 
@@ -159,7 +159,7 @@ class DaraDZHW(BaseDara):
 #        doc.discipline = self.discipline(doc, 'Political Science')
 
 
-#class DaraDJI(BaseDara):
+# class DaraDJI(BaseDara):
 #    IDENTIFIER = 'dara_dji'
 #    OAI_SET = '148'  # DJI - The German Youth Institute, 3 records#
 

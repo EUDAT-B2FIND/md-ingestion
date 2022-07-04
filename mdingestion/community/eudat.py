@@ -37,6 +37,7 @@ class B2ShareCSC(BaseEudat):
         if not doc.publisher:
             doc.publisher = 'EUDAT'
 
+
 class B2ShareFZJ(BaseEudat):
     GROUP = 'b2share'
     GROUP_TITLE = 'B2SHARE'
@@ -65,4 +66,4 @@ class B2ShareFZJ(BaseEudat):
         # doc.keywords = self.keywords(doc, 'whatever')
 #        if not doc.publisher:
 #            doc.publisher = 'EUDAT'
-#        doc.discipline = self.discipline(doc, 'Unknown')
+#        doc.discipline = self.discipline(doc, 'Unknown'

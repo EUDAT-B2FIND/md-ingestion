@@ -18,6 +18,7 @@ def is_valid_email(value):
         return False
     return True
 
+
 def convert_to_lon_180(lon):
     # TODO: how to handle 0-360 bbox?
     # converts longitude value to range [-180, 180]
@@ -30,5 +31,5 @@ def convert_to_lon_180(lon):
         lon_180 = (lon + 180) % 360 - 180
     else:
         lon_180 = lon """
-    # return lon_180 
+    # return lon_180
     return lon

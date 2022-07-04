@@ -2,8 +2,6 @@ from .base import Community
 from ..service_types import SchemaType, ServiceType
 
 
-
-
 class DarusDatacite(Community):
     NAME = 'darus'
     IDENTIFIER = 'darus'

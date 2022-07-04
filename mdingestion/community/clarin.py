@@ -59,8 +59,8 @@ class ClarinFive(BaseClarin):
 
 
 # class ClarinSix(BaseClarin):
-  #  IDENTIFIER = 'clarin_six'
-  #  URL = 'https://repo.spraakbanken.gu.se/oai/request'
+#  IDENTIFIER = 'clarin_six'
+#  URL = 'https://repo.spraakbanken.gu.se/oai/request'
 
 
 class ClarinSeven(BaseClarin):
@@ -104,9 +104,9 @@ class ClarinThirteen(BaseClarin):
 
 
 # class ClarinFourteen(BaseClarin): --> doesn work properly
-  #  IDENTIFIER = 'clarin_fourteen'
-  #  URL = 'https://metashare.ut.ee/oai_pmh/'
-  #  PRODUCTIVE = False
+#  IDENTIFIER = 'clarin_fourteen'
+#  URL = 'https://metashare.ut.ee/oai_pmh/'
+#  PRODUCTIVE = False
 
 
 class ClarinFifteen(BaseClarin):

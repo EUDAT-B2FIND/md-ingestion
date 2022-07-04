@@ -19,40 +19,44 @@ class BaseGfz(Community):
 class Gfzdb(BaseGfz):
     GROUP = 'gfzdataservices'
     IDENTIFIER = GROUP
-    OAI_SET = 'DOIDB.GFZ' 
+    OAI_SET = 'DOIDB.GFZ'
+
 
 class GfzCrc1211db(BaseGfz):
     GROUP = 'crc1211db'
     IDENTIFIER = GROUP
-    OAI_SET = 'DOIDB.CRC1211' 
+    OAI_SET = 'DOIDB.CRC1211'
 
-    #def update(self, doc):
-     #   doc.discipline = self.discipline(doc, 'Public Health, Health Services Research, Social Medicine')
 
 class GfzEnmap(BaseGfz):
     GROUP = 'enmap'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.ENMAP'
 
+
 class GfzFidgeo(BaseGfz):
     GROUP = 'fidgeo'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.FID'
+
 
 class GfzGeofon(BaseGfz):
     GROUP = 'geofon'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.GEOFON'
 
+
 class GfzGipp(BaseGfz):
     GROUP = 'gipp'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.GIPP'
 
+
 class GfzIcgem(BaseGfz):
     GROUP = 'icgem'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.ICGEM'
+
 
 class GfzIgets(BaseGfz):
     GROUP = 'igets'
@@ -62,30 +66,36 @@ class GfzIgets(BaseGfz):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geodesy, Geoinformatics and Remote Sensing')
 
+
 class GfzIntermagnet(BaseGfz):
     GROUP = 'intermagnet'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.INTERMAG'
 
-#class GfzIsdc(BaseGfz):
+
+# class GfzIsdc(BaseGfz):
 #    GROUP = 'isdc'
 #    IDENTIFIER = GROUP
 #    OAI_SET = ' DOIDB.ISDC'
+
 
 class GfzIsg(BaseGfz):
     GROUP = 'isg'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.ISG'
 
+
 class GfzPik(BaseGfz):
     GROUP = 'pik'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.PIK'
 
+
 class GfzTereno(BaseGfz):
     GROUP = 'tereno'
     IDENTIFIER = GROUP
     OAI_SET = 'DOIDB.TERENO'
+
 
 class GfzWsm(BaseGfz):
     GROUP = 'wsm'
