@@ -16,7 +16,7 @@ TL = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
 class BaseNordicar(Community):
     NAME = 'nordicar'
     TITLE = 'Nordic Archaeology'
-    PRODUCTIVE = False
+    PRODUCTIVE = True
 
     def keywords_append(self, doc):
         keywords = copy.copy(doc.keywords)
