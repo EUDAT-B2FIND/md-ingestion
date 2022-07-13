@@ -12,3 +12,8 @@ class EliDataCite(Community):
     OAI_SET = None
 #   PRODUCTIVE = True
 #   DATE = '2021-10-20'
+
+    def update(self, doc):
+        doc.discipline = ['Physics']
+        doc.publisher = 'ELI ERIC'
+        doc.source = 'http://aliceinwonderland.eu'
