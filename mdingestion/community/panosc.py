@@ -45,3 +45,13 @@ class ESRFDatacite(BasePanosc):
         if not pubyear:
             pubyear = self.find('dates.date', dateType="Accepted")
         return pubyear
+
+class ESSDatacite(BasePanosc):
+    GROUP = 'ess'
+    GROUP_TITLE = 'ESS'
+    IDENTIFIER = GROUP
+    URL = ''
+    SCHEMA = SchemaType.DataCite
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_datacite'
+    OAI_SET = None
