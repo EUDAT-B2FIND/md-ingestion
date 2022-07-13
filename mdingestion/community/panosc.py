@@ -29,7 +29,7 @@ class ESRFDatacite(BasePanosc):
     def update(self, doc):
         doc.discipline = 'Particles, Nuclei and Fields'
         doc.publication_year = self.publicationyear(doc)
-#        doc.temporal_coverage = <dates><date dateType="Collected">2022-04-26T07:30:00Z/2022-04-27T06:00:00Z</date>
+        doc.temporal_coverage = self.find('dates.date', dateType="Collected")
         doc.keywords = self.keywords(doc)
         doc.publisher = 'ESRF (European Synchrotron Radiation Facility)'
 
