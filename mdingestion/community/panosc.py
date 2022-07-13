@@ -13,12 +13,13 @@ class BasePanosc(Community):
     TITLE = 'PaNOSC'
     PRODUCTIVE = False
     DATE = ''
-    DESCRIPTION = None
-    LOGO = None
+    DESCRIPTION = ''
+    LOGO = ''
 
 class ESRFDatacite(BasePanosc):
-    NAME = 'esrf'
-    IDENTIFIER = 'esrf'
+    GROUP = 'esrf'
+    GROUP_TITLE = 'ESRF'
+    IDENTIFIER = GROUP
     URL = 'https://icatplus.esrf.fr/oaipmh/request'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
@@ -37,6 +38,10 @@ class ESRFDatacite(BasePanosc):
 #        keywords.append('PaN')#
 #        return keywords
 
-#    def publicationyear (self, doc):
-#       if not <publicationyear>:
-#       if datetype: "Available": nimm den Wert, sonst datetype:"Accepted"
+    def publicationyear (self, doc):
+        pubyear = doc.publication_year
+        if not pubyear:
+            pubyear = self.find('dates.date', dateType="Available")
+        if not pubyear:
+            pubyear = self.find('dates.date', dateType="Accepted")
+        return pubyear
