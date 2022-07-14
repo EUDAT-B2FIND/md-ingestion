@@ -9,49 +9,9 @@ import copy
 
 
 class BasePanosc(Community):
-    NAME = 'panosc'
-    TITLE = 'PaNOSC'
-    PRODUCTIVE = False
-    DATE = ''
-    DESCRIPTION = ''
+    GROUP = 'panosc'
+    GROUP_TITLE = 'PaNOSC'
+    PRODUCTIVE = True
+    DATE = '2022-07-14'
+    DESCRIPTION = 'The PaNOSC project, Photon and Neutron Open Science Cloud, brings together six strategic European research infrastructures (ESRF, CERIC-ERIC, ELI Delivery Consortium, the European Spallation Source, European XFEL and the Institut Laue-Langevin – ILL, and the e-infrastructures EGI and GEANT, with the goal of contributing to the construction and development of the EOSC, an ecosystem allowing universal and cross-disciplinary open access to data through a single access point, for researchers in all scientific fields.'
     LOGO = ''
-
-class ESRFDatacite(BasePanosc):
-    GROUP = 'esrf'
-    GROUP_TITLE = 'ESRF'
-    IDENTIFIER = GROUP
-    URL = 'https://icatplus.esrf.fr/oaipmh/request'
-    SCHEMA = SchemaType.DataCite
-    SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = None
-
-    def update(self, doc):
-        doc.discipline = 'Particles, Nuclei and Fields'
-        doc.publication_year = self.publicationyear(doc)
-        doc.temporal_coverage = self.find('dates.date', dateType="Collected")
-        doc.keywords = self.keywords(doc)
-        doc.publisher = 'ESRF (European Synchrotron Radiation Facility)'
-
-    def keywords(self, doc):
-        keywords = doc.keywords
-        keywords.append('PaN')
-        return keywords
-
-    def publicationyear (self, doc):
-        pubyear = doc.publication_year
-        if not pubyear:
-            pubyear = self.find('dates.date', dateType="Available")
-        if not pubyear:
-            pubyear = self.find('dates.date', dateType="Accepted")
-        return pubyear
-
-class ESSDatacite(BasePanosc):
-    GROUP = 'ess'
-    GROUP_TITLE = 'ESS'
-    IDENTIFIER = GROUP
-    URL = ''
-    SCHEMA = SchemaType.DataCite
-    SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = None
