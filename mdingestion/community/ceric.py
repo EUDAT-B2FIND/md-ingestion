@@ -21,21 +21,12 @@ class CERICDatacite(BasePanosc):
         doc.discipline = 'Particles, Nuclei and Fields'
         doc.keywords = self.keywords(doc)
         doc.temporal_coverage = self.find('dates.date', dateType="Collected")
-        doc.publication_year = self.publication_year(doc)
         doc.title =self.title(doc)
 
     def keywords(self, doc):
         keywords = doc.keywords
         keywords.append('PaN')
         return keywords
-
-    def publication_year(self,doc):
-        pubyear = doc.publication_year
-        if not pubyear:
-            pubyear = self.find('dates.date', dateType="Accepted")
-        if not pubyear:
-            pubyear = self.find('header.datestamp')
-        return pubyear
 
     def title(self,doc):
         title = self.find('titles.title')
