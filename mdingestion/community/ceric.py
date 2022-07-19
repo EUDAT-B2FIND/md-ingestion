@@ -18,9 +18,16 @@ class CERICDatacite(BasePanosc):
     LOGO = ''
 
     def update(self, doc):
+        doc.source = self.source(doc)
         doc.discipline = 'Particles, Nuclei and Fields'
         doc.keywords = self.keywords(doc)
         doc.temporal_coverage = self.find('dates.date', dateType="Collected")
+
+    def source(self,doc):
+        source = doc.source
+        if not doc.identifier:
+            source = self.find_source('alternateIdentifiers.alternateIdentifier')
+        return source
 
     def keywords(self, doc):
         keywords = doc.keywords
@@ -34,4 +41,3 @@ class CERICDatacite(BasePanosc):
    #     elif len(title[0]) < 4:
    #         title = 'Untitled'
    #     return title
-
