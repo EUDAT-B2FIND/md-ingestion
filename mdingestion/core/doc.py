@@ -141,6 +141,7 @@ class BaseDoc(object):
     @metadata_access.setter
     def metadata_access(self, value):
         self._metadata_access = format_value(value, type='url', one=True)
+#        print('value', value, 'md', self._metadata_access)
 
     @property
     def creator(self):
