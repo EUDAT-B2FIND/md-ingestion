@@ -29,7 +29,8 @@ class OAISniffer(CatalogSniffer):
 
     def metadata_access(self, doc):
         if doc.oai_identifier:
-            mdaccess = f"{doc.url}?verb=GetRecord&metadataPrefix={doc.oai_metadata_prefix}&identifier={doc.oai_identifier}"  # noqa
+            url = doc.url.strip()
+            mdaccess = f"{url}?verb=GetRecord&metadataPrefix={doc.oai_metadata_prefix}&identifier={doc.oai_identifier}"  # noqa
         else:
             mdaccess = None
         return mdaccess

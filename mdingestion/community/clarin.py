@@ -55,7 +55,7 @@ class ClarinFour(BaseClarin):
 
 class ClarinFive(BaseClarin):
     IDENTIFIER = 'clarin_five'
-    URL = 'http://www.clarin.si/repository/oai/request '
+    URL = 'http://www.clarin.si/repository/oai/request'
 
 
 # class ClarinSix(BaseClarin):
