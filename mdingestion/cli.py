@@ -94,14 +94,14 @@ def harvest(ctx, community, url, fromdate, clean, limit, insecure, username, pas
 @click.option('--format', default='ckan', help='output format: ckan (default) or b2f')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
-@click.option('--no-linkcheck', is_flag=True, help='do not check if URLs resolve in validation')
+@click.option('--linkcheck/--no-linkcheck', default=False, is_flag=True, help='do not check if URLs resolve in validation')
 @click.pass_context
-def map(ctx, community, format, limit, force, no_linkcheck):
+def map(ctx, community, format, limit, force, linkcheck):
     try:
         map = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        map.run(format=format, force=force, linkcheck=not no_linkcheck, limit=limit,
+        map.run(format=format, force=force, linkcheck=linkcheck, limit=limit,
                 silent=ctx.obj['silent'])
     except Exception as e:
         logging.critical(f"map: {e}", exc_info=True)
@@ -138,11 +138,11 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, insecu
 @click.option('--fromdays', type=int, help='Harvest records not older than given days ago.')
 @click.option('--clean', is_flag=True, help='Clean output folder before harvesting')
 @click.option('--limit', type=int, help='Limit')
-@click.option('--no-linkcheck', is_flag=True, help='do not check if URLs resolve in validation')
+@click.option('--linkcheck/--no-linkcheck', default=False, is_flag=True, help='do not check if URLs resolve in validation')
 @click.option('--no-update', is_flag=True, help='do not update existing record')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_linkcheck, no_update, insecure):
+def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, linkcheck, no_update, insecure):
     try:
         # harvest
         cmd = Harvest(
@@ -160,7 +160,7 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, no_l
         cmd = Map(
             community=community,
             outdir=ctx.obj['outdir'],)
-        cmd.run(format='ckan', force=False, linkcheck=not no_linkcheck, limit=limit,
+        cmd.run(format='ckan', force=False, linkcheck=linkcheck, limit=limit,
                 silent=ctx.obj['silent'])
         # upload
         upload = Upload(outdir=ctx.obj['outdir'], community=community)
