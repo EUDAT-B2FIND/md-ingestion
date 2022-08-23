@@ -2,7 +2,7 @@ from .base import Community
 from ..service_types import SchemaType, ServiceType
 
 
-class Helmholtz(Community):
+class HelmholtzEudatcore(Community):
     NAME = 'helmholtz'
     TITLE = 'Helmholtz'
     IDENTIFIER = NAME
