@@ -3,7 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class UdLDatacite(Community):
-    NAME = 'udl'
+    NAME = 'ul'
     IDENTIFIER = NAME
     URL = 'https://dorel.univ-lorraine.fr/oai'
     SCHEMA = SchemaType.DataCite
