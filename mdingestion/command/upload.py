@@ -15,7 +15,7 @@ import logging
 def upload(data, host=None, apikey=None, no_update=False, verify=True):
     requests_kwargs = {'verify': verify}
     try:
-        with RemoteCKAN(f'http://{host}', apikey=apikey) as ckan:
+        with RemoteCKAN(f'https://{host}', apikey=apikey) as ckan:
             if no_update:
                 ckan.call_action('package_show', {'id': data['name']}, requests_kwargs=requests_kwargs)
                 logging.info("upload skip update")
@@ -24,7 +24,7 @@ def upload(data, host=None, apikey=None, no_update=False, verify=True):
                 logging.info("upload update")
     except NotFound:
         # TODO: clean up code ...
-        with RemoteCKAN(f'http://{host}', apikey=apikey) as ckan:
+        with RemoteCKAN(f'https://{host}', apikey=apikey) as ckan:
             ckan.call_action('package_create', data, requests_kwargs=requests_kwargs)
             logging.info("upload create")
 
