@@ -1,8 +1,8 @@
-from .base import Community
+from .b2share import BaseB2Share
 from ..service_types import SchemaType, ServiceType
 
 
-class FMI(Community):
+class FMI(BaseB2Share):
     NAME = 'fmi'
     TITLE = 'FMI'
     IDENTIFIER = NAME
