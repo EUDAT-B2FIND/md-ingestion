@@ -12,10 +12,11 @@ from ..community import community, communities
 import logging
 
 
-def upload(data, host=None, apikey=None, no_update=False, verify=True):
+def upload(data, host=None, apikey=None, no_update=False, verify=True, https=False):
     requests_kwargs = {'verify': verify}
+    proto = 'https' if https else 'http'
     try:
-        with RemoteCKAN(f'https://{host}', apikey=apikey) as ckan:
+        with RemoteCKAN(f'{proto}://{host}', apikey=apikey) as ckan:
             if no_update:
                 ckan.call_action('package_show', {'id': data['name']}, requests_kwargs=requests_kwargs)
                 logging.info("upload skip update")
@@ -24,14 +25,14 @@ def upload(data, host=None, apikey=None, no_update=False, verify=True):
                 logging.info("upload update")
     except NotFound:
         # TODO: clean up code ...
-        with RemoteCKAN(f'https://{host}', apikey=apikey) as ckan:
+        with RemoteCKAN(f'{proto}://{host}', apikey=apikey) as ckan:
             ckan.call_action('package_create', data, requests_kwargs=requests_kwargs)
             logging.info("upload create")
 
 
 class Upload(Command):
     def run(self, iphost=None, auth=None, target=None, from_=None, limit=None, no_update=False, verify=True,
-            silent=False):
+            silent=False, https=False):
         # TODO: refactor community loop
         _communities = communities(self.community)
         for identifier in tqdm(_communities,
@@ -44,10 +45,10 @@ class Upload(Command):
             self._community = community(identifier)
             self.upload_to_ckan(iphost=iphost, auth=auth, from_=from_, limit=limit,
                                 no_update=no_update, verify=verify,
-                                silent=silent)
+                                silent=silent, https=https)
 
     def upload_to_ckan(self, iphost, auth, from_=None, limit=None, no_update=False, verify=True,
-                       silent=False):
+                       silent=False, https=False):
         self.walker = Walker(self.datadir)
         limit = limit or -1
         count = 0
@@ -64,7 +65,7 @@ class Upload(Command):
             with open(filename, 'rb') as fp:
                 data = json.load(fp)
                 try:
-                    upload(data=data, host=iphost, apikey=auth, no_update=no_update, verify=verify)
+                    upload(data=data, host=iphost, apikey=auth, no_update=no_update, verify=verify, https=https)
                 except ConnectionError:
                     logging.exception('upload connection error.')
                     raise
