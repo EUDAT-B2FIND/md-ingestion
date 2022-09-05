@@ -141,9 +141,10 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, https,
 @click.option('--limit', type=int, help='Limit')
 @click.option('--linkcheck/--no-linkcheck', default=False, is_flag=True, help='do not check if URLs resolve in validation')
 @click.option('--no-update', is_flag=True, help='do not update existing record')
+@click.option('--https', '-s', is_flag=True, help='enable upload on https')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, linkcheck, no_update, insecure):
+def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, linkcheck, no_update, https, insecure):
     try:
         # harvest
         cmd = Harvest(
@@ -167,7 +168,7 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, link
         upload = Upload(outdir=ctx.obj['outdir'], community=community)
         upload.run(iphost=iphost, auth=auth, target='ckan', from_=None, limit=limit,
                    no_update=no_update, verify=not insecure,
-                   silent=ctx.obj['silent'])
+                   silent=ctx.obj['silent'], https=https)
     except UserInfo as e:
         click.echo(f'{e}')
     except Exception as e:
