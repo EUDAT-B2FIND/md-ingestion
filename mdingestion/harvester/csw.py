@@ -26,6 +26,7 @@ class CSWHarvester(Harvester):
         return record.identifier
 
     def matches(self):
+        return 10
         self.csw.getrecords2(
             maxrecords=0,
             constraints=self.constraints,
@@ -37,9 +38,11 @@ class CSWHarvester(Harvester):
         if not self._schema:
             if self._schema_type == SchemaType.ISO19139:
                 ns_name = 'gmd'
+                self._schema = 'http://www.isotc211.org/2005/gmd'
             else:
                 ns_name = 'csw'
-            self._schema = Namespaces().get_namespace(ns_name)
+                self._schema = Namespaces().get_namespace(ns_name)
+        print(self._schema)
         return self._schema
 
     @property
@@ -60,7 +63,9 @@ class CSWHarvester(Harvester):
                 constraints=self.constraints,
                 startposition=startposition,
                 esn='full',
-                outputschema=self.schema,
+                outputschema='http://www.isotc211.org/2005/gmd',
+                #self.schema,
+                #resulttype='results',
                 maxrecords=20)
             startposition = self.csw.results['nextrecord']
             if startposition == 0:
