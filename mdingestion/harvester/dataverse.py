@@ -42,7 +42,7 @@ class DataverseHarvester(Harvester):
         return self._query
 
     def identifier(self, record):
-        return f"dataverse-{self.community}-{record['identifier_of_dataverse']}"
+        return f"dataverse-{self.community}-{record['global_id']}"
 
     def matches(self):
         query = {
