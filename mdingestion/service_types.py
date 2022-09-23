@@ -18,3 +18,4 @@ class ServiceType(Enum):
     HERBADROP = 100
     ArcGIS = 200
     BC = 300
+    Dataverse = 400
