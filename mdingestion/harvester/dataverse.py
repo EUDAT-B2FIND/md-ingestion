@@ -54,9 +54,8 @@ class DataverseHarvester(Harvester):
 
     def get_records(self):
         query = {
-            "per_page": 20,
-            #"resultOffset": 0,
-            #"resultRecordCount": 200
+            "per_page": 100,
+            "start": 0,
         }
         query.update(self.query)
         ok = True
@@ -68,7 +67,7 @@ class DataverseHarvester(Harvester):
                 yield item
             if len(items) == 0:
                 ok = False
-            # query['resultOffset'] += query['resultRecordCount']
+            query['start'] += query['per_page']
 
     def _write_record(self, fp, record, pretty_print=True):
         json.dump(record, fp, indent=4, sort_keys=True, ensure_ascii=False)
