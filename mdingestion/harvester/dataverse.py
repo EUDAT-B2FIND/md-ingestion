@@ -36,7 +36,6 @@ class DataverseHarvester(Harvester):
                 # "q": f"{self.filter}",
                 "q": "*",
                 "type": "dataset",
-                "per_page": 1,
                 "metadata_fields": "citation:dsDescription&metadata_fields=citation:author"
             }
         return self._query
@@ -46,7 +45,7 @@ class DataverseHarvester(Harvester):
 
     def matches(self):
         query = {
-            # "returnCountOnly": True,
+            "per_page": 1,
         }
         query.update(self.query)
         response = requests.get(self.url, params=query, headers=self.headers, verify=self.verify)
