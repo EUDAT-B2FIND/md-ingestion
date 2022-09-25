@@ -4,7 +4,12 @@ from ..format import format_value
 
 
 class BaseGfz(Community):
-    NAME = 'gfz'
+    GROUP = 'gfz'
+    GROUP_TITLE = 'GFZ Data Services'
+    PRODUCTIVE = True
+    DATE = '2021-08-15'
+    DESCRIPTION = 'By the GFZ Data Services the GFZ archives and publishes datasets to which a DOI has been assigned and which cover all geoscientific disciplines.'
+    LOGO = ''
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
@@ -17,50 +22,54 @@ class BaseGfz(Community):
 
 
 class Gfzdb(BaseGfz):
-    GROUP = 'gfzdataservices'
-    IDENTIFIER = GROUP
+    NAME = 'gfzdataservices'
+    TITLE = 'GFZ Data Services'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.GFZ'
 
 
 class GfzCrc1211db(BaseGfz):
-    GROUP = 'crc1211db'
-    IDENTIFIER = GROUP
+    NAME = 'crc1211db'
+    TITLE = 'CRC 1211 Database'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.CRC1211'
 
 
 class GfzEnmap(BaseGfz):
-    GROUP = 'enmap'
-    IDENTIFIER = GROUP
+    NAME = 'enmap'
+    TITLE = 'EnMAP'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.ENMAP'
 
 
 class GfzFidgeo(BaseGfz):
-    GROUP = 'fidgeo'
-    IDENTIFIER = GROUP
+    NAME = 'fidgeo'
+    TITLE = 'FID GEO'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.FID'
 
 
 class GfzGeofon(BaseGfz):
-    GROUP = 'geofon'
-    IDENTIFIER = GROUP
+    NAME = 'geofon'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.GEOFON'
 
 
 class GfzGipp(BaseGfz):
-    GROUP = 'gipp'
-    IDENTIFIER = GROUP
+    NAME = 'gipp'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.GIPP'
 
 
 class GfzIcgem(BaseGfz):
-    GROUP = 'icgem'
-    IDENTIFIER = GROUP
+    NAME = 'icgem'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.ICGEM'
 
 
 class GfzIgets(BaseGfz):
-    GROUP = 'igets'
-    IDENTIFIER = GROUP
+    NAME = 'igets'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.IGETS'
 
     def update(self, doc):
@@ -68,36 +77,36 @@ class GfzIgets(BaseGfz):
 
 
 class GfzIntermagnet(BaseGfz):
-    GROUP = 'intermagnet'
-    IDENTIFIER = GROUP
+    NAME = 'intermagnet'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.INTERMAG'
 
 
 # class GfzIsdc(BaseGfz):
-#    GROUP = 'isdc'
-#    IDENTIFIER = GROUP
+#    NAME = 'isdc'
+#    IDENTIFIER = NAME
 #    OAI_SET = ' DOIDB.ISDC'
 
 
 class GfzIsg(BaseGfz):
-    GROUP = 'isg'
-    IDENTIFIER = GROUP
+    NAME = 'isg'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.ISG'
 
 
 class GfzPik(BaseGfz):
-    GROUP = 'pik'
-    IDENTIFIER = GROUP
+    NAME = 'pik'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.PIK'
 
 
 class GfzTereno(BaseGfz):
-    GROUP = 'tereno'
-    IDENTIFIER = GROUP
+    NAME = 'tereno'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.TERENO'
 
 
 class GfzWsm(BaseGfz):
-    GROUP = 'wsm'
-    IDENTIFIER = GROUP
+    NAME = 'wsm'
+    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.WSM'
