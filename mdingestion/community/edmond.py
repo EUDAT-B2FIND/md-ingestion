@@ -6,7 +6,7 @@ class Edmond(Community):
     NAME = 'edmond'
     TITLE = 'Edmond'
     IDENTIFIER = NAME
-    URL = 'https://demo.dataverse.org/api/search'
+    URL = 'https://edmond.mpdl.mpg.de/api/search'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.Dataverse
     # FILTER = ""
