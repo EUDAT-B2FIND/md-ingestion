@@ -18,20 +18,20 @@ for f in Path(__file__).parent.glob("*.py"):
 del import_module, Path
 
 
-def _communities(cls=None):
+def _repositories(cls=None):
     cls = cls or Community
     if len(cls.__subclasses__()) == 0:
         yield cls
     else:
         for subcls in cls.__subclasses__():
-            yield from _communities(subcls)
+            yield from _repositories(subcls)
 
 
 def get_repositories():
     global COMMUNITIES
     if not COMMUNITIES:
         COMMUNITIES = []
-        for com in _communities():
+        for com in _repositories():
             COMMUNITIES.append(com)
     return COMMUNITIES
 
