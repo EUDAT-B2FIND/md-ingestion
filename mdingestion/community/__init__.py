@@ -1,5 +1,5 @@
 from .base import Community
-from ..exceptions import CommunityNotSupported
+from ..exceptions import RepositoryNotSupported
 
 import logging
 
@@ -41,7 +41,7 @@ def community(identifier):
     for community in get_repositories():
         if community.IDENTIFIER == identifier:
             return community()
-    raise CommunityNotSupported(f'Community not supported: {identifier}')
+    raise RepositoryNotSupported(f'Repository not supported: {identifier}')
 
 
 def communities(name):
@@ -55,5 +55,5 @@ def communities(name):
         elif community.IDENTIFIER == name:
             com_list.append(community.IDENTIFIER)
     if not com_list:
-        raise CommunityNotSupported(f'Community not supported: {name}')
+        raise RepositoryNotSupported(f'Repository not supported: {name}')
     return com_list
