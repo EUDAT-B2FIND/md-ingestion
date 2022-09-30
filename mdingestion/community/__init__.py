@@ -36,24 +36,24 @@ def get_repositories():
     return REPOSITORIES
 
 
-def community(identifier):
-    logging.debug(f'community identifier={identifier}')
-    for community in get_repositories():
-        if community.IDENTIFIER == identifier:
-            return community()
+def repo(identifier):
+    logging.debug(f'repository identifier={identifier}')
+    for _repo in get_repositories():
+        if _repo.IDENTIFIER == identifier:
+            return _repo()
     raise RepositoryNotSupported(f'Repository not supported: {identifier}')
 
 
-def communities(name):
-    logging.debug(f'community name={name}')
-    com_list = []
-    for community in get_repositories():
+def repos(name):
+    logging.debug(f'rpository name={name}')
+    repo_list = []
+    for _repo in get_repositories():
         if name == 'all':
-            com_list.append(community.IDENTIFIER)
-        elif community.NAME == name:
-            com_list.append(community.IDENTIFIER)
-        elif community.IDENTIFIER == name:
-            com_list.append(community.IDENTIFIER)
-    if not com_list:
+            repo_list.append(_repo.IDENTIFIER)
+        elif _repo.NAME == name:
+            repo_list.append(_repo.IDENTIFIER)
+        elif _repo.IDENTIFIER == name:
+            repo_list.append(_repo.IDENTIFIER)
+    if not repo_list:
         raise RepositoryNotSupported(f'Repository not supported: {name}')
-    return com_list
+    return repo_list

@@ -3,7 +3,7 @@ from tqdm import tqdm
 
 from .base import Command
 from ..walker import Walker
-from ..community import community, communities
+from ..community import repo, repos
 from ..writer import writer
 from ..validator import Validator
 
@@ -14,13 +14,13 @@ class Map(Command):
     def __init__(self, **args):
         super().__init__(**args)
         self.walker = Walker(self.datadir)
-        # self._community = community(self.community)
+        # self._community = repos(self.community)
         self.writer = None
         self.summary = {}
 
     def run(self, format=format, force=False, linkcheck=True, limit=None, silent=False):
         # TODO: refactor community loop
-        _communities = communities(self.community)
+        _communities = repos(self.community)
         show = len(_communities) == 1 and not silent
         for identifier in tqdm(_communities,
                                ascii=True,
@@ -29,7 +29,7 @@ class Map(Command):
                                unit=' community',
                                total=len(_communities),
                                disable=len(_communities) == 1 or silent):
-            self._community = community(identifier)
+            self._community = repo(identifier)
             self._run(format=format, force=force, linkcheck=linkcheck, limit=limit,
                       show=show, silent=silent)
         if len(_communities) > 1 and not silent:

@@ -6,7 +6,7 @@ from ckanapi import RemoteCKAN, NotFound, NotAuthorized
 from requests.exceptions import ConnectionError
 
 from .base import Command
-from ..community import community, communities
+# from ..community import repo, repos
 
 import logging
 

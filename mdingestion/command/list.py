@@ -1,7 +1,7 @@
 import pandas as pd
 
 from .base import Command
-from ..community import community, communities
+from ..community import repo, repos
 
 
 class List(Command):
@@ -34,8 +34,8 @@ class List(Command):
             'Logo',
             'Description'])
         pd.set_option('display.max_rows', None)
-        for identifier in communities(name):
-            com = community(identifier)
+        for identifier in repos(name):
+            com = repo(identifier)
             row = {
                 'Community': com.NAME,
                 'Community Title': com.TITLE,

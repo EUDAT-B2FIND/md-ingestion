@@ -7,7 +7,7 @@ from requests.exceptions import ConnectionError
 
 from .base import Command
 from ..walker import Walker
-from ..community import community, communities
+from ..community import repo, repos
 
 import logging
 
@@ -34,7 +34,7 @@ class Upload(Command):
     def run(self, iphost=None, auth=None, target=None, from_=None, limit=None, no_update=False, verify=True,
             silent=False, https=False):
         # TODO: refactor community loop
-        _communities = communities(self.community)
+        _communities = repos(self.community)
         for identifier in tqdm(_communities,
                                ascii=True,
                                desc=f"Uploading {self.community}",
@@ -42,7 +42,7 @@ class Upload(Command):
                                unit=' community',
                                total=len(_communities),
                                disable=len(_communities) == 1 or silent):
-            self._community = community(identifier)
+            self._community = repo(identifier)
             self.upload_to_ckan(iphost=iphost, auth=auth, from_=from_, limit=limit,
                                 no_update=no_update, verify=verify,
                                 silent=silent, https=https)
