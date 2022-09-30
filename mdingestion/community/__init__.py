@@ -27,7 +27,7 @@ def _communities(cls=None):
             yield from _communities(subcls)
 
 
-def get_communities():
+def get_repositories():
     global COMMUNITIES
     if not COMMUNITIES:
         COMMUNITIES = []
@@ -38,7 +38,7 @@ def get_communities():
 
 def community(identifier):
     logging.debug(f'community identifier={identifier}')
-    for community in get_communities():
+    for community in get_repositories():
         if community.IDENTIFIER == identifier:
             return community()
     raise CommunityNotSupported(f'Community not supported: {identifier}')
@@ -47,7 +47,7 @@ def community(identifier):
 def communities(name):
     logging.debug(f'community name={name}')
     com_list = []
-    for community in get_communities():
+    for community in get_repositories():
         if name == 'all':
             com_list.append(community.IDENTIFIER)
         elif community.NAME == name:
