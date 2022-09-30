@@ -7,17 +7,15 @@ from requests.exceptions import ConnectionError
 
 from .base import Command
 
-import logging
-
 agent = 'b2f'
 
 
-def ckan_search(iphost, community, limit, pattern):
+def ckan_search(iphost, repo, limit, pattern):
 
     # create pattern for CKAN:
     ckan_pattern = ""
-    if community:
-        ckan_pattern = f"groups:{community}"
+    if repo:
+        ckan_pattern = f"groups:{repo}"
     if pattern:
         if ckan_pattern:
             ckan_pattern += " AND "
@@ -40,4 +38,4 @@ def ckan_search(iphost, community, limit, pattern):
 class Search(Command):
     def run(self, iphost=None, limit=20, pattern=None, verify=True,
             silent=False):
-        ckan_search(community=self.community, iphost=iphost, limit=limit, pattern=pattern)
+        ckan_search(repo=self.repo, iphost=iphost, limit=limit, pattern=pattern)
