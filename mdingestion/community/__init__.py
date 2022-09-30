@@ -8,7 +8,7 @@ import logging
 from importlib import import_module
 from pathlib import Path
 
-COMMUNITIES = None
+REPOSITORIES = None
 
 for f in Path(__file__).parent.glob("*.py"):
     module_name = f.stem
@@ -28,12 +28,12 @@ def _repositories(cls=None):
 
 
 def get_repositories():
-    global COMMUNITIES
-    if not COMMUNITIES:
-        COMMUNITIES = []
+    global REPOSITORIES
+    if not REPOSITORIES:
+        REPOSITORIES = []
         for com in _repositories():
-            COMMUNITIES.append(com)
-    return COMMUNITIES
+            REPOSITORIES.append(com)
+    return REPOSITORIES
 
 
 def community(identifier):
