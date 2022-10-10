@@ -7,8 +7,8 @@ class Sextant(Community):
     NAME = 'sextant'
     IDENTIFIER = NAME
     URL = 'https://sextant.ifremer.fr/geonetwork/srv/fre/csw'
-    # SCHEMA = SchemaType.ISO19139
-    SCHEMA = SchemaType.DublinCore
+    SCHEMA = SchemaType.ISO19139
+    #SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.CSW
     PRODUCTIVE = False
 
