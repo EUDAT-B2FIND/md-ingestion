@@ -19,3 +19,10 @@ class LagoDublinCore(Community):
         doc.discipline = ['Astrophysics and Astronomy']
         doc.publisher = ['LAGO Collaboration']
         doc.pid = self.find_pid('identifier')
+        doc.keywords = self.keywords()
+
+    def keywords(self):
+        _keywords = self.find('subject')
+        _keywords = [kw for kw in _keywords if 'http' not in kw]
+        _keywords = [kw for kw in _keywords if '#' not in kw]
+        return _keywords
