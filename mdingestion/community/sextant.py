@@ -6,7 +6,8 @@ from ..format import format_value
 class Sextant(Community):
     NAME = 'sextant'
     IDENTIFIER = NAME
-    URL = 'https://sextant.ifremer.fr/geonetwork/srv/fre/csw'
+#    URL = 'https://sextant.ifremer.fr/geonetwork/srv/fre/csw'
+    URL = 'https://sextant.ifremer.fr/geonetwork/GEOCATALOGUE/fre/csw'
     SCHEMA = SchemaType.ISO19139
     #SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.CSW
