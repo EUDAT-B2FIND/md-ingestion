@@ -17,6 +17,10 @@ class Sextant(Community):
 #        doc.doi = self.find_doi('linkage')
 #        doc.pid = self.find_pid('linkage')
 #        doc.source = self.find('MD_Identifier')
+# identifier in <gmd:fileIdentifier>
+#        <gco:CharacterString>6742e097-0878-4d46-ad75-65452c13f2e9</gco:CharacterString>
+#      </gmd:fileIdentifier> ganz oben. 
+# TODO: jeweils ergänzen um https://sextant.ifremer.fr/geonetwork/srv/ger/catalog.search#/metadata/
 #        doc.contributor = 'DEIMS-SDR Site and Dataset registry deims.org'
 #        doc.discipline = 'Environmental Monitoring'
 #        if not doc.publisher:
