@@ -29,7 +29,7 @@ class ISO19139Reader(XMLReader):
         doc.resource_type = self.find('contentInfo.contentType')
         doc.format = self.find('MD_Format.name')
         # doc.size = self.find('')
-        # doc.version = self.find('distributionFormat.version')
+        doc.version = self.find('distributionFormat.version')
         doc.temporal_coverage_begin_date = self.find('EX_TemporalExtent.beginPosition')
         doc.temporal_coverage_end_date = self.find('EX_TemporalExtent.endPosition')
         doc.geometry = self.find_geometry()
