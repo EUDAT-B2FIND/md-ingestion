@@ -42,6 +42,6 @@ class Sextant(Community):
         if not doc.publication_year:
             doc.publication_year = self.find('dateStamp.DateTime')
 
-     def title(self, doc):
+    def title(self, doc):
         if not doc.title:
             doc.title = 'Untitled'
