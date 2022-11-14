@@ -19,6 +19,8 @@ class Sextant(Community):
         self.source(doc)
         self.publisher(doc)
         self.discipline(doc)
+        self.publication_year(doc)
+        self title(doc)
 
 
     def source(self, doc):
@@ -35,3 +37,11 @@ class Sextant(Community):
     def discipline(self, doc):
         if not doc.discipline:
             doc.discipline = 'Oceanography/Marine Science'
+
+    def publication_year(self, doc):
+        if not doc.publication_year:
+            doc.publication_year = self.find('dateStamp.DateTime')
+
+     def title(self, doc):
+        if not doc.title:
+            doc.title = 'Untitled'
