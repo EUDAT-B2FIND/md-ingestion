@@ -20,7 +20,7 @@ class Sextant(Community):
         self.publisher(doc)
         self.discipline(doc)
         self.publication_year(doc)
-        self title(doc)
+        self.title(doc)
 
 
     def source(self, doc):
