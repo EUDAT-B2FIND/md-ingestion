@@ -17,6 +17,8 @@ class Sextant(Community):
         doc.doi = self.find_doi('linkage')
         doc.pid = self.find_pid('linkage')
         self.source(doc)
+        self.publisher(doc)
+        self.discipline(doc)
 
 
     def source(self, doc):
@@ -26,10 +28,14 @@ class Sextant(Community):
             if file_id:
                 doc.source = f'https://sextant.ifremer.fr/geonetwork/srv/ger/catalog.search#/metadata/{file_id[0]}'
 
-#        doc.contributor = 'DEIMS-SDR Site and Dataset registry deims.org'
-#        doc.discipline = 'Environmental Monitoring'
-#        if not doc.publisher:
-#            doc.publisher = 'DEIMS-SDR'
+    def publisher(self, doc):
+        if not doc.publisher:
+            doc.publisher = 'Ifremer'
+
+    def discipline(self, doc):
+        if not doc.discipline:
+            doc.discipline = 'Oceanography/Marine Science'
+
 #        # TODO: why do we not use csw-metadataccess? It points to dc metadata though...fix it, Carsten!
 #        doc.metadata_access = [url for url in self.find('linkage') if 'deims.org/api/' in url]
 #        doc.discipline = self.discipline(doc, 'Environmental Monitoring')
