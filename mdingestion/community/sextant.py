@@ -16,12 +16,12 @@ class Sextant(Community):
     def update(self, doc):
         doc.doi = self.find_doi('linkage')
         doc.pid = self.find_pid('linkage')
+        doc.discipline = 'Oceanography/Marine Science'
         self.source(doc)
         self.publisher(doc)
         self.discipline(doc)
         self.publication_year(doc)
         self.title(doc)
-
 
     def source(self, doc):
         doc.source = self.find('MD_Identifier')
@@ -33,10 +33,6 @@ class Sextant(Community):
     def publisher(self, doc):
         if not doc.publisher:
             doc.publisher = 'IFREMER'
-
-    def discipline(self, doc):
-        if not doc.discipline:
-            doc.discipline = 'Oceanography/Marine Science'
 
     def publication_year(self, doc):
         if not doc.publication_year:
