@@ -9,9 +9,9 @@ class TuwDatacite(Community):
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = 
+    OAI_SET = None
     PRODUCTIVE = False
-    Date = 
+#    Date = 
 
 #    def update(self, doc):
 #        doc.discipline = 'Social Sciences'
