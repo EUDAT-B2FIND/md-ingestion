@@ -17,11 +17,13 @@ class Sextant(Community):
         doc.doi = self.find_doi('linkage')
         doc.pid = self.find_pid('linkage')
         doc.discipline = 'Oceanography/Marine Science'
+        doc.keywords = self.find('MD_Keywords.keyword.PT_FreeText.textGroup')
         self.source(doc)
         self.publisher(doc)
         self.discipline(doc)
         self.publication_year(doc)
         self.title(doc)
+        self.rights(doc)
 
     def source(self, doc):
         doc.source = self.find('MD_Identifier')
@@ -45,3 +47,8 @@ class Sextant(Community):
             titles = self.find('CI_Citation.title.PT_FreeText')
             if titles:
                 doc.title = titles
+
+    def rights(self, doc):
+        rights_list = self.find('MD_LegalConstraints.CharacterString')
+        rights_list.extend(self.find('MD_LegalConstraints.useLimitation.LocalisedCharacterString))
+        doc.rights = rights_list
