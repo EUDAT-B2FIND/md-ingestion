@@ -25,9 +25,10 @@ def get_dataset_list(group, iphost):
     return dataset_list
 
 
-def purge_dataset_list(dataset_list, iphost, apikey):
+def purge_dataset_list(dataset_list, iphost, apikey, https):
     '''purge_dataset_list'''
-    with RemoteCKAN(f"http://{iphost}", apikey=apikey, user_agent=agent) as ckan:
+    proto = 'https' if https else 'http'
+    with RemoteCKAN(f"{proto}://{iphost}", apikey=apikey, user_agent=agent) as ckan:
         for dataset_id in dataset_list:
             try:
                 ckan.action.dataset_purge(id=dataset_id)
@@ -40,10 +41,10 @@ def purge_dataset_list(dataset_list, iphost, apikey):
 
 
 class Purge(Command):
-    def run(self, iphost=None, dataset=None, auth=None, verify=True,
+    def run(self, iphost=None, dataset=None, auth=None, https=False, verify=True,
             silent=False):
         if self.community:
             datasets = get_dataset_list(self.community, iphost=iphost)
         else:
             datasets = [dataset]
-        purge_dataset_list(datasets, iphost=iphost, apikey=auth)
+        purge_dataset_list(datasets, iphost=iphost, apikey=auth, https=https)
