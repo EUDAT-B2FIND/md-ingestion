@@ -41,3 +41,7 @@ class Sextant(Community):
     def title(self, doc):
         if not doc.title:
             doc.title = 'Untitled'
+        else:
+            titles = self.find('CI_Citation.title.PT_FreeText')
+            if titles:
+                doc.title = titles
