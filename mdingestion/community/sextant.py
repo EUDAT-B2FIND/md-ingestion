@@ -50,5 +50,5 @@ class Sextant(Community):
 
     def rights(self, doc):
         rights_list = self.find('MD_LegalConstraints.CharacterString')
-        rights_list.extend(self.find('MD_LegalConstraints.useLimitation.LocalisedCharacterString))
+        rights_list.extend(self.find('MD_LegalConstraints.useLimitation.LocalisedCharacterString'))
         doc.rights = rights_list
