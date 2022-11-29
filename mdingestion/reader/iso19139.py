@@ -4,12 +4,14 @@ from .base import XMLReader
 from ..sniffer import CSWSniffer
 from ..format import format_value
 from ..util import convert_to_lon_180
+from ..service_types import SchemaType
 
 import logging
 
 
 class ISO19139Reader(XMLReader):
     SNIFFER = CSWSniffer
+    SCHEMA = SchemaType.ISO19139
 
     def parse(self, doc):
         # 'identifier' always defined in community mapfile!
