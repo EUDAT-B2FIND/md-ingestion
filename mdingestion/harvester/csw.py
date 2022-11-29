@@ -27,7 +27,9 @@ class CSWHarvester(Harvester):
 
     def matches(self):
         self.csw.getrecords2(
-            maxrecords=0,
+            maxrecords=1,
+            startposition=0,
+            esn='full',
             constraints=self.constraints,
             outputschema=self.schema)
         return self.csw.results['matches']
@@ -40,6 +42,7 @@ class CSWHarvester(Harvester):
             else:
                 ns_name = 'csw'
             self._schema = Namespaces().get_namespace(ns_name)
+        # print(self._schema)
         return self._schema
 
     @property

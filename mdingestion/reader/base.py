@@ -10,6 +10,7 @@ import logging
 class Reader(object):
     DOC_PARSER = None
     SNIFFER = None
+    SCHEMA = None
 
     def __init__(self):
         self.filename = None
@@ -22,6 +23,7 @@ class Reader(object):
         self.parser = self.DOC_PARSER(filename)
         # TODO: handling of oai_metadata_prefix parameter needs to be refactored
         doc = B2FDoc(filename, community, url, oai_metadata_prefix)
+        doc.schema = self.SCHEMA
         self._parse(doc)
         self.parse(doc)
         if self.SNIFFER:

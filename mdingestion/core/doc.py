@@ -390,7 +390,7 @@ class B2FDoc(GeoDoc):
         self._oai_identifier = None
         self._file_identifier = None
         self._fulltext = None
-
+        self.schema = None
     @property
     def name(self):
         return Path(self.filename).stem

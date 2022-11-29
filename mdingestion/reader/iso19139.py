@@ -4,32 +4,34 @@ from .base import XMLReader
 from ..sniffer import CSWSniffer
 from ..format import format_value
 from ..util import convert_to_lon_180
+from ..service_types import SchemaType
 
 import logging
 
 
 class ISO19139Reader(XMLReader):
     SNIFFER = CSWSniffer
+    SCHEMA = SchemaType.ISO19139
 
     def parse(self, doc):
         # 'identifier' always defined in community mapfile!
         doc.related_identifier = self.find('linkage')
         doc.title = self.find('CI_Citation.title')
         doc.description = self.find('abstract')
-        doc.keywords = self.find('keyword')
-        doc.creator = self.find('CI_ResponsibleParty.individualName')
+        doc.keywords = self.find('MD_Keywords.keyword')
+        doc.creator = self.find('CI_ResponsibleParty.individualName.CharacterString')
         # doc.instrument = self.find('')
-        doc.publisher = self.find('CI_ResponsibleParty.organisationName')
+        doc.publisher = self.find('CI_ResponsibleParty.organisationName.CharacterString')
         # doc.contributor = self.find('')
         doc.publication_year = self.find('CI_Citation.date')
         doc.rights = self.find('MD_LegalConstraints')
-        doc.contact = self.find('contact.electronicMailAddress')
+        doc.contact = self.find('contact.electronicMailAddress.CharacterString')
         # doc.funding_reference = self.find('')
         doc.language = self.find('MD_Metadata.language')
         doc.resource_type = self.find('contentInfo.contentType')
-        doc.format = self.find('MD_Format.name')
+        doc.format = self.find('MD_Format.name.CharacterString')
         # doc.size = self.find('')
-        # doc.version = self.find('distributionFormat.version')
+        doc.version = self.find('distributionFormat.version')
         doc.temporal_coverage_begin_date = self.find('EX_TemporalExtent.beginPosition')
         doc.temporal_coverage_end_date = self.find('EX_TemporalExtent.endPosition')
         doc.geometry = self.find_geometry()
