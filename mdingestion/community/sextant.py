@@ -34,7 +34,16 @@ class Sextant(Community):
 
     def publisher(self, doc):
         if not doc.publisher:
-            doc.publisher = 'IFREMER'
+            doc.publisher = 'Ifremer'
+        else:
+            publ = doc.publisher
+            new_publ = []
+            for pub in publ:
+                if pub.lower() == 'ifremer':
+                    new_publ.append('Ifremer')
+                else:
+                    new_publ.append(pub)
+            doc.publisher = new_publ
 
     def publication_year(self, doc):
         if not doc.publication_year:
