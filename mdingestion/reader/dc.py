@@ -3,10 +3,12 @@ import shapely
 from .base import XMLReader
 from ..sniffer import OAISniffer
 from ..util import convert_to_lon_180
+from ..service_types import SchemaType
 
 
 class DublinCoreReader(XMLReader):
     SNIFFER = OAISniffer
+    SCHEMA = SchemaType.DublinCore
 
     def parse(self, doc):
         doc.title = self.find('title')
