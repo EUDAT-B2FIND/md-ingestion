@@ -229,7 +229,7 @@ class BaseDoc(object):
 
     @resource_type.setter
     def resource_type(self, value):
-        self._resource_type = format_value(value)
+        self._resource_type = format_value(value, type='resource_type')
 
     @property
     def format(self):

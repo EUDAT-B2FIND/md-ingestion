@@ -7,48 +7,6 @@ from ..util import convert_to_lon_180
 from ..service_types import SchemaType
 
 
-rt_types = [
-    'Audiovisual', 
-    'Book', 
-    'BookChapter', 
-    'Dataset', 
-    'Collection', 
-    'ComputationalNotebook', 
-    'ConferencePaper', 
-    'ConferenceProceeding', 
-    'DataPaper', 
-    'Dissertation', 
-    'Event', 
-    'Image', 
-    'InteractiveResource', 
-    'Journal', 
-    'JournalArticle', 
-    'Model', 
-    'OutputManagementPlan', 
-    'PeerReview', 
-    'PhysicalObject', 
-    'Preprint', 
-    'Report', 
-    'Service', 
-    'Software',
-    'Sound', 
-    'Standard', 
-    'Text',
-    'Workflow', 
-    'Other']
-
-def normalize_rt(values):
-    new_values = []
-    rt_types_lower = [t.lower() for t in rt_types]
-    for value in values:
-        try:
-            index = rt_types_lower.index(value)
-            new_val = rt_types[index]
-        except Exception:
-            new_val = value
-        new_values.append(new_val)
-    return new_values
-
 class DataCiteReader(XMLReader):
     SNIFFER = OAISniffer
     SCHEMA = SchemaType.DataCite
@@ -126,7 +84,6 @@ class DataCiteReader(XMLReader):
             attribute = resource_type.get('resourceTypeGeneral')
             if attribute:
                 resource_types.append(attribute)
-        resource_types = normalize_rt(resource_types)
         return resource_types
 
     def funding_reference(self):

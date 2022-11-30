@@ -14,6 +14,36 @@ from .linkcheck import ignore_url
 
 import logging
 
+rt_types = [
+    'Audiovisual', 
+    'Book', 
+    'BookChapter', 
+    'Dataset', 
+    'Collection', 
+    'ComputationalNotebook', 
+    'ConferencePaper', 
+    'ConferenceProceeding', 
+    'DataPaper', 
+    'Dissertation', 
+    'Event', 
+    'Image', 
+    'InteractiveResource', 
+    'Journal', 
+    'JournalArticle', 
+    'Model', 
+    'OutputManagementPlan', 
+    'PeerReview', 
+    'PhysicalObject', 
+    'Preprint', 
+    'Report', 
+    'Service', 
+    'Software',
+    'Sound', 
+    'Standard', 
+    'Text',
+    'Workflow', 
+    'Other']
+
 
 NULL_VALUES = (
     '',
@@ -90,6 +120,8 @@ def format(text, type=None):
         formatted = format_email(text)
     elif type == 'url':
         formatted = format_url(text)
+    elif type == 'resource_type':
+        formatted = format_rt(text)
     else:
         formatted = format_string(text)
     return formatted
@@ -238,3 +270,13 @@ def resolve_bibcode(value):
     else:
         url = ''
     return url
+
+
+def format_rt(text):
+    rt_types_lower = [t.lower() for t in rt_types]
+    try:
+        index = rt_types_lower.index(text)
+        val = rt_types[index]
+    except Exception:
+        val = text
+    return val
