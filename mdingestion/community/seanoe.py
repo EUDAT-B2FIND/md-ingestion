@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class Seanoe(Community):
+class Seanoe(Repository):
     NAME = 'seanoe'
     IDENTIFIER = NAME
     URL = 'http://www.seanoe.org/oai/OAIHandler'

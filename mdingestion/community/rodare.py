@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class RodareDataCite(Community):
+class RodareDataCite(Repository):
     NAME = 'rodare'
     IDENTIFIER = NAME
     URL = 'https://rodare.hzdr.de/oai2d'

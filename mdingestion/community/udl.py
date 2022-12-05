@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class UdLDatacite(Community):
+class UdLDatacite(Repository):
     NAME = 'ul'
     IDENTIFIER = NAME
     URL = 'https://dorel.univ-lorraine.fr/oai'

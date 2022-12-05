@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class EuropeanXFEL(Community):
+class EuropeanXFEL(Repository):
     NAME = 'european-xfel'
     IDENTIFIER = NAME
     URL = 'https://in.xfel.eu/metadata/oai-pmh/oai2'

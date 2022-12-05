@@ -1,9 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class Enes(Community):
+class Enes(Repository):
     NAME = 'enes'
     IDENTIFIER = 'enes'
     URL = 'http://c3grid1.dkrz.de:8080/oai/provider'

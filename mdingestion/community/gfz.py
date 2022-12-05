@@ -4,12 +4,12 @@ import pandas as pd
 import os
 import copy
 
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class BaseGfz(Community):
+class BaseGfz(Repository):
     GROUP = 'gfz'
     GROUP_TITLE = 'GFZ Data Services'
     PRODUCTIVE = True

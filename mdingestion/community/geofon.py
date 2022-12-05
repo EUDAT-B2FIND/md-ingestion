@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class GeofonDatacite(Community):
+class GeofonDatacite(Repository):
     NAME = 'geofon'
     IDENTIFIER = NAME
     URL = 'http://doidb.wdc-terra.org/oaip/oai'

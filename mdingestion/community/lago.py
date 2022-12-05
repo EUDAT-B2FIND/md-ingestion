@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class LagoDublinCore(Community):
+class LagoDublinCore(Repository):
     NAME = 'lago'
     IDENTIFIER = 'lago'
     URL = 'http://datahub.egi.eu/oai_pmh'

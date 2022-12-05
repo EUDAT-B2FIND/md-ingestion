@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class Radar(Community):
+class Radar(Repository):
     NAME = 'radar'
     IDENTIFIER = NAME
     URL = 'https://www.radar-service.eu/oai/OAIHandler'

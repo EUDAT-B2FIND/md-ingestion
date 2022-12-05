@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class PangaeaDatacite(Community):
+class PangaeaDatacite(Repository):
     NAME = 'pangaea'
     IDENTIFIER = 'pangaea'
     URL = 'https://ws.pangaea.de/oai/provider'

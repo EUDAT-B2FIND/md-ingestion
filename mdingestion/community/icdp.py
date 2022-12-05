@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class IcdpDatacite(Community):
+class IcdpDatacite(Repository):
     NAME = 'icdp'
     IDENTIFIER = NAME
     URL = 'http://doidb.wdc-terra.org/oaip/oai'

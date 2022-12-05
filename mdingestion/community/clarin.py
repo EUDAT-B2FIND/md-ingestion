@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class BaseClarin(Community):
+class BaseClarin(Repository):
     NAME = 'clarin'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

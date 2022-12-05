@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class IstDublinCore(Community):
+class IstDublinCore(Repository):
     NAME = 'ist'
     IDENTIFIER = 'ist'
     URL = 'https://research-explorer.app.ist.ac.at/oai'

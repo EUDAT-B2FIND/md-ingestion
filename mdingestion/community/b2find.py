@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class B2FINDDatacite(Community):
+class B2FINDDatacite(Repository):
     NAME = 'b2find'
     IDENTIFIER = NAME
     URL = 'http://eudatmd2.dkrz.de/oai'

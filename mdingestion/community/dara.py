@@ -1,4 +1,4 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
@@ -8,7 +8,7 @@ import os
 import copy
 
 
-class BaseDara(Community):
+class BaseDara(Repository):
     GROUP = 'dara'
     GROUP_TITLE = 'da|ra'
     PRODUCTIVE = True

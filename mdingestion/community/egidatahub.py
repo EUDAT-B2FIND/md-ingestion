@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class EgidatahubDublinCore(Community):
+class EgidatahubDublinCore(Repository):
     NAME = 'egidatahub'
     IDENTIFIER = NAME
     URL = 'http://datahub.egi.eu/oai_pmh'

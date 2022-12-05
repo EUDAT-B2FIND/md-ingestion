@@ -1,4 +1,4 @@
-from .base import Community
+from .base import Repository
 from ..exceptions import RepositoryNotSupported
 
 import logging
@@ -19,7 +19,7 @@ del import_module, Path
 
 
 def _repositories(cls=None):
-    cls = cls or Community
+    cls = cls or Repository
     if len(cls.__subclasses__()) == 0:
         yield cls
     else:

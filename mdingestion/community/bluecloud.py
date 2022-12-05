@@ -1,7 +1,7 @@
 import shapely
 import json
 
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 from ..format import format_value
@@ -21,7 +21,7 @@ def fix_list(value):
     return fix
 
 
-class Bluecloud(Community):
+class Bluecloud(Repository):
     NAME = 'bluecloud'
     IDENTIFIER = NAME
     URL = 'https://data.blue-cloud.org/api/collections'

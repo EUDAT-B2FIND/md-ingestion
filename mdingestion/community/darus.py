@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class DarusDatacite(Community):
+class DarusDatacite(Repository):
     NAME = 'darus'
     IDENTIFIER = 'darus'
     URL = 'https://darus.uni-stuttgart.de/oai'

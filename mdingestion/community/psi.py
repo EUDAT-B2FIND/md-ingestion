@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class PsiDatacite(Community):
+class PsiDatacite(Repository):
     NAME = 'psi'
     IDENTIFIER = NAME
     URL = 'https://doi.psi.ch/oaipmh/oai'

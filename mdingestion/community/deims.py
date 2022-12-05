@@ -1,9 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class Deims(Community):
+class Deims(Repository):
     NAME = 'deims'
     IDENTIFIER = 'deims'
     URL = 'https://deims.org/pycsw/catalogue/csw'

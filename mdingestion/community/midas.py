@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class MIDASDublinCore(Community):
+class MIDASDublinCore(Repository):
     NAME = 'midas'
     IDENTIFIER = NAME
     URL = 'https://midas.lt/web/action/oaipmh'

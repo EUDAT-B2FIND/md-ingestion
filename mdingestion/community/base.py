@@ -2,7 +2,7 @@ from ..reader import build_reader
 from ..service_types import SchemaType, ServiceType
 
 
-class Community(object):
+class Repository(object):
     NAME = None
     TITLE = None
     GROUP = None
@@ -67,7 +67,7 @@ class Community(object):
     def read(self, filename):
         doc = self.reader.read(
             filename,
-            community=self.name,
+            repo=self.name,
             url=self.url,
             oai_metadata_prefix=self.oai_metadata_prefix)
         doc.groups = self.group

@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class IntermagnetDatacite(Community):
+class IntermagnetDatacite(Repository):
     NAME = 'intermagnet'
     IDENTIFIER = NAME
     URL = 'http://doidb.wdc-terra.org/oaip/oai'

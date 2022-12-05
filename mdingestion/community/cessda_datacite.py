@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class CessdaDataCite(Community):
+class CessdaDataCite(Repository):
     NAME = 'cessda_datacite'
     IDENTIFIER = NAME
     URL = 'https://datacatalogue-dev.cessda.eu/oai-pmh/v0/oai'

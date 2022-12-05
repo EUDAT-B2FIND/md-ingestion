@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class EnvidatDatacite(Community):
+class EnvidatDatacite(Repository):
     NAME = 'envidat'
     IDENTIFIER = NAME
     URL = 'https://www.envidat.ch/oai'

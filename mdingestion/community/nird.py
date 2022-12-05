@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class NIRDDublinCore(Community):
+class NIRDDublinCore(Repository):
     NAME = 'nird'
     IDENTIFIER = NAME
     URL = 'https://search-api.web.sigma2.no/norstore-archive/oai/v1.0'

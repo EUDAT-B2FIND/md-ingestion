@@ -1,9 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class Sextant(Community):
+class Sextant(Repository):
     NAME = 'sextant'
     IDENTIFIER = NAME
 #    URL = 'https://sextant.ifremer.fr/geonetwork/srv/fre/csw'

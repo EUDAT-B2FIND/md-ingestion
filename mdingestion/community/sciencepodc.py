@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class SciencesPoDublinCore(Community):
+class SciencesPoDublinCore(Repository):
     NAME = 'sciencespodc'
     IDENTIFIER = NAME
     URL = 'https://data.sciencespo.fr/oai'

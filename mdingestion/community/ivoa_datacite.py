@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class IvoaDatacite(Community):
+class IvoaDatacite(Repository):
     NAME = 'ivoa_datacite'
     IDENTIFIER = 'ivoa_datacite'
     URL = 'http://dc.g-vo.org/rr/q/pmh/pubreg.xml'

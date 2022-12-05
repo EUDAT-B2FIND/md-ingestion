@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class Ucl(Community):
+class Ucl(Repository):
     NAME = 'ucl'
     IDENTIFIER = 'ucl'
     URL = 'https://api.figshare.com/v2/oai'
