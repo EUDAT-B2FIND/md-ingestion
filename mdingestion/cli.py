@@ -43,15 +43,15 @@ def cli(ctx, debug, silent, dry_run, outdir):
 
 
 @cli.command()
-@click.option('--community', '-c', help='Community')
+@click.option('--repo', '-c', help='Repository')
 @click.option('--summary', '-s', is_flag=True, help='Summary')
 @click.option('--productive', '-p', is_flag=True, help='Productive')
 @click.option('--out', '-o', help='Output as CSV file')
 @click.pass_context
-def list(ctx, community, summary, productive, out):
+def list(ctx, repo, summary, productive, out):
     try:
         list = List()
-        list.run(name=community, summary=summary,
+        list.run(name=repo, summary=summary,
                  productive=productive, out=out)
     except Exception as e:
         logging.critical(f"list: {e}", exc_info=True)
@@ -59,7 +59,7 @@ def list(ctx, community, summary, productive, out):
 
 
 @cli.command()
-@click.option('--community', '-c', required=True, help='Community')
+@click.option('--repo', '-c', required=True, help='Repository')
 @click.option('--url', help='Source URL')
 @click.option('--fromdate', type=click.DateTime(formats=["%Y-%m-%d"]),
               help='Filter by date.')
@@ -69,10 +69,10 @@ def list(ctx, community, summary, productive, out):
 @click.option('--username', '-u', help='Username for secured OAI server')
 @click.option('--password', '-p', help='Password for secured OAI server')
 @click.pass_context
-def harvest(ctx, community, url, fromdate, clean, limit, insecure, username, password):
+def harvest(ctx, repo, url, fromdate, clean, limit, insecure, username, password):
     try:
         cmd = Harvest(
-            community=community,
+            repo=repo,
             url=url,
             outdir=ctx.obj['outdir'],
             verify=not insecure
@@ -90,16 +90,16 @@ def harvest(ctx, community, url, fromdate, clean, limit, insecure, username, pas
 
 
 @cli.command()
-@click.option('--community', '-c', required=True, help='Community')
+@click.option('--repo', '-c', required=True, help='Repository')
 @click.option('--format', default='ckan', help='output format: ckan (default) or b2f')
 @click.option('--limit', type=int, help='Limit')
 @click.option('--force', is_flag=True, help='force')
 @click.option('--linkcheck/--no-linkcheck', default=False, is_flag=True, help='do not check if URLs resolve in validation')
 @click.pass_context
-def map(ctx, community, format, limit, force, linkcheck):
+def map(ctx, repo, format, limit, force, linkcheck):
     try:
         map = Map(
-            community=community,
+            repo=repo,
             outdir=ctx.obj['outdir'],)
         map.run(format=format, force=force, linkcheck=linkcheck, limit=limit,
                 silent=ctx.obj['silent'])
@@ -109,7 +109,7 @@ def map(ctx, community, format, limit, force, linkcheck):
 
 
 @cli.command()
-@click.option('--community', '-c', required=True, help='Community')
+@click.option('--repo', '-c', required=True, help='Repository')
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--target', default='ckan', help='Target service: ckan (default)')
@@ -119,9 +119,9 @@ def map(ctx, community, format, limit, force, linkcheck):
 @click.option('--https', '-s', is_flag=True, help='enable upload on https')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def upload(ctx, community, iphost, auth, target, from_, limit, no_update, https, insecure):
+def upload(ctx, repo, iphost, auth, target, from_, limit, no_update, https, insecure):
     try:
-        upload = Upload(outdir=ctx.obj['outdir'], community=community)
+        upload = Upload(outdir=ctx.obj['outdir'], repo=repo)
         upload.run(iphost=iphost, auth=auth, target=target, from_=from_, limit=limit,
                    no_update=no_update, verify=not insecure,
                    silent=ctx.obj['silent'], https=https)
@@ -131,7 +131,7 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, https,
 
 
 @cli.command()
-@click.option('--community', '-c', required=True, help='Community')
+@click.option('--repo', '-c', required=True, help='Repository')
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--fromdate', type=click.DateTime(formats=["%Y-%m-%d"]),
@@ -144,11 +144,11 @@ def upload(ctx, community, iphost, auth, target, from_, limit, no_update, https,
 @click.option('--https', '-s', is_flag=True, help='enable upload on https')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, linkcheck, no_update, https, insecure):
+def combine(ctx, repo, iphost, auth, fromdate, fromdays, clean, limit, linkcheck, no_update, https, insecure):
     try:
         # harvest
         cmd = Harvest(
-            community=community,
+            repo=repo,
             outdir=ctx.obj['outdir'],
             verify=not insecure,
         )
@@ -160,12 +160,12 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, link
                     dry_run=ctx.obj['dry_run'], silent=ctx.obj['silent'])
         # map
         cmd = Map(
-            community=community,
+            repo=repo,
             outdir=ctx.obj['outdir'],)
         cmd.run(format='ckan', force=False, linkcheck=linkcheck, limit=limit,
                 silent=ctx.obj['silent'])
         # upload
-        upload = Upload(outdir=ctx.obj['outdir'], community=community)
+        upload = Upload(outdir=ctx.obj['outdir'], repo=repo)
         upload.run(iphost=iphost, auth=auth, target='ckan', from_=None, limit=limit,
                    no_update=no_update, verify=not insecure,
                    silent=ctx.obj['silent'], https=https)
@@ -177,17 +177,17 @@ def combine(ctx, community, iphost, auth, fromdate, fromdays, clean, limit, link
 
 
 @cli.command()
-@click.option('--community', '-c', required=False,
-              help='delete all datasets of this community')
+@click.option('--repo', '-c', required=False,
+              help='delete all datasets of this repo')
 @click.option('--dataset', '-d', metavar='DATASET_ID', required=False, help='delete single dataset')
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance')
 @click.option('--auth', required=True, help='CKAN API key')
 @click.option('--https', '-s', is_flag=True, help='enable purge on https')
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.pass_context
-def purge(ctx, community, dataset, iphost, auth, https, insecure):
+def purge(ctx, repo, dataset, iphost, auth, https, insecure):
     try:
-        purge = Purge(community=community)
+        purge = Purge(repo=repo)
         purge.run(iphost=iphost, dataset=dataset, auth=auth, https=https, verify=not insecure, silent=ctx.obj['silent'])
     except Exception as e:
         logging.critical(f"purge: {e}", exc_info=True)
@@ -195,15 +195,15 @@ def purge(ctx, community, dataset, iphost, auth, https, insecure):
 
 
 @cli.command()
-@click.option('--community', '-c', help='Community')
+@click.option('--repo', '-c', help='Repository')
 @click.option('--iphost', '-i', required=True, help='IP address of CKAN instance', default="b2find.eudat.eu")
 @click.option('--insecure', '-k', is_flag=True, help='Disable SSL verification')
 @click.option('--limit', type=int, help='Limit of shown datasets', default=20)
 @click.option('--pattern', help='Search criteria', default="")
 @click.pass_context
-def search(ctx, community, iphost, insecure, limit, pattern):
+def search(ctx, repo, iphost, insecure, limit, pattern):
     try:
-        search = Search(community=community)
+        search = Search(repo=repo)
         search.run(iphost=iphost, limit=limit, pattern=pattern, verify=not insecure, silent=ctx.obj['silent'])
     except Exception as e:
         logging.critical(f"search: {e}", exc_info=True)
