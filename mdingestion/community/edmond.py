@@ -24,9 +24,9 @@ class Edmond(Community):
         doc.creator = self.find('authors')
         # doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
         # doc.places = self.find('properties.kommune')
-        doc.version = self.find('versionId')
+        #doc.version = self.find('majorVersion.minorVersion')
         doc.title = self.find('name')
-        doc.keywords = self.find('keywords')
+        doc.keywords = self.find('keywords') # append 'subject'
         # doc.keywords = self.keywords_append(doc)
         # doc.geometry = self.geometry()
 
