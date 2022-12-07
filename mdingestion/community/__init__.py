@@ -38,12 +38,12 @@ def _cached_orgs(cls=None):
     return CACHED_ORGS[cls]
 
 
-def Repo(identifier):
+def repo(identifier):
     # lookup repo by identifier and return an instance if found.
     logging.debug(f'repository identifier={identifier}')
-    for repo in _orgs():
-        if repo.IDENTIFIER == identifier:
-            return repo()
+    for org in _cached_orgs():
+        if org.IDENTIFIER == identifier:
+            return org()
     raise RepositoryNotSupported(f'Repository not supported: {identifier}')
 
 
