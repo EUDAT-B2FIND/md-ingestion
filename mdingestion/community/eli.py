@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class EliDataCite(Repository):
-    NAME = 'eli'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'eli'
     URL = 'https://data.eli-laser.eu/oai2d'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

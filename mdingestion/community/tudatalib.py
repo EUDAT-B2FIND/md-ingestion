@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class TudatalibDatacite(Repository):
-    NAME = 'tudatalib'
     IDENTIFIER = 'tudatalib'
     URL = 'https://tudatalib.ulb.tu-darmstadt.de/oai/openairedata'
     SCHEMA = SchemaType.DataCite

@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class SlksFF(Repository):
-    NAME = 'slks_ff'
     IDENTIFIER = 'slks_ff'
     URL = 'http://www.kulturarv.dk/ffrepox/OAIHandler'
     SCHEMA = SchemaType.FF

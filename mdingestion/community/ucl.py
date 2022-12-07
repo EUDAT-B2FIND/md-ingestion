@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class Ucl(Repository):
-    NAME = 'ucl'
     IDENTIFIER = 'ucl'
     URL = 'https://api.figshare.com/v2/oai'
     SCHEMA = SchemaType.DataCite

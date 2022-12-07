@@ -3,7 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class BaseEudat(Repository):
-    NAME = 'eudat'
+    IDENTIFIER = 'eudat'
     TITLE = 'EUDAT'
     PRODUCTIVE = False
 

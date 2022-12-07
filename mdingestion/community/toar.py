@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class Toar(Repository):
-    NAME = 'toar'
     IDENTIFIER = 'toar'
     URL = 'https://b2share.fz-juelich.de/api/oai2d'
     SCHEMA = SchemaType.DublinCore

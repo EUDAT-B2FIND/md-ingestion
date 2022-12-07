@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class EnmapDatacite(Repository):
-    NAME = 'enmap'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'enmap'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

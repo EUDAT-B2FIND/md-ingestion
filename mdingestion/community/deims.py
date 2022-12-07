@@ -4,7 +4,6 @@ from ..format import format_value
 
 
 class Deims(Repository):
-    NAME = 'deims'
     IDENTIFIER = 'deims'
     URL = 'https://deims.org/pycsw/catalogue/csw'
     SCHEMA = SchemaType.ISO19139

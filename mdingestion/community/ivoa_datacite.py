@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class IvoaDatacite(Repository):
-    NAME = 'ivoa_datacite'
     IDENTIFIER = 'ivoa_datacite'
     URL = 'http://dc.g-vo.org/rr/q/pmh/pubreg.xml'
     SCHEMA = SchemaType.DataCite

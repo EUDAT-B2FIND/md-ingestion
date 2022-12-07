@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class Seanoe(Repository):
-    NAME = 'seanoe'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'seanoe'
     URL = 'http://www.seanoe.org/oai/OAIHandler'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

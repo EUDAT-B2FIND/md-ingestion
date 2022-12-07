@@ -3,7 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class BaseClarin(Repository):
-    NAME = 'clarin'
+    GROUP = 'clarin'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'

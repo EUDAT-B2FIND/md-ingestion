@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class PsiDatacite(Repository):
-    NAME = 'psi'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'psi'
     URL = 'https://doi.psi.ch/oaipmh/oai'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

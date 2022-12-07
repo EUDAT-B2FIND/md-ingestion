@@ -4,7 +4,6 @@ from ..format import format_value
 
 
 class DataverseNODatacite(Repository):
-    NAME = 'dataverseno'
     IDENTIFIER = 'dataverseno'
     URL = 'https://dataverse.no/oai'
     SCHEMA = SchemaType.DataCite

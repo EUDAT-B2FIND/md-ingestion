@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class EudatCSC(Repository):
-    NAME = 'eudatcsc'
     IDENTIFIER = 'eudatcsc'
     URL = 'https://b2share.eudat.eu/api/oai2d'
     SCHEMA = SchemaType.Eudatcore

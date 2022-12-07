@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class B2FINDDatacite(Repository):
-    NAME = 'b2find'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'b2find'
     URL = 'http://eudatmd2.dkrz.de/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

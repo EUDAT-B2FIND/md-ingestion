@@ -4,8 +4,7 @@ from ..format import format_value, format_url
 
 
 class Pdc(Repository):
-    NAME = 'pdc'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'pdc'
     URL = 'http://www.polardata.ca/oai/provider'
     SCHEMA = SchemaType.FGDC
     SERVICE_TYPE = ServiceType.OAI

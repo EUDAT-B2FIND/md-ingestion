@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class FMI(Repository):
-    NAME = 'fmi'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'fmi'
     URL = 'https://fmi.b2share.csc.fi/api/oai2d'
     SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI

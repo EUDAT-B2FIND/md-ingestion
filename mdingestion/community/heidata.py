@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class heiDATADatacite(Repository):
-    NAME = 'heidata'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'heidata'
     URL = 'https://heidata.uni-heidelberg.de/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

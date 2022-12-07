@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class IvoaEudatcore(Repository):
-    NAME = 'ivoa'
     IDENTIFIER = 'ivoa'
     URL = 'http://dc.g-vo.org/rr/q/pmh/pubreg.xml'
     SCHEMA = SchemaType.Eudatcore

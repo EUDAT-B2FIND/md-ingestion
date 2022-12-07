@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class DataverseNLDatacite(Repository):
-    NAME = 'dataversenl'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'dataversenl'
     URL = 'https://dataverse.nl/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

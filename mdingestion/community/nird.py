@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class NIRDDublinCore(Repository):
-    NAME = 'nird'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'nird'
     URL = 'https://search-api.web.sigma2.no/norstore-archive/oai/v1.0'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

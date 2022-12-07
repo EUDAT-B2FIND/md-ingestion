@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class EnvidatDatacite(Repository):
-    NAME = 'envidat'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'envidat'
     URL = 'https://www.envidat.ch/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

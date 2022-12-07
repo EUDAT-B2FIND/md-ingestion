@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class LiferespiraDublinCore(Repository):
-    NAME = 'liferespira'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'liferespira'
     URL = 'https://b2share.eudat.eu/api/oai2d'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

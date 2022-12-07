@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class FidgeoDatacite(Repository):
-    NAME = 'fidgeo'
     IDENTIFIER = 'fidgeo'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite

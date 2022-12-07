@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class Radar(Repository):
-    NAME = 'radar'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'radar'
     URL = 'https://www.radar-service.eu/oai/OAIHandler'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class DanseasyDatacite(Repository):
-    NAME = 'danseasy'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'danseasy'
     URL = 'https://easy.dans.knaw.nl/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

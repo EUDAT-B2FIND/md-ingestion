@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class RodareDataCite(Repository):
-    NAME = 'rodare'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'rodare'
     URL = 'https://rodare.hzdr.de/oai2d'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class SciencesPoDDI25(Repository):
-    NAME = 'sciencespo'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'sciencespo'
     URL = 'https://data.sciencespo.fr/oai'
     SCHEMA = SchemaType.DDI25
     SERVICE_TYPE = ServiceType.OAI

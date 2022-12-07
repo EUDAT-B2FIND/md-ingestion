@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class SDRDublinCore(Repository):
-    NAME = 'sdr'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'sdr'
     URL = 'https://repository.surfsara.nl/api/oai2'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

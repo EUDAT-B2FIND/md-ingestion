@@ -4,8 +4,7 @@ from ..format import format_value
 
 
 class Sextant(Repository):
-    NAME = 'sextant'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'sextant'
 #    URL = 'https://sextant.ifremer.fr/geonetwork/srv/fre/csw'
     URL = 'https://sextant.ifremer.fr/geonetwork/GEOCATALOGUE/fre/csw'
     SCHEMA = SchemaType.ISO19139

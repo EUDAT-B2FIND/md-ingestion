@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class EgidatahubDublinCore(Repository):
-    NAME = 'egidatahub'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'egidatahub'
     URL = 'http://datahub.egi.eu/oai_pmh'
     OAI_SET = 'eeaa135fa0822240a3cd4ac2ba5ce1fb'
     SCHEMA = SchemaType.DublinCore

@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class SciencesPoDublinCore(Repository):
-    NAME = 'sciencespodc'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'sciencespodc'
     URL = 'https://data.sciencespo.fr/oai'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

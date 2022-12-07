@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class PangaeaDatacite(Repository):
-    NAME = 'pangaea'
     IDENTIFIER = 'pangaea'
     URL = 'https://ws.pangaea.de/oai/provider'
     SCHEMA = SchemaType.DataCite

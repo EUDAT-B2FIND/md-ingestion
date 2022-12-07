@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class PikDatacite(Repository):
-    NAME = 'pik'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'pik'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

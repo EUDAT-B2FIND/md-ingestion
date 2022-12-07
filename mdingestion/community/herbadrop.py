@@ -5,8 +5,7 @@ from ..format import format_value
 
 
 class Herbadrop(Repository):
-    NAME = 'herbadrop'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'herbadrop'
     URL = 'https://opendata.cines.fr/herbadrop-api/rest/data/search'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.HERBADROP

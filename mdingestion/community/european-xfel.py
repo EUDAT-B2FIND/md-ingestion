@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class EuropeanXFEL(Repository):
-    NAME = 'european-xfel'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'european-xfel'
     URL = 'https://in.xfel.eu/metadata/oai-pmh/oai2'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

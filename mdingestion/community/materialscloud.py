@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class MaterialscloudDublinCore(Repository):
-    NAME = 'materialscloud'
     IDENTIFIER = 'materialscloud'
     URL = 'https://archive.materialscloud.org/xml'
     SCHEMA = SchemaType.DublinCore

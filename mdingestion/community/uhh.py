@@ -4,7 +4,7 @@ from ..format import format_value
 
 
 class BaseUhh(Repository):
-    NAME = 'uhh'
+    # NAME = 'uhh'
     URL = 'https://www.fdr.uni-hamburg.de/oai2d'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

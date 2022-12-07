@@ -36,9 +36,8 @@ class BaseNordicar(Repository):
 
 
 class Slks(BaseNordicar):
-    NAME = 'slks'
+    IDENTIFIER = 'slks'
     TITLE = 'SLKS'
-    IDENTIFIER = NAME
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
@@ -91,9 +90,8 @@ class Slks(BaseNordicar):
 
 
 class Askeladden(BaseNordicar):
-    NAME = 'askeladden'
+    IDENTIFIER = 'askeladden'
     TITLE = 'Askeladden'
-    IDENTIFIER = NAME
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS

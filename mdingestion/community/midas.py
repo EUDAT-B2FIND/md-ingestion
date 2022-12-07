@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class MIDASDublinCore(Repository):
-    NAME = 'midas'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'midas'
     URL = 'https://midas.lt/web/action/oaipmh'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

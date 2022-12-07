@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class WsmDatacite(Repository):
-    NAME = 'wsm'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'wsm'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

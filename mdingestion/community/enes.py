@@ -4,7 +4,6 @@ from ..format import format_value
 
 
 class Enes(Repository):
-    NAME = 'enes'
     IDENTIFIER = 'enes'
     URL = 'http://c3grid1.dkrz.de:8080/oai/provider'
     SCHEMA = SchemaType.ISO19139

@@ -3,7 +3,6 @@ from ..service_types import SchemaType, ServiceType
 
 
 class BaseOrg(object):
-    NAME = None
     TITLE = None
     IDENTIFIER = None
     URL = None
@@ -23,10 +22,6 @@ class BaseOrg(object):
     @property
     def identifier(self):
         return self.IDENTIFIER
-
-    @property
-    def name(self):
-        return self.NAME
 
     @property
     def url(self):
@@ -98,7 +93,7 @@ class BaseOrg(object):
         pass
 
     def __str__(self):
-        return self.NAME
+        return self.IDENTIFIER
 
     def __repr__(self):
         return self.__str__()
@@ -110,7 +105,3 @@ class Repository(BaseOrg):
     @property
     def group(self):
         return self.GROUP
-
-
-class Group(BaseOrg):
-    pass

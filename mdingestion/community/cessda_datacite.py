@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class CessdaDataCite(Repository):
-    NAME = 'cessda_datacite'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'cessda_datacite'
     URL = 'https://datacatalogue-dev.cessda.eu/oai-pmh/v0/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

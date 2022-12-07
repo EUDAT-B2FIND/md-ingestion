@@ -3,8 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class IcdpDatacite(Repository):
-    NAME = 'icdp'
-    IDENTIFIER = NAME
+    IDENTIFIER = 'icdp'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
