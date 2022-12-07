@@ -1,4 +1,4 @@
-from .base import Repository, Group
+from .base import Repository
 from ..exceptions import RepositoryNotSupported
 
 import logging
@@ -9,8 +9,7 @@ from importlib import import_module
 from pathlib import Path
 
 CACHED_ORGS = {
-    Repository: [], 
-    Group: []
+    Repository: [],
 }
 
 
@@ -60,6 +59,8 @@ def _orgs(name=None, cls=None):
             org_list.append(_org.IDENTIFIER)
         elif _org.IDENTIFIER == name:
             org_list.append(_org.IDENTIFIER)
+        elif _org.GROUP == name:
+            org_list.append(_org.IDENTIFIER)
     if not org_list:
         # print(_cached_orgs())
         raise RepositoryNotSupported(f'Repository not supported: {name}')
@@ -67,6 +68,3 @@ def _orgs(name=None, cls=None):
 
 def repos(name=None):
     return _orgs(name, cls=Repository)
-
-def groups(name=None):
-    return _orgs(name, cls=Group)
