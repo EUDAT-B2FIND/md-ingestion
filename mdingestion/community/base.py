@@ -5,8 +5,6 @@ from ..service_types import SchemaType, ServiceType
 class BaseOrg(object):
     NAME = None
     TITLE = None
-    # GROUP = None
-    # GROUP_TITLE = None
     IDENTIFIER = None
     URL = None
     SCHEMA = SchemaType.DublinCore
@@ -29,10 +27,6 @@ class BaseOrg(object):
     @property
     def name(self):
         return self.NAME
-
-    # @property
-    # def group(self):
-    #     return self.GROUP
 
     @property
     def url(self):
@@ -110,7 +104,13 @@ class BaseOrg(object):
         return self.__str__()
 
 class Repository(BaseOrg):
-    pass
+    GROUP = None
+    GROUP_TITLE = None
+
+    @property
+    def group(self):
+        return self.GROUP
+
 
 class Group(BaseOrg):
     pass

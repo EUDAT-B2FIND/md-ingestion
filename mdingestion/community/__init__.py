@@ -28,14 +28,15 @@ def _find_orgs(cls=None):
         yield cls
     else:
         for subcls in cls.__subclasses__():
-            yield from _orgs(subcls)
+            yield from _find_orgs(subcls)
 
-def _cached_orgs(cls):
+def _cached_orgs(cls=None):
     global CACHED_ORGS
+    cls = cls or Repository
     if not CACHED_ORGS.get(cls):
         for org in _find_orgs(cls):
             CACHED_ORGS[cls].append(org)
-    return CACHED_ORGS
+    return CACHED_ORGS[cls]
 
 
 def Repo(identifier):
@@ -52,6 +53,7 @@ def _orgs(name=None, cls=None):
     name = name or 'all'
     org_list = []
     for _org in _cached_orgs(cls):
+        # print(_org, _org.NAME, _org.IDENTIFIER)
         if name == 'all':
             org_list.append(_org.IDENTIFIER)
         elif _org.NAME == name:
@@ -59,6 +61,7 @@ def _orgs(name=None, cls=None):
         elif _org.IDENTIFIER == name:
             org_list.append(_org.IDENTIFIER)
     if not org_list:
+        # print(_cached_orgs())
         raise RepositoryNotSupported(f'Repository not supported: {name}')
     return org_list
 
