@@ -22,7 +22,7 @@ for f in Path(__file__).parent.glob("*.py"):
 del import_module, Path
 
 
-def _orgs(cls=None):
+def _find_orgs(cls=None):
     cls = cls or Repository
     if len(cls.__subclasses__()) == 0:
         yield cls
@@ -33,7 +33,7 @@ def _orgs(cls=None):
 def _cached_orgs(cls):
     global CACHED_ORGS
     if not CACHED_ORGS.get(cls):
-        for org in _orgs(cls):
+        for org in _find_orgs(cls):
             CACHED_ORGS[cls].append(org)
     return CACHED_ORGS
 
@@ -47,7 +47,7 @@ def Repo(identifier):
     raise RepositoryNotSupported(f'Repository not supported: {identifier}')
 
 
-def orgs(name=None, cls=None):
+def _orgs(name=None, cls=None):
     cls = cls or Repository
     name = name or 'all'
     org_list = []
@@ -63,7 +63,7 @@ def orgs(name=None, cls=None):
     return org_list
 
 def repos(name=None):
-    return orgs(name, cls=Repository)
+    return _orgs(name, cls=Repository)
 
 def groups(name=None):
-    return orgs(name, cls=Group)
+    return _orgs(name, cls=Group)
