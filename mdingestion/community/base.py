@@ -2,11 +2,11 @@ from ..reader import build_reader
 from ..service_types import SchemaType, ServiceType
 
 
-class Repository(object):
+class BaseOrg(object):
     NAME = None
     TITLE = None
-    GROUP = None
-    GROUP_TITLE = None
+    # GROUP = None
+    # GROUP_TITLE = None
     IDENTIFIER = None
     URL = None
     SCHEMA = SchemaType.DublinCore
@@ -30,9 +30,9 @@ class Repository(object):
     def name(self):
         return self.NAME
 
-    @property
-    def group(self):
-        return self.GROUP
+    # @property
+    # def group(self):
+    #     return self.GROUP
 
     @property
     def url(self):
@@ -108,3 +108,9 @@ class Repository(object):
 
     def __repr__(self):
         return self.__str__()
+
+class Repository(BaseOrg):
+    pass
+
+class Group(BaseOrg):
+    pass

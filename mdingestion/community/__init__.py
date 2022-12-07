@@ -1,4 +1,4 @@
-from .base import Repository
+from .base import Repository, Group
 from ..exceptions import RepositoryNotSupported
 
 import logging
@@ -8,7 +8,11 @@ import logging
 from importlib import import_module
 from pathlib import Path
 
-REPOSITORIES = None
+CACHED_ORGS = {
+    Repository: [], 
+    Group: []
+}
+
 
 for f in Path(__file__).parent.glob("*.py"):
     module_name = f.stem
@@ -18,42 +22,48 @@ for f in Path(__file__).parent.glob("*.py"):
 del import_module, Path
 
 
-def _repositories(cls=None):
+def _orgs(cls=None):
     cls = cls or Repository
     if len(cls.__subclasses__()) == 0:
         yield cls
     else:
         for subcls in cls.__subclasses__():
-            yield from _repositories(subcls)
+            yield from _orgs(subcls)
+
+def _cached_orgs(cls):
+    global CACHED_ORGS
+    if not CACHED_ORGS.get(cls):
+        for org in _orgs(cls):
+            CACHED_ORGS[cls].append(org)
+    return CACHED_ORGS
 
 
-def get_repositories():
-    global REPOSITORIES
-    if not REPOSITORIES:
-        REPOSITORIES = []
-        for com in _repositories():
-            REPOSITORIES.append(com)
-    return REPOSITORIES
-
-
-def repo(identifier):
+def Repo(identifier):
+    # lookup repo by identifier and return an instance if found.
     logging.debug(f'repository identifier={identifier}')
-    for _repo in get_repositories():
-        if _repo.IDENTIFIER == identifier:
-            return _repo()
+    for repo in _orgs():
+        if repo.IDENTIFIER == identifier:
+            return repo()
     raise RepositoryNotSupported(f'Repository not supported: {identifier}')
 
 
-def repos(name):
-    logging.debug(f'rpository name={name}')
-    repo_list = []
-    for _repo in get_repositories():
+def orgs(name=None, cls=None):
+    cls = cls or Repository
+    name = name or 'all'
+    org_list = []
+    for _org in _cached_orgs(cls):
         if name == 'all':
-            repo_list.append(_repo.IDENTIFIER)
-        elif _repo.NAME == name:
-            repo_list.append(_repo.IDENTIFIER)
-        elif _repo.IDENTIFIER == name:
-            repo_list.append(_repo.IDENTIFIER)
-    if not repo_list:
+            org_list.append(_org.IDENTIFIER)
+        elif _org.NAME == name:
+            org_list.append(_org.IDENTIFIER)
+        elif _org.IDENTIFIER == name:
+            org_list.append(_org.IDENTIFIER)
+    if not org_list:
         raise RepositoryNotSupported(f'Repository not supported: {name}')
-    return repo_list
+    return org_list
+
+def repos(name=None):
+    return orgs(name, cls=Repository)
+
+def groups(name=None):
+    return orgs(name, cls=Group)

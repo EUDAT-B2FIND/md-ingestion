@@ -1,11 +1,10 @@
-from mdingestion.community import repo, repos
-from mdingestion.community import get_repositories
+from mdingestion.community import repos, groups
 
 def test_repos():
+    assert len(repos()) > 0
     assert repos("darus") == ['darus']
     assert repos("pangaea") == ['pangaea']
     assert repos("fmi") == ['fmi']
-    # assert communities("b2share") == ['b2share']
 
-def test_get_repositories():
-    assert len(get_repositories()) > 100
+def test_groups():
+    assert len(groups()) > 0
