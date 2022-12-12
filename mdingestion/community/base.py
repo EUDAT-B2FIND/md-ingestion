@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class BaseOrg(object):
     TITLE = None
+    NAME = None
     IDENTIFIER = None
     URL = None
     SCHEMA = SchemaType.DublinCore
@@ -22,6 +23,10 @@ class BaseOrg(object):
     @property
     def identifier(self):
         return self.IDENTIFIER
+
+    @property
+    def name(self):
+        return self.NAME or self.IDENTIFIER
 
     @property
     def url(self):

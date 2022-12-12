@@ -4,7 +4,7 @@ from ..format import format_value
 
 
 class Envidat(Repository):
-    # NAME = 'envidat_iso'
+    NAME = 'envidat_iso'
     IDENTIFIER = 'envidat_iso19139'
     URL = 'https://www.envidat.ch/oai'
     SCHEMA = SchemaType.ISO19139
