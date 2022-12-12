@@ -7,7 +7,7 @@ from requests.exceptions import ConnectionError
 
 from .base import Command
 from ..walker import Walker
-from ..community import community, communities
+from ..community import repo, repos
 
 import logging
 
@@ -33,16 +33,16 @@ def upload(data, host=None, apikey=None, no_update=False, verify=True, https=Fal
 class Upload(Command):
     def run(self, iphost=None, auth=None, target=None, from_=None, limit=None, no_update=False, verify=True,
             silent=False, https=False):
-        # TODO: refactor community loop
-        _communities = communities(self.community)
-        for identifier in tqdm(_communities,
+        # TODO: refactor repo loop
+        _repos = repos(self.repo)
+        for identifier in tqdm(_repos,
                                ascii=True,
-                               desc=f"Uploading {self.community}",
+                               desc=f"Uploading {self.repo}",
                                # position=0,
-                               unit=' community',
-                               total=len(_communities),
-                               disable=len(_communities) == 1 or silent):
-            self._community = community(identifier)
+                               unit=' repo',
+                               total=len(_repos),
+                               disable=len(_repos) == 1 or silent):
+            self._repo = repo(identifier)
             self.upload_to_ckan(iphost=iphost, auth=auth, from_=from_, limit=limit,
                                 no_update=no_update, verify=verify,
                                 silent=silent, https=https)
@@ -53,7 +53,7 @@ class Upload(Command):
         limit = limit or -1
         count = 0
         success = True
-        for filename in tqdm(self.walk(), ascii=True, desc=f"Uploading {self._community.identifier}",
+        for filename in tqdm(self.walk(), ascii=True, desc=f"Uploading {self._repo.identifier}",
                              unit=' records', total=limit, disable=silent):
             if from_ and count < from_:
                 logging.info(f"skipping {filename}")
@@ -77,9 +77,9 @@ class Upload(Command):
                     success = False
             count += 1
         if not success:
-            raise Exception(f'upload of some files failed. community={self._community.identifier}')
+            raise Exception(f'upload of some files failed. repo={self._repo.identifier}')
 
     def walk(self):
-        path = os.path.join(self._community.identifier, 'ckan')
+        path = os.path.join(self._repo.identifier, 'ckan')
         for filename in self.walker.walk(path=path, ext='.json'):
             yield filename

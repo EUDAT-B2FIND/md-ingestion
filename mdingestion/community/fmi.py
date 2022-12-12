@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class FMI(Community):
-    NAME = 'fmi'
-    IDENTIFIER = NAME
+class FMI(Repository):
+    IDENTIFIER = 'fmi'
     URL = 'https://fmi.b2share.csc.fi/api/oai2d'
     SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI

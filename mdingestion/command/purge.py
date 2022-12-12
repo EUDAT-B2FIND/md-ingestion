@@ -6,7 +6,7 @@ from ckanapi import RemoteCKAN, NotFound, NotAuthorized
 from requests.exceptions import ConnectionError
 
 from .base import Command
-from ..community import community, communities
+# from ..community import repo, repos
 
 import logging
 
@@ -43,8 +43,8 @@ def purge_dataset_list(dataset_list, iphost, apikey, https):
 class Purge(Command):
     def run(self, iphost=None, dataset=None, auth=None, https=False, verify=True,
             silent=False):
-        if self.community:
-            datasets = get_dataset_list(self.community, iphost=iphost)
+        if self.repo:
+            datasets = get_dataset_list(self.repo, iphost=iphost)
         else:
             datasets = [dataset]
         purge_dataset_list(datasets, iphost=iphost, apikey=auth, https=https)

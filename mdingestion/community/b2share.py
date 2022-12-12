@@ -1,9 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 #from shapely.geometry import shape
 
 
-class BaseB2Share(Community):
+class BaseB2Share(Repository):
     GROUP = 'b2share'
     GROUP_TITLE = 'B2SHARE'
     PRODUCTIVE = False

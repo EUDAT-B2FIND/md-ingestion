@@ -1,11 +1,10 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value, format_url
 
 
-class Pdc(Community):
-    NAME = 'pdc'
-    IDENTIFIER = NAME
+class Pdc(Repository):
+    IDENTIFIER = 'pdc'
     URL = 'http://www.polardata.ca/oai/provider'
     SCHEMA = SchemaType.FGDC
     SERVICE_TYPE = ServiceType.OAI

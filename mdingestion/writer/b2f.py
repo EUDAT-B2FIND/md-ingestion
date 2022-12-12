@@ -29,7 +29,7 @@ class B2FWriter(Writer):
 
     def json(self, doc):
         data = {
-            'community': doc.community,
+            'repo': doc.repo,
             'groups': doc.groups,
             'identifier': doc.identifier,
             'title': doc.title,

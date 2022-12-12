@@ -7,12 +7,8 @@ class B2FError(Exception):
         super().__init__(self.message)
 
 
-class CommunityNotFound(B2FError):
-    message = "Community not found in harvest list"
-
-
-class CommunityNotSupported(B2FError):
-    message = "Community not supported"
+class RepositoryNotSupported(B2FError):
+    message = "Repository not supported"
 
 
 class HarvesterError(B2FError):

@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class IvoaEudatcore(Community):
-    NAME = 'ivoa'
+class IvoaEudatcore(Repository):
     IDENTIFIER = 'ivoa'
     URL = 'http://dc.g-vo.org/rr/q/pmh/pubreg.xml'
     SCHEMA = SchemaType.Eudatcore

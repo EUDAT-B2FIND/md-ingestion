@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class CRC1211DBDatacite(Community):
-    NAME = 'crc1211db'
+class CRC1211DBDatacite(Repository):
     IDENTIFIER = 'crc1211db'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite

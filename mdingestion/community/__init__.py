@@ -1,5 +1,5 @@
-from .base import Community
-from ..exceptions import CommunityNotSupported
+from .base import Repository
+from ..exceptions import RepositoryNotSupported
 
 import logging
 
@@ -8,7 +8,10 @@ import logging
 from importlib import import_module
 from pathlib import Path
 
-COMMUNITIES = None
+CACHED_ORGS = {
+    Repository: [],
+}
+
 
 for f in Path(__file__).parent.glob("*.py"):
     module_name = f.stem
@@ -18,42 +21,48 @@ for f in Path(__file__).parent.glob("*.py"):
 del import_module, Path
 
 
-def _communities(cls=None):
-    cls = cls or Community
+def _find_orgs(cls=None):
+    cls = cls or Repository
     if len(cls.__subclasses__()) == 0:
         yield cls
     else:
         for subcls in cls.__subclasses__():
-            yield from _communities(subcls)
+            yield from _find_orgs(subcls)
+
+def _cached_orgs(cls=None):
+    global CACHED_ORGS
+    cls = cls or Repository
+    if not CACHED_ORGS.get(cls):
+        for org in _find_orgs(cls):
+            CACHED_ORGS[cls].append(org)
+    return CACHED_ORGS[cls]
 
 
-def get_communities():
-    global COMMUNITIES
-    if not COMMUNITIES:
-        COMMUNITIES = []
-        for com in _communities():
-            COMMUNITIES.append(com)
-    return COMMUNITIES
+def repo(identifier):
+    # lookup repo by identifier and return an instance if found.
+    logging.debug(f'repository identifier={identifier}')
+    for org in _cached_orgs():
+        if org.IDENTIFIER == identifier:
+            return org()
+    raise RepositoryNotSupported(f'Repository not supported: {identifier}')
 
 
-def community(identifier):
-    logging.debug(f'community identifier={identifier}')
-    for community in get_communities():
-        if community.IDENTIFIER == identifier:
-            return community()
-    raise CommunityNotSupported(f'Community not supported: {identifier}')
-
-
-def communities(name):
-    logging.debug(f'community name={name}')
-    com_list = []
-    for community in get_communities():
+def _orgs(name=None, cls=None):
+    cls = cls or Repository
+    name = name or 'all'
+    org_list = []
+    for _org in _cached_orgs(cls):
         if name == 'all':
-            com_list.append(community.IDENTIFIER)
-        elif community.NAME == name:
-            com_list.append(community.IDENTIFIER)
-        elif community.IDENTIFIER == name:
-            com_list.append(community.IDENTIFIER)
-    if not com_list:
-        raise CommunityNotSupported(f'Community not supported: {name}')
-    return com_list
+            org_list.append(_org.IDENTIFIER)
+        elif _org.IDENTIFIER == name:
+            org_list.append(_org.IDENTIFIER)
+        elif _org.IDENTIFIER == name:
+            org_list.append(_org.IDENTIFIER)
+        elif _org.GROUP == name:
+            org_list.append(_org.IDENTIFIER)
+    if not org_list:
+        raise RepositoryNotSupported(f'Repository not supported: {name}')
+    return org_list
+
+def repos(name=None):
+    return _orgs(name, cls=Repository)

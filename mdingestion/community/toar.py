@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class Toar(Community):
-    NAME = 'toar'
+class Toar(Repository):
     IDENTIFIER = 'toar'
     URL = 'https://b2share.fz-juelich.de/api/oai2d'
     SCHEMA = SchemaType.DublinCore

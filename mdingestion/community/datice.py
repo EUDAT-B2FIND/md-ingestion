@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class DaticeDatacite(Community):
-    NAME = 'datice'
-    IDENTIFIER = NAME
+class DaticeDatacite(Repository):
+    IDENTIFIER = 'datice'
     URL = 'https://oai.datacite.org/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
