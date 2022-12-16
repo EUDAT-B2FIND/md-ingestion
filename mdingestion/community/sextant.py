@@ -13,10 +13,11 @@ class Sextant(Repository):
     PRODUCTIVE = False
 
     def update(self, doc):
-        doc.doi = self.find_doi('linkage')
-        doc.pid = self.find_pid('linkage')
+        doc.doi = self.find_doi('CI_OnlineResource.linkage')
+        doc.pid = self.find_pid('CI_OnlineResource.linkage')
         doc.discipline = 'Oceanography/Marine Science'
         doc.keywords = self.find('MD_Keywords.keyword.PT_FreeText.textGroup')
+        doc.creator = self.find('pointOfContact.CI_ResponsibleParty.individualName.CharacterString')
         self.source(doc)
         self.publisher(doc)
         self.discipline(doc)
@@ -25,11 +26,11 @@ class Sextant(Repository):
         self.rights(doc)
 
     def source(self, doc):
-        doc.source = self.find('MD_Identifier')
-        if not doc.source:
+#        doc.source = self.find('MD_Identifier') # not useful
+#        if not doc.source:
             file_id = self.find('fileIdentifier.CharacterString')
-            if file_id:
-                doc.source = f'https://sextant.ifremer.fr/geonetwork/srv/ger/catalog.search#/metadata/{file_id[0]}'
+#            if file_id:
+            doc.source = f'https://sextant.ifremer.fr/eng/Data/Catalogue#/metadata/{file_id[0]}'
 
     def publisher(self, doc):
         if not doc.publisher:
