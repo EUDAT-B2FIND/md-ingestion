@@ -20,20 +20,20 @@ class XMLParser(DocParser):
                 #   print(tag.CI_ResponsibleParty.individualName.CharacterString.text)
                 tags = name.split('.')
                 first = tags[0]
-                last = tags[-1]
+                # last = tags[-1]
                 
-                if len(tags) > 2:
-                    dotted = '.'.join(tags[1: -2])
+                if len(tags) > 1:
+                    dotted = '.'.join(tags[1:])
                 else:
                     dotted = None
                 results = []
-                for tag in self.doc.find_all(first):
+                for tag in self.doc.find_all(first, **kwargs):
                     if dotted:
                         _doc = eval(f"doc.{dotted}", dict(doc=tag))
                     else:
                         _doc = tag
-                    _tags = [_tag.text for _tag in _doc.find_all(last, **kwargs)]
-                    results.extend(_tags)
+                    # _tags = [_tag.text for _tag in _doc.find_all(last, **kwargs)]
+                    results.append(_doc.text)
             else:
                 results = [tag.text for tag in self.doc.find_all(name, **kwargs)]
         except Exception:
