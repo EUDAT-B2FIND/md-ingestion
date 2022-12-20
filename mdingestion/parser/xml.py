@@ -16,6 +16,9 @@ class XMLParser(DocParser):
             if '.' in name:
                 # name=something.very.important
                 # run: doc.something.very.find_all('important')
+                #
+                # for tag in doc.find_all("pointOfContact"):
+                #   print(tag.CI_ResponsibleParty.individualName.CharacterString.text)
                 _dotted, _name = name.rsplit('.', 1)
                 _doc = eval(f"doc.{_dotted}", dict(doc=self.doc))
             else:
