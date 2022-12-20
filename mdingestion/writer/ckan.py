@@ -13,10 +13,8 @@ def map_ckan_fields(fields):
     for key, value in fields.items():
         if value:
             if key == 'author':
-                print(value)
                 if isinstance(value, list):
                     value = '; '.join(value)
-                print(value)
             elif key in ['title', 'notes']:
                 if isinstance(value, list):
                     value = '\n\n'.join(value)
