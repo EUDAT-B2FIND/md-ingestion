@@ -30,8 +30,8 @@ class Sextant(Repository):
         # doc.source = self.find('MD_Identifier') # not useful
         # if not doc.source:
         file_id = self.find('fileIdentifier.CharacterString')
-        # if file_id:
-        doc.source = f'https://sextant.ifremer.fr/eng/Data/Catalogue#/metadata/{file_id[0]}'
+        if file_id:
+            doc.source = f'https://sextant.ifremer.fr/eng/Data/Catalogue#/metadata/{file_id[0]}'
 
     def publisher(self, doc):
         if not doc.publisher:
