@@ -1,9 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class Envidat(Community):
+class Envidat(Repository):
     NAME = 'envidat_iso'
     IDENTIFIER = 'envidat_iso19139'
     URL = 'https://www.envidat.ch/oai'

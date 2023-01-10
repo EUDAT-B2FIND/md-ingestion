@@ -116,7 +116,7 @@ class CKANWriter(Writer):
         data['notes'] = doc.description
         data['tags'] = [dict(name=tag) for tag in doc.keywords]
         data['url'] = doc.source
-        data['owner_org'] = doc.community
+        data['owner_org'] = doc.repo
         data['name'] = doc.name
         data['groups'] = [dict(name=group) for group in doc.groups]
         data['state'] = 'active'

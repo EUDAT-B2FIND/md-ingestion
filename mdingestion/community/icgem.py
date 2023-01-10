@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class IcgemDatacite(Community):
-    NAME = 'icgem'
-    IDENTIFIER = NAME
+class IcgemDatacite(Repository):
+    IDENTIFIER = 'icgem'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

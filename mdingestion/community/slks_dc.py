@@ -1,10 +1,15 @@
-from .base import Community
+from shapely.geometry import shape
+import json
+import os
+import copy
+
+from .nordicar import BaseNordicar
 from ..service_types import SchemaType, ServiceType
 
 
-class Slks(Community):
-    NAME = 'slks_single'
-    IDENTIFIER = 'slks_single'
+class Slks(BaseNordicar):
+    IDENTIFIER = 'slks'
+    TITLE = 'SLKS'
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
@@ -29,6 +34,7 @@ class Slks(Community):
         # keywords = doc.keywords
         # keywords.append('EOSC Nordic')
         # keywords.append('Viking Age')
+        doc.keywords = self.keywords_append(doc)
         doc.temporal_coverage = self.temporal_coverage(doc)
 
     def temporal_coverage(self, doc):

@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class DanseasyDatacite(Community):
-    NAME = 'danseasy'
+class DanseasyDatacite(Repository):
     IDENTIFIER = 'danseasy'
     URL = 'https://easy.dans.knaw.nl/oai'
     SCHEMA = SchemaType.DataCite

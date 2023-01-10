@@ -11,7 +11,7 @@ from ..rights import is_open_access
 
 class BaseDoc(object):
     def __init__(self):
-        self._community = None
+        self._repo = None
         self._groups = []
         self._title = None
         self._description = None
@@ -38,12 +38,12 @@ class BaseDoc(object):
         self._discipline = None
 
     @property
-    def community(self):
-        return self._community
+    def repo(self):
+        return self._repo
 
-    @community.setter
-    def community(self, value):
-        self._community = format_value(value, one=True)
+    @repo.setter
+    def repo(self, value):
+        self._repo = format_value(value, one=True)
 
     @property
     def groups(self):
@@ -141,6 +141,7 @@ class BaseDoc(object):
     @metadata_access.setter
     def metadata_access(self, value):
         self._metadata_access = format_value(value, type='url', one=True)
+#        print('value', value, 'md', self._metadata_access)
 
     @property
     def creator(self):
@@ -228,7 +229,7 @@ class BaseDoc(object):
 
     @resource_type.setter
     def resource_type(self, value):
-        self._resource_type = format_value(value)
+        self._resource_type = format_value(value, type='resource_type')
 
     @property
     def format(self):
@@ -379,17 +380,17 @@ class GeoDoc(BaseDoc):
 
 class B2FDoc(GeoDoc):
 
-    def __init__(self, filename, community=None, url=None, oai_metadata_prefix=None):
+    def __init__(self, filename, repo=None, url=None, oai_metadata_prefix=None):
         super().__init__()
         self.filename = filename
-        self._community = community
+        self._repo = repo
         self._url = url
         self._oai_metadata_prefix = oai_metadata_prefix
         self._oai_set = None
         self._oai_identifier = None
         self._file_identifier = None
         self._fulltext = None
-
+        self.schema = None
     @property
     def name(self):
         return Path(self.filename).stem

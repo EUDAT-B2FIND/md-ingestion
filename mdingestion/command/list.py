@@ -1,7 +1,7 @@
 import pandas as pd
 
 from .base import Command
-from ..community import community, communities
+from ..community import repo, repos
 
 
 class List(Command):
@@ -20,27 +20,27 @@ class List(Command):
 
     def build_dataframe(self, name):
         df = pd.DataFrame(columns=[
-            'Community',
-            'Community Title', 
-            'Repository', 
+            'Repository',
             'Repository Title',
-            'Identifier', 
-            'Productive', 
-            'Date', 
-            'Schema', 
-            'Service', 
-            'URL', 
+            'Group',
+            'Group Title',
+            'Identifier',
+            'Productive',
+            'Date',
+            'Schema',
+            'Service',
+            'URL',
             'OAI Set',
             'Logo',
             'Description'])
         pd.set_option('display.max_rows', None)
-        for identifier in communities(name):
-            com = community(identifier)
+        for identifier in repos(name):
+            com = repo(identifier)
             row = {
-                'Community': com.NAME,
-                'Community Title': com.TITLE,
-                'Repository': com.GROUP,
-                'Repository Title': com.GROUP_TITLE,
+                'Repository': com.NAME,
+                'Repository Title': com.TITLE,
+                'Group': com.GROUP,
+                'Group Title': com.GROUP_TITLE,
                 'Identifier': com.IDENTIFIER,
                 'Productive': com.PRODUCTIVE,
                 'Date': com.DATE if com.PRODUCTIVE else '',
@@ -53,7 +53,7 @@ class List(Command):
             }
             df = pd.concat([df, pd.DataFrame(row, index=[0])], ignore_index=True)
         # df.set_index('Group', inplace=True)
-        df = df.sort_values(by=['Community', 'Repository'])
+        df = df.sort_values(by=['Repository', 'Group'])
         df_sorted = pd.DataFrame(
             data=df.values,
             columns=df.columns)

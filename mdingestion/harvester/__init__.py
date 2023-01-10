@@ -5,11 +5,12 @@ from .oai import OAIHarvester
 from .csw import CSWHarvester
 from .arcgis import ArcGISHarvester
 from .bc import BlueCloudHarvester
+from .dataverse import DataverseHarvester
 
 from ..service_types import ServiceType
 
 
-def harvester(community,
+def harvester(repo,
               url,
               service_type,
               schema,
@@ -25,7 +26,7 @@ def harvester(community,
               password=None):
     if service_type == ServiceType.HERBADROP:
         harvester = HerbadropHarvester(
-            community=community,
+            repo=repo,
             url=url,
             fromdate=fromdate,
             clean=clean,
@@ -33,12 +34,22 @@ def harvester(community,
             outdir=outdir,
             verify=verify)
     elif service_type == ServiceType.OAI:
-        harvester = OAIHarvester(community, url, oai_metadata_prefix, oai_set, fromdate, clean, limit, outdir, verify,
+        harvester = OAIHarvester(repo, url, oai_metadata_prefix, oai_set, fromdate, clean, limit, outdir, verify,
                                  username, password)
     elif service_type == ServiceType.CSW:
-        harvester = CSWHarvester(community, url, schema, fromdate, clean, limit, outdir, verify)
+        harvester = CSWHarvester(repo, url, schema, fromdate, clean, limit, outdir, verify)
     elif service_type == ServiceType.ArcGIS:
         harvester = ArcGISHarvester(
+            repo=repo,
+            url=url,
+            filter=filter,
+            fromdate=fromdate,
+            clean=clean,
+            limit=limit,
+            outdir=outdir,
+            verify=verify)
+    elif service_type == ServiceType.Dataverse:
+        harvester = DataverseHarvester(
             community=community,
             url=url,
             filter=filter,
@@ -49,7 +60,7 @@ def harvester(community,
             verify=verify)
     elif service_type == ServiceType.BC:
         harvester = BlueCloudHarvester(
-            community=community,
+            repo=repo,
             url=url,
             filter=filter,
             fromdate=fromdate,

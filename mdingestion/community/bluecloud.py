@@ -1,10 +1,11 @@
 import shapely
 import json
 
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 from ..format import format_value
+from ..util import convert_to_lon_180
 
 
 def fix_list(value):
@@ -20,9 +21,8 @@ def fix_list(value):
     return fix
 
 
-class Bluecloud(Community):
-    NAME = 'bluecloud'
-    IDENTIFIER = NAME
+class Bluecloud(Repository):
+    IDENTIFIER = 'bluecloud'
     URL = 'https://data.blue-cloud.org/api/collections'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.BC
@@ -74,8 +74,10 @@ class Bluecloud(Community):
         try:
             south = self.reader.parser.doc.get('Bounding_Box_SouthLatitude')
             west = self.reader.parser.doc.get('Bounding_Box_WestLongitude')
+            west = convert_to_lon_180(west)
             north = self.reader.parser.doc.get('Bounding_Box_NorthLatitude')
             east = self.reader.parser.doc.get('Bounding_Box_EastLongitude')
+            east = convert_to_lon_180(east)
             # bbox: minx=west, miny=south, maxx=east, maxy=north
             geometry = shapely.geometry.box(west, south, east, north)
         except Exception:

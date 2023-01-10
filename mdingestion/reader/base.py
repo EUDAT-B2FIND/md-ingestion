@@ -10,6 +10,7 @@ import logging
 class Reader(object):
     DOC_PARSER = None
     SNIFFER = None
+    SCHEMA = None
 
     def __init__(self):
         self.filename = None
@@ -17,11 +18,12 @@ class Reader(object):
         self.sniffer = None
         self.errors = dict(invalid_geometry=[])
 
-    def read(self, filename, community=None, url=None, oai_metadata_prefix=None):
+    def read(self, filename, repo=None, url=None, oai_metadata_prefix=None):
         self.filename = filename
         self.parser = self.DOC_PARSER(filename)
         # TODO: handling of oai_metadata_prefix parameter needs to be refactored
-        doc = B2FDoc(filename, community, url, oai_metadata_prefix)
+        doc = B2FDoc(filename, repo, url, oai_metadata_prefix)
+        doc.schema = self.SCHEMA
         self._parse(doc)
         self.parse(doc)
         if self.SNIFFER:

@@ -1,16 +1,19 @@
-from .base import Community
+from .panosc import BasePanosc
 from ..service_types import SchemaType, ServiceType
-from ..format import format_value
 
 
-class ILLDatacite(Community):
-    NAME = 'ill'
+class ILLDatacite(BasePanosc):
     IDENTIFIER = 'ill'
+    TITLE = 'ILL'
     URL = 'https://data.ill.fr/openaire/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'openaire_data'
+    PRODUCTIVE = False
+#    DATE = '2022-07-14'
+    DESCRIPTION = ""
+    LOGO = ''
 
     def update(self, doc):
         doc.discipline = 'Particles, Nuclei and Fields'

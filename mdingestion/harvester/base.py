@@ -9,9 +9,9 @@ import logging
 
 
 class Harvester(object):
-    def __init__(self, community, url, fromdate, clean, limit, outdir, verify=True,
+    def __init__(self, repo, url, fromdate, clean, limit, outdir, verify=True,
                  username=None, password=None):
-        self.community = community
+        self.repo = repo
         self.url = url
         self.fromdate = fromdate
         self.clean = clean
@@ -35,7 +35,7 @@ class Harvester(object):
             else:
                 total = self.matches()
         except Exception as e:
-            msg = f"Harvester failed: {e}. community={self.community}, url={self.url}"
+            msg = f"Harvester failed: {e}. repo={self.repo}, url={self.url}"
             logging.critical(msg, exc_info=True)
             raise HarvesterError(f"{msg}")
         return total
@@ -46,14 +46,14 @@ class Harvester(object):
     def filename(self, record):
         out = pathlib.Path(
             self.outdir,
-            self.community,
+            self.repo,
             "raw",
             f"{self.uid(record)}.{self.ext}")
         return out
 
     def harvest(self):
         if self.clean:
-            outdir = os.path.join(self.outdir, self.community)
+            outdir = os.path.join(self.outdir, self.repo)
             logging.info(f'removing folder: {outdir}')
             if os.path.exists(outdir):
                 shutil.rmtree(outdir)
@@ -65,9 +65,9 @@ class Harvester(object):
                     break
                 yield record
         except Exception as e:
-            msg = f"Harvester failed: {e}. community={self.community}, url={self.url}"
-            logging.critical(msg, exc_info=True)
-            raise HarvesterError(f"{msg}")
+            msg = f"Harvester failed: {e}. repo={self.repo}, url={self.url}"
+            logging.error(msg, exc_info=True)
+            # raise HarvesterError(f"{msg}")
 
     def get_records(self):
         raise NotImplementedError
