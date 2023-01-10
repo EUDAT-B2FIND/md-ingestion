@@ -10,7 +10,7 @@ class LagoDublinCore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     PRODUCTIVE = True
-
+<
     def update(self, doc):
         doc.contributor = ['EGI Datahub']
         doc.instrument = ['LAGO Observatory']

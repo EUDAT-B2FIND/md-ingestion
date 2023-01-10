@@ -1,9 +1,13 @@
-from .base import Repository
+from .b2share import BaseB2Share
 from ..service_types import SchemaType, ServiceType
 
 
-class FMI(Repository):
-    IDENTIFIER = 'fmi'
+class FMI(BaseB2Share):
+    NAME = 'fmi'
+    TITLE = 'FMI'
+    IDENTIFIER = NAME
+    GROUP = 'b2share'
+    GROUP_TITLE = 'B2SHARE'
     URL = 'https://fmi.b2share.csc.fi/api/oai2d'
     SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
