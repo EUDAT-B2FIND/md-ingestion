@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class ISISDatacite(Community):
-    NAME = 'isis'
-    IDENTIFIER = NAME
+class ISISDatacite(Repository):
+    IDENTIFIER = 'isis'
     URL = 'https://icat-dev.isis.stfc.ac.uk/oaipmh/request'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
@@ -12,3 +11,5 @@ class ISISDatacite(Community):
     OAI_SET = None
     PRODUCTIVE = False
 #    DATE = '2020-09-20'
+#    LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
+#    DESCRIPTION = """ some description here """
