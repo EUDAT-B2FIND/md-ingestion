@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class SlksFF(Community):
-    NAME = 'slks_ff'
+class SlksFF(Repository):
     IDENTIFIER = 'slks_ff'
     URL = 'http://www.kulturarv.dk/ffrepox/OAIHandler'
     SCHEMA = SchemaType.FF

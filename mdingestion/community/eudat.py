@@ -1,9 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class BaseEudat(Community):
-    NAME = 'eudat'
+class BaseEudat(Repository):
+    IDENTIFIER = 'eudat'
     TITLE = 'EUDAT'
     PRODUCTIVE = False
 

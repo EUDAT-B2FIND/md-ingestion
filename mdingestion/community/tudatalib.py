@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class TudatalibDatacite(Community):
-    NAME = 'tudatalib'
+class TudatalibDatacite(Repository):
     IDENTIFIER = 'tudatalib'
     URL = 'https://tudatalib.ulb.tu-darmstadt.de/oai/openairedata'
     SCHEMA = SchemaType.DataCite

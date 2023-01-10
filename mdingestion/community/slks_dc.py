@@ -8,9 +8,8 @@ from ..service_types import SchemaType, ServiceType
 
 
 class Slks(BaseNordicar):
-    NAME = 'slks'
+    IDENTIFIER = 'slks'
     TITLE = 'SLKS'
-    IDENTIFIER = NAME
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

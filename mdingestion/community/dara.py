@@ -1,23 +1,32 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
+import json
+import pandas as pd
+import os
+import copy
 
-class BaseDara(Community):
-    NAME = 'dara'
+
+class BaseDara(Repository):
+    GROUP = 'dara'
+    GROUP_TITLE = 'da|ra'
+    PRODUCTIVE = True
+    DATE = '2020-07-10'
+    DESCRIPTION = 'da|ra is the registration agency for social science and economic data jointly run by GESIS and ZBW. In keeping with the ideals of good scientific practice there is a demand for open access to existing primary data so as to not only have the final research results but also be able to reconstruct the entire research process. GESIS and ZBW therefore offer a registration service for social and economic research data.'
+    LOGO = ''
     URL = 'https://www.da-ra.de/oaip/oai'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
-    PRODUCTIVE = True
 
     def update(self, doc):
         pass
 
 
 class DaraGESIS(BaseDara):
-    GROUP = 'gesis'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'gesis'
+    TITLE = 'GESIS Data Archive'
     OAI_SET = '1'  # GESIS Data Archive, 7783 records
 
     def update(self, doc):
@@ -27,8 +36,8 @@ class DaraGESIS(BaseDara):
 
 
 class DaraRKI(BaseDara):
-    GROUP = 'rki'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'rki'
+    TITLE ='RKI - Robert Koch Institut'
     OAI_SET = '10'  # RKI Robert Koch-Institut, 15 records
 
     def update(self, doc):
@@ -36,8 +45,8 @@ class DaraRKI(BaseDara):
 
 
 class DaraIHI(BaseDara):
-    GROUP = 'ihi'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'ihi'
+    TITLE = 'IHI - Ifakara Health Institute'
     OAI_SET = '105'  # Ifakara Health Institute, 20 records
 
     def update(self, doc):
@@ -45,8 +54,8 @@ class DaraIHI(BaseDara):
 
 
 class DaraDIPF(BaseDara):
-    GROUP = 'dipf'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'dipf'
+    TITLE = 'DIPF - Leibniz Institute for Research and Information in Education'
     OAI_SET = '11'  # DIPF Leibniz Institute for Research and Information in Education, 901 records
 
     def update(self, doc):
@@ -54,8 +63,8 @@ class DaraDIPF(BaseDara):
 
 
 class DaraBIFIE(BaseDara):
-    GROUP = 'bifie'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'bifie'
+    TITLE = 'BIFIE - Federal Institute for Education Research, Austria'
     OAI_SET = '112'  # BIFIE (Federal Institute for Education Research, Austria), 138 records
 
     def update(self, doc):
@@ -63,8 +72,8 @@ class DaraBIFIE(BaseDara):
 
 
 class DaraZfKD(BaseDara):
-    GROUP = 'zfkd'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'zfkd'
+    TITLE = 'ZfKD - German Center for Cancer Registry Data at the RKI'
     OAI_SET = '114'  # ZfKD German Center for Cancer Registry Data at the RKI, 10 records
 
     def update(self, doc):
@@ -72,8 +81,8 @@ class DaraZfKD(BaseDara):
 
 
 class DaraZBW(BaseDara):
-    GROUP = 'zbw'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'zbw'
+    TITLE = 'ZBW Journal Data Archive'
     OAI_SET = '118'  # ZBW Journal Data Archive, 153 records
 
     def update(self, doc):
@@ -81,8 +90,8 @@ class DaraZBW(BaseDara):
 
 
 class DaraSRDA(BaseDara):
-    GROUP = 'srda'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'srda'
+    TITLE = 'SRDA - Survey Research Data Archive Taiwan'
     OAI_SET = '128'  # SRDA - Survey Research Data Archive Taiwan, 2680
 
     def update(self, doc):
@@ -90,8 +99,8 @@ class DaraSRDA(BaseDara):
 
 
 class DaraEBDC(BaseDara):
-    GROUP = 'ebdc'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'ebdc'
+    TITLE = 'EBDC - Economics & Business Data Center (LMU/ifo)'
     OAI_SET = '13'  # LMU-ifo Economics & Business Data Center (EBDC), 131 records
 
     def update(self, doc):
@@ -99,8 +108,8 @@ class DaraEBDC(BaseDara):
 
 
 class DaraIWH(BaseDara):
-    GROUP = 'iwh'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'iwh'
+    TITLE = 'IWH - The Halle Institute for Economic Research'
     OAI_SET = '130'  # IWH - The Halle Institute for Economic Research, 7 records
 
     def update(self, doc):
@@ -108,8 +117,8 @@ class DaraIWH(BaseDara):
 
 
 class DaraAHRI(BaseDara):
-    GROUP = 'ahri'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'ahri'
+    TITLE = 'AHRI - Africa Health Research Institute'
     OAI_SET = '132'  # AHRI Africa Health Research Institute, 82 records
 
     def update(self, doc):
@@ -117,8 +126,8 @@ class DaraAHRI(BaseDara):
 
 
 class DaraRDC(BaseDara):
-    GROUP = 'rdc'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'rdc'
+    TITLE = 'RDC - Federal Statistical Office, Germany'
     OAI_SET = '136'  # RDC of the Federal Statistical Office and the statistical offices of the LÃ¤nder, 1843 records
 
     def update(self, doc):
@@ -126,8 +135,8 @@ class DaraRDC(BaseDara):
 
 
 class DaraDZHW(BaseDara):
-    GROUP = 'dzhw'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'dzhw'
+    TITLE = 'DZHW - German Centre for Higher Education Research and Science Studies'
     OAI_SET = '138'  # German Centre for Higher Education Research and Science Studies (DZHW)
 
     def update(self, doc):

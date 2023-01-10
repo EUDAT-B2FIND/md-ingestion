@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import copy
 
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 from ..format import format_value
@@ -13,7 +13,7 @@ FNAME = os.path.join(CFG_DIR, 'NORDICAR_MappingKeywords.csv')
 TL = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
 
 
-class BaseNordicar(Community):
+class BaseNordicar(Repository):
     GROUP = 'nordicar'
     GROUP_TITLE = 'Nordic Archaeology'
     PRODUCTIVE = True
@@ -36,9 +36,8 @@ class BaseNordicar(Community):
 
 
 class Slks(BaseNordicar):
-    NAME = 'slks'
+    IDENTIFIER = 'slks'
     TITLE = 'SLKS'
-    IDENTIFIER = NAME
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
@@ -91,9 +90,8 @@ class Slks(BaseNordicar):
 
 
 class Askeladden(BaseNordicar):
-    NAME = 'askeladden'
+    IDENTIFIER = 'askeladden'
     TITLE = 'Askeladden'
-    IDENTIFIER = NAME
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS

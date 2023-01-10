@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class Ucl(Community):
-    NAME = 'ucl'
+class Ucl(Repository):
     IDENTIFIER = 'ucl'
     URL = 'https://api.figshare.com/v2/oai'
     SCHEMA = SchemaType.DataCite

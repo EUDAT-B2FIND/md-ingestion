@@ -8,9 +8,9 @@ import logging
 
 
 class BlueCloudHarvester(Harvester):
-    def __init__(self, community, url, filter, fromdate, clean, limit, outdir, verify):
+    def __init__(self, repo, url, filter, fromdate, clean, limit, outdir, verify):
         super().__init__(
-            community=community,
+            repo=repo,
             url=url,
             fromdate=fromdate,
             clean=clean,

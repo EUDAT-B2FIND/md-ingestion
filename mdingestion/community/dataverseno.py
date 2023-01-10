@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class DataverseNODatacite(Community):
-    NAME = 'dataverseno'
+class DataverseNODatacite(Repository):
     IDENTIFIER = 'dataverseno'
     URL = 'https://dataverse.no/oai'
     SCHEMA = SchemaType.DataCite

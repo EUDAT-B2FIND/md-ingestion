@@ -3,9 +3,8 @@ from ..service_types import SchemaType, ServiceType
 
 
 class ESRFDatacite(BasePanosc):
-    NAME = 'esrf'
+    IDENTIFIER = 'esrf'
     TITLE = 'ESRF'
-    IDENTIFIER = NAME
     URL = 'https://icatplus.esrf.fr/oaipmh/request'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

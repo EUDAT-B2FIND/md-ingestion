@@ -10,7 +10,7 @@ from tests.common import TESTDATA_DIR
 def test_dc_slks_point():
     point_file = os.path.join(TESTDATA_DIR, 'slks-oai_dc', 'SET_1', 'xml', 'point_a937f99e-da2a-5c39-ac8d-37e3b0c7e6bd.xml')  # noqa
     reader = DublinCoreReader()
-    doc = reader.read(point_file)
+    doc = reader.read(point_file, url='https://www.archaeo.dk/ff/oai-pmh/')
     assert '130511-10 Thors' in doc.title[0]
     assert 'This record describes ancient sites and monuments' in doc.description[0]
     assert 'Rundhøj' in doc.keywords
@@ -37,6 +37,6 @@ def test_dc_seanoe_bbox():
     xml_file = os.path.join(
         TESTDATA_DIR, 'seanoe-oai_dc', 'SET_1', 'xml', '7d8d61e8-c2c6-5a7e-bef1-24f5a1eb23b5.xml')
     reader = DublinCoreReader()
-    doc = reader.read(xml_file)
+    doc = reader.read(xml_file, url='http://www.seanoe.org/oai/OAIHandler')
     # <dc:coverage>North 37.30134, South 37.2888, East -32.275618, West -32.27982</dc:coverage>
     assert doc.spatial_coverage == '(-32.280W, 37.289S, -32.276E, 37.301N)'

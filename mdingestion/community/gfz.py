@@ -1,66 +1,76 @@
-from .base import Community
+from shapely.geometry import shape
+import json
+import pandas as pd
+import os
+import copy
+
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class BaseGfz(Community):
-    NAME = 'gfz'
+class BaseGfz(Repository):
+    GROUP = 'gfz'
+    GROUP_TITLE = 'GFZ Data Services'
+    PRODUCTIVE = True
+    DATE = '2021-08-15'
+    DESCRIPTION = 'By the GFZ Data Services the GFZ archives and publishes datasets to which a DOI has been assigned and which cover all geoscientific disciplines.'
+    LOGO = ''
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
-#    OAI_SET = 'DOIDB.GFZ'
-    PRODUCTIVE = False
+
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geosciences')
 
 
 class Gfzdb(BaseGfz):
-    GROUP = 'gfzdataservices'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'gfzdataservices'
+    TITLE = 'GFZ Data Services'
     OAI_SET = 'DOIDB.GFZ'
 
 
 class GfzCrc1211db(BaseGfz):
-    GROUP = 'crc1211db'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'crc1211db'
+    TITLE = 'CRC 1211 Database'
     OAI_SET = 'DOIDB.CRC1211'
 
 
 class GfzEnmap(BaseGfz):
-    GROUP = 'enmap'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'enmap'
+    TITLE = 'EnMAP'
     OAI_SET = 'DOIDB.ENMAP'
 
 
 class GfzFidgeo(BaseGfz):
-    GROUP = 'fidgeo'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'fidgeo'
+    TITLE = 'FID GEO'
     OAI_SET = 'DOIDB.FID'
 
 
 class GfzGeofon(BaseGfz):
-    GROUP = 'geofon'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'geofon'
+    TITLE = 'GEOFON Seismic Networks'
     OAI_SET = 'DOIDB.GEOFON'
 
 
 class GfzGipp(BaseGfz):
-    GROUP = 'gipp'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'gipp'
+    Title = 'GIPP - Geophysical Instrument Pool Potsdam'
     OAI_SET = 'DOIDB.GIPP'
 
 
 class GfzIcgem(BaseGfz):
-    GROUP = 'icgem'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'icgem'
+    TITLE = 'ICGEM - International Centre for Global Earth Models'
     OAI_SET = 'DOIDB.ICGEM'
 
 
 class GfzIgets(BaseGfz):
-    GROUP = 'igets'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'igets'
+    TITLE = 'IGETS - International Geodynamics and Earth Tide Service'
     OAI_SET = 'DOIDB.IGETS'
 
     def update(self, doc):
@@ -68,36 +78,35 @@ class GfzIgets(BaseGfz):
 
 
 class GfzIntermagnet(BaseGfz):
-    GROUP = 'intermagnet'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'intermagnet'
+    TITLE = 'INTERMAGNET'
     OAI_SET = 'DOIDB.INTERMAG'
 
 
 # class GfzIsdc(BaseGfz):
-#    GROUP = 'isdc'
-#    IDENTIFIER = GROUP
+#    IDENTIFIER = 'isdc'
 #    OAI_SET = ' DOIDB.ISDC'
 
 
 class GfzIsg(BaseGfz):
-    GROUP = 'isg'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'isg'
+    TITLE = 'ISG - International Service for the Geoid'
     OAI_SET = 'DOIDB.ISG'
 
 
 class GfzPik(BaseGfz):
-    GROUP = 'pik'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'pik'
+    TITLE = 'PIK - Potsdam Institute for Climate Impact Research'
     OAI_SET = 'DOIDB.PIK'
 
 
 class GfzTereno(BaseGfz):
-    GROUP = 'tereno'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'tereno'
+    TITLE = 'TERENO'
     OAI_SET = 'DOIDB.TERENO'
 
 
 class GfzWsm(BaseGfz):
-    GROUP = 'wsm'
-    IDENTIFIER = GROUP
+    IDENTIFIER = 'wsm'
+    TITLE = 'WSM - World Stress Map'
     OAI_SET = 'DOIDB.WSM'

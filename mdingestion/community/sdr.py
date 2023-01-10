@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class SDRDublinCore(Community):
-    NAME = 'sdr'
-    IDENTIFIER = NAME
+class SDRDublinCore(Repository):
+    IDENTIFIER = 'sdr'
     URL = 'https://repository.surfsara.nl/api/oai2'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
