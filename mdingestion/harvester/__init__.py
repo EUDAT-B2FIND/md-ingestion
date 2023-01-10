@@ -5,6 +5,7 @@ from .oai import OAIHarvester
 from .csw import CSWHarvester
 from .arcgis import ArcGISHarvester
 from .bc import BlueCloudHarvester
+from .dataverse import DataverseHarvester
 
 from ..service_types import ServiceType
 
@@ -40,6 +41,16 @@ def harvester(repo,
     elif service_type == ServiceType.ArcGIS:
         harvester = ArcGISHarvester(
             repo=repo,
+            url=url,
+            filter=filter,
+            fromdate=fromdate,
+            clean=clean,
+            limit=limit,
+            outdir=outdir,
+            verify=verify)
+    elif service_type == ServiceType.Dataverse:
+        harvester = DataverseHarvester(
+            community=community,
             url=url,
             filter=filter,
             fromdate=fromdate,
