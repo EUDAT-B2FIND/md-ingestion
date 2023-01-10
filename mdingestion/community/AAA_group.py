@@ -24,12 +24,12 @@ class AAAGroupOne(AAAGroup):
     OAI_SET = '1'  # GESIS Data Archive, 7783 records
 
     def update(self, doc):
-       doc.publisher = 'B2Find'
+        doc.publisher = 'B2Find'
 
 
 class AAAGroupTwo(AAAGroup):
     IDENTIFIER = 'aaa_group_two'
-    TITLE ='AAA Group Two'
+    TITLE = 'AAA Group Two'
     OAI_SET = '10'  # RKI Robert Koch-Institut, 15 records
 
     def update(self, doc):
