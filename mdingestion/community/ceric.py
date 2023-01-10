@@ -3,9 +3,8 @@ from ..service_types import SchemaType, ServiceType
 
 
 class CERICDatacite(BasePanosc):
-    NAME = 'ceric'
+    IDENTIFIER = 'ceric'
     TITLE = 'CERIC'
-    IDENTIFIER = NAME
     URL = 'https://data.ceric-eric.eu/oaipmh/request'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

@@ -8,9 +8,8 @@ from ..service_types import SchemaType, ServiceType
 
 
 class Askeladden(BaseNordicar):
-    NAME = 'askeladden'
+    IDENTIFIER = 'askeladden'
     TITLE = 'Askeladden'
-    IDENTIFIER = NAME
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS

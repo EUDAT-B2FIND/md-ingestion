@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class Deims(Community):
-    NAME = 'deims'
+class Deims(Repository):
     IDENTIFIER = 'deims'
     URL = 'https://deims.org/pycsw/catalogue/csw'
     SCHEMA = SchemaType.ISO19139
@@ -19,8 +18,6 @@ class Deims(Community):
         doc.discipline = 'Environmental Monitoring'
         if not doc.publisher:
             doc.publisher = 'DEIMS-SDR'
-        # TODO: why do we not use csw-metadataccess? It points to dc metadata though...fix it, Carsten!
-        doc.metadata_access = [url for url in self.find('linkage') if 'deims.org/api/' in url]
         doc.discipline = self.discipline(doc, 'Environmental Monitoring')
         self.fix_source(doc)
 

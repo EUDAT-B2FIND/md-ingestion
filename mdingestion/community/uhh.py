@@ -1,9 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class BaseUhh(Community):
+class BaseUhh(Repository):
     NAME = 'uhh'
     URL = 'https://www.fdr.uni-hamburg.de/oai2d'
     SCHEMA = SchemaType.DataCite

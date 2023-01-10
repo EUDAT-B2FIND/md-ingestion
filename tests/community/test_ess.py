@@ -13,7 +13,7 @@ def test_datacite():
     assert 'https://github.com/ess-dmsc/ess_file_formats/wiki/HDF5' in doc.description
     assert 'Particles, Nuclei and Fields' == doc.discipline[0]
     assert 'https://doi.org/10.17199/BRIGHTNESS/V200111' == doc.doi
-    assert 'https://scicat.esss.se/openaire/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == doc.metadata_access  # noqa
+    assert 'https://oai.panosc.ess.eu/openaire/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == doc.metadata_access  # noqa
 
 
 def test_datacite_no_oai_id():

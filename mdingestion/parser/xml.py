@@ -14,16 +14,30 @@ class XMLParser(DocParser):
         """Just a convienice method for BeautifulSoup doc.find_all()"""
         try:
             if '.' in name:
-                # name=something.very.important
-                # run: doc.something.very.find_all('important')
-                _dotted, _name = name.rsplit('.', 1)
-                _doc = eval(f"doc.{_dotted}", dict(doc=self.doc))
+                # path = pointOfContact.CI_ResponsibleParty.individualName.CharacterString.text
+                
+                # for tag in doc.find_all("pointOfContact"):
+                #   print(tag.CI_ResponsibleParty.individualName.CharacterString.text)
+                tags = name.split('.')
+                first = tags[0]
+                # last = tags[-1]
+                
+                if len(tags) > 1:
+                    dotted = '.'.join(tags[1:])
+                else:
+                    dotted = None
+                results = []
+                for tag in self.doc.find_all(first, **kwargs):
+                    if dotted:
+                        _doc = eval(f"doc.{dotted}", dict(doc=tag))
+                    else:
+                        _doc = tag
+                    # _tags = [_tag.text for _tag in _doc.find_all(last, **kwargs)]
+                    results.append(_doc.text)
             else:
-                _name = name
-                _doc = self.doc
-            results = [tag.text for tag in _doc.find_all(_name, **kwargs)]
+                results = [tag.text for tag in self.doc.find_all(name, **kwargs)]
         except Exception:
-            logging.warning(f"xml parser failed for name={name}.", exc_info=True)
+            logging.error(f"xml parser failed for name={name}.", exc_info=True)
             results = []
         return results
 

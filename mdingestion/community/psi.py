@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class PsiDatacite(Community):
-    NAME = 'psi'
-    IDENTIFIER = NAME
+class PsiDatacite(Repository):
+    IDENTIFIER = 'psi'
     URL = 'https://doi.psi.ch/oaipmh/oai'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
