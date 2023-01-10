@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class EudatCSC(Community):
-    NAME = 'eudatcsc'
+class EudatCSC(Repository):
     IDENTIFIER = 'eudatcsc'
     URL = 'https://b2share.eudat.eu/api/oai2d'
     SCHEMA = SchemaType.Eudatcore

@@ -1,4 +1,4 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 #from shapely.geometry import shape
 
@@ -8,7 +8,7 @@ import os
 import copy
 
 
-class BasePanosc(Community):
+class BasePanosc(Repository):
     GROUP = 'panosc'
     GROUP_TITLE = 'PaNOSC'
     PRODUCTIVE = True

@@ -4,12 +4,14 @@ from .base import XMLReader
 from ..sniffer import OAISniffer
 from ..format import format_value
 from ..util import convert_to_lon_180
+from ..service_types import SchemaType
 
 import logging
 
 
 class FGDCReader(XMLReader):
     SNIFFER = OAISniffer
+    SCHEMA = SchemaType.FGDC
 
     def parse(self, doc):
         doc.title = self.find('title')

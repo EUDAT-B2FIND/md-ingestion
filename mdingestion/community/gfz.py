@@ -4,12 +4,12 @@ import pandas as pd
 import os
 import copy
 
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 
 
-class BaseGfz(Community):
+class BaseGfz(Repository):
     GROUP = 'gfz'
     GROUP_TITLE = 'GFZ Data Services'
     PRODUCTIVE = True
@@ -27,58 +27,50 @@ class BaseGfz(Community):
 
 
 class Gfzdb(BaseGfz):
-    NAME = 'gfzdataservices'
+    IDENTIFIER = 'gfzdataservices'
     TITLE = 'GFZ Data Services'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.GFZ'
 
 
 class GfzCrc1211db(BaseGfz):
-    NAME = 'crc1211db'
+    IDENTIFIER = 'crc1211db'
     TITLE = 'CRC 1211 Database'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.CRC1211'
 
 
 class GfzEnmap(BaseGfz):
-    NAME = 'enmap'
+    IDENTIFIER = 'enmap'
     TITLE = 'EnMAP'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.ENMAP'
 
 
 class GfzFidgeo(BaseGfz):
-    NAME = 'fidgeo'
+    IDENTIFIER = 'fidgeo'
     TITLE = 'FID GEO'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.FID'
 
 
 class GfzGeofon(BaseGfz):
-    NAME = 'geofon'
+    IDENTIFIER = 'geofon'
     TITLE = 'GEOFON Seismic Networks'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.GEOFON'
 
 
 class GfzGipp(BaseGfz):
-    NAME = 'gipp'
+    IDENTIFIER = 'gipp'
     Title = 'GIPP - Geophysical Instrument Pool Potsdam'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.GIPP'
 
 
 class GfzIcgem(BaseGfz):
-    NAME = 'icgem'
+    IDENTIFIER = 'icgem'
     TITLE = 'ICGEM - International Centre for Global Earth Models'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.ICGEM'
 
 
 class GfzIgets(BaseGfz):
-    NAME = 'igets'
+    IDENTIFIER = 'igets'
     TITLE = 'IGETS - International Geodynamics and Earth Tide Service'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.IGETS'
 
     def update(self, doc):
@@ -86,41 +78,35 @@ class GfzIgets(BaseGfz):
 
 
 class GfzIntermagnet(BaseGfz):
-    NAME = 'intermagnet'
+    IDENTIFIER = 'intermagnet'
     TITLE = 'INTERMAGNET'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.INTERMAG'
 
 
 # class GfzIsdc(BaseGfz):
-#    NAME = 'isdc'
-#    IDENTIFIER = NAME
+#    IDENTIFIER = 'isdc'
 #    OAI_SET = ' DOIDB.ISDC'
 
 
 class GfzIsg(BaseGfz):
-    NAME = 'isg'
+    IDENTIFIER = 'isg'
     TITLE = 'ISG - International Service for the Geoid'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.ISG'
 
 
 class GfzPik(BaseGfz):
-    NAME = 'pik'
+    IDENTIFIER = 'pik'
     TITLE = 'PIK - Potsdam Institute for Climate Impact Research'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.PIK'
 
 
 class GfzTereno(BaseGfz):
-    NAME = 'tereno'
+    IDENTIFIER = 'tereno'
     TITLE = 'TERENO'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.TERENO'
 
 
 class GfzWsm(BaseGfz):
-    NAME = 'wsm'
+    IDENTIFIER = 'wsm'
     TITLE = 'WSM - World Stress Map'
-    IDENTIFIER = NAME
     OAI_SET = 'DOIDB.WSM'

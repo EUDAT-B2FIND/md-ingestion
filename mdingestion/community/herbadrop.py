@@ -1,12 +1,11 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 from ..format import format_value
 
 
-class Herbadrop(Community):
-    NAME = 'herbadrop'
-    IDENTIFIER = NAME
+class Herbadrop(Repository):
+    IDENTIFIER = 'herbadrop'
     URL = 'https://opendata.cines.fr/herbadrop-api/rest/data/search'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.HERBADROP
