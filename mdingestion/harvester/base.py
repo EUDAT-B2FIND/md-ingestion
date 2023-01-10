@@ -66,8 +66,8 @@ class Harvester(object):
                 yield record
         except Exception as e:
             msg = f"Harvester failed: {e}. repo={self.repo}, url={self.url}"
-            logging.critical(msg, exc_info=True)
-            raise HarvesterError(f"{msg}")
+            logging.error(msg, exc_info=True)
+            # raise HarvesterError(f"{msg}")
 
     def get_records(self):
         raise NotImplementedError
