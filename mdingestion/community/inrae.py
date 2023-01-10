@@ -1,4 +1,4 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..format import format_value
 import pandas as pd
@@ -10,8 +10,7 @@ FNAME = os.path.join(CFG_DIR, 'INRAE_MappingSubject__Discipline.csv')
 DF = pd.read_csv(open(FNAME))
 
 
-class INRAEDatacite(Community):
-    NAME = 'inrae'
+class INRAEDatacite(Repository):
     IDENTIFIER = 'inrae'
     URL = 'https://data.inrae.fr/oai'
     SCHEMA = SchemaType.DataCite
@@ -42,5 +41,5 @@ class INRAEDatacite(Community):
             if result_disciplines:
                 values.extend(result_disciplines[0].split(';'))
             else:
-                values.extend(self.discipline(doc, [subject]).split(';'))
+                values.extend(self.discipline(doc, [subject]))
         return values

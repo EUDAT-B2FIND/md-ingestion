@@ -13,7 +13,7 @@ from tests.common import TESTDATA_DIR
 
 def test_b2f_schema():
     cstruct = {
-        'community': 'wonderland crew',
+        'repo': 'wonderland crew',
         'identifier': 'https://doi.org/10.18419/does-not-exist',
         'title': ['A Title', 'A subtitle'],
         'keyword': ['testing', 'schema'],
@@ -48,7 +48,7 @@ def test_b2f_missing_title():
     with pytest.raises(colander.Invalid, match="{'title': 'Required'}"):
         schema.deserialize(
             {
-                'community': 'wonderland',
+                'repo': 'wonderland',
                 'description': ['Where is the title?'],
                 'identifier': 'http://localhost/some.txt',
                 'publication_year': '2010',
@@ -62,7 +62,7 @@ def test_b2f_invalid_date():
     with pytest.raises(colander.Invalid, match="{'publication_year.0': 'Invalid date'}"):
         schema.deserialize(
             {
-                'community': 'deep space 9',
+                'repo': 'deep space 9',
                 'title': ['What year?'],
                 'identifier': 'http://localhost/some.txt',
                 'discipline': 'Phantasy',
@@ -102,7 +102,7 @@ def test_b2f_doc_validation_herbadrop():
 
 def test_b2f_validate_none():
     cstruct = {
-        'community': 'wonderland',
+        'repo': 'wonderland',
         'title': ['A Title', 'A subtitle'],
         'identifier': 'http://localhost/b2f/alice_in_wonderland.txt',
         'source': 'http://localhost/b2f/alice_in_wonderland.txt',
@@ -121,7 +121,7 @@ def test_b2f_validate_none():
 
 def test_b2f_validate_empty():
     cstruct = {
-        'community': 'wonderland',
+        'repo': 'wonderland',
         'title': ['A Title', 'A subtitle'],
         'identifier': 'http://localhost/b2f/alice_in_wonderland.txt',
         'source': 'http://localhost/b2f/alice_in_wonderland.txt',

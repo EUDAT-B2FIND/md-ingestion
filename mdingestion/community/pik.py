@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class PikDatacite(Community):
-    NAME = 'pik'
-    IDENTIFIER = NAME
+class PikDatacite(Repository):
+    IDENTIFIER = 'pik'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

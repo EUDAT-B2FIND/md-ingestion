@@ -33,6 +33,7 @@ class Validator(object):
             'written': 0,
             'broken_links': [],
             'required': {
+                'repo': 0,
                 'title': 0,
                 'identifier': 0,
                 'publisher': 0,

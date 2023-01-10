@@ -1,19 +1,43 @@
 from shapely.geometry import shape
 import json
+import pandas as pd
+import os
+import copy
 
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 from ..format import format_value
+CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'etc', 'Community')
+FNAME = os.path.join(CFG_DIR, 'NORDICAR_MappingKeywords.csv')
+TL = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
 
 
-class BaseNordicar(Community):
-    NAME = 'nordicar'
-    PRODUCTIVE = False
+class BaseNordicar(Repository):
+    GROUP = 'nordicar'
+    GROUP_TITLE = 'Nordic Archaeology'
+    PRODUCTIVE = True
+    DATE = '2021-11-15'
+    DESCRIPTION = 'This Community consists of records from Danish and Norwegian Data Providers. Askeladden is a Norwegian database system for managing cultural heritage monuments and sites. Askeladden is owned and managed by Riksantikvaren. The Directorate for Cultural Heritage (Riksantikvaren) was established in 1912. They are responsible for the management of cultural heritage, cultural environments and cultural landscape of historic importance. The Agency for Culture and Palaces was formed on 1 January 2016 in a merger of the Danish Agency for Culture and the Agency for Palaces and Cultural Properties. The agency provides advice to the Danish minister of culture and is involved in setting and achieving the governments cultural policy goals.'
+    LOGO = ''
+
+    def keywords_append(self, doc):
+        keywords = copy.copy(doc.keywords)
+        for keyword in doc.keywords:
+            # print(keyword, self.IDENTIFIER)
+            result = TL.loc[TL[self.IDENTIFIER] == keyword]
+            # print(result, self.IDENTIFIER)
+            if result.values.any():
+                found = result.values[0].tolist()
+                # print(found)
+                found = [val for val in found if not pd.isnull(val)]
+                keywords.extend(found)
+        return keywords
 
 
 class Slks(BaseNordicar):
     IDENTIFIER = 'slks'
+    TITLE = 'SLKS'
     URL = 'https://www.archaeo.dk/ff/oai-pmh/'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
@@ -38,6 +62,7 @@ class Slks(BaseNordicar):
         # keywords = doc.keywords
         # keywords.append('EOSC Nordic')
         # keywords.append('Viking Age')
+        doc.keywords = self.keywords_append(doc)
         doc.temporal_coverage = self.temporal_coverage(doc)
 
     def temporal_coverage(self, doc):
@@ -66,6 +91,7 @@ class Slks(BaseNordicar):
 
 class Askeladden(BaseNordicar):
     IDENTIFIER = 'askeladden'
+    TITLE = 'Askeladden'
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS
@@ -87,6 +113,7 @@ class Askeladden(BaseNordicar):
         doc.version = self.find('properties.versjonId')
         doc.title = self.title()
         doc.keywords = self.keywords()
+        doc.keywords = self.keywords_append(doc)
         doc.geometry = self.geometry()
 
     def title(self):
@@ -113,4 +140,5 @@ class Askeladden(BaseNordicar):
 
     def geometry(self):
         geom = shape(self.reader.parser.doc['geometry'])
-        return geom.centroid
+        # return geom.centroid
+        return geom

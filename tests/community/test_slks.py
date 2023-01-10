@@ -17,4 +17,4 @@ def test_dublin_core():
     assert doc.publication_year == '2020'
     assert doc.spatial_coverage == '(10.615 LON, 55.586 LAT); Mejlø'
     assert doc.temporal_coverage == '250000 BC - 1701 BC; Stenalder; AXXX'
-    assert doc.keywords == ['Enkeltfund', 'Single find', 'Settlement']
+    assert doc.keywords == ['Enkeltfund', 'Single find', 'Settlement', 'Funnsted']

@@ -1,5 +1,26 @@
 ## CHANGES
 
+### 3.2.0 (2022-04-25)
+
+* Update classify (#234,#232)
+* NordicArchaeology keyword mapping (#233)
+* added disciplines to European XFEL (#231)
+* added SDR (#228)
+* harvest CERIC from productive instance (#226)
+
+### 3.1.0 (2021-12-15)
+
+* new and updated Communities, integrated via different channels
+* new reader DDI2.5 and CESSDA as use-case
+* Blue-Cloud integration via API including instruments
+* new reader Eudatcore with testing for several Communities
+* new harvester ARCGIS for Askeladden
+* updated cronjobs
+* updated b2f features (for e.g. b2f list)
+* updates on 'Discipline'
+* mapping 'Disciplines' for INRAE (using jupyter notebooks)
+
+
 ### 3.0.0 (2020-10-16)
 
 * cleaned-up version after integration of "next generation" code

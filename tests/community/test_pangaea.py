@@ -41,7 +41,7 @@ def test_pangaea_handle():
     doc = reader.read(xmlfile)
     assert 'https://doi.org/10.1594/PANGAEA.472241' == doc.doi
     assert '(-33.649W, -74.241S, -16.500E, -71.869N); Camp Norway; Halley Bay; Weddell Sea; Lyddan Island' == doc.spatial_coverage  # noqa
-    assert 'http://hdl.handle.net/10013/epic.14690.d001' == doc.pid
+    assert 'https://hdl.handle.net/10013/epic.14690.d001' == doc.pid
     # assert ['something(at)pangaea.de'] == doc.contact
 
 

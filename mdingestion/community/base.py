@@ -2,7 +2,8 @@ from ..reader import build_reader
 from ..service_types import SchemaType, ServiceType
 
 
-class Community(object):
+class BaseOrg(object):
+    TITLE = None
     NAME = None
     IDENTIFIER = None
     URL = None
@@ -13,6 +14,8 @@ class Community(object):
     FILTER = None
     PRODUCTIVE = False
     DATE = ''
+    DESCRIPTION = None
+    LOGO = None
 
     def __init__(self):
         self._reader = None
@@ -23,7 +26,7 @@ class Community(object):
 
     @property
     def name(self):
-        return self.NAME
+        return self.NAME or self.IDENTIFIER
 
     @property
     def url(self):
@@ -58,9 +61,10 @@ class Community(object):
     def read(self, filename):
         doc = self.reader.read(
             filename,
-            community=self.name,
+            repo=self.name,
             url=self.url,
             oai_metadata_prefix=self.oai_metadata_prefix)
+        doc.groups = self.group
         self.update(doc)
         return doc
 
@@ -94,7 +98,15 @@ class Community(object):
         pass
 
     def __str__(self):
-        return self.NAME
+        return self.IDENTIFIER
 
     def __repr__(self):
         return self.__str__()
+
+class Repository(BaseOrg):
+    GROUP = None
+    GROUP_TITLE = None
+
+    @property
+    def group(self):
+        return self.GROUP

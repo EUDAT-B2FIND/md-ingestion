@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class FidgeoDatacite(Community):
-    NAME = 'fidgeo'
+class FidgeoDatacite(Repository):
     IDENTIFIER = 'fidgeo'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite

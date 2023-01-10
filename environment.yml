@@ -16,6 +16,8 @@ dependencies:
   - pandas
   - tqdm
   - colander
+  - networkx
+  - pyyaml
   # tests
   - pytest
   - flake8

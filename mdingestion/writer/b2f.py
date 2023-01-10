@@ -29,7 +29,8 @@ class B2FWriter(Writer):
 
     def json(self, doc):
         data = {
-            'community': doc.community,
+            'repo': doc.repo,
+            'groups': doc.groups,
             'identifier': doc.identifier,
             'title': doc.title,
             'description': doc.description,
@@ -55,12 +56,10 @@ class B2FWriter(Writer):
             'version': doc.version,
             'discipline': doc.discipline,
             'spatial_coverage': doc.spatial_coverage,
-            'spatial': doc.spatial,
+            'spatial': doc.wkt,
             'temporal_coverage': doc.temporal_coverage,
             'temporal_coverage_begin_date': doc.temporal_coverage_begin_date,
             'temporal_coverage_end_date': doc.temporal_coverage_end_date,
-            'temp_coverage_begin': doc.temp_coverage_begin,
-            'temp_coverage_end': doc.temp_coverage_end,
             'oai_set': doc.oai_set,
             'oai_identifier': doc.oai_identifier,
         }

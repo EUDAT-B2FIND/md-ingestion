@@ -3,7 +3,7 @@ from tqdm import tqdm
 from .base import Command
 from ..harvester import harvester
 from ..exceptions import UserInfo
-from ..community import community, communities
+from ..community import repo, repos
 
 import logging
 
@@ -12,14 +12,14 @@ class Harvest(Command):
 
     def harvest(self, fromdate=None, clean=False, limit=None, dry_run=False, silent=False,
                 username=None, password=None):
-        _communities = communities(self.community)
-        for identifier in tqdm(_communities,
+        _repos = repos(self.repo)
+        for identifier in tqdm(_repos,
                                ascii=True,
-                               desc=f"Harvesting {self.community}",
+                               desc=f"Harvesting {self.repo}",
                                # position=0,
-                               unit=' community',
-                               total=len(_communities),
-                               disable=len(_communities) == 1 or silent):
+                               unit=' repo',
+                               total=len(_repos),
+                               disable=len(_repos) == 1 or silent):
             try:
                 self._harvest(identifier, fromdate=fromdate, clean=clean, limit=limit,
                               dry_run=dry_run, silent=silent, username=username, password=password)
@@ -30,15 +30,15 @@ class Harvest(Command):
 
     def _harvest(self, identifier, fromdate=None, clean=False, limit=None, dry_run=False, silent=False,
                  username=None, password=None):
-        _community = community(identifier)
+        _repo = repo(identifier)
         _harvester = harvester(
-            community=_community.identifier,
-            url=_community.url,
-            service_type=_community.service_type,
-            schema=_community.schema,
-            oai_metadata_prefix=_community.oai_metadata_prefix,
-            oai_set=_community.oai_set,
-            filter=_community.filter,
+            repo=_repo.identifier,
+            url=_repo.url,
+            service_type=_repo.service_type,
+            schema=_repo.schema,
+            oai_metadata_prefix=_repo.oai_metadata_prefix,
+            oai_set=_repo.oai_set,
+            filter=_repo.filter,
             fromdate=fromdate,
             clean=clean,
             limit=limit,

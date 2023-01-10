@@ -1,21 +1,20 @@
 from shapely.geometry import shape
 import json
+import os
+import copy
 
-from .base import Community
+from .nordicar import BaseNordicar
 from ..service_types import SchemaType, ServiceType
 
-from ..format import format_value
 
-
-class Askeladden(Community):
-    NAME = 'askeladden_single'
-    IDENTIFIER = 'askeladden_single'
+class Askeladden(BaseNordicar):
+    IDENTIFIER = 'askeladden'
+    TITLE = 'Askeladden'
     URL = 'https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS
     FILTER = "kulturminneKategori='Arkeologisk minne'"
     PRODUCTIVE = True
-    DATE = '2021-03-11'
 
     def update(self, doc):
         doc.discipline = ['Archaeology']
@@ -32,6 +31,7 @@ class Askeladden(Community):
         doc.version = self.find('properties.versjonId')
         doc.title = self.title()
         doc.keywords = self.keywords()
+        doc.keywords = self.keywords_append(doc)
         doc.geometry = self.geometry()
 
     def title(self):
@@ -58,4 +58,5 @@ class Askeladden(Community):
 
     def geometry(self):
         geom = shape(self.reader.parser.doc['geometry'])
-        return geom.centroid
+        # return geom.centroid
+        return geom

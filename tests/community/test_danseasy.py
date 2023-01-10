@@ -20,7 +20,7 @@ def test_geo_point():
     assert ['info:eu-repo/semantics/openAccess', 'DANS License', 'https://dans.knaw.nl/en/about/organisation-and-policy/legal-information/DANSLicence.pdf'] == doc.rights
     assert doc.open_access is True
     assert '(6.197 LON, 52.714 LAT); Plangebied Eekhorstweg 22; Meppel; Drenthe' == doc.spatial_coverage
-    assert '{"type":"Point","coordinates": [6.20,52.71]}' == doc.spatial
+    assert 'POINT (6.1971265600000001 52.7139071100000010)' == doc.wkt
 
 
 def test_geo_bbox():
@@ -28,7 +28,7 @@ def test_geo_bbox():
     reader = DanseasyDatacite()
     doc = reader.read(xmlfile)
     assert '(5.536W, 52.008S, 5.540E, 52.014N); Utrecht; Veenendaal: Rondweg west' == doc.spatial_coverage
-    assert '{"type":"Polygon","coordinates": [[[5.54,52.01],[5.54,52.01],[5.54,52.01],[5.54,52.01],[5.54,52.01]]]}' == doc.spatial  # noqa
+    assert "POLYGON ((5.5401004800000004 52.0079704799999973, 5.5401004800000004 52.0141273400000017, 5.5358036500000001 52.0141273400000017, 5.5358036500000001 52.0079704799999973, 5.5401004800000004 52.0079704799999973))" == doc.wkt  # noqa
 
 
 def test_geo_polygon():
@@ -36,4 +36,4 @@ def test_geo_polygon():
     reader = DanseasyDatacite()
     doc = reader.read(xmlfile)
     assert '(9.569W, 49.770S, 9.693E, 49.886N); Zutphen; Netherlands' == doc.spatial_coverage
-    assert '{"type":"Polygon","coordinates": [[[9.57,49.77],[9.57,49.89],[9.69,49.89],[9.69,49.77],[9.57,49.77]]]}' == doc.spatial  # noqa
+    assert 'POLYGON ((9.6823210399999997 49.8048100000000034,' in doc.wkt

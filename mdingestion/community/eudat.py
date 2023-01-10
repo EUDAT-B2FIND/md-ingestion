@@ -1,13 +1,11 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class BaseEudat(Community):
-    NAME = 'eudat'
-    SCHEMA = SchemaType.DublinCore
-    SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_dc'
-    PRODUCTIVE = True
+class BaseEudat(Repository):
+    IDENTIFIER = 'eudat'
+    TITLE = 'EUDAT'
+    PRODUCTIVE = False
 
     def update(self, doc):
         for pub in doc.publisher:
@@ -24,8 +22,13 @@ class BaseEudat(Community):
 
 
 class B2ShareCSC(BaseEudat):
+    GROUP = 'b2share'
+    GROUP_TITLE = 'B2SHARE'
     IDENTIFIER = 'b2share_csc'
     URL = 'https://b2share.eudat.eu/api/oai2d'
+    SCHEMA = SchemaType.Eudatcore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = 'e9b9792e-79fb-4b07-b6b4-b9c2bd06d095'  # EUDAT
 
     def update(self, doc):
@@ -36,7 +39,12 @@ class B2ShareCSC(BaseEudat):
 
 
 class B2ShareFZJ(BaseEudat):
+    GROUP = 'b2share'
+    GROUP_TITLE = 'B2SHARE'
     IDENTIFIER = 'b2share_fzj'
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
+    OAI_METADATA_PREFIX = 'oai_dc'
     URL = 'https://b2share.fz-juelich.de/api/oai2d'
     OAI_SET = 'e9b9792e-79fb-4b07-b6b4-b9c2bd06d095'  # EUDAT
 
@@ -58,4 +66,4 @@ class B2ShareFZJ(BaseEudat):
         # doc.keywords = self.keywords(doc, 'whatever')
 #        if not doc.publisher:
 #            doc.publisher = 'EUDAT'
-#        doc.discipline = self.discipline(doc, 'Unknown')
+#        doc.discipline = self.discipline(doc, 'Unknown'

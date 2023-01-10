@@ -14,8 +14,8 @@ class CSWHarvester(Harvester):
     """
     OWSLib csw: https://geopython.github.io/OWSLib/#csw
     """
-    def __init__(self, community, url, schema, fromdate, clean, limit, outdir, verify):
-        super().__init__(community, url, fromdate, clean, limit, outdir, verify)
+    def __init__(self, repo, url, schema, fromdate, clean, limit, outdir, verify):
+        super().__init__(repo, url, fromdate, clean, limit, outdir, verify)
         logging.captureWarnings(True)
         self.csw = CatalogueServiceWeb(self.url, auth=Authentication(verify=self.verify))
         self._schema_type = schema
@@ -27,7 +27,9 @@ class CSWHarvester(Harvester):
 
     def matches(self):
         self.csw.getrecords2(
-            maxrecords=0,
+            maxrecords=1,
+            startposition=0,
+            esn='full',
             constraints=self.constraints,
             outputschema=self.schema)
         return self.csw.results['matches']
@@ -40,6 +42,7 @@ class CSWHarvester(Harvester):
             else:
                 ns_name = 'csw'
             self._schema = Namespaces().get_namespace(ns_name)
+        # print(self._schema)
         return self._schema
 
     @property

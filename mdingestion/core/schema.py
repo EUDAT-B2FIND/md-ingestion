@@ -2,13 +2,22 @@ import colander
 
 
 class B2FSchema(colander.MappingSchema):
-    community = colander.SchemaNode(
+    repo = colander.SchemaNode(
         colander.String(),
-        name='community',
-        title='Community',
-        description='The scientific community, Research Infrastructure, Project or Data provider from which B2FIND harvests the metadata.',  # noqa
+        name='repo',
+        title='Repository',
+        description='The scientific repository, Research Infrastructure, Project or Data provider from which B2FIND harvests the metadata.',  # noqa
         validator=colander.Length(min=1),
         ## m, occ = 1
+    )
+    groups = colander.SchemaNode(
+        colander.Sequence(accept_scalar=True),
+        colander.SchemaNode(colander.String(), missing=colander.drop),
+        name='groups',
+        title='Groups',
+        description='Optional groups this record belongs to.',
+        missing=colander.drop,
+        ## o, occ = 0-n, liste
     )
     identifier = colander.SchemaNode(
         colander.String(),

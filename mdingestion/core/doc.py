@@ -1,17 +1,18 @@
 from abc import ABC, abstractmethod
 import shapely
+from shapely import wkt
 from dateutil import parser as date_parser
 from pathlib import Path
 import json
 
 from ..format import format_value
-from ..util import utc2seconds
 from ..rights import is_open_access
 
 
 class BaseDoc(object):
     def __init__(self):
-        self._community = None
+        self._repo = None
+        self._groups = []
         self._title = None
         self._description = None
         self._keywords = None
@@ -37,8 +38,20 @@ class BaseDoc(object):
         self._discipline = None
 
     @property
-    def community(self):
-        return self._community
+    def repo(self):
+        return self._repo
+
+    @repo.setter
+    def repo(self, value):
+        self._repo = format_value(value, one=True)
+
+    @property
+    def groups(self):
+        return self._groups
+
+    @groups.setter
+    def groups(self, value):
+        self._groups = format_value(value)
 
     @property
     def identifier(self):
@@ -128,6 +141,7 @@ class BaseDoc(object):
     @metadata_access.setter
     def metadata_access(self, value):
         self._metadata_access = format_value(value, type='url', one=True)
+#        print('value', value, 'md', self._metadata_access)
 
     @property
     def creator(self):
@@ -215,7 +229,7 @@ class BaseDoc(object):
 
     @resource_type.setter
     def resource_type(self, value):
-        self._resource_type = format_value(value)
+        self._resource_type = format_value(value, type='resource_type')
 
     @property
     def format(self):
@@ -243,7 +257,7 @@ class BaseDoc(object):
 
     @property
     def discipline(self):
-        return self._discipline or 'Other'
+        return self._discipline or ["Other"]
 
     @discipline.setter
     def discipline(self, value):
@@ -282,26 +296,17 @@ class GeoDoc(BaseDoc):
                 geom = f"({bounds[0]:.3f}W, {bounds[1]:.3f}S, {bounds[2]:.3f}E, {bounds[3]:.3f}N)"
         return geom
 
-    def format_geometry(self):
-        geom = ''
-        if self.geometry:
-            if self.geometry.geom_type == 'Point':
-                point = self.geometry
-                x = f"{point.x:.2f}"
-                y = f"{point.y:.2f}"
-                geom = "{\"type\":\"Point\",\"coordinates\": [%s,%s]}" % (x, y)
-            else:
-                bounds = self.geometry.bounds
-                w = f"{bounds[0]:.2f}"
-                s = f"{bounds[1]:.2f}"
-                e = f"{bounds[2]:.2f}"
-                n = f"{bounds[3]:.2f}"
-                geom = "{\"type\":\"Polygon\",\"coordinates\": [[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]]}" % (w, s, w, n, e, n, e, s, w, s)  # noqa
-        return geom
+    @property
+    def wkt(self):
+        if not self.geometry:
+            return None
+        return wkt.dumps(self.geometry)
 
     @property
-    def spatial(self):
-        return self.format_geometry()
+    def wkt_simple(self):
+        if not self.geometry:
+            return None
+        return wkt.dumps(self.geometry.centroid)
 
     @property
     def geometry(self):
@@ -320,17 +325,20 @@ class GeoDoc(BaseDoc):
         self._places = value
 
     @property
-    def geojson(self):
-        if not self.geometry:
-            return ''
-        return shapely.geometry.mapping(self.geometry)
-
-    @property
     def bbox(self):
         if not self.geometry:
             return None
         bbox = shapely.geometry.box(*self.geometry.bounds)
         return shapely.geometry.mapping(bbox)
+
+    @property
+    def envelope(self):
+        if not self.geometry:
+            return None
+        # bounds: minx, miny, maxx, maxy
+        # envelop: minX, maxX, maxY, minY
+        return "ENVELOPE({0}, {2}, {3}, {1})".format(
+            *self.geometry.bounds)
 
     @property
     def temporal_coverage(self):
@@ -369,39 +377,20 @@ class GeoDoc(BaseDoc):
     def temporal_coverage_end_date(self, value):
         self._end_date = format_value(value, type='datetime', one=True)
 
-    @property
-    def temp_coverage_begin(self):
-        """Mikail's seconds since B.C. extension - TODO"""
-        try:
-            # tstamp = int(date_parser.parse(self._begin_date).timestamp())
-            tstamp = utc2seconds(self.temporal_coverage_begin_date)
-        except Exception:
-            tstamp = None
-        return tstamp
-
-    @property
-    def temp_coverage_end(self):
-        try:
-            # tstamp = int(date_parser.parse(self._end_date).timestamp())
-            tstamp = utc2seconds(self.temporal_coverage_end_date)
-        except Exception:
-            tstamp = None
-        return tstamp
-
 
 class B2FDoc(GeoDoc):
 
-    def __init__(self, filename, community=None, url=None, oai_metadata_prefix=None):
+    def __init__(self, filename, repo=None, url=None, oai_metadata_prefix=None):
         super().__init__()
         self.filename = filename
-        self._community = community
+        self._repo = repo
         self._url = url
         self._oai_metadata_prefix = oai_metadata_prefix
         self._oai_set = None
         self._oai_identifier = None
         self._file_identifier = None
         self._fulltext = None
-
+        self.schema = None
     @property
     def name(self):
         return Path(self.filename).stem

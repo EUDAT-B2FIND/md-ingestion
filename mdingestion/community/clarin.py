@@ -1,9 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class BaseClarin(Community):
-    NAME = 'clarin'
+class BaseClarin(Repository):
+    GROUP = 'clarin'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
@@ -55,12 +55,12 @@ class ClarinFour(BaseClarin):
 
 class ClarinFive(BaseClarin):
     IDENTIFIER = 'clarin_five'
-    URL = 'http://www.clarin.si/repository/oai/request '
+    URL = 'http://www.clarin.si/repository/oai/request'
 
 
-class ClarinSix(BaseClarin):
-    IDENTIFIER = 'clarin_six'
-    URL = 'https://repo.spraakbanken.gu.se/oai/request'
+# class ClarinSix(BaseClarin):
+#  IDENTIFIER = 'clarin_six'
+#  URL = 'https://repo.spraakbanken.gu.se/oai/request'
 
 
 class ClarinSeven(BaseClarin):
@@ -103,10 +103,10 @@ class ClarinThirteen(BaseClarin):
     OAI_SET = 'hdl_11321_4'
 
 
-class ClarinFourteen(BaseClarin):
-    IDENTIFIER = 'clarin_fourteen'
-    URL = 'https://metashare.ut.ee/oai_pmh/'
-    PRODUCTIVE = False
+# class ClarinFourteen(BaseClarin): --> doesn work properly
+#  IDENTIFIER = 'clarin_fourteen'
+#  URL = 'https://metashare.ut.ee/oai_pmh/'
+#  PRODUCTIVE = False
 
 
 class ClarinFifteen(BaseClarin):

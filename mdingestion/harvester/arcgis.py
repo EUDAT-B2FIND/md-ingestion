@@ -43,9 +43,9 @@ import logging
 
 
 class ArcGISHarvester(Harvester):
-    def __init__(self, community, url, filter, fromdate, clean, limit, outdir, verify):
+    def __init__(self, repo, url, filter, fromdate, clean, limit, outdir, verify):
         super().__init__(
-            community=community,
+            repo=repo,
             url=url,
             fromdate=fromdate,
             clean=clean,
@@ -71,7 +71,7 @@ class ArcGISHarvester(Harvester):
         return self._query
 
     def identifier(self, record):
-        return f"arcgis-{self.community}-{record['id']}"
+        return f"arcgis-{self.repo}-{record['id']}"
 
     def matches(self):
         query = {

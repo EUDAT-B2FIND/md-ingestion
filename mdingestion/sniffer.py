@@ -1,4 +1,4 @@
-from .service_types import ServiceType
+from .service_types import ServiceType, SchemaType
 
 
 def sniffer(service_type=None):
@@ -29,7 +29,8 @@ class OAISniffer(CatalogSniffer):
 
     def metadata_access(self, doc):
         if doc.oai_identifier:
-            mdaccess = f"{doc.url}?verb=GetRecord&metadataPrefix={doc.oai_metadata_prefix}&identifier={doc.oai_identifier}"  # noqa
+            url = doc.url.strip()
+            mdaccess = f"{url}?verb=GetRecord&metadataPrefix={doc.oai_metadata_prefix}&identifier={doc.oai_identifier}"  # noqa
         else:
             mdaccess = None
         return mdaccess
@@ -42,8 +43,10 @@ class CSWSniffer(CatalogSniffer):
 
     def metadata_access(self, doc):
         if doc.file_identifier:
-            # TODO: add schema for iso19139
-            mdaccess = f"{doc.url}?service=CSW&version=2.0.2&request=GetRecordById&Id={doc.file_identifier}"
+            if doc.schema==SchemaType.ISO19139:
+                mdaccess = f"{doc.url}?service=CSW&version=2.0.2&request=GetRecordById&Id={doc.file_identifier}&outputSchema=http://www.isotc211.org/2005/gmd"
+            else:
+                mdaccess = f"{doc.url}?service=CSW&version=2.0.2&request=GetRecordById&Id={doc.file_identifier}"
         else:
             mdaccess = None
         return mdaccess
@@ -60,6 +63,7 @@ class ArcGISSniffer(CatalogSniffer):
         else:
             mdaccess = None
         return mdaccess
+
 
 class BlueCloudSniffer(CatalogSniffer):
     def update(self, doc):

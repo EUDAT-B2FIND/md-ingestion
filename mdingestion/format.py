@@ -14,6 +14,36 @@ from .linkcheck import ignore_url
 
 import logging
 
+rt_types = [
+    'Audiovisual', 
+    'Book', 
+    'BookChapter', 
+    'Dataset', 
+    'Collection', 
+    'ComputationalNotebook', 
+    'ConferencePaper', 
+    'ConferenceProceeding', 
+    'DataPaper', 
+    'Dissertation', 
+    'Event', 
+    'Image', 
+    'InteractiveResource', 
+    'Journal', 
+    'JournalArticle', 
+    'Model', 
+    'OutputManagementPlan', 
+    'PeerReview', 
+    'PhysicalObject', 
+    'Preprint', 
+    'Report', 
+    'Service', 
+    'Software',
+    'Sound', 
+    'Standard', 
+    'Text',
+    'Workflow', 
+    'Other']
+
 
 NULL_VALUES = (
     '',
@@ -90,6 +120,8 @@ def format(text, type=None):
         formatted = format_email(text)
     elif type == 'url':
         formatted = format_url(text)
+    elif type == 'resource_type':
+        formatted = format_rt(text)
     else:
         formatted = format_string(text)
     return formatted
@@ -191,12 +223,14 @@ def format_url(text):
         pass
     elif parsed.scheme == 'urn':
         url = resolve_urn(url)
+    elif parsed.scheme == 'hdl':
+        url = f"https://hdl.handle.net/{parsed.path}"
     elif parsed.scheme == 'ark':
         url = resolve_ark(url)
     elif parsed.scheme == 'doi' or parsed.path.startswith('10.'):
         url = f"https://doi.org/{parsed.path}"
     elif 'epic' in parsed.path:
-        url = f"http://hdl.handle.net/{parsed.path}"
+        url = f"https://hdl.handle.net/{parsed.path}"
     elif len(parsed.path) == 19:
         url = resolve_bibcode(url)
     else:
@@ -236,3 +270,13 @@ def resolve_bibcode(value):
     else:
         url = ''
     return url
+
+
+def format_rt(text):
+    rt_types_lower = [t.lower() for t in rt_types]
+    try:
+        index = rt_types_lower.index(text)
+        val = rt_types[index]
+    except Exception:
+        val = text
+    return val

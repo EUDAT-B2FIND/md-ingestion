@@ -23,4 +23,4 @@ def test_seanoe_dc_1():
     # assert doc.source == 'https://research-explorer.app.ist.ac.at/record/5580'
     # <dc:coverage>North 90.0, South -90.0, East 180.0, West -180.0</dc:coverage>
     assert doc.spatial_coverage == '(-180.000W, -90.000S, 180.000E, 90.000N)'
-    assert doc.spatial == '{"type":"Polygon","coordinates": [[[-180.00,-90.00],[-180.00,90.00],[180.00,90.00],[180.00,-90.00],[-180.00,-90.00]]]}'  # noqa
+    assert doc.wkt == "POLYGON ((-180.0000000000000000 -90.0000000000000000, -180.0000000000000000 90.0000000000000000, 180.0000000000000000 90.0000000000000000, 180.0000000000000000 -90.0000000000000000, -180.0000000000000000 -90.0000000000000000))"  # noqa
