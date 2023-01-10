@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class MaterialscloudDublinCore(Community):
-    NAME = 'materialscloud'
+class MaterialscloudDublinCore(Repository):
     IDENTIFIER = 'materialscloud'
     URL = 'https://archive.materialscloud.org/xml'
     SCHEMA = SchemaType.DublinCore

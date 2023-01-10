@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class CessdaDDI25(Community):
-    NAME = 'cessda'
-    IDENTIFIER = NAME
+class CessdaDDI25(Repository):
+    IDENTIFIER = 'cessda'
     URL = 'https://datacatalogue.cessda.eu/oai-pmh/v0/oai'
     SCHEMA = SchemaType.DDI25
     SERVICE_TYPE = ServiceType.OAI

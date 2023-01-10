@@ -1,10 +1,12 @@
 from .base import XMLReader
 from ..sniffer import OAISniffer
+from ..service_types import SchemaType
 
 
 class DDI25Reader(XMLReader):
     """TODO: https://ddialliance.org/resources/ddi-profiles/dc"""
     SNIFFER = OAISniffer
+    SCHEMA = SchemaType.DDI25
 
     def parse(self, doc):
         self.identifier(doc)

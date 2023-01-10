@@ -4,10 +4,12 @@ CLOSED_ACCESS_RIGHTS = [
     'restrictedAccess',
     'restricted',
     'closed',
+    'interdite',
 ]
 
 
 def is_open_access(rights, closed_access_rights=None):
+
     open_access = True
     if not rights:
         return True

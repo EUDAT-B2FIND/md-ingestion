@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class heiDATADatacite(Community):
-    NAME = 'heidata'
-    IDENTIFIER = NAME
+class heiDATADatacite(Repository):
+    IDENTIFIER = 'heidata'
     URL = 'https://heidata.uni-heidelberg.de/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

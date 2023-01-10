@@ -1,9 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class StarsforallDublinCore(Community):
-    NAME = 'starsforall'
+class StarsforallDublinCore(Repository):
     IDENTIFIER = 'starsforall'
     URL = 'https://eudat-b2share-test.csc.fi/api/oai2d'
     SCHEMA = SchemaType.DublinCore

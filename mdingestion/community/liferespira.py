@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class LiferespiraDublinCore(Community):
-    NAME = 'liferespira'
-    IDENTIFIER = NAME
+class LiferespiraDublinCore(Repository):
+    IDENTIFIER = 'liferespira'
     URL = 'https://b2share.eudat.eu/api/oai2d'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

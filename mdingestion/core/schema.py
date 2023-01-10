@@ -2,11 +2,11 @@ import colander
 
 
 class B2FSchema(colander.MappingSchema):
-    community = colander.SchemaNode(
+    repo = colander.SchemaNode(
         colander.String(),
-        name='community',
-        title='Community',
-        description='The scientific community, Research Infrastructure, Project or Data provider from which B2FIND harvests the metadata.',  # noqa
+        name='repo',
+        title='Repository',
+        description='The scientific repository, Research Infrastructure, Project or Data provider from which B2FIND harvests the metadata.',  # noqa
         validator=colander.Length(min=1),
         ## m, occ = 1
     )

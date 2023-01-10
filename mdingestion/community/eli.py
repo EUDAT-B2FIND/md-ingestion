@@ -1,10 +1,9 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class EliDataCite(Community):
-    NAME = 'eli'
-    IDENTIFIER = NAME
+class EliDataCite(Repository):
+    IDENTIFIER = 'eli'
     URL = 'https://data.eli-laser.eu/oai2d'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
