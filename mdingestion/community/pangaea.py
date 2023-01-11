@@ -10,8 +10,6 @@ class PangaeaDatacite(Repository):
     OAI_METADATA_PREFIX = 'datacite4'
     OAI_SET = None
     PRODUCTIVE = True
-
+    
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Earth System Research')
-        # TODO: waiting for feedback
-        # doc.contact = 'something@pangaea.de'

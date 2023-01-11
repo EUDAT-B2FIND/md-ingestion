@@ -1,11 +1,4 @@
 from .base import Repository
-from ..service_types import SchemaType, ServiceType
-#from shapely.geometry import shape
-
-import json
-import pandas as pd
-import os
-import copy
 
 
 class BasePanosc(Repository):

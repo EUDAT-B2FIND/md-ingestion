@@ -1,8 +1,8 @@
-from .base import Repository
+from .gfz import BaseGfz
 from ..service_types import SchemaType, ServiceType
 
 
-class IntermagnetDatacite(Repository):
+class IntermagnetDatacite(BaseGfz):
     IDENTIFIER = 'intermagnet'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
@@ -13,4 +13,3 @@ class IntermagnetDatacite(Repository):
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geophysics')
-        # doc.contact = im datacite reader auf contributor.ContactPerson mappen; wenn nicht vorhanden

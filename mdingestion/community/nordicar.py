@@ -1,13 +1,10 @@
 from shapely.geometry import shape
-import json
 import pandas as pd
 import os
 import copy
-
 from .base import Repository
-from ..service_types import SchemaType, ServiceType
 
-from ..format import format_value
+
 CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'etc', 'Community')
 FNAME = os.path.join(CFG_DIR, 'NORDICAR_MappingKeywords.csv')
 TL = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
@@ -24,12 +21,9 @@ class BaseNordicar(Repository):
     def keywords_append(self, doc):
         keywords = copy.copy(doc.keywords)
         for keyword in doc.keywords:
-            # print(keyword, self.IDENTIFIER)
             result = TL.loc[TL[self.IDENTIFIER] == keyword]
-            # print(result, self.IDENTIFIER)
             if result.values.any():
                 found = result.values[0].tolist()
-                # print(found)
                 found = [val for val in found if not pd.isnull(val)]
                 keywords.extend(found)
         return keywords

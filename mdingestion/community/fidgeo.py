@@ -1,8 +1,8 @@
-from .base import Repository
+from .gfz import BaseGfz
 from ..service_types import SchemaType, ServiceType
 
 
-class FidgeoDatacite(Repository):
+class FidgeoDatacite(BaseGfz):
     IDENTIFIER = 'fidgeo'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
@@ -10,6 +10,9 @@ class FidgeoDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.FID'
     PRODUCTIVE = True
+    DATE = ''
+    DESCRIPTION = ''
+    LOGO = ''
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geospheric Sciences')

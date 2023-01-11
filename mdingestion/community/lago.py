@@ -1,6 +1,7 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
+
 # TODO: orcid-ids in creator
 class LagoDublinCore(Repository):
     IDENTIFIER = 'lago'
