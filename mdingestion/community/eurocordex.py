@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class EUROCordex(Community):
+class EUROCordex(Repository):
     NAME = 'euro-cordex'
     TITLE = 'EURO-CORDEX'
     IDENTIFIER = NAME

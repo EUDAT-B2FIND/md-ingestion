@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class Edmond(Community):
+class Edmond(Repository):
     NAME = 'edmond'
     TITLE = 'Edmond'
     IDENTIFIER = NAME
