@@ -32,7 +32,7 @@ class DaraGESIS(BaseDara):
 
 class DaraRKI(BaseDara):
     IDENTIFIER = 'rki'
-    TITLE ='RKI - Robert Koch Institut'
+    TITLE = 'RKI - Robert Koch Institut'
     OAI_SET = '10'  # RKI Robert Koch-Institut, 15 records
 
     def update(self, doc):
