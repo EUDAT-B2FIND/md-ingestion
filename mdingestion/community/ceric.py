@@ -32,4 +32,3 @@ class CERICDatacite(BasePanosc):
         keywords = doc.keywords
         keywords.append('PaN')
         return keywords
-    
