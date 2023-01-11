@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class HelmholtzEudatcore(Community):
+class HelmholtzEudatcore(Repository):
     NAME = 'helmholtz'
     TITLE = 'Helmholtz'
     IDENTIFIER = NAME

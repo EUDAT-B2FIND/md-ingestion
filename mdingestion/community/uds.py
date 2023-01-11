@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class UniversitedeStrasbourgDatacite(Community):
+class UniversitedeStrasbourgDatacite(Repository):
     NAME = 'uds'
     IDENTIFIER = NAME
     URL = 'https://entrepot.recherche.data.gouv.fr/oai'

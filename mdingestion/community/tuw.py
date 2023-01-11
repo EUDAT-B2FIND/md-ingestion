@@ -1,8 +1,8 @@
-from .base import Community
+from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class TuwDatacite(Community):
+class TuwDatacite(Repository):
     NAME = 'tuw'
     IDENTIFIER = NAME
     URL = 'https://researchdata.tuwien.ac.at/oai2d'
