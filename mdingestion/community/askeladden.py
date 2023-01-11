@@ -1,7 +1,7 @@
 from shapely.geometry import shape
-import json
-import os
-import copy
+#import json
+#import os
+#import copy
 
 from .nordicar import BaseNordicar
 from ..service_types import SchemaType, ServiceType
