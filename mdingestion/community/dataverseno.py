@@ -20,8 +20,3 @@ class DataverseNODatacite(Repository):
             doc.pid = urls
         if not doc.publisher:
             doc.publisher = 'DataverseNO'
-
-    # def keywords(self, doc):
-        # keywords = doc.keywords
-        # keywords.append('EOSC Nordic')
-        # return keywords

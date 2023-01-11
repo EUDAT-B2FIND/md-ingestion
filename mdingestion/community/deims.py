@@ -11,6 +11,7 @@ class Deims(Repository):
     PRODUCTIVE = True
 
     def update(self, doc):
+        # TODO: identifier check with iso
         doc.doi = self.find_doi('linkage')
         doc.pid = self.find_pid('linkage')
         doc.source = self.find('MD_Identifier')

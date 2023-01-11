@@ -1,6 +1,5 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
-#from shapely.geometry import shape
 
 
 class BaseB2Share(Repository):
