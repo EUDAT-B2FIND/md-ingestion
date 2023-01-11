@@ -13,6 +13,8 @@ class FMI(BaseB2Share):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = '77f140b0-d4aa-437e-80d4-32c0abd3746f'
+    PRODUCTIVE = True
+    DATE = '2022-09-05'
 
     def update(self, doc):
         doc.discipline = self._discipline(doc, 'Meteorology')

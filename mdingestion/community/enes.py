@@ -12,6 +12,7 @@ class Enes(Repository):
     OAI_METADATA_PREFIX = 'iso'
     OAI_SET = 'iso-old-doi'
     PRODUCTIVE = True
+    DATE = '2020-10-14'
 
     def update(self, doc):
         doc.doi = self.find_doi('linkage')

@@ -10,9 +10,6 @@ class FidgeoDatacite(BaseGfz):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.FID'
     PRODUCTIVE = True
-    DATE = ''
-    DESCRIPTION = ''
-    LOGO = ''
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geospheric Sciences')

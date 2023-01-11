@@ -10,6 +10,7 @@ class Ucl(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'portal_549'
     PRODUCTIVE = True
+    DATE = '2020-09-22'
 
     def update(self, doc):
         doc.contributor = 'Figshare'

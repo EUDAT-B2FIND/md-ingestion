@@ -10,6 +10,7 @@ class CRC1211DBDatacite(BaseGfz):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.CRC1211'
     PRODUCTIVE = True
+    DATE = '2020-09-23'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geosciences')

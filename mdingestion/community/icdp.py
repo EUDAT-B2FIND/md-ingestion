@@ -9,7 +9,7 @@ class IcdpDatacite(BaseGfz):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.SDDB'
-    PRODUCTIVE = True
+    PRODUCTIVE = False
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Scientific drilling')

@@ -9,7 +9,7 @@ class IvoaEudatcore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_b2find'
     OAI_SET = None
-    PRODUCTIVE = False
+    PRODUCTIVE = True
 
     def update(self, doc):
         doc.source = self.find_source('relatedIdentifier', relatedIdentifierType="URL")

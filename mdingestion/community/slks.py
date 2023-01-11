@@ -12,6 +12,7 @@ class Slks(BaseNordicar):
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
     PRODUCTIVE = True
+    DATE = '2020-09-23'
 
     def update(self, doc):
         # doc.open_access = True

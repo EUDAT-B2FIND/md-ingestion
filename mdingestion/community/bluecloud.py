@@ -1,10 +1,6 @@
 import shapely
-import json
-
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
-
-from ..format import format_value
 from ..util import convert_to_lon_180
 
 
@@ -26,7 +22,8 @@ class Bluecloud(Repository):
     URL = 'https://data.blue-cloud.org/api/collections'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.BC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
+    DATE = '2021-04-27'
 
     def _find(self, name):
         return fix_list(self.reader.parser.doc.get(name))

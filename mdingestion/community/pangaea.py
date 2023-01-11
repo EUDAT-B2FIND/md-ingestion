@@ -10,6 +10,7 @@ class PangaeaDatacite(Repository):
     OAI_METADATA_PREFIX = 'datacite4'
     OAI_SET = None
     PRODUCTIVE = True
-    
+    DATE = '2020-09-30'
+ 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Earth System Research')

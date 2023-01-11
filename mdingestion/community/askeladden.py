@@ -12,6 +12,7 @@ class Askeladden(BaseNordicar):
     SERVICE_TYPE = ServiceType.ArcGIS
     FILTER = "kulturminneKategori='Arkeologisk minne'"
     PRODUCTIVE = True
+    DATE = '2021-02-12'
 
     def update(self, doc):
         doc.discipline = ['Archaeology']

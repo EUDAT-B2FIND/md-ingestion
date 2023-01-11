@@ -9,6 +9,7 @@ class Deims(Repository):
     SCHEMA = SchemaType.ISO19139
     SERVICE_TYPE = ServiceType.CSW
     PRODUCTIVE = True
+    DATE = '2020-08-25'
 
     def update(self, doc):
         # TODO: identifier check with iso

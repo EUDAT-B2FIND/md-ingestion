@@ -9,6 +9,7 @@ class BaseUhh(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     PRODUCTIVE = True
+    DATE = '2021-03-15'
 
     def update(self, doc):
         pass
