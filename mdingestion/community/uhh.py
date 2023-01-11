@@ -1,6 +1,5 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
-from ..format import format_value
 
 
 class BaseUhh(Repository):

@@ -1,8 +1,4 @@
 from shapely.geometry import shape
-import json
-import os
-import copy
-
 from .nordicar import BaseNordicar
 from ..service_types import SchemaType, ServiceType
 
@@ -20,20 +16,13 @@ class Slks(BaseNordicar):
     def update(self, doc):
         # doc.open_access = True
         record_id = self.find('header.identifier')[0]
-        # print(record_id)
         record_id = record_id.split('/')
-        # print(record_id)
         record_id = record_id[-2]
-        # print(record_id)
         oai_id = f'urn:repox.www.kulturarv.dkSites:http://www.kulturarv.dk/fundogfortidsminder/site/{record_id}'
-        # print(oai_id)
         doc.metadata_access = f'http://www.kulturarv.dk/ffrepox/OAIHandler?verb=GetRecord&metadataPrefix=ff&identifier={oai_id}'
         doc.discipline = 'Archaeology'
         doc.publication_year = self.find('header.datestamp')
         doc.contact = self.find('publisher')
-        # keywords = doc.keywords
-        # keywords.append('EOSC Nordic')
-        # keywords.append('Viking Age')
         doc.keywords = self.keywords_append(doc)
         doc.temporal_coverage = self.temporal_coverage(doc)
 

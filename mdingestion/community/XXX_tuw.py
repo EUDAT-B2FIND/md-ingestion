@@ -2,6 +2,7 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
+# TODO: already on demo-b2find
 class TuwDatacite(Repository):
     NAME = 'tuw'
     IDENTIFIER = NAME

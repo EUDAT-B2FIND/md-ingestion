@@ -2,6 +2,7 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
+# TODO: should be part of PaNOSC group? 
 class EliDataCite(Repository):
     IDENTIFIER = 'eli'
     URL = 'https://data.eli-laser.eu/oai2d'
