@@ -1,8 +1,8 @@
-from .base import Repository
+from .gfz import BaseGfz
 from ..service_types import SchemaType, ServiceType
 
 
-class IsgDatacite(Repository):
+class IsgDatacite(BaseGfz):
     IDENTIFIER = 'isg'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite

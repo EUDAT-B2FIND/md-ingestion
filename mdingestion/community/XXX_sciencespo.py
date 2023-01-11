@@ -2,6 +2,7 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
+# TODO: reingest, integration prepared on http://eudat7-ingest.dkrz.de/group/sciencespo
 class SciencesPoDDI25(Repository):
     IDENTIFIER = 'sciencespo'
     URL = 'https://data.sciencespo.fr/oai'

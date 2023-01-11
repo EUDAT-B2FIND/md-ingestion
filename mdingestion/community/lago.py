@@ -1,6 +1,7 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
+
 # TODO: orcid-ids in creator
 class LagoDublinCore(Repository):
     IDENTIFIER = 'lago'
@@ -10,6 +11,7 @@ class LagoDublinCore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     PRODUCTIVE = True
+    DATE = '2021-08-02'
 
     def update(self, doc):
         doc.contributor = ['EGI Datahub']

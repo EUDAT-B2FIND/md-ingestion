@@ -5,7 +5,7 @@ from ..service_types import SchemaType, ServiceType
 class EssDatacite(BasePanosc):
     IDENTIFIER = 'ess'
     TITLE = 'ESS'
-#    URL = 'https://scicat.esss.se/openaire/oai' ##old endpoint
+#   URL = 'https://scicat.esss.se/openaire/oai' ##old endpoint
     URL = 'https://oai.panosc.ess.eu/openaire/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

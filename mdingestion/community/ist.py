@@ -10,6 +10,7 @@ class IstDublinCore(Repository):
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = 'research_dataFtxt'
     PRODUCTIVE = True
+    DATE = '2020-10-01'
 
     def update(self, doc):
         doc.doi = self.doi()

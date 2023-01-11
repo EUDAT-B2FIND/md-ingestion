@@ -10,6 +10,7 @@ class MaterialscloudDublinCore(Repository):
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
     PRODUCTIVE = True
+    DATE = '2020-09-22'
 
     def update(self, doc):
         doc.doi = self.doi(doc)

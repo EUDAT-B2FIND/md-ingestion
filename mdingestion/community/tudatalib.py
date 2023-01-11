@@ -10,6 +10,7 @@ class TudatalibDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
     PRODUCTIVE = True
+    DATE = '2021-03-15'
 
     def update(self, doc):
         doc.contact = 'https://tudatalib.ulb.tu-darmstadt.de/page/contact'

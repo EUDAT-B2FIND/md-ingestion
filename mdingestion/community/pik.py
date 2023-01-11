@@ -1,8 +1,8 @@
-from .base import Repository
+from .gfz import BaseGfz
 from ..service_types import SchemaType, ServiceType
 
 
-class PikDatacite(Repository):
+class PikDatacite(BaseGfz):
     IDENTIFIER = 'pik'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite

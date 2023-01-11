@@ -32,11 +32,3 @@ class CERICDatacite(BasePanosc):
         keywords = doc.keywords
         keywords.append('PaN')
         return keywords
-
-   # def title(self,doc):
-   #     title = self.find('titles.title')
-   #     if not title:
-   #         title = 'Untitled'
-   #     elif len(title[0]) < 4:
-   #         title = 'Untitled'
-   #     return title

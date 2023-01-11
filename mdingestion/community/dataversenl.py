@@ -10,3 +10,4 @@ class DataverseNLDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
     PRODUCTIVE = True
+    DATE = '2021-02-23'
