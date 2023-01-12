@@ -18,5 +18,3 @@ class AAAIso(Repository):
 
     def update(self, doc):
         doc.publisher = 'B2Find'
-
-    

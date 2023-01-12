@@ -29,6 +29,7 @@ def _find_orgs(cls=None):
         for subcls in cls.__subclasses__():
             yield from _find_orgs(subcls)
 
+
 def _cached_orgs(cls=None):
     global CACHED_ORGS
     cls = cls or Repository
@@ -63,6 +64,7 @@ def _orgs(name=None, cls=None):
     if not org_list:
         raise RepositoryNotSupported(f'Repository not supported: {name}')
     return org_list
+
 
 def repos(name=None):
     return _orgs(name, cls=Repository)

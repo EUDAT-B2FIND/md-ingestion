@@ -11,4 +11,3 @@ class UniversitedeStrasbourgDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = ''
     PRODUCTIVE = False
-#    Date = 
