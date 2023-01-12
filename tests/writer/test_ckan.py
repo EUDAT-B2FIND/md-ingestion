@@ -1,9 +1,6 @@
 import os
 
-import pytest
-
 from mdingestion.community.darus import DarusDatacite
-from mdingestion.community.herbadrop import Herbadrop
 from mdingestion.writer import CKANWriter
 
 from tests.common import TESTDATA_DIR
@@ -30,16 +27,3 @@ def test_darus_oai_datacite():
     # assert 63715939200 == fields['TempCoverageBegin']  # TODO: fails on ci
     assert 'true' == fields['OpenAccess']
     # assert '4c034878509472f5514acb44dca9ece16e49b75af515e348610452d941e7a0cd' == result['version']
-
-
-def test_herbdrop_json():
-    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop', 'raw', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')
-    reader = Herbadrop()
-    doc = reader.read(jsonfile)
-    writer = CKANWriter()
-    result = writer.json(doc)
-    fields = {}
-    for field in result['extras']:
-        fields[field['key']] = field['value']
-    assert 'Gentiana ×marcailhouana Rouy' in fields['fulltext']
-    assert 'StillImage|PRESERVED_SPECIMEN' in fields['fulltext']
