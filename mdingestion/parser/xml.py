@@ -15,13 +15,11 @@ class XMLParser(DocParser):
         try:
             if '.' in name:
                 # path = pointOfContact.CI_ResponsibleParty.individualName.CharacterString.text
-                
                 # for tag in doc.find_all("pointOfContact"):
-                #   print(tag.CI_ResponsibleParty.individualName.CharacterString.text)
+                # print(tag.CI_ResponsibleParty.individualName.CharacterString.text)
                 tags = name.split('.')
                 first = tags[0]
                 # last = tags[-1]
-                
                 if len(tags) > 1:
                     dotted = '.'.join(tags[1:])
                 else:
