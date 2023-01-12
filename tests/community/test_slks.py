@@ -1,6 +1,6 @@
 import os
 
-from mdingestion.community.slks_dc import Slks
+from mdingestion.community.slks import Slks
 
 from tests.common import TESTDATA_DIR
 
