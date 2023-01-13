@@ -50,7 +50,7 @@ def harvester(repo,
             verify=verify)
     elif service_type == ServiceType.Dataverse:
         harvester = DataverseHarvester(
-            community=community,
+            repo=repo,
             url=url,
             filter=filter,
             fromdate=fromdate,

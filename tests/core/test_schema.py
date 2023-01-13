@@ -4,7 +4,6 @@ import os
 import colander
 
 from mdingestion.community.darus import DarusDatacite
-from mdingestion.community.herbadrop import Herbadrop
 from mdingestion.writer import B2FWriter
 from mdingestion.core import B2FSchema
 
@@ -83,21 +82,6 @@ def test_b2f_doc_validation_darus():
     assert 'Deep enzymology data' in appstruct['title'][0]
     assert 'https://doi.org/10.18419/darus-629' == appstruct['doi']
     assert 2020 == appstruct['publication_year'][0].year
-
-
-@pytest.mark.xfail(reason='related identifier url validation fails')
-def test_b2f_doc_validation_herbadrop():
-    jsonfile = os.path.join(TESTDATA_DIR, 'herbadrop-hjson', 'SET_1', 'hjson', '0d9e8478-3d92-5a5f-92cb-eb678e8e48dd.json')  # noqa
-    reader = Herbadrop()
-    doc = reader.read(jsonfile)
-    writer = B2FWriter()
-    cstruct = writer.json(doc)
-    schema = B2FSchema()
-    appstruct = schema.deserialize(cstruct)
-    assert 'Gentiana ×marcailhouana Rouy' in appstruct['title'][0]
-    assert 'http://coldb.mnhn.fr/catalognumber/mnhn/p/p03945291' == appstruct['source']
-    assert 2019 == appstruct['publication_year'][0].year
-    assert 'ark:/87895/1.90-4070723' in appstruct['related_identifier'][0]
 
 
 def test_b2f_validate_none():

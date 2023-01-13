@@ -1,9 +1,6 @@
 import os
 
-import pytest
-
 from mdingestion.community.darus import DarusDatacite
-from mdingestion.community.herbadrop import Herbadrop
 from mdingestion.writer import B2FWriter
 
 from tests.common import TESTDATA_DIR

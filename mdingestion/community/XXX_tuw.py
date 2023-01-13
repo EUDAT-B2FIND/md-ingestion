@@ -12,8 +12,3 @@ class TuwDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
     PRODUCTIVE = False
-#    Date = 
-
-#    def update(self, doc):
-#        doc.discipline = 'Social Sciences'
-#        doc.contact = 'gagnis@hi.is'
