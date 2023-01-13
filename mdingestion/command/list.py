@@ -10,7 +10,7 @@ class List(Command):
         name = name or 'all'
         df = self.build_dataframe(name)
         if productive:
-            df = df.loc[df.Productive == productive]
+            df = df.loc[df.Productive == 'Yes']
         if out:
             df.to_csv(out)
         elif summary:
