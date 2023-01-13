@@ -38,11 +38,11 @@ class List(Command):
         for identifier in repos(name):
             com = repo(identifier)
             row = {
-                'Repository': com.NAME,
+                'Repository': com.name,
                 'Repository Title': com.TITLE,
-                'Group': com.GROUP,
+                'Group': com.group,
                 'Group Title': com.GROUP_TITLE,
-                'Identifier': com.IDENTIFIER,
+                'Identifier': com.identifier,
                 'Productive': com.PRODUCTIVE,
                 'Date': com.DATE if com.PRODUCTIVE else '',
                 'Schema': com.SCHEMA,
