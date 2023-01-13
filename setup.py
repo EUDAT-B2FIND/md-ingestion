@@ -5,11 +5,10 @@
 
 from setuptools import find_packages, setup
 
-__author__ = "Heinrich Widmann"
-__contact__ = "widmann@dkrz.de"
-__copyright__ = "Copyright (c) 2013 Heinrich Widmann (DKRZ)"
-__version__ = "3.2.0"
-__license__ = "BSD"
+__author__ = "Claudia Martens"
+__contact__ = "martens@dkrz.de"
+__version__ = "3.3.0"
+__license__ = "Apache 2.0"
 
 # One strategy for storing the overall version is to put it in the top-level
 # package's __init__ but Nb. __init__.py files are not needed to declare
