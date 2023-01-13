@@ -1,5 +1,16 @@
 ## CHANGES
 
+### 3.3.0 (2023-01-13)
+
+* removed old stuff, moved other old stuff to attic
+* fiexed tests, pep8
+* revised all mapfiles, including 'DATE' and 'STATUS' if productive, rename mapfiles for testing repos
+* new mapping templates for datacite, dublincore, iso and 'groups'
+* new option for https upload
+* set linkcheck as option in combine 
+* new and modified mapfiles for repositories: Euro-Cordex, Envidat, TUW, Helmholtz, Edmond-API, B2SHARE from FZJ, FMI, LAGO, Sextant, ESRF, Universite der Lorraine, IVOA with eudatcore
+* updated communities: NordicArchaeoligy, da|ra, GFZ
+
 ### 3.2.0 (2022-04-25)
 
 * Update classify (#234,#232)
