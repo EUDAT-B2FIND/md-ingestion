@@ -31,6 +31,7 @@ class List(Command):
             'Service',
             'URL',
             'OAI Set',
+            'MetadataPrefix',
             'Logo',
             'Description'])
         pd.set_option('display.max_rows', None)
@@ -48,6 +49,7 @@ class List(Command):
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
                 'OAI Set': com.OAI_SET,
+                'MetadataPrefix': com.OAI_METADATA_PREFIX,
                 'Logo': com.LOGO,
                 'Description': com.DESCRIPTION,
             }
