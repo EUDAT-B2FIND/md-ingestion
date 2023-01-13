@@ -43,7 +43,7 @@ class List(Command):
                 'Group': com.group,
                 'Group Title': com.GROUP_TITLE,
                 'Identifier': com.identifier,
-                'Productive': com.PRODUCTIVE,
+                'Productive': 'Yes' if com.PRODUCTIVE else 'No',
                 'Date': com.DATE if com.PRODUCTIVE else '',
                 'Schema': com.SCHEMA,
                 'Service': com.SERVICE_TYPE,
