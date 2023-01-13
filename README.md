@@ -4,7 +4,7 @@
 
 ## Description
 
-Python library to harvest, map and upload research community specific metadata into B2FIND CKAN portal. Currently, supported metadata schemas are DublinCore, DataCite and ISO 19139.
+Python library to harvest, map and upload research community specific metadata into B2FIND CKAN portal. Currently, supported generic metadata schemas are DublinCore, DataCite, DDI2.5, ISO 19139 and EUDAT Core.
 
 ## Installation
 

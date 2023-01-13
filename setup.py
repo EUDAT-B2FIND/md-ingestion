@@ -3,8 +3,7 @@
 
 """The setup script."""
 
-from setuptools import find_packages
-from setuptools import setup
+from setuptools import find_packages, setup
 
 __author__ = "Heinrich Widmann"
 __contact__ = "widmann@dkrz.de"
@@ -12,18 +11,13 @@ __copyright__ = "Copyright (c) 2013 Heinrich Widmann (DKRZ)"
 __version__ = "3.2.0"
 __license__ = "BSD"
 
-
-from setuptools import setup, find_packages
-
 # One strategy for storing the overall version is to put it in the top-level
 # package's __init__ but Nb. __init__.py files are not needed to declare
 # packages in Python 3
 # from clisops import __version__ as _package_version
-
 # Populate long description setting with content of README
-#
-# Use markdown format read me file as GitHub will render it automatically
-# on package page
+# Use markdown format read me file as GitHub will render it automatically on package page
+
 with open("README.md") as readme_file:
     _long_description = readme_file.read()
 
@@ -38,13 +32,11 @@ docs_requirements = [
     "sphinx",
 ]
 
-
 # dev_requirements = [line.strip() for line in open('requirements_dev.txt')]
 
 setup(
     author=__author__,
     author_email=__contact__,
-
     # See:
     # https://www.python.org/dev/peps/pep-0301/#distutils-trove-classification
     classifiers=[
