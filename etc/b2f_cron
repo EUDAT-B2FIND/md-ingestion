@@ -1,9 +1,0 @@
-# Run the b2f harvest jobs
-# copy to /etc/cron.d/b2f
-SHELL=/bin/bash
-PATH=/sbin:/bin:/usr/sbin:/usr/bin:/opt/eudat_ckan/mambaforge/envs/b2f/bin
-MAILTO=martens@dkrz.de,fluegel@dkrz.de
-AUTHKEY=replaceme
-HOST=notforyou
-OUTDIR=/opt/eudat_ckan/md-ingestion
-50 12 * * * eudat_ckan b2f -o $OUTDIR --silent combine -c darus --clean --fromdays 3 -i $HOST --auth $AUTHKEY

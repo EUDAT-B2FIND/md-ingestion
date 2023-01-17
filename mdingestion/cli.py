@@ -60,14 +60,12 @@ def list(ctx, repo, summary, productive, out):
 
 @cli.command()
 @click.option('--repo', '-c', help='Repository')
-@click.option('--productive', '-p', is_flag=True, help='Productive')
 @click.option('--out', '-o', help='Output file')
 @click.pass_context
-def cron(ctx, repo, productive, out):
+def cron(ctx, repo, out):
     try:
         crongen = CronGen()
-        crongen.run(name=repo,
-                 productive=productive, out=out)
+        crongen.run(name=repo, out=out)
     except Exception as e:
         logging.critical(f"cron: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
