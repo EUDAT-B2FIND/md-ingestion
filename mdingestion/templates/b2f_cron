@@ -10,6 +10,6 @@ USER=eudat_ckan
 FROMDAYS=8
 {% block repos %}
 {% for repo in repos %}
-50 12 * * * $USER b2f -o $OUTDIR --silent combine -c {{ repo.identifier }} --clean -s --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+{{ repo.minute }} {{ repo.hour }} * * 0 $USER b2f -o $OUTDIR --silent combine -c {{ repo.identifier }} --clean -s --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
 {% endfor %}
 {% endblock %}
