@@ -10,6 +10,7 @@ class AAAIso(Repository):
     OAI_METADATA_PREFIX = 'iso'
     OAI_SET = 'iso-old-doi'
     PRODUCTIVE = False
+    CRON_DAILY = False
     DATE = '2023-01-10'
     LOGO = "http://b2find.dkrz.de/images/communities/wdcc_logo.png"
     DESCRIPTION = """

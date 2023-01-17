@@ -11,6 +11,7 @@ class AAADatacite(Repository):
     OAI_SET = None
     PRODUCTIVE = False
     DATE = '2023-01-10'
+    CRON_DAILY = False
     LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
     DESCRIPTION = """
     Datacite Template with Darus
