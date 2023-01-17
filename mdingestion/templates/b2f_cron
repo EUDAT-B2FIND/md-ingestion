@@ -1,0 +1,15 @@
+# Run the b2f harvest jobs
+# copy to /etc/cron.d/b2f
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/opt/eudat_ckan/mambaforge/envs/b2f/bin
+MAILTO=martens@dkrz.de,fluegel@dkrz.de
+AUTHKEY={{ auth }}
+HOST=b2find.eudat.eu
+OUTDIR=/opt/eudat_ckan/md-ingestion
+USER=eudat_ckan
+FROMDAYS=8
+{% block repos %}
+{% for repo in repos %}
+{{ repo.minute }} {{ repo.hour }} * * {{ repo.day }} $USER b2f -o $OUTDIR --silent combine -c {{ repo.identifier }} --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+{% endfor %}
+{% endblock %}

@@ -16,6 +16,7 @@ class BaseOrg(object):
     DATE = ''
     DESCRIPTION = None
     LOGO = None
+    CRON_DAILY = False
 
     def __init__(self):
         self._reader = None

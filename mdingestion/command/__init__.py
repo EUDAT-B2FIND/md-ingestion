@@ -1,4 +1,5 @@
 from .list import List
+from .crongen import CronGen
 from .harvest import Harvest
 from .map import Map
 from .upload import Upload
@@ -7,6 +8,7 @@ from .search import Search
 
 __all__ = [
     List,
+    CronGen,
     Harvest,
     Map,
     Upload,
