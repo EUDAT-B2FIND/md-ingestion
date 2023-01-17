@@ -3,7 +3,7 @@
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/opt/eudat_ckan/mambaforge/envs/b2f/bin
 MAILTO=martens@dkrz.de,fluegel@dkrz.de
-AUTHKEY=replaceme
+AUTHKEY={{ auth }}
 HOST=b2find.eudat.eu
 OUTDIR=/opt/eudat_ckan/md-ingestion
 USER=eudat_ckan

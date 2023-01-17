@@ -12,7 +12,7 @@ env = Environment(
 
 class CronGen(Command):
 
-    def run(self, name=None, out=None):
+    def run(self, name=None, auth=None, out=None):
         name = name or 'all'
 
         t = dt.datetime(2023, 1, 1, 0, 0)
@@ -30,6 +30,5 @@ class CronGen(Command):
                 }
                 repo_list.append(cron_info)
         b2f_cron = env.get_template("b2f_cron")
-        b2f_cron.render(repos=repo_list)
         with open(out, mode="w", encoding="utf-8") as fp:
-            fp.write(b2f_cron.render(repos=repo_list))
+            fp.write(b2f_cron.render(repos=repo_list, auth=auth))

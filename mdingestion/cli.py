@@ -60,12 +60,13 @@ def list(ctx, repo, summary, productive, out):
 
 @cli.command()
 @click.option('--repo', '-c', help='Repository')
+@click.option('--auth', required=True, help='CKAN API key')
 @click.option('--out', '-o', help='Output file')
 @click.pass_context
-def cron(ctx, repo, out):
+def cron(ctx, repo, auth, out):
     try:
         crongen = CronGen()
-        crongen.run(name=repo, out=out)
+        crongen.run(name=repo, auth=auth, out=out)
     except Exception as e:
         logging.critical(f"cron: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
