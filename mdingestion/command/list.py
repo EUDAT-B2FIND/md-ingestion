@@ -10,7 +10,7 @@ class List(Command):
         name = name or 'all'
         df = self.build_dataframe(name)
         if productive:
-            df = df.loc[df.Productive == productive]
+            df = df.loc[df.Productive == 'Yes']
         if out:
             df.to_csv(out)
         elif summary:
@@ -31,23 +31,25 @@ class List(Command):
             'Service',
             'URL',
             'OAI Set',
+            'MetadataPrefix',
             'Logo',
             'Description'])
         pd.set_option('display.max_rows', None)
         for identifier in repos(name):
             com = repo(identifier)
             row = {
-                'Repository': com.NAME,
+                'Repository': com.name,
                 'Repository Title': com.TITLE,
-                'Group': com.GROUP,
+                'Group': com.group,
                 'Group Title': com.GROUP_TITLE,
-                'Identifier': com.IDENTIFIER,
-                'Productive': com.PRODUCTIVE,
+                'Identifier': com.identifier,
+                'Productive': 'Yes' if com.PRODUCTIVE else 'No',
                 'Date': com.DATE if com.PRODUCTIVE else '',
                 'Schema': com.SCHEMA,
                 'Service': com.SERVICE_TYPE,
                 'URL': com.URL,
                 'OAI Set': com.OAI_SET,
+                'MetadataPrefix': com.OAI_METADATA_PREFIX,
                 'Logo': com.LOGO,
                 'Description': com.DESCRIPTION,
             }
