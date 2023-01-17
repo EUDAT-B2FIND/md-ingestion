@@ -25,6 +25,7 @@ class CronGen(Command):
                 t = t + delta
                 cron_info = {
                     'identifier': a_repo.identifier,
+                    'day': '*' if a_repo.CRON_DAILY else '0',
                     'hour': t.hour,
                     'minute': t.minute,
                 }
