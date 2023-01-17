@@ -10,6 +10,7 @@ class EgidatahubDublinCore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     PRODUCTIVE = True
+    DATE = '2020-08-18'
 
     def update(self, doc):
         doc.contributor = ['EGI Datahub']

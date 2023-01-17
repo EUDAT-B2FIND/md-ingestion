@@ -9,8 +9,10 @@ class Deims(Repository):
     SCHEMA = SchemaType.ISO19139
     SERVICE_TYPE = ServiceType.CSW
     PRODUCTIVE = True
+    DATE = '2020-08-25'
 
     def update(self, doc):
+        # TODO: identifier check with iso
         doc.doi = self.find_doi('linkage')
         doc.pid = self.find_pid('linkage')
         doc.source = self.find('MD_Identifier')

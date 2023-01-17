@@ -1,19 +1,11 @@
 sickle
-# SPARQLWrapper
 owslib
 lxml
-# simplejson
 python-Levenshtein
 networkx
 pyyaml
-# git+https://github.com/noumar/iso639.git
 iso639
-# dublincore
 ckanapi
-# b2handle
-# babel
-###HEW-D?? pyenchant
-# pyparsing
 beautifulsoup4
 shapely
 jsonpath-ng
@@ -22,3 +14,4 @@ pandas
 tqdm
 colander
 python-dateutil
+Jinja2

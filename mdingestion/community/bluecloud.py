@@ -1,10 +1,6 @@
 import shapely
-import json
-
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
-
-from ..format import format_value
 from ..util import convert_to_lon_180
 
 
@@ -26,7 +22,8 @@ class Bluecloud(Repository):
     URL = 'https://data.blue-cloud.org/api/collections'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.BC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
+    DATE = '2021-04-27'
 
     def _find(self, name):
         return fix_list(self.reader.parser.doc.get(name))
@@ -35,15 +32,9 @@ class Bluecloud(Repository):
         doc.discipline = ['Marine Science']
         doc.description = self._find('Abstract')
         doc.source = self._find('OnlineResourceUrl')
-        # print(doc.source)
-        # doc.relatedIdentifier = self.find('linkAskeladden')
         doc.publication_year = self._find('Last_Update')
         doc.contributor = self._find('Organisations')
-        # doc.language = ['']
         doc.contact = ['blue-cloud-support@maris.nl']
-        # doc.creator = self.find('properties.opphav')
-        # doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
-        # doc.version = self.find('properties.versjonId')
         doc.title = self._find('Title') or self._find('Abstract')
         doc.temporal_coverage_begin_date = self._find('Temporal_Extent_Begin')
         doc.temporal_coverage_end_date = self._find('Temporal_Extent_End')

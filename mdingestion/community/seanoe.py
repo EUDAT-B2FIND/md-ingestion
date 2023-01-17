@@ -10,6 +10,7 @@ class Seanoe(Repository):
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
     PRODUCTIVE = True
+    DATE = '2022-02-18'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Marine Science')

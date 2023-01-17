@@ -9,8 +9,8 @@ class CessdaDDI25(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_ddi25'
     OAI_SET = None
-#   PRODUCTIVE = True
-#   DATE = '2021-10-20'
+    PRODUCTIVE = True
+    DATE = '2022-10-12'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Social Sciences')

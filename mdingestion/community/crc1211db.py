@@ -1,8 +1,8 @@
-from .base import Repository
+from .gfz import BaseGfz
 from ..service_types import SchemaType, ServiceType
 
 
-class CRC1211DBDatacite(Repository):
+class CRC1211DBDatacite(BaseGfz):
     IDENTIFIER = 'crc1211db'
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
@@ -10,6 +10,7 @@ class CRC1211DBDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.CRC1211'
     PRODUCTIVE = True
+    DATE = '2020-09-23'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geosciences')

@@ -2,7 +2,6 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-
 class EnvidatDatacite(Repository):
 
     IDENTIFIER = 'envidat'

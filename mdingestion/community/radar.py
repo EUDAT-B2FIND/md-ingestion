@@ -10,6 +10,7 @@ class Radar(Repository):
     OAI_METADATA_PREFIX = 'datacite'
     OAI_SET = None
     PRODUCTIVE = True
+    DATE = '2022-09-19'
 
     def update(self, doc):
         doc.contributor = 'RADAR'

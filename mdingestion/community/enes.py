@@ -4,6 +4,7 @@ from ..format import format_value
 
 
 class Enes(Repository):
+    # TODO: revise ingestion, rename repo in WDCC
     IDENTIFIER = 'enes'
     URL = 'http://c3grid1.dkrz.de:8080/oai/provider'
     SCHEMA = SchemaType.ISO19139
@@ -11,6 +12,7 @@ class Enes(Repository):
     OAI_METADATA_PREFIX = 'iso'
     OAI_SET = 'iso-old-doi'
     PRODUCTIVE = True
+    DATE = '2020-10-14'
 
     def update(self, doc):
         doc.doi = self.find_doi('linkage')

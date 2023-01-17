@@ -1,6 +1,5 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
-from ..format import format_value
 
 
 class BaseUhh(Repository):
@@ -10,6 +9,7 @@ class BaseUhh(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     PRODUCTIVE = True
+    DATE = '2021-03-15'
 
     def update(self, doc):
         pass

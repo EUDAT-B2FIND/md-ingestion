@@ -43,7 +43,7 @@ class CSWSniffer(CatalogSniffer):
 
     def metadata_access(self, doc):
         if doc.file_identifier:
-            if doc.schema==SchemaType.ISO19139:
+            if doc.schema == SchemaType.ISO19139:
                 mdaccess = f"{doc.url}?service=CSW&version=2.0.2&request=GetRecordById&Id={doc.file_identifier}&outputSchema=http://www.isotc211.org/2005/gmd"
             else:
                 mdaccess = f"{doc.url}?service=CSW&version=2.0.2&request=GetRecordById&Id={doc.file_identifier}"

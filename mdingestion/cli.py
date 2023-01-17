@@ -2,7 +2,7 @@ import click
 import pathlib
 from datetime import datetime, timedelta
 
-from .command import List, Harvest, Map, Upload, Purge, Search
+from .command import List, Harvest, Map, Upload, Purge, Search, CronGen
 from .exceptions import UserInfo
 
 
@@ -55,6 +55,20 @@ def list(ctx, repo, summary, productive, out):
                  productive=productive, out=out)
     except Exception as e:
         logging.critical(f"list: {e}", exc_info=True)
+        raise click.ClickException(f"{e}")
+
+
+@cli.command()
+@click.option('--repo', '-c', help='Repository')
+@click.option('--auth', required=True, help='CKAN API key')
+@click.option('--out', '-o', help='Output file')
+@click.pass_context
+def cron(ctx, repo, auth, out):
+    try:
+        crongen = CronGen()
+        crongen.run(name=repo, auth=auth, out=out)
+    except Exception as e:
+        logging.critical(f"cron: {e}", exc_info=True)
         raise click.ClickException(f"{e}")
 
 

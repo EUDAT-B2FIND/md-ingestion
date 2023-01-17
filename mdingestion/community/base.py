@@ -16,6 +16,7 @@ class BaseOrg(object):
     DATE = ''
     DESCRIPTION = None
     LOGO = None
+    CRON_DAILY = False
 
     def __init__(self):
         self._reader = None
@@ -102,6 +103,7 @@ class BaseOrg(object):
 
     def __repr__(self):
         return self.__str__()
+
 
 class Repository(BaseOrg):
     GROUP = None

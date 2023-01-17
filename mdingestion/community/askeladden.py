@@ -1,7 +1,4 @@
 from shapely.geometry import shape
-import json
-import os
-import copy
 
 from .nordicar import BaseNordicar
 from ..service_types import SchemaType, ServiceType
@@ -15,6 +12,7 @@ class Askeladden(BaseNordicar):
     SERVICE_TYPE = ServiceType.ArcGIS
     FILTER = "kulturminneKategori='Arkeologisk minne'"
     PRODUCTIVE = True
+    DATE = '2021-02-12'
 
     def update(self, doc):
         doc.discipline = ['Archaeology']

@@ -7,6 +7,7 @@ class AAAGroup(Repository):
     GROUP_TITLE = 'AAA Group Template'
     PRODUCTIVE = False
     DATE = '2023-01-10'
+    CRON_DAILY = False
     DESCRIPTION = 'Group Template'
     LOGO = ''
     URL = 'https://www.da-ra.de/oaip/oai'

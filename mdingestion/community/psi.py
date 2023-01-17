@@ -10,6 +10,7 @@ class PsiDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
     PRODUCTIVE = True
+    DATE = '2021-04-23'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, ['Life Sciences','Biology','Basic Biological and Medical Research'])
