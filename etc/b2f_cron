@@ -1,0 +1,188 @@
+# Run the b2f harvest jobs
+# copy to /etc/cron.d/b2f
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/opt/eudat_ckan/mambaforge/envs/b2f/bin
+MAILTO=martens@dkrz.de,fluegel@dkrz.de
+AUTHKEY=replaceme
+HOST=b2find.eudat.eu
+OUTDIR=/opt/eudat_ckan/md-ingestion
+USER=eudat_ckan
+FROMDAYS=8
+
+
+10 0 * * 0 $USER b2f -o $OUTDIR --silent combine -c ceric --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 0 * * 0 $USER b2f -o $OUTDIR --silent combine -c esrf --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 0 * * 0 $USER b2f -o $OUTDIR --silent combine -c ess --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 0 * * 0 $USER b2f -o $OUTDIR --silent combine -c pdc --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 0 * * 0 $USER b2f -o $OUTDIR --silent combine -c psi --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 1 * * 0 $USER b2f -o $OUTDIR --silent combine -c dataverseno --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 1 * * 0 $USER b2f -o $OUTDIR --silent combine -c gfzdataservices --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 1 * * 0 $USER b2f -o $OUTDIR --silent combine -c igets --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 1 * * 0 $USER b2f -o $OUTDIR --silent combine -c fidgeo --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 1 * * 0 $USER b2f -o $OUTDIR --silent combine -c pik --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 1 * * 0 $USER b2f -o $OUTDIR --silent combine -c tereno --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 2 * * 0 $USER b2f -o $OUTDIR --silent combine -c enmap --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 2 * * 0 $USER b2f -o $OUTDIR --silent combine -c isg --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 2 * * 0 $USER b2f -o $OUTDIR --silent combine -c intermagnet --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 2 * * 0 $USER b2f -o $OUTDIR --silent combine -c isdc --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 2 * * 0 $USER b2f -o $OUTDIR --silent combine -c geofon --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 2 * * 0 $USER b2f -o $OUTDIR --silent combine -c wsm --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 3 * * 0 $USER b2f -o $OUTDIR --silent combine -c gipp --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 3 * * 0 $USER b2f -o $OUTDIR --silent combine -c icgem --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 3 * * 0 $USER b2f -o $OUTDIR --silent combine -c crc1211db --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 3 * * 0 $USER b2f -o $OUTDIR --silent combine -c sdr --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 3 * * 0 $USER b2f -o $OUTDIR --silent combine -c fmi --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 3 * * 0 $USER b2f -o $OUTDIR --silent combine -c enes --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 4 * * 0 $USER b2f -o $OUTDIR --silent combine -c datice --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 4 * * 0 $USER b2f -o $OUTDIR --silent combine -c ist --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 4 * * 0 $USER b2f -o $OUTDIR --silent combine -c seanoe --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 4 * * 0 $USER b2f -o $OUTDIR --silent combine -c egidatahub --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 4 * * 0 $USER b2f -o $OUTDIR --silent combine -c heidata --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 4 * * 0 $USER b2f -o $OUTDIR --silent combine -c ivoa_datacite --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 5 * * 0 $USER b2f -o $OUTDIR --silent combine -c radar --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 5 * * 0 $USER b2f -o $OUTDIR --silent combine -c lago --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 5 * * 0 $USER b2f -o $OUTDIR --silent combine -c cessda --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 5 * * 0 $USER b2f -o $OUTDIR --silent combine -c midas --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 5 * * 0 $USER b2f -o $OUTDIR --silent combine -c ivoa --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 5 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_uhh --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 6 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_uke --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 6 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_signlang --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 6 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_csmc --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 6 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_hzsk --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 6 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_ncac --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 6 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_fakew --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 7 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_icdc --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 7 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_cen --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 7 * * 0 $USER b2f -o $OUTDIR --silent combine -c uhh_cliccs --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 7 * * 0 $USER b2f -o $OUTDIR --silent combine -c pangaea --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 7 * * 0 $USER b2f -o $OUTDIR --silent combine -c rodare --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 7 * * 0 $USER b2f -o $OUTDIR --silent combine -c tudatalib --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 8 * * 0 $USER b2f -o $OUTDIR --silent combine -c ul --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 8 * * 0 $USER b2f -o $OUTDIR --silent combine -c nird --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 8 * * 0 $USER b2f -o $OUTDIR --silent combine -c slks --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 8 * * 0 $USER b2f -o $OUTDIR --silent combine -c askeladden --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 8 * * 0 $USER b2f -o $OUTDIR --silent combine -c ucl --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 8 * * 0 $USER b2f -o $OUTDIR --silent combine -c envidat --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 9 * * 0 $USER b2f -o $OUTDIR --silent combine -c deims --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 9 * * 0 $USER b2f -o $OUTDIR --silent combine -c darus --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 9 * * 0 $USER b2f -o $OUTDIR --silent combine -c european-xfel --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 9 * * 0 $USER b2f -o $OUTDIR --silent combine -c gesis --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 9 * * 0 $USER b2f -o $OUTDIR --silent combine -c rki --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 9 * * 0 $USER b2f -o $OUTDIR --silent combine -c ihi --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 10 * * 0 $USER b2f -o $OUTDIR --silent combine -c dipf --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 10 * * 0 $USER b2f -o $OUTDIR --silent combine -c bifie --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 10 * * 0 $USER b2f -o $OUTDIR --silent combine -c zfkd --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 10 * * 0 $USER b2f -o $OUTDIR --silent combine -c zbw --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 10 * * 0 $USER b2f -o $OUTDIR --silent combine -c srda --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 10 * * 0 $USER b2f -o $OUTDIR --silent combine -c ebdc --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 11 * * 0 $USER b2f -o $OUTDIR --silent combine -c iwh --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 11 * * 0 $USER b2f -o $OUTDIR --silent combine -c ahri --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 11 * * 0 $USER b2f -o $OUTDIR --silent combine -c rdc --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 11 * * 0 $USER b2f -o $OUTDIR --silent combine -c dzhw --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 11 * * 0 $USER b2f -o $OUTDIR --silent combine -c danseasy --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 11 * * 0 $USER b2f -o $OUTDIR --silent combine -c bluecloud --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 12 * * 0 $USER b2f -o $OUTDIR --silent combine -c inrae --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 12 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_one --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 12 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_two --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 12 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_three --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 12 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_four --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 12 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_five --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 13 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_seven --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 13 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_eight --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 13 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_nine --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 13 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_ten --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 13 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_eleven --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+50 13 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_twelve --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+0 14 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_thirteen --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+10 14 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_fifteen --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+20 14 * * 0 $USER b2f -o $OUTDIR --silent combine -c clarin_b2s --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+30 14 * * 0 $USER b2f -o $OUTDIR --silent combine -c dataversenl --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
+40 14 * * 0 $USER b2f -o $OUTDIR --silent combine -c materialscloud --clean --https --fromdays $FROMDAYS -i $HOST --auth $AUTHKEY
+
