@@ -3,6 +3,7 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
+# TODO: check status of GEOFON, reingest was only 4xx records instead of 5000
 class BaseGfz(Repository):
     GROUP = 'gfz'
     GROUP_TITLE = 'GFZ Data Services'
