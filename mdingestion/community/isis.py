@@ -10,6 +10,6 @@ class ISISDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
     PRODUCTIVE = False
-#    DATE = '2020-09-20'
+#    DATE = '2023-01.17'
 #    LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
 #    DESCRIPTION = """ some description here """
