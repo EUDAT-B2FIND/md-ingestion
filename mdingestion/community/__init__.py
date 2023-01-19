@@ -57,7 +57,7 @@ def _orgs(name=None, cls=None):
             org_list.append(_org.IDENTIFIER)
         elif _org.IDENTIFIER == name:
             org_list.append(_org.IDENTIFIER)
-        elif _org.IDENTIFIER == name:
+        elif _org.NAME == name:
             org_list.append(_org.IDENTIFIER)
         elif _org.GROUP == name:
             org_list.append(_org.IDENTIFIER)
