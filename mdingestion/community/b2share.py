@@ -10,3 +10,4 @@ class BaseB2Share(Repository):
     LOGO = 'http://b2find.dkrz.de/images/communities/b2share_logo.png'
 
     # TODO: adding all repos that use b2share here for overview: EUDAT, FMI
+    # EUDAT = eudat_csc, eudat_fzj
