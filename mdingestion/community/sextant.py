@@ -74,7 +74,7 @@ class Sextant(Repository):
 
     def title(self, doc):
         if not doc.title:
-            doc.title = 'Untitled'
+            doc.title = self.find('SV_ServiceIdentification.CI_Citation.title.CharacterString')
         # else:
         # titles = self.find('CI_Citation.title.PT_FreeText')
         # if titles:
