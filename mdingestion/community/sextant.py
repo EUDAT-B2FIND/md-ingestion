@@ -24,6 +24,7 @@ class Sextant(Repository):
         self.publication_year(doc)
         self.title(doc)
         self.rights(doc)
+        doc.contact = None
 
     def source(self, doc):
         file_id = self.find('fileIdentifier.CharacterString')
@@ -40,28 +41,44 @@ class Sextant(Repository):
 
     def publisher(self, doc):
         if not doc.publisher:
-            doc.publisher = 'Ifremer'
+            doc.publisher = 'IFREMER'
         else:
             publ = doc.publisher
             new_publ = []
             for pub in publ:
                 if pub.lower() == 'ifremer':
-                    new_publ.append('Ifremer')
+                    new_publ.append('IFREMER')
                 else:
                     new_publ.append(pub)
             doc.publisher = new_publ
 
     def publication_year(self, doc):
-        if not doc.publication_year:
-            doc.publication_year = self.find('dateStamp.DateTime')
+        selected_pubyear = None
+        try:
+            dates = self.reader.parser.doc.MD_DataIdentification.CI_Citation.find_all('CI_Date')
+            for date in dates:
+                try:
+                    pubyear = date.Date.text
+                    codetype = date.CI_DateTypeCode['codeListValue']
+                    if codetype == 'publication':
+                        selected_pubyear = pubyear
+                    elif codetype == 'creation' and not selected_pubyear:
+                        selected_pubyear = pubyear
+                except Exception:
+                    pass
+        except Exception:
+            pass
+        if not selected_pubyear:
+            selected_pubyear = self.find('dateStamp.DateTime')
+        doc.publication_year = selected_pubyear
 
     def title(self, doc):
         if not doc.title:
-            doc.title = 'Untitled'
-        else:
-            titles = self.find('CI_Citation.title.PT_FreeText')
-            if titles:
-                doc.title = titles
+            doc.title = self.find('SV_ServiceIdentification.CI_Citation.title.CharacterString')
+        # else:
+        # titles = self.find('CI_Citation.title.PT_FreeText')
+        # if titles:
+        # doc.title = titles
 
     def rights(self, doc):
         rights_list = self.find('MD_LegalConstraints.CharacterString')
