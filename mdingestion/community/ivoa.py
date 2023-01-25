@@ -17,4 +17,4 @@ class IvoaEudatcore(Repository):
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="bibcode")
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="URL")
         doc.discipline = self.discipline(doc, 'Astrophysics and Astronomy')
-        doc.contributor = self.contributor(doc)
+        # doc.contributor = self.contributor(doc)
