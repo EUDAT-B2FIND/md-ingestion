@@ -12,14 +12,8 @@ class IvoaEudatcore(Repository):
     PRODUCTIVE = True
 
     def update(self, doc):
-        # doc.source = self.find_source('relatedIdentifier', relatedIdentifierType="URL")
         doc.source = self.find_source('identifier', identifierType="URL")
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="bibcode")
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="URL")
         doc.discipline = self.discipline(doc, 'Astrophysics and Astronomy')
         doc.contributor = self.contributor(doc)
-
-    def contributor(self, doc):
-        contributor = [name for name in doc.contributor if name not in doc.contact]
-        contributor.append('International Virtual Observatory Alliance (IVOA)')
-        return contributor
