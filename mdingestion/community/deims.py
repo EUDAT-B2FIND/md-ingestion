@@ -11,8 +11,10 @@ class Deims(Repository):
     PRODUCTIVE = True
     DATE = '2020-08-25'
 
+    # TODO: identifier check with iso
     def update(self, doc):
-        # TODO: identifier check with iso
+        if not doc.publication_year:
+            doc.publication_year = self.find('header.datestamp')
         doc.doi = self.find_doi('linkage')
         doc.pid = self.find_pid('linkage')
         doc.source = self.find('MD_Identifier')
