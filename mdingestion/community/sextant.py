@@ -59,7 +59,10 @@ class Sextant(Repository):
     def publication_year(self, doc):
         selected_pubyear = None
         try:
-            dates = self.reader.parser.doc.MD_DataIdentification.CI_Citation.find_all('CI_Date')
+            if self.reader.parser.doc.SV_ServiceIdentification:
+                dates = self.reader.parser.doc.SV_ServiceIdentification.CI_Citation.find_all('CI_Date')
+            else:
+                dates = self.reader.parser.doc.MD_DataIdentification.CI_Citation.find_all('CI_Date')
             for date in dates:
                 try:
                     pubyear = date.Date.text
@@ -68,12 +71,15 @@ class Sextant(Repository):
                         selected_pubyear = pubyear
                     elif codetype == 'creation' and not selected_pubyear:
                         selected_pubyear = pubyear
+                    elif codetype == 'revision' and not selected_pubyear:
+                        selected_pubyear = pubyear
                 except Exception:
                     pass
         except Exception:
             pass
         if not selected_pubyear:
             selected_pubyear = self.find('dateStamp.DateTime')
+
         doc.publication_year = selected_pubyear
 
     def title(self, doc):
