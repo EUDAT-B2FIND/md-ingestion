@@ -17,6 +17,8 @@ class BaseOrg(object):
     DESCRIPTION = None
     LOGO = None
     CRON_DAILY = False
+    REPOSITORY_ID = None
+    REPOSITORY_NAME = None
 
     def __init__(self):
         self._reader = None
@@ -64,7 +66,9 @@ class BaseOrg(object):
             filename,
             repo=self.name,
             url=self.url,
-            oai_metadata_prefix=self.oai_metadata_prefix)
+            oai_metadata_prefix=self.oai_metadata_prefix,
+            repository_id=self.REPOSITORY_ID,
+            repository_name=self.REPOSITORY_NAME)
         doc.groups = self.group
         self.update(doc)
         return doc

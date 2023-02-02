@@ -19,3 +19,5 @@ class DarusDatacite(Repository):
 
     DaRUS is the place to archive, share and publish the research data, scripts and codes of the members and partners of the University of Stuttgart.
     """
+    REPOSITORY_ID = 're3data:r3d100013171'
+    REPOSITORY_NAME = 'DaRUS'
