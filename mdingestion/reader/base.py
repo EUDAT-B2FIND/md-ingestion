@@ -18,11 +18,12 @@ class Reader(object):
         self.sniffer = None
         self.errors = dict(invalid_geometry=[])
 
-    def read(self, filename, repo=None, url=None, oai_metadata_prefix=None):
+    def read(self, filename, repo=None, url=None, oai_metadata_prefix=None, 
+             repository_id=None, repository_name=None):
         self.filename = filename
         self.parser = self.DOC_PARSER(filename)
         # TODO: handling of oai_metadata_prefix parameter needs to be refactored
-        doc = B2FDoc(filename, repo, url, oai_metadata_prefix)
+        doc = B2FDoc(filename, repo, url, oai_metadata_prefix, repository_id, repository_name)
         doc.schema = self.SCHEMA
         self._parse(doc)
         self.parse(doc)
