@@ -380,7 +380,7 @@ class GeoDoc(BaseDoc):
 
 class B2FDoc(GeoDoc):
 
-    def __init__(self, filename, repo=None, url=None, oai_metadata_prefix=None, 
+    def __init__(self, filename, repo=None, url=None, oai_metadata_prefix=None,
                  repository_id=None, repository_name=None):
         super().__init__()
         self.filename = filename

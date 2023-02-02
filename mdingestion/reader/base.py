@@ -18,7 +18,7 @@ class Reader(object):
         self.sniffer = None
         self.errors = dict(invalid_geometry=[])
 
-    def read(self, filename, repo=None, url=None, oai_metadata_prefix=None, 
+    def read(self, filename, repo=None, url=None, oai_metadata_prefix=None,
              repository_id=None, repository_name=None):
         self.filename = filename
         self.parser = self.DOC_PARSER(filename)
