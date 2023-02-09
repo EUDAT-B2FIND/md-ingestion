@@ -15,7 +15,7 @@ class AAADatacite(Repository):
     LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
     DESCRIPTION = """ blabla mit nem link https://whatever/ nochmehr blabla """
     REPOSITORY_ID = 'r3d100013118'
-    REPOSITORY_NAME = 'FZ-Juelich B2SHARE'    
+    REPOSITORY_NAME = 'FZ-Juelich B2SHARE'
 
     def update(self, doc):
         doc.publisher = 'B2Find'
