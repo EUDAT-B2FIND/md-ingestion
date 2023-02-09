@@ -26,4 +26,3 @@ class DariahDE(Repository):
 
     def update(self, doc):
         doc.discipline = doc.discipline = self.discipline(doc, 'Humanities')
-

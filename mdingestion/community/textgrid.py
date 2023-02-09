@@ -21,6 +21,8 @@ class TextGrid(Repository):
 
     The TextGrid Repository is a long-term archive for humanities research data. It provides an extensive, searchable, and reusable repository of texts and images. Aligned with the principles of Open Access and FAIR, the TextGrid Repository was awarded the CoreTrustSeal in 2020. For researchers, the TextGrid Repository offers a sustainable, durable, and secure way to publish their research data in a citable manner and to describe it in an understandable way through required metadata. Read more about sustainability, FAIR and Open Access in the Mission Statement of the TextGrid Repository.
     """
+    REPOSITORY_ID = 're3data:r3d100011365'
+    REPOSITORY_NAME = 'TextGrid'
 
-#    def update(self, doc):
-#        doc.publisher = ''
+    def update(self, doc):
+        doc.discipline = doc.discipline = self.discipline(doc, 'Humanities')
