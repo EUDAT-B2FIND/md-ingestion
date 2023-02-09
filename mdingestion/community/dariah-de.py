@@ -25,5 +25,5 @@ class DariahDE(Repository):
     REPOSITORY_NAME = 'DARIAH-DE'
 
     def update(self, doc):
-        doc.discipline = doc.discipline = self.discipline(doc, 'Earth System Research')
+        doc.discipline = doc.discipline = self.discipline(doc, 'Humanities')
 
