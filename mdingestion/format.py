@@ -71,21 +71,27 @@ def is_null_value(text):
 def format_value(value, type=None, one=False, min_length=None, max_length=None):
     # work with value list
     values = value or []
+    # print("f0", values)
     if not isinstance(values, list):
         values = [values]
     formatted = values
+    # print("f1", formatted)
     # format values to type
     formatted = [format(val, type) for val in formatted]
+    # print("f2", formatted)
     # drop empty values
     formatted = [val for val in formatted if not is_null_value(val)]
+    # print("f3", formatted)
     # formatted = [val for val in formatted if val]
     # remove duplicates
     formatted = remove_duplicates_from_list(formatted)
+    # print("f4", formatted)
     if min_length:
         formatted = [val for val in formatted if len(val) >= min_length]
     if max_length:
         formatted = [val[:max_length] for val in formatted]
     # do we have a single value?
+    # print("f5", formatted)
     if one:
         if formatted:
             result = formatted[0]
@@ -93,6 +99,7 @@ def format_value(value, type=None, one=False, min_length=None, max_length=None):
             result = ''
     else:
         result = formatted
+    # print("f6", formatted)
     return result
 
 
