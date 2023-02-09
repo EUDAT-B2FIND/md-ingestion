@@ -19,7 +19,7 @@ class DariahDE(Repository):
 
     DARIAH-DE
 
-    The DARIAH-DE Repository is a central component of the DARIAH-DE Research Data Federation Architecture. It aggregates various services and applications which makes its use very convenient. The repository allows for storing research data sustainably and securely, providing them with metadata, and finding them through the Repository Search as well as through the DARIAH-DE Generic Search. Read more about sustainability, FAIR and Open Access in the Mission Statement of the DARIAH-DE Repository. 
+    The DARIAH-DE Repository is a central component of the DARIAH-DE Research Data Federation Architecture. It aggregates various services and applications which makes its use very convenient. The repository allows for storing research data sustainably and securely, providing them with metadata, and finding them through the Repository Search as well as through the DARIAH-DE Generic Search. Read more about sustainability, FAIR and Open Access in the Mission Statement of the DARIAH-DE Repository.
     """
     REPOSITORY_ID = 're3data:r3d100011345'
     REPOSITORY_NAME = 'DARIAH-DE'
