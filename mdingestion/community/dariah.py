@@ -2,8 +2,8 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class Dariah(Repository):
-    IDENTIFIER = 'dariah'
+class DariahDE(Repository):
+    IDENTIFIER = 'dariah-de'
     URL = 'https://repository.de.dariah.eu/1.0/oaipmh/oai?'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
@@ -11,16 +11,18 @@ class Dariah(Repository):
     OAI_SET = None
     PRODUCTIVE = False
 #    DATE = '2023-01-10'
-#    CRON_DAILY = False
-#    LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
+    CRON_DAILY = False
+#    LOGO = ""
     DESCRIPTION = """
 
-    https://de.dariah.eu/web/guest/startseite
+    https://repository.de.dariah.eu/search/
 
     DARIAH-DE
 
-    DARIAH-DE (Digital Research Infrastructure for the Arts and Humanities) ist eine Initiative zur Schaffung einer digitalen Forschungsinfrastruktur für die Geistes- und Kulturwissenschaften. Zu diesem Zweck unterstützt DARIAH-DE die mit digitalen Methoden und Verfahren arbeitende Forschung in den Geistes- und Kulturwissenschaften mit einer Forschungsinfrastruktur aus vier Säulen: Lehre, Forschung, Forschungsdaten und technische Komponenten. Als Partner in DARIAH-EU trägt DARIAH-DE ferner dazu bei, europaweit state-of-the-art Aktivitäten der Digitalen Geisteswissenschaften zu bündeln und zu vernetzen.
+    The DARIAH-DE Repository is a central component of the DARIAH-DE Research Data Federation Architecture. It aggregates various services and applications which makes its use very convenient. The repository allows for storing research data sustainably and securely, providing them with metadata, and finding them through the Repository Search as well as through the DARIAH-DE Generic Search. Read more about sustainability, FAIR and Open Access in the Mission Statement of the DARIAH-DE Repository. 
     """
+    REPOSITORY_ID = 're3data:r3d100011345'
+    REPOSITORY_NAME = 'DARIAH-DE'
 
 #    def update(self, doc):
 
