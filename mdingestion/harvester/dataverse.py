@@ -14,9 +14,9 @@ import logging
 
 
 class DataverseHarvester(Harvester):
-    def __init__(self, community, url, filter, fromdate, clean, limit, outdir, verify):
+    def __init__(self, repo, url, filter, fromdate, clean, limit, outdir, verify):
         super().__init__(
-            community=community,
+            repo=repo,
             url=url,
             fromdate=fromdate,
             clean=clean,
@@ -41,7 +41,7 @@ class DataverseHarvester(Harvester):
         return self._query
 
     def identifier(self, record):
-        return f"dataverse-{self.community}-{record['global_id']}"
+        return f"dataverse-{self.repo}-{record['global_id']}"
 
     def matches(self):
         query = {

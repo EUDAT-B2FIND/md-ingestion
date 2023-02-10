@@ -14,6 +14,7 @@ class Edmond(Repository):
 
     def update(self, doc):
         # doc.discipline = ['Edmond']
+        doc.doi = self.find_doi('global_id')
         doc.description = self.find('description')
         doc.source = self.find('url')
         # doc.relatedIdentifier = self.find('linkAskeladden')
@@ -22,11 +23,15 @@ class Edmond(Repository):
         doc.language = ['English']
         doc.contact = self.find('contacts.name')
         doc.creator = self.find('authors')
+        # print('creator', doc.creator)
         # doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
         # doc.places = self.find('properties.kommune')
-        # doc.version = self.find('majorVersion.minorVersion')
+        doc.version = self.find('majorVersion')
+        doc.resource_type = 'Dataset'
+        doc.open_access = 'True'
         doc.title = self.find('name')
         doc.keywords = self.find('keywords')
+        # print('keys', doc.keywords)
         # append 'subject'
         # doc.keywords = self.keywords_append(doc)
         # doc.geometry = self.geometry()
