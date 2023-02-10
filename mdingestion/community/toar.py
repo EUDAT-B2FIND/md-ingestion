@@ -19,7 +19,6 @@ class Toar(Repository):
     REPOSITORY_ID = 'r3d100013118'
     REPOSITORY_NAME = 'FZ-Juelich B2SHARE'
 
-
     def update(self, doc):
         doc.publisher = 'Tropospheric Ozone Assessment Report (TOAR)'
         doc.discipline = 'Atmospheric Chemistry'
