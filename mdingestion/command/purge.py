@@ -1,23 +1,18 @@
-import os
-from tqdm import tqdm
-import json
-from urllib import parse
 from ckanapi import RemoteCKAN, NotFound, NotAuthorized
-from requests.exceptions import ConnectionError
 
 from .base import Command
 # from ..community import repo, repos
 
-import logging
 
 agent = 'b2f'
 
 
-def get_dataset_list(group, iphost):
+def get_dataset_list(group, iphost, https):
     '''get_dataset_list'''
     dataset_list = []
+    proto = 'https' if https else 'http'
 
-    with RemoteCKAN(f"http://{iphost}", user_agent=agent) as ckan:
+    with RemoteCKAN(f"{proto}://{iphost}", user_agent=agent) as ckan:
         packages = ckan.action.member_list(id=group, object_type='package')
         for p in packages:
             dataset_list.append(p[0])
@@ -44,7 +39,7 @@ class Purge(Command):
     def run(self, iphost=None, dataset=None, auth=None, https=False, verify=True,
             silent=False):
         if self.repo:
-            datasets = get_dataset_list(self.repo, iphost=iphost)
+            datasets = get_dataset_list(self.repo, iphost=iphost, https=https)
         else:
             datasets = [dataset]
         purge_dataset_list(datasets, iphost=iphost, apikey=auth, https=https)
