@@ -23,7 +23,7 @@ class ISO19139Reader(XMLReader):
         # doc.instrument = self.find('')
         doc.publisher = self.find('CI_ResponsibleParty.organisationName.CharacterString')
         # doc.contributor = self.find('')
-        doc.publication_year = self.find('CI_Citation.date')
+        doc.publication_year = self.find('MD_DataIdentification.CI_Citation.Date')
         doc.rights = self.find('MD_LegalConstraints')
         doc.contact = self.find('contact.electronicMailAddress.CharacterString')
         # doc.funding_reference = self.find('')
