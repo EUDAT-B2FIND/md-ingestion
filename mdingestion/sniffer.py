@@ -8,6 +8,8 @@ def sniffer(service_type=None):
         sniffer = ArcGISSniffer
     elif service_type == ServiceType.BC:
         sniffer = BlueCloudSniffer
+    elif service_type == ServiceType.OAI_IVOA:
+        sniffer = OAISniffer
     else:
         sniffer = OAISniffer
     return sniffer
