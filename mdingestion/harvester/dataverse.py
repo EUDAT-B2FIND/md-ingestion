@@ -2,6 +2,7 @@
 # https://guides.dataverse.org/en/latest/api/search.html
 #
 # https://demo.dataverse.org/api/search?q=*&type=dataset&per_page=1&metadata_fields=citation:dsDescription&metadata_fields=citation:author
+# &metadata_fields=citation:grantNumber
 
 
 import requests
@@ -36,7 +37,7 @@ class DataverseHarvester(Harvester):
                 # "q": f"{self.filter}",
                 "q": "*",
                 "type": "dataset",
-                "metadata_fields": "citation:dsDescription&metadata_fields=citation:author"
+                "metadata_fields": "citation:dsDescription&metadata_fields=citation:author&metadata_fields=citation:grantNumber"
             }
         return self._query
 

@@ -18,7 +18,3 @@ class EdmondDublincore(Repository):
     DESCRIPTION = """Edmond is a research data repository for Max Planck researchers. It is the place to store completed datasets of research data with open access. Edmond serves the publication of research data from all disciplines and offers scientists the ability to create citable research objects. https://edmond.mpdl.mpg.de/"""
     REPOSITORY_ID = 'http://doi.org/10.17616/R3N33V'
     REPOSITORY_NAME = 'EDMOND'
-
-
-#    def update(self, doc):
-#        doc.publisher = 'B2Find'
