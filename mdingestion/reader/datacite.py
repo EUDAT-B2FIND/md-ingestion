@@ -20,7 +20,7 @@ class DataCiteReader(XMLReader):
         doc.keywords = self.find('subject')
         doc.discipline = self.discipline(doc)
         doc.related_identifier = self.find('relatedIdentifier')
-        doc.creator = self.creator()
+        doc.creator = self.find('creator')
         doc.publisher = self.find('publisher')
         doc.contributor = self.find('contributorName')
         doc.funding_reference = self.funding_reference()
@@ -55,17 +55,6 @@ class DataCiteReader(XMLReader):
             if URI:
                 rights.append(URI)
         return rights
-
-    def creator(self):
-        creators = []
-        for creator in self.parser.doc.find_all('creator'):
-            name = creator.creatorName.text
-            if creator.affiliation:
-                affiliation = format_value(creator.affiliation.text, one=True)
-                if affiliation:
-                    name = f"{name} ({affiliation})"
-            creators.append(name)
-        return creators
 
     def contact(self):
         contacts = []

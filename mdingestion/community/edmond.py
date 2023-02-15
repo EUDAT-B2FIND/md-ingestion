@@ -2,21 +2,36 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class EdmondDatacite(Repository):
-    IDENTIFIER = 'edmond'
-    URL = 'https://oai.datacite.org/oai'
-    SCHEMA = SchemaType.DataCite
-    SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = 'TIB.MPDL'
+class Edmond(Repository):
+    NAME = 'edmond'
+    TITLE = 'Edmond'
+    IDENTIFIER = NAME
+    URL = 'https://edmond.mpdl.mpg.de/api/search'
+    SCHEMA = SchemaType.JSON
+    SERVICE_TYPE = ServiceType.Dataverse
+    # FILTER = ""
     PRODUCTIVE = False
-    DATE = '2023-01-10'
-    CRON_DAILY = False
-    LOGO = "https://edmond.mpdl.mpg.de/logos/navbar/logo_for_bright.png;jsessionid=5358848a5a7c5bebb3eb15bec784"
-    DESCRIPTION = """Edmond is a research data repository for Max Planck researchers. It is the place to store completed datasets of research data with open access. Edmond serves the publication of research data from all disciplines and offers scientists the ability to create citable research objects. https://edmond.mpdl.mpg.de/"""
-    REPOSITORY_ID = 'http://doi.org/10.17616/R3N33V'
-    REPOSITORY_NAME = 'EDMOND'
-
 
     def update(self, doc):
-        doc.publisher = 'B2Find'
+        # doc.discipline = ['Edmond']
+        doc.doi = self.find_doi('global_id')
+        doc.description = self.find('description')
+        doc.source = self.find('url')
+        # doc.relatedIdentifier = self.find('linkAskeladden')
+        doc.publisher = self.find('publisher')
+        doc.publication_year = self.find('published_at')
+        doc.language = ['English']
+        doc.contact = self.find('contacts.name')
+        doc.creator = self.find('authors')
+        # print('creator', doc.creator)
+        # doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
+        # doc.places = self.find('properties.kommune')
+        doc.version = self.find('majorVersion')
+        doc.resource_type = 'Dataset'
+        doc.open_access = 'True'
+        doc.title = self.find('name')
+        doc.keywords = self.find('keywords')
+        # print('keys', doc.keywords)
+        # append 'subject'
+        # doc.keywords = self.keywords_append(doc)
+        # doc.geometry = self.geometry()
