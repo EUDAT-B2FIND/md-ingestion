@@ -81,6 +81,7 @@ class BlueCloudSniffer(CatalogSniffer):
             mdaccess = None
         return mdaccess
 
+
 class DataverseSniffer(CatalogSniffer):
     def update(self, doc):
         doc.metadata_access = self.metadata_access(doc)

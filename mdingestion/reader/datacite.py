@@ -36,7 +36,6 @@ class DataCiteReader(XMLReader):
         doc.geometry = self.find_geometry()
         doc.places = self.find('geoLocationPlace')
 
-
     def creator(self):
         creators = []
         for creator in self.parser.doc.find_all('creator'):
