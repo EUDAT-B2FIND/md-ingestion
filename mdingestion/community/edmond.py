@@ -25,7 +25,7 @@ class Edmond(Repository):
         doc.creator = self.find('authors')
         doc.title = self.find('name')
         doc.keywords = self.find('keywords')
-        # doc.rights = 'whatever'
+        doc.rights = 'CC BY 4.0'
         doc.version = self.find('majorVersion')
         doc.resource_type = 'Dataset'
         doc.funding_reference = self.funding(doc)
