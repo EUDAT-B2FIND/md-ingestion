@@ -52,6 +52,7 @@ class Edmond(Repository):
         for field in fields:
             if field['typeName'] == 'topicClassification':
                 for value in field['value']:
-                    if value['topicClassVocab']['value'] == 'Geolocation - Place':
-                        val = value['topicClassValue']['value']
+                    if 'topicClassVocab' in value:
+                        if value['topicClassVocab']['value'] == 'Geolocation – Place':
+                            val = value['topicClassValue']['value']
         return val
