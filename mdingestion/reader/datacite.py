@@ -36,6 +36,13 @@ class DataCiteReader(XMLReader):
         doc.geometry = self.find_geometry()
         doc.places = self.find('geoLocationPlace')
 
+    def creator(self):
+        creators = []
+        for creator in self.parser.doc.find_all('creator'):
+            name = creator.creatorName.text
+            creators.append(name)
+        return creators
+
     def pid(self):
         urls = self.find_pid('alternateIdentifier')
         urls.extend(self.find_pid('relatedIdentifier', relatedIdentifierType="Handle"))
@@ -55,17 +62,6 @@ class DataCiteReader(XMLReader):
             if URI:
                 rights.append(URI)
         return rights
-
-    def creator(self):
-        creators = []
-        for creator in self.parser.doc.find_all('creator'):
-            name = creator.creatorName.text
-            if creator.affiliation:
-                affiliation = format_value(creator.affiliation.text, one=True)
-                if affiliation:
-                    name = f"{name} ({affiliation})"
-            creators.append(name)
-        return creators
 
     def contact(self):
         contacts = []

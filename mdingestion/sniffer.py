@@ -10,6 +10,8 @@ def sniffer(service_type=None):
         sniffer = BlueCloudSniffer
     elif service_type == ServiceType.OAI_IVOA:
         sniffer = OAISniffer
+    elif service_type == ServiceType.Dataverse:
+        sniffer = DataverseSniffer
     else:
         sniffer = OAISniffer
     return sniffer
@@ -75,6 +77,20 @@ class BlueCloudSniffer(CatalogSniffer):
         identifier = self.parser.find('Identifier')[0]
         if identifier:
             mdaccess = f"{doc.url}/{identifier}"
+        else:
+            mdaccess = None
+        return mdaccess
+
+
+class DataverseSniffer(CatalogSniffer):
+    def update(self, doc):
+        doc.metadata_access = self.metadata_access(doc)
+
+    def metadata_access(self, doc):
+        identifier = self.parser.find('global_id')[0]
+        if identifier:
+            # https://edmond.mpdl.mpg.de/api/search?q=global_id:"doi:10.17617/3.EMRZGH"&type=dataset&per_page=1
+            mdaccess = f"{doc.url}/api/datasets/export?exporter=dataverse_json&persistentId={identifier}"
         else:
             mdaccess = None
         return mdaccess

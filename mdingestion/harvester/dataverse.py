@@ -2,6 +2,8 @@
 # https://guides.dataverse.org/en/latest/api/search.html
 #
 # https://demo.dataverse.org/api/search?q=*&type=dataset&per_page=1&metadata_fields=citation:dsDescription&metadata_fields=citation:author
+# &metadata_fields=citation:grantNumber
+# https://edmond.mpdl.mpg.de/api/search?q=*&per_page=10&start=0&type=dataset&metadata_fields=citation:*
 
 
 import requests
@@ -36,7 +38,7 @@ class DataverseHarvester(Harvester):
                 # "q": f"{self.filter}",
                 "q": "*",
                 "type": "dataset",
-                "metadata_fields": "citation:dsDescription&metadata_fields=citation:author"
+                "metadata_fields": "citation:*"
             }
         return self._query
 
@@ -48,7 +50,8 @@ class DataverseHarvester(Harvester):
             "per_page": 1,
         }
         query.update(self.query)
-        response = requests.get(self.url, params=query, headers=self.headers, verify=self.verify)
+        url = f"{self.url}/api/search"
+        response = requests.get(url, params=query, headers=self.headers, verify=self.verify)
         return int(response.json()['data']['total_count'])
 
     def get_records(self):
@@ -59,7 +62,8 @@ class DataverseHarvester(Harvester):
         query.update(self.query)
         ok = True
         while ok:
-            response = requests.get(self.url, params=query, headers=self.headers, verify=self.verify)
+            url = f"{self.url}/api/search"
+            response = requests.get(url, params=query, headers=self.headers, verify=self.verify)
             data = response.json().get("data", [])
             items = data.get('items', [])
             for item in items:
