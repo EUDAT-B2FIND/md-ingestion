@@ -1,3 +1,5 @@
+import shapely
+
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
@@ -31,7 +33,7 @@ class Edmond(Repository):
         doc.funding_reference = self.funding(doc)
         doc.related_identifier = self.rel(doc)
         doc.places = self.places(doc)
-        # doc.geometry = self.geometry()
+        doc.geometry = self.geo(doc)
 
     def funding(self, doc):
         funds = self.find('$..grantNumberValue.value')
@@ -56,3 +58,21 @@ class Edmond(Repository):
                         if value['topicClassVocab']['value'] == 'Geolocation – Place':
                             vals.append(value['topicClassValue']['value'])
         return vals
+
+    def geo(self, doc):
+        geometry = None
+        fields = self.reader.parser.doc['metadataBlocks']['citation']['fields']
+        for field in fields:
+            if field['typeName'] == 'geolocation':
+                for value in field['value']:
+                    lon = None
+                    lat = None
+                    if 'geolocationLatitude' in value:
+                        lat = value['geolocationLatitude']['value']
+                        lat = float(lat)
+                    if 'geolocationLongitude' in value:
+                        lon = value['geolocationLongitude']['value']
+                        lon = float(lon)
+                    if lon and lat:
+                        geometry = shapely.geometry.Point(lon, lat)
+        return geometry
