@@ -3,7 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class EdmondDublincore(Repository):
-    IDENTIFIER = 'edmond'
+    IDENTIFIER = 'edmond_datacite'
     URL = 'https://oai.datacite.org/oai'
     SCHEMA = SchemaType.DataCite
     # SCHEMA = SchemaType.DublinCore

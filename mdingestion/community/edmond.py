@@ -28,7 +28,7 @@ class Edmond(Repository):
         # doc.places = self.find('properties.kommune')
         doc.version = self.find('majorVersion')
         doc.resource_type = 'Dataset'
-        doc.open_access = 'True'
+        # doc.open_access = True
         doc.title = self.find('name')
         doc.keywords = self.find('keywords')
         # print('keys', doc.keywords)
