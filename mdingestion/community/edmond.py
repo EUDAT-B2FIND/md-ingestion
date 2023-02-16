@@ -24,7 +24,7 @@ class Edmond(Repository):
         doc.language = ['English']
         doc.contact = self.find('$..datasetContactEmail.value')
         doc.creator = self.find('authors')
-        # doc.rights = ['NLOD (https://data.norge.no/nlod/en/2.0/)']
+        # doc.rights = 'whatever'
         # doc.places = self.find('properties.kommune')
         doc.version = self.find('majorVersion')
         doc.resource_type = 'Dataset'
