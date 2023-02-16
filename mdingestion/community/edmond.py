@@ -6,7 +6,7 @@ class Edmond(Repository):
     NAME = 'edmond'
     TITLE = 'Edmond'
     IDENTIFIER = NAME
-    URL = 'https://edmond.mpdl.mpg.de/api/search'
+    URL = 'https://edmond.mpdl.mpg.de'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.Dataverse
     # FILTER = ""

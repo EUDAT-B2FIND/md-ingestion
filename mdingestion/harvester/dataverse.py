@@ -50,7 +50,8 @@ class DataverseHarvester(Harvester):
             "per_page": 1,
         }
         query.update(self.query)
-        response = requests.get(self.url, params=query, headers=self.headers, verify=self.verify)
+        url = f"{self.url}/api/search"
+        response = requests.get(url, params=query, headers=self.headers, verify=self.verify)
         return int(response.json()['data']['total_count'])
 
     def get_records(self):
@@ -61,7 +62,8 @@ class DataverseHarvester(Harvester):
         query.update(self.query)
         ok = True
         while ok:
-            response = requests.get(self.url, params=query, headers=self.headers, verify=self.verify)
+            url = f"{self.url}/api/search"
+            response = requests.get(url, params=query, headers=self.headers, verify=self.verify)
             data = response.json().get("data", [])
             items = data.get('items', [])
             for item in items:
