@@ -26,11 +26,11 @@ class Edmond(Repository):
         doc.title = self.find('name')
         doc.keywords = self.find('keywords')
         # doc.rights = 'whatever'
-        # doc.places = self.find('properties.kommune')
         doc.version = self.find('majorVersion')
         doc.resource_type = 'Dataset'
         doc.funding_reference = self.funding(doc)
         doc.related_identifier = self.rel(doc)
+        doc.places = self.places(doc)
         # doc.geometry = self.geometry()
 
     def funding(self, doc):
@@ -45,3 +45,13 @@ class Edmond(Repository):
             if field['typeName'] == 'relatedDatasets':
                 value = field['value']
         return value
+
+    def places(self, doc):
+        val = ''
+        fields = self.reader.parser.doc['metadataBlocks']['citation']['fields']
+        for field in fields:
+            if field['typeName'] == 'topicClassification':
+                for value in field['value']:
+                    if value['topicClassVocab']['value'] == 'Geolocation - Place':
+                        val = value['topicClassValue']['value']
+        return val
