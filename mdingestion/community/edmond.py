@@ -47,12 +47,12 @@ class Edmond(Repository):
         return value
 
     def places(self, doc):
-        val = ''
+        vals = []
         fields = self.reader.parser.doc['metadataBlocks']['citation']['fields']
         for field in fields:
             if field['typeName'] == 'topicClassification':
                 for value in field['value']:
                     if 'topicClassVocab' in value:
                         if value['topicClassVocab']['value'] == 'Geolocation – Place':
-                            val = value['topicClassValue']['value']
-        return val
+                            vals.append(value['topicClassValue']['value'])
+        return vals
