@@ -115,6 +115,8 @@ class DaraAHRI(BaseDara):
     IDENTIFIER = 'ahri'
     TITLE = 'AHRI - Africa Health Research Institute'
     OAI_SET = '132'  # AHRI Africa Health Research Institute, 82 records
+    REPOSITORY_ID = 're3data:r3d100010870'
+    REPOSITORY_NAME = 'AHRI - Africa Health Research Institute'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Public Health, Health Services Research, Social Medicine')

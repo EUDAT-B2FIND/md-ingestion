@@ -11,6 +11,8 @@ class DanseasyDatacite(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2020-10-01'
+    REPOSITORY_ID = 're3data:r3d100010214'
+    REPOSITORY_NAME = 'DANS-EASY'
 
     def update(self, doc):
         if not doc.doi:

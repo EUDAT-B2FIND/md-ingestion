@@ -11,6 +11,8 @@ class DaticeDatacite(Repository):
     OAI_SET = 'GESIS.SSRI'
     PRODUCTIVE = True
     Date = '2021-08-20'
+    REPOSITORY_ID = 're3data:r3d100013494'
+    REPOSITORY_NAME = 'DATICE'
 
     def update(self, doc):
         doc.discipline = 'Social Sciences'
