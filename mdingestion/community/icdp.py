@@ -10,6 +10,8 @@ class IcdpDatacite(BaseGfz):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.SDDB'
     PRODUCTIVE = False
+    REPOSITORY_ID = 're3data:r3d100010659'
+    REPOSITORY_NAME = 'Scientific Drilling Database'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Scientific drilling')

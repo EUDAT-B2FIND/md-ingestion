@@ -13,7 +13,7 @@ class Edmond(Repository):
     SERVICE_TYPE = ServiceType.Dataverse
     PRODUCTIVE = False
     DATE = '2023-02-16'
-    REPOSITORY_ID = 'http://doi.org/10.17616/R3N33V'
+    REPOSITORY_ID = 're3data:r3d100011387'
     REPOSITORY_NAME = 'EDMOND'
 
     def update(self, doc):

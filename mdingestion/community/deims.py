@@ -10,6 +10,8 @@ class Deims(Repository):
     SERVICE_TYPE = ServiceType.CSW
     PRODUCTIVE = True
     DATE = '2020-08-25'
+    REPOSITORY_ID = 're3data:r3d100012910'
+    REPOSITORY_NAME = 'DEIMS'
 
     # TODO: identifier check with iso
     def update(self, doc):
