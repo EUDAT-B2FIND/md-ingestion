@@ -1,8 +1,4 @@
-#
 # https://guides.dataverse.org/en/latest/api/search.html
-#
-# https://demo.dataverse.org/api/search?q=*&type=dataset&per_page=1&metadata_fields=citation:dsDescription&metadata_fields=citation:author
-# &metadata_fields=citation:grantNumber
 # https://edmond.mpdl.mpg.de/api/search?q=*&per_page=10&start=0&type=dataset&metadata_fields=citation:*
 
 
