@@ -88,6 +88,8 @@ class DaraSRDA(BaseDara):
     IDENTIFIER = 'srda'
     TITLE = 'SRDA - Survey Research Data Archive Taiwan'
     OAI_SET = '128'  # SRDA - Survey Research Data Archive Taiwan, 2680
+    REPOSITORY_ID = 're3data:r3d100013086'
+    REPOSITORY_NAME = 'SRDA'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Empirical Social Research')
