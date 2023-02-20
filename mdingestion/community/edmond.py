@@ -11,8 +11,8 @@ class Edmond(Repository):
     URL = 'https://edmond.mpdl.mpg.de'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.Dataverse
-    PRODUCTIVE = False
-    DATE = '2023-02-16'
+    PRODUCTIVE = True
+    DATE = '2023-02-17'
     REPOSITORY_ID = 'http://doi.org/10.17616/R3N33V'
     REPOSITORY_NAME = 'EDMOND'
 
@@ -27,7 +27,7 @@ class Edmond(Repository):
         doc.creator = self.find('authors')
         doc.title = self.find('name')
         doc.keywords = self.find('keywords')
-        doc.rights = 'CC BY 4.0'
+        # doc.rights = 'CC BY 4.0'
         doc.version = self.find('majorVersion')
         doc.resource_type = 'Dataset'
         doc.funding_reference = self.funding(doc)
