@@ -70,6 +70,8 @@ class DaraZfKD(BaseDara):
     IDENTIFIER = 'zfkd'
     TITLE = 'ZfKD - German Center for Cancer Registry Data at the RKI'
     OAI_SET = '114'  # ZfKD German Center for Cancer Registry Data at the RKI, 10 records
+    REPOSITORY_ID = 're3data:r3d100010700'
+    REPOSITORY_NAME = 'ZfKD - German Center for Cancer Registry Data at the RKI'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Medicine')
@@ -79,6 +81,8 @@ class DaraZBW(BaseDara):
     IDENTIFIER = 'zbw'
     TITLE = 'ZBW Journal Data Archive'
     OAI_SET = '118'  # ZBW Journal Data Archive, 153 records
+    REPOSITORY_ID = 're3data:r3d100012190'
+    REPOSITORY_NAME = 'ZBW Journal Data Archive'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Economics')

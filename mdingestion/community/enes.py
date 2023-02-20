@@ -13,6 +13,8 @@ class Enes(Repository):
     OAI_SET = 'iso-old-doi'
     PRODUCTIVE = True
     DATE = '2020-10-14'
+    REPOSITORY_ID = 're3data:r3d100010299'
+    REPOSITORY_NAME = 'WDCC'
 
     def update(self, doc):
         doc.doi = self.find_doi('linkage')
