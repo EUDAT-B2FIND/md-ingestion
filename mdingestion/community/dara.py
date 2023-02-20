@@ -106,6 +106,8 @@ class DaraIWH(BaseDara):
     IDENTIFIER = 'iwh'
     TITLE = 'IWH - The Halle Institute for Economic Research'
     OAI_SET = '130'  # IWH - The Halle Institute for Economic Research, 7 records
+    REPOSITORY_ID = 're3data:r3d100012253'
+    REPOSITORY_NAME = 'IWH - The Halle Institute for Economic Research'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Economics')
@@ -126,6 +128,8 @@ class DaraRDC(BaseDara):
     IDENTIFIER = 'rdc'
     TITLE = 'RDC - Federal Statistical Office, Germany'
     OAI_SET = '136'  # RDC of the Federal Statistical Office and the statistical offices of the LÃ¤nder, 1843 records
+    REPOSITORY_ID = 're3data:r3d100010426'
+    REPOSITORY_NAME = 'RDC - Federal Statistical Office'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Empirical Social Research')

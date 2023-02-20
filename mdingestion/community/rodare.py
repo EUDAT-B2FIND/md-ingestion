@@ -13,6 +13,8 @@ class RodareDataCite(Repository):
     OAI_SET = 'user-rodare'
     PRODUCTIVE = True
     DATE = '2021-11-16'
+    REPOSITORY_ID = 're3data:r3d100012757'
+    REPOSITORY_NAME = 'RODARE'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Life Sciences; Natural Sciences; Engineering Sciences')

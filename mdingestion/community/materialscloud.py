@@ -11,6 +11,8 @@ class MaterialscloudDublinCore(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2020-09-22'
+    REPOSITORY_ID = 're3data:r3d100012611'
+    REPOSITORY_NAME = 'Materials Cloud'
 
     def update(self, doc):
         doc.doi = self.doi(doc)
