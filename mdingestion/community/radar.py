@@ -11,6 +11,8 @@ class Radar(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2022-09-19'
+    REPOSITORY_ID = 're3data:r3d100012330'
+    REPOSITORY_NAME = 'RADAR'
 
     def update(self, doc):
         doc.contributor = 'RADAR'

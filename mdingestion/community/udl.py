@@ -14,3 +14,5 @@ class UdLDatacite(Repository):
     LOGO = "http://b2find.dkrz.de/images/communities/udl_logo.png"
     DESCRIPTION = """The institutional data repository DOREL - DOnnées de REcherche Lorraines - is a tool for referencing the scientific production of the University of Lorraine as well as a space for publishing data sets produced within its research units. The repository is managed by a transversal team composed of coworkers from the University Libraries, the Research services, the IT services and the MSH Lorraine (Maison des Sciences de l'Homme)."""
     LINKS = ["https://dorel.univ-lorraine.fr/dataverse/univ-lorraine","https://www.univ-lorraine.fr/en/univ-lorraine/"]
+    REPOSITORY_ID = 're3data:r3d100013688'
+    REPOSITORY_NAME = 'DOREL - Université de Lorraine institutional data repository'

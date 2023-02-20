@@ -11,6 +11,8 @@ class ISISDatacite(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
     PRODUCTIVE = False
+    REPOSITORY_ID = 're3data:r3d100014115'
+    REPOSITORY_NAME = 'ISIS DataGateway'
 #    DATE = '2023-01.17'
 #    LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
 #    DESCRIPTION = """ some description here """

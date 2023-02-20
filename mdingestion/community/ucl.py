@@ -11,6 +11,8 @@ class Ucl(Repository):
     OAI_SET = 'portal_549'
     PRODUCTIVE = True
     DATE = '2020-09-22'
+    REPOSITORY_ID = 're3data:r3d100013090'
+    REPOSITORY_NAME = 'UCL'
 
     def update(self, doc):
         doc.contributor = 'Figshare'

@@ -11,3 +11,5 @@ class DataverseNLDatacite(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2021-02-23'
+    REPOSITORY_ID = 're3data:r3d100011201'
+    REPOSITORY_NAME = 'DataverseNL'

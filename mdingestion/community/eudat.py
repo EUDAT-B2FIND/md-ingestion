@@ -7,6 +7,8 @@ class BaseEudat(Repository):
     NAME = 'eudat'
     PRODUCTIVE = True
     DATE = '2023-01-23'
+    REPOSITORY_ID = 're3data:r3d100011395'
+    REPOSITORY_NAME = 'EUDAT'
 
     def update(self, doc):
         if not doc.publication_year:

@@ -11,6 +11,8 @@ class CRC1211DBDatacite(BaseGfz):
     OAI_SET = 'DOIDB.CRC1211'
     PRODUCTIVE = True
     DATE = '2020-09-23'
+    REPOSITORY_ID = 're3data:r3d100013111'
+    REPOSITORY_NAME = 'CRC 1211 Database'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geosciences')
