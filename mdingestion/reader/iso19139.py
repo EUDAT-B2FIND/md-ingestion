@@ -16,14 +16,14 @@ class ISO19139Reader(XMLReader):
     def parse(self, doc):
         # 'identifier' always defined in community mapfile!
         doc.related_identifier = self.find('linkage')
-        doc.title = self.find('CI_Citation.title')
+        doc.title = self.find('MD_DataIdentification.CI_Citation.title.CharacterString')
         doc.description = self.find('abstract')
         doc.keywords = self.find('MD_Keywords.keyword')
         doc.creator = self.find('CI_ResponsibleParty.individualName.CharacterString')
         # doc.instrument = self.find('')
         doc.publisher = self.find('CI_ResponsibleParty.organisationName.CharacterString')
         # doc.contributor = self.find('')
-        doc.publication_year = self.find('CI_Citation.date')
+        doc.publication_year = self.find('MD_DataIdentification.CI_Citation.Date')
         doc.rights = self.find('MD_LegalConstraints')
         doc.contact = self.find('contact.electronicMailAddress.CharacterString')
         # doc.funding_reference = self.find('')

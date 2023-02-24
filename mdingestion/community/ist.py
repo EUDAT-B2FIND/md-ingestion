@@ -11,6 +11,8 @@ class IstDublinCore(Repository):
     OAI_SET = 'research_dataFtxt'
     PRODUCTIVE = True
     DATE = '2020-10-01'
+    REPOSITORY_ID = 're3data:r3d100012394'
+    REPOSITORY_NAME = 'ISTA Research Explorer'
 
     def update(self, doc):
         doc.doi = self.doi()

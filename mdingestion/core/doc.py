@@ -380,7 +380,8 @@ class GeoDoc(BaseDoc):
 
 class B2FDoc(GeoDoc):
 
-    def __init__(self, filename, repo=None, url=None, oai_metadata_prefix=None):
+    def __init__(self, filename, repo=None, url=None, oai_metadata_prefix=None,
+                 repository_id=None, repository_name=None):
         super().__init__()
         self.filename = filename
         self._repo = repo
@@ -391,6 +392,8 @@ class B2FDoc(GeoDoc):
         self._file_identifier = None
         self._fulltext = None
         self.schema = None
+        self._repository_id = repository_id
+        self._repository_name = repository_name
 
     @property
     def name(self):
@@ -435,3 +438,11 @@ class B2FDoc(GeoDoc):
     @file_identifier.setter
     def file_identifier(self, value):
         self._file_identifier = format_value(value, one=True)
+
+    @property
+    def repository_id(self):
+        return self._repository_id
+
+    @property
+    def repository_name(self):
+        return self._repository_name

@@ -10,6 +10,8 @@ class IsgDatacite(BaseGfz):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.ISG'
     PRODUCTIVE = True
+    REPOSITORY_ID = 're3data:r3d100011289'
+    REPOSITORY_NAME = 'ISG'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geodesy, Geoinformatics and Remote Sensing')

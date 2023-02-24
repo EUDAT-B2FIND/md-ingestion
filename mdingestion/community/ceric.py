@@ -14,6 +14,8 @@ class CERICDatacite(BasePanosc):
     DATE = '2022-07-19'
     DESCRIPTION = "CERIC is a European Research Infrastructure Consortium (ERIC) integrating and providing open access to some of the best facilities in Europe, to help science and industry advance in all fields of materials, biomaterials and nanotechnology. With a single entry point to some of the leading national research infrastructures in 8 European countries, it enables the delivery of innovative solutions to societal challenges in the fields of energy, health, food, cultural heritage and more."
     LOGO = ''
+    REPOSITORY_ID = 're3data:r3d100013179'
+    REPOSITORY_NAME = 'CERIC'
 
     def update(self, doc):
         doc.source = self.source(doc)

@@ -9,6 +9,8 @@ class BaseClarin(Repository):
     OAI_METADATA_PREFIX = 'oai_dc'
     # OAI_SET = None
     PRODUCTIVE = True
+    REPOSITORY_ID = 're3data:r3d100010386'
+    REPOSITORY_NAME = 'CLARIN'
 
     def update(self, doc):
         doc.discipline = 'Linguistics'

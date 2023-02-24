@@ -11,6 +11,8 @@ class SDRDublinCore(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2022-04-01'
+    REPOSITORY_ID = 're3data:r3d100013084'
+    REPOSITORY_NAME = 'SURF Data Repository'
 
     def update(self, doc):
         doc.contact = self.contact(doc)

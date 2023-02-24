@@ -11,6 +11,8 @@ class Seanoe(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2022-02-18'
+    REPOSITORY_ID = 're3data:r3d100011867'
+    REPOSITORY_NAME = 'SEANOE'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Marine Science')

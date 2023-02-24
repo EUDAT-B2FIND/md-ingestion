@@ -24,7 +24,7 @@ def test_datacite_no_oai_id():
     assert 'https://github.com/ess-dmsc/ess_file_formats/wiki/NMX' in doc.description
     assert 'https://doi.org/10.17199/BRIGHTNESS/NMX0032' == doc.doi
     # assert 'https://scicat.esss.se/scicat/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=10.17199/BRIGHTNESS/V200111' == doc.metadata_access  # noqa
-    assert 'Pfeiffer, Dorothea (ESS)' in doc.creator
+    assert 'Pfeiffer, Dorothea' in doc.creator
     assert 'ESS' in doc.publisher
     assert 'Photon and neutron data' in doc.keywords
     assert 'OpenAccess' in doc.rights

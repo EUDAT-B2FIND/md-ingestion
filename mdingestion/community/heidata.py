@@ -11,3 +11,5 @@ class heiDATADatacite(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2021-03-23'
+    REPOSITORY_ID = 're3data:r3d100011108'
+    REPOSITORY_NAME = 'heiDATA'

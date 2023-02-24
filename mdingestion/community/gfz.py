@@ -15,6 +15,8 @@ class BaseGfz(Repository):
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
+    REPOSITORY_ID = 're3data:r3d100012335'
+    REPOSITORY_NAME = 'GFZ Data Services'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geosciences')
@@ -24,15 +26,8 @@ class Gfzdb(BaseGfz):
     IDENTIFIER = 'gfzdataservices'
     TITLE = 'GFZ Data Services'
     OAI_SET = 'DOIDB.GFZ'
-
-
-class GfzIgets(BaseGfz):
-    IDENTIFIER = 'igets'
-    TITLE = 'IGETS - International Geodynamics and Earth Tide Service'
-    OAI_SET = 'DOIDB.IGETS'
-
-    def update(self, doc):
-        doc.discipline = self.discipline(doc, 'Geodesy, Geoinformatics and Remote Sensing')
+    REPOSITORY_ID = 're3data:r3d100012335'
+    REPOSITORY_NAME = 'GFZ Data Services'
 
 # class GfzIsdc(BaseGfz):
 #    IDENTIFIER = 'isdc'

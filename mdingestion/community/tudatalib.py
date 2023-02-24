@@ -11,6 +11,8 @@ class TudatalibDatacite(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2021-03-15'
+    REPOSITORY_ID = 're3data:r3d100013029'
+    REPOSITORY_NAME = 'TUdatalib'
 
     def update(self, doc):
         doc.contact = 'https://tudatalib.ulb.tu-darmstadt.de/page/contact'

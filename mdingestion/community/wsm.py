@@ -10,6 +10,8 @@ class WsmDatacite(BaseGfz):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.WSM'
     PRODUCTIVE = True
+    REPOSITORY_ID = 're3data:r3d100010664'
+    REPOSITORY_NAME = 'WSM - World Stress Map'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Geophysics')

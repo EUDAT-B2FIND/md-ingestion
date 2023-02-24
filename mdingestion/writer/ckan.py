@@ -91,6 +91,8 @@ class CKANWriter(Writer):
             'TemporalCoverage': doc.temporal_coverage,
             'TemporalCoverage:BeginDate': doc.temporal_coverage_begin_date,
             'TemporalCoverage:EndDate': doc.temporal_coverage_end_date,
+            'repositoryID': doc.repository_id,
+            'repositoryName': doc.repository_name,
             "fulltext": doc.fulltext,
         }
         # build date range field for temporal coverage

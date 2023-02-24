@@ -15,6 +15,8 @@ class FMI(BaseB2Share):
     OAI_SET = '77f140b0-d4aa-437e-80d4-32c0abd3746f'
     PRODUCTIVE = True
     DATE = '2022-09-05'
+    REPOSITORY_ID = 're3data:r3d100013582'
+    REPOSITORY_NAME = 'FMI - The Finnish Meteorological Institute'
 
     def update(self, doc):
         doc.discipline = self._discipline(doc, 'Meteorology')

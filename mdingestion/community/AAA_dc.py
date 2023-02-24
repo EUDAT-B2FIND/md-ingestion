@@ -12,6 +12,8 @@ class AAADC(Repository):
     PRODUCTIVE = False
     DATE = '2023-01-10'
     CRON_DAILY = False
+    REPOSITORY_ID = 're3data:r3d100013171'
+    REPOSITORY_NAME = 'DaRUS'
     LOGO = "http://b2find.dkrz.de/images/communities/seanoe_logo.png"
     DESCRIPTION = """
     DublinCore Template with SEANOE

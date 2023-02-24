@@ -11,6 +11,8 @@ class PangaeaDatacite(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2020-09-30'
+    REPOSITORY_ID = 're3data:r3d100010134'
+    REPOSITORY_NAME = 'PANGAEA'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Earth System Research')

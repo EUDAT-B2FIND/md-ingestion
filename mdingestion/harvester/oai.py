@@ -1,7 +1,6 @@
 from sickle import Sickle
 from sickle.oaiexceptions import (
     NoRecordsMatch,
-    NoSetHierarchy,
     CannotDisseminateFormat,
 )
 from lxml import etree
