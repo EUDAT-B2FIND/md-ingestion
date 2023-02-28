@@ -1,7 +1,5 @@
 FROM condaforge/mambaforge:latest
-# Specify maintainer in case you share your Docker Image, like, e.g.
-# MAINTAINER FirstName LastName <email>
-LABEL Description="Docker4You Demo" Vendor="DKRZ" Version="0.1"
+LABEL Description="B2Find dev container" Vendor="DKRZ" Version="0.1"
 
 RUN \
   apt-get update && \
@@ -16,11 +14,11 @@ RUN \
 
 COPY .bashrc /root/.bashrc
 
-RUN \
-  git config --global user.email "heil@dkrz.de" && \
-  git config --global user.name "atmodatcode"
+#RUN \
+#  git config --global user.email "heil@dkrz.de" && \
+#  git config --global user.name "atmodatcode"
 
-WORKDIR /opt
+WORKDIR /workspaces
 
 RUN conda init bash
 
