@@ -48,6 +48,9 @@ class HZBinv(HZBDatacite):
         for inst in insts:
             title = inst.titles.title.text
             ident = inst.relatedItemIdentifier.text
-            result.append(f'{title}, https://doi.org/{ident}')
+            ident_type = inst.relatedItemIdentifier['relatedItemIdentifierType']
+            if ident_type == 'DOI':
+                result.append(f'{title}, https://doi.org/{ident}')
+            elif ident_type == 'PID':
+                result.append(f'{title}, https://hdl.handle.net/{ident}')
         return result
-
