@@ -28,6 +28,7 @@ class HZBinv(HZBDatacite):
     OAI_SET = 'raw_inv'
 
     def update(self, doc):
+#        doc.identifier = # <identifier identifierType="Handle">21.11151/2b22-bq4v</identifier> klickbar machen
         doc.instrument = self.find('') # <relatedItem relatedItemType="Instrument" relationType="IsCompiledBy">
               <relatedItemIdentifier relatedItemIdentifierType="DOI">10.5442/NI000001</relatedItemIdentifier>
               <titles>
