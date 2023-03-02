@@ -29,7 +29,7 @@ class HZBinv(HZBDatacite):
 
     def update(self, doc):
         doc.pid = self.pid_(doc)
-#        doc.instrument = self.find('') # <relatedItem relatedItemType="Instrument" relationType="IsCompiledBy">
+        doc.instrument = self.instrument(doc) # <relatedItem relatedItemType="Instrument" relationType="IsCompiledBy">
 #              <relatedItemIdentifier relatedItemIdentifierType="DOI">10.5442/NI000001</relatedItemIdentifier>
 #              <titles>
 #                <title>E2 - Flat-Cone Diffractometer</title>
@@ -41,3 +41,13 @@ class HZBinv(HZBDatacite):
         for pid in pids:
             result.append(f'https://hdl.handle.net/{pid}')
         return result
+
+    def instrument(self, doc):
+        result = []
+        insts = self.reader.parser.doc.find_all('relatedItem', relatedItemType="Instrument")
+        for inst in insts:
+            title = inst.titles.title.text
+            ident = inst.relatedItemIdentifier.text
+            result.append(f'{title}, https://doi.org/{ident}')
+        return result
+
