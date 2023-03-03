@@ -16,3 +16,7 @@ class ISISDatacite(Repository):
 #    DATE = '2023-01.17'
 #    LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
 #    DESCRIPTION = """ some description here """
+
+    def update(self, doc):
+        doc.discipline = self.discipline(doc, 'Photon- and Neutron Geosciences')
+        doc.contact = 'crc1211db-admin@uni-koeln.de'
