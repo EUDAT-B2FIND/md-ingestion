@@ -20,7 +20,7 @@ class ISISDatacite(Repository):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Photon- and Neutron Geosciences')
         doc.creator = self.creator(doc)
-    
+
     def creator(self, doc):
         result = []
         if doc.creator:
