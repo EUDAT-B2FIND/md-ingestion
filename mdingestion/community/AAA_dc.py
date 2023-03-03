@@ -18,6 +18,8 @@ class AAADC(Repository):
     DESCRIPTION = """
     DublinCore Template with SEANOE
     """
+    REPOSITORY_ID = ''
+    REPOSITORY_NAME = ''
 
     def update(self, doc):
         doc.publisher = 'B2Find'

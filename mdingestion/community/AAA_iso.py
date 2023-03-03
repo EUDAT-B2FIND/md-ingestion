@@ -16,6 +16,8 @@ class AAAIso(Repository):
     DESCRIPTION = """
     ISO Template with ENES
     """
+    REPOSITORY_ID = ''
+    REPOSITORY_NAME = ''
 
     def update(self, doc):
         doc.publisher = 'B2Find'
