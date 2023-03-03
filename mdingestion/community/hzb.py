@@ -8,7 +8,6 @@ class HZBDatacite(Repository):
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
-#    OAI_SET = 'pub'
     PRODUCTIVE = False
     DATE = ''
     CRON_DAILY = False
@@ -29,11 +28,7 @@ class HZBinv(HZBDatacite):
 
     def update(self, doc):
         doc.pid = self.pid_(doc)
-        doc.instrument = self.instrument(doc) # <relatedItem relatedItemType="Instrument" relationType="IsCompiledBy">
-#              <relatedItemIdentifier relatedItemIdentifierType="DOI">10.5442/NI000001</relatedItemIdentifier>
-#              <titles>
-#                <title>E2 - Flat-Cone Diffractometer</title>
-#              </titles>
+        doc.instrument = self.instrument(doc)
 
     def pid_(self, doc):
         result = []
