@@ -4,8 +4,17 @@
         "context": "."
     },
 	"mounts": [
-        "source=profile,target=/root,type=volume",
-        "target=/root/.vscode-server,type=volume"
+		{
+        	"source": "profile",
+        	"target": "/root/.vscode-server",
+			"type": "volume"
+		},
+		{
+			"source": "conda_envs",
+			"target": "/opt/conda/envs",
+			"type": "volume"
+		}
+
     ],
     "features": {
         //"ghcr.io/devcontainers/features/python:1": "none",
