@@ -67,7 +67,10 @@ class OAIHarvester(Harvester):
                 'from': self.fromdate,
             })
             for record in records:
-                yield record
+                try: 
+                    yield record
+                except etree.XMLSyntaxError:
+                    logging.warning('XML error')
         except NoRecordsMatch:
             logging.warning(f'No records match the OAI query. from={self.fromdate}')
         except CannotDisseminateFormat:
