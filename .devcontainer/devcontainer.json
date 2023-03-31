@@ -3,6 +3,10 @@
         "dockerfile": "./Dockerfile",
         "context": "."
     },
+	"mounts": [
+        "source=profile,target=/root,type=volume",
+        "target=/root/.vscode-server,type=volume"
+    ],
     "features": {
         //"ghcr.io/devcontainers/features/python:1": "none",
         //"ghcr.io/devcontainers/features/node:1": "none",
