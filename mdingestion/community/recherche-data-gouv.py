@@ -12,4 +12,3 @@ class BaseRDG(Repository):
 
     # TODO: adding all repos that are part of rdg
     # INRAE
-    # 
