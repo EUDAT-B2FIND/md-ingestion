@@ -16,7 +16,7 @@ class INRAEDatacite(Repository):
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = 'NoGeneticResource'
+    OAI_SET = 'INRAE'
     PRODUCTIVE = True
 
     def update(self, doc):
