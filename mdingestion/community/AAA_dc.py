@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class AAADC(Repository):
     IDENTIFIER = 'aaa_dc'
+    TITLE = 'we need this title'
     URL = 'http://www.seanoe.org/oai/OAIHandler'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
