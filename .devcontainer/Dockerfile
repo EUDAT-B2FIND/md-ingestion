@@ -5,6 +5,7 @@ RUN \
   apt-get update && \
   apt-get -y install \
           build-essential \
+          bash-completion \
           vim \
           unzip \
           curl \
@@ -13,10 +14,6 @@ RUN \
           byobu
 
 COPY .bashrc /root/.bashrc
-
-#RUN \
-#  git config --global user.email "heil@dkrz.de" && \
-#  git config --global user.name "atmodatcode"
 
 WORKDIR /workspaces
 
