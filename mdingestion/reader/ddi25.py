@@ -96,7 +96,7 @@ class DDI25Reader(XMLReader):
 
     def format(self, doc):
         filetypes = self.find('fileType')
-        filetypes = [t for t in filetypes if not '-' in t]
+        filetypes = [t for t in filetypes if '-' not in t]
         new_filetypes = []
         for t in filetypes:
             new_filetypes.extend(t.split(','))
