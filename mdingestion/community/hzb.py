@@ -51,7 +51,7 @@ class HZBinv(HZBDatacite):
             elif ident_type == 'PID':
                 result.append(f'{title}, https://hdl.handle.net/{ident}')
         return result
-    
+
     def creator(self, doc):
         new_creator = [c for c in doc.creator if c != ':unav']
         return new_creator

@@ -17,7 +17,7 @@ class EssDatacite(BasePanoscExpands):
     LOGO = ''
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
-    
+
     def update(self, doc):
         doc.doi = self.find_doi('identifier', identifierType="URL")
         doc.discipline = 'Particles, Nuclei and Fields'
