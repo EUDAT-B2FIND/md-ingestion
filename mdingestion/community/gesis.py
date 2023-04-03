@@ -8,8 +8,8 @@ class GesisDatacite(Repository):
     URL = 'https://dbkapps.gesis.org/dbkoai'
     SCHEMA = SchemaType.DDI25
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_ddi25'
-    OAI_SET = 'DKB' 
+    OAI_METADATA_PREFIX = 'oai_ddi25-en'
+    OAI_SET = 'DBK' 
     PRODUCTIVE = False
     DATE = '2023-04-03'
     REPOSITORY_ID = 're3data:r3d100012496'
