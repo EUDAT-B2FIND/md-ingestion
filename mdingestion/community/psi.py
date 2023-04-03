@@ -1,9 +1,10 @@
-from .base import Repository
+from .panoscexpands import BasePanoscExpands
 from ..service_types import SchemaType, ServiceType
 
 
-class PsiDatacite(Repository):
+class PsiDatacite(BasePanoscExpands):
     IDENTIFIER = 'psi'
+    TITLE = 'PSI'
     URL = 'https://doi.psi.ch/oaipmh/oai'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI

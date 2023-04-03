@@ -1,8 +1,8 @@
-from .panosc import BasePanosc
+from .panoscexpands import BasePanoscExpands
 from ..service_types import SchemaType, ServiceType
 
 
-class CERICDatacite(BasePanosc):
+class CERICDatacite(BasePanoscExpands):
     IDENTIFIER = 'ceric'
     TITLE = 'CERIC'
     URL = 'https://data.ceric-eric.eu/oaipmh/request'

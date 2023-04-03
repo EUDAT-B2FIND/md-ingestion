@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class AAADatacite(Repository):
     IDENTIFIER = 'aaa_datacite'
+    TITLE = 'we need this title'
     URL = 'https://darus.uni-stuttgart.de/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
