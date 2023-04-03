@@ -1,14 +1,14 @@
-from .base import Repository
+from .panoscexpands import BasePanoscExpands
 from ..service_types import SchemaType, ServiceType
 
 
-class HZBDatacite(Repository):
+class HZBDatacite(BasePanoscExpands):
     NAME = 'hzb'
     URL = 'https://data.helmholtz-berlin.de/oaipmh/request'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
-    GROUP = 'pans'
+    #GROUP = 'pans'
     PRODUCTIVE = False
     DATE = ''
     CRON_DAILY = False

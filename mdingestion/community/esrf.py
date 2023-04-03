@@ -1,8 +1,8 @@
-from .panosc import BasePanosc
+from .panoscexpands import BasePanoscExpands
 from ..service_types import SchemaType, ServiceType
 
 
-class ESRFDatacite(BasePanosc):
+class ESRFDatacite(BasePanoscExpands):
     IDENTIFIER = 'esrf'
     TITLE = 'ESRF'
     URL = 'https://icatplus.esrf.fr/oaipmh/request'

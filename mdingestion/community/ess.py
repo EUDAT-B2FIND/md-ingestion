@@ -1,8 +1,8 @@
-from .panosc import BasePanosc
+from .panoscexpands import BasePanoscExpands
 from ..service_types import SchemaType, ServiceType
 
 
-class EssDatacite(BasePanosc):
+class EssDatacite(BasePanoscExpands):
     IDENTIFIER = 'ess'
     TITLE = 'ESS'
 #   URL = 'https://scicat.esss.se/openaire/oai' ##old endpoint

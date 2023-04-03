@@ -1,8 +1,8 @@
-from .panosc import BasePanosc
+from .panoscexpands import BasePanoscExpands
 from ..service_types import SchemaType, ServiceType
 
 
-class ILLDatacite(BasePanosc):
+class ILLDatacite(BasePanoscExpands):
     IDENTIFIER = 'ill'
     TITLE = 'ILL'
     URL = 'https://data.ill.fr/openaire/oai'
