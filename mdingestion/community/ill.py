@@ -11,9 +11,11 @@ class ILLDatacite(BasePanoscExpands):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'openaire_data'
     PRODUCTIVE = False
-#    DATE = '2022-07-14'
+    DATE = '2022-07-14'
     DESCRIPTION = ""
     LOGO = ''
+    REPOSITORY_ID = 'https://ror.org/01xtjs520'
+    REPOSITORY_NAME = 'Institut Laue-Langevin'
 
     def update(self, doc):
         doc.discipline = 'Particles, Nuclei and Fields'

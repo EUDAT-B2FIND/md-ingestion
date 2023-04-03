@@ -14,6 +14,8 @@ class ESRFDatacite(BasePanoscExpands):
     DATE = '2022-07-14'
     DESCRIPTION = "The ESRF (European Synchrotron Radiation Facility) is the world's most intense X-ray source and a centre of excellence for fundamental and innovation-driven research in condensed and living matter science. Located in Grenoble, France, the ESRF owes its success to the international cooperation of 22 partner nations, of which 13 are Members and 9 are Associates."
     LOGO = ''
+    REPOSITORY_ID = 'https://ror.org/02550n020'
+    REPOSITORY_NAME = 'European Synchrotron Radiation Facility'
 
     def update(self, doc):
         doc.discipline = 'Particles, Nuclei and Fields'

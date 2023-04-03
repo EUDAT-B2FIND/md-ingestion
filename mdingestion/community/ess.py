@@ -15,7 +15,9 @@ class EssDatacite(BasePanoscExpands):
     DATE = '2020-11-13'
     DESCRIPTION = "The European Spallation Source ESS is a European Research Infrastructure Consortium (ERIC), a multi-disciplinary research facility based on the world’s most powerful neutron source. Our vision is to build and operate the world’s most powerful neutron source, enabling scientific breakthroughs in research related to materials, energy, health and the environment, and addressing some of the most important societal challenges of our time. SciCat is the Metadata Catalogue at European Spallation Source."
     LOGO = ''
-
+    REPOSITORY_ID = ''
+    REPOSITORY_NAME = ''
+    
     def update(self, doc):
         doc.doi = self.find_doi('identifier', identifierType="URL")
         doc.discipline = 'Particles, Nuclei and Fields'
