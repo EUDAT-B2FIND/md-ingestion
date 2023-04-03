@@ -6,10 +6,10 @@ class GesisDatacite(Repository):
     IDENTIFIER = 'gesis'
     TITLE = 'GESIS'
     URL = 'https://dbkapps.gesis.org/dbkoai'
-    SCHEMA = SchemaType.DataCite
+    SCHEMA = SchemaType.DDI25
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = 'DKB', 'SND'
+    OAI_METADATA_PREFIX = 'oai_ddi25'
+    OAI_SET = 'DKB' 
     PRODUCTIVE = False
     DATE = '2023-04-03'
     REPOSITORY_ID = 're3data:r3d100012496'
