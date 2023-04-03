@@ -6,5 +6,3 @@ def test_repos():
     assert repos("pangaea") == ['pangaea']
     assert repos("fmi") == ['fmi']
     assert len(repos("dara")) > 1
-    assert 'gesis' in repos("dara")
-

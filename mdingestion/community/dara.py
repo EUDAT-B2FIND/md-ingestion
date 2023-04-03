@@ -19,7 +19,7 @@ class BaseDara(Repository):
         pass
 
 
-class DaraGESIS(BaseDara):
+""" class DaraGESIS(BaseDara):
     IDENTIFIER = 'gesis'
     TITLE = 'GESIS Data Archive'
     OAI_SET = '1'  # GESIS Data Archive, 7783 records
@@ -28,6 +28,7 @@ class DaraGESIS(BaseDara):
         doc.discipline = self.discipline(doc, 'Social Sciences')
         doc.rights = self.find('rights', attrs={'xml:lang': 'en'})
         doc.places = format_value(self.find('coverage'))
+ """
 
 
 class DaraRKI(BaseDara):

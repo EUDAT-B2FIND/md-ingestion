@@ -19,7 +19,7 @@ class DDI25Reader(XMLReader):
         doc.contributor = self.find('othId')
         self.publication_year(doc)
         doc.resource_type = self.find('dataKind')
-        doc.format = self.find('fileType')
+        doc.format = self.format(doc)
         doc.discipline = self.discipline(doc)
         self.related_identifier(doc)
         self.rights(doc)
@@ -93,6 +93,14 @@ class DDI25Reader(XMLReader):
         descr.extend(self.find('sampProc'))
         descr.extend(self.find('collMode'))
         doc.description = descr
+
+    def format(self, doc):
+        filetypes = self.find('fileType')
+        filetypes = [t for t in filetypes if '-' not in t]
+        new_filetypes = []
+        for t in filetypes:
+            new_filetypes.extend(t.split(','))
+        return new_filetypes
 
     def temporal_coverage(self,doc):
         tempbegin = self.parser.doc.find('timePrd', event="start")

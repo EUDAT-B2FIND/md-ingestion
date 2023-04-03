@@ -240,6 +240,8 @@ def format_url(text):
         url = f"https://hdl.handle.net/{parsed.path}"
     elif len(parsed.path) == 19:
         url = resolve_bibcode(url)
+    elif parsed.path.startswith('10.'):
+        url = f"https://doi.org/{parsed.path}"
     else:
         logging.warning(f"could not parse URL: {url}")
         url = ''
