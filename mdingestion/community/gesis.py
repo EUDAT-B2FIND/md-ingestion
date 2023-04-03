@@ -35,7 +35,15 @@ class GesisDbk(BaseGesis):
 
 class GesisSdn(BaseGesis):
     IDENTIFIER = 'gesis_sdn'
-    SCHEMA = SchemaType.DublinCore
-    OAI_METADATA_PREFIX = 'oai_dc'
+    SCHEMA = SchemaType.DDI25
+    OAI_METADATA_PREFIX = 'oai_ddi25'
     OAI_SET = 'SDN' 
     PRODUCTIVE = False  
+
+    def update(self, doc):
+        doc.publisher = self.find('distrbtr')
+        doc.temporal_coverage = self.find('collDate')
+        doc.places = self.find('geogCover')
+        doc.doi = self.find('othId', type='DOI')
+        doc.resource_type = 'Dataset'
+        doc.discipline = self.discipline(doc, 'Social Sciences')
