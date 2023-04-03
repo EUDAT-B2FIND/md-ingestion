@@ -14,7 +14,7 @@ class BaseGesis(Repository):
     LOGO = "https://www.gesis.org/fileadmin/_processed_/7/c/csm_GESIS-Logo-kompakt-en_b2d554cd55.jpg"
     DESCRIPTION = """GESIS preserves (mainly quantitative) social research data to make it available to the scientific research community. The data is described in a standardized way, secured for the long term, provided with a permanent identifier (DOI), and can be easily found and reused through browser-optimized catalogs (https://search.gesis.org/)."""
     LINK = 'https://www.gesis.org/en/home', 'https://search.gesis.org'
- 
+
 
 class GesisDbk(BaseGesis):
     IDENTIFIER = 'gesis_dbk'
