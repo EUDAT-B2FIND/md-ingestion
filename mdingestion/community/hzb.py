@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class HZBDatacite(BasePanoscExpands):
     NAME = 'hzb'
+    TITLE = 'HZB'
     URL = 'https://data.helmholtz-berlin.de/oaipmh/request'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
