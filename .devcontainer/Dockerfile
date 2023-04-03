@@ -5,6 +5,7 @@ RUN \
   apt-get update && \
   apt-get -y install \
           build-essential \
+          bash-completion \
           vim \
           unzip \
           curl \

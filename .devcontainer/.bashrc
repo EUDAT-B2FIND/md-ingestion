@@ -6,5 +6,9 @@ alias h='history'
 #alias ...='cd ../..'
 #alias ....='cd ../../..'
 
+# store history in project folder
 export PROMPT_COMMAND='history -a'
-export HISTFILE=/workspaces/md-ingestion/.bash_history"
+export HISTFILE="/workspaces/md-ingestion/.bash_history"
+
+# enable bash completion
+. /etc/bash_completion
