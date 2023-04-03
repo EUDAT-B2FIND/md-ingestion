@@ -2,7 +2,7 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class GesisDatacite(Repository):
+class GesisDDI25(Repository):
     IDENTIFIER = 'gesis'
     TITLE = 'GESIS'
     URL = 'https://dbkapps.gesis.org/dbkoai'
@@ -19,5 +19,9 @@ class GesisDatacite(Repository):
     DESCRIPTION = """GESIS preserves (mainly quantitative) social research data to make it available to the scientific research community. The data is described in a standardized way, secured for the long term, provided with a permanent identifier (DOI), and can be easily found and reused through browser-optimized catalogs (https://search.gesis.org/)."""
     LINK = 'https://www.gesis.org/en/home', 'https://search.gesis.org'
 
-    #def update(self, doc):
-        #doc.publisher = 'B2Find'
+    def update(self, doc):
+        doc.publication_year = self.find('prodDate')
+        doc.temporal_coverage = self.find('collDate')
+        doc.places = self.find('geogCover')
+        doc.laguage = 'eng'
+
