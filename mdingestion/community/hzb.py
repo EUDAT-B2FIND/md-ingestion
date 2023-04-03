@@ -8,6 +8,7 @@ class HZBDatacite(Repository):
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
+    GROUP = 'pans'
     PRODUCTIVE = False
     DATE = ''
     CRON_DAILY = False
@@ -29,6 +30,7 @@ class HZBinv(HZBDatacite):
     def update(self, doc):
         doc.pid = self.pid_(doc)
         doc.instrument = self.instrument(doc)
+        doc.creator = self.creator(doc)
 
     def pid_(self, doc):
         result = []
@@ -49,3 +51,7 @@ class HZBinv(HZBDatacite):
             elif ident_type == 'PID':
                 result.append(f'{title}, https://hdl.handle.net/{ident}')
         return result
+    
+    def creator(self, doc):
+        new_creator = [c for c in doc.creator if c != ':unav']
+        return new_creator
