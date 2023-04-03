@@ -14,10 +14,6 @@ RUN \
 
 COPY .bashrc /root/.bashrc
 
-#RUN \
-#  git config --global user.email "heil@dkrz.de" && \
-#  git config --global user.name "atmodatcode"
-
 WORKDIR /workspaces
 
 RUN conda init bash
