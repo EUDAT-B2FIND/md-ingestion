@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class LiferespiraEudatcore(Repository):
     IDENTIFIER = 'life-respira'
+    TITLE = 'LIFE+Respira'
     GROUP = 'b2share'
     URL = 'https://b2share.eudat.eu/api/oai2d'
     SCHEMA = SchemaType.Eudatcore
@@ -21,5 +22,6 @@ class LiferespiraEudatcore(Repository):
     def update(self, doc):
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
-
+        doc.discipline = 'Environmental Monitoring'
+        doc.resource_type = 'Dataset'
    
