@@ -24,4 +24,3 @@ class LiferespiraEudatcore(Repository):
             doc.publication_year = self.find('header.datestamp')
         doc.discipline = 'Environmental Monitoring'
         doc.resource_type = 'Dataset'
-   
