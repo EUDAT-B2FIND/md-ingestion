@@ -17,4 +17,19 @@ class IvoaEudatcore(Repository):
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="bibcode")
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="URL")
         doc.discipline = self.discipline(doc, 'Astrophysics and Astronomy')
-        # doc.contributor = self.contributor(doc)
+        doc.instrument = self.instrument(doc)
+
+    def instrument(self, doc):
+        result = []
+        insts = self.reader.parser.doc.find_all('instrument')
+        for inst in insts:
+            inst_name = inst.text
+            inst_type = inst.get('instrumentIdentifierType')
+            inst_id = inst.get('instrumentIdentifier')
+            if inst_type == 'DOI':
+                result.append(f'{inst_name}, https://doi.org/{inst_id}')
+            elif inst_type == 'Handle':
+                result.append(f'{inst_name}, https://hdl.handle.net/{inst_id}')
+            else:
+                result.append(inst_name)
+        return result
