@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schema.eudat.eu/schema/kernel-1"
+xsi:schemaLocation="http://schema.eudat.eu/schema/kernel-1 http://schema.eudat.eu/meta/kernel-core-1.0/schema.xsd">
+  <titles>
+      <title xml:lang="en">EUDAT Core metadata schema full example</title>
+      <title xml:lang="en">Here you find exapmles for the EUDAT Core metadata schema</title>
+  </titles>
+  <community>EUDAT community</community>
+  <identifiers>
+      <identifier identifierType="DOI">10.1594/WDCC/CCSRNIES_SRES_B2</identifier>
+      <identifier identifierType="ARK">2013A&amp;A...558A.149B</identifier>
+      <identifier identifierType="URL">https://b2share.eudat.eu/records/bb8964ff899c4711a0e8875b87ab2800</identifier>
+  </identifiers>
+  <publishers>
+      <publisher>EUDAT B2SHARE</publisher>
+      <publisher>NASA GOV</publisher>
+  </publishers>
+  <publicationYear>2020</publicationYear>
+  <creators>
+      <creator>
+          <creatorName>Miller, Elizabeth</creatorName>
+      </creator>
+      <creator>
+          <creatorName>Fuller, Barry</creatorName>
+      </creator>
+  </creators>
+  <instruments>
+      <!--
+      <instrument>Instrument name without identifier</instrument>
+      <instrument instrumentIdentifier="10.1594/WDCC/CCSRNIES_SRES_B2" instrumentIdentifierType="DOI">Instrument name</instrument>
+      -->
+  </instruments>
+  <descriptions>
+      <description>XML example of all EUDAT Core Metadata Schema v1.0 properties.</description>
+  </descriptions>
+  <rightsList>
+      <rights>Creative Commons Zero 1.0</rights>
+      <rights>info:eu-repo/semantics/openAccess</rights>
+  </rightsList>
+  <languages>
+      <language>eng</language>
+      <language>ger</language>
+  </languages>
+  <resourceTypes>
+      <resourceType>Dataset</resourceType>
+      <resourceType>AstroImage</resourceType>
+      <resourceType>DataCollection</resourceType>
+  </resourceTypes>
+  <formats>
+      <format>application/xml</format>
+      <format>application/pdf</format>
+  </formats>
+  <disciplines>
+      <discipline>English literature</discipline>
+      <discipline>World literature</discipline>
+  </disciplines>
+  <keywords>
+      <keyword>computer science</keyword>
+      <keyword>metadata</keyword>
+      <keyword>design</keyword>
+  </keywords>
+  <relatedIdentifiers>
+      <relatedIdentifier relatedIdentifierType="URL">https://schema.eudat.eu/application/citeproc+json/10.12345/eudat-core-example-full</relatedIdentifier>
+      <relatedIdentifier relatedIdentifierType="arXiv">0706.0001</relatedIdentifier>
+  </relatedIdentifiers>
+  <contributors>
+      <contributor>
+          <contributorName>Miller, Elizabeth</contributorName>
+      </contributor>
+      <contributor>
+          <contributorName>PaNOSC</contributorName>
+      </contributor>
+      <contributor>
+          <contributorName>Deutsches Klimarechenzentrum</contributorName>
+      </contributor>
+  </contributors>
+  <contacts>
+      <contact>info@community.org</contact>
+      <contact>https://community.org/contact</contact>
+  </contacts>
+  <spatialCoverages>
+      <spatialCoverage>
+          <geoLocationPlace>Atlantic Ocean</geoLocationPlace>
+          <geoLocationPoint>
+              <pointLongitude>-67.302</pointLongitude>
+              <pointLatitude>31.233</pointLatitude>
+          </geoLocationPoint>
+          <geoLocationBox>
+              <westBoundLongitude>-71.032</westBoundLongitude>
+              <eastBoundLongitude>-68.211</eastBoundLongitude>
+              <southBoundLatitude>41.090</southBoundLatitude>
+              <northBoundLatitude>42.893</northBoundLatitude>
+          </geoLocationBox>
+      </spatialCoverage>
+      <spatialCoverage>
+          <geoLocationPolygon>
+              <polygonPoint>
+                  <pointLatitude>41.991</pointLatitude>
+                  <pointLongitude>-71.032</pointLongitude>
+              </polygonPoint>
+              <polygonPoint>
+                  <pointLatitude>42.893</pointLatitude>
+                  <pointLongitude>-69.622</pointLongitude>
+              </polygonPoint>
+              <polygonPoint>
+                  <pointLatitude>41.991</pointLatitude>
+                  <pointLongitude>-68.211</pointLongitude>
+              </polygonPoint>
+              <polygonPoint>
+                  <pointLatitude>41.090</pointLatitude>
+                  <pointLongitude>-69.622</pointLongitude>
+              </polygonPoint>
+              <polygonPoint>
+                  <pointLatitude>41.991</pointLatitude>
+                  <pointLongitude>-71.032</pointLongitude>
+              </polygonPoint>
+          </geoLocationPolygon>
+      </spatialCoverage>
+  </spatialCoverages>
+  <temporalCoverages>
+      <temporalCoverage>
+          <startDate format="ISO-8601">2004-03-02</startDate>
+          <endDate format="ISO-8601">2005-06-02</endDate>
+      </temporalCoverage>
+      <temporalCoverage>
+          <span>Paleocene</span>
+      </temporalCoverage>
+  </temporalCoverages>
+  <version>1.0</version>
+  <sizes>
+      <size>400 MB</size>
+      <size>102 files</size>
+  </sizes>
+  <fundingReferences>
+      <fundingReference>
+          <funderName>National Science Foundation</funderName>
+          <awardNumber>XYZ-10001</awardNumber>
+      </fundingReference>
+      <fundingReference>
+          <funderName>Federal Science Organisation</funderName>
+      </fundingReference>
+  </fundingReferences>
+</resource>
