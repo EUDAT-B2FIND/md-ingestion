@@ -13,5 +13,5 @@ class BaseB2Share(Repository):
     # EUDAT = eudat_csc, eudat_fzj
     # LIFE+Respira = life-respira
     # RDA = rda
+    # BBMRI = bbmri
     # FMI = fmi
-    # 
