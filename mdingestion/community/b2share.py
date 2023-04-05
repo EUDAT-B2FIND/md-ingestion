@@ -12,5 +12,6 @@ class BaseB2Share(Repository):
     # TODO: adding all repos that use b2share here for overview: EUDAT, FMI ...
     # EUDAT = eudat_csc, eudat_fzj
     # LIFE+Respira = life-respira
+    # RDA = rda
+    # BBMRI = bbmri
     # FMI = fmi
-    # TOAR
