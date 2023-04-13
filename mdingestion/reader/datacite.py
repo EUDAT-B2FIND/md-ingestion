@@ -40,7 +40,13 @@ class DataCiteReader(XMLReader):
         creators = []
         for creator in self.parser.doc.find_all('creator'):
             name = creator.creatorName.text
-            creators.append(name)
+            orcid_element = creator.find('nameIdentifier', nameIdentifierScheme="ORCID")
+            if orcid_element:
+                orcid = orcid_element.text
+                c = f"{name} (ORCID: {orcid})"
+            else:
+                c = name
+            creators.append(c)
         return creators
 
     def pid(self):
