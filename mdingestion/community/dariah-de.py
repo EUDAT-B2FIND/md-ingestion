@@ -4,7 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class DariahDE(Repository):
     IDENTIFIER = 'dariah-de'
-    URL = 'https://repository.de.dariah.eu/1.0/oaipmh/oai?'
+    URL = 'https://repository.de.dariah.eu/1.0/oaipmh/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'

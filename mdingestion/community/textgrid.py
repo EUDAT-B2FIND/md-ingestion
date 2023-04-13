@@ -5,9 +5,9 @@ from ..service_types import SchemaType, ServiceType
 class TextGrid(Repository):
     IDENTIFIER = 'textgrid'
     URL = 'https://textgridlab.org/1.0/tgoaipmh/oai'
-    SCHEMA = SchemaType.DataCite
+    SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_datacite'
+    OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
     PRODUCTIVE = False
     DATE = '2023-02-09'
@@ -25,4 +25,18 @@ class TextGrid(Repository):
     REPOSITORY_NAME = 'TextGrid'
 
     def update(self, doc):
-        doc.discipline = doc.discipline = self.discipline(doc, 'Humanities')
+        doc.pid = self.find_pid('identifier')
+        doc.discipline = self.discipline(doc, 'Humanities')
+        doc.description = self.description(doc)
+        doc.publisher = 'TextGrid'
+
+    def description(self, doc):
+        result = doc.description
+        sources = self.find('source')
+        found = ''
+        for source in sources:
+            if len(source) > len(found):
+                found = source
+        if found:
+            result.append(f' Source: {found}')
+        return result
