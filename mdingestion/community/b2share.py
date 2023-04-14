@@ -14,4 +14,5 @@ class BaseB2Share(Repository):
     # LIFE+Respira = life-respira
     # RDA = rda
     # BBMRI = bbmri
+    # CompBioMed = compbiomed
     # FMI = fmi
