@@ -12,7 +12,7 @@ RUN \
           wget \
           git \
           byobu \
-          ssh
+          openssh-client
 
 COPY .bashrc /root/.bashrc
 
