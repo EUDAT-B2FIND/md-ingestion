@@ -11,7 +11,8 @@ RUN \
           curl \
           wget \
           git \
-          byobu
+          byobu \
+          ssh
 
 COPY .bashrc /root/.bashrc
 
