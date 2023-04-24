@@ -15,6 +15,8 @@ class SDRDublinCore(Repository):
     REPOSITORY_NAME = 'SURF Data Repository'
 
     def update(self, doc):
+        doc.doi = self.find_doi('identifier')
+        doc.pid = self.find_pid('identifier')
         doc.contact = self.contact(doc)
         doc.keywords = self.keywords_(doc)
         doc.publication_year = self.publication_year(doc)
