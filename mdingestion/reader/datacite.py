@@ -12,7 +12,7 @@ class DataCiteReader(XMLReader):
     SCHEMA = SchemaType.DataCite
 
     def parse(self, doc):
-        doc.title = self.find('title')
+        doc.title = self.find('resource.titles.title')
         doc.description = self.find('description')
         doc.doi = self.find_doi('resource.identifier')
         doc.pid = self.pid()
