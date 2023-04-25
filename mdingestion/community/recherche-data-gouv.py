@@ -2,7 +2,7 @@ from .base import Repository
 
 
 class BaseRDG(Repository):
-    GROUP = 'rdg'
+    GROUP = 'recherche-data-gouv'
     GROUP_TITLE = 'Recherche Data Gouv'
     PRODUCTIVE = True
     DATE = '2023-03-31'
@@ -10,5 +10,5 @@ class BaseRDG(Repository):
     LOGO = 'https://nextcloud.inrae.fr/s/3JsYRnHLc8P8p3Q/download/Logo%20RDG.png'
     LINK = 'https://recherche.data.gouv.fr'
 
-    # TODO: adding all repos that are part of rdg
+    # TODO: adding all repos that are part of recherche-data-gouv
     # INRAE
