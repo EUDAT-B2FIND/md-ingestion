@@ -15,4 +15,6 @@ class BaseB2Share(Repository):
     # RDA = rda
     # BBMRI = bbmri
     # CompBioMed = compbiomed
+    # InGRID = ingrid
     # FMI = fmi
+    # OpenEBench = openebench
