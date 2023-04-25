@@ -1,8 +1,8 @@
-from .base import Repository
+from .panoscexpands import BasePanoscExpands
 from ..service_types import SchemaType, ServiceType
 
 
-class ISISDatacite(Repository):
+class ISISDatacite(BasePanoscExpands):
     IDENTIFIER = 'isis'
 #   URL = 'https://icat-dev.isis.stfc.ac.uk/oaipmh/request'
     URL = 'https://icatisis.esc.rl.ac.uk/oaipmh/request'
