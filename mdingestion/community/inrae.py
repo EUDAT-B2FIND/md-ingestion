@@ -12,7 +12,8 @@ DF = pd.read_csv(open(FNAME))
 
 class INRAEDatacite(Repository):
     IDENTIFIER = 'inrae'
-    URL = 'https://data.inrae.fr/oai'
+#   URL = 'https://data.inrae.fr/oai'
+    URL = 'https://entrepot.recherche.data.gouv.fr/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
@@ -23,7 +24,7 @@ class INRAEDatacite(Repository):
     REPOSITORY_ID = 're3data:r3d100012673'
     REPOSITORY_NAME = 'Data INRAE'
 
-    def update(self, doc):
+    """def update(self, doc):
         handle = format_value(self.find('resource.identifier', identifierType="Handle"), one=True)
         if handle:
             urls = self.reader.pid()
@@ -46,4 +47,4 @@ class INRAEDatacite(Repository):
                 values.extend(result_disciplines[0].split(';'))
             else:
                 values.extend(self.discipline(doc, [subject]))
-        return values
+        return values"""
