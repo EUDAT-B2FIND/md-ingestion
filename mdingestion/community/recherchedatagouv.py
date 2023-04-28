@@ -11,5 +11,8 @@ class BaseRDG(Repository):
     LINK = 'https://recherche.data.gouv.fr'
 
     # TODO: adding all repos that are part of recherche-data-gouv
-    # INRAE
+    # INRAE --> add new endpoint and GROUP
     # École des Ponts-ParisTech
+    # Université de Strasbourg
+    # Data Repository Grenoble Alpes
+    # 
