@@ -11,7 +11,7 @@ class LiferespiraEudatcore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = 'e1800bc8-780e-4617-a7b6-2312cb6190c4'  # LIFE+Respira Set from CSC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-01-23'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''

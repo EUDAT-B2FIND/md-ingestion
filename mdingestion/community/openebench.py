@@ -11,7 +11,7 @@ class OpenebenchDublincore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = '591815be-a801-47c5-80e2-0a39f95c7def'  # OpenEBench Set from CSC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-04-25'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
