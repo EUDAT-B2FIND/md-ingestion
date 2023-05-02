@@ -11,7 +11,7 @@ class BbmriDublincore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = '99916f6f-9a2c-4feb-a342-6552ac7f1529'  # BBMRI Set from CSC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-01-23'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''

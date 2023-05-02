@@ -11,7 +11,7 @@ class RdaEudatcore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = '8d963a29-5e19-492b-8cfe-97da4f54fad2'  # RDA Set from CSC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-01-23'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''

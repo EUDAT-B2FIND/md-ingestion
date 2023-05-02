@@ -11,7 +11,7 @@ class CompbiomedDublincore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = '03b22301-60a8-4885-86fa-8c92cbf57bb0'  # CompBioMed Set from CSC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-01-23'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''

@@ -11,7 +11,7 @@ class IngridDublincore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = '0cc56898-fb0b-44dc-8331-535b9c089647'  # InGRID Set from CSC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-01-23'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
