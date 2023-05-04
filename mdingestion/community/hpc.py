@@ -11,7 +11,7 @@ class Hpceuropa3Dublincore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = '8d4f0e20-8af2-4111-a816-f29a71b4439c '  # HPC-Europa3 Set from CSC
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-05-04'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
