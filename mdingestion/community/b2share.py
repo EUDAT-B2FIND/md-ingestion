@@ -18,3 +18,5 @@ class BaseB2Share(Repository):
     # InGRID = ingrid with DublinCore
     # FMI = fmi with EUDAT Core
     # OpenEBench = openebench with DublinCore
+    # HPC-Europe3 = hpc with DublinCore
+    # KiCoS = kicos with DublinCore
