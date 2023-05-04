@@ -25,3 +25,4 @@ class WDCCIso(Repository):
         doc.contributor = 'World Data Center for Climate (WDCC)'
         doc.discipline = self.discipline(doc, 'Earth System Research')
         doc.version = self.find('MD_DataIdentification.citation.edition')
+        doc.format = self.find('MD_Format')
