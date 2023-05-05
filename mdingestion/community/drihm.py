@@ -24,5 +24,4 @@ class DrihmDublincore(Repository):
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
         doc.discipline = self.discipline(doc, 'Meteorology')
-     #  doc.resource_type = 'Dataset'
         doc.publisher = 'EUDAT B2SHARE'
