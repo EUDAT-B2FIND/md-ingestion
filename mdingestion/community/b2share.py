@@ -20,3 +20,4 @@ class BaseB2Share(Repository):
     # OpenEBench = openebench with DublinCore
     # HPC-Europe3 = hpc with DublinCore
     # KiCoS = kicos with DublinCore
+    # DRIHM = drihm with DublinCore
