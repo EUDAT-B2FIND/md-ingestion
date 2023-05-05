@@ -11,6 +11,8 @@ class IvoaEudatcore(Repository):
     OAI_METADATA_PREFIX = 'oai_b2find'
     OAI_SET = None
     PRODUCTIVE = True
+    REPOSITORY_ID = ''
+    REPOSITORY_NAME = 'IVOA'
 
     def update(self, doc):
         doc.source = self.find_source('identifier', identifierType="URL")
