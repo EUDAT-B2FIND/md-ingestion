@@ -22,7 +22,7 @@ class WDCCIso(Repository):
     def update(self, doc):
         doc.doi = self.find_doi('MD_Identifier.CharacterString')
         doc.contact = self.find('CI_Contact.linkage')
-        doc.contributor = 'World Data Center for Climate (WDCC)'
         doc.discipline = self.discipline(doc, 'Earth System Research')
+        doc.publisher = 'World Data Center for Climate (WDCC)'
         doc.version = self.find('MD_DataIdentification.citation.edition')
         doc.format = self.find('MD_Format')
