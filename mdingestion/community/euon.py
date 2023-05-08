@@ -10,8 +10,8 @@ class EuonDublincore(Repository):
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
-    OAI_SET = ''  # EUON Set from CSC
-    PRODUCTIVE = False
+    OAI_SET = '893fad89-dc4a-4f1b-a9ba-4240aa18e12b'  # EUON Set from CSC
+    PRODUCTIVE = True
     DATE = '2023-05-08'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
