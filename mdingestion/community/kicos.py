@@ -2,17 +2,17 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class KicosDublincore(Repository):
+class KicosEudatcore(Repository):
     IDENTIFIER = 'kicos'
     TITLE = 'KiCoS'
     GROUP = 'b2share'
     URL = 'https://b2share.eudat.eu/api/oai2d'
-    SCHEMA = SchemaType.DublinCore
+    SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_dc'
-    OAI_SET = 'ffc8b583-ebe7-41f5-88e0-65ba59fbe672'  # KiCoS Set from CSC
+    OAI_METADATA_PREFIX = 'eudatcore'
+    OAI_SET = 'ffc8b583-ebe7-41f5-88e0-65ba59fbe672'
     PRODUCTIVE = True
-    DATE = '2023-05-04'
+    DATE = '2023-05-10'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
     CRON_DAILY = False
@@ -25,6 +25,6 @@ class KicosDublincore(Repository):
             doc.publisher = 'EUDAT B2SHARE'
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
+        if not doc.resource_type:
+            doc.resource_type = 'Dataset'
         doc.discipline = self.discipline(doc, 'Medicine')
-        doc.resource_type = 'Dataset'
-    #   doc.contact = '
