@@ -27,4 +27,4 @@ class RdaEudatcore(Repository):
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
         if not doc.resource_type:
-            doc.resource_type = 'Dataset' 
+            doc.resource_type = 'Dataset'
