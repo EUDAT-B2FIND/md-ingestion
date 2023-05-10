@@ -2,17 +2,17 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class StarsforallDublincore(Repository):
+class StarsforallEudatcore(Repository):
     IDENTIFIER = 'starsforall'
     TITLE = 'STARS4ALL'
     GROUP = 'b2share'
     URL = 'https://b2share.eudat.eu/api/oai2d'
-    SCHEMA = SchemaType.DublinCore
+    SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_dc'
-    OAI_SET = 'a204df9b-dfa4-445e-82e6-a88f8754b6b7'  # STARS4ALL Set from CSC
+    OAI_METADATA_PREFIX = 'eudatcore'
+    OAI_SET = 'a204df9b-dfa4-445e-82e6-a88f8754b6b7'
     PRODUCTIVE = True
-    DATE = '2023-05-03'
+    DATE = '2023-05-10'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
     CRON_DAILY = False
@@ -25,9 +25,12 @@ class StarsforallDublincore(Repository):
             doc.publisher = 'STARS4ALL'
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
-        doc.discipline = 'Astronomy'
-        doc.resource_type = 'Dataset'
-        doc.contact = 'contact@stars4all.eu'
+        if not doc.discipline:
+            doc.discipline = 'Astronomy'
+        if not doc.resource_type:
+            doc.resource_type = 'Dataset'
+        if not doc.contact:
+            doc.contact = 'contact@stars4all.eu'
 
     def keywords(self, doc):
         keywords = doc.keywords

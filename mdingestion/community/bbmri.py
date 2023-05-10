@@ -2,7 +2,7 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class BbmriDublincore(Repository):
+class BbmriEudatcore(Repository):
     IDENTIFIER = 'bbmri'
     TITLE = 'BBMRI'
     GROUP = 'b2share'
@@ -10,7 +10,7 @@ class BbmriDublincore(Repository):
     SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
-    OAI_SET = '99916f6f-9a2c-4feb-a342-6552ac7f1529'  # BBMRI Set from CSC
+    OAI_SET = '99916f6f-9a2c-4feb-a342-6552ac7f1529'
     PRODUCTIVE = True
     DATE = '2023-05-10'
     REPOSITORY_ID = ''
@@ -25,5 +25,7 @@ class BbmriDublincore(Repository):
             doc.publisher = 'EUDAT B2SHARE'
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
-        doc.discipline = 'Biological and Medical Research'
-    #   doc.resource_type = 'Dataset'
+        if not doc.resource_type:
+            doc.resource_type = 'Dataset' 
+        if not doc.discipline:
+            doc.discipline = 'Biological and Medical Research' 

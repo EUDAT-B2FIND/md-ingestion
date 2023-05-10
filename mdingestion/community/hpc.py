@@ -2,17 +2,16 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
-class Hpceuropa3Dublincore(Repository):
+class Hpceuropa3Eudatcore(Repository):
     IDENTIFIER = 'hpc'
     TITLE = 'HPC-Europa3'
     GROUP = 'b2share'
     URL = 'https://b2share.eudat.eu/api/oai2d'
-    SCHEMA = SchemaType.DublinCore
+    SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_dc'
-    OAI_SET = '8d4f0e20-8af2-4111-a816-f29a71b4439c '  # HPC-Europa3 Set from CSC
-    PRODUCTIVE = True
-    DATE = '2023-05-04'
+    OAI_METADATA_PREFIX = 'eudatcore'
+    OAI_SET = '8d4f0e20-8af2-4111-a816-f29a71b4439c'
+    DATE = '2023-05-10'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
     CRON_DAILY = False
@@ -25,6 +24,9 @@ class Hpceuropa3Dublincore(Repository):
             doc.publisher = 'EUDAT B2SHARE'
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
-        doc.discipline = self.discipline(doc, 'Computer Science')
-        doc.resource_type = 'Dataset'
-        doc.contact = 'staff@hpc-europa.org'
+        if not doc.discipline:
+            doc.discipline = 'Computer Science'
+        if not doc.resource_type:
+            doc.resource_type = 'Dataset'
+        if not doc.contact:
+            doc.contact = 'staff@hpc-europa.org'
