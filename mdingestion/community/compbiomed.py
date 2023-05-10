@@ -7,9 +7,10 @@ class CompbiomedDublincore(Repository):
     TITLE = 'CompBioMed'
     GROUP = 'b2share'
     URL = 'https://b2share.eudat.eu/api/oai2d'
-    SCHEMA = SchemaType.DublinCore
+#   SCHEMA = SchemaType.DublinCore
+    SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = '03b22301-60a8-4885-86fa-8c92cbf57bb0'  # CompBioMed Set from CSC
     PRODUCTIVE = True
     DATE = '2023-01-23'

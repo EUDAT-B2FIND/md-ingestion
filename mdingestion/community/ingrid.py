@@ -7,9 +7,10 @@ class IngridDublincore(Repository):
     TITLE = 'InGRID'
     GROUP = 'b2share'
     URL = 'https://b2share.eudat.eu/api/oai2d'
-    SCHEMA = SchemaType.DublinCore
+#   SCHEMA = SchemaType.DublinCore
+    SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
-    OAI_METADATA_PREFIX = 'oai_dc'
+    OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = '0cc56898-fb0b-44dc-8331-535b9c089647'  # InGRID Set from CSC
     PRODUCTIVE = True
     DATE = '2023-01-23'
