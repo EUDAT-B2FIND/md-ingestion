@@ -26,3 +26,10 @@ class WDCCIso(Repository):
         doc.publisher = 'World Data Center for Climate (WDCC)'
         doc.version = self.find('MD_DataIdentification.citation.edition')
         doc.format = self.find('MD_Format')
+        doc.rights = self._rights(doc)
+
+    def _rights(self, doc):
+        if not doc.rights:
+            return 'scientific use: For scientific use only'
+        else:
+            return doc.rights
