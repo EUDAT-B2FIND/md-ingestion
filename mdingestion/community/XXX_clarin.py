@@ -116,6 +116,7 @@ class ClarinFifteen(BaseClarin):
     IDENTIFIER = 'clarin_fifteen'
     URL = 'https://clarin.vdu.lt/oai/request'
 
+
 class ClarinSixteen(BaseClarin):
     IDENTIFIER = 'clarin_sixteen'
     URL = 'https://kielipankki.fi/md_api/que'
