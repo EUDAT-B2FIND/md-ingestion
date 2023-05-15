@@ -117,6 +117,11 @@ class ClarinFifteen(BaseClarin):
     URL = 'https://clarin.vdu.lt/oai/request'
 
 
+class ClarinSixteen(BaseClarin):
+    IDENTIFIER = 'clarin_sixteen'
+    URL = 'https://kielipankki.fi/md_api/que'
+
+
 class ClarinFromB2SatCSC(BaseClarin):
     IDENTIFIER = 'clarin_b2s'
     URL = 'https://b2share.eudat.eu/api/oai2d'
