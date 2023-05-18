@@ -106,10 +106,10 @@ class ClarinThirteen(BaseClarin):
     OAI_SET = 'hdl_11321_4'
 
 
-# class ClarinFourteen(BaseClarin): --> doesn work properly
-#  IDENTIFIER = 'clarin_fourteen'
-#  URL = 'https://metashare.ut.ee/oai_pmh/'
-#  PRODUCTIVE = False
+# class ClarinFourteen(BaseClarin): #--> doesn work properly
+#   IDENTIFIER = 'clarin_fourteen'
+#   URL = 'https://metashare.ut.ee/oai_pmh/'
+#   PRODUCTIVE = False
 
 
 class ClarinFifteen(BaseClarin):
