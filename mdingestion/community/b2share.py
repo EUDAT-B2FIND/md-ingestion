@@ -13,8 +13,13 @@ class BaseB2Share(Repository):
     # EUDAT = eudat_csc, eudat_fzj with EUDAT Core
     # LIFE+Respira = life-respira with EUDAT Core (but no spatial/temporal coverage)
     # RDA = rda with EUDAT Core
-    # BBMRI = bbmri with DublinCore
-    # CompBioMed = compbiomed with DublinCore
-    # InGRID = ingrid with DublinCore
     # FMI = fmi with EUDAT Core
-    # OpenEBench = openebench with DublinCore
+    # BBMRI = bbmri with EUDAT Core
+    # CompBioMed = compbiomed with EUDAT Core
+    # InGRID = ingrid with EUDAT Core
+    # OpenEBench = openebench with EUDAT Core
+    # Stars4ALL = starsforall with EUDAT Core
+    # HPC-Europe3 = hpc with EUDAT Core
+    # KiCoS = kicos with EUDAT Core
+    # DRIHM = drihm with EUDAT Core
+    # EUON 0 euon with EUDAT Core
