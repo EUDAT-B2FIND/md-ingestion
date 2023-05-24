@@ -409,6 +409,8 @@ class B2FDoc(GeoDoc):
 
     @fulltext.setter
     def fulltext(self, value):
+        if value and len(value) > 32765:
+            value = value[0:32765]
         self._fulltext = value
 
     @property

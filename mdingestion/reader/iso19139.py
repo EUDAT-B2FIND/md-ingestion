@@ -42,9 +42,12 @@ class ISO19139Reader(XMLReader):
             if self.find('EX_GeographicBoundingBox'):
                 # we get from iso: west, east, south, north
                 west = format_value(self.find('EX_GeographicBoundingBox.westBoundLongitude'), type='float', one=True)
-                west = convert_to_lon_180(west)
+                # west = convert_to_lon_180(west)
                 east = format_value(self.find('EX_GeographicBoundingBox.eastBoundLongitude'), type='float', one=True)
-                east = convert_to_lon_180(east)
+                # east = convert_to_lon_180(east)
+                if int(west) == 0 and int(east) == 360:
+                    west = -180.0
+                    east = 180.0
                 south = format_value(self.find('EX_GeographicBoundingBox.southBoundLatitude'), type='float', one=True)
                 north = format_value(self.find('EX_GeographicBoundingBox.northBoundLatitude'), type='float', one=True)
                 # bbox: minx=west, miny=south, maxx=east, maxy=north
