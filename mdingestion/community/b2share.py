@@ -22,4 +22,5 @@ class BaseB2Share(Repository):
     # HPC-Europe3 = hpc with EUDAT Core
     # KiCoS = kicos with EUDAT Core
     # DRIHM = drihm with EUDAT Core
-    # EUON 0 euon with EUDAT Core
+    # EUON = euon with EUDAT Core
+    # NRM = nrm with EUDAT Core
