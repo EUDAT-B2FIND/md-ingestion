@@ -11,6 +11,8 @@ class CessdaDDI25(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2022-10-12'
+    REPOSITORY_ID = 're3data:r3d100010202'
+    REPOSITORY_NAME = 'CESSDA'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Social Sciences')

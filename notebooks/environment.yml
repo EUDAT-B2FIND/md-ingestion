@@ -1,0 +1,9 @@
+# conda env create -f environment.yml
+name: b2f
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab
+  - xmlschema
+  - jsonschema
+ 

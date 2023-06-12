@@ -3,12 +3,15 @@ from ..service_types import SchemaType, ServiceType
 
 
 class BaseClarin(Repository):
-    GROUP = 'clarin'
+    # GROUP = 'clarin'
+    NAME = 'clarin'
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     # OAI_SET = None
     PRODUCTIVE = True
+    REPOSITORY_ID = 're3data:r3d100010386'
+    REPOSITORY_NAME = 'CLARIN'
 
     def update(self, doc):
         doc.discipline = 'Linguistics'
@@ -112,6 +115,11 @@ class ClarinThirteen(BaseClarin):
 class ClarinFifteen(BaseClarin):
     IDENTIFIER = 'clarin_fifteen'
     URL = 'https://clarin.vdu.lt/oai/request'
+
+
+class ClarinSixteen(BaseClarin):
+    IDENTIFIER = 'clarin_sixteen'
+    URL = 'https://kielipankki.fi/md_api/que'
 
 
 class ClarinFromB2SatCSC(BaseClarin):

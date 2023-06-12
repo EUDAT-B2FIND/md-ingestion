@@ -16,8 +16,12 @@ class INRAEDatacite(Repository):
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = 'NoGeneticResource'
+    OAI_SET = 'INRAE'
+    GROUP = 'rdg'
     PRODUCTIVE = True
+    DATE = '2023-03-31'
+    REPOSITORY_ID = 're3data:r3d100012673'
+    REPOSITORY_NAME = 'Data INRAE'
 
     def update(self, doc):
         handle = format_value(self.find('resource.identifier', identifierType="Handle"), one=True)

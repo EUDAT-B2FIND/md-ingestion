@@ -19,7 +19,7 @@ class BaseDara(Repository):
         pass
 
 
-class DaraGESIS(BaseDara):
+""" class DaraGESIS(BaseDara):
     IDENTIFIER = 'gesis'
     TITLE = 'GESIS Data Archive'
     OAI_SET = '1'  # GESIS Data Archive, 7783 records
@@ -28,6 +28,7 @@ class DaraGESIS(BaseDara):
         doc.discipline = self.discipline(doc, 'Social Sciences')
         doc.rights = self.find('rights', attrs={'xml:lang': 'en'})
         doc.places = format_value(self.find('coverage'))
+ """
 
 
 class DaraRKI(BaseDara):
@@ -70,6 +71,8 @@ class DaraZfKD(BaseDara):
     IDENTIFIER = 'zfkd'
     TITLE = 'ZfKD - German Center for Cancer Registry Data at the RKI'
     OAI_SET = '114'  # ZfKD German Center for Cancer Registry Data at the RKI, 10 records
+    REPOSITORY_ID = 're3data:r3d100010700'
+    REPOSITORY_NAME = 'ZfKD - German Center for Cancer Registry Data at the RKI'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Medicine')
@@ -79,6 +82,8 @@ class DaraZBW(BaseDara):
     IDENTIFIER = 'zbw'
     TITLE = 'ZBW Journal Data Archive'
     OAI_SET = '118'  # ZBW Journal Data Archive, 153 records
+    REPOSITORY_ID = 're3data:r3d100012190'
+    REPOSITORY_NAME = 'ZBW Journal Data Archive'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Economics')
@@ -88,6 +93,8 @@ class DaraSRDA(BaseDara):
     IDENTIFIER = 'srda'
     TITLE = 'SRDA - Survey Research Data Archive Taiwan'
     OAI_SET = '128'  # SRDA - Survey Research Data Archive Taiwan, 2680
+    REPOSITORY_ID = 're3data:r3d100013086'
+    REPOSITORY_NAME = 'SRDA'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Empirical Social Research')
@@ -106,6 +113,8 @@ class DaraIWH(BaseDara):
     IDENTIFIER = 'iwh'
     TITLE = 'IWH - The Halle Institute for Economic Research'
     OAI_SET = '130'  # IWH - The Halle Institute for Economic Research, 7 records
+    REPOSITORY_ID = 're3data:r3d100012253'
+    REPOSITORY_NAME = 'IWH - The Halle Institute for Economic Research'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Economics')
@@ -115,6 +124,8 @@ class DaraAHRI(BaseDara):
     IDENTIFIER = 'ahri'
     TITLE = 'AHRI - Africa Health Research Institute'
     OAI_SET = '132'  # AHRI Africa Health Research Institute, 82 records
+    REPOSITORY_ID = 're3data:r3d100010870'
+    REPOSITORY_NAME = 'AHRI - Africa Health Research Institute'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Public Health, Health Services Research, Social Medicine')
@@ -124,6 +135,8 @@ class DaraRDC(BaseDara):
     IDENTIFIER = 'rdc'
     TITLE = 'RDC - Federal Statistical Office, Germany'
     OAI_SET = '136'  # RDC of the Federal Statistical Office and the statistical offices of the LÃ¤nder, 1843 records
+    REPOSITORY_ID = 're3data:r3d100010426'
+    REPOSITORY_NAME = 'RDC - Federal Statistical Office'
 
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Empirical Social Research')

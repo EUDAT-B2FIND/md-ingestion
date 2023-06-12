@@ -29,7 +29,7 @@ class B2FSchema(colander.MappingSchema):
     )
     title = colander.SchemaNode(
         colander.Sequence(accept_scalar=True),
-        colander.SchemaNode(colander.String(), validator=colander.Length(min=3)),
+        colander.SchemaNode(colander.String(), validator=colander.Length(min=1)),
         name='title',
         title='Title',
         description='A name or title by which a resource is known.',

@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class AAAIso(Repository):
     IDENTIFIER = 'aaa_iso'
+    TITLE = 'we need this title'
     URL = 'http://c3grid1.dkrz.de:8080/oai/provider'
     SCHEMA = SchemaType.ISO19139
     SERVICE_TYPE = ServiceType.OAI
@@ -16,6 +17,8 @@ class AAAIso(Repository):
     DESCRIPTION = """
     ISO Template with ENES
     """
+    REPOSITORY_ID = ''
+    REPOSITORY_NAME = ''
 
     def update(self, doc):
         doc.publisher = 'B2Find'

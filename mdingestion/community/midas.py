@@ -11,6 +11,8 @@ class MIDASDublinCore(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     Date = '2021-07-05'
+    REPOSITORY_ID = 're3data:r3d100012447'
+    REPOSITORY_NAME = 'MIDAS - National Open Access Research Data Archive'
 
     def update(self, doc):
         if not doc.publisher:

@@ -14,7 +14,8 @@ class SchemaType(Enum):
 
 class ServiceType(Enum):
     OAI = 0
-    CSW = 1
+    OAI_IVOA = 1
+    CSW = 2
     HERBADROP = 100
     ArcGIS = 200
     BC = 300

@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class AAADatacite(Repository):
     IDENTIFIER = 'aaa_datacite'
+    TITLE = 'we need this title'
     URL = 'https://darus.uni-stuttgart.de/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
@@ -11,6 +12,8 @@ class AAADatacite(Repository):
     OAI_SET = None
     PRODUCTIVE = False
     DATE = '2023-01-10'
+    REPOSITORY_ID = 're3data:r3d100013171'
+    REPOSITORY_NAME = 'DaRUS'
     CRON_DAILY = False
     LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
     DESCRIPTION = """

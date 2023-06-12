@@ -12,6 +12,8 @@ class DataverseNODatacite(Repository):
     OAI_SET = 'dataverseno'
     PRODUCTIVE = True
     DATE = '2020-10-14'
+    REPOSITORY_ID = 're3data:r3d100012538'
+    REPOSITORY_NAME = 'DataverseNO'
 
     def update(self, doc):
         handle = format_value(self.find('resource.identifier', identifierType="Handle"), one=True)

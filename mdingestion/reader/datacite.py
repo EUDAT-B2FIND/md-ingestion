@@ -12,7 +12,7 @@ class DataCiteReader(XMLReader):
     SCHEMA = SchemaType.DataCite
 
     def parse(self, doc):
-        doc.title = self.find('title')
+        doc.title = self.find('resource.titles.title')
         doc.description = self.find('description')
         doc.doi = self.find_doi('resource.identifier')
         doc.pid = self.pid()
@@ -36,6 +36,19 @@ class DataCiteReader(XMLReader):
         doc.geometry = self.find_geometry()
         doc.places = self.find('geoLocationPlace')
 
+    def creator(self):
+        creators = []
+        for creator in self.parser.doc.find_all('creator'):
+            name = creator.creatorName.text
+            orcid_element = creator.find('nameIdentifier', nameIdentifierScheme="ORCID")
+            if orcid_element:
+                orcid = orcid_element.text
+                c = f"{name} (ORCID: {orcid})"
+            else:
+                c = name
+            creators.append(c)
+        return creators
+
     def pid(self):
         urls = self.find_pid('alternateIdentifier')
         urls.extend(self.find_pid('relatedIdentifier', relatedIdentifierType="Handle"))
@@ -55,17 +68,6 @@ class DataCiteReader(XMLReader):
             if URI:
                 rights.append(URI)
         return rights
-
-    def creator(self):
-        creators = []
-        for creator in self.parser.doc.find_all('creator'):
-            name = creator.creatorName.text
-            if creator.affiliation:
-                affiliation = format_value(creator.affiliation.text, one=True)
-                if affiliation:
-                    name = f"{name} ({affiliation})"
-            creators.append(name)
-        return creators
 
     def contact(self):
         contacts = []

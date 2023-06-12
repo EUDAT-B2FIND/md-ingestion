@@ -10,6 +10,8 @@ class BaseUhh(Repository):
     OAI_METADATA_PREFIX = 'oai_datacite'
     PRODUCTIVE = True
     DATE = '2021-03-15'
+    REPOSITORY_ID = 're3data:r3d100013053'
+    REPOSITORY_NAME = 'ZFDM repository'
 
     def update(self, doc):
         pass

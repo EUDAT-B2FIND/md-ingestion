@@ -11,6 +11,8 @@ class NIRDDublinCore(Repository):
     OAI_SET = None
     PRODUCTIVE = True
     DATE = '2021-07-01'
+    REPOSITORY_ID = 're3data:r3d100011678'
+    REPOSITORY_NAME = 'NIRD'
 
     def update(self, doc):
         doc.keywords = self.cleankeywords(doc)

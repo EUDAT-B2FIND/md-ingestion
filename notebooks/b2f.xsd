@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schema.eudat.eu/schema/kernel-1" targetNamespace="http://schema.eudat.eu/schema/kernel-1" elementFormDefault="qualified" xml:lang="en">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:include schemaLocation="https://gitlab.eudat.eu/eudat-metadata/eudat-core-schema/-/raw/master/include/eudat-coreTypes-v1.xsd"/>
+  <xs:include schemaLocation="https://gitlab.eudat.eu/eudat-metadata/eudat-core-schema/-/raw/master/include/eudat-identifierType-v1.xsd"/>
+  <xs:include schemaLocation="https://gitlab.eudat.eu/eudat-metadata/eudat-core-schema/-/raw/master/include/eudat-limitedIdentifierType-v1.xsd"/>
+  <xs:element name="resource">
+    <xs:annotation>
+      <xs:documentation>
+        Root element of a single record. This wrapper element is for XML implementation only and is not defined in the EUDAT Core metadata standard.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:all>
+        <!--REQUIRED FIELDS-->
+        <xs:element name="identifiers" minOccurs="1">
+           <xs:complexType>
+            <xs:sequence>
+              <xs:element name="identifier" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>A unique string that identifies the resource, ideally persistent.</xs:documentation>
+                  <xs:documentation>To supply alternate identifiers, repeat this property. Use attributes for defining the identifier type, e.g. "DOI", 'Handle', 'URL' or other types.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="nonEmptyContentStringType">
+                      <xs:attribute name="identifierType" type="limitedIdentifierType" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="titles" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>A name or title by which a resource is known.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="nonEmptyContentStringType">
+                      <xs:attribute ref="xml:lang"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="publishers" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="publisher" type="nonEmptyContentStringType" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>The name of the entity that holds, archives, publishes, prints, distributes, releases, issues, or produces the resource or is responsible for making the resource available.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="publicationYear" minOccurs="1">
+          <xs:annotation>
+            <xs:documentation>Year when the data was or will be made publicly available. If an embargo period has been in effect, use the date when the embargo period ends.</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="yearType"/>
+          </xs:simpleType>
+        </xs:element>
+        <!--OPTIONAL FIELDS-->
+        <xs:element name="community" type="nonEmptyContentStringType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>The scientific community, research infrastructure, project or data provider the resource belongs to or is being harvested from.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="resourceTypes" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="resourceType" type="nonEmptyContentStringType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>The type(s) of the resource, e.g. Dataset, AstroImage.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="creators" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="creator" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>The main researcher(s) involved in producing the data, or the author(s) of the publication in priority order. To supply multiple creators, repeat this property.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="creatorName" type="nonEmptyContentStringType" minOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>The full name of the creator. The personal name format should be: family, given.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="instruments" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="instrument" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>The technical instrument(s) used to produce the data in the resource.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="nonEmptyContentStringType">
+                      <xs:attribute name="instrumentIdentifier" type="nonEmptyContentStringType" use="optional" />
+                      <xs:attribute name="instrumentIdentifierType" type="openIdentifierType" use="optional" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="keywords" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="keyword" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Subject(s), keyword(s), classification code(s), or key phrase(s) describing the resource. Can be free text.</xs:documentation>
+                  <xs:documentation>To supply multiple keywords, repeat this property.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="nonEmptyContentStringType">
+                      <xs:attribute ref="xml:lang"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="disciplines" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="discipline" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>The research discipline(s) the resource can be categorized in.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="nonEmptyContentStringType">
+                      <xs:attribute name="disciplineIdentifier" use="optional"/>
+                      <xs:attribute name="disciplineScheme" use="optional"/>
+                      <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+                      <xs:attribute name="valueURI" type="xs:anyURI" use="optional"/>
+                      <xs:attribute ref="xml:lang"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contributors" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="contributor" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource. To supply multiple contributors, repeat this property.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="contributorName" type="nonEmptyContentStringType" minOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>The personal name format should be: family, given.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="languages" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="language" type="xs:language" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Language(s) of the resource.</xs:documentation>
+                  <xs:documentation>Allowed values should be taken from ISO 639-1 and 639-3 language codes or IETF BCP 47. Examples: 'en', 'de' or 'eng', 'deu' or 'de-AT', 'en-US'.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="relatedIdentifiers" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="relatedIdentifier" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Identifier(s) of related resources.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="nonEmptyContentStringType">
+                      <xs:attribute name="relatedIdentifierType" type="identifierType" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sizes" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="size" type="nonEmptyContentStringType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Size information about the resource, e.g. 123 MB, 3 pages, 102 files.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="formats" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="format" type="nonEmptyContentStringType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Technical format(s) of the resource.</xs:documentation>
+                  <xs:documentation>Use the file extension or MIME type where possible, e.g., PDF, XML, MPG or application/pdf, text/xml, video/mpeg.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="version" type="nonEmptyContentStringType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Version number of the resource. If the primary resource has changed the version number increases. </xs:documentation>
+            <xs:documentation>Suggested practice: track major_version.minor_version.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="rightsList" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rights" type="nonEmptyContentStringType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Any rights information for this resource.The property may be repeated to record complex rights characteristics.</xs:documentation>
+                  <xs:documentation>Use the complete title of a license and include version information if applicable.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="descriptions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="description" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>All additional information that does not fit in any of the other categories. May be used for technical information. It is a best practice to supply a description.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="nonEmptyContentStringType">
+                      <xs:attribute ref="xml:lang"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contacts" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="contact" type="nonEmptyContentStringType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>A reference to contact information. This could be a reference using a URL or an email address.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="spatialCoverages" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="spatialCoverage" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Spatial region or named place where the data was gathered or about which the data is focused.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded">
+                    <xs:element name="geoLocationPlace" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Description or name of a geographic location. Free text.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="geoLocationPoint" type="point" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>A point contains a single latitude-longitude pair.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="geoLocationBox" type="box" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>A box contains two white space separated latitude-longitude pairs, with each pair separated by whitespace. The first pair is the lower corner, the second is the upper corner.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="geoLocationPolygon" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>A drawn polygon area, defined by a set of points and lines connecting the points in a closed chain.</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="polygonPoint" type="point" minOccurs="3" maxOccurs="unbounded"/>
+                          <xs:element name="inPolygonPoint" type="point" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="temporalCoverages" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temporalCoverage" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Period of time the research data is related to. Could be a date format or plain text.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded">
+                    <xs:element name="startDate" type="date" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Begin of time period the resource is about or focused on. Format should be YYYY, YYYY-MM-DD, YYYY-MM-DDThh:mm:ssTZD or any other format or level of granularity described in W3CDTF. Years before 0000 must be prefixed with a  -sign, e.g.,-0054 to indicate 55 BC.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="endDate" type="date" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>End of time period the data is about, if applicable. Can be left open. Date format as in startDate.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="span" type="nonEmptyContentStringType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Name of a period that the resource is about, e.g. Paleocene.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fundingReferences" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fundingReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Information about financial support (funding) for the resource.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="funderName" minOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Name of the funding provider.</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="nonEmptyContentStringType"/>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="awardNumber" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>The code assigned by the funder to a sponsored award (grant).</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="nonEmptyContentStringType">
+                            <xs:attribute name="awardURI" type="xs:anyURI" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
