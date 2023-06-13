@@ -23,17 +23,27 @@ class Envidat(Repository):
         doc.title = self.find('title')
         doc.resource_type = self.find('resource_type')
         doc.version = self.find('version')
-        doc.keywords = self.find('tags.name')
         doc.places = self.find('spatial_info')
         doc.related_identifier = self.find('related_datasets')
         doc.language = self.find('language')
         doc.creator = self.creator(doc)
         doc.funding_reference = self.funding(doc)
         doc.rights = self.rights(doc)
+        doc.keywords = self.keywords(doc)
         self.publisher(doc)
         self.tempcov(doc)
         self.geometry(doc)
-
+    
+    def keywords(self, doc):
+        keys = []
+        try:
+            tags = self.reader.parser.doc.get('tags')
+            for tag in tags:
+                keys.append(tag['name'])
+        except Exception:
+            pass
+        return keys
+    
     def creator(self, doc):
         creas = []
         try:
@@ -66,8 +76,7 @@ class Envidat(Repository):
         right = self.find('license_title')
         if right:
             r.extend(right)
-        return r
-        
+        return r    
 
     def publisher(self, doc):
         try:
@@ -93,4 +102,3 @@ class Envidat(Repository):
             doc.geometry = geom
         except Exception:
             pass
-
