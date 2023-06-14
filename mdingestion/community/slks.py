@@ -11,7 +11,7 @@ class Slks(BaseNordicar):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
-    PRODUCTIVE = False
+#    PRODUCTIVE = False
     DATE = '2020-09-23'
 
     def update(self, doc):
