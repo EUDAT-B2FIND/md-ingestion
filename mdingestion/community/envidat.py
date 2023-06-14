@@ -9,10 +9,13 @@ class Envidat(Repository):
     URL = 'https://www.envidat.ch'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.CKAN
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-06-12'
     REPOSITORY_ID = 're3data:r3d100012587'
     REPOSITORY_NAME = 'EnviDat' 
+    LOGO = ""
+    LINK = 'https://www.envidat.ch'
+    DESCRIPTION = """EnviDat is the environmental data portal developed by the Swiss Federal Research Institute WSL. EnviDat has the capability to integrate, host and publish environmental data sets. It provides efficient, unified and managed access for WSL's rich reservoir of environmental monitoring and research data, according to the data policy of WSL. Through the sharing of the unique and high-value data sets worldwide, EnviDat fosters research and contributes to advancing enviromental science."""
 
     def update(self, doc):
         doc.discipline = ['Environmental Sciences']
