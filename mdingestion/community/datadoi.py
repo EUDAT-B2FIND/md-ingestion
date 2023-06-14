@@ -21,7 +21,7 @@ class DatadoiDublincore(Repository):
 
     def update(self, doc):
         if not doc.publisher:
-            doc.publisher = 'University of Tartu Library'
+            doc.publisher = 'University of Tartu'
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
         if not doc.resource_type:
