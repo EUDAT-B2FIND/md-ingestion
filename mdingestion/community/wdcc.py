@@ -27,6 +27,8 @@ class WDCCIso(Repository):
         doc.publisher = 'World Data Center for Climate (WDCC)'
         doc.version = self.find('MD_DataIdentification.citation.edition')
         doc.format = self.find('MD_Format')
+        doc.resource_type = self.find('MD_ScopeCode')
+        doc.size = self._size(doc)
         doc.rights = self._rights(doc)
         doc.funding_reference = self.find('MD_DataIdentification.supplementalInformation.CharacterString')
 
@@ -45,6 +47,10 @@ class WDCCIso(Repository):
         except Exception:
             pass
         return selected_creators
+
+    def _size(self,doc):
+        sizes = doc.size
+        return [f'{s} MB' for s in sizes]
 
 
     def _rights(self, doc):
