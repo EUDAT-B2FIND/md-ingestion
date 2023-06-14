@@ -13,9 +13,6 @@ class WDCCIso(Repository):
     CRON_DAILY = False
     DATE = '2023-01-10'
     LOGO = "http://b2find.dkrz.de/images/communities/wdcc_logo.png"
-    DESCRIPTION = """
-    ISO Template with ENES
-    """
     REPOSITORY_ID = 're3data:r3d100010299'
     REPOSITORY_NAME = 'World Data Center for Climate'
 
