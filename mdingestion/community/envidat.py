@@ -10,7 +10,7 @@ class Envidat(Repository):
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.CKAN
     PRODUCTIVE = True
-    DATE = '2023-06-12'
+    DATE = '2023-06-14'
     REPOSITORY_ID = 're3data:r3d100012587'
     REPOSITORY_NAME = 'EnviDat' 
     LOGO = ""
