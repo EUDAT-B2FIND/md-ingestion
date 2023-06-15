@@ -20,3 +20,4 @@ class ServiceType(Enum):
     ArcGIS = 200
     BC = 300
     Dataverse = 400
+    CKAN = 500
