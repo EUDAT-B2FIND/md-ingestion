@@ -9,10 +9,13 @@ class Envidat(Repository):
     URL = 'https://www.envidat.ch'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.CKAN
-    PRODUCTIVE = False
-    DATE = '2023-06-12'
+    PRODUCTIVE = True
+    DATE = '2023-06-14'
     REPOSITORY_ID = 're3data:r3d100012587'
-    REPOSITORY_NAME = 'EnviDat' 
+    REPOSITORY_NAME = 'EnviDat'
+    LOGO = ""
+    LINK = 'https://www.envidat.ch'
+    DESCRIPTION = """EnviDat is the environmental data portal developed by the Swiss Federal Research Institute WSL. EnviDat has the capability to integrate, host and publish environmental data sets. It provides efficient, unified and managed access for WSL's rich reservoir of environmental monitoring and research data, according to the data policy of WSL. Through the sharing of the unique and high-value data sets worldwide, EnviDat fosters research and contributes to advancing enviromental science."""
 
     def update(self, doc):
         doc.discipline = ['Environmental Sciences']
@@ -33,7 +36,7 @@ class Envidat(Repository):
         self.publisher(doc)
         self.tempcov(doc)
         self.geometry(doc)
-    
+
     def keywords(self, doc):
         keys = []
         try:
@@ -43,7 +46,7 @@ class Envidat(Repository):
         except Exception:
             pass
         return keys
-    
+
     def creator(self, doc):
         creas = []
         try:
@@ -53,7 +56,7 @@ class Envidat(Repository):
                 crea = f"{author['given_name']}, {author['name']}, {author['identifier']}"
                 creas.append(crea)
         except Exception:
-            pass       
+            pass
         return creas
 
     def funding(self, doc):
@@ -65,7 +68,7 @@ class Envidat(Repository):
                 ref = f"{funny['institution']}, {funny['grant_number']}"
                 refs.append(ref)
         except Exception:
-            pass       
+            pass
         return refs
 
     def rights(self,doc):
@@ -76,7 +79,7 @@ class Envidat(Repository):
         right = self.find('license_title')
         if right:
             r.extend(right)
-        return r    
+        return r
 
     def publisher(self, doc):
         try:
@@ -85,7 +88,7 @@ class Envidat(Repository):
             doc.publication_year = json.loads(pub)["publication_year"]
         except Exception:
             raise
-        
+
     def tempcov(self, doc):
         try:
             temp = self.find('date')[0]
