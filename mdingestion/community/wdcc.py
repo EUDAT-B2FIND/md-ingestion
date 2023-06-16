@@ -33,7 +33,7 @@ class WDCCIso(Repository):
     def _creator(self,doc):
         selected_creators = []
         try:
-            creators = self.reader.parser.doc.MD_DataIdentification.CI_Citation.citedResponsibleParty.find_all('CI_ResponsibleParty')
+            creators = self.reader.parser.doc.MD_DataIdentification.CI_Citation.find_all('citedResponsibleParty')
             for creator in creators:
                 try:
                     name = creator.individualName.CharacterString.text
