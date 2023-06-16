@@ -18,6 +18,7 @@ class WDCCIso(Repository):
 
     def update(self, doc):
         doc.doi = self.find_doi('MD_Identifier.CharacterString')
+        doc.related_identifier = None
         doc.creator = self._creator(doc)
         doc.contact = self.find('CI_Contact.linkage')
         doc.discipline = self.discipline(doc, 'Earth System Research')
