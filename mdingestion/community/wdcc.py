@@ -18,6 +18,7 @@ class WDCCIso(Repository):
 
     def update(self, doc):
         doc.doi = self.find_doi('MD_Identifier.CharacterString')
+        doc.related_identifier = None
         doc.creator = self._creator(doc)
         doc.contact = self.find('CI_Contact.linkage')
         doc.discipline = self.discipline(doc, 'Earth System Research')
@@ -32,7 +33,7 @@ class WDCCIso(Repository):
     def _creator(self,doc):
         selected_creators = []
         try:
-            creators = self.reader.parser.doc.MD_DataIdentification.CI_Citation.citedResponsibleParty.find_all('CI_ResponsibleParty')
+            creators = self.reader.parser.doc.MD_DataIdentification.CI_Citation.find_all('citedResponsibleParty')
             for creator in creators:
                 try:
                     name = creator.individualName.CharacterString.text
