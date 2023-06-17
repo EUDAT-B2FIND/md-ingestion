@@ -54,7 +54,7 @@ class ClarinTwo(BaseClarin):
         super().update(doc)
         doc.contact = 'dspace-clarin-it-ilc-help@ilc.cnr.it'
 
-"""
+
 class ClarinThree(BaseClarin):
     IDENTIFIER = 'clarin_three'
     URL = 'http://repository.clarin.dk/repository/oai/request'
@@ -67,7 +67,6 @@ class ClarinThree(BaseClarin):
     def update(self, doc):
         super().update(doc)
         doc.contact = 'info@clarin.dk'
-"""
 
 
 class ClarinFour(BaseClarin):
@@ -143,8 +142,7 @@ class ClarinEight(BaseClarin):
 class ClarinNine(BaseClarin):
     IDENTIFIER = 'clarin_nine'
     URL = 'https://portulanclarin.net/repository/oaipmh/'
-    # OAI_SET = 'hdl_11321_1'
-    SCHEMA = SchemaType.OLAC # needs to be written and integrated!
+    SCHEMA = SchemaType.OLAC # problems with identifier! 
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'olac'
     REPOSITORY_ID = 're3data:r3d100013046'
