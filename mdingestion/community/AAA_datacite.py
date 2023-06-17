@@ -30,4 +30,4 @@ class AAADatacite(Repository):
         if not doc.resource_type:
             doc.resource_type = 'Dataset'
         if not doc.discipline:
-            doc.discipline = 'whatever' 
+            doc.discipline = 'whatever'

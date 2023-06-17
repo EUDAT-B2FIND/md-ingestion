@@ -142,7 +142,7 @@ class ClarinEight(BaseClarin):
 class ClarinNine(BaseClarin):
     IDENTIFIER = 'clarin_nine'
     URL = 'https://portulanclarin.net/repository/oaipmh/'
-    SCHEMA = SchemaType.OLAC # problems with identifier! 
+    SCHEMA = SchemaType.OLAC          # problems with identifier!
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'olac'
     REPOSITORY_ID = 're3data:r3d100013046'
@@ -170,7 +170,7 @@ class ClarinTen(BaseClarin):
 class ClarinEleven(BaseClarin):
     IDENTIFIER = 'clarin_eleven'
     URL = 'https://metashare.ut.ee/oai_pmh/'
-    SCHEMA = SchemaType.OLAC # problems with identifier!
+    SCHEMA = SchemaType.OLAC          # problems with identifier!
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'olac'
     REPOSITORY_ID = 're3data:r3d100011941'
@@ -193,6 +193,7 @@ class ClarinTwelve(BaseClarin):
     def update(self, doc):
         super().update(doc)
         doc.contact = 'info@clarin.vdu.lt'
+
 
 """
 class ClarinThirteen(BaseClarin):
