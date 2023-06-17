@@ -22,6 +22,9 @@ def is_open_access(rights, closed_access_rights=None):
         _closed_access_rights.extend(closed_access_rights)
     for lic in _closed_access_rights:
         for _right in _rights:
+            if 'unrestricted' in _right.lower():
+                open_access = True
+                break
             if lic.lower() in _right.lower():
                 open_access = False
                 break

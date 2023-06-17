@@ -9,55 +9,57 @@ OUTDIR=/opt/eudat_data/md-ingestion
 FROMDAYS=8
 
 
-10 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c isis --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+10 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c hzb_pub --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-20 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c psi --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+20 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c hzb_inv --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-30 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c ess --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+30 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c isis --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-40 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c esrf --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+40 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c psi --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-50 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c ceric --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+50 0 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c ess --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-0 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c gfzdataservices --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+0 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c esrf --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-10 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c gipp --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+10 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c ceric --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-19 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c enmap --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+20 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c gfzdataservices --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-30 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c pik --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+30 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c gipp --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-40 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c intermagnet --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+40 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c enmap --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-50 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c fidgeo --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+50 1 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c pik --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-0 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c wsm --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+0 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c intermagnet --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-10 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c geofon --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+10 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c fidgeo --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-20 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c isg --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+20 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c wsm --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-30 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c isdc --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+30 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c geofon --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-40 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c tereno --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+40 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c isg --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-50 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c icgem --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+50 2 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c isdc --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-0 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c crc1211db --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+0 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c tereno --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-10 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c cessda --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+10 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c icgem --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-20 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c ul --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+20 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c crc1211db --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-30 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c pdc --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+30 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c cessda --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-50 3 * * * eudat_data b2f -o ${OUTDIR} --silent combine -c sextant --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+40 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c ul --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-0 4 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c inrae --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+50 3 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c pdc --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-10 4 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c slks --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+0 4 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c None --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-20 4 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c askeladden --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+10 4 * * * eudat_data b2f -o ${OUTDIR} --silent combine -c sextant --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+
+20 4 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c inrae --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
 30 4 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c openebench --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
@@ -67,11 +69,13 @@ FROMDAYS=8
 
 0 5 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c starsforall --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-10 5 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c hpc --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+10 5 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c icos --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
 20 5 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c pangaea --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
 30 5 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c dataversenl --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+
+40 5 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c enes --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
 50 5 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c rki --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
@@ -153,7 +157,7 @@ FROMDAYS=8
 
 20 12 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c bluecloud --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-30 12 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c envidat --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+30 12 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c old_envidat --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
 40 12 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c kicos --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
@@ -205,7 +209,9 @@ FROMDAYS=8
 
 40 16 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c clarin_fifteen --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-50 16 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c clarin_b2s --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+50 16 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c clarin_sixteen --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
-0 17 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c dataverseno --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+0 17 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c clarin_b2s --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+
+10 17 * * 0 eudat_data b2f -o ${OUTDIR} --silent combine -c dataverseno --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 
