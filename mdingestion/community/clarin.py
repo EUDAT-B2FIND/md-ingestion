@@ -169,7 +169,7 @@ class ClarinTen(BaseClarin):
         super().update(doc)
         doc.contact = 'clarin-pl@pwr.edu.pl'
 
-"""
+
 class ClarinEleven(BaseClarin):
     IDENTIFIER = 'clarin_eleven'
     URL = 'https://metashare.ut.ee/oai_pmh/'
@@ -182,7 +182,6 @@ class ClarinEleven(BaseClarin):
     def update(self, doc):
         super().update(doc)
         doc.contact = 'info@keeleressursid.ee'
-"""
 
 
 class ClarinTwelve(BaseClarin):

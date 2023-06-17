@@ -9,6 +9,7 @@ class SchemaType(Enum):
     FF = 4
     DDI25 = 5
     Eudatcore = 6
+    OLAC = 7
     JSON = 100
 
 
