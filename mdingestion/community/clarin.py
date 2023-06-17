@@ -139,11 +139,11 @@ class ClarinEight(BaseClarin):
         super().update(doc)
         doc.contact = 'clarin@uib.no'
 
-"""
+
 class ClarinNine(BaseClarin):
     IDENTIFIER = 'clarin_nine'
     URL = 'https://portulanclarin.net/repository/oaipmh/'
-    OAI_SET = 'hdl_11321_1'
+    # OAI_SET = 'hdl_11321_1'
     SCHEMA = SchemaType.OLAC # needs to be written and integrated!
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'olac'
@@ -153,7 +153,6 @@ class ClarinNine(BaseClarin):
     def update(self, doc):
         super().update(doc)
         doc.contact = 'https://portulanclarin.net/contact/'
-"""
 
 
 class ClarinTen(BaseClarin):
@@ -173,7 +172,7 @@ class ClarinTen(BaseClarin):
 class ClarinEleven(BaseClarin):
     IDENTIFIER = 'clarin_eleven'
     URL = 'https://metashare.ut.ee/oai_pmh/'
-    SCHEMA = SchemaType.OLAC # needs to be written and integrated!
+    SCHEMA = SchemaType.OLAC # problems with identifier!
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'olac'
     REPOSITORY_ID = 're3data:r3d100011941'
@@ -218,6 +217,8 @@ class ClarinFromB2SatCSC(BaseClarin):
     IDENTIFIER = 'clarin_b2s'
     URL = 'https://b2share.eudat.eu/api/oai2d'
     OAI_SET = '0afede87-2bf2-4d89-867e-d2ee57251c62'  # CLARIN Subset
+    SCHEMA = SchemaType.DublinCore
+    SERVICE_TYPE = ServiceType.OAI
 
     def update(self, doc):
         super().update(doc)
