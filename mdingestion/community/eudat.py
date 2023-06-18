@@ -4,13 +4,15 @@ from ..service_types import SchemaType, ServiceType
 
 class BaseEudat(Repository):
     IDENTIFIER = 'eudat'
-    NAME = 'eudat'
+    NAME = 'EUDAT'
     PRODUCTIVE = True
     DATE = '2023-01-23'
 
     def update(self, doc):
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
+        if not doc.publisher:
+            doc.publisher = 'EUDAT B2SHARE'
 
 
 class EudatCsc(BaseEudat):

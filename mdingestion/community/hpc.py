@@ -11,6 +11,7 @@ class Hpceuropa3Eudatcore(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = '8d4f0e20-8af2-4111-a816-f29a71b4439c'
+    PRODUCTIVE = True
     DATE = '2023-05-10'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''

@@ -12,14 +12,18 @@ class BaseB2Share(Repository):
     # TODO: adding all repos that use b2share here for overview:
     # EUDAT = eudat_csc, eudat_fzj with EUDAT Core
     # LIFE+Respira = life-respira with EUDAT Core (but no spatial/temporal coverage)
-    # RDA = rda with EUDAT Core
-    # FMI = fmi with EUDAT Core
-    # BBMRI = bbmri with EUDAT Core
-    # CompBioMed = compbiomed with EUDAT Core
-    # InGRID = ingrid with EUDAT Core
-    # OpenEBench = openebench with EUDAT Core
-    # Stars4ALL = starsforall with EUDAT Core
-    # HPC-Europe3 = hpc with EUDAT Core
-    # KiCoS = kicos with EUDAT Core
-    # DRIHM = drihm with EUDAT Core
-    # EUON 0 euon with EUDAT Core
+    # RDA = rda with EUDAT Core, from CSC
+    # FMI = fmi with EUDAT Core, from CSC
+    # BBMRI = bbmri with EUDAT Core, from CSC
+    # CompBioMed = compbiomed with EUDAT Core, from CSC
+    # InGRID = ingrid with EUDAT Core, from CSC
+    # OpenEBench = openebench with EUDAT Core, from CSC
+    # Stars4ALL = starsforall with EUDAT Core, from CSC
+    # HPC-Europe3 = hpc with EUDAT Core, from CSC
+    # KiCoS = kicos with EUDAT Core, from CSC
+    # DRIHM = drihm with EUDAT Core, from CSC and FZJ
+    # EUON = euon with EUDAT Core, fro CSC
+    # NRM = nrm with EUDAT Core, from CSC
+    # EURO-CORDEX eurocordex with EUDAT Core, from FZJ
+    # Helmholtz = helmholtz with EUDAT Core, from FZJ
+    # TOAR = toar with EUDAT Core, from FZJ

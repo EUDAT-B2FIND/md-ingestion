@@ -7,8 +7,8 @@ class WhateverinEudatcore(Repository):
     # if possible please avoid too long names and '-' or '+' because we never know how it looks like in the browser then, must be the same name as the mapfile, e.g. example.py
     TITLE = 'ExAmple'
     # the Name of the Repository on the Web GUI
-    GROUP = 'b2share'
-    # like this because that attaches a tag to each record of this example community
+    GROUP = 'example_b2share'
+    # must be 'b2share', attaches a tag to each record of this example community
     URL = 'https://b2share.eudat.eu/api/oai2d'
     # caution: different for b2share_fzj!
     SCHEMA = SchemaType.Eudatcore
