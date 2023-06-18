@@ -4,7 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class BaseEudat(Repository):
     IDENTIFIER = 'eudat'
-    NAME = 'eudat'
+    NAME = 'EUDAT'
     PRODUCTIVE = True
     DATE = '2023-01-23'
 
