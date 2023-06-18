@@ -3,9 +3,9 @@ from ..service_types import SchemaType, ServiceType
 
 
 class LiferespiraEudatcore(Repository):
-    IDENTIFIER = 'life-respira'
-    TITLE = 'LIFE+Respira'
-    GROUP = 'b2share'
+    # IDENTIFIER = 'life-respira'
+    # TITLE = 'LIFE+Respira'
+    # GROUP = 'b2share'
     URL = 'https://b2share.eudat.eu/api/oai2d'
     SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI

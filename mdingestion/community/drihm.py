@@ -3,8 +3,8 @@ from ..service_types import SchemaType, ServiceType
 
 
 class BaseDrihm(Repository):
-    IDENTIFIER = 'drihm'
-    TITLE = 'DRIHM'
+    #IDENTIFIER = 'drihm'
+    #TITLE = 'DRIHM'
     PRODUCTIVE = False     # old/finished project, no cronjob needed
     DATE = '2023-05-10'
     LINK = "http://www.drihm.eu/"
@@ -22,8 +22,8 @@ class BaseDrihm(Repository):
 
 
 class DrihmCsc(BaseDrihm):
-    IDENTIFIER = 'drihm_csc'
-    GROUP = 'b2share'
+    #IDENTIFIER = 'drihm_csc'
+    #GROUP = 'b2share'
     URL = 'https://b2share.eudat.eu/api/oai2d'
     SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
@@ -32,8 +32,8 @@ class DrihmCsc(BaseDrihm):
 
 
 class DrihmFzj(BaseDrihm):
-    IDENTIFIER = 'drihm_fzj'
-    GROUP = 'b2share'
+    #IDENTIFIER = 'drihm_fzj'
+    #GROUP = 'b2share'
     URL = 'https://b2share.fz-juelich.de/api/oai2d'
     SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
