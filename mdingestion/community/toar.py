@@ -17,8 +17,8 @@ class Toar(Repository):
     CRON_DAILY = False
     LOGO = "https://igacproject.org/sites/default/files/2019-11/TOAR_Logo.png"
     DESCRIPTION = """ The "Tropospheric Ozone Assessment Report" (TOAR) has been created by ~220 scientists from 36 countries to produce the first tropospheric ozone assessment report based on the peer-reviewed literature and new analyses, and to generate easily accessible, documented data on ozone exposure and dose metrics at hundreds of measurement sites around the world (urban and non-urban), freely accessible for research on the global-scale impact of ozone on climate, human health and crop/ecosystem productivity. """
-    REPOSITORY_ID = 'r3d100013118'
-    REPOSITORY_NAME = 'FZ-Juelich B2SHARE'
+    EPOSITORY_ID = 're3data:r3d100013118'
+    REPOSITORY_NAME = 'B2SHARE Server Forschungszentrum Jülich'
 
     def update(self, doc):
         if not doc.publisher:
