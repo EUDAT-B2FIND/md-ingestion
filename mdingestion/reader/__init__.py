@@ -6,6 +6,7 @@ from .json import JSONReader
 from .fgdc import FGDCReader
 from .ff import FFReader
 from .ddi25 import DDI25Reader
+from .olac import OLACReader
 
 from ..service_types import SchemaType
 from ..sniffer import sniffer
@@ -26,6 +27,8 @@ def build_reader(reader_type=None, service_type=None):
         reader = FFReader()
     elif reader_type == SchemaType.JSON:
         reader = JSONReader()
+    elif reader_type == SchemaType.OLAC:
+        reader = OLACReader()
     else:
         reader = DublinCoreReader()
     reader.SNIFFER = sniffer(service_type)
@@ -37,6 +40,7 @@ __all__ = [
     EudatcoreReader,
     DataCiteReader,
     DublinCoreReader,
+    OLACReader,
     ISO19139Reader,
     JSONReader,
     build_reader,

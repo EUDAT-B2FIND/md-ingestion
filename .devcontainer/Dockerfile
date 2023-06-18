@@ -12,7 +12,8 @@ RUN \
           wget \
           git \
           byobu \
-          openssh-client
+          openssh-client \
+          silversearcher-ag
 
 COPY .bashrc /root/.bashrc
 

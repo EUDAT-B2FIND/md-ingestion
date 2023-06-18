@@ -12,6 +12,8 @@ def sniffer(service_type=None):
         sniffer = OAISniffer
     elif service_type == ServiceType.Dataverse:
         sniffer = DataverseSniffer
+    elif service_type == ServiceType.CKAN:
+        sniffer = CKANSniffer
     else:
         sniffer = OAISniffer
     return sniffer
@@ -91,6 +93,19 @@ class DataverseSniffer(CatalogSniffer):
         if identifier:
             # https://edmond.mpdl.mpg.de/api/search?q=global_id:"doi:10.17617/3.EMRZGH"&type=dataset&per_page=1
             mdaccess = f"{doc.url}/api/datasets/export?exporter=dataverse_json&persistentId={identifier}"
+        else:
+            mdaccess = None
+        return mdaccess
+
+
+class CKANSniffer(CatalogSniffer):
+    def update(self, doc):
+        doc.metadata_access = self.metadata_access(doc)
+
+    def metadata_access(self, doc):
+        identifier = self.parser.find('id')[0]
+        if identifier:
+            mdaccess = f"{doc.url}/api/action/package_show?id={identifier}"
         else:
             mdaccess = None
         return mdaccess
