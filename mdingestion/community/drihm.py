@@ -7,8 +7,6 @@ class BaseDrihm(Repository):
     TITLE = 'DRIHM'
     PRODUCTIVE = False     # old/finished project, no cronjob needed
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
     LINK = "http://www.drihm.eu/"
     LOGO = "http://www.drihm.eu/images/modules/LogoDrihm.jpg"
     DESCRIPTION = """The Distributed Research Infrastructure for Hydro-Meteorology (DRIHM) project intends to develop a prototype e-Science environment to facilitate this collaboration and provide end-to-end HMR services (models, datasets and post-processing tools) at the European level, with the ability to expand to global scale. The objectives of DRIHM are to lead the definition of a common long-term strategy, to foster the development of new HMR models and observational archives for the study of severe hydrometeorological events, to promote the execution and analysis of high-end simulations, and to support thviaxxsettembre2e dissemination of predictive models as decision analysis tools."""
