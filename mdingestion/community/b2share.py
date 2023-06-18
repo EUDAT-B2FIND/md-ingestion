@@ -26,3 +26,4 @@ class BaseB2Share(Repository):
     # NRM = nrm with EUDAT Core, from CSC
     # EURO-CORDEX eurocordex with EUDAT Core, from FZJ
     # Helmholtz = helmholtz with EUDAT Core, from FZJ
+    # TOAR = toar with EUDAT Core, from FZJ
