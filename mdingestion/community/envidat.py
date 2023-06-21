@@ -6,7 +6,7 @@ from ..service_types import SchemaType, ServiceType
 
 class Envidat(Repository):
     IDENTIFIER = 'envidat'
-    URL = 'https://www.envidat.ch'
+    URL = 'https://www.envidat.ch/api'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.CKAN
     PRODUCTIVE = True

@@ -27,12 +27,12 @@ class CKANHarvester(Harvester):
         return f"ckan-{record['id']}"
 
     def get_records(self):
-        url = f'{self.url}/api/action/package_list'
+        url = f'{self.url}/action/package_list'
         response = requests.get(url)
         items = response.json()
         for id in items["result"]:
-            urlds = f'{self.url}/api/action/package_show?id={id}'
-            response = requests.get(urlds)
+            urlds = f'{self.url}/action/package_show'
+            response = requests.post(urlds, json={'id': id})
             yield response.json()['result']
 
     def _write_record(self, fp, record, pretty_print=True):
