@@ -19,7 +19,7 @@ class FIDmove(Repository):
 The Specialised Information Service for Mobility and Transport Research (FID move) has been established by the Saxon State and University Library Dresden (SLUB) and the German National Library of Science and Technology (TIB – Leibniz Information Centre for Science and Technology) as part of the DFG funding programme "Specialised Information Services". The aim of FID move is the development and establishment of services and online tools in close consultation with the transport and mobility research community to support this community throughout the entire research cycle.
 """
 
-    def update(self, doc):
+#    def update(self, doc):
         doc.discipline = ['Environmental Sciences']
         doc.contact = ['envidat@wsl.ch']
         doc.description = self.find('notes')
