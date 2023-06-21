@@ -105,7 +105,7 @@ class CKANSniffer(CatalogSniffer):
     def metadata_access(self, doc):
         identifier = self.parser.find('id')[0]
         if identifier:
-            mdaccess = f"{doc.url}/api/action/package_show?id={identifier}"
+            mdaccess = f"{doc.url}/action/package_show?id={identifier}"
         else:
             mdaccess = None
         return mdaccess

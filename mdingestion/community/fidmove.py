@@ -1,6 +1,9 @@
 import json
 import shapely
+
 from .base import Repository
+from ..format import format_value
+from ..util import convert_to_lon_180
 from ..service_types import SchemaType, ServiceType
 
 
@@ -41,7 +44,7 @@ The Specialised Information Service for Mobility and Transport Research (FID mov
         doc.size = self.size(doc)
         doc.version = self.find('version')
 #        doc.temporal_coverage = self.find('date')
-#        doc.geometry = self.find_geometry()
+        doc.geometry = self.geometry(doc)
         doc.places = self.find('geolocation_place')
 
     def _keywords(self, doc):
@@ -59,10 +62,38 @@ The Specialised Information Service for Mobility and Transport Research (FID mov
         try:
             resources = self.reader.parser.doc.get('resources')
             for resource in resources:
-                formats.append(resource['mimetype'])
+                formats.append(resource['format'])
         except Exception:
             pass
         return formats
+
+    def geometry(self, doc):
+        """
+        parse datacite geometry.
+        https://schema.datacite.org/meta/kernel-4.3/doc/DataCite-MetadataKernel_v4.3.pdf
+        https://guidelines.openaire.eu/en/latest/data/field_geolocation.html
+        """
+        if self.find('geolocationpoint_latitude'):
+            lon = format_value(self.find('geolocationpoint_longitude'), type='float', one=True)
+            lon = convert_to_lon_180(lon)
+            lat = format_value(self.find('geolocationpoint_latitude'), type='float', one=True)
+            # point: x=lon, y=lat
+            geometry = shapely.geometry.Point(lon, lat)
+        elif self.find('geolocation_box_west'):
+            west = format_value(self.find('geolocation_box_west'), type='float', one=True)
+            west = convert_to_lon_180(west)
+            east = format_value(self.find('geolocation_box_east'), type='float', one=True)
+            east = convert_to_lon_180(east)
+            south = format_value(self.find('geolocation_box_south'), type='float', one=True)
+            north = format_value(self.find('geolocation_box_north'), type='float', one=True)
+            # print(f"{west} {east} {south} {north}")
+            # bbox: minx=west, miny=south, maxx=east, maxy=north
+            # print(f"{west}w, {east}e, {south}s, {north}n")
+            geometry = shapely.geometry.box(west, south, east, north)
+        else:
+            geometry = None
+        return geometry
+
 
     def size(self, doc):
         sizes = []
