@@ -9,7 +9,7 @@ class WDCCIso(Repository):
     SCHEMA = SchemaType.ISO19139
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'iso19115'
-    PRODUCTIVE = Instrument
+    PRODUCTIVE = True
     CRON_DAILY = False
     DATE = '2022-01-10'
     LOGO = "http://b2find.dkrz.de/images/communities/wdcc_logo.png"
