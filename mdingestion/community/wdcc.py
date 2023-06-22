@@ -9,9 +9,9 @@ class WDCCIso(Repository):
     SCHEMA = SchemaType.ISO19139
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'iso19115'
-    PRODUCTIVE = False
+    PRODUCTIVE = Instrument
     CRON_DAILY = False
-    DATE = '2023-01-10'
+    DATE = '2022-01-10'
     LOGO = "http://b2find.dkrz.de/images/communities/wdcc_logo.png"
     REPOSITORY_ID = 're3data:r3d100010299'
     REPOSITORY_NAME = 'World Data Center for Climate'
