@@ -29,14 +29,14 @@ The Specialised Information Service for Mobility and Transport Research (FID mov
 #        doc.pid = self.pid()
         doc.source = self.find('url')
         doc.keywords = self._keywords(doc)
-        doc.discipline = self.discipline(doc)
+        doc.discipline = self.discipline(doc, 'Transport and mobility research')
         doc.related_identifier = self.find('related_identifier')
         doc.creator = self.find('author')
-        doc.publisher = self.find('maintainer')
+        doc.publisher = 'FID move'
 #        doc.contributor = self.find('contributorName')
         doc.funding_reference = self.find('funding_reference')
         doc.publication_year = self.find('doi_date_published')
-        doc.rights = self.rights(doc)
+        doc.rights = self.find('license_id')
         doc.contact = self.find('author_email')
         doc.language = self.find('language')
         doc.resource_type = self.find('type')
@@ -105,12 +105,12 @@ The Specialised Information Service for Mobility and Transport Research (FID mov
             pass
         return sizes
 
-    def rights(self,doc):
-        r = []
-        right = self.find('license_id')
-        if right:
-            r.extend(right)
-        right = self.find('license_title')
-        if right:
-            r.extend(right)
-        return r
+#    def rights(self,doc):
+#        r = []
+#        right = self.find( DAPHNE4NFDI )
+#        if right:
+#            r.extend(right)
+#        right = self.find('license_title')
+#        if right:
+#            r.extend(right)
+#        return r
