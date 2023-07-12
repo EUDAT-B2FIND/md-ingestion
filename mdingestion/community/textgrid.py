@@ -9,8 +9,8 @@ class TextGrid(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_dc'
     OAI_SET = None
-    PRODUCTIVE = False
-    DATE = '2023-02-09'
+    PRODUCTIVE = True
+    DATE = '2023-06-23'
     CRON_DAILY = False
     LOGO = "http://b2find.dkrz.de/images/communities/textgrid_logo.png"
     DESCRIPTION = """

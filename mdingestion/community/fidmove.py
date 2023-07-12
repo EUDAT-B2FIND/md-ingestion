@@ -12,8 +12,8 @@ class FIDmove(Repository):
     URL = 'https://data.fid-move.de/api/3'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.CKAN
-    PRODUCTIVE = False
-    DATE = ''
+    PRODUCTIVE = True
+    DATE = '2023-06-25'
     REPOSITORY_ID = 're3data:r3d100014142'
     REPOSITORY_NAME = 'FID move'
     LOGO = ""
