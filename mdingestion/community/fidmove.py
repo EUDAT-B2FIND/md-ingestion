@@ -94,7 +94,6 @@ The Specialised Information Service for Mobility and Transport Research (FID mov
             geometry = None
         return geometry
 
-
     def size(self, doc):
         sizes = []
         try:
