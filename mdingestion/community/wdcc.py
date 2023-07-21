@@ -50,7 +50,6 @@ class WDCCIso(Repository):
         sizes = doc.size
         return [f'{s} MB' for s in sizes]
 
-
     def _rights(self, doc):
         if not doc.rights:
             return 'scientific use: For scientific use only'
