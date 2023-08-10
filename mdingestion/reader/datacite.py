@@ -5,6 +5,7 @@ from ..sniffer import OAISniffer
 from ..format import format_value
 from ..util import convert_to_lon_180
 from ..service_types import SchemaType
+from ..core.doc import FundingRef
 
 
 class DataCiteReader(XMLReader):
@@ -91,15 +92,26 @@ class DataCiteReader(XMLReader):
     def funding_reference(self):
         funding_refs = []
         for funding_reference in self.parser.doc.find_all('fundingReference'):
-            funder_name = format_value(funding_reference.funderName.text, one=True)
+            funding_ref = FundingRef()
+            funding_ref.funder_name = format_value(funding_reference.funderName.text, one=True)
+            if funding_reference.funderIdentifier:
+                funding_ref.funder_identifier = format_value(funding_reference.funderIdentifier.text, one=True)
+                attribute = funding_reference.funderIdentifier.get('funderIdentifierType')
+                if attribute:
+                    funding_ref.funder_identifier_type = attribute
             if funding_reference.awardNumber:
-                award_number = format_value(funding_reference.awardNumber.text, type='string_words', one=True)
-                if award_number:
-                    funder_name = f"{funder_name}, {award_number}"
-            funding_refs.append(funder_name)
+                funding_ref.award_number = format_value(funding_reference.awardNumber.text, one=True)
+                attribute = funding_reference.awardNumber.get('awardURI')
+                if attribute:
+                    funding_ref.award_uri = attribute
+            if funding_reference.awardTitle:
+                funding_ref.award_title = format_value(funding_reference.awardTitle.text, one=True)
+            funding_refs.append(funding_ref.as_string())
         if not funding_refs:
             funding_refs = self.find('contributor', contributorType="Funder")
         return funding_refs
+
+        pass
 
     def geometry(self):
         """
