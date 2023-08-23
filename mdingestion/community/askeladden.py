@@ -11,7 +11,7 @@ class Askeladden(BaseNordicar):
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.ArcGIS
     FILTER = "kulturminneKategori='Arkeologisk minne'"
-#    PRODUCTIVE = False
+    PRODUCTIVE = False
     DATE = '2021-02-12'
 
     def update(self, doc):
