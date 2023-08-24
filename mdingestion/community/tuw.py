@@ -3,7 +3,7 @@ from ..service_types import SchemaType, ServiceType
 
 
 class TuwDatacite(Repository):
-    NAME = 'TU Wien'
+    TITLE = 'TU Wien'
     IDENTIFIER = 'tuw'
     URL = 'https://researchdata.tuwien.ac.at/oai2d'
     SCHEMA = SchemaType.DataCite
