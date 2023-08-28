@@ -21,7 +21,7 @@ class ISO19139Reader(XMLReader):
         doc.keywords = self.find('MD_Keywords.keyword')
         doc.creator = self.find('CI_ResponsibleParty.individualName.CharacterString')
         # doc.instrument = self.find('')
-        doc.publisher = self._publisher
+        doc.publisher = self._publisher(doc)
         doc.contributor = self.find('MD_DataIdentification.credit')
         doc.publication_year = self.find('MD_DataIdentification.CI_Citation.Date')
         doc.rights = self.find('MD_LegalConstraints')
