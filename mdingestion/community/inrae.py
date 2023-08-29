@@ -17,8 +17,8 @@ class INRAEDatacite(Repository):
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
-    OAI_SET = 'INRAE'
-    GROUP = 'rdg'
+    OAI_SET = 'INRAE_PNDB'
+    GROUP = 'recherchedatagouv'
     PRODUCTIVE = True
     DATE = '2023-03-31'
     REPOSITORY_ID = 're3data:r3d100012673'
