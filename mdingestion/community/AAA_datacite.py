@@ -16,15 +16,18 @@ class AAADatacite(Repository):
     REPOSITORY_NAME = 'DaRUS'
     CRON_DAILY = False
     LOGO = "http://b2find.dkrz.de/images/communities/darus_logo.png"
+    LINK = 'https://www.izus.uni-stuttgart.de/fokus/darus/'
     DESCRIPTION = """
     Datacite Template with Darus
-
-    https://www.izus.uni-stuttgart.de/fokus/darus/
-
-    DaRUS - the Data Repository of the University of Stuttgart
-
-    DaRUS is the place to archive, share and publish the research data, scripts and codes of the members and partners of the University of Stuttgart.
+    DaRUS - the Data Repository of the University of Stuttgart. DaRUS is the place to archive, share and publish the research data, scripts and codes of the members and partners of the University of Stuttgart.
     """
 
     def update(self, doc):
-        doc.publisher = 'B2Find'
+        if not doc.publisher:
+            doc.publisher = 'EUDAT B2SHARE'
+        if not doc.publication_year:
+            doc.publication_year = self.find('header.datestamp')
+        if not doc.resource_type:
+            doc.resource_type = 'Dataset'
+        if not doc.discipline:
+            doc.discipline = 'whatever'

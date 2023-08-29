@@ -9,12 +9,11 @@ class DariahDE(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
-    PRODUCTIVE = False
-#    DATE = '2023-01-10'
+    PRODUCTIVE = True
+    DATE = '2023-06-10'
     CRON_DAILY = False
 #    LOGO = ""
     DESCRIPTION = """
-
     https://repository.de.dariah.eu/search/
 
     DARIAH-DE

@@ -8,6 +8,21 @@ import json
 from ..format import format_value
 from ..rights import is_open_access
 
+class FundingRef(object):
+    def __init__(self):
+        ''' <funderName>Fifth Framework Programme</funderName>
+<funderIdentifier funderIdentifierType="Crossref Funder ID" >https://doi.org/10.13039/100011104</funderIdentifier>
+<awardNumber awardURI="https://cordis.europa.eu/project/id/EVK2-CT-2000-00090" >EVK2-CT-2000-00090</awardNumber>
+<awardTitle>Climatological Database for the Worlds Oceans: 1750-1854</awardTitle> '''
+        self.funder_name = ''
+        self.funder_identifier = ''
+        self.funder_identifier_type = ''
+        self.award_number = ''
+        self.award_uri = ''
+        self.award_title = ''
+
+    def as_string(self):
+        return f"{self.funder_name}|{self.funder_identifier}|{self.funder_identifier_type}|{self.award_number}|{self.award_uri}|{self.award_title}"
 
 class BaseDoc(object):
     def __init__(self):
@@ -409,6 +424,8 @@ class B2FDoc(GeoDoc):
 
     @fulltext.setter
     def fulltext(self, value):
+        if value and len(value) > 32000:
+            value = value[0:32000]
         self._fulltext = value
 
     @property
