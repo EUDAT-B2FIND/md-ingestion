@@ -22,7 +22,6 @@ class Sextant(Repository):
         doc.discipline = 'Oceanography/Marine Science'
         doc.keywords = self.find('MD_Keywords.keyword.PT_FreeText.textGroup')
         doc.creator = self.find('pointOfContact.CI_ResponsibleParty.individualName.CharacterString')
-        # print(self.find('pointOfContact.CI_ResponsibleParty.individualName.CharacterString'))
         self.source(doc)
         self.doi(doc)
         self.publisher(doc)

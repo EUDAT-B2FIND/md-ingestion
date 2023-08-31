@@ -1,0 +1,387 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:wdcc.dkrz.de:iso_3758143</identifier>
+    <datestamp>2023-08-27T23:10:01Z</datestamp>
+    <setSpec>iso-wdcc-doi</setSpec>
+  </header>
+  <metadata>
+    <gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd https://www.isotc211.org/2005/gmd/gmd.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString>wdc-climate.de:3758143</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gco:CharacterString>eng; USA</gco:CharacterString>
+      </gmd:language>
+      <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="collection">
+            collection
+        </gmd:MD_ScopeCode>
+      </gmd:hierarchyLevel>
+      <gmd:hierarchyLevelName>
+        <gco:CharacterString>HOPE_LACROS_CLN</gco:CharacterString>
+      </gmd:hierarchyLevelName>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString>Dr. Andrea Lammert</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString>Deutsches Klimarechenzentrum</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:onlineResource>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://www.dkrz.de/</gmd:URL>
+                  </gmd:linkage>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">
+                    pointOfContact
+                </gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString>Patric Seifert</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString>Leibniz Institute for Tropospheric Research</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:onlineResource>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://www.tropos.de/</gmd:URL>
+                  </gmd:linkage>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">
+                    pointOfContact
+                </gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:DateTime>2018-10-01T13:59:51</gco:DateTime>
+      </gmd:dateStamp>
+      <gmd:metadataStandardName>
+        <gco:CharacterString>ISO 19115</gco:CharacterString>
+      </gmd:metadataStandardName>
+      <gmd:metadataStandardVersion>
+        <gco:CharacterString>ISO 19115-2:2009</gco:CharacterString>
+      </gmd:metadataStandardVersion>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>HD(CP)2 short term observation data of Cloudnet products, HOPE campaign by LACROS</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2020-01-30</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">
+                                    publication
+                                </gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:edition>
+                <gco:CharacterString>1</gco:CharacterString>
+              </gmd:edition>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>HOPE_LACROS_CLN</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>doi:10.26050/WDCC/HOPE_LACROS_CLN</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:individualName>
+                    <gco:CharacterString>Patric Seifert</gco:CharacterString>
+                  </gmd:individualName>
+                  <gmd:organisationName>
+                    <gco:CharacterString>Leibniz Institute for Tropospheric Research</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://www.tropos.de/</gmd:URL>
+                          </gmd:linkage>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                      <gmd:contactInstructions>
+                        <gco:CharacterString>Email: seifert@tropos.de</gco:CharacterString>
+                      </gmd:contactInstructions>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="principalInvestigator">
+                                    principalInvestigator
+                                </gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:individualName>
+                    <gco:CharacterString>Patric Seifert</gco:CharacterString>
+                  </gmd:individualName>
+                  <gmd:organisationName>
+                    <gco:CharacterString>Leibniz Institute for Tropospheric Research</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://www.tropos.de/</gmd:URL>
+                          </gmd:linkage>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                      <gmd:contactInstructions>
+                        <gco:CharacterString>Email: seifert@tropos.de</gco:CharacterString>
+                      </gmd:contactInstructions>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author">
+                                    author
+                                </gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:organisationName>
+                    <gco:CharacterString>WDCC</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">
+                                    publisher
+                                </gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString>
+                    Daily files of Cloudnet products. The instruments were parts of LACROS that was located on the area of a sewage treatment plant in Krauthausen, south of Juelich during the HOPE campaign.
+                </gco:CharacterString>
+          </gmd:abstract>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>Patric Seifert</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>Leibniz Institute for Tropospheric Research</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://www.tropos.de/</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">
+                            pointOfContact
+                        </gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:resourceFormat>
+            <gmd:MD_Format>
+              <gmd:name>
+                <gco:CharacterString>NetCDF</gco:CharacterString>
+              </gmd:name>
+              <gmd:version gco:nilReason="unknown"/>
+            </gmd:MD_Format>
+          </gmd:resourceFormat>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>Active Remote Sensing</gco:CharacterString>
+              </gmd:keyword>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:resourceConstraints>
+            <gmd:MD_LegalConstraints>
+              <gmd:useLimitation>
+                <gco:CharacterString>CC BY 4.0: Creative Commons Attribution 4.0 International (CC BY 4.0) https://creativecommons.org/licenses/by/4.0/</gco:CharacterString>
+              </gmd:useLimitation>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:language>
+            <gco:CharacterString>eng; USA</gco:CharacterString>
+          </gmd:language>
+          <gmd:extent>
+            <gmd:EX_Extent id="spatial_coverage_50.886.415_50.886.415" uuid="spatial_coverage_50.886.415_50.886.415">
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal>6.4145</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude>
+                    <gco:Decimal>6.4145</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude>
+                    <gco:Decimal>50.8797</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude>
+                    <gco:Decimal>50.8797</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+          <gmd:extent>
+            <gmd:EX_Extent id="temporal_extent_20130401_20130531" uuid="temporal_extent_20130401_20130531">
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="time_period_temporal_extent_20130401_20130531">
+                      <gml:description>calendrical</gml:description>
+                      <gml:beginPosition>2013-04-01</gml:beginPosition>
+                      <gml:endPosition>2013-05-31</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:contentInfo>
+        <gmd:MD_CoverageDescription>
+          <gmd:attributeDescription>
+            <gco:RecordType>mass_concentration_of_frozen_water_in_air</gco:RecordType>
+          </gmd:attributeDescription>
+          <gmd:contentType gco:nilReason="unknown"/>
+          <gmd:dimension uuidref="temporal_extent_20130401_20130531">
+            <gmd:MD_RangeDimension>
+              <gmd:descriptor>
+                <gco:CharacterString>not filled; unit: kg m-3</gco:CharacterString>
+              </gmd:descriptor>
+            </gmd:MD_RangeDimension>
+          </gmd:dimension>
+        </gmd:MD_CoverageDescription>
+      </gmd:contentInfo>
+      <gmd:contentInfo>
+        <gmd:MD_CoverageDescription>
+          <gmd:attributeDescription>
+            <gco:RecordType>mass_concentration_of_cloud_liquid_water_in_air</gco:RecordType>
+          </gmd:attributeDescription>
+          <gmd:contentType gco:nilReason="unknown"/>
+          <gmd:dimension uuidref="temporal_extent_20130401_20130531">
+            <gmd:MD_RangeDimension>
+              <gmd:descriptor>
+                <gco:CharacterString>"Mass concentration" means mass per unit volume and is used in the construction "mass_concentration_of_X_in_Y", where X is a material constituent of Y. A chemical species or biological group denoted by X may be described by a single term such as "nitrogen" or a phrase such as "nox_expressed_as_nitrogen". "Cloud liquid water" refers to the liquid phase of cloud water. A diameter of 0.2 mm has been suggested as an upper limit to the size of drops that shall be regarded as cloud drops; larger drops fall rapidly enough so that only very strong updrafts can sustain them. Any such division is somewhat arbitrary, and active cumulus clouds sometimes contain cloud drops much larger than this. Reference: AMS Glossary http://glossary.ametsoc.org/wiki/Cloud_drop. [CF-Standard Name]; unit: kg m-3</gco:CharacterString>
+              </gmd:descriptor>
+            </gmd:MD_RangeDimension>
+          </gmd:dimension>
+        </gmd:MD_CoverageDescription>
+      </gmd:contentInfo>
+      <gmd:contentInfo>
+        <gmd:MD_CoverageDescription>
+          <gmd:attributeDescription>
+            <gco:RecordType>target_classification</gco:RecordType>
+          </gmd:attributeDescription>
+          <gmd:contentType gco:nilReason="unknown"/>
+          <gmd:dimension uuidref="temporal_extent_20130401_20130531">
+            <gmd:MD_RangeDimension>
+              <gmd:descriptor>
+                <gco:CharacterString>not filled; unit: 1</gco:CharacterString>
+              </gmd:descriptor>
+            </gmd:MD_RangeDimension>
+          </gmd:dimension>
+        </gmd:MD_CoverageDescription>
+      </gmd:contentInfo>
+      <gmd:distributionInfo>
+        <gmd:MD_Distribution>
+          <gmd:distributionFormat>
+            <gmd:MD_Format>
+              <gmd:name>
+                <gco:CharacterString>NetCDF</gco:CharacterString>
+              </gmd:name>
+              <gmd:version gco:nilReason="unknown"/>
+            </gmd:MD_Format>
+          </gmd:distributionFormat>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:transferSize>
+                <gco:Real>3208</gco:Real>
+              </gmd:transferSize>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://www.wdc-climate.de/ui/entry?acronym=HOPE_LACROS_CLN</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">
+                                    information
+                                </gmd:CI_OnLineFunctionCode>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+        </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+      <gmd:dataQualityInfo>
+        <gmd:DQ_DataQuality>
+          <gmd:scope>
+            <gmd:DQ_Scope>
+              <gmd:level>
+                <gmd:MD_ScopeCode codeList="https://data.noaa.gov/resources/iso19139/schema/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="collection">
+                            collection
+                        </gmd:MD_ScopeCode>
+              </gmd:level>
+            </gmd:DQ_Scope>
+          </gmd:scope>
+          <gmd:report>
+            <gmd:DQ_NonQuantitativeAttributeAccuracy>
+              <gmd:nameOfMeasure>
+                <gco:CharacterString>n/a</gco:CharacterString>
+              </gmd:nameOfMeasure>
+              <gmd:measureDescription>
+                <gco:CharacterString>None</gco:CharacterString>
+              </gmd:measureDescription>
+              <gmd:result gco:nilReason="missing"/>
+            </gmd:DQ_NonQuantitativeAttributeAccuracy>
+          </gmd:report>
+        </gmd:DQ_DataQuality>
+      </gmd:dataQualityInfo>
+    </gmd:MD_Metadata>
+  </metadata>
+</record>

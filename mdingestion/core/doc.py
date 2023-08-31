@@ -8,6 +8,7 @@ import json
 from ..format import format_value
 from ..rights import is_open_access
 
+
 class FundingRef(object):
     def __init__(self):
         ''' <funderName>Fifth Framework Programme</funderName>
@@ -23,6 +24,7 @@ class FundingRef(object):
 
     def as_string(self):
         return f"{self.funder_name}|{self.funder_identifier}|{self.funder_identifier_type}|{self.award_number}|{self.award_uri}|{self.award_title}"
+
 
 class BaseDoc(object):
     def __init__(self):

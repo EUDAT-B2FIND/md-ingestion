@@ -19,7 +19,6 @@ class WDCCIso(Repository):
     def update(self, doc):
         doc.doi = self.find_doi('MD_Identifier.CharacterString')
         doc.related_identifier = None
-        doc.creator = self._creator(doc)
         doc.contact = self.find('CI_Contact.linkage')
         doc.discipline = self.discipline(doc, 'Earth System Research')
         doc.publisher = 'World Data Center for Climate (WDCC)'
@@ -29,22 +28,6 @@ class WDCCIso(Repository):
         doc.size = self._size(doc)
         doc.rights = self._rights(doc)
         doc.funding_reference = self.find('MD_DataIdentification.supplementalInformation.CharacterString')
-
-    def _creator(self,doc):
-        selected_creators = []
-        try:
-            creators = self.reader.parser.doc.MD_DataIdentification.CI_Citation.find_all('citedResponsibleParty')
-            for creator in creators:
-                try:
-                    name = creator.individualName.CharacterString.text
-                    codetype = creator.role.CI_RoleCode['codeListValue']
-                    if codetype in ['owner', 'originator', 'pointOfContact', 'principalInvestigator', 'author']:
-                        selected_creators.append(name)
-                except Exception:
-                    pass
-        except Exception:
-            pass
-        return selected_creators
 
     def _size(self,doc):
         sizes = doc.size

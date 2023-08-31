@@ -13,10 +13,10 @@ class Deims(Repository):
     REPOSITORY_ID = 're3data:r3d100012910'
     REPOSITORY_NAME = 'DEIMS'
 
-    # TODO: identifier check with iso
     def update(self, doc):
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
+        doc.creator = self.find('CI_ResponsibleParty.individualName')
         doc.doi = self.find_doi('linkage')
         doc.pid = self.find_pid('linkage')
         doc.source = self.find('MD_Identifier')
