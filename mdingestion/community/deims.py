@@ -13,7 +13,6 @@ class Deims(Repository):
     REPOSITORY_ID = 're3data:r3d100012910'
     REPOSITORY_NAME = 'DEIMS'
 
-
     def update(self, doc):
         if not doc.publication_year:
             doc.publication_year = self.find('header.datestamp')
