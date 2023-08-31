@@ -39,7 +39,7 @@ class ISO19139Reader(XMLReader):
     def _creator(self, doc):
         selected_creators = []
         try:
-            creators = self.reader.parser.doc.MD_DataIdentification.CI_Citation.find_all('citedResponsibleParty')
+            creators = self.parser.doc.MD_DataIdentification.CI_Citation.find_all('citedResponsibleParty')
             for creator in creators:
                 try:
                     name = creator.individualName.CharacterString.text
@@ -55,7 +55,7 @@ class ISO19139Reader(XMLReader):
     def _publisher(self, doc):
         selected_publishers = []
         try:
-            publishers = self.reader.parser.doc.MD_DataIdentification.CI_Citation.citedResponsibleParty.find_all('CI_ResponsibleParty')
+            publishers = self.parser.doc.MD_DataIdentification.CI_Citation.find_all('citedResponsibleParty')
             for publisher in publishers:
                 try:
                     name = publisher.organisationName.CharacterString.text
