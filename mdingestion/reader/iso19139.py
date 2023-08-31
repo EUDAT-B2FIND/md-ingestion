@@ -19,7 +19,7 @@ class ISO19139Reader(XMLReader):
         doc.title = self.find('MD_DataIdentification.CI_Citation.title.CharacterString')
         doc.description = self.find('abstract')
         doc.keywords = self.find('MD_Keywords.keyword')
-        doc.creator = self.find('CI_ResponsibleParty.individualName.CharacterString')
+        doc.creator = self._creator(doc)
         # doc.instrument = self.find('')
         doc.publisher = self._publisher(doc)
         doc.contributor = self.find('MD_DataIdentification.credit')
@@ -35,6 +35,22 @@ class ISO19139Reader(XMLReader):
         doc.temporal_coverage_begin_date = self.find('EX_TemporalExtent.beginPosition')
         doc.temporal_coverage_end_date = self.find('EX_TemporalExtent.endPosition')
         doc.geometry = self.find_geometry()
+
+    def _creator(self, doc):
+        selected_creators = []
+        try:
+            creators = self.reader.parser.doc.MD_DataIdentification.CI_Citation.find_all('citedResponsibleParty')
+            for creator in creators:
+                try:
+                    name = creator.individualName.CharacterString.text
+                    codetype = creator.role.CI_RoleCode['codeListValue']
+                    if codetype in ['owner', 'originator', 'pointOfContact', 'principalInvestigator', 'author']:
+                        selected_creators.append(name)
+                except Exception:
+                    pass
+        except Exception:
+            pass
+        return selected_creators
 
     def _publisher(self, doc):
         selected_publishers = []
