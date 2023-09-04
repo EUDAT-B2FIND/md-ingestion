@@ -18,4 +18,3 @@ class EdppDatacite(BaseRDG):
     LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/ecoledesponts'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
-

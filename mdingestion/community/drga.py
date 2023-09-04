@@ -10,10 +10,11 @@ class UnistraDatacite(BaseRDG):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'univ-grenoble-alpes'               # Set from entrepot univ-grenoble-alpes
+    GROUP = 'recherchedatagouv'
     PRODUCTIVE = True
-    DATE = ''
+    DATE = '2023-05-15'
     DESCRIPTION = """"""
-    LOGO = ''
-    LINK = ''
+    LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/125168/logo_UGA_couleur_cmjn.jpg'
+    LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/univ-grenoble-alpes'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''

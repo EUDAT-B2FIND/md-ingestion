@@ -10,10 +10,11 @@ class UnistraDatacite(BaseRDG):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'unistra'               # Set from entrepot unistra
+    GROUP = 'recherchedatagouv'
     PRODUCTIVE = True
     DATE = ''
     DESCRIPTION = """"""
-    LOGO = ''
-    LINK = ''
+    LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/125167/logo-unistra-institutionnel.jpg'
+    LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/unistra'
     REPOSITORY_ID = ''
     REPOSITORY_NAME = ''
