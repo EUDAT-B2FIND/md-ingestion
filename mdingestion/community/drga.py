@@ -2,7 +2,7 @@ from .recherchedatagouv import BaseRDG
 from ..service_types import SchemaType, ServiceType
 
 
-class UnistraDatacite(BaseRDG):
+class DRGADatacite(BaseRDG):
     IDENTIFIER = 'drga'
     TITLE = 'Data Repository Grenoble Alpes'
     URL = 'https://entrepot.recherche.data.gouv.fr/oai'
@@ -16,5 +16,5 @@ class UnistraDatacite(BaseRDG):
     DESCRIPTION = """"""
     LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/125168/logo_UGA_couleur_cmjn.jpg'
     LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/univ-grenoble-alpes'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+#    REPOSITORY_ID = ''
+#    REPOSITORY_NAME = ''

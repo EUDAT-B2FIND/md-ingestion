@@ -1,5 +1,8 @@
 from .recherchedatagouv import BaseRDG
 from ..service_types import SchemaType, ServiceType
+from ..format import format_value
+import pandas as pd
+import os
 
 
 class EdppDatacite(BaseRDG):
@@ -16,5 +19,5 @@ class EdppDatacite(BaseRDG):
     DESCRIPTION = """"""
     LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/148870/5-ecole_ponts20_rvb72petit.jpg'
     LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/ecoledesponts'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+#    REPOSITORY_ID = ''
+#    REPOSITORY_NAME = ''

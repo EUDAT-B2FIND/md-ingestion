@@ -12,6 +12,7 @@ DF = pd.read_csv(open(FNAME))
 
 class INRAEDatacite(Repository):
     IDENTIFIER = 'inrae'
+    TITLE = 'INRAE'
 #   URL = 'https://data.inrae.fr/oai'
     URL = 'https://entrepot.recherche.data.gouv.fr/oai'
     SCHEMA = SchemaType.DataCite
