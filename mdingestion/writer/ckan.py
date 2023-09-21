@@ -35,6 +35,12 @@ def map_extra_fields(fields):
 class CKANWriter(Writer):
     format = 'ckan'
 
+    def geom_for_solr(self, doc):
+        geom = doc.wkt
+        if len(geom) > 32766:
+            geom = doc.envelope
+        return geom
+
     def write(self, doc, filename):
         data = self.json(doc)
         self.update_version(data)
@@ -85,7 +91,7 @@ class CKANWriter(Writer):
             'Version': doc.version,
             'Discipline': doc.discipline,
             'SpatialCoverage': doc.spatial_coverage,
-            'spatial': doc.wkt,
+            'spatial': self.geom_for_solr(doc),
             'geom': doc.wkt_simple,
             'bbox': doc.envelope,
             'TemporalCoverage': doc.temporal_coverage,
