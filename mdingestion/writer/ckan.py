@@ -37,7 +37,7 @@ class CKANWriter(Writer):
 
     def geom_for_solr(self, doc):
         geom = doc.wkt
-        if len(geom) > 32766:
+        if geom and len(geom) > 32766:
             geom = doc.envelope
         return geom
 
