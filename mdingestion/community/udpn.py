@@ -11,10 +11,9 @@ class UniversiteParisNanterreDatacite(BaseRDG):
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'univ-paris-nanterre'               # Set from entrepot univ-paris-nanterre
     PRODUCTIVE = True
-    DATE = ''
+    DATE = '12-05-2023'
     DESCRIPTION = """"""
-    LOGO = ''
-    LINK = ''
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
-
+    LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/125171/logo_Paris_Nanterre_couleur_CMJN.jpg'
+    LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/univ-paris-nanterre'
+#    REPOSITORY_ID = ''
+#    REPOSITORY_NAME = ''
