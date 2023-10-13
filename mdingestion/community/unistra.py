@@ -16,5 +16,5 @@ class UnistraDatacite(BaseRDG):
     DESCRIPTION = """"""
     LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/125167/logo-unistra-institutionnel.jpg'
     LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/unistra'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+#    REPOSITORY_ID = ''
+#    REPOSITORY_NAME = ''
