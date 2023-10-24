@@ -26,7 +26,7 @@ class INRAEDatacite(Repository):
     REPOSITORY_ID = 're3data:r3d100012673'
     REPOSITORY_NAME = 'Data INRAE'
 
-    """def update(self, doc):
+    def update(self, doc):
         handle = format_value(self.find('resource.identifier', identifierType="Handle"), one=True)
         if handle:
             urls = self.reader.pid()
