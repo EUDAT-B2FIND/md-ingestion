@@ -16,5 +16,5 @@ class Data_UnivGustaveEiffelDatacite(BaseRDG):
     DESCRIPTION = """"""
     LOGO = 'https://www.univ-gustave-eiffel.fr/fileadmin/logo_univ_gustave_eiffel_rvb.svg'
     LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/univ-gustave-eiffel'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+#    REPOSITORY_ID = ''
+#    REPOSITORY_NAME = ''

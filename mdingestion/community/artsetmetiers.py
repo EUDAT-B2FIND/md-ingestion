@@ -16,5 +16,5 @@ class ArtsetmetiersDatacite(BaseRDG):
     DESCRIPTION = """"""
     LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/152473/logo-trans-322x84.png'
     LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/artsetmetiers'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+#    REPOSITORY_ID = ''
+#    REPOSITORY_NAME = ''

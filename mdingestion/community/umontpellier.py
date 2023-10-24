@@ -16,5 +16,5 @@ class Data_UMontpellierDatacite(BaseRDG):
     DESCRIPTION = """"""
     LOGO = 'https://www.umontpellier.fr/wp-content/uploads/2022/10/logo_um_2022_rouge_rvb.svg'
     LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/umontpellier'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+#    REPOSITORY_ID = ''
+#    REPOSITORY_NAME = ''

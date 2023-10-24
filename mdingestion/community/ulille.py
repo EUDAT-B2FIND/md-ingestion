@@ -19,5 +19,5 @@ class ULilleDatacite(BaseRDG):
     DESCRIPTION = """"""
     LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/125169/Logo.sans.baseline-Horizontal-RVB-Vert-nature.png'
     LINK = 'https://entrepot.recherche.data.gouv.fr/dataverse/univ-lille'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+#    REPOSITORY_ID = ''
+#    REPOSITORY_NAME = ''

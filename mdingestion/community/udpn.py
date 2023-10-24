@@ -10,7 +10,7 @@ class UniversiteParisNanterreDatacite(BaseRDG):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'univ-paris-nanterre'               # Set from entrepot univ-paris-nanterre
-    PRODUCTIVE = True
+    PRODUCTIVE = False
     DATE = '12-05-2023'
     DESCRIPTION = """"""
     LOGO = 'https://entrepot.recherche.data.gouv.fr/logos/125171/logo_Paris_Nanterre_couleur_CMJN.jpg'
