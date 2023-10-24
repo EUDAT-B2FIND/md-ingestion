@@ -10,7 +10,6 @@ class SorbonneUnivDatacite(BaseRDG):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'sorbonne-univ'               # Set from entrepot sorbonne-univ
-    GROUP = 'recherchedatagouv'
     PRODUCTIVE = True
     DATE = '2023-05-10'
     DESCRIPTION = """"""

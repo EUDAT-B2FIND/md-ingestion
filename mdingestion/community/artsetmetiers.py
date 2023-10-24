@@ -10,7 +10,6 @@ class ArtsetmetiersDatacite(BaseRDG):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'artsetmetiers'
-    GROUP = 'recherchedatagouv'
     PRODUCTIVE = True
     DATE = '2023-05-15'
     DESCRIPTION = """"""

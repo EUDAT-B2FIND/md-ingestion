@@ -1,4 +1,11 @@
 from .base import Repository
+import pandas as pd
+import os
+
+
+CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'etc', 'Community')
+FNAME = os.path.join(CFG_DIR, 'INRAE_MappingSubject__Discipline.csv')
+DF = pd.read_csv(open(FNAME))
 
 
 class BaseRDG(Repository):
@@ -18,3 +25,27 @@ class BaseRDG(Repository):
     # Université de Strasbourg
     # Data Repository Grenoble Alpes
     # Université de Lille
+    # Arts et Métiers Institute of Technology
+    # Inria
+    # Institut Pasteur
+    # Université Gustave Eiffel
+    # Université de Montpellier
+    # Sorbonne Université
+
+    def update(self, doc):
+        doc.discipline = self.discipline_mapping(doc, doc.keywords)
+
+    def discipline_mapping(self, doc, subjects):
+        values = []
+        _subjects = subjects.copy()
+        if "Health and Life Sciences" in _subjects:
+            if "Medicine" in _subjects:
+                _subjects.remove("Medicine")
+        for subject in _subjects:
+            result = DF.loc[DF.Subject == subject]
+            result_disciplines = list(result.Discipline.to_dict().values())
+            if result_disciplines:
+                values.extend(result_disciplines[0].split(';'))
+            else:
+                values.extend(self.discipline(doc, [subject]))
+        return values
