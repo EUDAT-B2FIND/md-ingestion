@@ -26,6 +26,27 @@ class FundingRef(object):
         return f"{self.funder_name}|{self.funder_identifier}|{self.funder_identifier_type}|{self.award_number}|{self.award_uri}|{self.award_title}"
 
 
+class OriginalProv(object):
+    def __init__(self):
+        ''' <originDescription harvestDate="2023-10-16T03:28:14Z" altered="true">
+            <baseURL>http://some.oa.org</baseURL>
+            <identifier>oai:r2.org:klik001</identifier>
+            <datestamp>2001-01-01</datestamp>
+            <metadataNamespace>ddi:codebook:2_5</metadataNamespace>
+            <repositoryID>re3data:r3d100010491</repositoryID>
+            <repositoryName>Social Data Network</repo...Name> 
+            '''
+        self.funder_name = ''
+        self.funder_identifier = ''
+        self.funder_identifier_type = ''
+        self.award_number = ''
+        self.award_uri = ''
+        self.award_title = ''
+
+    def as_string(self):
+        return f"{self.funder_name}|{self.funder_identifier}|{self.funder_identifier_type}|{self.award_number}|{self.award_uri}|{self.award_title}"
+
+
 class BaseDoc(object):
     def __init__(self):
         self._repo = None
@@ -53,6 +74,7 @@ class BaseDoc(object):
         self._size = None
         self._version = None
         self._discipline = None
+        self._original_prov = None
 
     @property
     def repo(self):
