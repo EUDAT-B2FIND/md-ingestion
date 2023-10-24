@@ -49,4 +49,4 @@ class INRAEDatacite(Repository):
                 values.extend(result_disciplines[0].split(';'))
             else:
                 values.extend(self.discipline(doc, [subject]))
-        return values"""
+        return values
