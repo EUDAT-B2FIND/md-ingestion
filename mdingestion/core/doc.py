@@ -290,7 +290,6 @@ class BaseDoc(object):
         self._accept = value
 
 
-
 class GeoDoc(BaseDoc):
     def __init__(self):
         super().__init__()
