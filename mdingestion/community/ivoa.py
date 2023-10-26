@@ -7,7 +7,7 @@ class IvoaEudatcore(Repository):
     IDENTIFIER = 'ivoa'
     URL = 'http://dc.g-vo.org/rr/q/pmh/pubreg.xml'
     SCHEMA = SchemaType.Eudatcore
-    SERVICE_TYPE = ServiceType.OAI_IVOA
+    SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_b2find'
     OAI_SET = None
     PRODUCTIVE = True
@@ -15,11 +15,20 @@ class IvoaEudatcore(Repository):
     REPOSITORY_NAME = 'IVOA'
 
     def update(self, doc):
+        self.filter(doc)
         doc.source = self.find_source('identifier', identifierType="URL")
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="bibcode")
         doc.related_identifier = self.find('relatedIdentifier', relatedIdentifierType="URL")
         doc.discipline = self.discipline(doc, 'Astrophysics and Astronomy')
         doc.instrument = self.instrument(doc)
+
+    def filter(self, doc):
+        restypes = doc.resource_type
+        if len(restypes) == 1:
+            if 'Other' in restypes:
+                doc.accept = None
+            elif 'Text' in restypes:
+                doc.accept = None
 
     def instrument(self, doc):
         result = []

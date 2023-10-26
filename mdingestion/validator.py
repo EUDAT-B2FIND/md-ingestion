@@ -39,6 +39,7 @@ class Validator(object):
                 'publisher': 0,
                 'publication_year': 0,
                 'discipline': 0,
+                'accept': 0,
             },
             'optional': {},
             'invalid': {},

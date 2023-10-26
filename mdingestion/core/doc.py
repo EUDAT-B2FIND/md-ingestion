@@ -53,6 +53,7 @@ class BaseDoc(object):
         self._size = None
         self._version = None
         self._discipline = None
+        self._accept = 'ok'
 
     @property
     def repo(self):
@@ -279,6 +280,14 @@ class BaseDoc(object):
     @discipline.setter
     def discipline(self, value):
         self._discipline = format_value(value)
+
+    @property
+    def accept(self):
+        return self._accept
+
+    @accept.setter
+    def accept(self, value):
+        self._accept = value
 
 
 class GeoDoc(BaseDoc):
