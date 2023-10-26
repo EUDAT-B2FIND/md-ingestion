@@ -254,3 +254,11 @@ class B2FSchema(colander.MappingSchema):
         missing=colander.drop,
         ## occ = 0-1, string (e.g. "1.12.2013-3.5.2016" oder "Viking Age" oder "Paleolithicum")
     )
+    accept = colander.SchemaNode(
+        colander.String(),
+        name='accept',
+        title='Accept',
+        description='We invented this flag to filter IVOA records for resourceType Other or Text.',
+        validator=colander.Length(min=1),
+        ## occ = 1
+    )

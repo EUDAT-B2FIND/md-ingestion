@@ -55,6 +55,7 @@ class B2FWriter(Writer):
             'size': doc.size,
             'version': doc.version,
             'discipline': doc.discipline,
+            'accept': doc.accept,
             'spatial_coverage': doc.spatial_coverage,
             'spatial': doc.wkt,
             'temporal_coverage': doc.temporal_coverage,
