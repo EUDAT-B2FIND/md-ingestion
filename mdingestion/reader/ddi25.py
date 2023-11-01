@@ -10,7 +10,7 @@ class DDI25Reader(XMLReader):
 
     def parse(self, doc):
         self.identifier(doc)
-        doc.title = self.find('titl')
+        doc.title = self.find('stdyDscr.titlStmt.titl')
         doc.creator = self.find('AuthEnty')
         self.keywords(doc)
         self.description(doc)
