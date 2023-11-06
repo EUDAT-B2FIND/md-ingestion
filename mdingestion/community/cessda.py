@@ -18,7 +18,7 @@ class CessdaDDI25(Repository):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Social Sciences')
         doc.publisher = self.publisher()
-        doc.origin_prov = self.origin_prov()
+        doc.original_prov = self.origin_prov()
 
     def publisher(self):
         publisher = []
