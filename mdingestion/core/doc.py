@@ -36,15 +36,17 @@ class OriginalProv(object):
             <repositoryID>re3data:r3d100010491</repositoryID>
             <repositoryName>Social Data Network</repo...Name> 
             '''
-        self.funder_name = ''
-        self.funder_identifier = ''
-        self.funder_identifier_type = ''
-        self.award_number = ''
-        self.award_uri = ''
-        self.award_title = ''
+        self.harvest_date = ''
+        self.altered = ''
+        self.base_url = ''
+        self.identifier = ''
+        self.datestamp = ''
+        self.metadata_namespace = ''
+        self.repository_id = ''
+        self.repository_name = ''
 
     def as_string(self):
-        return f"{self.funder_name}|{self.funder_identifier}|{self.funder_identifier_type}|{self.award_number}|{self.award_uri}|{self.award_title}"
+        return f"{self.harvest_date}|{self.altered}|{self.base_url}|{self.identifier}|{self.datestamp}|{self.metadata_namespace}|{self.repository_id}|{self.repository_name}"
 
 
 class BaseDoc(object):
