@@ -1,5 +1,6 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
+from ..core.doc import OriginalProv
 
 
 class CessdaDDI25(Repository):
@@ -17,6 +18,7 @@ class CessdaDDI25(Repository):
     def update(self, doc):
         doc.discipline = self.discipline(doc, 'Social Sciences')
         doc.publisher = self.publisher()
+        doc.origin_prov = self.origin_prov()
 
     def publisher(self):
         publisher = []
@@ -24,3 +26,15 @@ class CessdaDDI25(Repository):
         if not publisher:
             publisher.append('CESSDA')
         return publisher
+
+    def origin_prov(self):
+        about = OriginalProv()
+        about.harvest_date = '2023-11-06'
+        about.altered = 'false'
+        about.base_url = 'https://data.aussda.at/oai'
+        about.identifier = ''
+        about.datestamp = ''
+        about.metadata_namespace = ''
+        about.repository_id = ''
+        about.repository_name = ''
+        return about.as_string()

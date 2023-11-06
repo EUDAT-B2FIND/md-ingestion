@@ -304,6 +304,14 @@ class BaseDoc(object):
     def discipline(self, value):
         self._discipline = format_value(value)
 
+    @property
+    def original_prov(self):
+        return self._original_prov
+
+    @original_prov.setter
+    def original_prov(self, value):
+        self._original_prov = format_value(value)
+
 
 class GeoDoc(BaseDoc):
     def __init__(self):
