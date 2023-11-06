@@ -29,14 +29,14 @@ class CessdaDDI25(Repository):
 
     def origin_prov(self):
         about = OriginalProv()
-        orig_descr = self.reader.parser.doc.find('about.provenance.originDescription')
+        orig_descr = self.reader.parser.doc.find('originDescription')
         if orig_descr: 
-            about.harvest_date = '2023-11-06'
-            about.altered = 'false'
+            about.harvest_date = orig_descr.get('harvestDate')
+            about.altered = orig_descr.get('altered')
             about.base_url = orig_descr.baseURL.text
             about.identifier = orig_descr.identifier.text
             about.datestamp = orig_descr.datestamp.text
-            about.metadata_namespace = orig_descr.metadataNamespace
+            about.metadata_namespace = orig_descr.metadataNamespace.text
             about.repository_id = ''
             about.repository_name = ''
         return about.as_string()
