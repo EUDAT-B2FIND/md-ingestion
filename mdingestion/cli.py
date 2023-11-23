@@ -20,8 +20,9 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'], obj=CONTEXT_OBJ)
 @click.option('--dry-run', is_flag=True, help='use dry run mode')
 @click.option('--outdir', '-o', default='.',
               help='The root dir for all outputs.')
+@click.option('--log', default='b2f.log', help='set logfile name')
 @click.pass_context
-def cli(ctx, debug, silent, dry_run, outdir):
+def cli(ctx, debug, silent, dry_run, outdir, log):
     # ensure that ctx.obj exists and is a dict (in case `cli()` is called
     # by means other than the `if` block below)
     ctx.ensure_object(dict)
@@ -35,7 +36,7 @@ def cli(ctx, debug, silent, dry_run, outdir):
     out.mkdir(parents=True, exist_ok=True)
     ctx.obj['outdir'] = out.absolute().as_posix()
     # logging
-    logfile = out.joinpath('b2f.log').as_posix()
+    logfile = out.joinpath(log).as_posix()
     if debug:
         logging.basicConfig(filename=logfile, level=logging.DEBUG)
     else:
