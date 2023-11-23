@@ -67,8 +67,9 @@ def is_null_value(text):
         return True
     return False
 
+
 def filter_special_characters(value):
-    pattern = re.compile('[^a-zA-Z0-9\s]')
+    pattern = re.compile(r'[^a-zA-Z0-9\s]')
     result = pattern.sub('', value)
     return result
 
