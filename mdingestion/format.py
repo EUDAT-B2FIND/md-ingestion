@@ -67,6 +67,11 @@ def is_null_value(text):
         return True
     return False
 
+def filter_special_characters(value):
+    pattern = re.compile('[^a-zA-Z0-9\s]')
+    result = pattern.sub('', value)
+    return result
+
 
 def format_value(value, type=None, one=False, min_length=None, max_length=None):
     # work with value list

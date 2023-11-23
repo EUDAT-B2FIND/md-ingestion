@@ -5,7 +5,7 @@ from dateutil import parser as date_parser
 from pathlib import Path
 import json
 
-from ..format import format_value
+from ..format import format_value, filter_special_characters
 from ..rights import is_open_access
 
 
@@ -437,6 +437,7 @@ class B2FDoc(GeoDoc):
     def fulltext(self, value):
         if value and len(value) > 32000:
             value = value[0:32000]
+        value = filter_special_characters(value)
         self._fulltext = value
 
     @property
