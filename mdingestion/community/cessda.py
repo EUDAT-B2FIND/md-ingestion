@@ -44,8 +44,7 @@ class CessdaDDI25(Repository):
             about.identifier = orig_descr.identifier.text
             about.datestamp = orig_descr.datestamp.text
             about.metadata_namespace = orig_descr.metadataNamespace.text
-            about.repository_id = ''
-            about.repository_name = ''
+            about.repository_id, about.repository_name = self.map_repoid(about.base_url)
         return about.as_string()
 
     def map_repoid(self, base_url):
