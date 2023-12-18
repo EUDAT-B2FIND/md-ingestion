@@ -313,6 +313,7 @@ class BaseDoc(object):
     def original_prov(self, value):
         self._original_prov = format_value(value)
 
+    @property
     def accept(self):
         return self._accept
 
