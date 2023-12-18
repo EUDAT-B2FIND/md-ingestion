@@ -34,7 +34,7 @@ class OriginalProv(object):
             <datestamp>2001-01-01</datestamp>
             <metadataNamespace>ddi:codebook:2_5</metadataNamespace>
             <repositoryID>re3data:r3d100010491</repositoryID>
-            <repositoryName>Social Data Network</repo...Name> 
+            <repositoryName>Social Data Network</repo...Name>
             '''
         self.harvest_date = ''
         self.altered = ''

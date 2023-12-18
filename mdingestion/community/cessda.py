@@ -9,7 +9,6 @@ FNAME = os.path.join(CFG_DIR, 'CESSDA_repoID_mapping.csv')
 DF = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
 
 
-
 class CessdaDDI25(Repository):
     IDENTIFIER = 'cessda'
     URL = 'https://datacatalogue.cessda.eu/oai-pmh/v0/oai'
@@ -37,7 +36,7 @@ class CessdaDDI25(Repository):
     def origin_prov(self):
         about = OriginalProv()
         orig_descr = self.reader.parser.doc.find('originDescription')
-        if orig_descr: 
+        if orig_descr:
             about.harvest_date = orig_descr.get('harvestDate')
             about.altered = orig_descr.get('altered')
             about.base_url = orig_descr.baseURL.text
