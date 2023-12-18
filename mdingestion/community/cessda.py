@@ -47,3 +47,11 @@ class CessdaDDI25(Repository):
             about.repository_id = ''
             about.repository_name = ''
         return about.as_string()
+
+    def map_repoid(self, base_url):
+        repoid = reponame = ''
+        results = DF.loc[DF.baseURL == base_url]
+        if not results.empty:
+            repoid = list(results.repository_id)[0]
+            reponame = list(results.repository_name)[0]
+        return repoid, reponame
