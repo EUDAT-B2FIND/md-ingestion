@@ -5,7 +5,7 @@ from dateutil import parser as date_parser
 from pathlib import Path
 import json
 
-from ..format import format_value
+from ..format import format_value, filter_special_characters
 from ..rights import is_open_access
 
 
@@ -77,6 +77,7 @@ class BaseDoc(object):
         self._version = None
         self._discipline = None
         self._original_prov = None
+        self._accept = 'ok'
 
     @property
     def repo(self):
@@ -312,6 +313,13 @@ class BaseDoc(object):
     def original_prov(self, value):
         self._original_prov = format_value(value)
 
+    def accept(self):
+        return self._accept
+
+    @accept.setter
+    def accept(self, value):
+        self._accept = value
+
 
 class GeoDoc(BaseDoc):
     def __init__(self):
@@ -460,6 +468,7 @@ class B2FDoc(GeoDoc):
     def fulltext(self, value):
         if value and len(value) > 32000:
             value = value[0:32000]
+        value = filter_special_characters(value)
         self._fulltext = value
 
     @property

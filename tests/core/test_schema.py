@@ -31,6 +31,7 @@ def test_b2f_schema():
         'discipline': 'Fiction',
         'spatial_coverage': 'POINT (-121 37)',
         'temporal_coverage': '2020-06-12T12:00:00Z',
+        'accept': 'ok',
     }
     schema = B2FSchema()
     appstruct = schema.deserialize(cstruct)
@@ -53,6 +54,7 @@ def test_b2f_missing_title():
                 'publication_year': '2010',
                 'discipline': 'Phantasy',
                 'publisher': 'No one',
+                'accept': 'ok',
             })
 
 
@@ -66,7 +68,8 @@ def test_b2f_invalid_date():
                 'identifier': 'http://localhost/some.txt',
                 'discipline': 'Phantasy',
                 'publisher': 'No one',
-                'publication_year': ['yesterday']
+                'publication_year': ['yesterday'],
+                'accept': 'ok',
             })
 
 
@@ -95,6 +98,7 @@ def test_b2f_validate_none():
         'publisher': 'No one',
         'creator': None,
         'open_access': None,
+        'accept': 'ok',
     }
     schema = B2FSchema()
     appstruct = schema.deserialize(cstruct)
@@ -113,7 +117,8 @@ def test_b2f_validate_empty():
         'discipline': 'Phantasy',
         'publisher': 'No one',
         'creator': '',
-        'open_access': ''
+        'open_access': '',
+        'accept': 'ok',
     }
     schema = B2FSchema()
     appstruct = schema.deserialize(cstruct)

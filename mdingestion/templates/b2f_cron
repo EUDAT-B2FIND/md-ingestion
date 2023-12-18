@@ -9,6 +9,6 @@ OUTDIR=/opt/eudat_data/md-ingestion
 FROMDAYS=8
 {% block repos %}
 {% for repo in repos %}
-{{ repo.minute }} {{ repo.hour }} * * {{ repo.day }} eudat_data b2f -o ${OUTDIR} --silent combine -c {{ repo.identifier }} --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
+{{ repo.minute }} {{ repo.hour }} * * {{ repo.day }} eudat_data b2f --log log/{{ repo.identifier }}.log -o ${OUTDIR} --silent combine -c {{ repo.identifier }} --clean --https --fromdays ${FROMDAYS} -i ${HOST} --auth ${AUTHKEY}
 {% endfor %}
 {% endblock %}
