@@ -26,6 +26,29 @@ class FundingRef(object):
         return f"{self.funder_name}|{self.funder_identifier}|{self.funder_identifier_type}|{self.award_number}|{self.award_uri}|{self.award_title}"
 
 
+class OriginalProv(object):
+    def __init__(self):
+        ''' <originDescription harvestDate="2023-10-16T03:28:14Z" altered="true">
+            <baseURL>http://some.oa.org</baseURL>
+            <identifier>oai:r2.org:klik001</identifier>
+            <datestamp>2001-01-01</datestamp>
+            <metadataNamespace>ddi:codebook:2_5</metadataNamespace>
+            <repositoryID>re3data:r3d100010491</repositoryID>
+            <repositoryName>Social Data Network</repo...Name>
+            '''
+        self.harvest_date = ''
+        self.altered = ''
+        self.base_url = ''
+        self.identifier = ''
+        self.datestamp = ''
+        self.metadata_namespace = ''
+        self.repository_id = ''
+        self.repository_name = ''
+
+    def as_string(self):
+        return f"{self.harvest_date}|{self.altered}|{self.base_url}|{self.identifier}|{self.datestamp}|{self.metadata_namespace}|{self.repository_id}|{self.repository_name}"
+
+
 class BaseDoc(object):
     def __init__(self):
         self._repo = None
@@ -53,6 +76,7 @@ class BaseDoc(object):
         self._size = None
         self._version = None
         self._discipline = None
+        self._original_prov = None
         self._accept = 'ok'
 
     @property
@@ -280,6 +304,14 @@ class BaseDoc(object):
     @discipline.setter
     def discipline(self, value):
         self._discipline = format_value(value)
+
+    @property
+    def original_prov(self):
+        return self._original_prov
+
+    @original_prov.setter
+    def original_prov(self, value):
+        self._original_prov = format_value(value)
 
     @property
     def accept(self):

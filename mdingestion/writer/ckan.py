@@ -99,6 +99,7 @@ class CKANWriter(Writer):
             'TemporalCoverage:EndDate': doc.temporal_coverage_end_date,
             'repositoryID': doc.repository_id,
             'repositoryName': doc.repository_name,
+            'origin_prov': doc.original_prov,
             "fulltext": doc.fulltext,
         }
         # build date range field for temporal coverage
