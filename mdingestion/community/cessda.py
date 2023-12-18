@@ -1,6 +1,13 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..core.doc import OriginalProv
+import pandas as pd
+import os
+
+CFG_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', 'etc', 'Community')
+FNAME = os.path.join(CFG_DIR, 'CESSDA_repoID_mapping.csv')
+DF = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
+
 
 
 class CessdaDDI25(Repository):
