@@ -81,7 +81,6 @@ class Envidat(Repository):
             r.extend(right)
         return r
 
-#TODO: if not publisher, publisher=EnviDat
     def publisher(self, doc):
         try:
             pub = self.find('publication')[0]
