@@ -85,8 +85,10 @@ class Envidat(Repository):
     def publisher(self, doc):
         try:
             pub = self.find('publication')[0]
-            doc.publisher = json.loads(pub)["publisher"]
-            doc.publication_year = json.loads(pub)["publication_year"]
+            doc.publisher = json.loads(pub).get("publisher", "EnviDat")
+            if not doc.publisher:
+                doc.publisher = "EnviDat"
+            doc.publication_year = json.loads(pub).get("publication_year")
         except Exception:
             raise
 
