@@ -40,5 +40,5 @@ def count_citations():
         for record in result['data']['datasets']['nodes']:
             id = record['id']
             citationCount = record['citationCount']
-            lookup_cit[id] = citationCount
+            lookup_cit[id.lower()] = citationCount
     return lookup_cit

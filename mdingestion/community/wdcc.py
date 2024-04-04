@@ -45,6 +45,7 @@ class WDCCIso(Repository):
 
     def _citations(self,doc):
         doi = doc.doi
+        doi = doi.lower()
         if doi in lookup_citations:
             citations = lookup_citations[doi]
         else:
