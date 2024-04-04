@@ -452,6 +452,7 @@ class B2FDoc(GeoDoc):
         self.schema = None
         self._repository_id = repository_id
         self._repository_name = repository_name
+        self.citations = 0
 
     @property
     def name(self):

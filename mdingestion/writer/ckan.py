@@ -100,7 +100,7 @@ class CKANWriter(Writer):
             'repositoryID': doc.repository_id,
             'repositoryName': doc.repository_name,
             'origin_prov': doc.original_prov,
-            'Citations': 2,
+            'Citations': doc.citations,
             "fulltext": doc.fulltext,
         }
         # build date range field for temporal coverage
