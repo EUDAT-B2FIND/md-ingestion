@@ -1,0 +1,72 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<header>
+<identifier>9beb3749-a078-5f7c-949a-e6da71f6185f</identifier>
+<datestamp>2023-05-08T10:30:43Z</datestamp>
+<setSpec>hzb</setSpec>
+</header>
+<metadata>
+<resource xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.5/metadata.xsd">
+<identifier identifierType="Handle">21.11151/74ix-jvpa</identifier>
+<relatedIdentifiers>
+<relatedIdentifier relatedIdentifierType="DOI" relationType="IsCollectedBy">https://doi.org/10.5442/NI000001</relatedIdentifier>
+</relatedIdentifiers>
+<publisher>
+Helmholtz-Zentrum Berlin für Materialien und Energie
+</publisher>
+<publicationYear>2021</publicationYear>
+<resourceType resourceTypeGeneral="Other">Investigation</resourceType>
+<titles>
+<title>
+Change of magnetic order by non-magnetic dilution in the quasicrystal approximant TbCd6 and icosahedral quasicrystal i-Tb-Cd
+</title>
+</titles>
+<contributors>
+<contributor contributorType="Other">
+<contributorName>Kreyßig, Andreas</contributorName>
+</contributor>
+<contributor contributorType="Other">
+<contributorName> Tucker, Gregory</contributorName>
+</contributor>
+<contributor contributorType="Other">
+<contributorName> Ueland, Benjamin</contributorName>
+</contributor>
+<contributor contributorType="Other">
+<contributorName> Goldman, Alan</contributorName>
+</contributor>
+<contributor contributorType="Other">
+<contributorName>
+Helmholtz-Zentrum Berlin für Materialien und Energie
+</contributorName>
+</contributor>
+</contributors>
+<descriptions>
+<description descriptionType="Abstract">
+Our group has recently discovered i-R-Cd quasicrystals showing spin-glass like behavior and the related cubic approximants RCd6 with long-range magnetic order at low temperatures. A recent structural refinement on i-Tb-Cd quasicrystal showed that the Tb-sites in the quasicrystal are not fully occupied. Thus absence of magnetic order in the quasicrystal may possibly arise from magnetic dilution effects. We want use neutron diffraction measurements on non-magnetically diluted Tb1-xYxCd6 single crystals at E2 to study, (1) if and how long-range magnetic order in non-magnetic diluted approximant persists and (2) how that magnetic order and short-range magnetic correlations are modified upon dilution. In total we ask for 10 days of beam time at E2.
+</description>
+</descriptions>
+<rightsList>
+<rights>Creative Commons Zero v1.0 Universal</rights>
+<rights>
+https://creativecommons.org/publicdomain/zero/1.0/
+</rights>
+</rightsList>
+<sizes>
+<size>5.70 MiB</size>
+</sizes>
+<dates>
+<date dateType="Collected">2016-06-14T06:00:00Z/2016-07-05T06:18:54Z</date>
+</dates>
+<geoLocations>
+<geoLocation/>
+</geoLocations>
+<relatedItems>
+    <relatedItem relationType="IsCollectedBy" relatedItemType="Instrument">
+      <relatedItemIdentifier relatedItemIdentifierType="DOI">https://doi.org/10.5442/NI000001</relatedItemIdentifier>
+      <titles>
+        <title>E2 - Flat-Cone Diffractometer</title>
+      </titles>
+  </relatedItem>
+</relatedItems>
+</resource>
+</metadata>
+</record>
