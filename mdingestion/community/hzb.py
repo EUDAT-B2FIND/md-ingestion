@@ -17,10 +17,29 @@ class HZBDatacite(BasePanoscExpands):
     REPOSITORY_ID = 'opendoar:3680'
     REPOSITORY_NAME = 'Helmholtz-Zentrum Berlin für Materialien und Energie'
 
+    def instrument(self, doc):
+        result = []
+        insts = self.reader.parser.doc.find_all('relatedItem', relatedItemType="Instrument")
+        for inst in insts:
+            title = inst.titles.title.text
+            try:
+                ident = inst.relatedItemIdentifier.text
+                ident_type = inst.relatedItemIdentifier['relatedItemIdentifierType']
+                if ident_type == 'DOI':
+                    result.append(f'{title}, https://doi.org/{ident}')
+                elif ident_type == 'PID':
+                    result.append(f'{title}, https://hdl.handle.net/{ident}')
+            except Exception:
+                result.append(title)
+        return result
+
 
 class HZBpub(HZBDatacite):
     IDENTIFIER = 'hzb_pub'
     OAI_SET = 'pub'
+
+    def update(self, doc):
+        doc.instrument = self.instrument(doc)
 
 
 class HZBinv(HZBDatacite):
@@ -37,19 +56,6 @@ class HZBinv(HZBDatacite):
         pids = self.find('resource.identifier')
         for pid in pids:
             result.append(f'https://hdl.handle.net/{pid}')
-        return result
-
-    def instrument(self, doc):
-        result = []
-        insts = self.reader.parser.doc.find_all('relatedItem', relatedItemType="Instrument")
-        for inst in insts:
-            title = inst.titles.title.text
-            ident = inst.relatedItemIdentifier.text
-            ident_type = inst.relatedItemIdentifier['relatedItemIdentifierType']
-            if ident_type == 'DOI':
-                result.append(f'{title}, https://doi.org/{ident}')
-            elif ident_type == 'PID':
-                result.append(f'{title}, https://hdl.handle.net/{ident}')
         return result
 
     def creator(self, doc):
