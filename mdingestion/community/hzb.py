@@ -29,7 +29,7 @@ class HZBDatacite(BasePanoscExpands):
                     result.append(f'{title}, https://doi.org/{ident}')
                 elif ident_type == 'PID':
                     result.append(f'{title}, https://hdl.handle.net/{ident}')
-            except Exception as err:
+            except Exception:
                 result.append(title)
         return result
 
@@ -40,6 +40,7 @@ class HZBpub(HZBDatacite):
 
     def update(self, doc):
         doc.instrument = self.instrument(doc)
+
 
 class HZBinv(HZBDatacite):
     IDENTIFIER = 'hzb_inv'
