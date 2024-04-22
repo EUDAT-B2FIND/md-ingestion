@@ -44,12 +44,15 @@ class HZBinv(HZBDatacite):
         insts = self.reader.parser.doc.find_all('relatedItem', relatedItemType="Instrument")
         for inst in insts:
             title = inst.titles.title.text
-            ident = inst.relatedItemIdentifier.text
-            ident_type = inst.relatedItemIdentifier['relatedItemIdentifierType']
-            if ident_type == 'DOI':
-                result.append(f'{title}, https://doi.org/{ident}')
-            elif ident_type == 'PID':
-                result.append(f'{title}, https://hdl.handle.net/{ident}')
+            try:
+                ident = inst.relatedItemIdentifier.text
+                ident_type = inst.relatedItemIdentifier['relatedItemIdentifierType']
+                if ident_type == 'DOI':
+                    result.append(f'{title}, https://doi.org/{ident}')
+                elif ident_type == 'PID':
+                    result.append(f'{title}, https://hdl.handle.net/{ident}')
+            except Exception as err:
+                result.append(title)
         return result
 
     def creator(self, doc):
