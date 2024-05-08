@@ -29,10 +29,11 @@ class SkgWriter(Writer):
 
     def json(self, doc):
         data = {
+            'local_identifier': 'stateless identifier',
             'titles': {'none': doc.title},
             'abstracts': {'none': doc.description},
             'product_type': 'research data',
-            
+
         }
         identifiers = []
         if doc.doi:
@@ -45,6 +46,13 @@ class SkgWriter(Writer):
             entry = dict(scheme = "url", value = doc.source)
             identifiers.append(entry)
         data["identifiers"] = identifiers
+
+        topics = []
+        for t in doc.keywords:
+            topics.append({'topic': t})
+        for d in doc.discipline:
+            topics.append({'topic': t})
+        data["topics"] = topics
 
         data_b2f = {
             'repo': doc.repo,
