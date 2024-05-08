@@ -29,7 +29,7 @@ class SkgWriter(Writer):
 
     def json(self, doc):
         data = {
-
+            'titles': {'none': doc.title}
         }
         identifiers = []
         if doc.doi:
