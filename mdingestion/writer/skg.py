@@ -29,6 +29,21 @@ class SkgWriter(Writer):
 
     def json(self, doc):
         data = {
+
+        }
+        identifiers = []
+        if doc.doi:
+            entry = dict(scheme = "doi", value = doc.doi)
+            identifiers.append(entry)
+        elif doc.pid:
+            entry = dict(scheme = "pid", value = doc.pid)
+            identifiers.append(entry)
+        elif doc.source:
+            entry = dict(scheme = "url", value = doc.source)
+            identifiers.append(entry)
+        data["identifiers"] = identifiers
+
+        data_b2f = {
             'repo': doc.repo,
             'groups': doc.groups,
             'identifier': doc.identifier,
