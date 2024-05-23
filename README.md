@@ -6,6 +6,15 @@
 
 Python library to harvest, map and upload research community specific metadata into B2FIND CKAN portal. Currently, supported generic metadata schemas are DublinCore, DataCite, DDI2.5, ISO 19139 and EUDAT Core.
 
+## Preparation
+
+Install miniconda, see: https://github.com/conda-forge/miniforge.
+```
+$ wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+$ bash Miniforge3-Linux-x86_64.sh
+$ source .bashrc
+```
+
 ## Installation
 
 Create conda env:
@@ -16,7 +25,7 @@ $ conda activate b2f
 
 Install mdingestion:
 ```
-$ python setup.py develop
+$ pip install -e .
 ```
 
 ## Example with Darus Community
