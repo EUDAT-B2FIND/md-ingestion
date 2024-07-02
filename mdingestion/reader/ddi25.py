@@ -29,12 +29,13 @@ class DDI25Reader(XMLReader):
 #       doc.geometry = self.find_geometry('geogCover')
         self.places(doc)
 #       doc.size = self.find('extent')
+
 #       doc.version = self.find('hasVersion')
         doc.funding_reference = self.find('fundAg')
 #       doc.instrument = self.find('')
 
     def identifier(self, doc):
-        for holdings in self.parser.doc.find_all('holdings'):
+        for holdings in self.parser.doc.find_all('docDscr.holdings'):
             URI = holdings.get('URI')
             if not URI:
                 continue
