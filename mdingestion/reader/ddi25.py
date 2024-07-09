@@ -46,6 +46,12 @@ class DDI25Reader(XMLReader):
             else:
                 doc.source = URI
         if not doc.doi:
+            for idno in self.find('IDNo', agency="DOI"):
+                doc.doi = idno
+        if not doc.doi:
+            for idno in self.find('IDNo', agency="dara"):
+                doc.doi = idno
+        if not doc.doi:
             for idno in self.find('IDNo', agency="datacite"):
                 doc.doi = idno
 
