@@ -56,9 +56,14 @@ class DDI25Reader(XMLReader):
                 doc.doi = idno
 
     def related_identifier(self,doc):
+        print('dings')
         related_ids = []
-        related_ids.extend(self.find('othrStdyMat'))
-        related_ids.extend(self.find('sources'))
+        for holdings in self.parser.doc.find_all('citation.holdings'):
+            URI = holdings.get('URI')
+            print(holdings)
+            if not URI:
+                continue
+            related_ids.append(URI)
         doc.related_identifier = related_ids
 
     def keywords(self,doc):
@@ -69,7 +74,7 @@ class DDI25Reader(XMLReader):
 
     def language(self,doc):
         langs = []
-        for holdings in self.parser.doc.find_all('holdings'):
+        for holdings in self.parser.doc.find_all('docDscr.holdings'):
             langs.append(holdings.get('xml:lang'))
         doc.language = langs
 
