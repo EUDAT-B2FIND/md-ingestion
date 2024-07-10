@@ -35,7 +35,8 @@ class DDI25Reader(XMLReader):
 #       doc.instrument = self.find('')
 
     def identifier(self, doc):
-        for holdings in self.parser.doc.find_all('docDscr.holdings'):
+        docDscr = self.parser.doc.find('docDscr')
+        for holdings in docDscr.find_all('holdings'):
             URI = holdings.get('URI')
             if not URI:
                 continue
@@ -56,11 +57,10 @@ class DDI25Reader(XMLReader):
                 doc.doi = idno
 
     def related_identifier(self,doc):
-        print('dings')
         related_ids = []
-        for holdings in self.parser.doc.find_all('citation.holdings'):
+        citation = self.parser.doc.find('citation')
+        for holdings in self.parser.doc.find_all('holdings'):
             URI = holdings.get('URI')
-            print(holdings)
             if not URI:
                 continue
             related_ids.append(URI)
