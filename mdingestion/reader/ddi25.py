@@ -29,12 +29,14 @@ class DDI25Reader(XMLReader):
 #       doc.geometry = self.find_geometry('geogCover')
         self.places(doc)
 #       doc.size = self.find('extent')
+
 #       doc.version = self.find('hasVersion')
         doc.funding_reference = self.find('fundAg')
 #       doc.instrument = self.find('')
 
     def identifier(self, doc):
-        for holdings in self.parser.doc.find_all('holdings'):
+        docDscr = self.parser.doc.find('docDscr')
+        for holdings in docDscr.find_all('holdings'):
             URI = holdings.get('URI')
             if not URI:
                 continue
@@ -45,13 +47,23 @@ class DDI25Reader(XMLReader):
             else:
                 doc.source = URI
         if not doc.doi:
+            for idno in self.find('IDNo', agency="DOI"):
+                doc.doi = idno
+        if not doc.doi:
+            for idno in self.find('IDNo', agency="dara"):
+                doc.doi = idno
+        if not doc.doi:
             for idno in self.find('IDNo', agency="datacite"):
                 doc.doi = idno
 
     def related_identifier(self,doc):
         related_ids = []
-        related_ids.extend(self.find('othrStdyMat'))
-        related_ids.extend(self.find('sources'))
+        stdymat = self.parser.doc.find('othrStdyMat')
+        for holdings in stdymat.find_all('holdings'):
+            URI = holdings.get('URI')
+            if not URI:
+                continue
+            related_ids.append(URI)
         doc.related_identifier = related_ids
 
     def keywords(self,doc):
@@ -62,7 +74,7 @@ class DDI25Reader(XMLReader):
 
     def language(self,doc):
         langs = []
-        for holdings in self.parser.doc.find_all('holdings'):
+        for holdings in self.parser.doc.find_all('docDscr.holdings'):
             langs.append(holdings.get('xml:lang'))
         doc.language = langs
 
