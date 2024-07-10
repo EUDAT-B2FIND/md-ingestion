@@ -58,8 +58,8 @@ class DDI25Reader(XMLReader):
 
     def related_identifier(self,doc):
         related_ids = []
-        citation = self.parser.doc.find('citation')
-        for holdings in self.parser.doc.find_all('holdings'):
+        stdymat = self.parser.doc.find('othrStdyMat')
+        for holdings in stdymat.find_all('holdings'):
             URI = holdings.get('URI')
             if not URI:
                 continue
