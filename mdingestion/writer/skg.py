@@ -51,7 +51,7 @@ class SkgWriter(Writer):
         for t in doc.keywords:
             topics.append({'topic': t})
         for d in doc.discipline:
-            topics.append({'topic': t})
+            topics.append({'topic': d})
         data["topics"] = topics
 
         data_b2f = {
