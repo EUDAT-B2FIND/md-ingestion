@@ -2,6 +2,26 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
 
+import requests
+
+def lookup_raids(doi):
+    url = 'https://api.test.datacite.org/dois'
+    params = {
+        'provider-id': 'ardcx',
+        'query': f'relatedIdentifiers.relatedIdentifier:"{doi}"'
+    }
+    
+    response = requests.get(url, params=params)
+    
+    if response.status_code == 200:
+        result = response.json()
+        # Extract only the 'id' values from the 'data' key
+        ids = [item['id'] for item in result.get('data', [])]
+        return ids
+    else:
+        return []
+
+
 class WDCCIso(Repository):
     IDENTIFIER = 'wdcc'
     TITLE = 'WDCC - World Data Centre for Climate'
@@ -18,7 +38,7 @@ class WDCCIso(Repository):
 
     def update(self, doc):
         doc.doi = self.find_doi('MD_Identifier.CharacterString')
-        doc.related_identifier = None
+        doc.related_identifier = self.related_identifier_raid(doc)
         doc.contact = self.find('CI_Contact.linkage')
         doc.discipline = self.discipline(doc, 'Earth System Research')
         doc.publisher = 'World Data Center for Climate (WDCC)'
@@ -38,3 +58,11 @@ class WDCCIso(Repository):
             return 'scientific use: For scientific use only'
         else:
             return doc.rights
+
+    def related_identifier_raid(self,doc):
+        relids = []
+        raids = lookup_raids(doc.doi)
+        for raid in raids:
+            relid = f"{raid}|DOI|hasRAiD"
+            relids.append(relid)
+        return relids
