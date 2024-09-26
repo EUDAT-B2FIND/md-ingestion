@@ -1,5 +1,8 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
+from ..enhance import count_citations
+
+lookup_citations = count_citations()
 
 
 class WDCCIso(Repository):
@@ -28,6 +31,7 @@ class WDCCIso(Repository):
         doc.size = self._size(doc)
         doc.rights = self._rights(doc)
         doc.funding_reference = self.find('MD_DataIdentification.supplementalInformation.CharacterString')
+        doc.citations = self._citations(doc)
 
     def _size(self,doc):
         sizes = doc.size
@@ -38,3 +42,12 @@ class WDCCIso(Repository):
             return 'scientific use: For scientific use only'
         else:
             return doc.rights
+
+    def _citations(self,doc):
+        doi = doc.doi
+        doi = doi.lower()
+        if doi in lookup_citations:
+            citations = lookup_citations[doi]
+        else:
+            citations = 0
+        return citations
