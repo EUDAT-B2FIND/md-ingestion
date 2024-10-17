@@ -10,7 +10,7 @@ class EnvidatDatacite(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'datacite'
     OAI_SET = None
-    PRODUCTIVE = True
+    PRODUCTIVE = False
 
     def update(self, doc):
         doc.source = self.find_source('alternateIdentifier')
