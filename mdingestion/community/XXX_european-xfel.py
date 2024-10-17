@@ -9,7 +9,7 @@ class EuropeanXFEL(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = None
-    PRODUCTIVE = True
+    PRODUCTIVE = False
 
     def update(self, doc):
         doc.discipline = ['Natural Sciences','Life Sciences', 'Materials Science']
