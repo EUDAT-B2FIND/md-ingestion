@@ -2,7 +2,7 @@ import requests
 
 graphql_query = """
 {
-  datasets(hasCitations: 1, query: "wdcc", first:135) {
+  datasets(hasCitations: 1, query: "wdcc", first:35) {
     totalCount
     nodes {
       citationCount
@@ -12,6 +12,11 @@ graphql_query = """
       }
       repository { 
         name
+      }
+      citations{
+        nodes{
+         id
+        }
       }
     }
   }
@@ -40,5 +45,6 @@ def count_citations():
         for record in result['data']['datasets']['nodes']:
             id = record['id']
             citationCount = record['citationCount']
-            lookup_cit[id.lower()] = citationCount
+            citations = [cit["id"] for cit in record["citations"]["nodes"]]
+            lookup_cit[id.lower()] = {"citationCount": citationCount, "citations": citations}
     return lookup_cit

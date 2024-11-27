@@ -42,6 +42,7 @@ class WDCCIso(Repository):
     def update(self, doc):
         doc.doi = self.find_doi('MD_Identifier.CharacterString')
         doc.related_identifier = self.related_identifier_raid(doc)
+        doc.related_identifier = self.related_identifier_iscitedby(doc)
         doc.contact = self.find('CI_Contact.linkage')
         doc.discipline = self.discipline(doc, 'Earth System Research')
         doc.publisher = 'World Data Center for Climate (WDCC)'
@@ -68,13 +69,23 @@ class WDCCIso(Repository):
         doi = doc.doi
         doi = doi.lower()
         if doi in lookup_citations:
-            citations = lookup_citations[doi]
+            citations_dict = lookup_citations[doi]
+            citations = citations_dict["citationCount"]
         else:
             citations = 0
         return citations
 
+    def related_identifier_iscitedby(self,doc):
+        relids = doc.related_identifier
+        if doc.doi in lookup_citations:
+            citations = lookup_citations[doc.doi]["citations"]
+            for citation in citations:
+                relid = f"{citation}|DOI|IsCitedBy"
+                relids.append(relid)
+        return relids
+
     def related_identifier_raid(self,doc):
-        relids = []
+        relids = doc.related_identifier
         raids = lookup_raids(doc.doi)
         for raid in raids:
             relid = f"{raid}|DOI|hasRAiD"
