@@ -2,7 +2,7 @@ import requests
 
 graphql_query = """
 {
-  datasets(hasCitations: 1, query: "wdcc", first:50) {
+  datasets(hasCitations: 1, query: "wdcc", first:35) {
     totalCount
     nodes {
       citationCount
@@ -36,7 +36,6 @@ def count_citations():
     response = requests.post(graphql_url, json=graphql_payload, headers=headers)
     if response.ok:
         result = response.json()
-     #   print (result)
     else:
         print(response.text)
         result = None

@@ -83,18 +83,22 @@ class WDCCIso(Repository):
         return citations
 
     def related_identifier_iscitedby(self,doc):
+        doi = doc.doi
+        doi = doi.lower()
         relids = doc.related_identifier
-        if doc.doi in lookup_citations():
-            citations = lookup_citations()[doc.doi]["citations"]
+        _lookup_citations = lookup_citations()
+        if doi in _lookup_citations:
+            citations = _lookup_citations[doi]["citations"]
             for citation in citations:
                 relid = f"{citation}|DOI|IsCitedBy"
                 relids.append(relid)
         return relids
 
+
     def related_identifier_raid(self,doc):
         relids = doc.related_identifier
         raids = lookup_raids(doc.doi)
         for raid in raids:
-            relid = f"{raid}|DOI|hasRAiD"
+            relid = f"{raid}|DOI|HasRAiD"
             relids.append(relid)
         return relids
