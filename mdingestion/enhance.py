@@ -2,7 +2,7 @@ import requests
 
 graphql_query = """
 {
-  datasets(hasCitations: 1, query: "wdcc", first:35) {
+  datasets(hasCitations: 1, query: "wdcc", first:50) {
     totalCount
     nodes {
       citationCount
