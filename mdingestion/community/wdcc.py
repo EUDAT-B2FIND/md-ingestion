@@ -2,10 +2,16 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..enhance import count_citations
 
-lookup_citations = count_citations()
+LOOKUP_CIT = None
 
 
 import requests
+
+def lookup_citations():
+    global LOOKUP_CIT
+    if not LOOKUP_CIT:
+        LOOKUP_CIT = count_citations()
+    return LOOKUP_CIT
 
 def lookup_raids(doi):
     url = 'https://api.test.datacite.org/dois'
@@ -41,7 +47,9 @@ class WDCCIso(Repository):
 
     def update(self, doc):
         doc.doi = self.find_doi('MD_Identifier.CharacterString')
+        doc.related_identifier = None
         doc.related_identifier = self.related_identifier_raid(doc)
+        doc.related_identifier = self.related_identifier_iscitedby(doc)
         doc.contact = self.find('CI_Contact.linkage')
         doc.discipline = self.discipline(doc, 'Earth System Research')
         doc.publisher = 'World Data Center for Climate (WDCC)'
@@ -67,16 +75,30 @@ class WDCCIso(Repository):
     def _citations(self,doc):
         doi = doc.doi
         doi = doi.lower()
-        if doi in lookup_citations:
-            citations = lookup_citations[doi]
+        if doi in lookup_citations():
+            citations_dict = lookup_citations()[doi]
+            citations = citations_dict["citationCount"]
         else:
             citations = 0
         return citations
 
+    def related_identifier_iscitedby(self,doc):
+        doi = doc.doi
+        doi = doi.lower()
+        relids = doc.related_identifier
+        _lookup_citations = lookup_citations()
+        if doi in _lookup_citations:
+            citations = _lookup_citations[doi]["citations"]
+            for citation in citations:
+                relid = f"{citation}|DOI|IsCitedBy"
+                relids.append(relid)
+        return relids
+
+
     def related_identifier_raid(self,doc):
-        relids = []
+        relids = doc.related_identifier
         raids = lookup_raids(doc.doi)
         for raid in raids:
-            relid = f"{raid}|DOI|hasRAiD"
+            relid = f"{raid}|DOI|HasRAiD"
             relids.append(relid)
         return relids
