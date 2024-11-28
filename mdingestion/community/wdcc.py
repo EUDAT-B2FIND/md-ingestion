@@ -41,6 +41,7 @@ class WDCCIso(Repository):
 
     def update(self, doc):
         doc.doi = self.find_doi('MD_Identifier.CharacterString')
+        doc.related_identifier = None
         doc.related_identifier = self.related_identifier_raid(doc)
         doc.related_identifier = self.related_identifier_iscitedby(doc)
         doc.contact = self.find('CI_Contact.linkage')
