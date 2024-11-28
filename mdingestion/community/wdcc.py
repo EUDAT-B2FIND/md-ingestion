@@ -2,10 +2,16 @@ from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..enhance import count_citations
 
-lookup_citations = count_citations()
+LOOKUP_CIT = None
 
 
 import requests
+
+def lookup_citations():
+    global LOOKUP_CIT
+    if not LOOKUP_CIT:
+        LOOKUP_CIT = count_citations()
+    return LOOKUP_CIT
 
 def lookup_raids(doi):
     url = 'https://api.test.datacite.org/dois'
@@ -69,8 +75,8 @@ class WDCCIso(Repository):
     def _citations(self,doc):
         doi = doc.doi
         doi = doi.lower()
-        if doi in lookup_citations:
-            citations_dict = lookup_citations[doi]
+        if doi in lookup_citations():
+            citations_dict = lookup_citations()[doi]
             citations = citations_dict["citationCount"]
         else:
             citations = 0
@@ -78,8 +84,8 @@ class WDCCIso(Repository):
 
     def related_identifier_iscitedby(self,doc):
         relids = doc.related_identifier
-        if doc.doi in lookup_citations:
-            citations = lookup_citations[doc.doi]["citations"]
+        if doc.doi in lookup_citations():
+            citations = lookup_citations()[doc.doi]["citations"]
             for citation in citations:
                 relid = f"{citation}|DOI|IsCitedBy"
                 relids.append(relid)
