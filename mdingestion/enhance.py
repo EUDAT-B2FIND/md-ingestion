@@ -8,9 +8,9 @@ graphql_query = """
       citationCount
       id
       titles {
-      	title
+        title
       }
-      repository { 
+      repository {
         name
       }
       citations{
@@ -23,14 +23,12 @@ graphql_query = """
 }
 """
 
-graphql_payload = {
-        "query": graphql_query}
+graphql_payload = {"query": graphql_query}
 
 graphql_url = "https://api.datacite.org/graphql"
 
-headers = {
-        "Content-Type": "application/json"
-    }
+headers = {"Content-Type": "application/json"}
+
 
 def count_citations():
     response = requests.post(graphql_url, json=graphql_payload, headers=headers)

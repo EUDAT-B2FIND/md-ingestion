@@ -1,11 +1,10 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
 from ..enhance import count_citations
+import requests
 
 LOOKUP_CIT = None
 
-
-import requests
 
 def lookup_citations():
     global LOOKUP_CIT
@@ -13,15 +12,16 @@ def lookup_citations():
         LOOKUP_CIT = count_citations()
     return LOOKUP_CIT
 
+
 def lookup_raids(doi):
     url = 'https://api.test.datacite.org/dois'
     params = {
         'provider-id': 'ardcx',
         'query': f'relatedIdentifiers.relatedIdentifier:"{doi}"'
     }
-    
+
     response = requests.get(url, params=params)
-    
+
     if response.status_code == 200:
         result = response.json()
         # Extract only the 'id' values from the 'data' key
@@ -71,7 +71,6 @@ class WDCCIso(Repository):
         else:
             return doc.rights
 
-
     def _citations(self,doc):
         doi = doc.doi
         doi = doi.lower()
@@ -93,7 +92,6 @@ class WDCCIso(Repository):
                 relid = f"{citation}|DOI|IsCitedBy"
                 relids.append(relid)
         return relids
-
 
     def related_identifier_raid(self,doc):
         relids = doc.related_identifier
