@@ -37,13 +37,13 @@ class SkgWriter(Writer):
         }
         identifiers = []
         if doc.doi:
-            entry = dict(scheme = "doi", value = doc.doi)
+            entry = dict(scheme="doi", value=doc.doi)
             identifiers.append(entry)
         elif doc.pid:
-            entry = dict(scheme = "pid", value = doc.pid)
+            entry = dict(scheme="pid", value=doc.pid)
             identifiers.append(entry)
         elif doc.source:
-            entry = dict(scheme = "url", value = doc.source)
+            entry = dict(scheme="url", value=doc.source)
             identifiers.append(entry)
         data["identifiers"] = identifiers
 
@@ -90,4 +90,4 @@ class SkgWriter(Writer):
             'oai_set': doc.oai_set,
             'oai_identifier': doc.oai_identifier,
         }
-        return data
+        return data_b2f
