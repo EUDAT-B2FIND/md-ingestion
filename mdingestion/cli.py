@@ -44,13 +44,14 @@ def cli(ctx, debug, silent, dry_run, outdir, log):
 
 
 @cli.command()
-@click.option('--verbose', '-v', is_flag=True, help='verbose, all info')
+@click.option('--verbose', '-v', is_flag=True, help='Verbose, all info')
+@click.option('--stat', '-s', is_flag=True, help='Creates repository statistics')
 @click.option('--out', '-o', help='Output as CSV file')
 @click.pass_context
-def list(ctx, verbose, out):
+def list(ctx, verbose, stat, out):
     try:
         list = List()
-        list.run(verbose=verbose, out=out)
+        list.run(verbose=verbose, stat=stat, out=out)
     except Exception as e:
         logging.critical(f"list: {e}", exc_info=True)
         raise click.ClickException(f"{e}")

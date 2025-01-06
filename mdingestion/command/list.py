@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 
 from .base import Command
 from ..community import repo, repos
@@ -6,8 +7,11 @@ from ..community import repo, repos
 
 class List(Command):
 
-    def run(self, verbose=False, out=None):
+    def run(self, verbose=False, stat=False, out=None):
         df = self.build_dataframe()
+        if stat:
+            self.build_stat(df)
+            return
         if not verbose:
             df = df.loc[df.Productive == 'Yes']
             df = df[['Identifier', 'Repository Title', 'Schema', 'Service', 'URL', 'OAI Set', 'MetadataPrefix']]
@@ -58,3 +62,26 @@ class List(Command):
             data=df.values,
             columns=df.columns)
         return df_sorted
+
+    def build_stat(self, df):
+        df = df.loc[df.Productive == 'Yes']
+        df = df[['Identifier', 'Repository', 'Schema', 'Service', 'URL', 'MetadataPrefix']]
+        # Ensure all values in the DataFrame are strings
+        df = df.astype(str)
+        # Generate value counts with total count
+        summary_with_totals = {}
+        for col in df.columns:
+            value_counts = df[col].value_counts().to_dict()
+            total_count = len(df[col])
+            unique_count = len(value_counts)  # Total number of unique values (keys)
+            value_counts["Total Unique Keys"] = str(unique_count)
+            value_counts["Total"] = total_count
+            # Convert all values to strings
+            summary_with_totals[col] = {k: str(v) for k, v in value_counts.items()}
+
+        # Convert to JSON
+        summary_json = json.dumps(summary_with_totals, indent=4)
+
+        # Print the JSON output
+        print("JSON Output:")
+        print(summary_json)
