@@ -10,6 +10,7 @@ class List(Command):
         df = self.build_dataframe()
         if not verbose:
             df = df.loc[df.Productive == 'Yes']
+            df = df[['Identifier', 'Repository Title', 'Schema', 'Service', 'URL', 'OAI Set', 'MetadataPrefix']]
         if out:
             df.to_csv(out)
         else:
