@@ -6,19 +6,16 @@ from ..community import repo, repos
 
 class List(Command):
 
-    def run(self, name=None, summary=False, productive=False, out=None):
-        name = name or 'all'
-        df = self.build_dataframe(name)
-        if productive:
+    def run(self, verbose=False, out=None):
+        df = self.build_dataframe()
+        if not verbose:
             df = df.loc[df.Productive == 'Yes']
         if out:
             df.to_csv(out)
-        elif summary:
-            print(df.nunique().to_string())
         else:
             print(df)
 
-    def build_dataframe(self, name):
+    def build_dataframe(self):
         df = pd.DataFrame(columns=[
             'Repository',
             'Repository Title',
@@ -35,7 +32,7 @@ class List(Command):
             'Logo',
             'Description'])
         pd.set_option('display.max_rows', None)
-        for identifier in repos(name):
+        for identifier in repos('all'):
             com = repo(identifier)
             row = {
                 'Repository': com.name,
