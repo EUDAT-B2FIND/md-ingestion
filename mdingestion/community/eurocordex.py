@@ -11,7 +11,7 @@ class EUROCordex(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = 'a140d3f3-0117-4665-9945-4c7fcb9afb51'
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-06-18'
     EPOSITORY_ID = 're3data:r3d100013118'
     REPOSITORY_NAME = 'B2SHARE Server Forschungszentrum Jülich'

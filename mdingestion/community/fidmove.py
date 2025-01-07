@@ -9,6 +9,7 @@ from ..service_types import SchemaType, ServiceType
 
 class FIDmove(Repository):
     IDENTIFIER = 'fidmove'
+    TITLE = 'FID move'
     URL = 'https://data.fid-move.de/api/3'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.CKAN

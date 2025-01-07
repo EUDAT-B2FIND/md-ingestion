@@ -6,7 +6,7 @@ from ..service_types import SchemaType, ServiceType
 
 class Edmond(Repository):
     NAME = 'edmond'
-    TITLE = 'Edmond'
+    TITLE = 'EDMOND'
     IDENTIFIER = NAME
 #    URL = 'https://edmond.mpdl.mpg.de'
     URL = 'https://edmond.mpg.de'

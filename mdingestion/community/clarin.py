@@ -5,7 +5,7 @@ from ..service_types import SchemaType, ServiceType
 class BaseClarin(Repository):
     NAME = 'clarin'
     TITLE = 'CLARIN'
-    RODUCTIVE = True
+    PRODUCTIVE = True
     DATE = '2023-06-17'
     LINK = 'https://www.clarin.eu/'
     LOGO = ""

@@ -19,6 +19,7 @@ def fix_list(value):
 
 class Bluecloud(Repository):
     IDENTIFIER = 'bluecloud'
+    TITLE = 'Blue-Cloud'
     URL = 'https://data.blue-cloud.org/api/collections'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.BC

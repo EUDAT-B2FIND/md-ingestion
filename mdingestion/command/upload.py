@@ -77,7 +77,8 @@ class Upload(Command):
                     success = False
             count += 1
         if not success:
-            raise Exception(f'upload of some files failed. repo={self._repo.identifier}')
+            # raise Exception(f'upload of some files failed. repo={self._repo.identifier}')
+            logging.exception(f'upload of some files failed. repo={self._repo.identifier}')
 
     def walk(self):
         path = os.path.join(self._repo.identifier, 'ckan')
