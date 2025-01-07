@@ -26,7 +26,7 @@ class Harvest(Command):
             except Exception:
                 msg = f"Harvesting of {identifier} failed."
                 logging.exception(msg)
-                raise Exception(msg)
+                # raise Exception(msg)
 
     def _harvest(self, identifier, fromdate=None, clean=False, limit=None, dry_run=False, silent=False,
                  username=None, password=None):
@@ -54,4 +54,8 @@ class Harvest(Command):
                            unit=' records',
                            total=_harvester.total(),
                            disable=silent):
-            _harvester.write_record(record, pretty_print=True)
+            try:
+                _harvester.write_record(record, pretty_print=True)
+            except Exception:
+                msg = "Harvesting of record failed."
+                logging.exception(msg)
