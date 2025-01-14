@@ -1,11 +1,12 @@
 from .base import Repository
 from ..service_types import SchemaType, ServiceType
 
+# repository not on productive B2F, contains 0 records (since 2023 - dead?)
 
 class GeoinquireEudatcore(Repository):
     IDENTIFIER = 'geoinquire'
     TITLE = 'Geo-INQUIRE'
-    GROUP = 'b2share'
+    # GROUP = 'b2share'
     CRON_DAILY = True
     SCHEMA = SchemaType.Eudatcore
     SERVICE_TYPE = ServiceType.OAI
