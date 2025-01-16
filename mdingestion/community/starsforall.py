@@ -13,8 +13,8 @@ class StarsforallEudatcore(Repository):
     OAI_SET = 'a204df9b-dfa4-445e-82e6-a88f8754b6b7'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LOGO = "https://avatars.githubusercontent.com/u/16410737?s=280&v=4"
     LINK = "https://stars4all.eu/"

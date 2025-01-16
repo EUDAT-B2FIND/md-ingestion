@@ -17,6 +17,8 @@ class GeoinquireEudatcore(Repository):
     LOGO = "https://www.geo-inquire.eu/typo3conf/ext/geoinquire_sitepackage/Resources/Public/Images/Geo-INQUIRE_logo_2_crop.jpg"
     LINK = "https://www.geo-inquire.eu/"
     DESCRIPTION = """Modern scientific endeavours already have the capacity to call upon a vast variety of data, often in huge volumes. However, the challenge is not only how to make the most of such a resource, but also how to make it available to the wider scientific community, especially when encouraging curiosity-driven research. The new project, Geosphere INfrastructures for QUestions into Integrated REsearch part of the recent Horizon Europe Infrastructure call, will do so by enhancing, giving access to, and making interoperable key datasets."""
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
 
     def update(self, doc):
         if not doc.publication_year:

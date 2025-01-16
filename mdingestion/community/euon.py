@@ -13,8 +13,8 @@ class EuonEudatcore(Repository):
     OAI_SET = '893fad89-dc4a-4f1b-a9ba-4240aa18e12b'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LOGO = "https://b2share.eudat.eu/img/communities/euon.png"
     LINK = "https://eudat.eu/about-euon"

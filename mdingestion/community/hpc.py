@@ -13,8 +13,8 @@ class Hpceuropa3Eudatcore(Repository):
     OAI_SET = '8d4f0e20-8af2-4111-a816-f29a71b4439c'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LOGO = "http://www.hpc-europa.eu/sites/default/files/logo_persito_trasp-02_low.png"
     LINK = "http://www.hpc-europa.eu/"
