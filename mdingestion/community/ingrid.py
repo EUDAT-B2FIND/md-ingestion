@@ -13,8 +13,8 @@ class IngridEudatcore(Repository):
     OAI_SET = '0cc56898-fb0b-44dc-8331-535b9c089647'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LINK = ""
     LOGO = ""

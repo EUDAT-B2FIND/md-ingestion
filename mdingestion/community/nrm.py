@@ -13,8 +13,8 @@ class NrmEudatcore(Repository):
     OAI_SET = '4ba7c0fd-1435-4313-9c13-4d888d60321a'
     PRODUCTIVE = True
     DATE = '2023-05-23'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Naturhistoriska_riksmuseet_logo.svg/1181px-Naturhistoriska_riksmuseet_logo.svg.png"
     LINK = "https://herbarium.nrm.se/search/specimens/"

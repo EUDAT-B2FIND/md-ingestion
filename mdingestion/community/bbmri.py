@@ -13,8 +13,8 @@ class BbmriEudatcore(Repository):
     OAI_SET = '99916f6f-9a2c-4feb-a342-6552ac7f1529'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LOGO = ""
     LINK = ""

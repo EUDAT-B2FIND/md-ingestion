@@ -13,8 +13,8 @@ class LiferespiraEudatcore(Repository):
     OAI_SET = 'e1800bc8-780e-4617-a7b6-2312cb6190c4'  # LIFE+Respira Set from CSC
     PRODUCTIVE = True
     DATE = '2023-01-23'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LOGO = ""
     DESCRIPTION = """Life+Respira is a project aimed at showing that through the use of new technologies, along with urban planning and management, like promoting sustainable mobility and bicycle use, it is possible to improve air quality and reduce air pollution. The project has the added benefits included in socially implying members of the community; some of the actions will be based on the help provided by a team of volunteer cyclists. This way citizens will become the driving force and main beneficiaries of the results. All the steps proposed in the project are directly related to the improvement of air quality, urban environment and health."""
