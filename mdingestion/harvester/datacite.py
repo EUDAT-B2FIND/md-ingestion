@@ -17,7 +17,7 @@ class DataCiteHarvester(Harvester):
         )
         self.ext = "json"
         self.filter = filter
-        self.headers = {"Accept": "application/json"}
+        self.headers = {"Accept": "application/vnd.api+json"}
         logging.captureWarnings(True)
 
     def identifier(self, record):
@@ -41,7 +41,7 @@ class DataCiteHarvester(Harvester):
         query_params = {
             "consortium-id": self.filter,
             "resource-type-id": "dataset",
-            "page[size]": 1000,
+            "page[size]": 10,
             "page[number]": 1,
         }
         total_fetched = 0
