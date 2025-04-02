@@ -24,9 +24,9 @@ class DataCiteHarvester(Harvester):
         return f"datacite-{self.repo}-{record['id']}"
 
     def matches(self):
-        query_params = {"query": self.filter, "page[size]": 1}
+        query_params = {"consortium-id": self.filter, "resource-type-id": "dataset", "page[size]": 1}
         response = requests.get(f"{self.url}/dois", params=query_params, headers=self.headers, verify=self.verify)
-        
+
         if not response.ok:
             logging.error(f"Error fetching record count: {response.status_code} {response.text}")
             return 0
@@ -41,14 +41,14 @@ class DataCiteHarvester(Harvester):
         query_params = {
             "consortium-id": self.filter,
             "resource-type-id": "dataset",
-            "page[size]": 10,
+            "page[size]": 1000,
             "page[number]": 1,
         }
         total_fetched = 0
         
         while True:
             response = requests.get(f"{self.url}/dois", params=query_params, headers=self.headers, verify=self.verify)
-            
+
             if not response.ok:
                 logging.error(f"Error fetching records: {response.status_code} {response.text}")
                 return
@@ -62,9 +62,6 @@ class DataCiteHarvester(Harvester):
 
             for item in items:
                 yield item
-                total_fetched += 1
-                if self.limit and total_fetched >= self.limit:
-                    return
 
             if len(items) < query_params["page[size]"]:
                 break  # No more records left to fetch
