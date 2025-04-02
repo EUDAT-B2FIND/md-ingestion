@@ -42,12 +42,18 @@ class DataCiteHarvester(Harvester):
             "consortium-id": self.filter,
             "resource-type-id": "dataset",
             "page[size]": 1000,
-            "page[number]": 1,
+            "page[cursor]": 1,
         }
-        total_fetched = 0
+        next_url = f"{self.url}/dois"
         
-        while True:
-            response = requests.get(f"{self.url}/dois", params=query_params, headers=self.headers, verify=self.verify)
+        ok = True
+        first = True
+        while ok:
+            if first:
+                response = requests.get(next_url, params=query_params, headers=self.headers, verify=self.verify)
+                first = False
+            else:
+                response = requests.get(next_url, headers=self.headers, verify=self.verify)
 
             if not response.ok:
                 logging.error(f"Error fetching records: {response.status_code} {response.text}")
@@ -62,11 +68,12 @@ class DataCiteHarvester(Harvester):
 
             for item in items:
                 yield item
-
-            if len(items) < query_params["page[size]"]:
-                break  # No more records left to fetch
+#            print (len(items))
+#            print (next_url)
+            if len(items) == 0 or not next_url:
+                ok = False
             
-            query_params["page[number]"] += 1
+            next_url = data.get("links", {}).get("next")
 
     def _write_record(self, fp, record, pretty_print=True):
         json.dump(record, fp, indent=4, sort_keys=True, ensure_ascii=False)
