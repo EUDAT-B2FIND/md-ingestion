@@ -19,6 +19,7 @@ class DARADatacite(Repository):
 
     def update(self, doc):
         doc.discipline = ['Social Sciences']
+        doc.doi = self.find('attributes.doi')
         doc.description = self._find('Abstract')
         doc.source = self._find('OnlineResourceUrl')
         doc.publication_year = self._find('Last_Update')
