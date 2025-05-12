@@ -44,9 +44,8 @@ class DARADatacite(Repository):
         doc.related_identifier = self.related_identifier()
         doc.format = self.formats()
         doc.size = self.sizes()
-        doc.resource_type = self.resourceTypeGeneral()
+        doc.resource_type = self.resourcetype_general()
         doc.version = self.version()
-        geolo
 
     @property
     def jsondoc(self):
@@ -69,7 +68,7 @@ class DARADatacite(Repository):
 
     @return_none_on_exception
     def publisher(self):
-        value = [c['name'] for c in self.jsondoc['publisher']]
+        value = self.jsondoc['publisher']
         return value
 
     @return_none_on_exception
@@ -85,7 +84,6 @@ class DARADatacite(Repository):
     @return_none_on_exception
     def publication_year(self):
         value = self.jsondoc['publicationYear']
-        print('bla', value)
         return value
 
     @return_none_on_exception
@@ -141,8 +139,8 @@ class DARADatacite(Repository):
         return value
 
     @return_none_on_exception
-    def resourceTypeGeneral(self):
-        value = [c['resourceTypeGeneral'] for c in self.jsondoc['types']]
+    def resourcetype_general(self):
+        value = self.jsondoc['types']['resourceTypeGeneral']
         return value
 
     @return_none_on_exception
