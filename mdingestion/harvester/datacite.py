@@ -30,7 +30,7 @@ class DataCiteHarvester(Harvester):
         if not response.ok:
             logging.error(f"Error fetching record count: {response.status_code} {response.text}")
             return 0
-        
+
         try:
             return int(response.json().get("meta", {}).get("total", 0))
         except (ValueError, TypeError):
@@ -45,7 +45,7 @@ class DataCiteHarvester(Harvester):
             "page[cursor]": 1,
         }
         next_url = f"{self.url}/dois"
-        
+
         ok = True
         first = True
         while ok:
@@ -72,7 +72,7 @@ class DataCiteHarvester(Harvester):
 #            print (next_url)
             if len(items) == 0 or not next_url:
                 ok = False
-            
+
             next_url = data.get("links", {}).get("next")
 
     def _write_record(self, fp, record, pretty_print=True):
