@@ -31,21 +31,22 @@ class DARADatacite(Repository):
         doc.discipline = ['Social Sciences']
         doc.doi = self.doi()
         doc.creator = self.creator()
+        doc.title = self.titles()
+        doc.publisher = self.publisher()
         doc.description = self.description()
+        doc.places = self.geolocation_place()
         doc.publication_year = self.publication_year()
+        doc.keywords = self.subjects()
+        doc.language = self.language()
         doc.rights = self.rights()
         doc.contributor = self.contributor()
         doc.funding_reference = self.funding_reference()
         doc.related_identifier = self.related_identifier()
-        # doc.format = self._find('formats')
-        # doc.size = self._find('sizes')
-        # doc.resource_type = self._find('resourceTypeGeneral')
-        # doc.version = self._find('version')
-        # doc.title = self._find('title')
-        # doc.language = self._find('language')
-        # doc.keywords = self._find('subject')
-        # doc.publisher = self._find('publisher')
-        # doc.places = self._find('geoLocationPlace')
+        doc.format = self.formats()
+        doc.size = self.sizes()
+        doc.resource_type = self.resourceTypeGeneral()
+        doc.version = self.version()
+        geolo
 
     @property
     def jsondoc(self):
@@ -62,14 +63,39 @@ class DARADatacite(Repository):
         return value
 
     @return_none_on_exception
+    def titles(self):
+        value = [c['title'] for c in self.jsondoc['titles']]
+        return value
+
+    @return_none_on_exception
+    def publisher(self):
+        value = [c['name'] for c in self.jsondoc['publisher']]
+        return value
+
+    @return_none_on_exception
     def description(self):
         value = [c['description'] for c in self.jsondoc['descriptions']]
+        return value
+
+    @return_none_on_exception
+    def geolocation_place(self):
+        value = [c['geoLocationPlace'] for c in self.jsondoc['geoLocations']]
         return value
 
     @return_none_on_exception
     def publication_year(self):
         value = self.jsondoc['publicationYear']
         print('bla', value)
+        return value
+
+    @return_none_on_exception
+    def subjects(self):
+        value = [c['subject'] for c in self.jsondoc['subjects']]
+        return value
+
+    @return_none_on_exception
+    def language(self):
+        value = self.jsondoc['language']
         return value
 
     @return_none_on_exception
@@ -103,3 +129,23 @@ class DARADatacite(Repository):
             value = f"{id}|{relid_type}|{rel_type}"
             values.append(value)
         return values
+
+    @return_none_on_exception
+    def formats(self):
+        value = self.jsondoc['formats']
+        return value
+
+    @return_none_on_exception
+    def sizes(self):
+        value = self.jsondoc['sizes']
+        return value
+
+    @return_none_on_exception
+    def resourceTypeGeneral(self):
+        value = [c['resourceTypeGeneral'] for c in self.jsondoc['types']]
+        return value
+
+    @return_none_on_exception
+    def version(self):
+        value = self.jsondoc['version']
+        return value
