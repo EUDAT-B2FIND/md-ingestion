@@ -21,7 +21,7 @@ class DARADatacite(Repository):
     PRODUCTIVE = True
     DATE = '2025-04-02'
     CRON_DAILY = False
-    REPOSITORY_ID = ''
+    REPOSITORY_ID = 'https://doi.org/10.25504/FAIRsharing.58wjha'
     REPOSITORY_NAME = 'DA|RA'
     LOGO = ""
     DESCRIPTION = ""
