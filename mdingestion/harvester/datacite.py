@@ -58,7 +58,7 @@ class DataCiteHarvester(Harvester):
             if not response.ok:
                 logging.error(f"Error fetching records: {response.status_code} {response.text}")
                 return
-            
+
             try:
                 data = response.json()
                 items = data.get("data", [])

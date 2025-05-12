@@ -26,7 +26,6 @@ class DARADatacite(Repository):
     LOGO = ""
     DESCRIPTION = ""
 
-
     def update(self, doc):
         doc.discipline = ['Social Sciences']
         doc.doi = self.doi()
