@@ -14,7 +14,7 @@ def return_none_on_exception(func):
 class DARADatacite(Repository):
     IDENTIFIER = 'dara2'
     TITLE = 'DA|RA'
-    URL = 'https://api.datacite.org/'
+    URL = 'https://api.datacite.org'
     SCHEMA = SchemaType.JSON
     SERVICE_TYPE = ServiceType.DataCite
     FILTER = "daraco"
