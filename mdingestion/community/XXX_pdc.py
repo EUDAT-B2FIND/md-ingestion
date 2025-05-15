@@ -10,7 +10,7 @@ class Pdc(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'fgdc'
     OAI_SET = None
-    PRODUCTIVE = True
+    PRODUCTIVE = False
 
     def update(self, doc):
         if not doc.contributor:

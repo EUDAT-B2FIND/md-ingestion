@@ -21,3 +21,4 @@ class ServiceType(Enum):
     BC = 300
     Dataverse = 400
     CKAN = 500
+    DataCite = 600

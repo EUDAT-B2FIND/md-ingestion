@@ -7,6 +7,7 @@ from .arcgis import ArcGISHarvester
 from .bc import BlueCloudHarvester
 from .dataverse import DataverseHarvester
 from .ckan import CKANHarvester
+from .datacite import DataCiteHarvester
 
 from ..service_types import ServiceType
 
@@ -70,6 +71,16 @@ def harvester(repo,
             verify=verify)
     elif service_type == ServiceType.CKAN:
         harvester = CKANHarvester(
+            repo=repo,
+            url=url,
+            filter=filter,
+            fromdate=fromdate,
+            clean=clean,
+            limit=limit,
+            outdir=outdir,
+            verify=verify)
+    elif service_type == ServiceType.DataCite:
+        harvester = DataCiteHarvester(
             repo=repo,
             url=url,
             filter=filter,

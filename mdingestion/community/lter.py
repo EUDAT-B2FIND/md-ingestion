@@ -25,6 +25,8 @@ class LterB2ShareCsc(BaseLter):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = '	d952913c-451e-4b5c-817e-d578dc8a4469'  # LTER Set from CSC
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
 
 
 class LterB2ShareFzj(BaseLter):
@@ -35,3 +37,5 @@ class LterB2ShareFzj(BaseLter):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = '	d952913c-451e-4b5c-817e-d578dc8a4469'  # LTER Set from FZJ
+    REPOSITORY_ID = 're3data:r3d100013118'
+    REPOSITORY_NAME = 'B2SHARE Server Forschungszentrum Jülich'

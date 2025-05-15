@@ -13,8 +13,8 @@ class KicosEudatcore(Repository):
     OAI_SET = 'ffc8b583-ebe7-41f5-88e0-65ba59fbe672'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LOGO = "https://b2share.eudat.eu/img/communities/KiCoS.jpg"
     LINK = "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/KiCoS.html"

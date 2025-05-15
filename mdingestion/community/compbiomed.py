@@ -13,8 +13,8 @@ class CompbiomedEudatcore(Repository):
     OAI_SET = '03b22301-60a8-4885-86fa-8c92cbf57bb0'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LINK = ""
     LOGO = "https://www.compbiomed.eu/wp-content/uploads/2016/09/compbiomed_long_logo.png"

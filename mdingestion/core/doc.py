@@ -223,6 +223,8 @@ class BaseDoc(object):
 
     @publication_year.setter
     def publication_year(self, value):
+        if isinstance(value, int):
+            value = str(value)
         self._publication_year = format_value(value, type='date_year', one=True)
 
     @property

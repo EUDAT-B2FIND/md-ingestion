@@ -218,6 +218,8 @@ class ClarinFromB2SatCSC(BaseClarin):
     OAI_SET = '0afede87-2bf2-4d89-867e-d2ee57251c62'  # CLARIN Subset
     SCHEMA = SchemaType.DublinCore
     SERVICE_TYPE = ServiceType.OAI
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
 
     def update(self, doc):
         super().update(doc)

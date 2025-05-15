@@ -12,6 +12,8 @@ def sniffer(service_type=None):
         sniffer = DataverseSniffer
     elif service_type == ServiceType.CKAN:
         sniffer = CKANSniffer
+    elif service_type == ServiceType.DataCite:
+        sniffer = DataCiteSniffer
     else:
         sniffer = OAISniffer
     return sniffer
@@ -104,6 +106,19 @@ class CKANSniffer(CatalogSniffer):
         identifier = self.parser.find('id')[0]
         if identifier:
             mdaccess = f"{doc.url}/action/package_show?id={identifier}"
+        else:
+            mdaccess = None
+        return mdaccess
+
+
+class DataCiteSniffer(CatalogSniffer):
+    def update(self, doc):
+        doc.metadata_access = self.metadata_access(doc)
+
+    def metadata_access(self, doc):
+        identifier = self.parser.doc.get('id')
+        if identifier:
+            mdaccess = f"{doc.url}/dois/{identifier}"
         else:
             mdaccess = None
         return mdaccess

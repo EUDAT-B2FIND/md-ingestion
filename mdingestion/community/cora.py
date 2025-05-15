@@ -10,7 +10,7 @@ class CORADatacite(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'OPENAIRE'
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-01-10'
     CRON_DAILY = False
     REPOSITORY_ID = 're3data:r3d100013559'
