@@ -117,17 +117,20 @@ class BaseDoc(object):
 
     @property
     def keywords(self):
-        return self._keywords
+        return self._keywords or []
 
     @keywords.setter
     def keywords(self, value):
         # TODO: clean up code
         _keywords = []
         delchars = {8347: None}
-        for val in value:
-            val = val.translate(delchars)
-            _keywords.extend(val.split(','))
-        self._keywords = format_value(_keywords, type='string_words', min_length=2, max_length=100)
+        if value:
+            if not isinstance(value, list):
+                value = [value]
+            for val in value:
+                val = val.translate(delchars)
+                _keywords.extend(val.split(','))
+            self._keywords = format_value(_keywords, type='string_words', min_length=2, max_length=100)
 
     @property
     def doi(self):
