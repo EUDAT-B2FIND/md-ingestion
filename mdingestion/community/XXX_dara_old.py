@@ -4,8 +4,8 @@ from ..format import format_value
 
 
 class BaseDara(Repository):
-    GROUP = 'dara'
-    GROUP_TITLE = 'da|ra'
+    GROUP = 'dara_old'
+    GROUP_TITLE = 'da|ra_old'
     PRODUCTIVE = True
     DATE = '2020-07-10'
     DESCRIPTION = 'da|ra is the registration agency for social science and economic data jointly run by GESIS and ZBW. In keeping with the ideals of good scientific practice there is a demand for open access to existing primary data so as to not only have the final research results but also be able to reconstruct the entire research process. GESIS and ZBW therefore offer a registration service for social and economic research data.'
