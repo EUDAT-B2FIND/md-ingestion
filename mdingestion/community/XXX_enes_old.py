@@ -11,7 +11,7 @@ class Enes(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'iso'
     OAI_SET = 'iso-old-doi'
-    PRODUCTIVE = True
+    PRODUCTIVE = False
     DATE = '2020-10-14'
     REPOSITORY_ID = 're3data:r3d100010299'
     REPOSITORY_NAME = 'WDCC'
