@@ -96,3 +96,7 @@ Update PRODUCTIVE=True and DATE='whatever' in Community mapfiles
 ```
 b2f list -p -o b2flist.csv
 ```
+## Create cronjob file
+```
+b2f cron --auth ckanauthkey
+```
