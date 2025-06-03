@@ -17,6 +17,12 @@ $ source .bashrc
 
 ## Installation
 
+Clone from git
+```
+git clone https://github.com/EUDAT-B2FIND/md-ingestion.git
+cd md-ingestion
+```
+
 Create conda env:
 ```
 $ conda env create -f environment.yml
@@ -98,5 +104,9 @@ b2f list -p -o b2flist.csv
 ```
 ## Create cronjob file
 ```
-b2f cron --auth ckanauthkey
+b2f cron --auth ckanauthkey -o b2f.cron
+```
+Copy `b2f.cron` file as sudo to `/etc/cron.d/b2f`
+```
+$ sudo cp b2f.cron /etc/cron.d/b2f
 ```
