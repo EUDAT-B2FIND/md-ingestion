@@ -9,7 +9,7 @@ class SddbDatacite(BaseGfz):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.SDDB'
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     REPOSITORY_ID = 're3data:r3d100010659'
     REPOSITORY_NAME = 'Scientific Drilling Database'
 
