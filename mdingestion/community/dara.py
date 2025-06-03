@@ -43,7 +43,7 @@ class DARADatacite(Repository):
         doc.related_identifier = self.related_identifier()
         doc.format = self.formats()
         doc.size = self.sizes()
-        doc.resource_type = self.resourcetype_general()
+        doc.resource_type = self.resourcetype()
         doc.version = self.version()
 
     @property
@@ -138,9 +138,13 @@ class DARADatacite(Repository):
         return value
 
     @return_none_on_exception
-    def resourcetype_general(self):
-        value = self.jsondoc['types']['resourceTypeGeneral']
-        return value
+    def resourcetype(self):
+        rtg = self.jsondoc['types'].get('resourceTypeGeneral')
+        rt = self.jsondoc['types'].get('resourceType')
+        values = [rtg]
+        if rt:
+            values.append(rt)
+        return values
 
     @return_none_on_exception
     def version(self):
