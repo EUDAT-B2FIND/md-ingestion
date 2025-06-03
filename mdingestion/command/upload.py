@@ -52,6 +52,7 @@ class Upload(Command):
         self.walker = Walker(self.datadir)
         limit = limit or -1
         count = 0
+        fails = 0
         success = True
         for filename in tqdm(self.walk(), ascii=True, desc=f"Uploading {self._repo.identifier}",
                              unit=' records', total=limit, disable=silent):
@@ -75,9 +76,10 @@ class Upload(Command):
                 except Exception:
                     logging.exception(f'upload failed: {filename}.')
                     success = False
+                    fails += 1
             count += 1
         if not success:
-            raise Exception(f'upload of some files failed. repo={self._repo.identifier}')
+            raise Exception(f'upload of some files failed. repo={self._repo.identifier}, for {fails}/{count} files upload failed.')
 
     def walk(self):
         path = os.path.join(self._repo.identifier, 'ckan')
