@@ -3,9 +3,10 @@ from ..service_types import SchemaType, ServiceType
 
 
 class BaseLter(Repository):
-    IDENTIFIER = 'lter'
     NAME = 'lter'
-    PRODUCTIVE = False
+    TITLE = 'LTER'
+    IDENTIFIER = NAME
+    PRODUCTIVE = True
     DATE = '2023-01-31'
     CRON_DAILY = False
     LOGO = "https://www.envriplus.eu/wp-content/uploads/2015/08/LTER-Europe-logo-short.jpg"
