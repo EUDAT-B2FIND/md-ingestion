@@ -6,7 +6,7 @@ class BaseDrihm(Repository):
     # old/finished project, no cronjob needed
     NAME = 'drihm'
     TITLE = 'DRIHM'
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-05-10'
     LINK = "http://www.drihm.eu/"
     LOGO = "http://www.drihm.eu/images/modules/LogoDrihm.jpg"
