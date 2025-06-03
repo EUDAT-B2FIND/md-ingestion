@@ -11,7 +11,7 @@ class Toar(Repository):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'eudatcore'
     OAI_SET = '381a24f1-18d4-405d-af36-c76ba199a754'
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2023-02-09'
     REPOSITORY_ID = 're3data:r3d100013118'
     REPOSITORY_NAME = 'B2SHARE Server Forschungszentrum Jülich'

@@ -10,7 +10,7 @@ class ILLDatacite(BasePanoscExpands):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'openaire_data'
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     DATE = '2022-07-14'
     DESCRIPTION = ""
     LOGO = ''

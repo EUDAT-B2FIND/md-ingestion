@@ -3,8 +3,9 @@ from ..service_types import SchemaType, ServiceType
 
 
 class BaseLter(Repository):
-    IDENTIFIER = 'lter'
     NAME = 'lter'
+    TITLE = 'LTER'
+    IDENTIFIER = NAME
     PRODUCTIVE = True
     DATE = '2023-01-31'
     CRON_DAILY = False
