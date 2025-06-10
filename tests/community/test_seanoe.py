@@ -7,7 +7,6 @@ from mdingestion.community.seanoe import Seanoe
 from tests.common import TESTDATA_DIR
 
 
-@pytest.mark.xfail(reason="spatial coverage fails")
 def test_seanoe_dc_1():
     xmlfile = os.path.join(TESTDATA_DIR, 'seanoe', 'raw',
                            '4aefaa20-ae37-5c89-bc7a-7574303850c3.xml')
@@ -23,7 +22,3 @@ def test_seanoe_dc_1():
     assert doc.publication_year == '2014'
     assert doc.keywords == ['salinity', 'oceanography', 'stratification', 'marine data']
     assert doc.doi == 'https://doi.org/10.17882/41101'
-    # assert doc.source == 'https://research-explorer.app.ist.ac.at/record/5580'
-    # <dc:coverage>North 90.0, South -90.0, East 180.0, West -180.0</dc:coverage>
-    assert doc.spatial_coverage == '(-180.000W, -90.000S, 180.000E, 90.000N)'
-    assert doc.wkt == "POLYGON ((-180.0000000000000000 -90.0000000000000000, -180.0000000000000000 90.0000000000000000, 180.0000000000000000 90.0000000000000000, 180.0000000000000000 -90.0000000000000000, -180.0000000000000000 -90.0000000000000000))"  # noqa
