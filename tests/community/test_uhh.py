@@ -12,6 +12,7 @@ def test_rights():
     assert ['Restricted Access', 'info:eu-repo/semantics/restrictedAccess'] == doc.rights
     assert doc.open_access is False
 
+
 def test_discipline():
     xmlfile = os.path.join(TESTDATA_DIR, 'uhh', 'raw', 'a8cce4a5-9e38-5e3a-91b9-14cf90f69758.xml')  # noqa
     reader = UhhUhh()

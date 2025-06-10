@@ -29,6 +29,7 @@ def test_radar_2():
     assert 'Comisión Nacional de Investigación Científica y Tecnológica|501100002848|Crossref Funder ID' in doc.funding_reference[0]
     assert 'Bộ Giáo dục và Ðào tạo|501100005645|Crossref Funder ID' in doc.funding_reference[1]
 
+
 def test_radar_3():
     xmlfile = os.path.join(TESTDATA_DIR, 'radar', 'raw', 'd812138e-2e73-5dd3-8258-fc783f47db39.xml')
     reader = Radar()
