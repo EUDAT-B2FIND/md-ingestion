@@ -5,7 +5,8 @@ from ..format import format_value
 
 class Deims(Repository):
     IDENTIFIER = 'deims'
-    URL = 'https://deims.org/pycsw/catalogue/csw'
+#    URL = 'https://deims.org/pycsw/catalogue/csw'
+    URL = 'https://deims.org/pycsw/csw?'
     SCHEMA = SchemaType.ISO19139
     SERVICE_TYPE = ServiceType.CSW
     PRODUCTIVE = True
