@@ -4,8 +4,8 @@ channels:
   - conda-forge
 dependencies:
   - pip
-  - python=3.8
-  - owslib
+  - python>=3.8
+  - owslib>=0.34
   # ng
   - beautifulsoup4
   - ckanapi
