@@ -5,6 +5,7 @@ channels:
 dependencies:
   - pip
   - python=3.8
+  - setuptools<81
   - owslib
   # ng
   - beautifulsoup4
