@@ -43,17 +43,16 @@ class Bluecloud(Repository):
         doc.keywords = self.keywords()
         doc.publisher = self.publishers()
 
-
     def source(self):
-         source = []
-         oru_urls = self._find("OnlineResourceUrl")
-         for oru in oru_urls:
+        source = []
+        oru_urls = self._find("OnlineResourceUrl")
+        for oru in oru_urls:
             if "http" in oru:
                 url = oru
             else:
                 url = f"https://data.blue-cloud.org{oru}"
             source.append(url)
-         return source
+        return source
 
     def instruments(self):
         instruments = []
