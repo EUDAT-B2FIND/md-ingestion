@@ -48,7 +48,10 @@ class Bluecloud(Repository):
          source = []
          oru_urls = self._find("OnlineResourceUrl")
          for oru in oru_urls:
-            url = f"https://data.blue-cloud.org{oru}"
+            if "http" in oru:
+                url = oru
+            else:
+                url = f"https://data.blue-cloud.org{oru}"
             source.append(url)
          return source
 
