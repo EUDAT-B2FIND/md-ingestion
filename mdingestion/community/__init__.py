@@ -31,7 +31,7 @@ def _find_orgs(cls=None):
 
 
 def _cached_orgs(cls=None):
-    global CACHED_ORGS
+    CACHED_ORGS
     cls = cls or Repository
     if not CACHED_ORGS.get(cls):
         for org in _find_orgs(cls):

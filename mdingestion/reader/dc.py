@@ -53,7 +53,6 @@ class DublinCoreReader(XMLReader):
         places = [s.text.strip() for s in self.parser.doc.find_all('spatial') if not s.attrs]
         return places
 
-
     def language(self):
         lang = self.find('language')
         langlist = []
