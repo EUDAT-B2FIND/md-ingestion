@@ -54,4 +54,7 @@ class Harvest(Command):
                            unit=' records',
                            total=_harvester.total(),
                            disable=silent):
-            _harvester.write_record(record, pretty_print=True)
+            try:
+                _harvester.write_record(record, pretty_print=True)
+            except Exception:
+                logging.exception(f"Harvesting of {identifier} failed.")
