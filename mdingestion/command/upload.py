@@ -80,7 +80,7 @@ class Upload(Command):
             count += 1
         if not success:
             raise Exception(f'upload of some files failed. repo={self._repo.identifier}, for {fails}/{count} files upload failed.')
-            
+
     def walk(self):
         path = os.path.join(self._repo.identifier, 'ckan')
         for filename in self.walker.walk(path=path, ext='.json'):
