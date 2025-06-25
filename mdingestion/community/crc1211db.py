@@ -4,6 +4,7 @@ from ..service_types import SchemaType, ServiceType
 
 class CRC1211DBDatacite(BaseGfz):
     IDENTIFIER = 'crc1211db'
+    TITLE = "CRC 1211 Database"
     URL = 'http://doidb.wdc-terra.org/oaip/oai'
     SCHEMA = SchemaType.DataCite
     SERVICE_TYPE = ServiceType.OAI

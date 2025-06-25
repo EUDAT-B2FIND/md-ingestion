@@ -37,10 +37,13 @@ def cli(ctx, debug, silent, dry_run, outdir, log):
     ctx.obj['outdir'] = out.absolute().as_posix()
     # logging
     logfile = out.joinpath(log).as_posix()
+    handlers = [
+        logging.FileHandler(logfile, mode='w'),  # 'w' mode overwrites the log file
+    ]
     if debug:
-        logging.basicConfig(filename=logfile, level=logging.DEBUG)
+        logging.basicConfig(handlers=handlers, level=logging.DEBUG)
     else:
-        logging.basicConfig(filename=logfile, level=logging.ERROR)
+        logging.basicConfig(handlers=handlers, level=logging.ERROR)
 
 
 @cli.command()

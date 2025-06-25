@@ -11,6 +11,7 @@ DF = pd.read_csv(FNAME, sep=';', encoding='ISO-8859-1')
 
 class CessdaDDI25(Repository):
     IDENTIFIER = 'cessda'
+    TITLE = 'CESSDA'
     URL = 'https://datacatalogue.cessda.eu/oai-pmh/v0/oai'
     SCHEMA = SchemaType.DDI25
     SERVICE_TYPE = ServiceType.OAI
