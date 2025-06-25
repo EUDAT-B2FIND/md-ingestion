@@ -9,7 +9,7 @@ class IgetsDatacite(BaseGfz):
     SERVICE_TYPE = ServiceType.OAI
     OAI_METADATA_PREFIX = 'oai_datacite'
     OAI_SET = 'DOIDB.IGETS'
-    PRODUCTIVE = False
+    PRODUCTIVE = True
     REPOSITORY_ID = 're3data:r3d100010300'
     REPOSITORY_NAME = 'IGETS - International Geodynamics and Earth Tide Service'
 

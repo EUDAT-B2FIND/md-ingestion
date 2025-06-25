@@ -32,7 +32,7 @@ class Bluecloud(Repository):
     def update(self, doc):
         doc.discipline = ['Marine Science']
         doc.description = self._find('Abstract')
-        doc.source = self._find('OnlineResourceUrl')
+        doc.source = self.source()
         doc.publication_year = self._find('Last_Update')
         doc.contributor = self._find('Organisations')
         doc.contact = ['blue-cloud-support@maris.nl']
@@ -44,7 +44,17 @@ class Bluecloud(Repository):
         doc.keywords = self.keywords()
         doc.publisher = self.publishers()
 
-    # TODO: fix list problem in json parser = json.py in Carsten weiss wo
+    def source(self):
+        source = []
+        oru_urls = self._find("OnlineResourceUrl")
+        for oru in oru_urls:
+            if "http" in oru:
+                url = oru
+            else:
+                url = f"https://data.blue-cloud.org{oru}"
+            source.append(url)
+        return source
+
     def instruments(self):
         instruments = []
         instruments.extend(self._find('Instruments'))

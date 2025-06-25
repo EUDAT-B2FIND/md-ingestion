@@ -26,7 +26,7 @@ class DublinCoreReader(XMLReader):
         doc.rights = self.find('rights')
         doc.funding_reference = self.funding_reference()
         doc.contact = doc.publisher
-        doc.language = self.find('language')
+        doc.language = self.language()
         doc.resource_type = self.find('type')
         doc.format = self.find('format')
         temporal = self.temporal_coverage()
@@ -52,6 +52,18 @@ class DublinCoreReader(XMLReader):
         # ajrm comment: It is very optimistic find always a place in <dc:coverage> ... </dc:coverage>
         places = [s.text.strip() for s in self.parser.doc.find_all('spatial') if not s.attrs]
         return places
+
+    def language(self):
+        lang = self.find('language')
+        langlist = []
+        for value in lang:
+            if ';' in value:
+                langlist.extend(value.split(';'))
+            elif ',' in value:
+                langlist.extend(value.split(','))
+            else:
+                langlist.append(value)
+        return langlist
 
     def _dc_item_to_dict(self, string_aux):
         string_list = string_aux.replace('; ',',').replace(';',',').replace('=',',').split(',')

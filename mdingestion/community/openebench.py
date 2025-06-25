@@ -13,8 +13,8 @@ class OpenebenchEudatcore(Repository):
     OAI_SET = '591815be-a801-47c5-80e2-0a39f95c7def'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LOGO = "https://legacy.openebench.bsc.es/assets/img/opeb_logo.gif"
     LINK = "https://openebench.bsc.es", "https://elixir-europe.org/platforms/tools"

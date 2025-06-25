@@ -24,4 +24,3 @@ def test_deims_2():
     assert 'https://deims.org/dataset/e562c596-7faa-11e4-a976-005056ab003f' == doc.source
     assert 'https://deims.org/pycsw/catalogue/csw' in doc.metadata_access
     assert 'https://b2share.fz-juelich.de/api/files/bb85b3a0-8b24-466e-8009-4ac85c9f12bc/33723904.xls' in doc.related_identifier  # noqa
-

@@ -77,6 +77,7 @@ def test_format_value():
     assert '3001' == format.format_value(['3001'], type='date_year', one=True)
     assert '3001' == format.format_value('3001', type='date_year', one=True)
 
+
 def test_format_empty_values():
     assert [] == format.format_value('n/a')
     assert [] == format.format_value('not stated')

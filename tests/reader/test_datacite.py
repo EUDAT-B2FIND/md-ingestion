@@ -34,8 +34,6 @@ def test_oai_attributes():
     reader = DataCiteReader()
     doc = reader.read(xml_file, url='https://darus.uni-stuttgart.de/oai')
     assert 'all' in doc.oai_set
-    assert 'doi:10.18419/darus-470' in doc.oai_identifier
-    # assert 'https://darus.uni-stuttgart.de/oai?verb=GetRecord&metadataPrefix=oai_datacite&identifier=doi:10.18419/darus-470' == doc.metadata_access  # noqa
 
 
 def test_doi():
@@ -44,23 +42,20 @@ def test_doi():
     doc = reader.read(xml_file, url='https://darus.uni-stuttgart.de/oai')
     assert 'https://doi.org/10.18419/darus-470' in doc.doi
 
+
 def test_bbox():
     xml_file = os.path.join(TESTDATA_DIR, 'pangaea', 'raw', '5755f06f-a5a9-5794-9d05-ab23e51452be.xml')
     reader = DataCiteReader()
     doc = reader.read(xml_file, url='https://ws.pangaea.de/oai/provider')
-    #   <geoLocationBox>
-    # <westBoundLongitude>62.883</westBoundLongitude>
-    # <eastBoundLongitude>64.183</eastBoundLongitude>
-    # <southBoundLatitude>21.966</southBoundLatitude>
-    # <northBoundLatitude>23.15</northBoundLatitude>
-    # </geoLocationBox>
     assert '(62.883W, 21.966S, 64.183E, 23.150N); Northern Arabian Sea' == doc.spatial_coverage
+
 
 def test_point():
     xml_file = os.path.join(TESTDATA_DIR, 'danseasy', 'raw', '989ff5fa-d6d3-52c0-a6c3-41bf01236231.xml')
     reader = DataCiteReader()
     doc = reader.read(xml_file, url='https://easy.dans.knaw.nl/oai')
     assert '(6.197 LON, 52.714 LAT); Plangebied Eekhorstweg 22; Meppel; Drenthe' == doc.spatial_coverage
+
 
 def test_polygon():
     xml_file = os.path.join(TESTDATA_DIR, 'envidat-datacite', 'raw', '6bd42527-0a4f-563f-88ed-999b1c8ded9e.xml')

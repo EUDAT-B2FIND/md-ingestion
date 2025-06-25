@@ -30,6 +30,8 @@ class DrihmCsc(BaseDrihm):
     SERVICE_TYPE = ServiceType.OAI
     OAI_SET = '94a9567e-2fba-4677-8fde-a8b68bdb63e8'  # DRIHM Set from CSC
     OAI_METADATA_PREFIX = 'eudatcore'
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
 
 
 class DrihmFzj(BaseDrihm):
@@ -40,3 +42,5 @@ class DrihmFzj(BaseDrihm):
     SERVICE_TYPE = ServiceType.OAI
     OAI_SET = '94a9567e-2fba-4677-8fde-a8b68bdb63e8'  # DRIHM Set from FZJ
     OAI_METADATA_PREFIX = 'eudatcore'
+    REPOSITORY_ID = 're3data:r3d100013118'
+    REPOSITORY_NAME = 'B2SHARE Server Forschungszentrum Jülich'

@@ -12,4 +12,4 @@ def test_keywords():
     doc = reader.read(xmlfile)
     assert 'Functional printing' in doc.keywords  # subject with subjectScheme
     assert 'Weiche Materie' in doc.keywords  # include only DFG
-    assert '620' not in doc.keywords # exclude DDC
+    assert '620' not in doc.keywords  # exclude DDC

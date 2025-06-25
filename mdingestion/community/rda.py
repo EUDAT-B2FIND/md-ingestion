@@ -13,8 +13,8 @@ class RdaEudatcore(Repository):
     OAI_SET = '8d963a29-5e19-492b-8cfe-97da4f54fad2'
     PRODUCTIVE = True
     DATE = '2023-05-10'
-    REPOSITORY_ID = ''
-    REPOSITORY_NAME = ''
+    REPOSITORY_ID = 're3data:r3d100011394'
+    REPOSITORY_NAME = 'B2SHARE'
     CRON_DAILY = False
     LINK = ""
     LOGO = ""

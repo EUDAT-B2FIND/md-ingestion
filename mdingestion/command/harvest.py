@@ -57,5 +57,4 @@ class Harvest(Command):
             try:
                 _harvester.write_record(record, pretty_print=True)
             except Exception:
-                msg = "Harvesting of record failed."
-                logging.exception(msg)
+                logging.exception(f"Harvesting of {identifier} failed.")

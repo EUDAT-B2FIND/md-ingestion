@@ -8,7 +8,7 @@ Python library to harvest, map and upload research community specific metadata i
 
 ## Preparation
 
-Install miniconda, see: https://github.com/conda-forge/miniforge.
+Install Conda, see: https://github.com/conda-forge/miniforge.
 ```
 $ wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
 $ bash Miniforge3-Linux-x86_64.sh
@@ -16,6 +16,12 @@ $ source .bashrc
 ```
 
 ## Installation
+
+Clone from git
+```
+git clone https://github.com/EUDAT-B2FIND/md-ingestion.git
+cd md-ingestion
+```
 
 Create conda env:
 ```
@@ -51,7 +57,7 @@ Files are written to `oaidata/darus/ckan`.
 
 Check the validation result:
 ```
-$ less summary/darus/2020-10-16_darus_summary.json
+$ less summary/darus/2025-06-16_darus_summary.json
 ```
 
 Upload:
@@ -67,11 +73,6 @@ $ b2f combine -c darus --clean -i CKAN_HOST --auth AUTH_KEY
 Purge
 ```
 $ b2f purge -c darus -i CKAN_HOST --auth AUTH_KEY
-```
-Search
-```
-$ b2f search --pattern "ice caps" --limit 20
-$ b2f search -c darus -i CKAN_HOST 
 ```
 
 ## Run tests
@@ -92,7 +93,19 @@ $ pytest tests/community/test_darus.py
 ```
 ## Update b2f list
 
-Update PRODUCTIVE=True and DATE='whatever' in Community mapfiles
+Update PRODUCTIVE=True in Community mapfiles
 ```
-b2f list -p -o b2flist.csv
+b2f list -o b2flist.csv
+```
+## Create cronjob file
+```
+b2f cron --auth ckanauthkey -o b2f.cron
+```
+Copy `b2f.cron` file as sudo to `/etc/cron.d/b2f`
+```
+$ sudo cp b2f.cron /etc/cron.d/b2f
+```
+### Edit cronjob file
+```
+$ vim /etc/cron.d/b2f
 ```

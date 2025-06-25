@@ -2,10 +2,10 @@
 name: b2f
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - pip
   - python=3.8
+  - setuptools<81
   - owslib
   # ng
   - beautifulsoup4
