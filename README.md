@@ -62,17 +62,17 @@ $ less summary/darus/2025-06-16_darus_summary.json
 
 Upload:
 ```
-$ b2f upload -c darus -i CKAN_HOST --auth AUTH_KEY
+$ b2f upload -c darus -i CKAN_HOST --auth CKAN_AUTH_KEY
 ```
 
 Combine
 ```
-$ b2f combine -c darus --clean -i CKAN_HOST --auth AUTH_KEY
+$ b2f combine -c darus --clean -i CKAN_HOST --auth CKAN_AUTH_KEY
 ```
 
 Purge
 ```
-$ b2f purge -c darus -i CKAN_HOST --auth AUTH_KEY
+$ b2f purge -c darus -i CKAN_HOST --auth CKAN_AUTH_KEY
 ```
 
 ## Run tests
@@ -99,7 +99,7 @@ b2f list -o b2flist.csv
 ```
 ## Create cronjob file
 ```
-b2f cron --auth ckanauthkey -o b2f.cron
+b2f cron --auth CKAN_AUTH_KEY -o b2f.cron
 ```
 Copy `b2f.cron` file as sudo to `/etc/cron.d/b2f`
 ```
