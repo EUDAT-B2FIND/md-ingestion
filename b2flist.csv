@@ -1,109 +1,119 @@
 ,Identifier,Repository Title,Schema,Service,URL,OAI Set,MetadataPrefix
-6,ahri,AHRI - Africa Health Research Institute,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,132,oai_dc
-7,artsetmetiers,Arts et Métiers Institute of Technology,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,artsetmetiers,oai_datacite
-9,bbmri,BBMRI,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,99916f6f-9a2c-4feb-a342-6552ac7f1529,eudatcore
-10,bifie,"BIFIE - Federal Institute for Education Research, Austria",SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,112,oai_dc
-11,bluecloud,,SchemaType.JSON,ServiceType.BC,https://data.blue-cloud.org/api/collections,,oai_dc
-12,ceric,CERIC,SchemaType.DataCite,ServiceType.OAI,https://data.ceric-eric.eu/oaipmh/request,,oai_datacite
-13,cessda,,SchemaType.DDI25,ServiceType.OAI,https://datacatalogue.cessda.eu/oai-pmh/v0/oai,,oai_ddi25
-27,compbiomed,CompBioMed,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,03b22301-60a8-4885-86fa-8c92cbf57bb0,eudatcore
-28,cora,CORA.RDR,SchemaType.DataCite,ServiceType.OAI,https://dataverse.csuc.cat/oai,OPENAIRE,oai_datacite
-29,crc1211db,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.CRC1211,oai_datacite
-30,danseasy,,SchemaType.DataCite,ServiceType.OAI,https://easy.dans.knaw.nl/oai,,oai_datacite
-31,dariah-de,,SchemaType.DataCite,ServiceType.OAI,https://repository.de.dariah.eu/1.0/oaipmh/oai,,oai_datacite
-32,darus,,SchemaType.DataCite,ServiceType.OAI,https://darus.uni-stuttgart.de/oai,,oai_datacite
-33,datadoi,DataDOI,SchemaType.DublinCore,ServiceType.OAI,https://datadoi.ee/oai/request,,oai_dc
-34,dataversenl,,SchemaType.DataCite,ServiceType.OAI,https://dataverse.nl/oai,,oai_datacite
-35,dataverseno,,SchemaType.DataCite,ServiceType.OAI,https://dataverse.no/oai,dataverseno,oai_datacite
-36,datice,,SchemaType.DataCite,ServiceType.OAI,https://oai.datacite.org/oai,GESIS.SSRI,oai_datacite
-37,deims,,SchemaType.ISO19139,ServiceType.CSW,https://deims.org/pycsw/catalogue/csw,,oai_dc
-38,dipf,DIPF - Leibniz Institute for Research and Information in Education,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,11,oai_dc
-39,drga,Data Repository Grenoble Alpes,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,univ-grenoble-alpes,oai_datacite
-42,ds_archaeology,DANS Data Station Archaeology,SchemaType.DataCite,ServiceType.OAI,https://archaeology.datastations.nl/oai,,oai_datacite
-43,ds_lifesciences,DANS Data Station Life Sciences,SchemaType.DataCite,ServiceType.OAI,https://lifesciences.datastations.nl/oai,,oai_datacite
-44,ds_physical_technical,DANS Data Station Physical and Technical Sciences,SchemaType.DataCite,ServiceType.OAI,https://phys-techsciences.datastations.nl/oai,,oai_datacite
-45,ds_ssh,DANS Data Station Social Sciences and Humanities,SchemaType.DataCite,ServiceType.OAI,https://ssh.datastations.nl/oai,,oai_datacite
-46,dzhw,DZHW - German Centre for Higher Education Research and Science Studies,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,138,oai_dc
-47,ebdc,EBDC - Economics & Business Data Center (LMU/ifo),SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,13,oai_dc
-48,edmond,Edmond,SchemaType.JSON,ServiceType.Dataverse,https://edmond.mpg.de,,oai_dc
-50,edpp,École des Ponts-ParisTech,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,ecoledesponts,oai_datacite
-51,egidatahub,,SchemaType.DublinCore,ServiceType.OAI,http://datahub.egi.eu/oai_pmh,eeaa135fa0822240a3cd4ac2ba5ce1fb,oai_dc
-53,enes,,SchemaType.ISO19139,ServiceType.OAI,http://c3grid1.dkrz.de:8080/oai/provider,iso-old-doi,iso
-54,enmap,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.ENMAP,oai_datacite
-55,envidat,,SchemaType.JSON,ServiceType.CKAN,https://www.envidat.ch/api,,oai_dc
-57,esrf,ESRF,SchemaType.DataCite,ServiceType.OAI,https://icatplus.esrf.fr/oaipmh/request,,oai_datacite
-58,ess,ESS,SchemaType.DataCite,ServiceType.OAI,https://oai.panosc.ess.eu/openaire/oai,,oai_datacite
-59,eudat_csc,EUDAT,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,e9b9792e-79fb-4b07-b6b4-b9c2bd06d095,eudatcore
-60,eudat_fzj,EUDAT,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.fz-juelich.de/api/oai2d,e9b9792e-79fb-4b07-b6b4-b9c2bd06d095,eudatcore
-61,euon,EUON,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,893fad89-dc4a-4f1b-a9ba-4240aa18e12b,eudatcore
-65,fidgeo,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.FID,oai_datacite
-66,fidmove,,SchemaType.JSON,ServiceType.CKAN,https://data.fid-move.de/api/3,,oai_dc
-67,fmi,FMI,SchemaType.Eudatcore,ServiceType.OAI,https://fmi.b2share.csc.fi/api/oai2d,77f140b0-d4aa-437e-80d4-32c0abd3746f,eudatcore
-68,geofon,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.SEISNET,oai_datacite
-72,gfzdataservices,GFZ Data Services,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.GFZ,oai_datacite
-73,gipp,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.GIPP,oai_datacite
-74,heidata,,SchemaType.DataCite,ServiceType.OAI,https://heidata.uni-heidelberg.de/oai,,oai_datacite
-76,hpc,HPC-Europa3,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,8d4f0e20-8af2-4111-a816-f29a71b4439c,eudatcore
-77,hzb_pub,HZB,SchemaType.DataCite,ServiceType.OAI,https://data.helmholtz-berlin.de/oaipmh/request,pub,oai_datacite
-78,hzb_inv,HZB,SchemaType.DataCite,ServiceType.OAI,https://data.helmholtz-berlin.de/oaipmh/request,raw_inv,oai_datacite
-80,icgem,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.ICGEM,oai_datacite
-81,icos,,SchemaType.DataCite,ServiceType.OAI,https://oai.datacite.org/oai,SND.ICOS,datacite
-83,ihi,IHI - Ifakara Health Institute,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,105,oai_dc
-85,ingrid,InGRID,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,0cc56898-fb0b-44dc-8331-535b9c089647,eudatcore
-86,inrae,INRAE,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,INRAE_PNDB,oai_datacite
-87,inria,Inria,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,inria,oai_datacite
-88,institutpasteur,Institut Pasteur,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,pasteur,oai_datacite
-89,intermagnet,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.INTERMAG,oai_datacite
-90,isdc,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.ISDC,oai_datacite
-91,isg,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.ISG,oai_datacite
-92,isis,ISIS,SchemaType.DataCite,ServiceType.OAI,https://icatisis.esc.rl.ac.uk/oaipmh/request,doiInvs,oai_datacite
-93,ist,,SchemaType.DublinCore,ServiceType.OAI,https://research-explorer.app.ist.ac.at/oai,research_dataFtxt,oai_dc
-94,ivoa,,SchemaType.Eudatcore,ServiceType.OAI,http://dc.g-vo.org/rr/q/pmh/pubreg.xml,,oai_b2find
-95,iwh,IWH - The Halle Institute for Economic Research,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,130,oai_dc
-96,kicos,KiCoS,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,ffc8b583-ebe7-41f5-88e0-65ba59fbe672,eudatcore
-97,lago,,SchemaType.DublinCore,ServiceType.OAI,http://datahub.egi.eu/oai_pmh,986fe2ab97a6b749fac17eb9e9b38c37chb045,oai_dc
-98,life-respira,LIFE+Respira,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,e1800bc8-780e-4617-a7b6-2312cb6190c4,eudatcore
-101,materialscloud,,SchemaType.DublinCore,ServiceType.OAI,https://archive.materialscloud.org/xml,,oai_dc
-102,midas,,SchemaType.DublinCore,ServiceType.OAI,https://midas.lt/web/action/oaipmh,,oai_dc
-103,nird,,SchemaType.DublinCore,ServiceType.OAI,https://search-api.web.sigma2.no/norstore-archive/oai/v1.0,,oai_dc
-104,nrm,NRM,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,4ba7c0fd-1435-4313-9c13-4d888d60321a,eudatcore
-106,openebench,OpenEBench,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,591815be-a801-47c5-80e2-0a39f95c7def,eudatcore
-107,pangaea,,SchemaType.DataCite,ServiceType.OAI,https://ws.pangaea.de/oai/provider,,datacite4
-109,pik,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.PIK,oai_datacite
-110,psi,PSI,SchemaType.DublinCore,ServiceType.OAI,https://doi.psi.ch/oaipmh/oai,,oai_dc
-111,radar,,SchemaType.DataCite,ServiceType.OAI,https://www.radar-service.eu/oai/OAIHandler,,datacite
-112,rda,RDA,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,8d963a29-5e19-492b-8cfe-97da4f54fad2,eudatcore
-113,rdc,"RDC - Federal Statistical Office, Germany",SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,136,oai_dc
-114,rki,RKI - Robert Koch Institut,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,10,oai_dc
-115,rodare,,SchemaType.DataCite,ServiceType.OAI,https://rodare.hzdr.de/oai2d,user-rodare,oai_datacite
-118,sdr,,SchemaType.DublinCore,ServiceType.OAI,https://repository.surfsara.nl/api/oai2,,oai_dc
-119,seanoe,,SchemaType.DublinCore,ServiceType.OAI,http://www.seanoe.org/oai/OAIHandler,,oai_dc
-120,sextant,,SchemaType.ISO19139,ServiceType.CSW,https://sextant.ifremer.fr/geonetwork/GEOCATALOGUE/fre/csw,,oai_dc
-122,sorbonneuniv,Sorbonne Université,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,sorbonne-univ,oai_datacite
-123,srda,SRDA - Survey Research Data Archive Taiwan,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,128,oai_dc
-124,starsforall,STARS4ALL,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,a204df9b-dfa4-445e-82e6-a88f8754b6b7,eudatcore
-125,tereno,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.TERENO,oai_datacite
-126,textgrid,,SchemaType.DublinCore,ServiceType.OAI,https://textgridlab.org/1.0/tgoaipmh/oai,,oai_dc
-128,tudatalib,,SchemaType.DataCite,ServiceType.OAI,https://tudatalib.ulb.tu-darmstadt.de/oai/openairedata,,oai_datacite
-129,tuw,TU Wien,SchemaType.DataCite,ServiceType.OAI,https://researchdata.tuwien.ac.at/oai2d,,oai_datacite
-130,ucl,,SchemaType.DataCite,ServiceType.OAI,https://api.figshare.com/v2/oai,portal_549,oai_datacite
-132,uhh_uhh,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-uhh,oai_datacite
-133,uhh_uke,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-uke,oai_datacite
-134,uhh_signlang,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-sign-lang,oai_datacite
-135,uhh_csmc,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-csmc,oai_datacite
-136,uhh_hzsk,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-hzsk,oai_datacite
-137,uhh_ncac,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-ncac,oai_datacite
-138,uhh_fakew,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-fak-ew,oai_datacite
-139,uhh_icdc,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-icdc,oai_datacite
-140,uhh_cen,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-cen,oai_datacite
-141,uhh_cliccs,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-cliccs,oai_datacite
-142,ul,,SchemaType.DataCite,ServiceType.OAI,https://dorel.univ-lorraine.fr/oai,,oai_datacite
-143,ulille,Université de Lille,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,univ-lille,oai_datacite
-144,umontpellier,Data_UMontpellier,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,umontpellier,oai_datacite
-145,unistra,Université de Strasbourg,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,unistra,oai_datacite
-146,univgustaveeiffel,Data Université Gustave Eiffel,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,univ-gustave-eiffel,oai_datacite
-147,utjj,Université Toulouse Jean-Jaurès,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,univ-toulouse-2,oai_datacite
-148,wdcc,WDCC - World Data Centre for Climate,SchemaType.ISO19139,ServiceType.OAI,https://dmoai.cloud.dkrz.de/oai/provider,,iso19115
-149,wsm,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.WSM,oai_datacite
-150,zbw,ZBW Journal Data Archive,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,118,oai_dc
-151,zfkd,ZfKD - German Center for Cancer Registry Data at the RKI,SchemaType.DublinCore,ServiceType.OAI,https://www.da-ra.de/oaip/oai,114,oai_dc
+6,artsetmetiers,Arts et Métiers Institute of Technology,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,artsetmetiers,oai_datacite
+7,askeladden,Askeladden,SchemaType.JSON,ServiceType.ArcGIS,https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer/7/query,,oai_dc
+8,bbmri,BBMRI,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,99916f6f-9a2c-4feb-a342-6552ac7f1529,eudatcore
+9,bluecloud,Blue-Cloud,SchemaType.JSON,ServiceType.BC,https://data.blue-cloud.org/api/collections,,oai_dc
+10,ceric,CERIC,SchemaType.DataCite,ServiceType.OAI,https://data.ceric-eric.eu/oaipmh/request,,oai_datacite
+11,cessda,CESSDA,SchemaType.DDI25,ServiceType.OAI,https://datacatalogue.cessda.eu/oai-pmh/v0/oai,,oai_ddi25
+12,clarin_one,CLARIN,SchemaType.DublinCore,ServiceType.OAI,http://clarin.eurac.edu/repository/oai/request,,oai_dc
+13,clarin_two,CLARIN,SchemaType.DublinCore,ServiceType.OAI,http://dspace-clarin-it.ilc.cnr.it/repository/oai/request,,oai_dc
+14,clarin_three,CLARIN,SchemaType.DublinCore,ServiceType.OAI,http://repository.clarin.dk/repository/oai/request,,oai_dc
+15,clarin_four,CLARIN,SchemaType.DublinCore,ServiceType.OAI,http://lindat.mff.cuni.cz/repository/oai/request,,oai_dc
+16,clarin_five,CLARIN,SchemaType.DublinCore,ServiceType.OAI,http://www.clarin.si/repository/oai/request,,oai_dc
+17,clarin_six,CLARIN,SchemaType.DublinCore,ServiceType.OAI,https://repo.spraakbanken.gu.se/oai/request,,oai_dc
+18,clarin_seven,CLARIN,SchemaType.DublinCore,ServiceType.OAI,http://fedora.clarin-d.uni-saarland.de/oaiprovider/,,oai_dc
+19,clarin_eight,CLARIN,SchemaType.DublinCore,ServiceType.OAI,https://repo.clarino.uib.no/oai/request,,oai_dc
+20,clarin_nine,CLARIN,SchemaType.OLAC,ServiceType.OAI,https://portulanclarin.net/repository/oaipmh/,,olac
+21,clarin_ten,CLARIN,SchemaType.DublinCore,ServiceType.OAI,https://clarin-pl.eu/oai/request,,oai_dc
+22,clarin_eleven,CLARIN,SchemaType.OLAC,ServiceType.OAI,https://metashare.ut.ee/oai_pmh/,,olac
+23,clarin_twelve,CLARIN,SchemaType.DublinCore,ServiceType.OAI,https://clarin.vdu.lt/oai/request,,oai_dc
+24,clarin_b2s,CLARIN,SchemaType.DublinCore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,0afede87-2bf2-4d89-867e-d2ee57251c62,oai_dc
+25,compbiomed,CompBioMed,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,03b22301-60a8-4885-86fa-8c92cbf57bb0,eudatcore
+26,cora,CORA.RDR,SchemaType.DataCite,ServiceType.OAI,https://dataverse.csuc.cat/oai,OPENAIRE,oai_datacite
+27,crc1211db,CRC 1211 Database,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.CRC1211,oai_datacite
+29,dara,DA|RA,SchemaType.JSON,ServiceType.DataCite,https://api.datacite.org,,oai_dc
+30,dariah-de,DARIAH-DE,SchemaType.DataCite,ServiceType.OAI,https://repository.de.dariah.eu/1.0/oaipmh/oai,,oai_datacite
+31,darus,DARUS,SchemaType.DataCite,ServiceType.OAI,https://darus.uni-stuttgart.de/oai,,oai_datacite
+32,datadoi,DataDOI,SchemaType.DublinCore,ServiceType.OAI,https://datadoi.ee/oai/request,,oai_dc
+33,dataversenl,DataverseNL,SchemaType.DataCite,ServiceType.OAI,https://dataverse.nl/oai,,oai_datacite
+34,dataverseno,DataverseNO,SchemaType.DataCite,ServiceType.OAI,https://dataverse.no/oai,dataverseno,oai_datacite
+35,datice,DATICE,SchemaType.DataCite,ServiceType.OAI,https://oai.datacite.org/oai,GESIS.SSRI,oai_datacite
+36,deims,DEIMS,SchemaType.ISO19139,ServiceType.CSW,https://deims.org/pycsw/catalogue/csw,,oai_dc
+37,drga,Data Repository Grenoble Alpes,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,univ-grenoble-alpes,oai_datacite
+38,drihm_csc,DRIHM,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,94a9567e-2fba-4677-8fde-a8b68bdb63e8,eudatcore
+39,drihm_fzj,DRIHM,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.fz-juelich.de/api/oai2d,94a9567e-2fba-4677-8fde-a8b68bdb63e8,eudatcore
+40,ds_archaeology,DANS Data Station Archaeology,SchemaType.DataCite,ServiceType.OAI,https://archaeology.datastations.nl/oai,,oai_datacite
+41,ds_lifesciences,DANS Data Station Life Sciences,SchemaType.DataCite,ServiceType.OAI,https://lifesciences.datastations.nl/oai,,oai_datacite
+42,ds_physical_technical,DANS Data Station Physical and Technical Sciences,SchemaType.DataCite,ServiceType.OAI,https://phys-techsciences.datastations.nl/oai,,oai_datacite
+43,ds_ssh,DANS Data Station Social Sciences and Humanities,SchemaType.DataCite,ServiceType.OAI,https://ssh.datastations.nl/oai,,oai_datacite
+44,edmond,EDMOND,SchemaType.JSON,ServiceType.Dataverse,https://edmond.mpg.de,,oai_dc
+45,edpp,École des Ponts-ParisTech,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,ecoledesponts,oai_datacite
+46,egidatahub,EGI DataHub,SchemaType.DublinCore,ServiceType.OAI,http://datahub.egi.eu/oai_pmh,eeaa135fa0822240a3cd4ac2ba5ce1fb,oai_dc
+47,enmap,EnMAP,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.ENMAP,oai_datacite
+48,envidat,EnviDat,SchemaType.JSON,ServiceType.CKAN,https://www.envidat.ch/api,,oai_dc
+49,esrf,ESRF,SchemaType.DataCite,ServiceType.OAI,https://icatplus.esrf.fr/oaipmh/request,,oai_datacite
+50,ess,ESS,SchemaType.DataCite,ServiceType.OAI,https://oai.panosc.ess.eu/openaire/oai,,oai_datacite
+51,eudat_csc,EUDAT,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,e9b9792e-79fb-4b07-b6b4-b9c2bd06d095,eudatcore
+52,eudat_fzj,EUDAT,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.fz-juelich.de/api/oai2d,e9b9792e-79fb-4b07-b6b4-b9c2bd06d095,eudatcore
+53,euon,EUON,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,893fad89-dc4a-4f1b-a9ba-4240aa18e12b,eudatcore
+54,eurocordex,EURO-CORDEX,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.fz-juelich.de/api/oai2d,a140d3f3-0117-4665-9945-4c7fcb9afb51,eudatcore
+56,fidgeo,FID GEO,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.FID,oai_datacite
+57,fidmove,FID move,SchemaType.JSON,ServiceType.CKAN,https://data.fid-move.de/api/3,,oai_dc
+58,fmi,FMI,SchemaType.Eudatcore,ServiceType.OAI,https://fmi.b2share.csc.fi/api/oai2d,77f140b0-d4aa-437e-80d4-32c0abd3746f,eudatcore
+59,geofon,GEOFON,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.SEISNET,oai_datacite
+63,gfzdataservices,GFZ Data Services,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.GFZ,oai_datacite
+64,gipp,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.GIPP,oai_datacite
+65,heidata,,SchemaType.DataCite,ServiceType.OAI,https://heidata.uni-heidelberg.de/oai,,oai_datacite
+66,helmholtz,Helmholtz,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.fz-juelich.de/api/oai2d,5bbb7b0d-51ed-410a-865b-69d6334a3f0e,eudatcore
+67,hpc,HPC-Europa3,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,8d4f0e20-8af2-4111-a816-f29a71b4439c,eudatcore
+68,hzb_pub,HZB,SchemaType.DataCite,ServiceType.OAI,https://data.helmholtz-berlin.de/oaipmh/request,pub,oai_datacite
+69,hzb_inv,HZB,SchemaType.DataCite,ServiceType.OAI,https://data.helmholtz-berlin.de/oaipmh/request,raw_inv,oai_datacite
+70,icgem,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.ICGEM,oai_datacite
+71,icos,,SchemaType.DataCite,ServiceType.OAI,https://oai.datacite.org/oai,SND.ICOS,datacite
+72,igets,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.IGETS,oai_datacite
+73,ill,ILL,SchemaType.DataCite,ServiceType.OAI,https://data.ill.fr/openaire/oai,openaire_data,oai_datacite
+74,ingrid,InGRID,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,0cc56898-fb0b-44dc-8331-535b9c089647,eudatcore
+75,inrae,INRAE,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,INRAE_PNDB,oai_datacite
+76,inria,Inria,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,inria,oai_datacite
+77,institutpasteur,Institut Pasteur,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,pasteur,oai_datacite
+78,intermagnet,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.INTERMAG,oai_datacite
+79,isg,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.ISG,oai_datacite
+80,isis,ISIS,SchemaType.DataCite,ServiceType.OAI,https://icatisis.esc.rl.ac.uk/oaipmh/request,doiInvs,oai_datacite
+81,ist,,SchemaType.DublinCore,ServiceType.OAI,https://research-explorer.app.ist.ac.at/oai,research_dataFtxt,oai_dc
+82,ivoa,,SchemaType.Eudatcore,ServiceType.OAI,http://dc.g-vo.org/rr/q/pmh/pubreg.xml,,oai_b2find
+83,kicos,KiCoS,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,ffc8b583-ebe7-41f5-88e0-65ba59fbe672,eudatcore
+84,lago,,SchemaType.DublinCore,ServiceType.OAI,http://datahub.egi.eu/oai_pmh,986fe2ab97a6b749fac17eb9e9b38c37chb045,oai_dc
+85,life-respira,LIFE+Respira,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,e1800bc8-780e-4617-a7b6-2312cb6190c4,eudatcore
+86,lter_csc,LTER,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,	d952913c-451e-4b5c-817e-d578dc8a4469,eudatcore
+87,lter_fzj,LTER,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.fz-juelich.de/api/oai2d,	d952913c-451e-4b5c-817e-d578dc8a4469,eudatcore
+88,materialscloud,,SchemaType.DublinCore,ServiceType.OAI,https://archive.materialscloud.org/xml,,oai_dc
+89,midas,,SchemaType.DublinCore,ServiceType.OAI,https://midas.lt/web/action/oaipmh,,oai_dc
+90,nird,,SchemaType.DublinCore,ServiceType.OAI,https://search-api.web.sigma2.no/norstore-archive/oai/v1.0,,oai_dc
+91,nrm,NRM,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,4ba7c0fd-1435-4313-9c13-4d888d60321a,eudatcore
+92,openebench,OpenEBench,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,591815be-a801-47c5-80e2-0a39f95c7def,eudatcore
+93,pangaea,,SchemaType.DataCite,ServiceType.OAI,https://ws.pangaea.de/oai/provider,,datacite4
+94,pik,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.PIK,oai_datacite
+95,psi,PSI,SchemaType.DublinCore,ServiceType.OAI,https://doi.psi.ch/oaipmh/oai,,oai_dc
+96,radar,,SchemaType.DataCite,ServiceType.OAI,https://www.radar-service.eu/oai/OAIHandler,,datacite
+97,rda,RDA,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,8d963a29-5e19-492b-8cfe-97da4f54fad2,eudatcore
+98,rodare,,SchemaType.DataCite,ServiceType.OAI,https://rodare.hzdr.de/oai2d,user-rodare,oai_datacite
+99,sddb,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.SDDB,oai_datacite
+100,sdr,,SchemaType.DublinCore,ServiceType.OAI,https://repository.surfsara.nl/api/oai2,,oai_dc
+101,seanoe,,SchemaType.DublinCore,ServiceType.OAI,http://www.seanoe.org/oai/OAIHandler,,oai_dc
+102,sextant,,SchemaType.ISO19139,ServiceType.CSW,https://sextant.ifremer.fr/geonetwork/GEOCATALOGUE/fre/csw,,oai_dc
+103,slks,SLKS,SchemaType.DublinCore,ServiceType.OAI,https://www.archaeo.dk/ff/oai-pmh/,,oai_dc
+104,sorbonneuniv,Sorbonne Université,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,sorbonne-univ,oai_datacite
+105,starsforall,STARS4ALL,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.eudat.eu/api/oai2d,a204df9b-dfa4-445e-82e6-a88f8754b6b7,eudatcore
+106,tereno,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.TERENO,oai_datacite
+107,textgrid,,SchemaType.DublinCore,ServiceType.OAI,https://textgridlab.org/1.0/tgoaipmh/oai,,oai_dc
+108,toar,TOAR,SchemaType.Eudatcore,ServiceType.OAI,https://b2share.fz-juelich.de/api/oai2d,381a24f1-18d4-405d-af36-c76ba199a754,eudatcore
+109,tudatalib,,SchemaType.DataCite,ServiceType.OAI,https://tudatalib.ulb.tu-darmstadt.de/server/oai/openairedata,,oai_datacite
+110,tuw,TU Wien,SchemaType.DataCite,ServiceType.OAI,https://researchdata.tuwien.ac.at/oai2d,,oai_datacite
+111,ucl,,SchemaType.DataCite,ServiceType.OAI,https://api.figshare.com/v2/oai,portal_549,oai_datacite
+113,uhh_uhh,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-uhh,oai_datacite
+114,uhh_uke,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-uke,oai_datacite
+115,uhh_signlang,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-sign-lang,oai_datacite
+116,uhh_csmc,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-csmc,oai_datacite
+117,uhh_hzsk,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-hzsk,oai_datacite
+118,uhh_ncac,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-ncac,oai_datacite
+119,uhh_fakew,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-fak-ew,oai_datacite
+120,uhh_icdc,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-icdc,oai_datacite
+121,uhh_cen,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-cen,oai_datacite
+122,uhh_cliccs,,SchemaType.DataCite,ServiceType.OAI,https://www.fdr.uni-hamburg.de/oai2d,user-cliccs,oai_datacite
+123,ul,,SchemaType.DataCite,ServiceType.OAI,https://dorel.univ-lorraine.fr/oai,,oai_datacite
+124,ulille,Université de Lille,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,univ-lille,oai_datacite
+125,umontpellier,Data_UMontpellier,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,umontpellier,oai_datacite
+126,unistra,Université de Strasbourg,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,unistra,oai_datacite
+127,univgustaveeiffel,Data Université Gustave Eiffel,SchemaType.DataCite,ServiceType.OAI,https://entrepot.recherche.data.gouv.fr/oai,univ-gustave-eiffel,oai_datacite
+128,wdcc,WDCC - World Data Centre for Climate,SchemaType.ISO19139,ServiceType.OAI,https://dmoai.cloud.dkrz.de/oai/provider,,iso19115
+129,wsm,,SchemaType.DataCite,ServiceType.OAI,http://doidb.wdc-terra.org/oaip/oai,DOIDB.WSM,oai_datacite

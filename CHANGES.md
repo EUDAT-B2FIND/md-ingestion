@@ -1,15 +1,27 @@
 ## CHANGES
 
+### 3.4.0 (2025-06-30)
+
+* moved deprecated mapfiles to attic
+* added repository provenance information for OpenAIRE to mapfiles
+* added two-tiered provenance info for CESSDA in OAI-PMH output
+* improved logging for cronjob (one log per repository)
+* created method to filter special characters from fulltext for solr
+* created method to map relatedIdentifierType and relationType and display the relationType (for records harvested in DataCite schema)
+* improved resourceType mapping
+* fixed list issue in keywords setter 
+
+
 ### 3.3.0 (2023-01-13)
 
 * removed old stuff, moved other old stuff to attic
-* fiexed tests, pep8
+* fixed tests, pep8
 * revised all mapfiles, including 'DATE' and 'STATUS' if productive, rename mapfiles for testing repos
 * new mapping templates for datacite, dublincore, iso and 'groups'
 * new option for https upload
 * set linkcheck as option in combine 
 * new and modified mapfiles for repositories: Euro-Cordex, Envidat, TUW, Helmholtz, Edmond-API, B2SHARE from FZJ, FMI, LAGO, Sextant, ESRF, Universite der Lorraine, IVOA with eudatcore
-* updated communities: NordicArchaeoligy, da|ra, GFZ
+* updated communities: NordicArchaeology, da|ra, GFZ
 
 ### 3.2.0 (2022-04-25)
 
