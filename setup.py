@@ -5,9 +5,9 @@
 
 from setuptools import find_packages, setup
 
-__author__ = "Claudia Martens"
-__contact__ = "martens@dkrz.de"
-__version__ = "3.3.0"
+__author__ = "Anna-Lena Flügel"
+__contact__ = "b2find@dkrz.de"
+__version__ = "3.4.0"
 __license__ = "Apache 2.0"
 
 # One strategy for storing the overall version is to put it in the top-level
