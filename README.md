@@ -1,3 +1,8 @@
+# 🚨 Repository Moved
+
+> ⚠️ **Important:** This repository moved to EUDAT GitLab.  
+> 👉 New location: https://gitlab.eudat.eu/b2find/md-ingestion.git
+
 # B2FIND Metadata Integration Tool
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
